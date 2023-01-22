@@ -26,8 +26,8 @@ blocks:
     _template: hero
   - items:
       - icon:
-          name: BiCodeBlock
-          color: red
+          name: BiAt
+          color: green
           style: float
         title: Amazing Feature
         text: >-
@@ -50,4 +50,5 @@ blocks:
     color: tint
     _template: features
 ---
+
 
