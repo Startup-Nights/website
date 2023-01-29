@@ -20,7 +20,6 @@ export const Header = ({ data }) => {
                     <h4 className="select-none text-lg font-bold tracking-tight my-4 transition duration-150 ease-out transform">
                         <Link href="/" className="flex gap-1 items-center whitespace-nowrap tracking-[.002em]">
                             <Icon
-                                parentColor={data.color}
                                 data={{
                                     name: data.icon.name,
                                     color: data.icon.color,
