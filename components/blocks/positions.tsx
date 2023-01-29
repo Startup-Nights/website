@@ -6,23 +6,22 @@ export const Positions = ({ data, parentField = "" }) => {
     return (
         <Section>
             <Container
-                className={`prose prose-lg ${data.color === "primary" ? `prose-primary` : `dark:prose-dark`
-                    }`}
+                className={`prose prose-lg text-slate-300`}
                 data-tinafield={`${parentField}.body`}
                 size="large"
                 width="medium"
             >
 
-                {data.open_positions && data.open_positions.map(position => (
+                {data.open_positions && data.open_positions.map((position, i) => (
 
-                    <>
+                    <div key={`position-${i}`}>
                         <div>{position.title}</div>
                         <ul>
                             {position.qualifications && position.qualifications.map((quali: string, i: number) => (
                                 <li key={`qualification-${i}`}>{quali}</li>
                             ))}
                         </ul>
-                    </>
+                    </div>
                 ))}
 
             </Container>
