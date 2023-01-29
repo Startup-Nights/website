@@ -5,36 +5,36 @@ import { Layout } from "../../components/layout";
 
 // Use the props returned by get static props
 export default function BlogPostPage(
-  props: AsyncReturnType<typeof getStaticProps>["props"]
+    props: AsyncReturnType<typeof getStaticProps>["props"]
 ) {
-  const { data } = useTina({
-    query: props.query,
-    variables: props.variables,
-    data: props.data,
-  });
-  if (data && data.post) {
+    const { data } = useTina({
+        query: props.query,
+        variables: props.variables,
+        data: props.data,
+    });
+    if (data && data.post) {
+        return (
+            <Layout data={data.global as any}>
+                <Post {...data.post} />
+            </Layout>
+        );
+    }
     return (
-      <Layout rawData={data} data={data.global as any}>
-        <Post {...data.post} />
-      </Layout>
+        <Layout>
+            <div>No data</div>;
+        </Layout>
     );
-  }
-  return (
-    <Layout>
-      <div>No data</div>;
-    </Layout>
-  );
 }
 
 export const getStaticProps = async ({ params }) => {
-  const tinaProps = await client.queries.blogPostQuery({
-    relativePath: `${params.filename}.mdx`,
-  });
-  return {
-    props: {
-      ...tinaProps,
-    },
-  };
+    const tinaProps = await client.queries.blogPostQuery({
+        relativePath: `${params.filename}.mdx`,
+    });
+    return {
+        props: {
+            ...tinaProps,
+        },
+    };
 };
 
 /**
@@ -45,14 +45,14 @@ export const getStaticProps = async ({ params }) => {
  * be viewable at http://localhost:3000/posts/hello
  */
 export const getStaticPaths = async () => {
-  const postsListData = await client.queries.postConnection();
-  return {
-    paths: postsListData.data.postConnection.edges.map((post) => ({
-      params: { filename: post.node._sys.filename },
-    })),
-    fallback: "blocking",
-  };
+    const postsListData = await client.queries.postConnection();
+    return {
+        paths: postsListData.data.postConnection.edges.map((post) => ({
+            params: { filename: post.node._sys.filename },
+        })),
+        fallback: "blocking",
+    };
 };
 
 export type AsyncReturnType<T extends (...args: any) => Promise<any>> =
-  T extends (...args: any) => Promise<infer R> ? R : any;
+    T extends (...args: any) => Promise<infer R> ? R : any;
