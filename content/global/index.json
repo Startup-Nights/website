@@ -1,38 +1,42 @@
 {
-  "header": {
-    "name": "Tina Starter",
-    "icon": {
-      "color": "orange",
-      "style": "float",
-      "name": "Tina"
+    "header": {
+        "name": "Tina Starter",
+        "icon": {
+            "color": "orange",
+            "style": "float",
+            "name": "Tina"
+        },
+        "color": "default",
+        "nav": [
+            {
+                "href": "",
+                "label": "Home"
+            },
+            {
+                "href": "hiring",
+                "label": "Hiring"
+            },
+            {
+                "href": "about",
+                "label": "About"
+            },
+            {
+                "href": "posts",
+                "label": "Blog"
+            }
+        ]
     },
-    "color": "default",
-    "nav": [
-      {
-        "href": "",
-        "label": "Home"
-      },
-      {
-        "href": "about",
-        "label": "About"
-      },
-      {
-        "href": "posts",
-        "label": "Blog"
-      }
-    ]
-  },
-  "footer": {
-    "color": "default",
-    "social": {
-      "facebook": "/",
-      "twitter": "/",
-      "instagram": "/"
+    "footer": {
+        "color": "default",
+        "social": {
+            "facebook": "/",
+            "twitter": "/",
+            "instagram": "/"
+        }
+    },
+    "theme": {
+        "color": "blue",
+        "font": "sans",
+        "darkMode": "system"
     }
-  },
-  "theme": {
-    "color": "blue",
-    "font": "sans",
-    "darkMode": "system"
-  }
 }
