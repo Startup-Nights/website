@@ -47,7 +47,6 @@ export const Hero = ({ data, parentField }) => {
                         <Actions
                             parentField={`${parentField}.actions`}
                             className="justify-center lg:justify-start py-2"
-                            parentColor={data.color}
                             actions={data.actions}
                         />
                     )}
