@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@headlessui/react": "1.7.8",
+    "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.8",
     "date-fns": "^2.23.0",
     "final-form": "4.20.9",

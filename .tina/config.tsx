@@ -208,11 +208,38 @@ const config = defineStaticConfig({
                         fields: [
                             {
                                 type: "string",
-                                label: "Color",
-                                name: "color",
-                                options: [
-                                    { label: "Default", value: "default" },
-                                    { label: "Primary", value: "primary" },
+                                label: "Copyright",
+                                name: "copyright",
+                            },
+                            {
+                                type: "object",
+                                label: "Navigation items",
+                                name: "navitems",
+                                list: true,
+                                fields: [
+                                    {
+                                        type: "string",
+                                        label: "Title",
+                                        name: "title",
+                                    },
+                                    {
+                                        type: "object",
+                                        label: "List items",
+                                        name: "listitems",
+                                        list: true,
+                                        fields: [
+                                            {
+                                                type: "string",
+                                                label: "Title",
+                                                name: "title",
+                                            },
+                                            {
+                                                type: "string",
+                                                label: "Link",
+                                                name: "link",
+                                            },
+                                        ],
+                                    },
                                 ],
                             },
                             {
