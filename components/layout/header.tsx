@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { Container } from "../util/container";
-import { Icon } from "../util/icon";
 
 export const Header = ({ data }) => {
     // If we're on an admin path, other links should also link to their admin paths
@@ -19,14 +18,7 @@ export const Header = ({ data }) => {
                 <div className="flex items-center justify-between gap-6">
                     <h4 className="select-none text-lg font-bold tracking-tight my-4 transition duration-150 ease-out transform">
                         <Link href="/" className="flex gap-1 items-center whitespace-nowrap tracking-[.002em]">
-                            <Icon
-                                data={{
-                                    name: data.icon.name,
-                                    color: data.icon.color,
-                                    style: data.icon.style,
-                                }}
-                            />
-                            {data.name}
+                            <img className="h-8 sm:h-12 w-auto" src="/logo/startup-nights.png" />
                         </Link>
                     </h4>
                     <ul className="flex gap-6 sm:gap-8 lg:gap-10 tracking-[.002em] -mx-4">

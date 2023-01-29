@@ -1,11 +1,9 @@
 import { defineStaticConfig } from "tinacms";
 import { contentBlockSchema } from "../components/blocks/content";
-import { featureBlockSchema } from "../components/blocks/features";
 import { positionsBlockSchema } from "../components/blocks/positions";
 import { heroBlockSchema } from "../components/blocks/hero";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
 import { ColorPickerInput } from "../components/fields/color";
-import { iconSchema } from "../components/util/icon";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -160,7 +158,6 @@ const config = defineStaticConfig({
                         label: "Header",
                         name: "header",
                         fields: [
-                            iconSchema,
                             {
                                 type: "string",
                                 label: "Name",
@@ -361,8 +358,6 @@ const config = defineStaticConfig({
                         },
                         templates: [
                             heroBlockSchema,
-                            // @ts-ignore
-                            featureBlockSchema,
                             contentBlockSchema,
                             testimonialBlockSchema,
                             positionsBlockSchema,
