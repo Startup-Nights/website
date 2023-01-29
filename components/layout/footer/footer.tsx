@@ -15,7 +15,6 @@ export const Footer = ({ data, icon }) => {
                 <div className="flex justify-between items-center gap-6 flex-wrap">
                     <Link href="/" className="group mx-2 flex items-center font-bold tracking-tight text-gray-400 dark:text-gray-300 opacity-50 hover:opacity-100 transition duration-150 ease-out whitespace-nowrap">
                         <Icon
-                            parentColor={data.color}
                             data={{
                                 name: icon.name,
                                 color: data.color === "primary" ? "primary" : icon.color,

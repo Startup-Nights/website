@@ -4,7 +4,7 @@ import { Container } from "../util/container";
 import { Icon } from "../util/icon";
 import { iconSchema } from "../util/icon";
 
-export const Feature = ({ featuresColor, data, tinaField }) => {
+export const Feature = ({ data, tinaField }) => {
     return (
         <div
             data-tinafield={tinaField}
@@ -14,7 +14,6 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
             {data.icon && (
                 <Icon
                     tinaField={`${tinaField}.icon`}
-                    parentColor={featuresColor}
                     data={{ size: "large", ...data.icon }}
                 />
             )}
@@ -51,7 +50,6 @@ export const Features = ({ data, parentField }) => {
                         return (
                             <Feature
                                 tinaField={`${parentField}.items.${i}`}
-                                featuresColor={data.color}
                                 key={i}
                                 data={block}
                             />
