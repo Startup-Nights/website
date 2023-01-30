@@ -6,6 +6,7 @@ blocks:
     color: default
     _template: content
   - open_positions:
+      - {}
       - title: test
         description: diese position kümmert sich um
         qualifications:
@@ -14,13 +15,15 @@ blocks:
           - tests
           - test
         link: hello
-      - title: Head Brand and Visual Design
+      - title: test
+        description: hfjf
         qualifications:
-          - some quali
+          - some gffkjgkkhhkjh
           - some quali
           - some quali
           - some quali
         link: 'https://startup-nights.ch'
     _template: positions
 ---
+
 
