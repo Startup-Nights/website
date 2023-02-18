@@ -6,7 +6,6 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { Template } from "tinacms";
 
 export const Hero = ({ data, parentField }) => {
-
     return (
         <Section>
             <Container

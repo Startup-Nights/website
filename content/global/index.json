@@ -1,48 +1,58 @@
 {
-  "header": {
-    "name": "Tina Starter",
-    "color": "default",
-    "nav": [
-      {
-        "href": "",
-        "label": "Home"
-      },
-      {
-        "href": "hiring",
-        "label": "Hiring"
-      },
-      {
-        "href": "about",
-        "label": "About"
-      },
-      {
-        "href": "posts",
-        "label": "Blog"
-      }
-    ]
-  },
-  "footer": {
-    "copyright": "2023 Startup Nights",
-    "navitems": [
-      {
-        "title": "Startup Nights",
-        "listitems": [
-          {
-            "title": "About",
-            "link": "/about"
-          }
+    "header": {
+        "name": "Tina Starter",
+        "color": "default",
+        "nav": [
+            {
+                "href": "hiring",
+                "label": "We are hiring!"
+            }
+        ],
+        "social": [
+            {
+                "title": "instagram",
+                "link": "https://www.instagram.com/startup_nights/"
+            },
+            {
+                "title": "linkedin",
+                "link": "https://www.linkedin.com/company/startup-nights"
+            },
+            {
+                "title": "youtube",
+                "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
+            }
         ]
-      }
-    ],
-    "social": {
-      "facebook": "/",
-      "twitter": "/",
-      "instagram": "/"
+    },
+    "footer": {
+        "copyright": "2023 Startup Nights",
+        "navitems": [
+            {
+                "title": "Startup Nights",
+                "listitems": [
+                    {
+                        "title": "About",
+                        "link": "/about"
+                    }
+                ]
+            }
+        ],
+        "social": [
+            {
+                "title": "instagram",
+                "link": "https://www.instagram.com/startup_nights/"
+            },
+            {
+                "title": "github",
+                "link": "https://github.com/Startup-Nights/website"
+            },
+            {
+                "title": "linkedin",
+                "link": "https://www.linkedin.com/company/startup-nights"
+            },
+            {
+                "title": "youtube",
+                "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
+            }
+        ]
     }
-  },
-  "theme": {
-    "color": "blue",
-    "font": "sans",
-    "darkMode": "system"
-  }
 }
