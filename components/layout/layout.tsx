@@ -11,7 +11,7 @@ export const Layout = ({ data = layoutData, children }) => {
                 <title>Startup Nights</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <div className='min-h-screen flex flex-col' >
+            <div className='min-h-screen flex flex-col'>
                 <Header data={data?.header} />
                 <div className="flex-1 text-slate-200 bg-slate-900 flex flex-col">
                     {children}
