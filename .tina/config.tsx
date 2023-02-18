@@ -199,6 +199,24 @@ const config = defineStaticConfig({
                                     },
                                 ],
                             },
+                            {
+                                type: "object",
+                                label: "Social Links",
+                                name: "social",
+                                list: true,
+                                fields: [
+                                    {
+                                        type: "string",
+                                        label: "Title",
+                                        name: "title",
+                                    },
+                                    {
+                                        type: "string",
+                                        label: "Link",
+                                        name: "link",
+                                    },
+                                ],
+                            },
                         ],
                     },
                     {
@@ -246,26 +264,17 @@ const config = defineStaticConfig({
                                 type: "object",
                                 label: "Social Links",
                                 name: "social",
+                                list: true,
                                 fields: [
                                     {
                                         type: "string",
-                                        label: "Facebook",
-                                        name: "facebook",
+                                        label: "Title",
+                                        name: "title",
                                     },
                                     {
                                         type: "string",
-                                        label: "Twitter",
-                                        name: "twitter",
-                                    },
-                                    {
-                                        type: "string",
-                                        label: "Instagram",
-                                        name: "instagram",
-                                    },
-                                    {
-                                        type: "string",
-                                        label: "Github",
-                                        name: "github",
+                                        label: "Link",
+                                        name: "link",
                                     },
                                 ],
                             },
