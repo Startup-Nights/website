@@ -1,6 +1,7 @@
 import React from "react";
 import type { Page } from "../.tina/__generated__/types";
 import { Content } from "./blocks/content";
+import { Gif } from "./blocks/gif";
 import { Hero } from "./blocks/hero";
 import { Positions } from "./blocks/positions";
 import { Testimonial } from "./blocks/testimonial";
@@ -45,6 +46,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Positions data={block} parentField={`blocks.${i}`} />
+                                </div>
+                            );
+                        case "PageBlocksGif":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Gif data={block} />
                                 </div>
                             );
                         default:
