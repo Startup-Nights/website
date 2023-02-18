@@ -1,7 +1,18 @@
 ---
 title: Hiring
 blocks:
-  - open_positions:
+  - text: >
+      # We are looking for volunteers!
+
+
+      ## Join us in organizing one of the most influential startup events in
+      Switzerland.
+    image:
+      src: /uploads/ambient.jpg
+      alt: Volunteers chatting at the Startup Nights 2023
+    _template: hero
+  - title: Open positions
+    open_positions:
       - title: Head of Startup and Corporate Matching
         department: Program
         qualifications:
@@ -406,10 +417,10 @@ blocks:
         link: 'https://forms.gle/kHC7pChfmpjyo8xNA'
     _template: positions
   - body: >
-      # About us
+      ## About us
 
 
-      ## It's more than an startup event
+      ### It's more than an startup event
 
 
       The Startup Nights is comparable to a huge family reunion for the entire
@@ -420,7 +431,7 @@ blocks:
       Startup Nights aim to get bigger and better every year.
 
 
-      ## A team on a mission
+      ### A team on a mission
 
 
       We are a team of 45 passionate people, many of us are entrepreneurs
@@ -437,7 +448,7 @@ blocks:
       impact far beyond the startup scene.
 
 
-      ## Impressions
+      ### Impressions
 
 
       The family grew from 1000 to 8000 visitors in 5 years. We helped the
@@ -445,5 +456,7 @@ blocks:
       Startup Nights. But see for yourself.
     _template: content
 ---
+
+
 
 

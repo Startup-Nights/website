@@ -24,6 +24,11 @@ export const positionsBlockSchema: Template = {
     },
     fields: [
         {
+            type: "string",
+            label: "Title",
+            name: "title",
+        },
+        {
             type: "object",
             label: "Open positions",
             name: "open_positions",
@@ -187,6 +192,10 @@ export const Positions = ({ data, parentField = "" }) => {
     return (
         <Section >
             <Container className={`content-positions`} >
+
+                <h2 className="h2">
+                    {data.title}
+                </h2>
 
                 <div className='flex flex-wrap space-x-2 mb-4'>
                     {departments.map((department: string, i: number) => (

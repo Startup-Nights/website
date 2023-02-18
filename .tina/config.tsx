@@ -1,5 +1,6 @@
 import { defineStaticConfig } from "tinacms";
 import { contentBlockSchema } from "../components/blocks/content";
+import { gifBlockSchema } from "../components/blocks/gif";
 import { positionsBlockSchema } from "../components/blocks/positions";
 import { heroBlockSchema } from "../components/blocks/hero";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
@@ -371,6 +372,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "hiring") {
                             return `/hiring`;
                         }
+                        if (document._sys.filename === "party") {
+                            return `/party`;
+                        }
                         return undefined;
                     },
                 },
@@ -397,6 +401,7 @@ const config = defineStaticConfig({
                             contentBlockSchema,
                             testimonialBlockSchema,
                             positionsBlockSchema,
+                            gifBlockSchema,
                         ],
                     },
                 ],

@@ -8,19 +8,19 @@
  * special block
  */
 @layer base {
-    .content-block h1 {
-        @apply text-4xl pt-4;
+    .content-block h1, .h1 {
+        @apply text-4xl font-bold sm:text-6xl my-8;
     }
 
-    .content-block h2 {
-        @apply text-2xl pt-4;
+    .content-block h2, .h2 {
+        @apply text-2xl font-medium sm:text-4xl my-8;
     }
 
-    .content-block h3 {
-        @apply text-xl pt-4;
+    .content-block h3, .h3 {
+        @apply text-xl sm:text-2xl my-8;
     }
 
-    .content-block p {
-        @apply text-base pt-4;
+    .content-block p, .p {
+        @apply text-base mb-3;
     }
 }
