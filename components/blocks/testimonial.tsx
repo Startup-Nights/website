@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "../util/container";
 import { Section } from "../util/section";
-import type { TinaTemplate } from "tinacms";
+import type { Template } from "tinacms";
 
 export const Testimonial = ({ data, parentField = "" }) => {
     return (
@@ -10,8 +10,8 @@ export const Testimonial = ({ data, parentField = "" }) => {
                 <blockquote>
                     <div
                         className={`relative z-10 max-w-3xl mx-auto text-4xl lg:text-5xl font-bold tracking-normal text-center title-font ${data.color === "primary"
-                                ? `text-white`
-                                : `text-gray-700 dark:text-gray-50`
+                            ? `text-white`
+                            : `text-gray-700 dark:text-gray-50`
                             }`}
                     >
                         <span
@@ -34,8 +34,8 @@ export const Testimonial = ({ data, parentField = "" }) => {
                     <div className={`my-8 flex-grow-0`}>
                         <span
                             className={`block mx-auto h-0.5 w-1/6 ${data.color === "primary"
-                                    ? `bg-blue-600`
-                                    : `bg-gray-200 dark:bg-gray-700`
+                                ? `bg-blue-600`
+                                : `bg-gray-200 dark:bg-gray-700`
                                 }`}
                         ></span>
                     </div>
@@ -43,8 +43,8 @@ export const Testimonial = ({ data, parentField = "" }) => {
                         <p
                             data-tinafield={`${parentField}.author`}
                             className={`tracking-wide title-font font-bold text-lg ${data.color === "primary"
-                                    ? `text-blue-200`
-                                    : `text-blue-500 dark:text-blue-300`
+                                ? `text-blue-200`
+                                : `text-blue-500 dark:text-blue-300`
                                 }`}
                         >
                             {data.author}
@@ -56,7 +56,7 @@ export const Testimonial = ({ data, parentField = "" }) => {
     );
 };
 
-export const testimonialBlockSchema: TinaTemplate = {
+export const testimonialBlockSchema: Template = {
     name: "testimonial",
     label: "Testimonial",
     ui: {

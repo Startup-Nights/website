@@ -1,4 +1,4 @@
-import type { TinaTemplate } from "tinacms";
+import type { Template } from "tinacms";
 import { Container } from "../util/container";
 import { Section } from "../util/section";
 
@@ -30,7 +30,7 @@ export const Positions = ({ data, parentField = "" }) => {
 
 }
 
-export const positionsBlockSchema: TinaTemplate = {
+export const positionsBlockSchema: Template = {
     name: "positions",
     label: "Positions",
     ui: {
