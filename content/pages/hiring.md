@@ -8,7 +8,8 @@ blocks:
       ## Join us in organizing one of the most influential startup events in
       Switzerland.
     image:
-      src: /uploads/ambient.jpg
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
       alt: Volunteers chatting at the Startup Nights 2023
     _template: hero
   - title: Open positions
@@ -456,6 +457,7 @@ blocks:
       Startup Nights. But see for yourself.
     _template: content
 ---
+
 
 
 
