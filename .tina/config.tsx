@@ -13,10 +13,12 @@ const config = defineStaticConfig({
         process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF! || // Vercel branch env
         process.env.HEAD!, // Netlify branch env
     token: process.env.TINA_TOKEN!,
-    loadCustomStore: async () => {
-        const pack = await import("next-tinacms-dos");
-        return pack.TinaCloudDOSMediaStore;
+    media: {
+        loadCustomStore: async () => {
+            const pack = await import("next-tinacms-dos");
+            return pack.TinaCloudDOSMediaStore;
 
+        },
     },
     build: {
         publicFolder: "public", // The public asset folder for your framework
