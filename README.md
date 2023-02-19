@@ -2,15 +2,28 @@
 
 ## Features
 
-- [Tina Headless CMS](https://app.tina.io) for authentication, content modeling, visual editing and team management.
-- [External media provider (DigitalOcean Spaces)](https://tina.io/docs/reference/media/external/do-spaces/)
-- [Vercel](https://vercel.com) deployment to visually edit your site from the `/admin` route.
-- Local development workflow from the filesystem with a local GraqhQL server.
+- [Tina Headless CMS](https://app.tina.io) for authentication, content modeling, visual editing and team management
+- [External media provider (DigitalOcean Spaces)](https://tina.io/docs/reference/media/external/do-spaces/) to store media
+- [Vercel](https://vercel.com) deployment to visually edit your site from the `/admin` route
+- Local development workflow from the filesystem with a local GraqhQL server
 
-## Requirements
+## Requirements and integrations
 
-- Git, [Node.js Active LTS](https://nodejs.org/en/about/releases/), Yarn installed for local development.
-- A [TinaCMS](https://app.tina.io) account for live editing.
+- `git`, `nodejs` and `yarn` installed for local development
+- [TinaCMS](https://app.tina.io) account for live editing
+- [DigitalOcean](https://www.digitalocean.com) account to manage the object storage
+- [Vercel](https://vercel.com) account to manage environment variables, domains and deployments
+- [Mailchimp](https://mailchimp.com/) account to manage the newsletter list and merge fields
+
+```mermaid
+stateDiagram-v2
+    app.tina.io --> website: edit
+    website --> github: update content\n(via commit)
+    github --> vercel: trigger deployment\n(on commit)
+    vercel --> website: update website
+    website --> mailchimp: sign up for\nnewsletter
+    website --> digitalocean_spaces: store images
+```
 
 ## Local Development
 
