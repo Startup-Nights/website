@@ -8,10 +8,12 @@ blocks:
       Eulachhallen Winterthur
       -----------------------
     image:
-      src: /uploads/ambient.jpg
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
       alt: Startup Nights Volunteers chatting
     _template: hero
 ---
+
 
 
 
