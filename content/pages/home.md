@@ -9,10 +9,11 @@ blocks:
       -----------------------
     image:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
       alt: Startup Nights Volunteers chatting
     _template: hero
 ---
+
 
 
 
