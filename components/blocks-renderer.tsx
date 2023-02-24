@@ -4,6 +4,7 @@ import { Content } from "./blocks/content";
 import { Gif } from "./blocks/gif";
 import { Hero } from "./blocks/hero";
 import { Positions } from "./blocks/positions";
+import { Speakers } from "./blocks/speakers";
 import { Testimonial } from "./blocks/testimonial";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
@@ -55,6 +56,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Gif data={block} />
+                                </div>
+                            );
+                        case "PageBlocksSpeakers":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Speakers data={block} />
                                 </div>
                             );
                         default:
