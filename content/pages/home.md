@@ -23,6 +23,69 @@ blocks:
         image:
           src: /media/ambient.jpg
           alt: some alt text
+      - name: some random dude
+        position: some position
+        description: |
+          this random dude does things!
+
+          > did you know?
+        image:
+          src: /media/ambient.jpg
+          alt: some alt text
+      - name: some random dude
+        position: some position
+        description: |
+          this random dude does things!
+
+          > did you know?
+        image:
+          src: /media/ambient.jpg
+          alt: some alt text
+      - name: some random dude
+        position: some position
+        description: |
+          this random dude does things!
+
+          > did you know?
+        image:
+          src: /media/ambient.jpg
+          alt: some alt text
+      - name: some random dude
+        position: some position
+        description: |
+          this random dude does things!
+
+          > did you know?
+        image:
+          src: /media/ambient.jpg
+          alt: some alt text
+      - name: some random dude
+        position: some position
+        description: |
+          this random dude does things!
+
+          > did you know?
+        image:
+          src: /media/ambient.jpg
+          alt: some alt text
+      - name: some random dude
+        position: some position
+        description: |
+          this random dude does things!
+
+          > did you know?
+        image:
+          src: /media/ambient.jpg
+          alt: some alt text
+      - name: some random dude
+        position: some position
+        description: |
+          this random dude does things!
+
+          > did you know?
+        image:
+          src: /media/ambient.jpg
+          alt: some alt text
     _template: speakers
 ---
 
