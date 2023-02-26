@@ -26,12 +26,11 @@ export const Speakers = ({ data }) => {
                 <div className="relative">
                     <div
                         id={'speakers'}
-                        className="relative w-full flex gap-2 md:gap-4 snap-x snap-mandatory overflow-hidden mb-8 md:mb-12 md:px-12"
+                        className="relative w-full flex gap-2 md:gap-4 snap-x overflow-auto scrollbar-hide snap-mandatory mb-8 md:mb-12 md:px-12"
                     >
                         <div className="snap-center shrink-0">
                             <div className="shrink-0 w-4 sm:w-48"></div>
                         </div>
-
                         {data.speakers && data.speakers.map((speaker, i: number) => (
                             <div key={`speaker-${i}`} id={`speaker-${i}`}
                                 className='snap-always snap-center shrink-0 relative h-[300px] md:h-[500px] w-[200px] md:w-[350px] group transition-all hover:scale-95 grid grid-cols-1 md:grid-cols-2'
@@ -57,12 +56,12 @@ export const Speakers = ({ data }) => {
                     <button
                         onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: -100, behavior: 'smooth' })}
                     >
-                        <ArrowLongLeftIcon className="h-4 w-4 md:h-6 md:w-6" />
+                        <ArrowLongLeftIcon className="h-6 w-6" />
                     </button>
                     <button
                         onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: 100, behavior: 'smooth' })}
                     >
-                        <ArrowLongRightIcon className="h-4 w-4 md:h-6 md:w-6" />
+                        <ArrowLongRightIcon className="h-6 w-6" />
                     </button>
                 </div>
 
