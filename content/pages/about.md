@@ -1,13 +1,16 @@
 ---
 title: About
 blocks:
+  - text: |
+      ##### About us
+
+      # It's more than a startup event
+    image:
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+      alt: Volunteers at Startup Nights 2022
+    _template: hero
   - body: >
-      ## About us
-
-
-      ### It's more than a startup event
-
-
       The Startup Nights is comparable to a huge family reunion for the entire
       startup ecosystem. Where everyone belongs and feels at home.
 
@@ -41,6 +44,7 @@ blocks:
       Startup Nights.
     _template: content
 ---
+
 
 
 

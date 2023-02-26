@@ -6,6 +6,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, } from 'react'
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import { ArrowLongRightIcon, ArrowLongLeftIcon, XCircleIcon } from "@heroicons/react/24/outline";
+import { SocialIcon } from "../items/social";
 
 export const Speakers = ({ data }) => {
     const [isOpen, setIsOpen] = React.useState(false)
@@ -21,7 +22,7 @@ export const Speakers = ({ data }) => {
             <Container className="relative max-w-full py-12 sm:py-24">
                 <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} />
 
-                <h2 className="h2 text-center mb-16">{data?.speakers_title}</h2>
+                <h3 className="h3 text-center mb-16 md:mb-24">{data?.speakers_title}</h3>
 
                 <div className="relative">
                     <div
@@ -33,7 +34,7 @@ export const Speakers = ({ data }) => {
                         </div>
                         {data.speakers && data.speakers.map((speaker, i: number) => (
                             <div key={`speaker-${i}`} id={`speaker-${i}`}
-                                className='snap-always snap-center shrink-0 relative h-[300px] md:h-[500px] w-[200px] md:w-[350px] group transition-all hover:scale-95 grid grid-cols-1 md:grid-cols-2'
+                                className='snap-always snap-center shrink-0 relative h-[300px] md:h-[450px] w-[200px] md:w-[350px] group transition-all hover:scale-95 grid grid-cols-1 md:grid-cols-2'
                                 onClick={() => update(speaker)}
                             >
                                 <div className='absolute inset-0 w-full'>
@@ -41,8 +42,8 @@ export const Speakers = ({ data }) => {
                                     <div className="absolute inset-0 mix-blend-multiply bg-slate-400 group-hover:bg-slate-500" />
                                 </div>
                                 <div className='relative grid content-end p-4 h-full'>
-                                    <p className="font-extrabold uppercase">{speaker?.name}</p>
-                                    <p className="text-sm font-light uppercase">{speaker?.position}</p>
+                                    <p className="h5">{speaker?.name}</p>
+                                    <p className="h6 mb-0">{speaker?.position}</p>
                                 </div>
                             </div>
                         ))}
@@ -104,7 +105,7 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                             >
                                 <Dialog.Panel className="w-full h-full transform bg-slate-900 p-6 text-left transition-all text-slate-100 overflow-auto">
 
-                                    <div className="absolute top-3 right-3 md:top-5 md:right-10 z-30">
+                                    <div className="absolute top-3 right-3 md:top-5 md:right-5 z-30">
                                         <button
                                             type="button"
                                             className="inline-flex justify-center text-sm font-medium text-slate-100"
@@ -115,16 +116,16 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                                     </div>
 
                                     <div className='z-20 grid grid-cols-1 md:grid-cols-2 h-full'>
-                                        <div className="relative h-[300px] md:h-full">
-                                            <div className='absolute inset-0 w-full'>
+                                        <div className="relative min-h-[200px] sm:min-h-[400px] md:h-full">
+                                            <div className='absolute inset-0 w-full min-h-[200px] sm:min-h-[400px]'>
                                                 <img className="w-full h-full object-cover" src={speaker?.image?.src} />
                                             </div>
                                         </div>
-                                        <div className='md:px-16'>
-                                            <h2 className='h1 text-4xl md:text-6xl xl:text-8xl font-bold uppercase'>
+                                        <div className='py-4 md:p-16'>
+                                            <h2 className='h1'>
                                                 {speaker?.name}
                                             </h2>
-                                            <h3 className='h2 text-2xl md:text-3xl xl:text-4xl font-medium uppercase'>
+                                            <h3 className='h5'>
                                                 {speaker?.position}
                                             </h3>
 
@@ -132,6 +133,15 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                                                 <TinaMarkdown content={speaker?.description} />
                                             </div>
 
+                                            <div className="flex mt-8 justify-start gap-4">
+                                                {speaker.social_links && speaker.social_links.linkedin && (
+                                                    <a href={speaker.social_links.linkedin} target='_blank' className="text-gray-500 hover:text-gray-400">
+                                                        <span className="sr-only">LinkedIn</span>
+                                                        <SocialIcon name={'linkedin'} className="h-8 w-8" aria-hidden="true" />
+                                                    </a>
+                                                )}
+
+                                            </div>
                                         </div>
                                     </div>
                                 </Dialog.Panel>
@@ -154,6 +164,9 @@ export const speakersBlockSchema: Template = {
                 {
                     name: "some random dude",
                     position: "some position",
+                    social_links: {
+                        linkdin: "",
+                    },
                     image: {
                         src: "/media/ambient.jpg",
                         alt: "some alt text"
@@ -188,6 +201,18 @@ export const speakersBlockSchema: Template = {
                     type: "rich-text",
                     label: "Description",
                     name: "description",
+                },
+                {
+                    type: "object",
+                    label: "Social links",
+                    name: "social_links",
+                    fields: [
+                        {
+                            type: "string",
+                            label: "LinkedIn",
+                            name: "linkedin",
+                        },
+                    ]
                 },
                 {
                     type: "object",

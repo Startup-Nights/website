@@ -1,16 +1,26 @@
 ---
 title: Tina Cloud Starter
 blocks:
-  - text: |
+  - text: >
+      ##### 2 & 3 November, Winterthur
+
+
       # Startup Nights
 
-      2 & 3 November 2023\
-      Eulachhallen Winterthur
-      -----------------------
+
+      Connecting founders with what and whom they need while building a new,
+      inclusive, and more purposeful culture of entrepreneurship.
+    cta:
+      link: 'https://startup-nights.ch'
+      text: Pre-register for Startup Nights 23
     image:
+      src: ''
+      alt: ''
+    video:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
-      alt: Startup Nights Volunteers chatting
+        https://startupnights.fra1.cdn.digitaloceanspaces.com/2022%2Fvideos%2F2022-aftermovie.mp4
+      fallback: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
   - speakers_title: Speakers at Startup Nights
     speakers:
@@ -42,6 +52,8 @@ blocks:
           Copenhagen Business School. He is widely regarded as one of the
           pioneers of the Swiss crypto-financial sector, having founded the
           first Swiss company in this space.
+        social_links:
+          linkedin: 'https://www.linkedin.com/in/niklasnikolajsen/'
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/niklas-nikolajsen-von-karlshof.png
@@ -58,6 +70,8 @@ blocks:
           In addition to online retail, the promotion of startups and
           entrepreneurship in Switzerland are close to his heart. That is why he
           has been involved in "Die Höhle der Löwen Schweiz" since 2019.
+        social_links:
+          linkedin: 'https://www.linkedin.com/in/roland-brack-291205118/'
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/roland-brack.jpg
@@ -88,6 +102,9 @@ blocks:
 
           She is also a “shark” on the Swiss version of Shark Tank called “Höhle
           der Löwen Schweiz.”
+        social_links:
+          linkedin: >-
+            https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAAAALCgBgIcd3DPkXgA7KX0LcEFPkyKRKKI&keywords=bettina%20hein&origin=RICH_QUERY_SUGGESTION&position=0&searchId=aac1f137-5b0e-4315-8d9b-6bc727bb6a91&sid=fkG
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/bettina-hein.png
@@ -106,12 +123,18 @@ blocks:
           Pascal also spent time as a management trainee for Bischofszell
           Nahrungsmittel AG and Groupe ELSA-Mifroma. In 2010, Pascal became the
           COO of Flexopac AG before leaving to start Planted in 2017.
+        social_links:
+          linkedin: 'https://www.linkedin.com/in/pascalsbieri/'
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/pascal-bieri.jpg
           alt: Pascal Bieri Planted
     _template: speakers
 ---
+
+
+
+
 
 
 
