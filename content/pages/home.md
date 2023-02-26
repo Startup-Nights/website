@@ -18,7 +18,7 @@ blocks:
       alt: ''
     video:
       src: >-
-        https://startupnights.fra1.cdn.digitaloceanspaces.com/2022%2Fvideos%2F2022-aftermovie.mp4
+        https://startupnights.fra1.digitaloceanspaces.com/2022/videos/2022-aftermovie.mp4
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
@@ -131,6 +131,8 @@ blocks:
           alt: Pascal Bieri Planted
     _template: speakers
 ---
+
+
 
 
 

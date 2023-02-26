@@ -27,7 +27,7 @@ export const Hero = ({ data }) => {
                             poster={data.video.fallback}
                         >
                             <source
-                                src="https://tinyrocket.fra1.digitaloceanspaces.com/background_video.mp4"
+                                src={data.video.src}
                                 type="video/mp4"
                             />
                             Your browser does not support the video tag.
@@ -113,7 +113,7 @@ export const heroBlockSchema: Template = {
                 {
                     name: "src",
                     label: "Video source",
-                    type: "string",
+                    type: "image",
                 },
                 {
                     name: "fallback",
