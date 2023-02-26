@@ -5,6 +5,7 @@ import { speakersBlockSchema } from "../components/blocks/speakers";
 import { positionsBlockSchema } from "../components/blocks/positions";
 import { heroBlockSchema } from "../components/blocks/hero";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
+import { partnersBlockSchema } from "../components/blocks/partners";
 import { ColorPickerInput } from "../components/fields/color";
 
 const config = defineStaticConfig({
@@ -396,6 +397,7 @@ const config = defineStaticConfig({
                             heroBlockSchema,
                             contentBlockSchema,
                             speakersBlockSchema,
+                            partnersBlockSchema,
                             testimonialBlockSchema,
                             positionsBlockSchema,
                             gifBlockSchema,

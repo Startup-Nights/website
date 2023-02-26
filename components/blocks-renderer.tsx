@@ -3,6 +3,7 @@ import type { Page } from "../.tina/__generated__/types";
 import { Content } from "./blocks/content";
 import { Gif } from "./blocks/gif";
 import { Hero } from "./blocks/hero";
+import { Partners } from "./blocks/partners";
 import { Positions } from "./blocks/positions";
 import { Speakers } from "./blocks/speakers";
 import { Testimonial } from "./blocks/testimonial";
@@ -67,6 +68,16 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     <Speakers data={block} />
                                 </div>
                             );
+                        case "PageBlocksPartner_list":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Partners data={block} />
+                                </div>
+                            );
+
                         default:
                             return null;
                     }
