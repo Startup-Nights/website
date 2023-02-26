@@ -5,7 +5,7 @@ blocks:
       # We are looking for volunteers!
 
 
-      ## Join us in organizing one of the most influential startup events in
+      Join us in organizing one of the most influential startup events in
       Switzerland.
     image:
       src: >-
@@ -418,6 +418,7 @@ blocks:
         link: 'https://forms.gle/kHC7pChfmpjyo8xNA'
     _template: positions
 ---
+
 
 
 

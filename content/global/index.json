@@ -6,6 +6,10 @@
             {
                 "href": "hiring",
                 "label": "We are hiring!"
+            },
+            {
+                "href": "about",
+                "label": "About"
             }
         ],
         "social": [

@@ -40,13 +40,13 @@ export default function Modal({ isOpen, setIsOpen, position }: any) {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-white p-6 md:p-12 text-left align-middle shadow-xl transition-all">
-                                    <Dialog.Title as="h3" className="text-3xl font-bold leading-6 text-gray-900">
+                                <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-gray-100 p-6 md:p-12 text-left align-middle shadow-xl transition-all">
+                                    <Dialog.Title as="h3" className="h3 text-gray-900">
                                         {position.title}
                                     </Dialog.Title>
                                     <div className="mt-6">
                                         {position.description ? (
-                                            <p className="">
+                                            <p className="p">
                                                 {position.description}
                                             </p>
                                         ) : (<span></span>)}
@@ -81,7 +81,7 @@ export default function Modal({ isOpen, setIsOpen, position }: any) {
                                     <div className="mt-4 space-x-2">
                                         <button
                                             type="button"
-                                            className="inline-flex justify-center rounded-md border border-transparent bg-gray-100 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200"
+                                            className="inline-flex justify-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-300"
                                             onClick={closeModal}
                                         >
                                             Schliessen
@@ -90,7 +90,7 @@ export default function Modal({ isOpen, setIsOpen, position }: any) {
                                             href={position.link}
                                             target='blank'
                                             type="button"
-                                            className="inline-flex justify-center rounded-md border border-transparent bg-gray-100 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200"
+                                            className="inline-flex justify-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-300"
                                             onClick={party}
                                         >
                                             Count me in 🥳

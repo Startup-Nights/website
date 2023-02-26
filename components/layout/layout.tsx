@@ -13,7 +13,7 @@ export const Layout = ({ data = layoutData, children }) => {
             </Head>
             <div className='min-h-screen flex flex-col'>
                 <Header data={data?.header} />
-                <div className="flex-1 text-slate-200 bg-slate-900 flex flex-col">
+                <div className="flex-1 text-white bg-slate-900 flex flex-col">
                     {children}
                 </div>
                 <Footer

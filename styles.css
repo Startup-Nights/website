@@ -9,19 +9,25 @@
  */
 @layer base {
     .content-block h1, .h1 {
-        @apply text-4xl font-medium sm:text-6xl my-8;
+        @apply text-h1sm md:text-h1 uppercase mb-8 font-extrabold;
     }
-
     .content-block h2, .h2 {
-        @apply text-2xl font-normal sm:text-3xl my-8;
+        @apply text-h2sm md:text-h2 uppercase mb-4;
     }
-
     .content-block h3, .h3 {
-        @apply text-xl sm:text-2xl my-8;
+        @apply text-h3sm md:text-h3 uppercase mb-4 font-semibold;
     }
-
+    .content-block h4, .h4 {
+        @apply text-h4sm md:text-h4 uppercase mb-4;
+    }
+    .content-block h5, .h5 {
+        @apply text-h5 uppercase mb-4 font-bold;
+    }
+    .content-block h6, .h6 {
+        @apply text-h6 uppercase mb-4 font-medium;
+    }
     .content-block p, .p {
-        @apply text-base mb-3;
+        @apply text-p mb-4;
     }
 
     .scrollbar-hide {

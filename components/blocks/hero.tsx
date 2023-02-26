@@ -3,6 +3,7 @@ import { Container } from "../util/container";
 import { Section } from "../util/section";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { Template } from "tinacms";
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
 export const Hero = ({ data }) => {
     return (
@@ -16,17 +17,46 @@ export const Hero = ({ data }) => {
                     </div>
                 )}
 
-                {data.text && (
-                    <div className="relative">
-                        <Container>
-                            <div className="sm:grid sm:grid-cols-2">
-                                <div className="content-block">
-                                    <TinaMarkdown content={data.text} />
-                                </div>
-                            </div>
-                        </Container>
+                {data.video && data.video.src && (
+                    <div className='absolute inset-0'>
+                        <video
+                            autoPlay
+                            loop={true}
+                            muted
+                            className="h-full w-full image object-cover"
+                            poster={data.video.fallback}
+                        >
+                            <source
+                                src="https://tinyrocket.fra1.digitaloceanspaces.com/background_video.mp4"
+                                type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <div className="absolute inset-0 mix-blend-multiply bg-slate-400" />
                     </div>
                 )}
+
+
+                <div className="relative">
+                    <Container>
+                        <div className="md:grid md:grid-cols-3">
+                            {data.text && (
+                                <div className="content-block col-span-2">
+                                    <TinaMarkdown content={data.text} />
+                                </div>
+                            )}
+                        </div>
+
+                        {data.cta && (
+                            <div className='relative'>
+                                <a className="h6 uppercase flex items-center hover:underline hover:underline-offset-4" href={data.cta.link}>
+                                    <ArrowLongRightIcon className="h-6 w-6 mr-3" /> {data.cta.text}
+                                </a>
+                            </div>
+                        )}
+                    </Container>
+                </div>
             </Container>
         </Section >
     );
@@ -40,6 +70,23 @@ export const heroBlockSchema: Template = {
             label: "Text",
             name: "text",
             type: "rich-text",
+        },
+        {
+            label: "Call to action",
+            name: "cta",
+            type: "object",
+            fields: [
+                {
+                    label: "Link",
+                    name: "link",
+                    type: "string"
+                },
+                {
+                    label: "Text",
+                    name: "text",
+                    type: "string"
+                }
+            ]
         },
         {
             type: "object",
@@ -58,5 +105,23 @@ export const heroBlockSchema: Template = {
                 },
             ],
         },
+        {
+            type: "object",
+            label: "Background video",
+            name: "video",
+            fields: [
+                {
+                    name: "src",
+                    label: "Video source",
+                    type: "string",
+                },
+                {
+                    name: "fallback",
+                    label: "Fallback image",
+                    type: "image",
+                },
+            ],
+        },
+
     ],
 };

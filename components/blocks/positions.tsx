@@ -193,7 +193,7 @@ export const Positions = ({ data, parentField = "" }) => {
         <Section >
             <Container className={`content-positions`} >
 
-                <h2 className="h2">
+                <h2 className="h3">
                     {data.title}
                 </h2>
 
