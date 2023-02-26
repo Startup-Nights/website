@@ -5,7 +5,7 @@ blocks:
       ## About us
 
 
-      ### It's more than an startup event
+      ### It's more than a startup event
 
 
       The Startup Nights is comparable to a huge family reunion for the entire
