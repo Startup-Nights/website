@@ -16,7 +16,7 @@ export const Footer = ({ data }) => {
                                 <div key={`${navitem.title}-${i}`} className="md:grid md:grid-cols-2 md:gap-8 col-span-1">
                                     <div key={navitem.title}>
                                         <h3 className="text-sm font-semibold leading-6 text-white">{navitem.title}</h3>
-                                        <ul role="list" className="mt-6 space-y-4">
+                                        <ul role="list" className="mt-6 space-y-3">
                                             {navitem.listitems.map((item) => (
                                                 <li key={item.title}>
                                                     <a href={item.link} className="text-sm leading-6 text-gray-300 hover:text-white">
