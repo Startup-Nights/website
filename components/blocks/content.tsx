@@ -7,8 +7,16 @@ import { Container } from "../util/container";
 export const Content = ({ data }) => {
     return (
         <Section >
-            <Container className={`content-block`} >
-                <TinaMarkdown content={data.body} />
+            <Container className={``} >
+                <div className="content-block grid md:grid-cols-2 md:gap-x-24">
+                    <div>
+                        <TinaMarkdown content={data.first_row} />
+                    </div>
+
+                    <div>
+                        <TinaMarkdown content={data.second_row} />
+                    </div>
+                </div>
             </Container>
         </Section >
     );
@@ -20,8 +28,14 @@ export const contentBlockSchema: Template = {
     fields: [
         {
             type: "rich-text",
-            label: "Body",
-            name: "body",
+            label: "First row",
+            name: "first_row",
+            templates: []
+        },
+        {
+            type: "rich-text",
+            label: "Second row",
+            name: "second_row",
             templates: []
         },
     ],
