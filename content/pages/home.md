@@ -22,7 +22,13 @@ blocks:
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
-  - speakers_title: Speakers at Startup Nights
+  - text: |
+      ### Speakers at Startup Nights
+
+      Check who took the stage at previous events
+    cta:
+      link: ''
+      text: ''
     speakers:
       - name: Niklas Nikolajsen von Karlshof
         position: Founder Bitcoin Suisse AG
@@ -130,7 +136,25 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/pascal-bieri.jpg
           alt: Pascal Bieri Planted
     _template: speakers
+  - text: |
+      ### Main Partner
+    partners:
+      - src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2022/partners/ubs.png
+        alt: UBS
+        link: 'https://www.ubs.com/ch/en.html'
+      - src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2022/partners/mobiliar.png
+        alt: die Mobiliar
+        link: 'https://www.mobiliar.ch/'
+      - src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2022/partners/stadt-winterthur.png
+        alt: Stadt Winterthur
+        link: 'https://stadt.winterthur.ch/'
+    _template: partner_list
 ---
+
+
 
 
 

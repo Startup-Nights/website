@@ -3,12 +3,12 @@ import { Container } from "../util/container";
 import { Section } from "../util/section";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { Template } from "tinacms";
-import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import CTA from "./cta";
 
 export const Hero = ({ data }) => {
     return (
         <Section>
-            <Container className="relative max-w-full py-12 sm:py-24">
+            <Container className="relative max-w-full py-12">
 
                 {data.image && data.image.src && (
                     <div className='absolute inset-0'>
@@ -48,12 +48,8 @@ export const Hero = ({ data }) => {
                             )}
                         </div>
 
-                        {data.cta && (
-                            <div className='relative'>
-                                <a className="h6 uppercase flex items-center hover:underline hover:underline-offset-4" href={data.cta.link}>
-                                    <ArrowLongRightIcon className="h-6 w-6 mr-3" /> {data.cta.text}
-                                </a>
-                            </div>
+                        {data.cta && data.cta.text !== '' && (
+                            <CTA data={data} />
                         )}
                     </Container>
                 </div>

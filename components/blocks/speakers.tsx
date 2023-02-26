@@ -7,6 +7,7 @@ import { Fragment, } from 'react'
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import { ArrowLongRightIcon, ArrowLongLeftIcon, XCircleIcon } from "@heroicons/react/24/outline";
 import { SocialIcon } from "../items/social";
+import CTA from "./cta";
 
 export const Speakers = ({ data }) => {
     const [isOpen, setIsOpen] = React.useState(false)
@@ -19,19 +20,23 @@ export const Speakers = ({ data }) => {
 
     return (
         <Section>
-            <Container className="relative max-w-full py-12 sm:py-24">
+            <Container className="relative max-w-full">
                 <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} />
 
-                <h3 className="h3 text-center mb-16 md:mb-24">{data?.speakers_title}</h3>
+                <Container className="content-block">
+                    <TinaMarkdown content={data.text} />
+
+                    {data.cta && data.cta.text !== '' && (
+                        <CTA data={data} />
+                    )}
+                </Container>
+
 
                 <div className="relative">
                     <div
                         id={'speakers'}
                         className="relative w-full flex gap-2 md:gap-4 snap-x overflow-auto scrollbar-hide snap-mandatory mb-8 md:mb-12 md:px-12"
                     >
-                        <div className="snap-center shrink-0">
-                            <div className="shrink-0 w-4 sm:w-48"></div>
-                        </div>
                         {data.speakers && data.speakers.map((speaker, i: number) => (
                             <div key={`speaker-${i}`} id={`speaker-${i}`}
                                 className='snap-always snap-center shrink-0 relative h-[300px] md:h-[450px] w-[200px] md:w-[350px] group transition-all hover:scale-95 grid grid-cols-1 md:grid-cols-2'
@@ -177,9 +182,26 @@ export const speakersBlockSchema: Template = {
     },
     fields: [
         {
-            label: "Speakers title",
-            name: "speakers_title",
-            type: "string",
+            label: "Text",
+            name: "text",
+            type: "rich-text",
+        },
+        {
+            label: "Call to action",
+            name: "cta",
+            type: "object",
+            fields: [
+                {
+                    label: "Link",
+                    name: "link",
+                    type: "string"
+                },
+                {
+                    label: "Text",
+                    name: "text",
+                    type: "string"
+                }
+            ]
         },
         {
             type: "object",
