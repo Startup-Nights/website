@@ -19,7 +19,7 @@ export const Partners = ({ data }) => {
                     <CTA data={data} />
                 )}
 
-                <ul className="grid grid-cols-3 gap-24 py-12">
+                <ul className="grid grid-cols-3 gap-4 md:gap-24 py-4 md:py-12">
                     {data.partners && data.partners.map((partner, i: number) => (
                         <li key={`partner-${i}`}>
                             <a href={partner?.link} target={'_blank'}>
