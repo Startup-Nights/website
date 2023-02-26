@@ -92,7 +92,7 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                     </Transition.Child>
 
                     <div className="fixed inset-0 overflow-y-auto">
-                        <div className="flex h-full w-full items-center justify-center text-center">
+                        <div className="flex h-full w-full mx-auto items-center justify-center text-center">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -102,7 +102,7 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full h-full transform overflow-hidden bg-slate-900 p-6 text-left transition-all text-slate-100">
+                                <Dialog.Panel className="w-full h-full transform bg-slate-900 p-6 text-left transition-all text-slate-100 overflow-auto">
 
                                     <div className="absolute top-3 right-3 md:top-5 md:right-10 z-30">
                                         <button
@@ -115,7 +115,7 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                                     </div>
 
                                     <div className='z-20 grid grid-cols-1 md:grid-cols-2 h-full'>
-                                        <div className="relative h-full">
+                                        <div className="relative h-[300px] md:h-full">
                                             <div className='absolute inset-0 w-full'>
                                                 <img className="w-full h-full object-cover" src={speaker?.image?.src} />
                                             </div>
