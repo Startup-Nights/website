@@ -14,6 +14,22 @@ blocks:
     _template: hero
   - speakers_title: Speakers at Startup Nights
     speakers:
+      - name: Roland Brack
+        position: Founder BRACK.CH
+        description: >
+          As a student at the University of Applied Sciences Brugg-Windisch,
+          Roland Brack founded BRACK.CH in 1994. Early on, BRACK.CH focused on
+          the Internet and e-commerce and is now the largest independent online
+          retailer in Switzerland.
+
+
+          In addition to online retail, the promotion of startups and
+          entrepreneurship in Switzerland are close to his heart. That is why he
+          has been involved in "Die Höhle der Löwen Schweiz" since 2019.
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/roland-brack.jpg
+          alt: Roland Brack
       - name: Bettina Hein
         position: Serial Software Entrepreneur
         description: >
@@ -64,6 +80,7 @@ blocks:
           alt: Pascal Bieri Planted
     _template: speakers
 ---
+
 
 
 
