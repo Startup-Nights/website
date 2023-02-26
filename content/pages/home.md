@@ -14,6 +14,38 @@ blocks:
     _template: hero
   - speakers_title: Speakers at Startup Nights
     speakers:
+      - name: Niklas Nikolajsen von Karlshof
+        position: Founder Bitcoin Suisse AG
+        description: >
+          Niklas Nikolajsen von Karlshof founded Bitcoin Suisse AG in mid-2013.
+          Niklas has a background of more than 15 years as a professional
+          software architect & software developer, primarily in the financial,
+          manufacturing, and public sectors.
+
+
+          In 2010 after discovering Bitcoin, he became one of the early
+          adopters, investors, and proponents of crypto assets. In 2011 he moved
+          from Denmark to Switzerland and worked for a major Swiss financial
+          institution, as a consultant until he founded Bitcoin Suisse AG in
+          2013, together with partners. He served as CEO of the company until
+          the end of 2017 and subsequently as Chairman of the Board of Directors
+          until the end of 2021. He no longer holds a function in a governing
+          body.
+
+
+          Besides being a pioneer in the crypto-financial services industry,
+          Niklas Nikolajsen has been named to the prestigious list of Top 100
+          Bankers in Switzerland by BILANZ Magazine four times.
+
+
+          Niklas Nikolajsen holds a degree in computer science from the
+          Copenhagen Business School. He is widely regarded as one of the
+          pioneers of the Swiss crypto-financial sector, having founded the
+          first Swiss company in this space.
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/niklas-nikolajsen-von-karlshof.png
+          alt: Niklas Nikolajsen von Karlshof
       - name: Roland Brack
         position: Founder BRACK.CH
         description: >
@@ -80,6 +112,7 @@ blocks:
           alt: Pascal Bieri Planted
     _template: speakers
 ---
+
 
 
 
