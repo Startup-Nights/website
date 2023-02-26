@@ -5,7 +5,7 @@ import type { Template } from "tinacms";
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, } from 'react'
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
-import { XCircleIcon } from "@heroicons/react/24/outline";
+import { ArrowLongRightIcon, ArrowLongLeftIcon, XCircleIcon } from "@heroicons/react/24/outline";
 
 export const Speakers = ({ data }) => {
     const [isOpen, setIsOpen] = React.useState(false)
@@ -24,10 +24,17 @@ export const Speakers = ({ data }) => {
                 <h2 className="h2 text-center mb-16">{data?.speakers_title}</h2>
 
                 <div className="relative">
-                    <div className="relative w-full flex gap-4 snap-x snap-mandatory overflow-x-auto pb-14 px-12">
+                    <div
+                        id={'speakers'}
+                        className="relative w-full flex gap-2 md:gap-4 snap-x snap-mandatory overflow-hidden mb-8 md:mb-12 md:px-12"
+                    >
+                        <div className="snap-center shrink-0">
+                            <div className="shrink-0 w-4 sm:w-48"></div>
+                        </div>
+
                         {data.speakers && data.speakers.map((speaker, i: number) => (
-                            <div key={`speaker-${i}`}
-                                className='snap-always snap-center shrink-0 relative h-[400px] md:h-[500px] w-[300px] md:w-[350px] group transition-all hover:scale-95 grid grid-cols-1 md:grid-cols-2'
+                            <div key={`speaker-${i}`} id={`speaker-${i}`}
+                                className='snap-always snap-center shrink-0 relative h-[300px] md:h-[500px] w-[200px] md:w-[350px] group transition-all hover:scale-95 grid grid-cols-1 md:grid-cols-2'
                                 onClick={() => update(speaker)}
                             >
                                 <div className='absolute inset-0 w-full'>
@@ -40,10 +47,26 @@ export const Speakers = ({ data }) => {
                                 </div>
                             </div>
                         ))}
+                        <div className="snap-center shrink-0">
+                            <div className="shrink-0 w-4 sm:w-48"></div>
+                        </div>
                     </div>
                 </div>
 
-            </Container>
+                <div className="flex justify-center gap-x-4">
+                    <button
+                        onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: -100, behavior: 'smooth' })}
+                    >
+                        <ArrowLongLeftIcon className="h-4 w-4 md:h-6 md:w-6" />
+                    </button>
+                    <button
+                        onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: 100, behavior: 'smooth' })}
+                    >
+                        <ArrowLongRightIcon className="h-4 w-4 md:h-6 md:w-6" />
+                    </button>
+                </div>
+
+            </Container >
         </Section >
     );
 };
@@ -82,13 +105,13 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                             >
                                 <Dialog.Panel className="w-full h-full transform overflow-hidden bg-slate-900 p-6 text-left transition-all text-slate-100">
 
-                                    <div className="absolute top-5 right-10 z-30">
+                                    <div className="absolute top-3 right-3 md:top-5 md:right-10 z-30">
                                         <button
                                             type="button"
                                             className="inline-flex justify-center text-sm font-medium text-slate-100"
                                             onClick={closeModal}
                                         >
-                                            <XCircleIcon className="h-10 w-10" />
+                                            <XCircleIcon className="h-7 w-7 md:h-10 md:w-10" />
                                         </button>
                                     </div>
 
