@@ -14,80 +14,57 @@ blocks:
     _template: hero
   - speakers_title: Speakers at Startup Nights
     speakers:
-      - name: some random dude
-        position: some position
-        description: |
-          this random dude does things!
+      - name: Bettina Hein
+        position: Serial Software Entrepreneur
+        description: >
+          Bettina Hein is a serial software entrepreneur that has built
+          technology companies in both Europe and the United States. She is most
+          recently the founder of digital health startup juli, her third
+          software company. She is also the founder of Pixability, a video
+          advertising company in Boston. Prior to Pixability, Bettina co-founded
+          SVOX, the Swiss-based speech technology company which was acquired by
+          Nuance Communications (NUAN) for $125 million.
 
-          > did you know?
-        image:
-          src: /media/ambient.jpg
-          alt: some alt text
-      - name: some random dude
-        position: some position
-        description: |
-          this random dude does things!
 
-          > did you know?
-        image:
-          src: /media/ambient.jpg
-          alt: some alt text
-      - name: some random dude
-        position: some position
-        description: |
-          this random dude does things!
+          Bettina has received numerous awards and recognitions such as the 2018
+          Immigrant Entrepreneur of the Year Award, World Economic Forum Young
+          Global Leader, L’Oreal NEXT Generation Award, and The Boston Business
+          Journal’s “40 Under 40 Award.”
 
-          > did you know?
-        image:
-          src: /media/ambient.jpg
-          alt: some alt text
-      - name: some random dude
-        position: some position
-        description: |
-          this random dude does things!
 
-          > did you know?
-        image:
-          src: /media/ambient.jpg
-          alt: some alt text
-      - name: some random dude
-        position: some position
-        description: |
-          this random dude does things!
+          Bettina holds an MS degree from MIT, a law degree from the University
+          of Constance, and a business degree from the University of St. Gallen.
+          Bettina holds two software patents and is the co-author of Video
+          Marketing for Dummies.
 
-          > did you know?
-        image:
-          src: /media/ambient.jpg
-          alt: some alt text
-      - name: some random dude
-        position: some position
-        description: |
-          this random dude does things!
 
-          > did you know?
+          She is also a “shark” on the Swiss version of Shark Tank called “Höhle
+          der Löwen Schweiz.”
         image:
-          src: /media/ambient.jpg
-          alt: some alt text
-      - name: some random dude
-        position: some position
-        description: |
-          this random dude does things!
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/bettina-hein.png
+          alt: Bettina Hein
+      - name: Pascal Bieri
+        position: Founder & CEO Planted
+        description: >
+          Pascal Bieri is a Swiss entrepreneur and the co-founder of Planted, a
+          company that delivers fresh, healthy meals to busy people.
 
-          > did you know?
-        image:
-          src: /media/ambient.jpg
-          alt: some alt text
-      - name: some random dude
-        position: some position
-        description: |
-          this random dude does things!
 
-          > did you know?
+          Prior to launching Planted, Pascal worked in logistics and operations
+          management for SweetWorks Confections, LLC and Chocolat Frey AG.
+
+
+          Pascal also spent time as a management trainee for Bischofszell
+          Nahrungsmittel AG and Groupe ELSA-Mifroma. In 2010, Pascal became the
+          COO of Flexopac AG before leaving to start Planted in 2017.
         image:
-          src: /media/ambient.jpg
-          alt: some alt text
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/pascal-bieri.jpg
+          alt: Pascal Bieri Planted
     _template: speakers
 ---
+
 
 
 
