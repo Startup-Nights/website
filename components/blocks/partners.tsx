@@ -29,7 +29,6 @@ export const Partners = ({ data }) => {
                         </li>
                     ))}
                 </ul>
-
             </Container>
         </Section >
     );
