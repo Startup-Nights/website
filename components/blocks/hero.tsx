@@ -8,7 +8,7 @@ import CTA from "./cta";
 export const Hero = ({ data }) => {
     return (
         <Section>
-            <Container className="relative max-w-full py-12">
+            <Container width="full" className="relative">
 
                 {data.image && data.image.src && (
                     <div className='absolute inset-0'>
@@ -39,7 +39,7 @@ export const Hero = ({ data }) => {
 
 
                 <div className="relative">
-                    <Container>
+                    <Container paddx="none">
                         <div className="md:grid md:grid-cols-3">
                             {data.text && (
                                 <div className="content-block col-span-2">
