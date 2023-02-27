@@ -7,6 +7,7 @@ import { Fragment, } from 'react'
 
 import { Container } from "../util/container";
 import { Section } from "../util/section";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export const positionsBlockSchema: Template = {
     name: "positions",
@@ -43,26 +44,14 @@ export const positionsBlockSchema: Template = {
                     name: "title",
                 },
                 {
-                    type: "string",
-                    label: "Description",
-                    name: "description",
+                    type: "rich-text",
+                    label: "Text",
+                    name: "text",
                 },
                 {
                     type: "string",
                     label: "Department",
                     name: "department",
-                },
-                {
-                    type: "string",
-                    label: "Qualitications",
-                    name: "qualifications",
-                    list: true,
-                },
-                {
-                    type: "string",
-                    label: "Tasks",
-                    name: "tasks",
-                    list: true,
                 },
                 {
                     type: "string",
@@ -271,7 +260,7 @@ function Modal({ isOpen, setIsOpen, position }: any) {
                     </Transition.Child>
 
                     <div className="fixed inset-0 overflow-y-auto">
-                        <div className="flex h-full w-full mx-auto items-center justify-center text-center">
+                        <div className="flex min-h-full w-full mx-auto items-center justify-center text-center">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -281,48 +270,19 @@ function Modal({ isOpen, setIsOpen, position }: any) {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-gray-100 p-6 md:p-12 text-left align-middle shadow-xl transition-all">
-                                    <Dialog.Title as="h3" className="h3 text-gray-900">
+                                <Dialog.Panel className="w-full max-w-3xl transform rounded-2xl bg-gray-100 px-6 pt-6 pb-4 m-4 md:px-12 md:pt-12 md:pb-6 text-left align-middle shadow-xl transition-all">
+                                    <Dialog.Title as="h3" className="h3 text-gray-900 mt-0">
                                         {position.title}
                                     </Dialog.Title>
-                                    <div className="mt-6">
-                                        {position.description ? (
-                                            <p className="p">
-                                                {position.description}
-                                            </p>
-                                        ) : (<span></span>)}
 
-                                        <div className='py-6'>
-                                            <h3 className='mb-4 text-2xl'>Deine Aufgaben:</h3>
-                                            <ul role="list" className="ml-5 list-disc">
-                                                {position.tasks && position.tasks.map((task: string, i: number) => (
-                                                    <li key={i} className="">
-                                                        <p className="text-sm font-normal text-gray-800">
-                                                            {task}
-                                                        </p>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-
-                                        <div className='py-6'>
-                                            <h3 className='mb-4 text-2xl'>Deine Qualifikation:</h3>
-                                            <ul role="list" className="ml-5 list-disc">
-                                                {position.qualifications && position.qualifications.map((task: string, i: number) => (
-                                                    <li key={i} className="">
-                                                        <p className="text-sm font-normal text-gray-800">
-                                                            {task}
-                                                        </p>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                                    <div className="content-block text-gray-900">
+                                        <TinaMarkdown content={position?.text} />
                                     </div>
 
-                                    <div className="mt-4 space-x-2">
+                                    <div className="flex mt-4 gap-4">
                                         <button
                                             type="button"
-                                            className="inline-flex justify-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-300"
+                                            className="inline-flex justify-center items-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-300"
                                             onClick={closeModal}
                                         >
                                             Schliessen
@@ -331,12 +291,11 @@ function Modal({ isOpen, setIsOpen, position }: any) {
                                             href={position.link}
                                             target='blank'
                                             type="button"
-                                            className="inline-flex justify-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-300"
+                                            className="inline-flex justify-center items-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-300"
                                             onClick={party}
                                         >
                                             Count me in 🥳
                                         </a>
-
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>

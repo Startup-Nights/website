@@ -8,11 +8,11 @@ import CTA from "./cta";
 export const Partners = ({ data }) => {
     return (
         <Section className="bg-white">
-            <Container className="relative py-12 sm:py-24 text-black">
+            <Container className="relative text-black">
                 {data.text && (
-                    <div className="content-block">
+                    <Container paddx="none" paddy="none" className="content-block">
                         <TinaMarkdown content={data.text} />
-                    </div>
+                    </Container>
                 )}
 
                 {data.cta && data.cta.text !== '' && (

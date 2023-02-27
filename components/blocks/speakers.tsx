@@ -20,10 +20,10 @@ export const Speakers = ({ data }) => {
 
     return (
         <Section>
-            <Container className="relative max-w-full">
+            <Container width="full" className="relative">
                 <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} />
 
-                <Container className="content-block">
+                <Container paddx="none" paddy="" className="content-block mb-8 sm:mb-12">
                     <TinaMarkdown content={data.text} />
 
                     {data.cta && data.cta.text !== '' && (
@@ -47,8 +47,8 @@ export const Speakers = ({ data }) => {
                                     <div className="absolute inset-0 mix-blend-multiply bg-slate-400 group-hover:bg-slate-500" />
                                 </div>
                                 <div className='relative grid content-end p-4 h-full'>
-                                    <p className="h5">{speaker?.name}</p>
-                                    <p className="h6 mb-0">{speaker?.position}</p>
+                                    <p className="h5 mb-0">{speaker?.name}</p>
+                                    <p className="h6 mt-2 mb-0">{speaker?.position}</p>
                                 </div>
                             </div>
                         ))}
