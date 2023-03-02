@@ -157,6 +157,11 @@ blocks:
     cta:
       link: 'https://startup-nights.ch'
       text: Some CTA
+    video:
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/videos/2022-aftermovie.mp4
+      fallback: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
     _template: hero
 ---
 
