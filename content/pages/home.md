@@ -153,17 +153,18 @@ blocks:
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
   - text: |
-      # Here comes some text
+      # This is the new hero
+
+      People can't adjust the styling - only the content.
     cta:
       link: 'https://startup-nights.ch'
-      text: Some CTA
+      text: Some link
     video:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/videos/2022-aftermovie.mp4
-      fallback: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
     _template: hero
 ---
+
 
 
 
