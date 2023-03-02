@@ -152,7 +152,14 @@ blocks:
         alt: Stadt Winterthur
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
+  - text: |
+      # Here comes some text
+    cta:
+      link: 'https://startup-nights.ch'
+      text: Some CTA
+    _template: hero
 ---
+
 
 
 
