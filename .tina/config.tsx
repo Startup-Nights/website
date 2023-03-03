@@ -5,6 +5,7 @@ import { speakersBlockSchema } from "../components/blocks/speakers";
 import { positionsBlockSchema } from "../components/blocks/positions";
 import { heroBlockSchema } from "../components/blocks/hero";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
+import { partnerFormSchema } from "../components/blocks/partnerform";
 import { partnersBlockSchema } from "../components/blocks/partners";
 import { ColorPickerInput } from "../components/fields/color";
 
@@ -372,6 +373,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "party") {
                             return `/party`;
                         }
+                        if (document._sys.filename === "partner_details") {
+                            return `/partner_details`;
+                        }
                         return undefined;
                     },
                 },
@@ -400,6 +404,7 @@ const config = defineStaticConfig({
                             partnersBlockSchema,
                             testimonialBlockSchema,
                             positionsBlockSchema,
+                            partnerFormSchema,
                             gifBlockSchema,
                         ],
                     },

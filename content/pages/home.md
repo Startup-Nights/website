@@ -1,5 +1,5 @@
 ---
-title: Tina Cloud Starter
+title: Startup Nights
 blocks:
   - text: >
       ##### 2 & 3 November, Winterthur
@@ -153,20 +153,3 @@ blocks:
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
