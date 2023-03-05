@@ -1,4 +1,5 @@
 import client from "@mailchimp/mailchimp_marketing";
+import { useState } from "react";
 
 client.setConfig({
     apiKey: process.env.SLACK_WEBHOOK_URL as string,
@@ -6,6 +7,8 @@ client.setConfig({
 });
 
 export default function Newsletter({ data }) {
+    const [err, setErr] = useState('');
+    const [success, setSuccess] = useState('');
 
     // Handles the submit event on form submit.
     const handleSubmit = async (event: any) => {
@@ -31,7 +34,13 @@ export default function Newsletter({ data }) {
             }),
         })
 
-        console.log(response);
+        const { error } = await response.json()
+
+        if (error) {
+            setErr(error);
+        } else {
+            setSuccess('Success! You are now subscribed to the newsletter 🥳')
+        }
     }
 
     return (
@@ -100,6 +109,16 @@ export default function Newsletter({ data }) {
                     >
                         Subscribe
                     </button>
+                </div>
+
+                <div className="col-span-2">
+                    {success && (
+                        <div className="text-green-400 sm">{success}</div>
+                    )}
+
+                    {err && (
+                        <div className="text-red-400 text-sm">Oh no! Something went wrong. Shoot us an email <a className="italic underline underline-offset-4" href="mailto:helo@startup-nights.ch">here</a> and we'll put you on the list.</div>
+                    )}
                 </div>
             </form>
         </div>
