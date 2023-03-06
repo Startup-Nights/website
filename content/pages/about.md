@@ -96,7 +96,7 @@ blocks:
           - name: Nathan Brechbühl
             position: Content Manager Video
             src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/nathan-brechbühl.jpg
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/nathan-brechbuehl.jpg
             alt: Nathan Brechbühl
           - name: Mischa Jörg
             position: Website
@@ -115,6 +115,7 @@ blocks:
             alt: Roger Basler
     _template: team
 ---
+
 
 
 
