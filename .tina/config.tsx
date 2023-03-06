@@ -6,6 +6,7 @@ import { positionsBlockSchema } from "../components/blocks/positions";
 import { heroBlockSchema } from "../components/blocks/hero";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
 import { partnerFormSchema } from "../components/blocks/partnerform";
+import { teamBlockSchema } from "../components/blocks/team";
 import { partnersBlockSchema } from "../components/blocks/partners";
 import { ColorPickerInput } from "../components/fields/color";
 
@@ -405,6 +406,7 @@ const config = defineStaticConfig({
                             testimonialBlockSchema,
                             positionsBlockSchema,
                             partnerFormSchema,
+                            teamBlockSchema,
                             gifBlockSchema,
                         ],
                     },

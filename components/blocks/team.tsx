@@ -1,0 +1,85 @@
+import { Template } from "tinacms";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
+import { Container } from "../util/container";
+import { Section } from "../util/section";
+
+export const Team = ({ data }) => {
+    return (
+        <Section>
+            <Container>
+                {data.divisions && data.divisions.map((division, i) => (
+                    <div key={`division-${i}`} className="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3 my-16">
+                        <div className="max-w-2xl content-block">
+                            <TinaMarkdown content={division.description} />
+                        </div>
+
+                        <ul role="list" className="grid gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-12 xl:col-span-2">
+
+                            {division.members && division.members.map((person, i) => (
+                                <li key={person.name}>
+                                    <div className="flex items-center gap-x-6">
+                                        <img className="h-24 w-24 rounded-full" src={person.src} alt={person.alt} />
+                                        <div>
+                                            <h3 className="text-base font-semibold leading-7 tracking-tight">{person.name}</h3>
+                                            <p className="text-sm font-semibold leading-6 text-slate-400">{person.position}</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </Container>
+        </Section>
+    );
+};
+
+
+export const teamBlockSchema: Template = {
+    name: "team",
+    label: "Team",
+    fields: [
+        {
+            label: "Divisions",
+            name: "divisions",
+            type: "object",
+            list: true,
+            fields: [
+                {
+                    label: "Description",
+                    name: "description",
+                    type: "rich-text",
+                },
+                {
+                    label: "Members",
+                    name: "members",
+                    type: "object",
+                    list: true,
+                    fields: [
+                        {
+                            label: "Name",
+                            name: "name",
+                            type: "string",
+                        },
+                        {
+                            label: "Position",
+                            name: "position",
+                            type: "string",
+                        },
+                        {
+                            name: "src",
+                            label: "Image Source",
+                            type: "image",
+                        },
+                        {
+                            name: "alt",
+                            label: "Alt Text",
+                            type: "string",
+                        },
+
+                    ],
+                },
+            ]
+        },
+    ],
+}

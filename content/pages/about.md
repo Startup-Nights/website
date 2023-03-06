@@ -45,7 +45,78 @@ blocks:
       community to connect, grow, and get inspired – year after year at the
       Startup Nights.
     _template: content
+  - divisions:
+      - description: |
+          Meet our Marketing Team.
+        members:
+          - name: Tabita Sager
+            position: Director of MarCom
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/tabita-sager.jpg
+            alt: Tabita Sager
+          - name: Micha Neumair
+            position: Head of Marketing
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/micha-neumair.jpg
+            alt: Micha Neumair
+          - name: Laura Merz
+            position: Co-Head of Branding & Design
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/laura-merz.jpg
+            alt: Laura Merz
+          - name: Leo Hess
+            position: Co-Head of Branding & Design
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/leo-hess.jpg
+            alt: Leo Hess
+          - name: Alyssia Kugler
+            position: Head of Communications
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
+            alt: Alyssia Kugler
+          - name: Daniel Moser
+            position: Head of Social Media
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-moser.jpg
+            alt: Daniel Moser
+          - name: Natalie Rotschi
+            position: Text
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/natalie-rotschi.jpg
+          - name: Laura Matter
+            position: Reels Video Producer
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/laura-matter.jpg
+            alt: Laura Matter
+          - name: Joanna Rubin
+            position: Social Media Manager
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/joanna-rubin.jpg
+            alt: Joanna Rubin
+          - name: Nathan Brechbühl
+            position: Content Manager Video
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/nathan-brechbühl.jpg
+            alt: Nathan Brechbühl
+          - name: Mischa Jörg
+            position: Website
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/mischa-joerg.jpeg
+            alt: Mischa Jörg
+          - name: Nadine Ungricht
+            position: CRM & Newsletter
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/nadine-ungricht.JPG
+            alt: Nadine Ungricht
+          - name: Roger Basler
+            position: Performance Marketing
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/roger-basler-de-roca.png
+            alt: Roger Basler
+    _template: team
 ---
+
+
 
 
 
