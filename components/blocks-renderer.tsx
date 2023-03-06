@@ -7,6 +7,7 @@ import PartnerForm from "./blocks/partnerform";
 import { Partners } from "./blocks/partners";
 import { Positions } from "./blocks/positions";
 import { Speakers } from "./blocks/speakers";
+import { Team } from "./blocks/team";
 import { Testimonial } from "./blocks/testimonial";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
@@ -85,6 +86,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <PartnerForm data={block} />
+                                </div>
+                            );
+                        case "PageBlocksTeam":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Team data={block} />
                                 </div>
                             );
 
