@@ -47,6 +47,147 @@ blocks:
     _template: content
   - divisions:
       - description: |
+          Meet our Volunteers Team.
+        members:
+          - name: Jan Guddal
+            position: Head of Volunteers
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jan-guddal.jpg
+            alt: Jan Guddal
+      - description: |
+          Meet our Infrastructure Team.
+        members:
+          - name: Livia Arena
+            position: Visual & Signage
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/livia-arena.jpeg
+            alt: Livia Arena
+          - name: Thomas Caspar
+            position: Head of Event Area
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/thomas-caspar.jpg
+            alt: Thomas Caspar
+          - name: Raquel Ruiz
+            position: Snacks
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/raquel-ruiz.jpg
+            alt: Raquel Ruiz
+          - name: Oliver Rau
+            position: Head of F&B
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/oliver-rau.jpg
+            alt: Oliver Rau
+          - name: Lukas Gamper
+            position: Ticketing
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/lukas-gamper.jpg
+            alt: Lukas Gamper
+          - name: Demian Holderegger
+            position: Head of Welcome Area
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/demian-holderegger.jpg
+            alt: Demian Holderegger
+          - name: Florent Beqiri
+            position: Coordination Construction & Dismantling
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/florent-beqiri.jpg
+            alt: Florent Beqiri
+          - name: Michael Kubli
+            position: Head of Technics
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michael-kubli.JPG
+            alt: Michael Kubli
+          - name: Tobias Murbach
+            position: Head of Infrastructure & Technics
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/tobias-murbach.jpg
+            alt: Tobias Murbach
+      - description: |
+          Meet our Program Team.
+        members:
+          - name: Adrian Tureatca
+            position: Head of Startup Onboarding
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/adrian-tureatca
+              .jpeg
+            alt: Adrian Tureatca
+          - name: Désirée Egli
+            position: Leaders Brunch
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/desiree-egli.jpg
+            alt: Désirée Egli
+          - name: Jonathan Hanhart
+            position: Head of After Party
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jonathan-hanhart.jpg
+            alt: Jonathan Hanhart
+          - name: Julian Stylianou
+            position: Head of Pitching Sessions
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/julian-styliainou.jpg
+            alt: Julian Stylianou
+          - name: Johannes Hofer
+            position: Head of Workshops
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/johannes-hofer.jpg
+            alt: Johannes Hofer
+          - name: Graziana Müller
+            position: Head of Speaker
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/graziana-mueller.jpg
+            alt: Graziana Müller
+          - name: Benjamin Vidas
+            position: Head of Program
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/benjamin-vidas.jpg
+            alt: Benjamin Vidas
+      - description: |
+          Meet our Operations Team.
+        members:
+          - name: Fabio Furrer
+            position: Head of Sustainability
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/fabio-furrer.jpg
+            alt: Fabio Furrer
+          - name: Jens Thomsen
+            position: Head of Tasks
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jens-thomsen.jpeg
+            alt: Jens Thomsen
+          - name: Michelle Nguyen
+            position: Head of HR & Tools
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
+            alt: Michelle Nguyen
+          - name: Josephine Junker-Oels
+            position: Bookkeeping Creditors
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/josephine-junker-oels.jpg
+            alt: Josephine Junker-Oels
+          - name: Pascal Angst
+            position: Finance Specialist
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/pascal-angst.jpg
+            alt: Pascal Angst
+          - name: Manuela Serena
+            position: Head of Finance
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/manuela-serena.png
+            alt: Manuela Serena
+          - name: Daniel Caspar
+            position: Director of Operations
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-caspar.jpg
+            alt: Daniel Caspar
+      - description: |
+          Meet our Partnerships Team.
+        members:
+          - name: Noah Schuppli
+            position: Director of Partner Management
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/noah-schuppli.jpg
+            alt: Noah Schuppli
+      - description: |
           Meet our Marketing Team.
         members:
           - name: Tabita Sager
@@ -115,12 +256,4 @@ blocks:
             alt: Roger Basler
     _template: team
 ---
-
-
-
-
-
-
-
-
 
