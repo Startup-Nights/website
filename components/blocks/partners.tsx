@@ -4,6 +4,8 @@ import { Section } from "../util/section";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { Template } from "tinacms";
 import CTA from "./cta";
+import Image from "next/image";
+import { placeholderBox } from "../items/placeholder";
 
 export const Partners = ({ data }) => {
     return (
@@ -22,11 +24,18 @@ export const Partners = ({ data }) => {
                 <ul className="grid grid-cols-3 gap-4 md:gap-24 py-4 md:py-12">
                     {data.partners && data.partners.map((partner, i: number) => (
                         <li key={`partner-${i}`}>
-                            <a href={partner?.link} target={'_blank'}>
-
-                                <img className="" alt={partner?.alt} src={partner?.src} />
+                            <a href={partner?.link} target={'_blank'} className='relative'>
+                                <Image
+                                    width={300}
+                                    height={200}
+                                    alt={partner?.alt}
+                                    src={partner?.src}
+                                    placeholder="blur"
+                                    blurDataURL={placeholderBox}
+                                />
                             </a>
                         </li>
+
                     ))}
                 </ul>
             </Container>
