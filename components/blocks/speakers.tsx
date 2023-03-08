@@ -8,6 +8,8 @@ import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import { ArrowLongRightIcon, ArrowLongLeftIcon, XCircleIcon } from "@heroicons/react/24/outline";
 import { SocialIcon } from "../items/social";
 import CTA from "./cta";
+import Image from "next/image";
+import { placeholderBox } from "../items/placeholder";
 
 export const Speakers = ({ data }) => {
     const [isOpen, setIsOpen] = React.useState(false)
@@ -43,7 +45,15 @@ export const Speakers = ({ data }) => {
                                 onClick={() => update(speaker)}
                             >
                                 <div className='absolute inset-0 w-full'>
-                                    <img className="w-full h-full object-cover" src={speaker?.image?.src} />
+                                    <Image
+                                        width={350}
+                                        height={450}
+                                        className="w-full h-full object-cover"
+                                        alt={speaker?.image?.alt}
+                                        src={speaker?.image?.src}
+                                        placeholder="blur"
+                                        blurDataURL={placeholderBox}
+                                    />
                                     <div className="absolute inset-0 mix-blend-multiply bg-slate-400 group-hover:bg-slate-500" />
                                 </div>
                                 <div className='relative grid content-end p-4 h-full'>
@@ -123,7 +133,15 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                                     <div className='z-20 grid grid-cols-1 md:grid-cols-2 h-full'>
                                         <div className="relative min-h-[200px] sm:min-h-[400px] md:h-full">
                                             <div className='absolute inset-0 w-full min-h-[200px] sm:min-h-[400px]'>
-                                                <img className="w-full h-full object-cover" src={speaker?.image?.src} />
+                                                <Image
+                                                    width={700}
+                                                    height={900}
+                                                    className="w-full h-full object-cover"
+                                                    alt={speaker?.image?.alt}
+                                                    src={speaker?.image?.src}
+                                                    placeholder="blur"
+                                                    blurDataURL={placeholderBox}
+                                                />
                                             </div>
                                         </div>
                                         <div className='py-4 md:p-16'>
