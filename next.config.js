@@ -8,6 +8,16 @@ module.exports = {
 
         return config;
     },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'startupnights.fra1.digitaloceanspaces.com',
+                port: '',
+                pathname: '/**'
+            },
+        ],
+    },
     async rewrites() {
         return [
             {
