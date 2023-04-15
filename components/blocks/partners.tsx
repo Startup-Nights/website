@@ -35,7 +35,6 @@ export const Partners = ({ data }) => {
                                 />
                             </a>
                         </li>
-
                     ))}
                 </ul>
             </Container>

@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Section = ({ children, className = "" }) => {
-    const sectionColor = "bg-slate-900 text-slate-300";
+    const sectionColor = "text-slate-300";
 
     return (
         <section

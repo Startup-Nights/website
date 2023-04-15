@@ -5,7 +5,7 @@ import Newsletter from "../../blocks/newsletter";
 
 export const Footer = ({ data }) => {
     return (
-        <footer className="bg-gray-900" aria-labelledby="footer-heading">
+        <footer className="bg-sn-black" aria-labelledby="footer-heading">
             <Section>
                 <Container>
                     <h2 id="footer-heading" className="sr-only">

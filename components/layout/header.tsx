@@ -25,7 +25,7 @@ export const Header = ({ data }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <div className="bg-slate-900">
+        <div className="bg-sn-black">
             <div className="relative">
                 <div className='max-w-7xl mx-auto px-6 py-6 lg:px-8' >
                     <nav className="relative flex items-center justify-between" aria-label="Global">
@@ -71,7 +71,7 @@ export const Header = ({ data }) => {
                         </div>
                     </nav>
                     <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                        <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto backdrop-blur-md bg-slate-900/90 px-6 py-6 lg:hidden">
+                        <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto backdrop-blur-md bg-sn-black/90 px-6 py-6 lg:hidden">
                             <div className="flex items-center justify-between">
                                 <Link
                                     href="/"
