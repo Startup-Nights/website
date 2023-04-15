@@ -3,6 +3,11 @@ module.exports = {
     content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
+            colors: {
+                'sn-black': '#121212',
+                'sn-white': '#FFFFFF',
+                'sn-yellow': '#FDC900'
+            },
             fontSize: {
                 'h1': ['5.625rem', { lineHeight: '4.375rem' }],
                 'h2': ['4.375rem', { lineHeight: '3.375rem' }],
@@ -16,7 +21,6 @@ module.exports = {
                 'h2sm': ['2.375rem', { lineHeight: '1.375rem' }],
                 'h3sm': ['1.388rem', { lineHeight: '1.238rem' }],
                 'h4sm': ['1.238rem', { lineHeight: '1.238rem' }],
-
             },
         }
     },

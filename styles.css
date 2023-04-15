@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('/fonts/SourceSansPro-Light.ttf');
+@import url('/fonts/SourceSansPro-Regular.ttf');
+@import url('/fonts/SourceSansPro-SemiBold.ttf');
+@import url('/fonts/SourceSansPro-Bold.ttf');
+@import url('/fonts/SourceSansPro-Black.ttf');
+
 /* 
  * since tina renders markdown without classes, we have to define them here
  * unfortunately this means that "normal" text can't be customized without a 
  * special block
  */
 @layer base {
+    * {
+        font-family: 'Source Sans Pro', sans-serif; 
+    }
+
     .content-block h1, .h1 {
-        @apply text-h1sm md:text-h1 uppercase my-8 font-extrabold;
+        @apply text-h1sm md:text-h1 uppercase my-8 font-black;
     }
     .content-block h2, .h2 {
         @apply text-h2sm md:text-h2 uppercase mb-6 mt-12;
