@@ -118,7 +118,7 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full h-full transform bg-slate-900 p-6 text-left transition-all text-slate-100 overflow-auto">
+                                <Dialog.Panel className="w-full h-full transform bg-sn-black p-6 text-left transition-all text-slate-100 overflow-auto">
 
                                     <div className="absolute top-3 right-3 md:top-5 md:right-5 z-30">
                                         <button
