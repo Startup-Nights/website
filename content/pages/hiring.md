@@ -14,51 +14,181 @@ blocks:
     _template: hero
   - title: Open positions
     open_positions:
-      - title: Head of Material & Logistics
+      - title: Partner - University / Academia
         text: >
-          Der Head of Material & Logistics ist verantwortlich für das gesamte
-          Material, welches an den Startup Nights in den verschiedenen Bereichen
-          benötigt wird. Die Person koordiniert intern alle Materialbestellungen
-          (exkl. F & B sowie Technik), organisiert das Material bei externen
-          Partnern und stellt sicher, dass das Material zum richtigen Zeitpunkt
-          am richtigen Ort ankommt.
+          Diese Stelle kümmert sich um akademische Partnerschaften für die
+          Startup Nights. Diese Partnerschaften sollen einerseits Einnahmen,
+          aber auch Anmeldungen generieren.
 
 
           Deine Aufgaben:
 
 
-          * Offerten bei Partnern einholen und richtige Partner identifizieren
+          * Partnerschaften mit den Startup Nights mit Universitäten,
+          Fachhochschulen und sonstigen weiterführenden Schulen abzuschließen
 
-          * Materialbestellungen intern aufnehmen und ausführen unter Einhaltung
-          des Budgets
+          * Fundraising durch akademische Partnerschaften
 
-          * Koordinieren von Anlieferung und Abholung mit allen
-          Materiallieferanten
+          * Bei der internationalisierung der Startup Nights einen erheblichen
+          Teil beitragen
 
-          * Erstellen eines Zeitplans für Materialanlieferung sowie Abholung
+          * Mindestens 5 Hochschulen aus der CH und 2 Hochschulen aus dem
+          Ausland als Partner akquirieren
+
+          * Enge Zusammenarbeit mit Head of Relationship Management
 
 
           Deine Qualifikation:
 
 
-          * Motivation, die Startup Nights mit allem Material auszurüsten, das
-          benötigt wird
+          * Motivation, die Startup Nights mit der Akademie zu verknüpfen und
+          Synergien zu nutzen
 
-          * Hohes Commitment für Planerisches und Organisatorisches
+          * Hohes Commitment für Konzeptionelles und Operatives
 
-          * Pflichtbewusst und zuverlässig
+          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
+          für dieses einzusetzen
 
-          * Gute kommunikative Fähigkeiten mit den verschiedenen Schnittstellen
+          * unkompliziert, kollegial im Umgang, professionell und strukturiert
+          bei der Arbeit
+        department: Partnerships
+        link: >-
+          https://docs.google.com/forms/d/e/1FAIpQLSdy2CU7m5pwFMM28fsJ2-Ca-EnlOCB0IEZnbR_q7zvKCO_-Xg/viewform
+      - title: Video Content Creator
+        text: >
+          Deine Aufgaben:
 
-          * Bleibt ruhig in stressigen Situationen
+
+          * Mitverantwortung für die videografische Dokumentation des Events und
+          unseren Weg dorthin (Behind the Scenes, Medien für Social Media etc.)
+
+          * Entwicklung und Produktion von Videoreihen für Social Media
+
+          * Enge Zusammenarbeit mit Marketing-Team und im Foto- und Videoteam am
+          Event
+
+
+          Deine Qualifikation:
+
+
+          * Erfahrung im Bereich Videoproduktionen
+
+          * Ein gutes Auge dafür, was unsere Community interessieren könnte und
+          ein Haufen Ideen, wie du das mit der Kamera einfangen kannst
 
           * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
           für dieses einzusetzen
 
           * Unkompliziert, kollegial im Umgang, professionell und strukturiert
           bei der Arbeit
-        department: Infrastructure
-        link: 'https://forms.gle/orgx2pZqZPWeqQ5h6'
+        department: Marketing
+        link: 'https://forms.gle/9wNpRTqeUcy9g4b48'
+      - title: Offline Marketer
+        text: >
+          Deine Aufgaben:
+
+
+          * Mitverantwortlich für die offline Marketing Aktivitäten der Startup
+          Nights
+
+          * Einbringen von Ideen und deren Umsetzung im offline Marketing, um
+          die Ticketverkäufe zu steigern
+
+          * Planung und Ausführung von Plakate- und Flyeringaktionen
+
+          * Enge Zusammenarbeit mit Marketing-Team
+
+
+          Deine Qualifikation:
+
+
+          * Erfahrung im Bereich offline Marketing
+
+          * Ein gutes Gespür dafür, wie wir offline, Interessierte für die
+          Startup Nights gewinnen und ihn Ticketverkäufe umwandeln
+
+          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
+          für dieses einzusetzen
+
+          * unkompliziert, kollegial im Umgang, professionell und strukturiert
+          bei der Arbeit
+        department: Marketing
+        link: 'https://forms.gle/R4T8mukyXte6d3C39'
+      - title: Head of Photo & Video on site
+        text: >
+          Deine Aufgaben:
+
+
+          * Hauptverantwortung für die video- und fotografische Dokumentation
+          des Events
+
+          * Verfassung des Konzepts mit Unterstützung vom Marketing Team, dass
+          die Inhalte für die Vermarktung zukünftiger Startup Nights auf
+          verschiedensten Kanälen (Webseite, SoMe, Advertising, Kanäle der
+          Partner, usw.) verwendet werden kann
+
+          * Auswahl von externen Fotografen und Videografen und Verantwortung
+          für das Team am Event
+
+          * Koordination am Event, Planung und Ausführung der shotlist
+
+          * Nachbearbeitung und zeitnahe Verfügbarkeit der Materialien
+          sicherstellen
+
+          * Wenn du magst, darfst du das Team auch bereits vor dem Event
+          begleiten und den Entstehungsprozess des Events festhalten
+
+          * Zusammenarbeit mit Marketing-Team
+
+
+          Deine Qualifikation:
+
+
+          * Erfahrung im Bereich Foto- oder Videoproduktionen
+
+          * Ein gutes Auge dafür, was unsere Community interessieren könnte und
+          ein Haufen Ideen, wie du das mit der Kamera einfangen kannst
+
+          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
+          für dieses einzusetzen
+
+          * unkompliziert, kollegial im Umgang, professionell und strukturiert
+          bei der Arbeit
+        department: Marketing
+        link: 'https://forms.gle/4M2kYiiFppHSBYem6'
+      - title: English Proofreader
+        text: >+
+          Deine Aufgaben:
+
+
+          * Du unterstützt das Team auf allen Kanälen der Startup Nights:
+          LinkedIn, Instagram, Youtube, Mail, Webseite etc. in Bezug auf
+          englischen Texten
+
+          * In deiner Verantwortung liegt die Redigieren von jeglichen
+          Englischen Texten
+
+          * Teilweise auch Übersetzung von Deutschen Texten ins Englische
+
+          * Enge Zusammenarbeit mit Marketing-Team
+
+
+          Deine Qualifikation:
+
+
+          * Englische Muttersprache oder Proficiency C2 mit Proofreading
+          Erfahrung
+
+          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
+          für dieses einzusetzen
+
+          * unkompliziert, kollegial im Umgang, professionell und strukturiert
+          bei der Arbeit
+
+
+
+        department: Marketing
+        link: 'https://forms.gle/4vnnEhdiMWyyQu1N9'
       - title: Food for Volunteers
         text: >
           Die Stelle ist für die Konzeptentwicklung und Umsetzung der
@@ -106,242 +236,6 @@ blocks:
           bei der Arbeit
         department: Infrastructure
         link: 'https://forms.gle/kHC7pChfmpjyo8xNA'
-      - title: Head of Startup and Corporate Matching
-        text: >
-          Deine Aufgaben:
-
-
-          * Finde 8-12 interessierte Corporates mit einer spannenden
-          Ausgangsposition/Herausforderung (inkl. Erstellung entsprechender
-          "Verkaufsunterlagen")
-
-          * Vorbereitung und klare Definierung von Terminen für die Vorschläge
-          (von den Herausforderungen) mit den Corporates
-
-          * Finde passene Startups und organisiere Matchings
-
-          * Enge Zusammenarbeit mit dem Head of Website bezüglich der Webseite
-
-          * Enge Zusammenarbeit mit dem Marketing & Kommunikation Team
-
-
-          Deine Qualifikation:
-
-
-          * Motivation, passende Corporates und Startups für das Matching zu
-          rekrutieren
-
-          * Hohes Commitment für Planerisches und Organisatorisches
-
-          * Gute kommunikative Fähigkeiten mit den verschiedenen Schnittstellen
-
-          * Selbst in stressigen Situationen bleibst du ruhig
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * Unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-        department: Program
-        link: 'https://forms.gle/fNpb32pGGs5YdVqa9'
-      - title: Head of Leaders Brunch
-        text: >
-          Deine Aufgaben:
-
-
-          * Komplette Koordination des Leaders Brunch sub-event
-
-          * Organisation und Koordination eines Programms (z.B. 3-4 spannende
-          Keynotes, pitching sessions mit Startups, ein Workshop, ...)
-
-          * Enge Zusammenarbeit mit dem F\&B Team für das Catering
-
-          * Enge Zusammenarbeit mit dem Infrastruktur Team
-
-          * Enge Zusammenarbeit mit dem Marketing & Kommunikation Team
-          betreffend Einladungen / Kommunikation / etc. von VIP Gästen
-
-          * Enge Zusammenarbeit mit dem Sponsoring Team für die Koordination und
-          Präsentation / Inkludierung von Partnern
-
-
-          Deine Qualifikation:
-
-
-          * Motivation, ein unvergessliches Sub-Event zu gestalten
-
-          * Hohes Commitment für Planerisches und Organisatorisches
-
-          * Gute kommunikative Fähigkeiten mit den verschiedenen Schnittstellen
-
-          * Selbst in stressigen Situationen bleibst du ruhig
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * Unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-        department: Program
-        link: 'https://forms.gle/XwPx4vNr36vqztr1A'
-      - title: Head of Startup World
-        text: >
-          Deine Aufgaben:
-
-
-          * Verantwortlich für den Anmeldeprozess der Startups
-
-          * Verantwortlich für die Auswahlkriterien sowie das Auswahlverfahren
-
-          * Verantwortlich für einen guten Mix von Unternehmen, Startups,
-          Branchen, Grössen etc.
-
-          * Verantwortlich für die Definition eines Pakets mit Stand
-          Infrastruktur sowie einen Preis
-
-          * Verantwortlich für eine reibungslose und klare Kommunikation mit den
-          Startups vor, während und nach dem Event
-
-          * Verantwortlich für die Veröffentlichung aller Informationen auf der
-          Webseite: Information über die Pakete, Logos der Startups, FAQ, …
-
-          * Verantwortlich für die Verrechnung der Startup Stände
-
-          * Koordination mit dem Head of Program, Head of Partners/Sponsoring
-          and Booth Coordinator
-
-
-          Deine Qualifikation:
-
-
-          * Motivation, eine Vielfalt von Startups für die Startup Nights zu
-          gewinnen
-
-          * Hohes Commitment für Planerisches und Organisatorisches
-
-          * Gute kommunikative Fähigkeiten mit den verschiedenen Schnittstellen
-
-          * Selbst in stressigen Situationen bleibst du ruhig
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * Unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-
-          * Du bist am Event vor Ort verfügbar für die Startups
-        department: Program
-        link: 'https://forms.gle/KzeZRycD9niVypyW6'
-      - title: UX Designer
-        text: >
-          Deine Aufgaben:
-
-
-          * Hauptverantwortung vom UX Design der Startup Nights
-
-          * Mitverantwortung für die Webseite www.startup-nights.ch und
-          Begleitung des User Journeys beim Ticketkauf
-
-          * Mit deiner Konzeption und Umsetzung unterstützt du uns, Design
-          Guidelines zu erstellen, diese operativ umzusetzen und damit die
-          Professionalisierung des Brands “Startup Nights” voranzutreiben
-
-          * Enge Zusammenarbeit in einem Team mit Head Brand & Design, Grafiker
-          und Entwickler
-
-
-          Deine Qualifikation:
-
-
-          * Erfahrung oder Ausbildung im Bereich UX Design
-
-          * hohes Commitment für Konzeptionelles und Operatives
-
-          * Ein gutes Gespür dafür, was die Startup Nights hervorhebt und ein
-          Haufen Ideen, wie du das rüberbringen kannst
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-        department: Marketing
-        link: 'https://forms.gle/XZBdgqmEZGEvMjcu6'
-      - title: Social Media Manager
-        text: >
-          Deine Aufgaben:
-
-
-          * Mitverantwortung der Startup Nights Social Media Kanäle: LinkedIn,
-          Instagram, Youtube etc.
-
-          * Du sprichst beim Redaktionsplan mit und schaust zu, dass alles zum
-          geplanten Zeitpunkt publiziert wird
-
-          * Wenn du magst und dir das liegt, darfst du auch selbst Content
-          erstellen. Ansonsten darfst du bei der Umsetzung deiner Posts auf die
-          Unterstützung von Textern, Grafikern, Videografen und Fotografen
-          zählen
-
-          * Community Management, Interaktionen auf den Kanälen
-
-          * Enge Zusammenarbeit mit Marketing-Team
-
-
-          Deine Qualifikation:
-
-
-          * Erfahrung im Bereich Content Planung, Erstellung oder Publishing im
-          Social Media-Bereich
-
-          * Ein gutes Gespür dafür, was unsere Community interessieren könnte
-          und ein Haufen Ideen, wie du das rüberbringen kannst
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-        department: Marketing
-        link: 'https://forms.gle/DgPfuzzBR6LQi7qK7'
-      - title: Grafikdesigner
-        text: >
-          Deine Aufgaben:
-
-
-          * Mitverantwortung im Design und dem grafischen Auftritt der Startup
-          Nights
-
-          * Du erstellst diverse Design-Vorlagen gemäss definierter Design
-          Guideline. Zu deinen Deliveries gehören Social Media Posts, Flyer,
-          digitale Banner, Plakate, Grafiken fürs Bühnenbild und vieles mehr
-
-          * Sicherstellung eines konsistenten Auftritts über alle Kanäle: Du
-          hast ein Auge auf das, was sichtbar ist, und gehst Opportunitäten
-          aktiv und mit eigenen Ideen an
-
-          * Enge Zusammenarbeit in einem Team mit Head Brand & Design und UX
-          Designer sowie Schnittstellen zu anderen Teams
-
-
-          Deine Qualifikation:
-
-
-          * Erfahrung im Bereich Design und Grafik
-
-          * Du weisst mit der Adobe oder Affinity-Palette umzugehen
-
-          * Hohes Commitment für einen einheitlichen Auftritt und Operatives
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * Unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-
-          * Ein gutes Gespür dafür, was die Startup Nights hervorhebt und ein
-          Haufen Ideen, wie du das rüberbringen kannst
-        department: Marketing
-        link: 'https://forms.gle/YURN3W5nZd1CXxix5'
       - title: Waste Management
         text: >
           Diese Stelle kümmert sich um die komplette Rückführung und Entsorgung
@@ -389,56 +283,9 @@ blocks:
           bei der Arbeit
         department: Infrastructure
         link: 'https://forms.gle/EKa7ts7X6UQizJui8'
-      - title: Power Supply & Internet
-        text: >
-          Die Stelle Power Supply & Internet kümmert sich um die Strom- und
-          Internetversorgung von sämtlichen Besucher\*innen sowie
-          Standbesitzer\*innen. Die Person organisiert und koordiniert zusammen
-          mit unseren Technikpartner\*innen die Anlieferung und Abholung sowie
-          den Auf- und Abbau.
-
-
-          Deine Aufgaben:
-
-
-          * Klärt mit der für die Stände verantwortlichen Person den
-          Versorgungsbedarf (Strom & Internet)
-
-          * Bestellt und liefert alle nötigen Materialien an den richtigen Ort
-          zur richtigen Zeit
-
-          * Ist Ansprechperson für Notfälle von Standbesitzer\*innen am Event
-
-          * Stellt zusammen mit Eulachhallen, Cisco sowie anderen möglichen
-          Partner\*innen (z.B. Swisscom) sicher, dass alle Besucher\*innen mit
-          gutem WLAN/mobilem Internet versorgt werden
-
-          * Unterstützt beim Auf- und Abbau der technischen Infrastruktur
-
-
-          Deine Qualifikation:
-
-
-          * Motivation, dass alle Teilnehmer der Startup Nights Internetzugang
-          haben und alle Aussteller mit Strom versorgt sind
-
-          * Erfahrung in Elektrotechnik und/oder Netzwerktechnik von Vorteil
-
-          * Hohes Commitment für Planerisches und Organisatorisches
-
-          * Gute kommunikative Fähigkeiten mit den verschiedenen Schnittstellen
-
-          * Bleibt ruhig in stressigen Situationen
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * Unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-        department: Infrastructure
-        link: 'https://forms.gle/kjMqE1Dty9pqiatA6'
     _template: positions
 ---
+
 
 
 
