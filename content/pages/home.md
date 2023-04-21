@@ -258,7 +258,29 @@ blocks:
         alt: Stadt Winterthur
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
+  - subtitle: Impressions
+    title: Startup Nights 2022
+    content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    images:
+      - src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
+        alt: fireside chat
+      - src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+        alt: helper
+    cta:
+      link: '#'
+      text: Check out more images
+    _template: impressions
 ---
+
 
 
 
