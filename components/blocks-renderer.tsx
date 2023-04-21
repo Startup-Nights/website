@@ -12,6 +12,7 @@ import { Testimonial } from "./blocks/testimonial";
 import { About } from "./blocks/about";
 import { Facts } from "./blocks/facts";
 import { Impressions } from "./blocks/impressions";
+import { Countdown } from "./blocks/countdown";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -125,6 +126,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Impressions data={block} />
+                                </div>
+                            )
+                        case "PageBlocksCountdown":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Countdown data={block} />
                                 </div>
                             )
 

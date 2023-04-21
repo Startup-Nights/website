@@ -258,6 +258,12 @@ blocks:
         alt: Stadt Winterthur
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
+  - title: Register Now!
+    date: '1698948000000'
+    cta:
+      link: '#'
+      text: Tickets
+    _template: countdown
   - subtitle: Impressions
     title: Startup Nights 2022
     content: >-
@@ -280,6 +286,7 @@ blocks:
       text: Check out more images
     _template: impressions
 ---
+
 
 
 
