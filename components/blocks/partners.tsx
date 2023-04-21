@@ -1,25 +1,23 @@
 import * as React from "react";
-import { Container } from "../util/container";
-import { Section } from "../util/section";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { Template } from "tinacms";
-import CTA from "./cta";
 import Image from "next/image";
 import { placeholderBox } from "../items/placeholder";
 
+import { useEffect, useState } from "react";
+
+// https://dev.to/holdmypotion/react-custom-cursor-no-extra-dependencies-25ki
 export const Partners = ({ data }) => {
     return (
-        <Section className="bg-white">
-            <Container className="relative text-black">
-                {data.text && (
-                    <Container paddx="none" paddy="none" className="content-block">
-                        <TinaMarkdown content={data.text} />
-                    </Container>
-                )}
-
-                {data.cta && data.cta.text !== '' && (
-                    <CTA data={data} />
-                )}
+        <div className="bg-white">
+            <div className="max-w-7xl mx-auto p-24">
+                <div className="text-center mb-20">
+                    <h2 className="text-base font-medium leading-7 text-sn-black-light uppercase">
+                        {data.subtitle}
+                    </h2>
+                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-sn-black sm:text-6xl">
+                        {data.title}
+                    </h1>
+                </div>
 
                 <ul className="grid grid-cols-3 gap-4 md:gap-24 py-4 md:py-12">
                     {data.partners && data.partners.map((partner, i: number) => (
@@ -37,8 +35,8 @@ export const Partners = ({ data }) => {
                         </li>
                     ))}
                 </ul>
-            </Container>
-        </Section >
+            </div>
+        </div>
     );
 };
 
@@ -47,9 +45,14 @@ export const partnersBlockSchema: Template = {
     label: "Partners",
     fields: [
         {
-            label: "Text",
-            name: "text",
-            type: "rich-text",
+            type: "string",
+            label: "Subtitle",
+            name: "subtitle",
+        },
+        {
+            type: "string",
+            label: "Title",
+            name: "title",
         },
         {
             label: "Call to action",

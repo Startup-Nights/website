@@ -242,8 +242,8 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/roland-brack.jpg
           alt: Roland Brack
     _template: speakers
-  - text: |
-      ### Main Partner
+  - subtitle: Partner
+    title: Thank you very much!
     partners:
       - src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2022/partners/ubs.png
@@ -259,6 +259,7 @@ blocks:
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
 ---
+
 
 
 
