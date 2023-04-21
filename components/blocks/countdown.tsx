@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import type { Template } from "tinacms";
 
 const calculateTimeLeft = () => {
@@ -20,7 +20,11 @@ const calculateTimeLeft = () => {
 }
 
 export const Countdown = ({ data }) => {
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    const [timeLeft, setTimeLeft] = useState({} as any);
+
+    useEffect(() => {
+        setTimeLeft(calculateTimeLeft())
+    })
 
     return (
         <div className="bg-sn-yellow">
