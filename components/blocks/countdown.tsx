@@ -24,7 +24,7 @@ export const Countdown = ({ data }) => {
 
     useEffect(() => {
         setTimeLeft(calculateTimeLeft())
-    })
+    }, [])
 
     return (
         <div className="bg-sn-yellow">
