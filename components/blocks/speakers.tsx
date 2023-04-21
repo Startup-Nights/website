@@ -21,88 +21,87 @@ export const Speakers = ({ data }) => {
     }
 
     return (
-        <Section>
-            <Container width="full" className="relative">
-                <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} />
+        <div className="max-w-8xl mx-auto p-24 bg-sn-black">
+            {/* <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} /> */}
 
-                <Container paddx="none" paddy="" className="content-block text-center mb-16 sm:mb-24">
-                    <TinaMarkdown content={data.text} />
+            <div className="text-center mb-20">
+                <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
+                    {data.subtitle}
+                </h2>
+                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
+                    {data.title}
+                </h1>
+            </div>
 
-                    {data.cta && data.cta.text !== '' && (
-                        <CTA data={data} />
-                    )}
-                </Container>
-
-                <div className="relative">
-                    <div
-                        id={'speakers'}
-                        className="relative w-full flex gap-12 md:gap-16 snap-x overflow-auto scrollbar-hide snap-mandatory mb-8 md:mb-12 md:px-12"
-                    >
-                        {data.speakers && data.speakers.map((speaker, i: number) => (
+            <div className="relative">
+                <div
+                    id={'speakers'}
+                    className="relative w-full flex gap-12 md:gap-16 snap-x overflow-auto scrollbar-hide snap-mandatory mb-8 md:mb-12 md:px-12"
+                >
+                    {data.speakers && data.speakers.map((speaker, i: number) => (
+                        <div
+                            key={`speaker-${i}`} id={`speaker-${i}`}
+                            className='relative grid content-start'
+                        >
                             <div
-                                key={`speaker-${i}`} id={`speaker-${i}`}
-                                className='relative grid content-start'
+                                className={'snap-always snap-center shrink-0 relative h-[200px] md:h-[250px] w-[200px] md:w-[250px]' +
+                                    ' group transition-all grid grid-cols-1 md:grid-cols-2'}
+                                onClick={() => update(speaker)}
                             >
-                                <div
-                                    className={'snap-always snap-center shrink-0 relative h-[200px] md:h-[350px] w-[200px] md:w-[350px]' +
-                                        ' group transition-all grid grid-cols-1 md:grid-cols-2'}
-                                    onClick={() => update(speaker)}
-                                >
-                                    <div className='absolute inset-0 w-full transition-all group-hover:scale-95'>
-                                        <Image
-                                            width={350}
-                                            height={450}
-                                            className="w-full h-full object-cover rounded-full"
-                                            alt={speaker?.image?.alt}
-                                            src={speaker?.image?.src}
-                                            placeholder="blur"
-                                            blurDataURL={placeholderBox}
-                                        />
-                                    </div>
-                                    <div>
-                                        <svg 
-                                        className="h-[200px] md:h-[350px] w-[200px] md:w-[350px] transition-all invisible group-hover:visible" 
+                                <div className='absolute inset-0 w-full transition-all group-hover:scale-95'>
+                                    <Image
+                                        width={350}
+                                        height={450}
+                                        className="w-full h-full object-cover rounded-full"
+                                        alt={speaker?.image?.alt}
+                                        src={speaker?.image?.src}
+                                        placeholder="blur"
+                                        blurDataURL={placeholderBox}
+                                    />
+                                </div>
+                                <div>
+                                    <svg
+                                        className="h-[200px] md:h-[250px] w-[200px] md:w-[250px] transition-all invisible group-hover:visible"
                                         stroke="#fdc900" strokeWidth={4} fill="#121212" strokeMiterlimit={10} id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429.93 429.93">
-                                            <polyline className="st0" points="54,3.5 3.5,3.5 3.5,54 " />
-                                            <polyline className="st0" points="380,426.4 426.4,426.4 426.4,380 " />
-                                            <polyline className="st0" points="426.4,54 426.4,3.5 375.9,3.5 " />
-                                            <polyline className="st0" points="3.5,384.9 3.5,426.4 45,426.4 " />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div className='relative grid content-center justify-center text-center -mt-2 md:-mt-8'>
-                                    <span className='bg-sn-yellow -skew-x-6'>
-                                        <p className="h5 m-0 px-2 py-1 skew-x-6 md:px-4 md:py-3 text-black">{speaker?.name}</p>
-                                    </span>
-                                </div>
-                                <div className='relative grid content-center justify-end text-center -mt-2'>
-                                    <span className='bg-white -skew-x-6'>
-                                        <p className="h6 m-0 px-2 skew-x-6 py-1 md:px-4 md:py-2 text-black">{speaker?.position}</p>
-                                    </span>
+                                        <polyline className="st0" points="54,3.5 3.5,3.5 3.5,54 " />
+                                        <polyline className="st0" points="380,426.4 426.4,426.4 426.4,380 " />
+                                        <polyline className="st0" points="426.4,54 426.4,3.5 375.9,3.5 " />
+                                        <polyline className="st0" points="3.5,384.9 3.5,426.4 45,426.4 " />
+                                    </svg>
                                 </div>
                             </div>
-                        ))}
-                        <div className="snap-center shrink-0">
-                            <div className="shrink-0 w-4 sm:w-48"></div>
+                            <div className='relative grid content-center justify-center text-center -mt-2 md:-mt-8'>
+                                <span className='bg-sn-yellow -skew-x-6'>
+                                    <p className="h5 m-0 px-2 py-1 skew-x-6 md:px-4 md:py-3 text-black">{speaker?.name}</p>
+                                </span>
+                            </div>
+                            <div className='relative grid content-center justify-end text-center -mt-2'>
+                                <span className='bg-white -skew-x-6'>
+                                    <p className="h6 m-0 px-2 skew-x-6 py-1 md:px-4 md:py-2 text-black">{speaker?.position}</p>
+                                </span>
+                            </div>
                         </div>
+                    ))}
+                    <div className="snap-center shrink-0">
+                        <div className="shrink-0 w-4 sm:w-48"></div>
                     </div>
                 </div>
+            </div>
 
-                <div className="flex justify-center gap-x-4">
-                    <button
-                        onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: -100, behavior: 'smooth' })}
-                    >
-                        <ArrowLongLeftIcon className="h-6 w-6" />
-                    </button>
-                    <button
-                        onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: 100, behavior: 'smooth' })}
-                    >
-                        <ArrowLongRightIcon className="h-6 w-6" />
-                    </button>
-                </div>
+            <div className="flex justify-center gap-x-4">
+                <button
+                    onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: -100, behavior: 'smooth' })}
+                >
+                    <ArrowLongLeftIcon className="h-6 w-6" />
+                </button>
+                <button
+                    onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: 100, behavior: 'smooth' })}
+                >
+                    <ArrowLongRightIcon className="h-6 w-6" />
+                </button>
+            </div>
 
-            </Container >
-        </Section >
+        </div>
     );
 };
 
@@ -220,9 +219,14 @@ export const speakersBlockSchema: Template = {
     },
     fields: [
         {
-            label: "Text",
-            name: "text",
-            type: "rich-text",
+            type: "string",
+            label: "Subtitle",
+            name: "subtitle",
+        },
+        {
+            type: "string",
+            label: "Title",
+            name: "title",
         },
         {
             label: "Call to action",
