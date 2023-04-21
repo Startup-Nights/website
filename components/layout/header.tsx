@@ -13,7 +13,6 @@ const navigation = [
 ]
 
 export const Header = ({ data }) => {
-
     // If we're on an admin path, other links should also link to their admin paths
     const [prefix, setPrefix] = React.useState("");
 
@@ -26,9 +25,9 @@ export const Header = ({ data }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <div className="bg-sn-black">
+        <div className="bg-sn-black fixed top-0 z-20 w-full backdrop-blur-md bg-sn-black/90 ">
             <div className="relative">
-                <div className='max-w-7xl mx-auto px-6 py-6 lg:px-8' >
+                <div className='max-w-7xl mx-auto px-6 py-6 lg:px-8'>
                     <nav className="relative flex items-center justify-between" aria-label="Global">
                         <div className="flex lg:flex-1">
                             <Link href="/" className="-m-1.5 p-1.5 items-center whitespace-nowrap">
