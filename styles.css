@@ -15,33 +15,46 @@
  */
 @layer base {
     * {
-        font-family: 'Source Sans Pro', sans-serif; 
+        font-family: 'Source Sans Pro', sans-serif;
     }
 
-    .content-block h1, .h1 {
+    .content-block h1,
+    .h1 {
         @apply text-h1sm md:text-h1 uppercase my-8 font-black;
     }
-    .content-block h2, .h2 {
+
+    .content-block h2,
+    .h2 {
         @apply text-h2sm md:text-h2 uppercase mb-6 mt-12;
     }
-    .content-block h3, .h3 {
+
+    .content-block h3,
+    .h3 {
         @apply text-h3sm md:text-h3 uppercase mb-4 mt-8 font-semibold;
     }
-    .content-block h4, .h4 {
+
+    .content-block h4,
+    .h4 {
         @apply text-h4sm md:text-h4 uppercase mb-4 mt-8;
     }
-    .content-block h5, .h5 {
+
+    .content-block h5,
+    .h5 {
         @apply text-h5 uppercase font-bold mb-4 mt-8;
     }
-    .content-block h6, .h6 {
+
+    .content-block h6,
+    .h6 {
         @apply text-h6 uppercase font-medium mb-4 mt-8;
     }
-    .content-block p, .p {
+
+    .content-block p,
+    .p {
         @apply text-psm md:text-p my-2 mt-6 md:my-4 md:mt-8;
     }
 
     .scrollbar-hide {
-        -ms-overflow-style: none; 
+        -ms-overflow-style: none;
         scrollbar-width: none;
     }
 
