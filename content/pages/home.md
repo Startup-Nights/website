@@ -280,12 +280,13 @@ blocks:
       text: Check out more images
     _template: impressions
   - title: Register Now!
-    date: '1698948000000'
+    date: 11/02/2023
     cta:
       link: '#'
       text: Tickets
     _template: countdown
 ---
+
 
 
 
