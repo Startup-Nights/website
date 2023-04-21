@@ -12,7 +12,6 @@ import { aboutBlockSchema } from "../components/blocks/about";
 import { factsBlockSchema } from "../components/blocks/facts";
 import { impressionsBlockSchema } from "../components/blocks/impressions";
 import { countdownBlockSchema } from "../components/blocks/countdown";
-import { ColorPickerInput } from "../components/fields/color";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -290,14 +289,6 @@ const config = defineStaticConfig({
                         name: "theme",
                         // @ts-ignore
                         fields: [
-                            {
-                                type: "string",
-                                label: "Primary Color",
-                                name: "color",
-                                ui: {
-                                    component: ColorPickerInput,
-                                },
-                            },
                             {
                                 type: "string",
                                 name: "font",
