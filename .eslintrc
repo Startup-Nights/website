@@ -8,6 +8,7 @@
         "@typescript-eslint/no-explicit-any": "off"
     },
     "extends": [
+        "next",
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
