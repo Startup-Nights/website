@@ -24,7 +24,7 @@ export default async (req, res) => {
             "status": "subscribed",
         });
 
-        if (response.status >= 400) {
+        if (response.status + ''  >= '400') {
             return res.status(400).json({
                 error: `There was an error subscribing to the newsletter. Shoot us an email at [hello@startup-nights.ch] and we'll add you to the list.`
             });
