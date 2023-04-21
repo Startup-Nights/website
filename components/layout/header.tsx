@@ -3,6 +3,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { SocialIcon } from '../items/social'
+import { Button } from '../items/button'
 
 const navigation = [
     { name: 'Product', href: '#' },
@@ -57,7 +58,11 @@ export const Header = ({ data }) => {
                                 );
                             })}
                         </div>
-                        <div className="hidden lg:flex lg:flex-1 lg:justify-end space-x-2">
+                        <div className="hidden lg:flex lg:flex-1 lg:justify-end space-x-2 justify-center">
+                            <div className='mr-4'>
+                                <Button text='Register' link='https://www.b2match.com/e/startup-nights-2023'></Button>
+                            </div>
+
                             {data.social && data.social.map((item, i: number) => (
                                 <a
                                     key={`${item.title}-${i}`}

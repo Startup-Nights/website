@@ -8,7 +8,7 @@ import CTA from "./cta";
 export const Hero = ({ data }) => {
     return (
         <Section>
-            <Container width="full" className="relative">
+            <Container width="full" className="relative" paddy="large">
 
                 {data.image && data.image.src && (
                     <div className='absolute inset-0'>
@@ -33,23 +33,25 @@ export const Hero = ({ data }) => {
                             Your browser does not support the video tag.
                         </video>
 
-                        <div className="absolute inset-0 mix-blend-multiply bg-slate-400" />
+                        <div className="absolute inset-0 mix-blend-multiply bg-slate-500" />
                     </div>
                 )}
 
 
-                <div className="relative">
+                <div className="relative text-center">
                     <Container paddx="none">
-                        <div className="md:grid md:grid-cols-3">
+                        <div className="">
                             {data.text && (
-                                <div className="content-block col-span-2">
+                                <div className="content-block">
                                     <TinaMarkdown content={data.text} />
                                 </div>
                             )}
                         </div>
 
                         {data.cta && data.cta.text !== '' && (
-                            <CTA data={data} />
+                            <div className="mt-12">
+                                <CTA data={data} />
+                            </div>
                         )}
                     </Container>
                 </div>

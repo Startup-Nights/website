@@ -25,7 +25,7 @@ export const Speakers = ({ data }) => {
             <Container width="full" className="relative">
                 <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} />
 
-                <Container paddx="none" paddy="" className="content-block text-center mb-12 sm:mb-16">
+                <Container paddx="none" paddy="" className="content-block text-center mb-16 sm:mb-24">
                     <TinaMarkdown content={data.text} />
 
                     {data.cta && data.cta.text !== '' && (
