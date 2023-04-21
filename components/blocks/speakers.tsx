@@ -72,12 +72,12 @@ export const Speakers = ({ data }) => {
                                 </div>
                                 <div className='relative grid content-center justify-center text-center -mt-2 md:-mt-8'>
                                     <span className='bg-sn-yellow -skew-x-6'>
-                                        <p className="h5 m-0 px-2 py-1 md:px-4 md:py-3 text-white">{speaker?.name}</p>
+                                        <p className="h5 m-0 px-2 py-1 skew-x-6 md:px-4 md:py-3 text-black">{speaker?.name}</p>
                                     </span>
                                 </div>
                                 <div className='relative grid content-center justify-end text-center -mt-2'>
                                     <span className='bg-white -skew-x-6'>
-                                        <p className="h6 m-0 px-2 py-1 md:px-4 md:py-2 text-black">{speaker?.position}</p>
+                                        <p className="h6 m-0 px-2 skew-x-6 py-1 md:px-4 md:py-2 text-black">{speaker?.position}</p>
                                     </span>
                                 </div>
                             </div>

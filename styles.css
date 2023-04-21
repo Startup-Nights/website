@@ -20,32 +20,32 @@
 
     .content-block h1,
     .h1 {
-        @apply text-h1sm md:text-h1 uppercase my-8 font-black;
+        @apply text-h1sm md:text-h1 my-8 font-black;
     }
 
     .content-block h2,
     .h2 {
-        @apply text-h2sm md:text-h2 uppercase mb-6 mt-12;
+        @apply text-h2sm md:text-h2 mb-6 mt-12;
     }
 
     .content-block h3,
     .h3 {
-        @apply text-h3sm md:text-h3 uppercase mb-4 mt-8 font-semibold;
+        @apply text-h3sm md:text-h3 mb-4 mt-8 font-semibold;
     }
 
     .content-block h4,
     .h4 {
-        @apply text-h4sm md:text-h4 uppercase mb-4 mt-8;
+        @apply text-h4sm md:text-h4 mb-4 mt-8;
     }
 
     .content-block h5,
     .h5 {
-        @apply text-h5 uppercase font-bold mb-4 mt-8;
+        @apply text-h5 font-bold mb-4 mt-8;
     }
 
     .content-block h6,
     .h6 {
-        @apply text-h6 uppercase font-medium mb-4 mt-8;
+        @apply text-h6 font-medium mb-4 mt-8;
     }
 
     .content-block p,
