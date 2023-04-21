@@ -36,7 +36,7 @@ export const Speakers = ({ data }) => {
                 <div className="relative">
                     <div
                         id={'speakers'}
-                        className="relative w-full flex gap-4 md:gap-16 snap-x overflow-auto scrollbar-hide snap-mandatory mb-8 md:mb-12 md:px-12"
+                        className="relative w-full flex gap-12 md:gap-16 snap-x overflow-auto scrollbar-hide snap-mandatory mb-8 md:mb-12 md:px-12"
                     >
                         {data.speakers && data.speakers.map((speaker, i: number) => (
                             <div
@@ -70,14 +70,14 @@ export const Speakers = ({ data }) => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className='relative grid content-center justify-center text-center -mt-4 md:-mt-8'>
+                                <div className='relative grid content-center justify-center text-center -mt-2 md:-mt-8'>
                                     <span className='bg-sn-yellow -skew-x-6'>
-                                        <p className="h5 m-0 px-4 py-3 text-white">{speaker?.name}</p>
+                                        <p className="h5 m-0 px-2 py-1 md:px-4 md:py-3 text-white">{speaker?.name}</p>
                                     </span>
                                 </div>
                                 <div className='relative grid content-center justify-end text-center -mt-2'>
                                     <span className='bg-white -skew-x-6'>
-                                        <p className="h6 m-0 px-4 py-2 text-black">{speaker?.position}</p>
+                                        <p className="h6 m-0 px-2 py-1 md:px-4 md:py-2 text-black">{speaker?.position}</p>
                                     </span>
                                 </div>
                             </div>
