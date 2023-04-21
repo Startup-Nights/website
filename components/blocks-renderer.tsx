@@ -9,12 +9,13 @@ import { Positions } from "./blocks/positions";
 import { Speakers } from "./blocks/speakers";
 import { Team } from "./blocks/team";
 import { Testimonial } from "./blocks/testimonial";
+import { About } from "./blocks/about";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
         <>
             {props.blocks
-                ? props.blocks.map(function(block, i) {
+                ? props.blocks.map(function (block, i) {
                     switch (block.__typename) {
                         case "PageBlocksContent":
                             return (
@@ -97,6 +98,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     <Team data={block} />
                                 </div>
                             );
+                        case "PageBlocksAbout":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <About data={block} />
+                                </div>
+                            )
 
                         default:
                             return null;

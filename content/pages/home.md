@@ -19,6 +19,52 @@ blocks:
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
+  - subtitle: About us
+    title: Who are we?
+    content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    testimonial:
+      name: Bettina Hein
+      position: Serial Entrepreneur
+      quote: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur.
+      image:
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/bettina-hein.png
+        alt: Bettina Hein
+    cta:
+      link: '#'
+      text: Get to know us
+    _template: about
+  - first_row: >
+      ## About us
+
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    cta:
+      link: '#'
+      text: Some text here
+    image:
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+      alt: startup nights team
+    _template: content
   - text: |
       ### Speakers
     cta:
@@ -148,4 +194,9 @@ blocks:
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
 ---
+
+
+
+
+
 
