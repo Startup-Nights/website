@@ -45,10 +45,10 @@ export const Speakers = ({ data }) => {
                             >
                                 <div
                                     className={'snap-always snap-center shrink-0 relative h-[200px] md:h-[350px] w-[200px] md:w-[350px]' +
-                                        ' group transition-all hover:scale-95 grid grid-cols-1 md:grid-cols-2'}
+                                        ' group transition-all grid grid-cols-1 md:grid-cols-2'}
                                     onClick={() => update(speaker)}
                                 >
-                                    <div className='absolute inset-0 w-full'>
+                                    <div className='absolute inset-0 w-full transition-all group-hover:scale-95'>
                                         <Image
                                             width={350}
                                             height={450}
@@ -58,6 +58,16 @@ export const Speakers = ({ data }) => {
                                             placeholder="blur"
                                             blurDataURL={placeholderBox}
                                         />
+                                    </div>
+                                    <div>
+                                        <svg 
+                                        className="h-[200px] md:h-[350px] w-[200px] md:w-[350px] transition-all invisible group-hover:visible" 
+                                        stroke="#fdc900" strokeWidth={4} fill="#121212" strokeMiterlimit={10} id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429.93 429.93">
+                                            <polyline className="st0" points="54,3.5 3.5,3.5 3.5,54 " />
+                                            <polyline className="st0" points="380,426.4 426.4,426.4 426.4,380 " />
+                                            <polyline className="st0" points="426.4,54 426.4,3.5 375.9,3.5 " />
+                                            <polyline className="st0" points="3.5,384.9 3.5,426.4 45,426.4 " />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div className='relative grid content-center justify-center text-center -mt-4 md:-mt-8'>
