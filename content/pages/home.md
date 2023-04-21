@@ -46,6 +46,36 @@ blocks:
       link: '#'
       text: Get to know us
     _template: about
+  - subtitle: Facts & Figures
+    title: The biggest!
+    content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    figures:
+      - name: Speakers
+        number: '42'
+        icon: Rocket
+        rows: '3'
+        cols: '1'
+      - name: Founders
+        number: '500'
+        icon: Founder
+        rows: '1'
+        cols: '2'
+      - name: Visitors
+        number: '8000'
+        icon: Test
+        rows: '2'
+        cols: '2'
+    cta:
+      link: '#'
+      text: Become a part of it
+    _template: facts
   - first_row: >
       ## About us
 
@@ -194,6 +224,8 @@ blocks:
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
 ---
+
+
 
 
 

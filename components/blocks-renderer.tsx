@@ -10,6 +10,7 @@ import { Speakers } from "./blocks/speakers";
 import { Team } from "./blocks/team";
 import { Testimonial } from "./blocks/testimonial";
 import { About } from "./blocks/about";
+import { Facts } from "./blocks/facts";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -105,6 +106,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <About data={block} />
+                                </div>
+                            )
+                        case "PageBlocksFacts":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Facts data={block} />
                                 </div>
                             )
 
