@@ -1,15 +1,12 @@
 ---
 title: Startup Nights
 blocks:
-  - text: >
-      ##### 2 & 3 November, Winterthur
-
+  - text: |
+      2 & 3 November, Winterthur
 
       # Startup Nights
 
-
-      Connecting founders with what and whom they need while building a new,
-      inclusive, and more purposeful culture of entrepreneurship.
+      ### The biggest Startup Event in Switzerland
     cta:
       link: 'https://startup-nights.ch'
       text: Pre-register for Startup Nights 23
@@ -23,9 +20,7 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
   - text: |
-      ### Speakers at Startup Nights
-
-      Check who took the stage at previous events
+      ### Speakers
     cta:
       link: ''
       text: ''
@@ -153,3 +148,4 @@ blocks:
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
 ---
+

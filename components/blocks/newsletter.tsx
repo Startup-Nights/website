@@ -62,7 +62,7 @@ export default function Newsletter({ data }) {
             <p className="mt-2 text-sm leading-6 text-gray-300">
                 The latest news, articles, and resources, sent to your inbox weekly.
             </p>
-            <form onSubmit={handleSubmit} className="mt-6 grid grid-cols-2 gap-y-6 gap-x-4">
+            <form onSubmit={handleSubmit} className="mt-6 grid grid-cols-2 gap-y-3 gap-x-3">
 
                 <div className="col-span-1">
                     <label htmlFor="first" className="sr-only">
@@ -76,7 +76,7 @@ export default function Newsletter({ data }) {
                             ref={firstnameRef}
                             autoComplete="first-name"
                             required
-                            className="w-full min-w-0 flex-1 appearance-none rounded-md border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sky-500 focus:ring-sky-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                            className="w-full min-w-0 flex-1 appearance-none rounded-full border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sky-500 focus:ring-sky-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                             placeholder="Max"
                         />
                     </div>
@@ -94,7 +94,7 @@ export default function Newsletter({ data }) {
                             ref={lastnameRef}
                             autoComplete="last-name"
                             required
-                            className="w-full min-w-0 flex-1 appearance-none rounded-md border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sky-500 focus:ring-sky-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                            className="w-full min-w-0 flex-1 appearance-none rounded-full border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sky-500 focus:ring-sky-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                             placeholder="Muster"
                         />
                     </div>
@@ -112,16 +112,16 @@ export default function Newsletter({ data }) {
                             ref={emailRef}
                             autoComplete="email"
                             required
-                            className="w-full min-w-0 flex-1 appearance-none rounded-md border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sky-500 focus:ring-sky-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                            className="w-full min-w-0 flex-1 appearance-none rounded-full border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sky-500 focus:ring-sky-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                             placeholder="Enter your email"
                         />
                     </div>
                 </div>
 
-                <div className="col-span-1 rounded-md">
+                <div className="col-span-1 rounded-full">
                     <button
                         type="submit"
-                        className="flex w-full items-center justify-center rounded-md bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 text-white hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400 sm:text-sm sm:leading-6"
+                        className="flex w-full items-center justify-center rounded-full bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 text-white hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400 sm:text-sm sm:leading-6"
                     >
                         {loading && (
                             <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
