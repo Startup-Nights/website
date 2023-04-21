@@ -114,7 +114,7 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
     return (
         <>
             <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-10" onClose={closeModal}>
+                <Dialog as="div" className="relative z-30" onClose={closeModal}>
                     <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-300"
@@ -150,7 +150,7 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
                                         </button>
                                     </div>
 
-                                    <div className='z-20 grid grid-cols-1 md:grid-cols-2 h-full'>
+                                    <div className='z-30 grid grid-cols-1 md:grid-cols-2 h-full'>
                                         <div className="relative min-h-[200px] sm:min-h-[400px] md:h-full">
                                             <div className='absolute inset-0 w-full min-h-[200px] sm:min-h-[400px]'>
                                                 <Image
