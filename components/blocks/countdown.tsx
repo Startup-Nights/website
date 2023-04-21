@@ -2,28 +2,22 @@ import { time } from "console";
 import React, { useEffect, useState } from "react";
 import type { Template } from "tinacms";
 
+const calculateTimeLeft = (date: string) => {
+    let difference = +new Date(date) - +new Date();
+
+    return {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
+    };
+}
+
 export const Countdown = ({ data }) => {
-    const calculateTimeLeft = () => {
-        const difference = +new Date(data.date) - +new Date();
-
-        if (difference < 0) {
-            let newDate = new Date(data.date);
-            newDate.setFullYear(newDate.getFullYear() + 1)
-            data.date = newDate;
-        }
-
-        return {
-            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-            minutes: Math.floor((difference / 1000 / 60) % 60),
-            seconds: Math.floor((difference / 1000) % 60)
-        };
-    }
-
     const [timeLeft, setTimeLeft] = useState({} as any);
 
     useEffect(() => {
-        setTimeLeft(calculateTimeLeft())
+        setTimeLeft(calculateTimeLeft(data.date))
     })
 
     return (
