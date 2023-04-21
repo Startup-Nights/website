@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const About = ({ data }) => {
     return (
-        <div className="max-w-8xl mx-auto p-24">
+        <div className="max-w-8xl mx-auto p-24 bg-sn-black">
             <div className="grid grid-cols-2 gap-24">
                 <div className="max-w-md">
                     <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
