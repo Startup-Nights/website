@@ -75,7 +75,7 @@ export const Header = ({ data }) => {
                         </div>
                     </nav>
                     <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                        <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto backdrop-blur-md bg-sn-black/90 px-6 py-6 lg:hidden">
+                        <Dialog.Panel className="fixed inset-0 z-40 overflow-y-auto backdrop-blur-md bg-sn-black/90 px-6 py-6 lg:hidden">
                             <div className="flex items-center justify-between">
                                 <Link
                                     href="/"
