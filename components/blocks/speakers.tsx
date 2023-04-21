@@ -25,7 +25,7 @@ export const Speakers = ({ data }) => {
             <Container width="full" className="relative">
                 <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} />
 
-                <Container paddx="none" paddy="" className="content-block mb-8 sm:mb-12">
+                <Container paddx="none" paddy="" className="content-block text-center mb-12 sm:mb-16">
                     <TinaMarkdown content={data.text} />
 
                     {data.cta && data.cta.text !== '' && (
@@ -33,32 +33,42 @@ export const Speakers = ({ data }) => {
                     )}
                 </Container>
 
-
                 <div className="relative">
                     <div
                         id={'speakers'}
-                        className="relative w-full flex gap-2 md:gap-4 snap-x overflow-auto scrollbar-hide snap-mandatory mb-8 md:mb-12 md:px-12"
+                        className="relative w-full flex gap-4 md:gap-16 snap-x overflow-auto scrollbar-hide snap-mandatory mb-8 md:mb-12 md:px-12"
                     >
                         {data.speakers && data.speakers.map((speaker, i: number) => (
-                            <div key={`speaker-${i}`} id={`speaker-${i}`}
-                                className='snap-always snap-center shrink-0 relative h-[300px] md:h-[450px] w-[200px] md:w-[350px] group transition-all hover:scale-95 grid grid-cols-1 md:grid-cols-2'
-                                onClick={() => update(speaker)}
+                            <div
+                                key={`speaker-${i}`} id={`speaker-${i}`}
+                                className='relative grid content-start'
                             >
-                                <div className='absolute inset-0 w-full'>
-                                    <Image
-                                        width={350}
-                                        height={450}
-                                        className="w-full h-full object-cover"
-                                        alt={speaker?.image?.alt}
-                                        src={speaker?.image?.src}
-                                        placeholder="blur"
-                                        blurDataURL={placeholderBox}
-                                    />
-                                    <div className="absolute inset-0 mix-blend-multiply bg-slate-400 group-hover:bg-slate-500" />
+                                <div
+                                    className={'snap-always snap-center shrink-0 relative h-[200px] md:h-[350px] w-[200px] md:w-[350px]' +
+                                        ' group transition-all hover:scale-95 grid grid-cols-1 md:grid-cols-2'}
+                                    onClick={() => update(speaker)}
+                                >
+                                    <div className='absolute inset-0 w-full'>
+                                        <Image
+                                            width={350}
+                                            height={450}
+                                            className="w-full h-full object-cover rounded-full"
+                                            alt={speaker?.image?.alt}
+                                            src={speaker?.image?.src}
+                                            placeholder="blur"
+                                            blurDataURL={placeholderBox}
+                                        />
+                                    </div>
                                 </div>
-                                <div className='relative grid content-end p-4 h-full'>
-                                    <p className="h5 mb-0">{speaker?.name}</p>
-                                    <p className="h6 mt-2 mb-0">{speaker?.position}</p>
+                                <div className='relative grid content-center justify-center text-center -mt-4 md:-mt-8'>
+                                    <span className='bg-sn-yellow -skew-x-6'>
+                                        <p className="h5 m-0 px-4 py-3 text-white">{speaker?.name}</p>
+                                    </span>
+                                </div>
+                                <div className='relative grid content-center justify-end text-center -mt-2'>
+                                    <span className='bg-white -skew-x-6'>
+                                        <p className="h6 m-0 px-4 py-2 text-black">{speaker?.position}</p>
+                                    </span>
                                 </div>
                             </div>
                         ))}
