@@ -6,7 +6,8 @@ module.exports = {
             colors: {
                 'sn-black': '#121212',
                 'sn-white': '#FFFFFF',
-                'sn-yellow': '#FDC900'
+                'sn-yellow': '#FDC900',
+                'sn-yellow-dark': '#EBB400'
             },
             fontSize: {
                 'h1': ['5.625rem', { lineHeight: '4.375rem' }],
