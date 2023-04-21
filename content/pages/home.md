@@ -76,27 +76,8 @@ blocks:
       link: '#'
       text: Become a part of it
     _template: facts
-  - first_row: >
-      ## About us
-
-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    cta:
-      link: '#'
-      text: Some text here
-    image:
-      src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
-      alt: startup nights team
-    _template: content
-  - text: |
-      ### Speakers
+  - subtitle: Speaker
+    title: Heavyweights
     cta:
       link: ''
       text: ''
@@ -206,6 +187,60 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/pascal-bieri.jpg
           alt: Pascal Bieri Planted
+      - name: Roland Brack
+        position: Founder BRACK.CH
+        description: >
+          As a student at the University of Applied Sciences Brugg-Windisch,
+          Roland Brack founded BRACK.CH in 1994. Early on, BRACK.CH focused on
+          the Internet and e-commerce and is now the largest independent online
+          retailer in Switzerland.
+
+
+          In addition to online retail, the promotion of startups and
+          entrepreneurship in Switzerland are close to his heart. That is why he
+          has been involved in "Die Höhle der Löwen Schweiz" since 2019.
+        social_links:
+          linkedin: 'https://www.linkedin.com/in/roland-brack-291205118/'
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/roland-brack.jpg
+          alt: Roland Brack
+      - name: Roland Brack
+        position: Founder BRACK.CH
+        description: >
+          As a student at the University of Applied Sciences Brugg-Windisch,
+          Roland Brack founded BRACK.CH in 1994. Early on, BRACK.CH focused on
+          the Internet and e-commerce and is now the largest independent online
+          retailer in Switzerland.
+
+
+          In addition to online retail, the promotion of startups and
+          entrepreneurship in Switzerland are close to his heart. That is why he
+          has been involved in "Die Höhle der Löwen Schweiz" since 2019.
+        social_links:
+          linkedin: 'https://www.linkedin.com/in/roland-brack-291205118/'
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/roland-brack.jpg
+          alt: Roland Brack
+      - name: Roland Brack
+        position: Founder BRACK.CH
+        description: >
+          As a student at the University of Applied Sciences Brugg-Windisch,
+          Roland Brack founded BRACK.CH in 1994. Early on, BRACK.CH focused on
+          the Internet and e-commerce and is now the largest independent online
+          retailer in Switzerland.
+
+
+          In addition to online retail, the promotion of startups and
+          entrepreneurship in Switzerland are close to his heart. That is why he
+          has been involved in "Die Höhle der Löwen Schweiz" since 2019.
+        social_links:
+          linkedin: 'https://www.linkedin.com/in/roland-brack-291205118/'
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/roland-brack.jpg
+          alt: Roland Brack
     _template: speakers
   - text: |
       ### Main Partner
@@ -224,6 +259,7 @@ blocks:
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
 ---
+
 
 
 
