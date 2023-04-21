@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import type { Template } from "tinacms";
 
 const calculateTimeLeft = () => {
-    let year = new Date().getFullYear();
-    let difference = +new Date(`10/01/${year}`) - +new Date();
+    const year = new Date().getFullYear();
+    const difference = +new Date(`10/01/${year}`) - +new Date();
 
     let timeLeft = {};
 
