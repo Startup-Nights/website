@@ -40,7 +40,7 @@ export const Footer = ({ data }) => {
                     <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
                         <div className="flex space-x-6 md:order-2">
                             {data.social && data.social.map(item => (
-                                <a key={item.title} href={item.link} target='_blank' className="text-gray-500 hover:text-gray-400">
+                                <a key={item.title} href={item.link} target='_blank' rel="noreferrer" className="text-gray-500 hover:text-gray-400">
                                     <span className="sr-only">{item.title}</span>
                                     <SocialIcon name={item.title} className="h-6 w-6" aria-hidden="true" />
                                 </a>
