@@ -10,6 +10,7 @@ import { teamBlockSchema } from "../components/blocks/team";
 import { partnersBlockSchema } from "../components/blocks/partners";
 import { aboutBlockSchema } from "../components/blocks/about";
 import { factsBlockSchema } from "../components/blocks/facts";
+import { impressionsBlockSchema } from "../components/blocks/impressions";
 import { ColorPickerInput } from "../components/fields/color";
 
 const config = defineStaticConfig({
@@ -403,6 +404,7 @@ const config = defineStaticConfig({
                         templates: [
                             heroBlockSchema,
                             contentBlockSchema,
+                            impressionsBlockSchema,
                             factsBlockSchema,
                             aboutBlockSchema,
                             speakersBlockSchema,
