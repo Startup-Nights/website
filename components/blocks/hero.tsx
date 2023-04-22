@@ -40,7 +40,7 @@ export const Hero = ({ data }) => {
 
                 <div className="relative text-center">
                     <Container paddx="none">
-                        <div className="">
+                        <div className="max-w-2xl mx-auto">
                             {data.text && (
                                 <div className="content-block">
                                     <TinaMarkdown content={data.text} />
