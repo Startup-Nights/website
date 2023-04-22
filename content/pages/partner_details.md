@@ -44,8 +44,43 @@ blocks:
       link: '#'
       text: Become a partner
     _template: partnerinfo
+  - subtitle: Formats
+    title: Attention catching
+    options:
+      - name: Fireside Chat
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
+          alt: asdfa
+      - name: Panel Discussion
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+          alt: asdfa
+      - name: Keynote
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
+          alt: asfasdf
+      - name: Booth
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+          alt: some format picture
+    _template: formatsoverview
   - _template: partnerform
 ---
+
+
+
+
+
+
+
+
+
+
+
 
 
 
