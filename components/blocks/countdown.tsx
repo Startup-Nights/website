@@ -1,30 +1,39 @@
 import React, { useEffect, useState } from "react";
 import type { Template } from "tinacms";
 
-const calculateTimeLeft = () => {
-    const year = new Date().getFullYear();
-    const difference = +new Date(`10/01/${year}`) - +new Date();
-
-    let timeLeft = {};
+function calculateTime(date: string) {
+    const difference = +new Date(date) - +new Date()
+    let timeLeft = []
 
     if (difference > 0) {
-        timeLeft = {
-            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-            minutes: Math.floor((difference / 1000 / 60) % 60),
-            seconds: Math.floor((difference / 1000) % 60)
-        };
+        timeLeft['days'] = Math.floor(difference / (1000 * 60 * 60 * 24))
+        timeLeft['hours'] = Math.floor((difference / (1000 * 60 * 60)) % 24)
+        timeLeft['minutes'] = Math.floor((difference / 1000 / 60) % 60)
+        timeLeft['seconds'] = Math.floor((difference / 1000) % 60)
+    } else {
+        timeLeft['days'] = 0
     }
 
-    return timeLeft;
+    return timeLeft
 }
 
 export const Countdown = ({ data }) => {
-    const [timeLeft, setTimeLeft] = useState({} as any);
+    const [timeLeft, setTimeLeft] = useState({} as any)
 
     useEffect(() => {
-        setTimeLeft(calculateTimeLeft())
-    }, [])
+        const id = setTimeout(() => {
+            setTimeLeft(calculateTime(data.date))
+        }, 1000)
+        return () => clearTimeout(id)
+    })
+
+    const timerComponents = Object.keys(timeLeft).map(interval => {
+        if (!timeLeft[interval]) {
+            return null
+        }
+
+        return true
+    })
 
     return (
         <div className="bg-sn-yellow">
@@ -34,27 +43,29 @@ export const Countdown = ({ data }) => {
                         {data.title}
                     </h1>
 
+                    {timeLeft['days'] !== 0 ?
                     <div className="flex space-x-2">
                         <div className="grid grid-cols-1 text-center">
-                            <p className="text-5xl font-bold">{timeLeft.days}</p>
+                            <p className="text-5xl font-bold">{timeLeft['days']}</p>
                             <p className="mt-2 text-xl">Days</p>
                         </div>
                         <span className="text-4xl font-bold">:</span>
                         <div className="grid grid-cols-1 text-center">
-                            <p className="text-5xl font-bold">{timeLeft.hours}</p>
+                            <p className="text-5xl font-bold">{timeLeft['hours']}</p>
                             <p className="mt-2 text-xl">Hours</p>
                         </div>
                         <span className="text-4xl font-bold">:</span>
                         <div className="grid grid-cols-1 text-center">
-                            <p className="text-5xl font-bold">{timeLeft.minutes}</p>
+                            <p className="text-5xl font-bold">{timeLeft['minutes']}</p>
                             <p className="mt-2 text-xl">Minutes</p>
                         </div>
                         <span className="text-4xl font-bold">:</span>
                         <div className="grid grid-cols-1 text-center">
-                            <p className="text-5xl font-bold">{timeLeft.seconds}</p>
+                            <p className="text-5xl font-bold">{timeLeft['seconds']}</p>
                             <p className="mt-2 text-xl">Seconds</p>
                         </div>
                     </div>
+                    : <p className="text-5xl font-bold">The time has come</p>}
 
                     {data.cta && data.cta.text !== '' && (
                         <div className="flex justify-center self-center">
