@@ -10,6 +10,7 @@ import { aboutBlockSchema } from "../components/blocks/about";
 import { factsBlockSchema } from "../components/blocks/facts";
 import { impressionsBlockSchema } from "../components/blocks/impressions";
 import { countdownBlockSchema } from "../components/blocks/countdown";
+import { partnerinfoBlockSchema } from "../components/blocks/partnerinfo";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -403,6 +404,7 @@ const config = defineStaticConfig({
                             partnerFormSchema,
                             teamBlockSchema,
                             gifBlockSchema,
+                            partnerinfoBlockSchema,
                         ],
                     },
                 ],
