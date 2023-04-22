@@ -3,7 +3,7 @@ import type { Template } from "tinacms";
 
 function calculateTime(date: string) {
     const difference = +new Date(date) - +new Date()
-    let timeLeft = []
+    const timeLeft = []
 
     if (difference > 0) {
         timeLeft['days'] = Math.floor(difference / (1000 * 60 * 60 * 24))
