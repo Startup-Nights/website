@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import type { Template } from "tinacms";
 import CTA from "./cta";
 import Image from "next/image";
-import { ArrowLongLeftIcon, ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
 export const Impressions = ({ data }) => {
     const [index, setIndex] = useState(0);
@@ -46,12 +45,12 @@ export const Impressions = ({ data }) => {
                     </div>
 
                     <div className="grid grid-cols-1 justify-items-center gap-y-8">
-                        {data.images?.length > index && (
+                        {data.image && (
                             <div className="relative h-[400px] md:h-[500px] w-[400px] md:w-[500px]  rounded-full overflow-hidden">
                                 <div className='absolute inset-0 w-full h-full'>
                                     <Image
-                                        src={data.images[index]?.src ? data.images[index]?.src : ''}
-                                        alt={data.images[index]?.alt ? data.images[index]?.alt : ''}
+                                        src={data.image.src}
+                                        alt={data.image.alt}
                                         className="w-full h-full object-cover"
                                         width={500}
                                         height={500}
@@ -59,19 +58,6 @@ export const Impressions = ({ data }) => {
                                 </div>
                             </div>
                         )}
-
-                        <div className="flex justify-center gap-x-4">
-                            <button
-                                onClick={() => setter(index-1)}
-                            >
-                                <ArrowLongLeftIcon className="h-6 w-6" />
-                            </button>
-                            <button
-                                onClick={() => setter(index+1)}
-                            >
-                                <ArrowLongRightIcon className="h-6 w-6" />
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -100,9 +86,8 @@ export const impressionsBlockSchema: Template = {
         },
         {
             type: "object",
-            label: "Images",
-            name: "images",
-            list: true,
+            label: "Image",
+            name: "image",
             fields: [
                 {
                     name: "src",
