@@ -1,6 +1,4 @@
 import { Template } from "tinacms"
-import { Container } from "../util/container"
-import { Section } from "../util/section"
 
 export default function PartnerForm({ data }) {
     return (
@@ -133,10 +131,9 @@ export default function PartnerForm({ data }) {
     )
 }
 
-
 export const partnerFormSchema: Template = {
-    name: "Partnerform",
-    label: "partner_form",
+    name: "partnerform",
+    label: "Partnerform",
     fields: [
         {
             type: "string",
