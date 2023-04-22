@@ -268,13 +268,10 @@ blocks:
       velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
-    images:
-      - src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
-        alt: fireside chat
-      - src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
-        alt: helper
+    image:
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+      alt: some text
     cta:
       link: '#'
       text: Check out more images
@@ -286,6 +283,7 @@ blocks:
       text: Tickets
     _template: countdown
 ---
+
 
 
 
