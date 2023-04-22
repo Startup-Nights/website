@@ -48,9 +48,9 @@ export const About = ({ data }) => {
 
                                 <p className="mt-6 text-md leading-6 text-gray-400">{data.testimonial.quote}</p>
 
-                                <div className="mt-12">
+                                <div className="mt-12 text-gray-400">
                                     <p className="">{data.testimonial.name}</p>
-                                    <p className="">{data.testimonial.position}</p>
+                                    <p className="italic">{data.testimonial.position}</p>
                                 </div>
                             </div>
                         </div>

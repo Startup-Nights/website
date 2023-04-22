@@ -36,22 +36,22 @@ export const Countdown = ({ data }) => {
 
                     <div className="flex space-x-2">
                         <div className="grid grid-cols-1 text-center">
-                            <p className="text-4xl">{timeLeft.days}</p>
+                            <p className="text-5xl font-bold">{timeLeft.days}</p>
                             <p className="mt-2 text-xl">Days</p>
                         </div>
-                        <span className="text-4xl">:</span>
+                        <span className="text-4xl font-bold">:</span>
                         <div className="grid grid-cols-1 text-center">
-                            <p className="text-4xl">{timeLeft.hours}</p>
+                            <p className="text-5xl font-bold">{timeLeft.hours}</p>
                             <p className="mt-2 text-xl">Hours</p>
                         </div>
-                        <span className="text-4xl">:</span>
+                        <span className="text-4xl font-bold">:</span>
                         <div className="grid grid-cols-1 text-center">
-                            <p className="text-4xl">{timeLeft.minutes}</p>
+                            <p className="text-5xl font-bold">{timeLeft.minutes}</p>
                             <p className="mt-2 text-xl">Minutes</p>
                         </div>
-                        <span className="text-4xl">:</span>
+                        <span className="text-4xl font-bold">:</span>
                         <div className="grid grid-cols-1 text-center">
-                            <p className="text-4xl">{timeLeft.seconds}</p>
+                            <p className="text-5xl font-bold">{timeLeft.seconds}</p>
                             <p className="mt-2 text-xl">Seconds</p>
                         </div>
                     </div>

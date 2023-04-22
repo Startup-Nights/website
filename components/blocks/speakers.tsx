@@ -62,7 +62,7 @@ export const Speakers = ({ data }) => {
                                 <div>
                                     <svg
                                         className="h-[200px] md:h-[250px] w-[200px] md:w-[250px] transition-all invisible group-hover:visible"
-                                        stroke="#fdc900" strokeWidth={4} fill="#121212" strokeMiterlimit={10} id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429.93 429.93">
+                                        stroke="#fdc900" strokeWidth={7} fill="#121212" strokeMiterlimit={10} id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429.93 429.93">
                                         <polyline className="st0" points="54,3.5 3.5,3.5 3.5,54 " />
                                         <polyline className="st0" points="380,426.4 426.4,426.4 426.4,380 " />
                                         <polyline className="st0" points="426.4,54 426.4,3.5 375.9,3.5 " />
