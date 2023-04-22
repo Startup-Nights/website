@@ -24,7 +24,7 @@ export const Impressions = ({ data }) => {
     return (
         <div className="bg-sn-black">
             <div className="max-w-7xl mx-auto p-24">
-                <div className="grid grid-cols-2 gap-24">
+                <div className="grid grid-cols-2 gap-24 items-center">
                     <div className="max-w-md py-8">
                         <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
                             {data.subtitle}
