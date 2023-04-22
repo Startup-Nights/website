@@ -4,7 +4,7 @@ import CTA from "./cta";
 
 export const PartnerInfo = ({ data }) => {
     return (
-        <div className="bg-sn-black">
+        <div className="bg-sn-black-light">
             <div className="max-w-7xl mx-auto p-24">
                 <div className="grid grid-cols-2 gap-24 items-center">
                     <div className="max-w-md py-8">
@@ -28,12 +28,12 @@ export const PartnerInfo = ({ data }) => {
 
                     <div className=''>
                         <div className="mt-10 max-w-xl space-y-4 text-base leading-6 text-gray-500 lg:max-w-none">
-                            {data.infopoints && data.infopoints.map((feature) => (
-                                <a href={feature?.link} target="_blank" className="block">
-                                    <div key={feature.name} className="relative bg-sn-black-light rounded-3xl p-8 border-2 border-transparent hover:border-white group">
+                            {data.infopoints && data.infopoints.map((feature, i) => (
+                                <a key={`feature-${i}`} href={feature?.link} target="_blank" className="block">
+                                    <div key={feature.name} className="relative bg-sn-black-lightest rounded-3xl p-8 border-2 border-transparent hover:border-white group">
                                         <div className="absolute invisible -top-3 -right-3 p-2 bg-white rounded-full text-black group-hover:visible">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" className="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                                             </svg>
                                         </div>
                                         <div className="font-semibold text-xl text-gray-300">
