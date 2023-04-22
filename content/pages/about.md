@@ -2,60 +2,39 @@
 title: About
 blocks:
   - text: |
-      ##### About us
+      # About us
 
-      # It's more than a startup event
+      ### The people behind Startup Nights
+    image:
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+      alt: Volunteers at Startup Nights 2022
+    _template: hero
+  - subtitle: A team on a mission
+    title: We are one big family
+    content: >-
+      We are convinced that startups and innovation must be much more present
+      and valued in Switzerland – because it is they that shape the future. With
+      the Startup Nights, we want the Swiss startup ecosystem to grow. Further,
+      we want to create awareness for startups and their innovations whose
+      impact reaches far beyond the startup scene.
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
-      alt: Volunteers at Startup Nights 2022
-    _template: hero
-  - first_row: >
-      ### It's a family gathering
-
-
-      The Startup Nights is comparable to a huge family reunion for the entire
-      startup ecosystem. Where everyone belongs and feels at home.
-
-
-      But as the startup family grows, it needs a bigger home. That is why
-      Startup Nights aim to get bigger and better every year.
-
-
-      ### A TEAM ON A MISSION
-
-
-      We are a team of 45 passionate people, many of us are entrepreneurs
-      ourselves, and we organize Startup Nights 2022 in our spare time. Purely
-      out of passion.
-
-
-      We are convinced that startups and innovation must be much more present
-      and valued in Switzerland – because they shape the future.
-
-
-      With Startup Nights, we want the Swiss startup ecosystem to grow. Further,
-      we want to create awareness for startups and their innovations with an
-      impact far beyond the startup scene.
-    second_row: >
-      ### IMPRESSIONS
-
-
-      The family grew from 1000 to 8000 visitors in 5 years. We helped the
-      community to connect, grow, and get inspired – year after year at the
-      Startup Nights.
-    _template: content
-  - divisions:
-      - description: |
-          Meet our Volunteers Team.
+    _template: impressions
+  - subtitle: Our Rockstars
+    title: The people behind the scenes
+    divisions:
+      - subtitle: Volunteer Team
+        title: They organise people.
         members:
           - name: Jan Guddal
             position: Head of Volunteers
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/jan-guddal.jpg
             alt: Jan Guddal
-      - description: |
-          Meet our Infrastructure Team.
+      - subtitle: Infrastructure Team
+        title: They build stuff.
         members:
           - name: Livia Arena
             position: Visual & Signage
@@ -102,8 +81,8 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/tobias-murbach.jpg
             alt: Tobias Murbach
-      - description: |
-          Meet our Program Team.
+      - subtitle: Program Team
+        title: Entertainers at heart.
         members:
           - name: Adrian Tureatca
             position: Head of Startup Onboarding
@@ -141,8 +120,8 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/benjamin-vidas.jpg
             alt: Benjamin Vidas
-      - description: |
-          Meet our Operations Team.
+      - subtitle: Operations Team
+        title: Keeping our HQ organised.
         members:
           - name: Fabio Furrer
             position: Head of Sustainability
@@ -179,16 +158,16 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-caspar.jpg
             alt: Daniel Caspar
-      - description: |
-          Meet our Partnerships Team.
+      - subtitle: Partnerships Team
+        title: Exchanging gifts.
         members:
           - name: Noah Schuppli
             position: Director of Partner Management
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/noah-schuppli.jpg
             alt: Noah Schuppli
-      - description: |
-          Meet our Marketing Team.
+      - subtitle: Marketing Team
+        title: Influencing you.
         members:
           - name: Tabita Sager
             position: Director of MarCom
@@ -256,4 +235,19 @@ blocks:
             alt: Roger Basler
     _template: team
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

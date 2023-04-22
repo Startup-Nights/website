@@ -7,7 +7,7 @@ export const About = ({ data }) => {
     return (
         <div className="bg-sn-black">
             <div className="max-w-7xl mx-auto p-24">
-                <div className="grid grid-cols-2 gap-24">
+                <div className="grid grid-cols-2 gap-24 items-center">
                     <div className="max-w-md py-8">
                         <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
                             {data.subtitle}
@@ -27,7 +27,7 @@ export const About = ({ data }) => {
                         )}
                     </div>
 
-                    <div className="h-full flex items-center">
+                    <div className="flex items-center">
                         <div className="relative rounded-3xl bg-sn-black-light p-12 overflow-hidden">
                             <div className='absolute -top-36 -right-36 text-sn-yellow'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-80 h-80">
