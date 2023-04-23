@@ -21,6 +21,9 @@ blocks:
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+    cta:
+      link: /hiring
+      text: Join our mission
     _template: impressions
   - subtitle: Our Rockstars
     title: The people behind the scenes
@@ -235,6 +238,7 @@ blocks:
             alt: Roger Basler
     _template: team
 ---
+
 
 
 

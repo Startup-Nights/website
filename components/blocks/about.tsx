@@ -2,6 +2,7 @@ import React from "react";
 import type { Template } from "tinacms";
 import CTA from "./cta";
 import Image from "next/image";
+import { Button, ButtonSecondary } from "../items/button";
 
 export const About = ({ data }) => {
     return (
@@ -20,11 +21,17 @@ export const About = ({ data }) => {
                             {data.content}
                         </p>
 
-                        {data.cta && data.cta.text !== '' && (
-                            <div className="mt-20">
-                                <CTA data={data} />
-                            </div>
-                        )}
+                        <div className="mt-20 space-x-4">
+                            {data.cta && data.cta.text !== '' && (
+                                <Button link={data.cta.link} text={data.cta.text}>
+                                </Button>
+                            )}
+
+                            {data.cta_secondary && data.cta_secondary.text !== '' && (
+                                <ButtonSecondary link={data.cta_secondary.link} text={data.cta_secondary.text}>
+                                </ButtonSecondary>
+                            )}
+                        </div>
                     </div>
 
                     <div className="flex items-center">
@@ -123,6 +130,23 @@ export const aboutBlockSchema: Template = {
         {
             label: "Call to action",
             name: "cta",
+            type: "object",
+            fields: [
+                {
+                    type: "string",
+                    label: "Link",
+                    name: "link",
+                },
+                {
+                    type: "string",
+                    label: "Text",
+                    name: "text",
+                }
+            ]
+        },
+        {
+            label: "Call to action (secondary)",
+            name: "cta_secondary",
             type: "object",
             fields: [
                 {

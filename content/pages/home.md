@@ -8,8 +8,8 @@ blocks:
 
       ### The biggest Startup Event in Switzerland
     cta:
-      link: 'https://startup-nights.ch'
-      text: Pre-register for Startup Nights 23
+      link: 'https://www.b2match.com/e/startup-nights-2023'
+      text: Get your ticket
     image:
       src: ''
       alt: ''
@@ -43,8 +43,11 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/bettina-hein.png
         alt: Bettina Hein
     cta:
-      link: '#'
+      link: /about
       text: Get to know us
+    cta_secondary:
+      link: /hiring
+      text: Join our mission
     _template: about
   - subtitle: Facts & Figures
     title: The biggest!
@@ -73,7 +76,7 @@ blocks:
         rows: '2'
         cols: '2'
     cta:
-      link: '#'
+      link: /partner_details
       text: Become a part of it
     _template: facts
   - subtitle: Speaker
@@ -283,6 +286,13 @@ blocks:
       text: Tickets
     _template: countdown
 ---
+
+
+
+
+
+
+
 
 
 

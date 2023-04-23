@@ -41,7 +41,7 @@ blocks:
           out to us.
         link: '#'
     cta:
-      link: '#'
+      link: '#partner_form'
       text: Become a partner
     _template: partnerinfo
   - subtitle: Formats
@@ -70,6 +70,7 @@ blocks:
     _template: formatsoverview
   - _template: partnerform
 ---
+
 
 
 

@@ -4,7 +4,7 @@ export default function PartnerForm({ data }) {
     return (
         <div className="bg-sn-black-light">
             <div className="max-w-7xl mx-auto p-24">
-                <div className='relative text-slate-200'>
+                <div id="partner_form" className='relative text-slate-200'>
                     <div>
                         <h3 className="text-base font-semibold leading-6 text-slate-200">Personal Information</h3>
                         <p className="mt-1 text-sm text-gray-500">Use a permanent address where you can receive mail.</p>
