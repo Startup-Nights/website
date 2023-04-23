@@ -5,8 +5,8 @@ module.exports = {
         extend: {
             colors: {
                 'sn-black': '#121212',
-                'sn-black-light': '#202020',
-                'sn-black-lightest': '#252525',
+                'sn-black-light': '#191919',
+                'sn-black-lightest': '#242424',
                 'sn-white': '#FFFFFF',
                 'sn-yellow': '#FDC900',
                 'sn-yellow-dark': '#EBB400'

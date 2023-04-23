@@ -12,7 +12,7 @@ export const Facts = ({ data }) => {
                 <div className="row-span-2 row-span-3 row-span-4 row-span-5"></div>
 
                 <div className="grid grid-cols-2 gap-24">
-                    <div className={`grid grid-rows-${data?.figures.length} grid-flow-col gap-4`}>
+                    <div className={`grid grid-rows-${data?.figures?.length} grid-flow-col gap-4`}>
                         {data.figures && data.figures.map((figure, i) => (
                             <div key={`facts-${i}`} className={`${figure.rows > 1 ? ('row-span-' + figure.rows) : ('')} ${figure.cols > 1 ? ('col-span-' + figure.cols) : ('')} rounded-3xl bg-sn-black-lightest p-8 `}>
                                 <div className={`h-full grid gap-y-4 content-center ${figure.rows > 1 ? ('grid-cols-1') : ('grid-cols-2')}`}>
