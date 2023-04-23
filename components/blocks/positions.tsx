@@ -1,10 +1,5 @@
-import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 import type { Template } from "tinacms";
-import { Dialog, Transition } from '@headlessui/react'
-import { useRouter } from 'next/router';
-import { Fragment, } from 'react'
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export const positionsBlockSchema: Template = {
     name: "positions",
@@ -146,13 +141,9 @@ function getDepartmentHoverBackgroundColor(department: string): string {
 
 export const Positions = ({ data, parentField = "" }) => {
     const positions = data.open_positions;
-
-    const [isOpen, setIsOpen] = useState(false);
-    const [currentPosition, setCurrentPosition] = useState(positions[0]);
     const [sortedPositions, setSortedPositions] = useState([]);
     const [selectedDepartment, setSelectedDepartment] = useState('All');
     const departments: string[] = ['All'];
-
 
     positions.forEach(position => {
         if (departments.indexOf(position.department) === -1) {
@@ -178,16 +169,9 @@ export const Positions = ({ data, parentField = "" }) => {
         setSortedPositions(positions);
     });
 
-    function open(position: any) {
-        setCurrentPosition(position);
-        setIsOpen(true);
-    }
-
     return (
         <div className="bg-sn-black">
             <div className="max-w-7xl mx-auto p-24">
-                <Modal isOpen={isOpen} setIsOpen={setIsOpen} position={currentPosition} />
-
                 <div className="text-center mb-20">
                     <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
                         {data.subtitle}
@@ -209,106 +193,29 @@ export const Positions = ({ data, parentField = "" }) => {
                 </div>
 
                 <div className="overflow-hidden">
-
-
-                    <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
                         {sortedPositions.filter(position => position.department == selectedDepartment || selectedDepartment == 'All').map((position) => (
-                            <li key={position.id} className='overflow-hidden bg-sn-black-light shadow rounded-md'>
-                                <a onClick={() => open(position)} className="block hover:bg-sn-black-lightest">
-                                    <div className="flex items-center px-4 py-4 sm:px-6">
-                                        <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
-                                            <div className="truncate">
-                                                <div className="grid grid-cols-1 text-sm items-baseline ">
-                                                    <p className="hidden md:block font-normal text-xs text-gray-300">{position.department}</p>
-                                                    <p className={`font-medium ${getDepartmentTextColor(position.department)}`}>{position.title}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="ml-5 flex-shrink-0">
-                                            <ChevronRightIcon className="h-5 w-5 text-gray-300" aria-hidden="true" />
+                            <a href={position.link} target="_blank" className="block group">
+                                <li key={position.id} className='relative grid grid-cols-1 justify-start items-center bg-sn-black-light shadow rounded-3xl px-8 py-4 border-2 border-transparent hover:border-white'>
+
+                                    <div className="absolute invisible -top-3 -right-3 p-2 bg-white rounded-full text-black group-hover:visible">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                        </svg>
+                                    </div>
+
+                                    <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between truncate pt-1">
+                                        <div className="grid grid-cols-1 items-baseline ">
+                                            <p className="hidden md:block font-normal text-xs text-gray-300">{position.department}</p>
+                                            <p className={`font-medium ${getDepartmentTextColor(position.department)}`}>{position.title}</p>
                                         </div>
                                     </div>
-                                </a>
-                            </li>
+                                </li>
+                            </a>
                         ))}
                     </ul>
                 </div>
             </div>
         </div>
     );
-}
-
-function Modal({ isOpen, setIsOpen, position }: any) {
-    const router = useRouter()
-
-    function closeModal() {
-        setIsOpen(false);
-    }
-
-    function party() {
-        router.push('/party')
-    }
-
-    return (
-        <>
-            <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-10" onClose={closeModal}>
-                    <Transition.Child
-                        as={Fragment}
-                        enter="ease-out duration-300"
-                        enterFrom="opacity-0"
-                        enterTo="opacity-100"
-                        leave="ease-in duration-200"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                    >
-                        <div className="fixed inset-0 bg-black bg-opacity-25" />
-                    </Transition.Child>
-
-                    <div className="fixed inset-0 overflow-y-auto">
-                        <div className="flex min-h-full w-full mx-auto items-center justify-center text-center">
-                            <Transition.Child
-                                as={Fragment}
-                                enter="ease-out duration-300"
-                                enterFrom="opacity-0 scale-95"
-                                enterTo="opacity-100 scale-100"
-                                leave="ease-in duration-200"
-                                leaveFrom="opacity-100 scale-100"
-                                leaveTo="opacity-0 scale-95"
-                            >
-                                <Dialog.Panel className="w-full max-w-3xl transform rounded-2xl bg-sn-black-lightest px-6 pt-6 pb-4 m-4 md:px-12 md:pt-12 md:pb-6 text-left align-middle shadow-xl transition-all">
-                                    <Dialog.Title as="h3" className="h3 text-gray-200 mt-0">
-                                        {position.title}
-                                    </Dialog.Title>
-
-                                    <div className="content-block text-gray-200">
-                                        <TinaMarkdown content={position?.text} />
-                                    </div>
-
-                                    <div className="flex mt-4 gap-4">
-                                        <button
-                                            type="button"
-                                            className="inline-flex justify-center items-center transition-all text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide rounded-xl bg-sn-black-lightest px-4 py-2  text-sn-yellow border-2 border-sn-yellow hover:bg-sn-yellow-dark hover:border-sn-yellow-dark, hover:text-black"
-                                            onClick={closeModal}
-                                        >
-                                            Schliessen
-                                        </button>
-                                        <a
-                                            href={position.link}
-                                            target='blank'
-                                            type="button"
-                                            className="inline-flex justify-center items-center transition-all text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide rounded-xl border border-transparent bg-sn-yellow px-4 py-2 text-black hover:bg-sn-yellow-dark"
-                                            onClick={party}
-                                        >
-                                            Count me in 🥳
-                                        </a>
-                                    </div>
-                                </Dialog.Panel>
-                            </Transition.Child>
-                        </div>
-                    </div>
-                </Dialog>
-            </Transition>
-        </>
-    )
 }
