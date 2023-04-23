@@ -44,6 +44,30 @@ blocks:
       link: '#partner_form'
       text: Become a partner
     _template: partnerinfo
+  - subtitle: About the event
+    title: Some numbers
+    content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    figures:
+      - name: Founders
+        number: '100'
+        rows: '3'
+        cols: '1'
+      - name: Visitors
+        number: 8000+
+        rows: '2'
+        cols: '2'
+      - name: Investors
+        number: '1000'
+        rows: '1'
+        cols: '2'
+    _template: facts
   - subtitle: Formats
     title: Attention catching
     options:
@@ -70,6 +94,29 @@ blocks:
     _template: formatsoverview
   - _template: partnerform
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

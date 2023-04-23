@@ -4,7 +4,7 @@ import CTA from "./cta";
 
 export const PartnerInfo = ({ data }) => {
     return (
-        <div className="bg-sn-black-light">
+        <div className="bg-sn-black">
             <div className="max-w-7xl mx-auto p-24">
                 <div className="grid grid-cols-2 gap-24 items-center">
                     <div className="max-w-md py-8">
