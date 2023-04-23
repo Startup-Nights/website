@@ -45,19 +45,19 @@ export const About = ({ data }) => {
                             <div className="grid grid-cols-1 text-center">
                                 <div className="flex justify-center mb-6">
                                     <Image
-                                        src={data.testimonial.image.src}
-                                        alt={data.testimonial.image.alt}
+                                        src={data.testimonial?.image?.src}
+                                        alt={data.testimonial?.image?.alt}
                                         className="rounded-full"
                                         width={80}
                                         height={80}
                                     />
                                 </div>
 
-                                <p className="mt-6 text-md leading-6 text-gray-400">{data.testimonial.quote}</p>
+                                <p className="mt-6 text-md leading-6 text-gray-400">{data.testimonial?.quote}</p>
 
                                 <div className="mt-12 text-gray-400">
-                                    <p className="">{data.testimonial.name}</p>
-                                    <p className="italic">{data.testimonial.position}</p>
+                                    <p className="">{data.testimonial?.name}</p>
+                                    <p className="italic">{data.testimonial?.position}</p>
                                 </div>
                             </div>
                         </div>

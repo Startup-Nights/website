@@ -366,6 +366,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "hiring") {
                             return `/hiring`;
                         }
+                        if (document._sys.filename === "contact") {
+                            return `/contact`;
+                        }
                         if (document._sys.filename === "party") {
                             return `/party`;
                         }

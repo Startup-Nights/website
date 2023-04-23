@@ -1,70 +1,78 @@
 {
-    "header": {
-        "name": "Tina Starter",
-        "color": "default",
-        "nav": [
-            {
-                "href": "hiring",
-                "label": "We are hiring!"
-            },
-            {
-                "href": "about",
-                "label": "About"
-            }
-        ],
-        "social": [
-            {
-                "title": "instagram",
-                "link": "https://www.instagram.com/startup_nights/"
-            },
-            {
-                "title": "linkedin",
-                "link": "https://www.linkedin.com/company/startup-nights"
-            },
-            {
-                "title": "youtube",
-                "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
-            }
+  "header": {
+    "name": "Tina Starter",
+    "color": "default",
+    "nav": [
+      {
+        "href": "hiring",
+        "label": "We are hiring!"
+      },
+      {
+        "href": "about",
+        "label": "About"
+      },
+      {
+        "href": "contact",
+        "label": "Contact"
+      }
+    ],
+    "social": [
+      {
+        "title": "instagram",
+        "link": "https://www.instagram.com/startup_nights/"
+      },
+      {
+        "title": "linkedin",
+        "link": "https://www.linkedin.com/company/startup-nights"
+      },
+      {
+        "title": "youtube",
+        "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "2023 Startup Nights",
+    "navitems": [
+      {
+        "title": "Startup Nights",
+        "listitems": [
+          {
+            "title": "Contact",
+            "link": "/contact"
+          },
+          {
+            "title": "We are hiring!",
+            "link": "/hiring"
+          },
+          {
+            "title": "Become a partner",
+            "link": "/partner_details"
+          },
+          {
+            "title": "About",
+            "link": "/about"
+          }
         ]
-    },
-    "footer": {
-        "copyright": "2023 Startup Nights",
-        "navitems": [
-            {
-                "title": "Startup Nights",
-                "listitems": [
-                    {
-                        "title": "We are hiring!",
-                        "link": "/hiring"
-                    },
-                    {
-                        "title": "Become a partner",
-                        "link": "/partner_details"
-                    },
-                    {
-                        "title": "About",
-                        "link": "/about"
-                    }
-                ]
-            }
-        ],
-        "social": [
-            {
-                "title": "instagram",
-                "link": "https://www.instagram.com/startup_nights/"
-            },
-            {
-                "title": "github",
-                "link": "https://github.com/Startup-Nights/website"
-            },
-            {
-                "title": "linkedin",
-                "link": "https://www.linkedin.com/company/startup-nights"
-            },
-            {
-                "title": "youtube",
-                "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
-            }
-        ]
-    }
+      }
+    ],
+    "social": [
+      {
+        "title": "instagram",
+        "link": "https://www.instagram.com/startup_nights/"
+      },
+      {
+        "title": "github",
+        "link": "https://github.com/Startup-Nights/website"
+      },
+      {
+        "title": "linkedin",
+        "link": "https://www.linkedin.com/company/startup-nights"
+      },
+      {
+        "title": "youtube",
+        "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
+      }
+    ]
+  }
 }
