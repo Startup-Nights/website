@@ -4,9 +4,6 @@ import type { Template } from "tinacms";
 import { Dialog, Transition } from '@headlessui/react'
 import { useRouter } from 'next/router';
 import { Fragment, } from 'react'
-
-import { Container } from "../util/container";
-import { Section } from "../util/section";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export const positionsBlockSchema: Template = {
@@ -27,6 +24,11 @@ export const positionsBlockSchema: Template = {
         },
     },
     fields: [
+        {
+            type: "string",
+            label: "Subtitle",
+            name: "subtitle",
+        },
         {
             type: "string",
             label: "Title",
@@ -182,20 +184,25 @@ export const Positions = ({ data, parentField = "" }) => {
     }
 
     return (
-        <Section >
-            <Container className={`content-positions`} >
+        <div className="bg-sn-black">
+            <div className="max-w-7xl mx-auto p-24">
                 <Modal isOpen={isOpen} setIsOpen={setIsOpen} position={currentPosition} />
 
-                <h2 className="h3">
-                    {data.title}
-                </h2>
+                <div className="text-center mb-20">
+                    <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
+                        {data.subtitle}
+                    </h2>
+                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
+                        {data.title}
+                    </h1>
+                </div>
 
-                <div className='flex flex-wrap space-x-2 mb-4'>
+                <div className='flex flex-wrap justify-center space-x-2 mb-4'>
                     {departments.map((department: string, i: number) => (
                         <a
                             onClick={() => setSelectedDepartment(department)}
                             key={`department-${i}`}
-                            className={`rounded-full px-3 py-0.5 my-1 text-sm font-semibold leading-5 text-white ${getDepartmentHoverBackgroundColor(department)} ${selectedDepartment == department ? getDepartmentBackgroundColor(department) : ''}`}>
+                            className={`rounded-full px-3 py-0.5 my-1 text-sm font-semibold leading-5 text-gray-200 ${getDepartmentHoverBackgroundColor(department)} ${selectedDepartment == department ? getDepartmentBackgroundColor(department) : ''}`}>
                             {department}
                         </a>
                     ))}
@@ -206,19 +213,19 @@ export const Positions = ({ data, parentField = "" }) => {
 
                     <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         {sortedPositions.filter(position => position.department == selectedDepartment || selectedDepartment == 'All').map((position) => (
-                            <li key={position.id} className='overflow-hidden bg-slate-800 shadow rounded-md'>
-                                <a onClick={() => open(position)} className="block hover:bg-slate-700">
+                            <li key={position.id} className='overflow-hidden bg-sn-black-light shadow rounded-md'>
+                                <a onClick={() => open(position)} className="block hover:bg-sn-black-lightest">
                                     <div className="flex items-center px-4 py-4 sm:px-6">
                                         <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
                                             <div className="truncate">
                                                 <div className="grid grid-cols-1 text-sm items-baseline ">
-                                                    <p className="hidden md:block font-normal text-xs text-gray-400">{position.department}</p>
+                                                    <p className="hidden md:block font-normal text-xs text-gray-300">{position.department}</p>
                                                     <p className={`font-medium ${getDepartmentTextColor(position.department)}`}>{position.title}</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="ml-5 flex-shrink-0">
-                                            <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                                            <ChevronRightIcon className="h-5 w-5 text-gray-300" aria-hidden="true" />
                                         </div>
                                     </div>
                                 </a>
@@ -226,9 +233,8 @@ export const Positions = ({ data, parentField = "" }) => {
                         ))}
                     </ul>
                 </div>
-
-            </Container>
-        </Section >
+            </div>
+        </div>
     );
 }
 
@@ -270,19 +276,19 @@ function Modal({ isOpen, setIsOpen, position }: any) {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-3xl transform rounded-2xl bg-gray-100 px-6 pt-6 pb-4 m-4 md:px-12 md:pt-12 md:pb-6 text-left align-middle shadow-xl transition-all">
-                                    <Dialog.Title as="h3" className="h3 text-gray-900 mt-0">
+                                <Dialog.Panel className="w-full max-w-3xl transform rounded-2xl bg-sn-black-lightest px-6 pt-6 pb-4 m-4 md:px-12 md:pt-12 md:pb-6 text-left align-middle shadow-xl transition-all">
+                                    <Dialog.Title as="h3" className="h3 text-gray-200 mt-0">
                                         {position.title}
                                     </Dialog.Title>
 
-                                    <div className="content-block text-gray-900">
+                                    <div className="content-block text-gray-200">
                                         <TinaMarkdown content={position?.text} />
                                     </div>
 
                                     <div className="flex mt-4 gap-4">
                                         <button
                                             type="button"
-                                            className="inline-flex justify-center items-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-300"
+                                            className="inline-flex justify-center items-center transition-all text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide rounded-xl bg-sn-black-lightest px-4 py-2  text-sn-yellow border-2 border-sn-yellow hover:bg-sn-yellow-dark hover:border-sn-yellow-dark, hover:text-black"
                                             onClick={closeModal}
                                         >
                                             Schliessen
@@ -291,7 +297,7 @@ function Modal({ isOpen, setIsOpen, position }: any) {
                                             href={position.link}
                                             target='blank'
                                             type="button"
-                                            className="inline-flex justify-center items-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-300"
+                                            className="inline-flex justify-center items-center transition-all text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide rounded-xl border border-transparent bg-sn-yellow px-4 py-2 text-black hover:bg-sn-yellow-dark"
                                             onClick={party}
                                         >
                                             Count me in 🥳

@@ -12,7 +12,8 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
       alt: Volunteers chatting at the Startup Nights 2023
     _template: hero
-  - title: Open positions
+  - subtitle: Open positions
+    title: We are looking for you!
     open_positions:
       - title: Partner - University / Academia
         text: >
@@ -157,7 +158,7 @@ blocks:
         department: Marketing
         link: 'https://forms.gle/4M2kYiiFppHSBYem6'
       - title: English Proofreader
-        text: >+
+        text: >
           Deine Aufgaben:
 
 
@@ -184,9 +185,6 @@ blocks:
 
           * unkompliziert, kollegial im Umgang, professionell und strukturiert
           bei der Arbeit
-
-
-
         department: Marketing
         link: 'https://forms.gle/4vnnEhdiMWyyQu1N9'
       - title: Food for Volunteers
@@ -285,6 +283,7 @@ blocks:
         link: 'https://forms.gle/EKa7ts7X6UQizJui8'
     _template: positions
 ---
+
 
 
 
