@@ -29,11 +29,11 @@ export const Header = ({ data }) => {
             <div className="relative">
                 <div className='max-w-7xl mx-auto px-6 py-6 lg:px-8'>
                     <nav className="relative flex items-center justify-between" aria-label="Global">
-                        <Link href="/" className="flex lg:flex-1">
-                            <div className="-m-1.5 p-1.5 items-center whitespace-nowrap">
-                                <img className="h-8 sm:h-12 w-auto" src="/logo/startup-nights.png" />
-                            </div>
-                        </Link>
+                        <div className="flex lg:flex-1">
+                            <Link href="/" className="-m-1.5 p-1.5 items-center whitespace-nowrap">
+                                <img className="h-8 sm:h-12 w-auto select-none" src="/logo/startup-nights.png" />
+                            </Link>
+                        </div>
                         <div className="flex lg:hidden">
                             <button
                                 type="button"
