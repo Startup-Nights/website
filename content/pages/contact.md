@@ -12,16 +12,21 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
       alt: Helper
     _template: hero
-  - subtitle: Contact
-    title: Still have open questions?
-    content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+  - content_block:
+      subtitle: Contact
+      title: Still have open questions?
+      content:
+        - >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+      cta:
+        link: 'mailto:hello@startup-nights.ch'
+        text: Drop us a line
     infopoints:
       - name: Partners and investors
         text: >-
@@ -35,11 +40,9 @@ blocks:
       - name: Press and media
         text: "Everything media related – need some more pictures? Want an interview with someone in our team? Drop us a line with your request and we’ll get back to you soon \U0001F680"
         link: 'mailto:hello@startup-nights.ch'
-    cta:
-      link: 'mailto:hello@startup-nights.ch'
-      text: Drop us a mail
     _template: partnerinfo
 ---
+
 
 
 

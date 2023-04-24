@@ -19,16 +19,26 @@ blocks:
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
-  - subtitle: About us
-    title: Who are we?
-    content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+  - content_block:
+      subtitle: About us
+      title: Who are we?
+      content:
+        - >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        - >-
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+      cta:
+        link: /about
+        text: Get to know us
+      cta_secondary:
+        link: /hiring
+        text: Join our mission
     testimonial:
       name: Bettina Hein
       position: Serial Entrepreneur
@@ -42,23 +52,22 @@ blocks:
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/bettina-hein.png
         alt: Bettina Hein
-    cta:
-      link: /about
-      text: Get to know us
-    cta_secondary:
-      link: /hiring
-      text: Join our mission
     _template: about
-  - subtitle: Facts & Figures
-    title: The biggest!
-    content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+  - content_block:
+      subtitle: Facts & Figures
+      title: The biggest event!
+      content:
+        - >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+      cta:
+        link: /partner_details
+        text: Become a part of it
     figures:
       - name: Speakers
         number: '42'
@@ -75,9 +84,6 @@ blocks:
         icon: Test
         rows: '2'
         cols: '2'
-    cta:
-      link: /partner_details
-      text: Become a part of it
     _template: facts
   - subtitle: Speaker
     title: Heavyweights
@@ -261,23 +267,27 @@ blocks:
         alt: Stadt Winterthur
         link: 'https://stadt.winterthur.ch/'
     _template: partner_list
-  - subtitle: Impressions
-    title: Startup Nights 2022
-    content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+  - content_block:
+      subtitle: Impressions
+      title: Startup Nights 2022
+      content:
+        - >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        - >-
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+      cta:
+        link: /impressions
+        text: Check out more images
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
       alt: some text
-    cta:
-      link: '#'
-      text: Check out more images
     _template: impressions
   - title: Register Now!
     date: 11/02/2023
@@ -286,6 +296,12 @@ blocks:
       text: Tickets
     _template: countdown
 ---
+
+
+
+
+
+
 
 
 

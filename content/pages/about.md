@@ -10,20 +10,24 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
       alt: Volunteers at Startup Nights 2022
     _template: hero
-  - subtitle: A team on a mission
-    title: We are one big family
-    content: >-
-      We are convinced that startups and innovation must be much more present
-      and valued in Switzerland – because it is they that shape the future. With
-      the Startup Nights, we want the Swiss startup ecosystem to grow. Further,
-      we want to create awareness for startups and their innovations whose
-      impact reaches far beyond the startup scene.
+  - content_block:
+      subtitle: A team on a mission
+      title: We are one big family
+      content:
+        - >-
+          We are convinced that startups and innovation must be much more
+          present and valued in Switzerland – because it is they that shape the
+          future.
+        - >-
+          With the Startup Nights, we want the Swiss startup ecosystem to grow.
+          Further, we want to create awareness for startups and their
+          innovations whose impact reaches far beyond the startup scene.
+      cta:
+        link: /hiring
+        text: Join our mission
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
-    cta:
-      link: /hiring
-      text: Join our mission
     _template: impressions
   - subtitle: Our Rockstars
     title: The people behind the scenes
@@ -238,6 +242,7 @@ blocks:
             alt: Roger Basler
     _template: team
 ---
+
 
 
 

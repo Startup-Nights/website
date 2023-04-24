@@ -12,16 +12,23 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
       alt: Fireside Chat at Startup Nights 2022
     _template: hero
-  - subtitle: Info
-    title: Welcome abord the Startup Nights!
-    content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+  - content_block:
+      subtitle: Partner Info
+      title: Welcome abord the Startup Nights!
+      content:
+        - >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        - >-
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+      cta:
+        link: '#partner_form'
+        text: Become a partner
     infopoints:
       - name: What we need from you
         text: >-
@@ -40,9 +47,6 @@ blocks:
           download it. If you have further questions, don't hesitate to reach
           out to us.
         link: '#'
-    cta:
-      link: '#partner_form'
-      text: Become a partner
     tabitems:
       - subtitle: subtitle
         title: title
@@ -57,16 +61,18 @@ blocks:
         title: title
         content: content
     _template: partnerinfo
-  - subtitle: About the event
-    title: Some numbers
-    content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+  - content_block:
+      subtitle: About the event
+      title: Some numbers
+      content:
+        - >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
     figures:
       - name: Founders
         number: '100'
@@ -107,6 +113,8 @@ blocks:
     _template: formatsoverview
   - _template: partnerform
 ---
+
+
 
 
 
