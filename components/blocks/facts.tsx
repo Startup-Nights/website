@@ -1,6 +1,7 @@
 import React from "react";
 import type { Template } from "tinacms";
 import CTA from "./cta";
+import { ContentBlock, ContentBlockSchema } from "../items/contentblock";
 
 export const Facts = ({ data }) => {
     return (
@@ -30,24 +31,7 @@ export const Facts = ({ data }) => {
                         ))}
                     </div>
 
-                    <div className="max-w-md py-8">
-                        <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
-                            {data.subtitle}
-                        </h2>
-                        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
-                            {data.title}
-                        </h1>
-
-                        <p className="mt-6 text-md leading-6 text-gray-300">
-                            {data.content}
-                        </p>
-
-                        {data.cta && data.cta.text !== '' && (
-                            <div className="mt-20">
-                                <CTA data={data} />
-                            </div>
-                        )}
-                    </div>
+                    <ContentBlock data={data?.content_block} />
                 </div>
             </div>
         </div>
@@ -58,21 +42,7 @@ export const factsBlockSchema: Template = {
     name: "facts",
     label: "Facts",
     fields: [
-        {
-            type: "string",
-            label: "Subtitle",
-            name: "subtitle",
-        },
-        {
-            type: "string",
-            label: "Title",
-            name: "title",
-        },
-        {
-            type: "string",
-            label: "Content",
-            name: "content",
-        },
+        ContentBlockSchema,
         {
             type: "object",
             label: "Figures",
@@ -105,23 +75,6 @@ export const factsBlockSchema: Template = {
                     name: "cols",
                 },
             ],
-        },
-        {
-            label: "Call to action",
-            name: "cta",
-            type: "object",
-            fields: [
-                {
-                    type: "string",
-                    label: "Link",
-                    name: "link",
-                },
-                {
-                    type: "string",
-                    label: "Text",
-                    name: "text",
-                }
-            ]
         },
     ],
 };
