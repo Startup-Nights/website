@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { Template } from "tinacms";
 
@@ -195,7 +196,7 @@ export const Positions = ({ data, parentField = "" }) => {
                 <div className="overflow-hidden">
                     <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
                         {sortedPositions.filter(position => position.department == selectedDepartment || selectedDepartment == 'All').map((position) => (
-                            <a href={position.link} target="_blank" className="block group">
+                            <Link href={position.link} target="_blank" className="block group">
                                 <li key={position.id} className='relative grid grid-cols-1 justify-start items-center bg-sn-black-light shadow rounded-3xl px-8 py-4 border-2 border-transparent hover:border-white'>
 
                                     <div className="absolute invisible -top-3 -right-3 p-2 bg-white rounded-full text-black group-hover:visible">
@@ -211,7 +212,7 @@ export const Positions = ({ data, parentField = "" }) => {
                                         </div>
                                     </div>
                                 </li>
-                            </a>
+                            </Link>
                         ))}
                     </ul>
                 </div>

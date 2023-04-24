@@ -2,6 +2,7 @@ import { Container } from "../../util/container";
 import { SocialIcon } from "../../items/social"
 import { Section } from "../../util/section"
 import Newsletter from "../../blocks/newsletter";
+import Link from "next/link";
 
 export const Footer = ({ data }) => {
     return (
@@ -20,9 +21,9 @@ export const Footer = ({ data }) => {
                                         <ul role="list" className="mt-6 space-y-3">
                                             {navitem.listitems.map((item) => (
                                                 <li key={item.title}>
-                                                    <a href={item.link} className="text-sm leading-6 text-gray-300 hover:text-white">
+                                                    <Link href={item.link} className="text-sm leading-6 text-gray-300 hover:text-white">
                                                         {item.title}
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             ))}
                                         </ul>
@@ -40,10 +41,10 @@ export const Footer = ({ data }) => {
                     <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
                         <div className="flex space-x-6 md:order-2">
                             {data.social && data.social.map(item => (
-                                <a key={item.title} href={item.link} target='_blank' rel="noreferrer" className="text-gray-500 hover:text-gray-400">
+                                <Link key={item.title} href={item.link} target='_blank' rel="noreferrer" className="text-gray-500 hover:text-gray-400">
                                     <span className="sr-only">{item.title}</span>
                                     <SocialIcon name={item.title} className="h-6 w-6" aria-hidden="true" />
-                                </a>
+                                </Link>
                             ))}
                         </div>
                         <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">

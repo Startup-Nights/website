@@ -10,6 +10,7 @@ import { SocialIcon } from "../items/social";
 import CTA from "./cta";
 import Image from "next/image";
 import { placeholderBox } from "../items/placeholder";
+import Link from "next/link";
 
 export const Speakers = ({ data }) => {
     const [isOpen, setIsOpen] = React.useState(false)
@@ -71,12 +72,12 @@ export const Speakers = ({ data }) => {
                                 </div>
                             </div>
                             <div className='relative grid content-center justify-center text-center -mt-2 md:-mt-8'>
-                                <span className='bg-sn-yellow -skew-x-6'>
+                                <span className='bg-sn-yellow -skew-x-6 rounded-sm'>
                                     <p className="h5 m-0 px-2 py-1 skew-x-6 md:px-4 md:py-3 text-black">{speaker?.name}</p>
                                 </span>
                             </div>
                             <div className='relative grid content-center justify-end text-center -mt-2'>
-                                <span className='bg-white -skew-x-6'>
+                                <span className='bg-white -skew-x-6 rounded-sm'>
                                     <p className="h6 m-0 px-2 skew-x-6 py-1 md:px-4 md:py-2 text-black">{speaker?.position}</p>
                                 </span>
                             </div>
@@ -176,10 +177,10 @@ function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
 
                                             <div className="flex mt-8 justify-start gap-4">
                                                 {speaker.social_links && speaker.social_links.linkedin && (
-                                                    <a href={speaker.social_links.linkedin} target='_blank' className="text-gray-500 hover:text-gray-400">
+                                                    <Link href={speaker.social_links.linkedin} target='_blank' className="text-gray-500 hover:text-gray-400">
                                                         <span className="sr-only">LinkedIn</span>
                                                         <SocialIcon name={'linkedin'} className="h-8 w-8" aria-hidden="true" />
-                                                    </a>
+                                                    </Link>
                                                 )}
 
                                             </div>

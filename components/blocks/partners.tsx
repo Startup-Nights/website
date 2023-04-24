@@ -4,6 +4,7 @@ import Image from "next/image";
 import { placeholderBox } from "../items/placeholder";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 // https://dev.to/holdmypotion/react-custom-cursor-no-extra-dependencies-25ki
 export const Partners = ({ data }) => {
@@ -22,7 +23,7 @@ export const Partners = ({ data }) => {
                 <ul className="grid grid-cols-3 gap-4 md:gap-24 py-4 md:py-12">
                     {data.partners && data.partners.map((partner, i: number) => (
                         <li key={`partner-${i}`}>
-                            <a href={partner?.link} target={'_blank'} className='relative'>
+                            <Link href={partner?.link} target={'_blank'} className='relative'>
                                 <Image
                                     width={300}
                                     height={200}
@@ -31,7 +32,7 @@ export const Partners = ({ data }) => {
                                     placeholder="blur"
                                     blurDataURL={placeholderBox}
                                 />
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

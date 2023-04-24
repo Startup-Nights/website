@@ -29,37 +29,21 @@ blocks:
       cta:
         link: '#partner_form'
         text: Become a partner
+      cta_secondary:
+        link: /contact
+        text: Any questions?
     infopoints:
       - name: What we need from you
         text: >-
           For the newsletter, the website and social media postings we require
           your logo in SVG format. For the invoice we also need your address.
-        link: 'mailto:partner@startup-nights.ch'
+        link: ''
       - name: What you need
         text: >-
           Every team member/employee attending the Event has to buy a Corporate
           Ticket for the Event. However, often we free tickets (100% discount
           code) come with your Partner package.
-        link: 'https://www.b2match.com/e/startup-nights-2023'
-      - name: Download the information
-        text: >-
-          All the necessary information is linked in the PDF. Click here to
-          download it. If you have further questions, don't hesitate to reach
-          out to us.
-        link: '#'
-    tabitems:
-      - subtitle: subtitle
-        title: title
-        content: content
-      - subtitle: subtitle
-        title: title
-        content: content
-      - subtitle: subtitle
-        title: title
-        content: content
-      - subtitle: subtitle
-        title: title
-        content: content
+        link: ''
     _template: partnerinfo
   - items:
       - content_block:
@@ -167,6 +151,10 @@ blocks:
     _template: formatsoverview
   - _template: partnerform
 ---
+
+
+
+
 
 
 
