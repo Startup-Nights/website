@@ -1,28 +1,24 @@
-import * as React from "react";
-import { Container } from "../util/container";
-import { Section } from "../util/section";
 import type { Template } from "tinacms";
-import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, } from 'react'
-import { TinaMarkdown } from 'tinacms/dist/rich-text';
-import { ArrowLongRightIcon, ArrowLongLeftIcon, XCircleIcon } from "@heroicons/react/24/outline";
-import { SocialIcon } from "../items/social";
-import CTA from "./cta";
 import Image from "next/image";
 import { placeholderBox } from "../items/placeholder";
-import Link from "next/link";
+import useEmblaCarousel from "embla-carousel-react";
+import { useCallback } from "react";
+import Autoplay from "embla-carousel-autoplay";
+import { ArrowLongLeftIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid";
 
 export const Speakers = ({ data }) => {
-    const [isOpen, setIsOpen] = React.useState(false)
-    const [currentSpeaker, setCurrentSpeaker] = React.useState({})
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
 
-    function update(speaker) {
-        setCurrentSpeaker(speaker);
-        setIsOpen(true);
-    }
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev()
+    }, [emblaApi])
+
+    const scrollNext = useCallback(() => {
+        if (emblaApi) emblaApi.scrollNext()
+    }, [emblaApi])
 
     return (
-        <div className="max-w-8xl mx-auto p-24 bg-sn-black">
+        <div className="max-w-8xl mx-auto pt-24 pb-16 bg-sn-black">
             {/* <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} /> */}
 
             <div className="text-center mb-20">
@@ -34,20 +30,16 @@ export const Speakers = ({ data }) => {
                 </h1>
             </div>
 
-            <div className="relative">
-                <div
-                    id={'speakers'}
-                    className="relative w-full flex gap-12 md:gap-16 snap-x overflow-auto scrollbar-hide snap-mandatory mb-8 md:mb-12 md:px-12"
-                >
+            <div className="overflow-hidden" ref={emblaRef}>
+                <div className="flex">
                     {data.speakers && data.speakers.map((speaker, i: number) => (
                         <div
                             key={`speaker-${i}`} id={`speaker-${i}`}
-                            className='relative grid content-start'
+                            className='relative grid content-start mx-12'
                         >
                             <div
                                 className={'snap-always snap-center shrink-0 relative h-[200px] md:h-[250px] w-[200px] md:w-[250px]' +
                                     ' group transition-all grid grid-cols-1 md:grid-cols-2'}
-                                onClick={() => update(speaker)}
                             >
                                 <div className='absolute inset-0 w-full transition-all group-hover:scale-95'>
                                     <Image
@@ -83,118 +75,20 @@ export const Speakers = ({ data }) => {
                             </div>
                         </div>
                     ))}
-                    <div className="snap-center shrink-0">
-                        <div className="shrink-0 w-4 sm:w-48"></div>
-                    </div>
                 </div>
             </div>
 
-            <div className="flex justify-center gap-x-4">
-                <button
-                    onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: -100, behavior: 'smooth' })}
-                >
+            <div className="flex justify-center gap-x-4 mt-12">
+                <button onClick={scrollPrev} >
                     <ArrowLongLeftIcon className="h-6 w-6" />
                 </button>
-                <button
-                    onClick={() => document.querySelector('#speakers').scrollBy({ top: 0, left: 100, behavior: 'smooth' })}
-                >
+                <button onClick={scrollNext} >
                     <ArrowLongRightIcon className="h-6 w-6" />
                 </button>
             </div>
         </div>
     );
 };
-
-function SpeakerModal({ isOpen, setIsOpen, speaker }: any) {
-    function closeModal() {
-        setIsOpen(false);
-    }
-
-    return (
-        <>
-            <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-30" onClose={closeModal}>
-                    <Transition.Child
-                        as={Fragment}
-                        enter="ease-out duration-300"
-                        enterFrom="opacity-0"
-                        enterTo="opacity-100"
-                        leave="ease-in duration-200"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                    >
-                        <div className="fixed inset-0 bg-black bg-opacity-25" />
-                    </Transition.Child>
-
-                    <div className="fixed inset-0 overflow-y-auto">
-                        <div className="flex h-full w-full mx-auto items-center justify-center text-center">
-                            <Transition.Child
-                                as={Fragment}
-                                enter="ease-out duration-300"
-                                enterFrom="opacity-0 scale-95"
-                                enterTo="opacity-100 scale-100"
-                                leave="ease-in duration-200"
-                                leaveFrom="opacity-100 scale-100"
-                                leaveTo="opacity-0 scale-95"
-                            >
-                                <Dialog.Panel className="w-full h-full transform bg-sn-black p-6 text-left transition-all text-slate-100 overflow-auto">
-
-                                    <div className="absolute top-3 right-3 md:top-5 md:right-5 z-30">
-                                        <button
-                                            type="button"
-                                            className="inline-flex justify-center text-sm font-medium text-slate-100"
-                                            onClick={closeModal}
-                                        >
-                                            <XCircleIcon className="h-7 w-7 md:h-10 md:w-10" />
-                                        </button>
-                                    </div>
-
-                                    <div className='z-30 grid grid-cols-1 md:grid-cols-2 h-full'>
-                                        <div className="relative min-h-[200px] sm:min-h-[400px] md:h-full">
-                                            <div className='absolute inset-0 w-full min-h-[200px] sm:min-h-[400px]'>
-                                                <Image
-                                                    width={700}
-                                                    height={900}
-                                                    className="w-full h-full object-cover"
-                                                    alt={speaker?.image?.alt}
-                                                    src={speaker?.image?.src}
-                                                    placeholder="blur"
-                                                    blurDataURL={placeholderBox}
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className='py-4 md:p-16'>
-                                            <h2 className='h1'>
-                                                {speaker?.name}
-                                            </h2>
-                                            <h3 className='h5'>
-                                                {speaker?.position}
-                                            </h3>
-
-                                            <div className="content-block">
-                                                <TinaMarkdown content={speaker?.description} />
-                                            </div>
-
-                                            <div className="flex mt-8 justify-start gap-4">
-                                                {speaker.social_links && speaker.social_links.linkedin && (
-                                                    <Link href={speaker.social_links.linkedin} target='_blank' className="text-gray-500 hover:text-gray-400">
-                                                        <span className="sr-only">LinkedIn</span>
-                                                        <SocialIcon name={'linkedin'} className="h-8 w-8" aria-hidden="true" />
-                                                    </Link>
-                                                )}
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Dialog.Panel>
-                            </Transition.Child>
-                        </div>
-                    </div>
-                </Dialog>
-            </Transition>
-        </>
-    )
-}
 
 export const speakersBlockSchema: Template = {
     name: "speakers",
