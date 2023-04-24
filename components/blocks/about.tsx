@@ -24,8 +24,8 @@ export const About = ({ data }) => {
                                         src={data.testimonial?.image?.src}
                                         alt={data.testimonial?.image?.alt}
                                         className="rounded-full"
-                                        width={80}
-                                        height={80}
+                                        width={140}
+                                        height={140}
                                     />
                                 </div>
 

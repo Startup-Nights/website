@@ -36,12 +36,13 @@ blocks:
         link: 'mailto:partner@startup-nights.ch'
       - name: Event location and stay
         text: "If you are unfamiliar with Winterthur, need help getting around or finding a place to stay feel free to drop us a line. Most of our team members are locals and can tell you exactly where you find the good spots \U0001F609"
-        link: 'mailto:mayra.viejo@gmx.net'
+        link: 'mailto:hello@startup-nights.ch'
       - name: Press and media
         text: "Everything media related – need some more pictures? Want an interview with someone in our team? Drop us a line with your request and we’ll get back to you soon \U0001F680"
         link: 'mailto:hello@startup-nights.ch'
     _template: partnerinfo
 ---
+
 
 
 
