@@ -13,6 +13,8 @@ import { Impressions } from "./blocks/impressions";
 import { Countdown } from "./blocks/countdown";
 import { PartnerInfo } from "./blocks/partnerinfo";
 import { FormatsOverview } from "./blocks/formatsoverview";
+import { Tabs } from "./blocks/tabs";
+import { Dropdown } from "./blocks/dropdown";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -135,6 +137,24 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <FormatsOverview data={block} />
+                                </div>
+                            )
+                        case "PageBlocksTabs":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Tabs data={block} />
+                                </div>
+                            )
+                        case "PageBlocksDropdown":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Dropdown data={block} />
                                 </div>
                             )
 

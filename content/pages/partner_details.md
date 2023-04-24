@@ -61,6 +61,60 @@ blocks:
         title: title
         content: content
     _template: partnerinfo
+  - items:
+      - content_block:
+          subtitle: 'Speeches, discussions and talks'
+          title: 'Keynote, Panel Discussion & Fireside Chat'
+          content:
+            - >-
+              Keynote speeches, panels and fireside chats are all 25 minutes
+              long. However, the keynote usually is only one person where as the
+              panel and fireside chats include multiple people and a moderator
+              who leads through the discussions.
+            - >-
+              If you have an idea or want to participate in one, please contact
+              the corresponding person.
+          cta:
+            link: 'mailto:speaker@startup-nights.ch'
+            text: Keynote contact
+          cta_secondary:
+            link: 'mailto:speaker@startup-nights.ch'
+            text: Panel & Fireside Chat contact
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+          alt: some picture
+      - content_block:
+          subtitle: Setup and Details
+          title: Booth
+          content:
+            - >-
+              In the design of your booth, you are really unrestricted.
+              (However, we are not the biggest fans of tall exhibition walls
+              around the whole booth) Please bring at least a rollup with you so
+              that people can see and recognize you. Please help us that people
+              will love your stand and the whole event. Be creative in what you
+              show and do on your booth: Show your products, show real customer
+              cases, excite people with games…
+            - >-
+              We want to make sure you have everything you need for an amazing
+              booth and that we can place it on the best possible space.
+              Therefore, it would be advantageous if you could send us some
+              additional information about the bigger items you want to bring or
+              send us a sketch of the booth
+          cta:
+            link: 'mailto:partner@startup-nights.ch'
+            text: Drop us a line
+        infopoints:
+          - name: Booth Setup Time
+            text: >-
+              Thursday, 03.11.2022 from 08:00 to 11:00 The stand must be set up
+              by 12:00 at the latest.
+          - name: Booth Dismantle Times
+            text: >-
+              Friday, 4.11.2022 from 10 pm to 3 am (has to be dismantled before
+              Saturday 7 am).
+    _template: Dropdown
   - content_block:
       subtitle: About the event
       title: Some numbers
@@ -113,6 +167,22 @@ blocks:
     _template: formatsoverview
   - _template: partnerform
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
