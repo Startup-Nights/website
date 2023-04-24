@@ -4,23 +4,6 @@ import CTA from "./cta";
 import Image from "next/image";
 
 export const Impressions = ({ data }) => {
-    const [index, setIndex] = useState(0);
-
-    const setter = (index: number) => {
-        if (index === data.images?.length) {
-            setIndex(0);
-        } else if (index < 0) {
-            setIndex(data.images?.length - 1);
-        } else {
-            setIndex(index);
-        }
-    }
-
-    useEffect(() => {
-        // change the images
-        setTimeout(() => setter(index + 1), 5 * 1000)
-    })
-
     return (
         <div className="bg-sn-black">
             <div className="max-w-7xl mx-auto p-24">
