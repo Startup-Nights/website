@@ -98,6 +98,94 @@ blocks:
             text: >-
               Friday, 4.11.2022 from 10 pm to 3 am (has to be dismantled before
               Saturday 7 am).
+      - content_block:
+          subtitle: Sharing Knowledge
+          title: Workshops
+          content:
+            - >-
+              Our rooms have space for 70-100 seats which can be reserved via
+              our ticketing system. Equipment is organized on demand.
+          cta:
+            link: 'mailto:speaker@startup-nights.ch'
+            text: Pitch your workshop idea
+        infopoints:
+          - name: At a glance
+            text: 45 minutes for 70 - 100 people.
+      - content_block:
+          subtitle: Get feedback from experienced founders
+          title: Pitching Session
+          content:
+            - >-
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+          cta:
+            link: 'mailto:partner@startup-nights.ch'
+            text: Want to sponsor prizes?
+          cta_secondary:
+            link: 'mailto:julian_stylianou@hotmail.com'
+            text: Want to be part of the jury?
+      - content_block:
+          subtitle: Print + Media
+          title: Founded
+          content:
+            - >-
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            - ' The time of the Post can be anytime in the Year of the Startup Nights. So also after the Event during the whole year is possible.'
+          cta:
+            link: 'mailto:alyssia.kugler@farner.ch'
+            text: Send us the data
+        infopoints:
+          - name: If you booked a story
+            text: >-
+              Person’s contact data for a background conversation to serve as a
+              foundation for the article and to implement quotes in the story
+              Photo material (size must be at least 1 MB and have 300 dpi).
+          - name: If you booked an advertisement
+            text: >-
+              To be delivered as print-ready PDF, standard PDF/X3 or PDF/X4,
+              Color mode CMYK, color profile ISO coated v2 300%. With crop mark
+              Advertisements without margins: with a 3 mm bleed allowance.
+      - content_block:
+          subtitle: Newsletter
+          title: Promotion SoMe and Newsletter
+          content:
+            - please provide a short text (300 characters and 1 picture).
+          cta:
+            link: 'mailto:nadine.ungricht@gmail.com'
+            text: Send us the data
+      - content_block:
+          subtitle: Video
+          title: Promotion on Site
+          content:
+            - >-
+              As a Stage Sponsor or if you booked promotion via a Video for the
+              Event Screens: Please send us a short video you want to have on
+              the Event Screens. The time depends on the individual agreement
+              (5-10sec).
+          cta:
+            link: 'mailto:partner@startup-nights.ch'
+            text: Get in touch
+      - content_block:
+          subtitle: Fancy something else?
+          title: Other Options
+          content:
+            - >-
+              Potential options include: Sponsoring of the photo bus Sponsoring
+              of the branded lanyards (for 2 years) Participation at the
+              Corporate Matchmaking Sponsoring of goodie bags, food or drinks,
+              or Product sampling on site Sponsor the Gala Dinner, Leaders
+              Brunch, or Afterparty Sponsor a stage or workshop room An event
+              within the event: Your event in the festival area as part of the
+              program Online pre- Session General donations to support the
+              Event.
+          cta:
+            link: 'mailto:partner@startup-nights.ch'
+            text: Get in touch
     _template: Dropdown
   - content_block:
       subtitle: About the event
@@ -151,6 +239,19 @@ blocks:
     _template: formatsoverview
   - _template: partnerform
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
