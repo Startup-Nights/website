@@ -35,6 +35,8 @@
     "@tailwindcss/typography": "^0.5.8",
     "@tinacms/auth": "^1.0.3",
     "date-fns": "^2.23.0",
+    "embla-carousel-autoplay": "^7.1.0",
+    "embla-carousel-react": "^7.1.0",
     "eslint-config-next": "^13.1.6",
     "final-form": "^4.20.8",
     "graphql-tag": "^2.0.0",
