@@ -292,10 +292,11 @@ blocks:
   - title: Register Now!
     date: 11/02/2023
     cta:
-      link: '#'
+      link: 'https://www.b2match.com/e/startup-nights-2023'
       text: Tickets
     _template: countdown
 ---
+
 
 
 

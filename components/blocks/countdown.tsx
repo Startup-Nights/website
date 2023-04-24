@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import type { Template } from "tinacms";
 
@@ -69,12 +70,12 @@ export const Countdown = ({ data }) => {
 
                     {data.cta && data.cta.text !== '' && (
                         <div className="flex justify-center self-center">
-                            <a href={data.cta.link}
+                            <Link href={data.cta.link}
                                 type="button"
                                 className="rounded-full bg-sn-black px-6 py-3 text-gray-100 hover:bg-sn-black-lightest text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
                             >
                                 {data.cta.text}
-                            </a>
+                            </Link>
                         </div>
                     )}
                 </div>

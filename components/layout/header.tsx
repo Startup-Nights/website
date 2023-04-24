@@ -29,11 +29,11 @@ export const Header = ({ data }) => {
             <div className="relative">
                 <div className='max-w-7xl mx-auto px-6 py-6 lg:px-8'>
                     <nav className="relative flex items-center justify-between" aria-label="Global">
-                        <div className="flex lg:flex-1">
-                            <Link href="/" className="-m-1.5 p-1.5 items-center whitespace-nowrap">
+                        <Link href="/" className="flex lg:flex-1">
+                            <div className="-m-1.5 p-1.5 items-center whitespace-nowrap">
                                 <img className="h-8 sm:h-12 w-auto" src="/logo/startup-nights.png" />
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                         <div className="flex lg:hidden">
                             <button
                                 type="button"
@@ -59,7 +59,7 @@ export const Header = ({ data }) => {
                         </div>
                         <div className="hidden lg:flex lg:flex-1 lg:justify-end space-x-2 justify-center">
                             <div className='mr-4'>
-                                <Button text='Register' link='https://www.b2match.com/e/startup-nights-2023'></Button>
+                                <Button text='Tickets' link='https://www.b2match.com/e/startup-nights-2023'></Button>
                             </div>
 
                             {data.social && data.social.map((item, i: number) => (
@@ -111,7 +111,7 @@ export const Header = ({ data }) => {
                                     </div>
                                     <div className='py-6'>
                                         <p className='-mx-3 block rounded-lg py-2 px-3 text-base leading-7 text-slate-400'>
-                                            <a href="https://startup-nights.ch" className="font-bold hover:text-gray-600">Startup Nights</a> - an event organized by <a href="https://ec-w.ch" className="font-bold hover:text-gray-600">ECW</a>
+                                            <Link href="https://startup-nights.ch" className="font-bold hover:text-gray-600">Startup Nights</Link> - an event organized by <Link href="https://ec-w.ch" className="font-bold hover:text-gray-600">ECW</Link>
 
                                         </p>
                                         <div className='-mx-3 flex justify-start space-x-2'>

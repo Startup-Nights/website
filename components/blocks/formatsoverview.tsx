@@ -53,7 +53,7 @@ export const FormatsOverview = ({ data }) => {
                             </div>
                         </div>
                         <div className='relative grid content-center justify-center text-center -mt-2 md:-mt-8'>
-                            <span className='bg-sn-yellow -skew-x-6'>
+                            <span className='bg-sn-yellow -skew-x-6 rounded-sm'>
                                 <p className="h5 m-0 px-2 py-1 skew-x-6 md:px-4 md:py-3 text-black">{format?.name}</p>
                             </span>
                         </div>
