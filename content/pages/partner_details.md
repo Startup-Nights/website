@@ -43,6 +43,19 @@ blocks:
     cta:
       link: '#partner_form'
       text: Become a partner
+    tabitems:
+      - subtitle: subtitle
+        title: title
+        content: content
+      - subtitle: subtitle
+        title: title
+        content: content
+      - subtitle: subtitle
+        title: title
+        content: content
+      - subtitle: subtitle
+        title: title
+        content: content
     _template: partnerinfo
   - subtitle: About the event
     title: Some numbers
@@ -94,6 +107,8 @@ blocks:
     _template: formatsoverview
   - _template: partnerform
 ---
+
+
 
 
 
