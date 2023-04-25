@@ -11,7 +11,7 @@ export const Team = ({ data }) => {
 
     return (
         <div className="bg-sn-black-light">
-            <div className="max-w-7xl mx-auto p-24">
+            <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
 
                 <div className="text-center mb-24">
                     <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
