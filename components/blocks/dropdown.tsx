@@ -22,7 +22,7 @@ export const Dropdown = ({ data }) => {
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500">
-                                    <div className="grid grid-cols-2 gap-24 items-center">
+                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                                         <ContentBlock data={item?.content_block} />
 
                                         {item?.infopoints && (

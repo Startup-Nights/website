@@ -20,7 +20,7 @@ export const Partners = ({ data }) => {
                     </h1>
                 </div>
 
-                <ul className="grid grid-cols-3 gap-4 md:gap-24 py-4 md:py-12">
+                <ul className="grid grid-cols-2 lg:grid-cols-3 gap-12 md:gap-24 py-4 md:py-12">
                     {data.partners && data.partners.map((partner, i: number) => (
                         <li key={`partner-${i}`}>
                             <Link href={partner?.link} target={'_blank'} className='relative'>
