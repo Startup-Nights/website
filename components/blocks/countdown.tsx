@@ -39,34 +39,22 @@ export const Countdown = ({ data }) => {
     return (
         <div className="bg-sn-yellow">
             <div className="max-w-7xl mx-auto p-12">
-                <div className="flex justify-between self-center">
+                <div className="grid grid-cols-1 gap-y-6 lg:flex lg:justify-between lg:self-center">
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-6xl">
                         {data.title}
                     </h1>
 
                     {timeLeft['days'] !== 0 ?
-                    <div className="flex space-x-2">
-                        <div className="grid grid-cols-1 text-center">
-                            <p className="text-5xl font-bold">{timeLeft['days']}</p>
-                            <p className="mt-2 text-xl">Days</p>
+                        <div className="flex space-x-1 sm:space-x-2">
+                            <Text text={'Days'} number={timeLeft['days']} />
+                            <span className="text-2xl sm:text-4xl font-bold">:</span>
+                            <Text text={'Hours'} number={timeLeft['hours']} />
+                            <span className="text-2xl sm:text-4xl font-bold">:</span>
+                            <Text text={'Minutes'} number={timeLeft['minutes']} />
+                            <span className="text-2xl sm:text-4xl font-bold">:</span>
+                            <Text text={'Seconds'} number={timeLeft['seconds']} />
                         </div>
-                        <span className="text-4xl font-bold">:</span>
-                        <div className="grid grid-cols-1 text-center">
-                            <p className="text-5xl font-bold">{timeLeft['hours']}</p>
-                            <p className="mt-2 text-xl">Hours</p>
-                        </div>
-                        <span className="text-4xl font-bold">:</span>
-                        <div className="grid grid-cols-1 text-center">
-                            <p className="text-5xl font-bold">{timeLeft['minutes']}</p>
-                            <p className="mt-2 text-xl">Minutes</p>
-                        </div>
-                        <span className="text-4xl font-bold">:</span>
-                        <div className="grid grid-cols-1 text-center">
-                            <p className="text-5xl font-bold">{timeLeft['seconds']}</p>
-                            <p className="mt-2 text-xl">Seconds</p>
-                        </div>
-                    </div>
-                    : <p className="text-5xl font-bold">The time has come</p>}
+                        : <p className="text-5xl font-bold">The time has come</p>}
 
                     {data.cta && data.cta.text !== '' && (
                         <div className="flex justify-center self-center">
@@ -83,6 +71,15 @@ export const Countdown = ({ data }) => {
         </div>
     );
 };
+
+const Text = ({ number, text }) => {
+    return (
+        <div className="grid grid-cols-1 text-center">
+            <p className="text-3xl sm:text-5xl font-bold">{number}</p>
+            <p className="mt-2 text-md sm:text-xl">{text}</p>
+        </div>
+    )
+}
 
 export const countdownBlockSchema: Template = {
     name: "countdown",

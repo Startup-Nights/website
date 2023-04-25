@@ -10,7 +10,7 @@ import Link from "next/link";
 export const Partners = ({ data }) => {
     return (
         <div className="bg-white">
-            <div className="max-w-7xl mx-auto p-24">
+            <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                 <div className="text-center mb-20">
                     <h2 className="text-base font-medium leading-7 text-sn-black-light uppercase">
                         {data.subtitle}

@@ -11,7 +11,7 @@ function classNames(...classes) {
 export const Tabs = ({ data }) => {
     return (
         <div className="bg-sn-black">
-            <div className="max-w-7xl mx-auto p-24">
+            <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                 {data.tabitems ? (
                     <div className="w-full px-2 sm:px-0 pt-24">
                         <Tab.Group>

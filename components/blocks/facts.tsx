@@ -6,7 +6,7 @@ import { ContentBlock, ContentBlockSchema } from "../items/contentblock";
 export const Facts = ({ data }) => {
     return (
         <div className="bg-sn-black-light">
-            <div className="max-w-7xl mx-auto p-24">
+            <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
 
                 {/* ugly hack because tailwind otherwise would not generate the necessary classes */}
                 <div className="col-span-2 col-span-3 col-span-4 col-span-5"></div>
