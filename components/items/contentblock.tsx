@@ -16,15 +16,19 @@ export const ContentBlock = ({ data }) => {
                 </p>
             ))}
 
-            <div className="mt-20 space-x-4">
+            <div className="mt-20 grid grid-cols-1 gap-y-6 md:flex md:gap-x-4">
                 {data?.cta && data.cta.text !== '' && (
-                    <Button link={data?.cta?.link} text={data?.cta?.text}>
-                    </Button>
+                    <div>
+                        <Button link={data?.cta?.link} text={data?.cta?.text}>
+                        </Button>
+                    </div>
                 )}
 
                 {data?.cta_secondary && data.cta_secondary.text !== '' && (
-                    <ButtonSecondary link={data?.cta_secondary.link} text={data?.cta_secondary.text}>
-                    </ButtonSecondary>
+                    <div>
+                        <ButtonSecondary link={data?.cta_secondary.link} text={data?.cta_secondary.text}>
+                        </ButtonSecondary>
+                    </div>
                 )}
             </div>
         </div>

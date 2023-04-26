@@ -7,7 +7,7 @@ export const PartnerInfo = ({ data }) => {
     return (
         <div className="bg-sn-black">
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <ContentBlock data={data?.content_block} />
                     <Infopoints data={data.infopoints} />
                 </div>
