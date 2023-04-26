@@ -27,7 +27,7 @@ export const Header = ({ data }) => {
     return (
         <div className="bg-sn-black fixed top-0 z-20 w-full backdrop-blur-md bg-sn-black/90 ">
             <div className="relative">
-                <div className='max-w-7xl mx-auto px-6 py-6 lg:px-8'>
+                <div className='max-w-7xl mx-auto py-6 px-8 lg:px-24'>
                     <nav className="relative flex items-center justify-between" aria-label="Global">
                         <div className="flex lg:flex-1">
                             <Link href="/" className="-m-1.5 p-1.5 items-center whitespace-nowrap">
@@ -57,7 +57,7 @@ export const Header = ({ data }) => {
                                 );
                             })}
                         </div>
-                        <div className="hidden lg:flex lg:flex-1 lg:justify-end space-x-2 justify-center">
+                        <div className="hidden lg:flex lg:flex-1 lg:justify-end space-x-2 justify-center items-center">
                             <div className='mr-4'>
                                 <Button text='Tickets' link='https://www.b2match.com/e/startup-nights-2023'></Button>
                             </div>

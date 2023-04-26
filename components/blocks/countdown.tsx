@@ -38,14 +38,14 @@ export const Countdown = ({ data }) => {
 
     return (
         <div className="bg-sn-yellow">
-            <div className="max-w-7xl mx-auto p-12">
+            <div className="max-w-7xl mx-auto px-8 py-8 lg:py-12 lg:px-24">
                 <div className="grid grid-cols-1 gap-y-6 lg:flex lg:justify-between lg:self-center lg:items-baseline">
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-6xl">
                         {data.title}
                     </h1>
 
                     {timeLeft['days'] !== 0 ?
-                        <div className="flex space-x-4">
+                        <div className="flex flex-wrap space-x-4">
                             <Text text={'Days'} number={timeLeft['days']} />
                             <Text text={'Hours'} number={timeLeft['hours']} />
                             <Text text={'Minutes'} number={timeLeft['minutes']} />

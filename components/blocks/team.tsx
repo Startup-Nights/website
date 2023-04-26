@@ -24,7 +24,7 @@ export const Team = ({ data }) => {
 
                 <div className="space-y-20">
                     {data.divisions && data.divisions.map((division: Division, i) => (
-                        <div key={`division-${i}`} className="mx-auto grid gap-y-20 items-start gap-x-16 lg:px-8 xl:grid-cols-3">
+                        <div key={`division-${i}`} className="mx-auto grid gap-y-20 items-start gap-x-16 xl:grid-cols-3">
                             <div className="max-w-2xl">
                                 <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
                                     {division.subtitle}
