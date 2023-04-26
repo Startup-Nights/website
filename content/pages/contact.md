@@ -1,12 +1,8 @@
 ---
 title: Contact
 blocks:
-  - text: |
-      2 & 3 November, Winterthur
-
-      # Startup Nights
-
-      ### The biggest Startup Event in Switzerland
+  - subtitle: Get more infos
+    title: Need some more infos?
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
@@ -42,6 +38,7 @@ blocks:
         link: 'mailto:hello@startup-nights.ch'
     _template: partnerinfo
 ---
+
 
 
 
