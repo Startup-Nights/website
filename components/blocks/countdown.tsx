@@ -39,19 +39,16 @@ export const Countdown = ({ data }) => {
     return (
         <div className="bg-sn-yellow">
             <div className="max-w-7xl mx-auto p-12">
-                <div className="grid grid-cols-1 gap-y-6 lg:flex lg:justify-between lg:self-center">
+                <div className="grid grid-cols-1 gap-y-6 lg:flex lg:justify-between lg:self-center lg:items-baseline">
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-6xl">
                         {data.title}
                     </h1>
 
                     {timeLeft['days'] !== 0 ?
-                        <div className="flex space-x-1 sm:space-x-2">
+                        <div className="flex space-x-4">
                             <Text text={'Days'} number={timeLeft['days']} />
-                            <span className="text-2xl sm:text-4xl font-bold">:</span>
                             <Text text={'Hours'} number={timeLeft['hours']} />
-                            <span className="text-2xl sm:text-4xl font-bold">:</span>
                             <Text text={'Minutes'} number={timeLeft['minutes']} />
-                            <span className="text-2xl sm:text-4xl font-bold">:</span>
                             <Text text={'Seconds'} number={timeLeft['seconds']} />
                         </div>
                         : <p className="text-5xl font-bold">The time has come</p>}
@@ -74,7 +71,7 @@ export const Countdown = ({ data }) => {
 
 const Text = ({ number, text }) => {
     return (
-        <div className="grid grid-cols-1 text-center">
+        <div className="flex space-x-1 align-baseline items-baseline">
             <p className="text-3xl sm:text-5xl font-bold">{number}</p>
             <p className="mt-2 text-md sm:text-xl">{text}</p>
         </div>
