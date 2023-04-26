@@ -1,10 +1,8 @@
 ---
 title: About
 blocks:
-  - text: |
-      # About us
-
-      ### The people behind Startup Nights
+  - subtitle: Like a family
+    title: The people behind the scenes
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
@@ -243,6 +241,7 @@ blocks:
             alt: Roger Basler
     _template: team
 ---
+
 
 
 

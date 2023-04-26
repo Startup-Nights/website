@@ -8,7 +8,7 @@ import CTA from "./cta";
 export const Hero = ({ data }) => {
     return (
         <div className="relative">
-            {data.image && !data.video && data.image.src && (
+            {data.image && data.image.src && data.image.src !== '' && (
                 <div className='absolute inset-0'>
                     <img className="w-full h-full object-cover" src={data.image.src} />
                     <div className="absolute inset-0 mix-blend-multiply bg-slate-400" />
@@ -35,11 +35,11 @@ export const Hero = ({ data }) => {
             )}
 
             <div className="relative max-w-7xl mx-auto pb-12 pt-36 px-8 lg:pb-24 lg:pt-48 text-center">
-                <div className="max-w-2xl mx-auto">
-                    <h2 className="text-sm sm:text-base font-medium leading-7 text-sn-yellow uppercase">
+                <div className="max-w-3xl mx-auto">
+                    <h2 className="text-sm font-medium leading-7 text-gray-200 lg:text-2xl">
                         {data?.subtitle}
                     </h2>
-                    <h1 className="mt-2 text-6xl font-bold tracking-tight text-gray-200">
+                    <h1 className="mt-2 text-6xl font-bold tracking-tight text-gray-200 lg:text-8xl">
                         {data?.title}
                     </h1>
                 </div>
