@@ -28,6 +28,7 @@ blocks:
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+      alt: Some data
     _template: impressions
   - subtitle: Our Rockstars
     title: The people behind the scenes

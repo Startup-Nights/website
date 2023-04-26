@@ -1,12 +1,8 @@
 ---
 title: Hiring
 blocks:
-  - text: >
-      # We are looking for volunteers!
-
-
-      Join us in organizing one of the most influential startup events in
-      Switzerland.
+  - subtitle: Join our mission
+    title: We are looking for you!
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
@@ -283,6 +279,7 @@ blocks:
         link: 'https://forms.gle/EKa7ts7X6UQizJui8'
     _template: positions
 ---
+
 
 
 

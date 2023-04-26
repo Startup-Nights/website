@@ -1,12 +1,8 @@
 ---
 title: Startup Nights
 blocks:
-  - text: |
-      2 & 3 November, Winterthur
-
-      # Startup Nights
-
-      ### The biggest Startup Event in Switzerland
+  - subtitle: '2 & 3 November, Winterthur'
+    title: Startup Nights
     cta:
       link: 'https://www.b2match.com/e/startup-nights-2023'
       text: Get your ticket
@@ -296,6 +292,7 @@ blocks:
       text: Tickets
     _template: countdown
 ---
+
 
 
 

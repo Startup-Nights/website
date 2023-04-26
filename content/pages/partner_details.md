@@ -1,12 +1,8 @@
 ---
 title: Partner Details
 blocks:
-  - text: |
-      2 & 3 November, Winterthur
-
-      # Startup Nights
-
-      ### Become a partner - and part of the event
+  - subtitle: Better together
+    title: Partner up!
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
@@ -239,6 +235,7 @@ blocks:
     _template: formatsoverview
   - _template: partnerform
 ---
+
 
 
 
