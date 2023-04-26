@@ -50,11 +50,9 @@ export default function Newsletter({ data }) {
             setSuccess(true);
         }
 
-
         // remove error messages after 20 seconds
         setTimeout(() => {
-            setSuccess(false);
-            setErr(false);
+            close()
         }, 20 * 1000);
     }
 
@@ -65,7 +63,6 @@ export default function Newsletter({ data }) {
                 Sign up for the latest news, speaker announcements and discounts.
             </p>
             <form onSubmit={handleSubmit} className="mt-6 grid grid-cols-2 gap-y-3 gap-x-3">
-
                 <div className="col-span-1">
                     <label htmlFor="first" className="sr-only">
                         First name

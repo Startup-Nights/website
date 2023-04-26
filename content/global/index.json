@@ -8,6 +8,10 @@
         "label": "We are hiring!"
       },
       {
+        "href": "partner",
+        "label": "Partner"
+      },
+      {
         "href": "about",
         "label": "About"
       },
@@ -47,7 +51,7 @@
           },
           {
             "title": "Become a partner",
-            "link": "/partner_details"
+            "link": "/partner"
           },
           {
             "title": "About",

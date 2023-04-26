@@ -62,8 +62,8 @@ blocks:
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
       cta:
-        link: /partner_details
-        text: Become a part of it
+        link: /partner
+        text: Become a partner
     figures:
       - name: Speakers
         number: '42'
@@ -292,6 +292,7 @@ blocks:
       text: Tickets
     _template: countdown
 ---
+
 
 
 
