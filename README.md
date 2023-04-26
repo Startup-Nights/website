@@ -51,6 +51,11 @@ we shouldn't run into this issue unless we have a lot of images.
 If this definition / interpretation is not accurate, we may stil.l be able to 
 circumvent it by using a high [`miminumCacheTTL`](https://nextjs.org/docs/api-reference/next/image#minimum-cache-ttl).
 
+### Structure
+
+- `components/blocks` contains the "whole" blocks that the user can select
+- `components/items` are parts of blocks - sometimes also nested!
+
 ## LICENSE
 
 Licensed under the [Apache 2.0 license](./LICENSE).

@@ -233,8 +233,15 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: some format picture
     _template: formatsoverview
-  - _template: partnerform
+  - title: Contact information
+    description: >-
+      We will only use the information to get in contact with you regarding an
+      offer for the partner package.
+    _template: partnerform
 ---
+
+
+
 
 
 

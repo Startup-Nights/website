@@ -371,11 +371,11 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "contact") {
                             return `/contact`;
                         }
+                        if (document._sys.filename === "partner") {
+                            return `/partner`;
+                        }
                         if (document._sys.filename === "party") {
                             return `/party`;
-                        }
-                        if (document._sys.filename === "partner_details") {
-                            return `/partner_details`;
                         }
                         return undefined;
                     },

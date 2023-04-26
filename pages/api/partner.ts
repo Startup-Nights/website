@@ -12,7 +12,7 @@ Idea: ${body["idea"]}
 `
 };
 
-export default function handler(req: any, res: any) {
+export default async (req, res) => {
     const body = req.body
 
     if (!body.email) {
@@ -20,14 +20,13 @@ export default function handler(req: any, res: any) {
     }
 
     webhook.send({
-        text: `Partner Signup (<@U03TJDGS2R3>): ${stringify(body)}`,
+        text: `
+Partner Signup (<@U03TJDGS2R3>):
+${stringify(body)}
+`,
     }).then(() => {
-        const params = new URLSearchParams({
-            titel: 'Thanks for your message',
-            text: 'Our partner team will get in touch soon.',
-        }).toString();
-        res.redirect(302, `/success?${params}`)
-    }).catch(() => {
-        res.redirect(302, `/500`)
+        return res.status(201).json({ error: '' });
+    }).catch(error => {
+        return res.status(500).json({ error: error.message || error.toString() });
     });
 }
