@@ -232,13 +232,9 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/nadine-ungricht.JPG
             alt: Nadine Ungricht
-          - name: Roger Basler
-            position: Performance Marketing
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/roger-basler-de-roca.png
-            alt: Roger Basler
     _template: team
 ---
+
 
 
 
