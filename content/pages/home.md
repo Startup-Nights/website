@@ -31,18 +31,16 @@ blocks:
         link: /hiring
         text: Join our mission
     testimonial:
-      name: Bettina Hein
-      position: Serial Entrepreneur
+      name: Melanie Gabriel
+      position: CEO Yokoy and Keynote Speaker 2021
       quote: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur.
+        Such events are extremely important for the startup community. You get
+        to meet people who have the same hassle and who can share their
+        learnings with you.
       image:
         src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2022/speakers/bettina-hein.png
-        alt: Bettina Hein
+          https://startupnights.fra1.digitaloceanspaces.com/2021/speaker/melanie-gabriel.png
+        alt: Melanie Gabriel
     _template: about
   - content_block:
       subtitle: Facts & Figures
@@ -281,6 +279,9 @@ blocks:
       text: Tickets
     _template: countdown
 ---
+
+
+
 
 
 
