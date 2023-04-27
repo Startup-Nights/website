@@ -17,7 +17,7 @@ blocks:
     _template: hero
   - content_block:
       subtitle: About us
-      title: Who are we?
+      title: Who we are.
       content:
         - >-
           The Startup Nights is the biggest event in Switzerland that brings the
@@ -74,7 +74,7 @@ blocks:
         cols: '2'
     _template: facts
   - subtitle: Speaker
-    title: Heavyweights
+    title: Heavyweights.
     cta:
       link: ''
       text: ''
@@ -257,7 +257,7 @@ blocks:
     _template: partner_list
   - content_block:
       subtitle: Impressions
-      title: Startup Nights 2022
+      title: Startup Nights 2022.
       content:
         - >-
           Last year we had the first edition at a new location and over two
@@ -274,13 +274,14 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
       alt: some text
     _template: impressions
-  - title: Register Now!
+  - title: Register now!
     date: 11/02/2023
     cta:
       link: 'https://www.b2match.com/e/startup-nights-2023'
       text: Tickets
     _template: countdown
 ---
+
 
 
 
