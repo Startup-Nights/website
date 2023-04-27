@@ -1,22 +1,15 @@
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { SocialIcon } from '../items/social'
 import { Button } from '../items/button'
 
-const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
-]
-
 export const Header = ({ data }) => {
     // If we're on an admin path, other links should also link to their admin paths
-    const [prefix, setPrefix] = React.useState("");
+    const [prefix, setPrefix] = useState("");
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (window && window.location.pathname.startsWith("/admin")) {
             setPrefix("/admin");
         }
@@ -44,7 +37,7 @@ export const Header = ({ data }) => {
                                 <Bars3CenterLeftIcon className="h-6 w-6" aria-hidden="true" />
                             </button>
                         </div>
-                        <div className="hidden lg:flex lg:gap-x-12">
+                        <div className="hidden lg:flex lg:gap-x-6 xl:gap-x-8">
                             {data.nav && data.nav.map((item, i: number) => {
                                 return (
                                     <Link
@@ -66,7 +59,7 @@ export const Header = ({ data }) => {
                                 <a
                                     key={`${item.title}-${i}`}
                                     href={item.link} target='_blank'
-                                    className='inline-flex items-center px-1 pt-1 text-sm font-medium text-slate-400 hover:text-slate-100'
+                                    className='inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-100'
                                 >
                                     <span className="sr-only">{item.title}</span>
                                     <SocialIcon name={item.title} className="h-6 w-6" aria-hidden="true" />

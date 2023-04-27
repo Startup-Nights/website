@@ -9,7 +9,7 @@ blocks:
       alt: Volunteers chatting at the Startup Nights 2023
     _template: hero
   - subtitle: Open positions
-    title: Join our mission and shape the future with us.
+    title: Shape the future with us.
     open_positions:
       - title: Partner - University / Academia
         text: >
@@ -279,6 +279,7 @@ blocks:
         link: 'https://forms.gle/EKa7ts7X6UQizJui8'
     _template: positions
 ---
+
 
 
 
