@@ -372,6 +372,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "contact") {
                             return `/contact`;
                         }
+                        if (document._sys.filename === "impressions") {
+                            return `/impressions`;
+                        }
                         if (document._sys.filename === "partner") {
                             return `/partner`;
                         }
