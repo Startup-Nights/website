@@ -37,7 +37,9 @@ blocks:
         rows: '2'
         cols: '2'
     _template: facts
+  - _template: gallery
 ---
+
 
 
 

@@ -16,6 +16,7 @@ import { FormatsOverview } from "./blocks/formatsoverview";
 import { Tabs } from "./blocks/tabs";
 import { Dropdown } from "./blocks/dropdown";
 import { Benefits } from "./blocks/benefits";
+import { Gallery } from "./blocks/gallery";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -158,7 +159,6 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     <Dropdown data={block} />
                                 </div>
                             )
-
                         case "PageBlocksBenefits":
                             return (
                                 <div
@@ -166,6 +166,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Benefits data={block} />
+                                </div>
+                            )
+                        case "PageBlocksGallery":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Gallery data={block} />
                                 </div>
                             )
 

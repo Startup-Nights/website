@@ -10439,6 +10439,11 @@ react-onclickoutside@^6.12.2, react-onclickoutside@^6.5.0:
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.13.0.tgz#e165ea4e5157f3da94f4376a3ab3e22a565f4ffc"
   integrity sha512-ty8So6tcUpIb+ZE+1HAhbLROvAIJYyJe/1vRrrcmW+jLsaM+/powDRqxzo6hSh9CuRZGSL1Q8mvcF5WRD93a0A==
 
+react-photo-album@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-photo-album/-/react-photo-album-2.1.0.tgz#d367cac15e12a018c57e2442d29ae75ed973e796"
+  integrity sha512-z/+YrvutyyTi/ZV0r5+xER1Mxhom6eGNta5Erfs6Vg/a7gVcxbChqSPjT76d8BFWkhPjHFYEcjZD9pdtHMOP4A==
+
 react-redux@^7.2.0:
   version "7.2.9"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.9.tgz#09488fbb9416a4efe3735b7235055442b042481d"
@@ -12658,6 +12663,11 @@ yarn@^1.22.17:
   version "1.22.19"
   resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.19.tgz#4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
   integrity sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ==
+
+yet-another-react-lightbox@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/yet-another-react-lightbox/-/yet-another-react-lightbox-3.5.3.tgz#a882f093f75de90ec74aac4e59c9a4aba0601978"
+  integrity sha512-MKJkBPtHLFKmZIUsLTUARfzyGpr9iqSM37eHzLY7o8eEPwZ/Hx4hEkAH46SE0GV394mkUPFS3F5Jg5A+2SHs4Q==
 
 yocto-queue@^0.1.0:
   version "0.1.0"

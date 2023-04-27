@@ -16,6 +16,12 @@ module.exports = {
                 port: '',
                 pathname: '/**'
             },
+            {
+                protocol: 'https',
+                hostname: 'source.unsplash.com',
+                port: '',
+                pathname: '/**'
+            },
         ],
     },
     async rewrites() {
