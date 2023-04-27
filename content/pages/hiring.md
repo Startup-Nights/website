@@ -11,6 +11,12 @@ blocks:
   - subtitle: Open positions
     title: Shape the future with us.
     open_positions:
+      - title: F&B Operations Manager
+        department: Infrastructure
+        link: 'https://forms.gle/Rzyrz3t2NdBqH17z6'
+      - title: Partner Communications
+        department: Partnerships
+        link: 'https://forms.gle/v9ebh11DSZpk64iAA'
       - title: Partner - University / Academia
         text: >
           Diese Stelle kümmert sich um akademische Partnerschaften für die
@@ -153,130 +159,6 @@ blocks:
           bei der Arbeit
         department: Marketing
         link: 'https://forms.gle/4M2kYiiFppHSBYem6'
-      - title: English Proofreader
-        text: >
-          Deine Aufgaben:
-
-
-          * Du unterstützt das Team auf allen Kanälen der Startup Nights:
-          LinkedIn, Instagram, Youtube, Mail, Webseite etc. in Bezug auf
-          englischen Texten
-
-          * In deiner Verantwortung liegt die Redigieren von jeglichen
-          Englischen Texten
-
-          * Teilweise auch Übersetzung von Deutschen Texten ins Englische
-
-          * Enge Zusammenarbeit mit Marketing-Team
-
-
-          Deine Qualifikation:
-
-
-          * Englische Muttersprache oder Proficiency C2 mit Proofreading
-          Erfahrung
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-        department: Marketing
-        link: 'https://forms.gle/4vnnEhdiMWyyQu1N9'
-      - title: Food for Volunteers
-        text: >
-          Die Stelle ist für die Konzeptentwicklung und Umsetzung der
-          Helferverpflegung verantwortlich. Hierzu gehören die Menu- und
-          Budgetplanung sowie die Helferplanung für das Event. Die Person muss
-          zwingend am Event verfügbar sein. Am Event wirst Du von einem Stv.
-          unterstützt.
-
-
-          Deine Aufgaben:
-
-
-          * Du bist zuständig für die Verpflegung aller Helfer (beim Aufbau,
-          während dem Event sowie beim Abbau)
-
-          * Das Ziel ist es, dass das Essen pünktlich und in ausreichender Menge
-          verfügbar ist
-
-          * Einhaltung des vorgegebenen Budgets
-
-          * Berücksichtigung aller Allergien und Unverträglichkeiten bei der
-          Planung
-
-          * Proaktive Kommunikation, sodass allen Helfern klar ist wann und wo
-          sie sich verpflegen können
-
-
-          Deine Qualifikation:
-
-
-          * Motivation, dass alle Helfer ausreichend verpflegt sind
-
-          * Hohes Commitment für Planerisches und Organisatorisches
-
-          * Pflichtbewusst und zuverlässig
-
-          * Gute kommunikative Fähigkeiten mit den verschiedenen Schnittstellen
-
-          * Bleibt ruhig in stressigen Situationen
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * Unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-        department: Infrastructure
-        link: 'https://forms.gle/kHC7pChfmpjyo8xNA'
-      - title: Waste Management
-        text: >
-          Diese Stelle kümmert sich um die komplette Rückführung und Entsorgung
-          von Abfall, Glas, PET und Aluminium. Hierfür entwickelt die Stelle
-          Konzepte in Zusammenarbeit mit externen Partnern und setzt diese
-          selbstständig um. Die Stelle koordiniert diesen Prozess mit internen
-          Schnittstellen und ist verantwortlich für die Helfer-Planung und
-          Koordination vor und während dem Event. Die Person muss zwingend am
-          Event von Aufbau bis Abbau vor Ort sein. Am Event selbst wird sie von
-          einem Stv. unterstützt.
-
-
-          Deine Aufgaben:
-
-
-          * Abfall am Event kann sauber getrennt werden
-
-          * Es entstehen keine Berge an Abfall auf dem Messegelände
-
-          * Das Konzept passt in die Nachhaltigkeitsrichtlinien der
-          Veranstaltung
-
-
-          Deine Qualifikation:
-
-
-          * Motivation, dass die Startup Nights immer einen sauberen,
-          aufgeräumten und ordentlichen Eindruck bei den Teilnehmern
-          hinterlassen
-
-          * Selbständig und lösungsorientiert
-
-          * Hohes Commitment für Planerisches und Organisatorisches
-
-          * Pflichtbewusst und zuverlässig
-
-          * Gute kommunikative Fähigkeiten mit den verschiedenen Schnittstellen
-
-          * Bleibt ruhig in stressigen Situationen
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * Unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-        department: Infrastructure
-        link: 'https://forms.gle/EKa7ts7X6UQizJui8'
     _template: positions
   - subtitle: Benefits
     title: What you can expect.
@@ -293,6 +175,8 @@ blocks:
         icon: checkbadge
     _template: benefits
 ---
+
+
 
 
 
