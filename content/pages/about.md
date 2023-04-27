@@ -37,139 +37,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/jan-guddal.jpg
             alt: Jan Guddal
-      - subtitle: Infrastructure Team
-        title: They build stuff.
-        members:
-          - name: Livia Arena
-            position: Visual & Signage
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/livia-arena.jpeg
-            alt: Livia Arena
-          - name: Thomas Caspar
-            position: Head of Event Area
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/thomas-caspar.jpg
-            alt: Thomas Caspar
-          - name: Raquel Ruiz
-            position: Snacks
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/raquel-ruiz.jpg
-            alt: Raquel Ruiz
-          - name: Oliver Rau
-            position: Head of F&B
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/oliver-rau.jpg
-            alt: Oliver Rau
-          - name: Lukas Gamper
-            position: Ticketing
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/lukas-gamper.jpg
-            alt: Lukas Gamper
-          - name: Demian Holderegger
-            position: Head of Welcome Area
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/demian-holderegger.jpg
-            alt: Demian Holderegger
-          - name: Florent Beqiri
-            position: Coordination Construction & Dismantling
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/florent-beqiri.jpg
-            alt: Florent Beqiri
-          - name: Michael Kubli
-            position: Head of Technics
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michael-kubli.JPG
-            alt: Michael Kubli
-          - name: Tobias Murbach
-            position: Head of Infrastructure & Technics
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/tobias-murbach.jpg
-            alt: Tobias Murbach
-      - subtitle: Program Team
-        title: Entertainers at heart.
-        members:
-          - name: Adrian Tureatca
-            position: Head of Startup Onboarding
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/adrian-tureatca
-              .jpeg
-            alt: Adrian Tureatca
-          - name: Désirée Egli
-            position: Leaders Brunch
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/desiree-egli.jpg
-            alt: Désirée Egli
-          - name: Jonathan Hanhart
-            position: Head of After Party
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jonathan-hanhart.jpg
-            alt: Jonathan Hanhart
-          - name: Julian Stylianou
-            position: Head of Pitching Sessions
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/julian-styliainou.jpg
-            alt: Julian Stylianou
-          - name: Johannes Hofer
-            position: Head of Workshops
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/johannes-hofer.jpg
-            alt: Johannes Hofer
-          - name: Graziana Müller
-            position: Head of Speaker
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/graziana-mueller.jpg
-            alt: Graziana Müller
-          - name: Benjamin Vidas
-            position: Head of Program
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/benjamin-vidas.jpg
-            alt: Benjamin Vidas
-      - subtitle: Operations Team
-        title: Keeping our HQ organised.
-        members:
-          - name: Fabio Furrer
-            position: Head of Sustainability
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/fabio-furrer.jpg
-            alt: Fabio Furrer
-          - name: Jens Thomsen
-            position: Head of Tasks
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jens-thomsen.jpeg
-            alt: Jens Thomsen
-          - name: Michelle Nguyen
-            position: Head of HR & Tools
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
-            alt: Michelle Nguyen
-          - name: Josephine Junker-Oels
-            position: Bookkeeping Creditors
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/josephine-junker-oels.jpg
-            alt: Josephine Junker-Oels
-          - name: Pascal Angst
-            position: Finance Specialist
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/pascal-angst.jpg
-            alt: Pascal Angst
-          - name: Manuela Serena
-            position: Head of Finance
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/manuela-serena.png
-            alt: Manuela Serena
-          - name: Daniel Caspar
-            position: Director of Operations
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-caspar.jpg
-            alt: Daniel Caspar
-      - subtitle: Partnerships Team
-        title: Exchanging value.
-        members:
-          - name: Noah Schuppli
-            position: Director of Partner Management
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/noah-schuppli.jpg
-            alt: Noah Schuppli
       - subtitle: Marketing Team
         title: Influencing you.
         members:
@@ -207,13 +74,9 @@ blocks:
             position: Text
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/natalie-rotschi.jpg
-          - name: Laura Matter
-            position: Reels Video Producer
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/laura-matter.jpg
-            alt: Laura Matter
+            alt: Natalie Rotschi
           - name: Joanna Rubin
-            position: Social Media Manager
+            position: Head of Social Media
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/joanna-rubin.jpg
             alt: Joanna Rubin
@@ -232,8 +95,211 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/nadine-ungricht.JPG
             alt: Nadine Ungricht
+          - name: Melina Fullin
+            position: Social Media Manager
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/melina-fullin.png
+            alt: Melina Fullin
+          - name: Clément Dumont
+            position: Support Video Cutter
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/clement-dumont.jpg
+            alt: Clément Dumont
+      - subtitle: Infrastructure Team
+        title: They build stuff. Like "Bob de Boumaa".
+        members:
+          - name: Tobias Murbach
+            position: Head of Infrastructure & Technics
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/tobias-murbach.jpg
+            alt: Tobias Murbach
+          - name: Michael Kubli
+            position: Head of Technics
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michael-kubli.JPG
+            alt: Michael Kubli
+          - name: Thomas Caspar
+            position: Head of Event Area
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/thomas-caspar.jpg
+            alt: Thomas Caspar
+          - name: Oliver Rau
+            position: Head of F&B
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/oliver-rau.jpg
+            alt: Oliver Rau
+          - name: Demian Holderegger
+            position: Head of Welcome Area
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/demian-holderegger.jpg
+            alt: Demian Holderegger
+          - name: Livia Arena
+            position: Visual & Signage
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/livia-arena.jpeg
+            alt: Livia Arena
+          - name: Gabriel Riedo
+            position: Head of Material & Logicstics
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/gabriel-riedo.png
+            alt: Gabriel Riedo
+          - name: Raquel Ruiz
+            position: Snacks
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/raquel-ruiz.jpg
+            alt: Raquel Ruiz
+          - name: Lukas Gamper
+            position: Ticketing
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/lukas-gamper.jpg
+            alt: Lukas Gamper
+          - name: Florent Beqiri
+            position: Coordination Construction & Dismantling
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/florent-beqiri.jpg
+            alt: Florent Beqiri
+      - subtitle: Program Team
+        title: Entertainers at heart.
+        members:
+          - name: Benjamin Vidas
+            position: Head of Program
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/benjamin-vidas.jpg
+            alt: Benjamin Vidas
+          - name: Graziana Müller
+            position: Head of Speaker
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/graziana-mueller.jpg
+            alt: Graziana Müller
+          - name: Johannes Hofer
+            position: Head of Workshops
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/johannes-hofer.jpg
+            alt: Johannes Hofer
+          - name: Adrian Tureatca
+            position: Head of Startup Onboarding
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/adrian-tureatca
+              .jpeg
+            alt: Adrian Tureatca
+          - name: Michel Lüscher
+            position: Head of Startup Outreach
+            alt: Michel Lüscher
+          - name: Julian Stylianou
+            position: Head of Pitching Sessions
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/julian-styliainou.jpg
+            alt: Julian Stylianou
+          - name: Jonathan Hanhart
+            position: Head of After Party
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jonathan-hanhart.jpg
+            alt: Jonathan Hanhart
+          - name: Natascha Waldkircher
+            position: After Party
+            alt: Natascha Waldkircher
+          - name: Désirée Egli
+            position: Leaders Brunch
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/desiree-egli.jpg
+            alt: Désirée Egli
+          - name: Nicolas Fischer
+            position: Startup & Corporate Matching
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/nicolas-fischer.jpg
+            alt: Nicolas Fischer
+      - subtitle: Operations Team
+        title: Keeping our HQ organised.
+        members:
+          - name: Daniel Caspar
+            position: Director of Operations
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-caspar.jpg
+            alt: Daniel Caspar
+          - name: Manuela Serena
+            position: Head of Finance
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/manuela-serena.png
+            alt: Manuela Serena
+          - name: Josephine Junker-Oels
+            position: Bookkeeping Creditors
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/josephine-junker-oels.jpg
+            alt: Josephine Junker-Oels
+          - name: Daniel Kress
+            position: Support Bookkeeping
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-kress.jpg
+            alt: Daniel Kress
+          - name: Pascal Angst
+            position: Finance Specialist
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/pascal-angst.jpg
+            alt: Pascal Angst
+          - name: Michelle Nguyen
+            position: Head of HR & Tools
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
+            alt: Michelle Nguyen
+          - name: Jens Thomson
+            position: Head of Tasks
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jens-thomsen.jpeg
+            alt: Jens Thomson
+          - name: Fabio Furrer
+            position: Head of Sustainability
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/fabio-furrer.jpg
+            alt: Fabio Furrer
+      - subtitle: Partnerships Team
+        title: Exchanging value.
+        members:
+          - name: Noah Schuppli
+            position: Director of Partner Management
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/noah-schuppli.jpg
+            alt: Noah Schuppli
+          - name: Baris Gökduman
+            position: Corporates
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/baris-goekduman.jpg
+            alt: Baris Gökduman
+          - name: Annika Maibom
+            position: Investors
+            alt: Annika Maibom
+          - name: Hao Xu
+            position: Startup & Corporate Matching
+            alt: Hao Xu
+          - name: Stefano Bollmann
+            position: International Collaborations
+            alt: Stefano Bollmann
     _template: team
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
