@@ -3,7 +3,7 @@ import Link from "next/link"
 export const Infopoints = ({ data }) => {
     return (
         <div className="max-w-xl space-y-4 text-base leading-6 text-gray-500 lg:max-w-none">
-            {data.map((point, i) => (
+            {data?.map((point, i) => (
                 <div key={`infopoint-${i}`}>
                     {(point.link && point.link !== '') ? (
                         <Link href={point?.link} target="_blank" className="block">

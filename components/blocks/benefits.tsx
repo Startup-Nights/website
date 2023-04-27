@@ -15,9 +15,9 @@ export const Benefits = ({ data }) => {
                     </h1>
                 </div>
 
-                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {data?.benefit_items && data.benefit_items.map((benefit: any, i: number) => (
-                        <li key={i} className="col-span-1 text-center flex space-y-4 flex-wrap justify-center items-center bg-sn-black-lightest rounded-xl p-6 md:p-8 hover:bg-gradient-to-tr hover:from-sn-yellow hover:to-sky-600">
+                        <li key={i} className="col-span-1 text-center flex space-y-4 flex-wrap justify-center items-center bg-sn-black-lightest rounded-3xl p-6 md:p-8 border-2 border-transparent hover:border-white">
                             <div className="">{getIcon(benefit.icon)}</div>
                             <h4 className="w-full text-center text-sm md:text-1xl">{benefit.title}</h4>
                         </li>

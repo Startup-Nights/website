@@ -46,8 +46,12 @@
             "link": "/contact"
           },
           {
-            "title": "We are hiring!",
+            "title": "Hiring",
             "link": "/hiring"
+          },
+          {
+            "title": "Impressions",
+            "link": "/impressions"
           },
           {
             "title": "Become a partner",
