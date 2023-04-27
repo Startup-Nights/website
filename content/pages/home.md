@@ -260,18 +260,15 @@ blocks:
       title: Startup Nights 2022
       content:
         - >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Last year we had the first edition at a new location and over two
+          days. And it was awesome! 42 speakers, 500 founders, and 8000 visitors
+          made the Startup Nights 2022 unforgettable. 
         - >-
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+          As we already started with the preaparations for this year's event, we
+          also like to take a look back. 
       cta:
         link: /impressions
-        text: Check out more images
+        text: Cherish the memories
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
@@ -284,6 +281,7 @@ blocks:
       text: Tickets
     _template: countdown
 ---
+
 
 
 
