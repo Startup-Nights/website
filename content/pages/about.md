@@ -163,7 +163,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-caspar.jpg
             alt: Daniel Caspar
       - subtitle: Partnerships Team
-        title: Exchanging gifts.
+        title: Exchanging value.
         members:
           - name: Noah Schuppli
             position: Director of Partner Management
@@ -239,6 +239,7 @@ blocks:
             alt: Roger Basler
     _template: team
 ---
+
 
 
 
