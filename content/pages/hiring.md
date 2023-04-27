@@ -278,7 +278,35 @@ blocks:
         department: Infrastructure
         link: 'https://forms.gle/EKa7ts7X6UQizJui8'
     _template: positions
+  - subtitle: Benefits
+    title: What you can expect.
+    benefit_items:
+      - title: Expand your network
+        icon: chatbubble
+      - title: 'Meet inspiring founders, innovators and speakers'
+        icon: lightbulb
+      - title: Work with a motivated team
+        icon: heart
+      - title: Enjoy awesome team events
+        icon: usergroup
+      - title: Get a reference and volunteer certificate
+        icon: checkbadge
+    _template: benefits
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
