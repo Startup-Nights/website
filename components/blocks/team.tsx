@@ -38,7 +38,7 @@ export const Team = ({ data }) => {
                                     <li key={person?.name}>
                                         <div className="flex items-center gap-x-6">
                                             <Image
-                                                src={person.src ? person.src : ''}
+                                                src={person.src ? person.src : '/user.svg'}
                                                 alt={person?.name}
                                                 className="rounded-full"
                                                 width={diameter}
