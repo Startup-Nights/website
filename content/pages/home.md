@@ -260,9 +260,9 @@ blocks:
       title: Startup Nights 2022.
       content:
         - >-
-          Last year we had the first edition at a new location and over two
-          days. And it was awesome! 42 speakers, 500 founders, and 8000 visitors
-          made the Startup Nights 2022 unforgettable. 
+          Last year we had the first edition of two days in a new location. And
+          it was awesome! 42 speakers, 500 founders, and 8000 visitors made the
+          Startup Nights 2022 unforgettable. 
         - >-
           As we already started with the preaparations for this year's event, we
           also like to take a look back. 
@@ -281,6 +281,7 @@ blocks:
       text: Tickets
     _template: countdown
 ---
+
 
 
 
