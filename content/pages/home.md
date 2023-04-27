@@ -20,15 +20,10 @@ blocks:
       title: Who are we?
       content:
         - >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        - >-
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+          The Startup Nights is the biggest event in Switzerland that brings the
+          whole startup ecosystem to one table. With this event we want to
+          create awareness for startups and their innovations.
+        - ' Organized by a team of about 50 passionate people, purely out of passion and in our spare time, we shape the future of the Swiss startup scene. '
       cta:
         link: /about
         text: Get to know us
@@ -54,13 +49,10 @@ blocks:
       title: The biggest event!
       content:
         - >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          As the startup scene grows, we grow too. From a couple of hundred
+          visitors in 2017, we welcomed 8000 visitors at the 2022 edition. But
+          we want more! Accompanied by valued partners, we grow further and
+          improve constantly.
       cta:
         link: /partner
         text: Become a partner
@@ -292,6 +284,7 @@ blocks:
       text: Tickets
     _template: countdown
 ---
+
 
 
 
