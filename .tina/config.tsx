@@ -14,6 +14,7 @@ import { partnerinfoBlockSchema } from "../components/blocks/partnerinfo";
 import { formatsoverviewBlockSchema } from "../components/blocks/formatsoverview";
 import { tabsBlockSchema } from "../components/blocks/tabs";
 import { dropdownBlockSchema } from "../components/blocks/dropdown";
+import { benefitsBlockSchema } from "../components/blocks/benefits";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -414,6 +415,7 @@ const config = defineStaticConfig({
                             formatsoverviewBlockSchema,
                             tabsBlockSchema,
                             dropdownBlockSchema,
+                            benefitsBlockSchema,
                         ],
                     },
                 ],
