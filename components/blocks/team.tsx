@@ -12,7 +12,6 @@ export const Team = ({ data }) => {
     return (
         <div className="bg-sn-black-light">
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
-
                 <div className="text-center mb-24">
                     <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
                         {data.subtitle}
@@ -36,21 +35,18 @@ export const Team = ({ data }) => {
 
                             <ul role="list" className="grid gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-12 xl:col-span-2">
                                 {division.members && division.members.map((person: Member) => (
-
-                                    <li key={person.name}>
+                                    <li key={person?.name}>
                                         <div className="flex items-center gap-x-6">
                                             <Image
-                                                src={person.src}
-                                                alt={person.name}
+                                                src={person.src ? person.src : ''}
+                                                alt={person?.name}
                                                 className="rounded-full"
                                                 width={diameter}
                                                 height={diameter}
-                                                placeholder={'blur'}
-                                                blurDataURL={placeholderBox}
                                             />
                                             <div>
-                                                <h3 className="text-base font-semibold leading-7 tracking-tight">{person.name}</h3>
-                                                <p className="text-sm font-semibold leading-6 text-slate-400">{person.position}</p>
+                                                <h3 className="text-base font-semibold leading-7 tracking-tight">{person?.name}</h3>
+                                                <p className="text-sm font-semibold leading-6 text-slate-400">{person?.position}</p>
                                             </div>
                                         </div>
                                     </li>
