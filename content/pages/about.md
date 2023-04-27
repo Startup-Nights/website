@@ -2,7 +2,7 @@
 title: About
 blocks:
   - subtitle: Like a family
-    title: The people behind the scenes
+    title: The people behind the scenes.
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
@@ -10,16 +10,14 @@ blocks:
     _template: hero
   - content_block:
       subtitle: A team on a mission
-      title: We are one big family
+      title: One big family.
       content:
         - >-
-          We are convinced that startups and innovation must be much more
-          present and valued in Switzerland – because it is they that shape the
-          future.
+          Startups shape the future with their innovations. That's why they need
+          more presence and recognition in Switzerland. 
         - >-
-          With the Startup Nights, we want the Swiss startup ecosystem to grow.
-          Further, we want to create awareness for startups and their
-          innovations whose impact reaches far beyond the startup scene.
+          This is where we take action and bring the whole startup ecosystem to
+          one table. Purely out of passion and with a lot of drive. 
       cta:
         link: /hiring
         text: Join our mission
@@ -241,6 +239,7 @@ blocks:
             alt: Roger Basler
     _template: team
 ---
+
 
 
 
