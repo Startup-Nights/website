@@ -1,17 +1,3 @@
-const ContentSecurityPolicy = `
-  default-src *;
-  script-src * 'unsafe-inline' 'unsafe-eval';
-  child-src *;
-  style-src * 'unsafe-inline';
-  font-src * data:;
-`
-const securityHeaders = [
-    {
-        key: 'Content-Security-Policy',
-        value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim()
-    },
-]
-
 module.exports = {
     webpack(config) {
         config.module.rules.push({
@@ -50,12 +36,4 @@ module.exports = {
             },
         ];
     },
-    async headers() {
-        return [
-            {
-                source: '/tickets',
-                headers: securityHeaders,
-            },
-        ]
-    }
 };
