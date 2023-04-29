@@ -1,6 +1,4 @@
-import { Hero } from "../components/blocks/hero";
 import { PartnerInfo } from "../components/blocks/partnerinfo";
-import { Layout } from "../components/layout";
 
 export default function FourOhFour() {
   return (
