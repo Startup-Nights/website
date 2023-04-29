@@ -7,37 +7,31 @@ export const Tito = ({ data }) => {
     // https://stackoverflow.com/questions/55393226/disable-hydration-only-partially-hydrate-a-next-js-app
     // https://github.com/vercel/next.js/discussions/35773#discussioncomment-2622885
     const [mounted, setMounted] = useState(false);
-
+  
     useEffect(() => setMounted(true), []);
     if (!mounted) return null;
 
     return (
         <div className="bg-sn-black">
             <Head>
-                <script src="https://js.tito.io/v2/with/inline" async></script>
+                        <script src="https://js.tito.io/v2/with/inline" async></script>
             </Head>
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-24 items-center">
                     <ContentBlock data={data?.content_block} />
 
                     <div className="h-screen">
-                        <TitoItem />
+                        <tito-widget
+                            event="ecw/startup-nights-2023"
+                            discount-code="SNCOMMUNITY"
+                            save-metadata-parameters="utm_*"
+                        ></tito-widget>
                     </div>
                 </div>
             </div>
         </div>
     );
 };
-
-const TitoItem = () => {
-    return (
-        <tito-widget
-            event="ecw/startup-nights-2023"
-            discount-code="SNCOMMUNITY"
-            save-metadata-parameters="utm_*"
-        ></tito-widget>
-    )
-}
 
 export const titoBlockSchema: Template = {
     name: "tito",
