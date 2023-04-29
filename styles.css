@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .tito-widget .tito-widget-form {
+        @apply bg-sn-black-light text-slate-200 text-sm font-medium leading-6;
+    }
+
+    .tito-widget .tito-widget-form input {
+        @apply w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6;
+    }
+}
