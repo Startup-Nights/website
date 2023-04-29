@@ -21,7 +21,7 @@ export const Tito = ({ data }) => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-24 items-center">
                     <ContentBlock data={data?.content_block} />
 
-                    <div className="h-screen">
+                    <div className="flex items-center">
                         <tito-widget
                             event="ecw/startup-nights-2023"
                             discount-code="SNCOMMUNITY"
