@@ -2,5 +2,6 @@
 declare namespace JSX {
     interface IntrinsicElements {
         "tito-widget": any;
+        "tito-button": any;
     }
 }
