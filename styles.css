@@ -13,8 +13,7 @@
     }
 
     /* tax text which has a special color in the original styling */
-    .tito-widget .tito-widget-form .tito-price-details-regular .tito-release--tax,
-    .tito-widget .tito-widget-form .tito-price-details-regular span {
+    .tito-widget .tito-widget-form div.tito-price-details-regular > span.tito-release--tax {
         @apply text-gray-200;
     }
 
@@ -25,7 +24,17 @@
 
     /* buttons to decreate the ticket count */
     .tito-widget .tito-widget-form .tito-quantity svg[data-icon="minus-circle"] {
-        @apply text-gray-200;
+        @apply text-gray-400;
+    }
+
+    /* ticket divider (bottom) */
+    .tito-widget .tito-widget-form .tito-ticket-release {
+        @apply border-b border-gray-400;
+    }
+
+    /* submit button padding */
+    .tito-widget .tito-widget-form .tito-form-actions {
+        @apply pb-0;
     }
 
     /* submit button */
