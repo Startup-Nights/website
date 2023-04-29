@@ -17,6 +17,7 @@ import { Tabs } from "./blocks/tabs";
 import { Dropdown } from "./blocks/dropdown";
 import { Benefits } from "./blocks/benefits";
 import { Gallery } from "./blocks/gallery";
+import { Tito } from "./blocks/tito";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -175,6 +176,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Gallery data={block} />
+                                </div>
+                            )
+                        case "PageBlocksTito":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Tito data={block} />
                                 </div>
                             )
 
