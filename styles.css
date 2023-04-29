@@ -5,25 +5,31 @@
 @layer base {
     /* combination of partner form + facts container */
     .tito-widget .tito-widget-form {
-        @apply bg-sn-black-light rounded-3xl p-4 md:p-6 lg:p-8 text-slate-200 text-sm font-medium leading-6;
+        @apply bg-sn-black-light border-2 border-transparent rounded-3xl p-4 md:p-6 lg:p-8 text-gray-200 text-base font-medium leading-6;
     }
 
     .tito-widget .tito-widget-form input {
-        @apply w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6;
+        @apply w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-gray-200 placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:leading-6;
     }
 
     /* tax text which has a special color in the original styling */
-    .tito-widget .tito-widget-form .tito-release--tax {
-        @apply text-slate-200;
+    .tito-widget .tito-widget-form .tito-price-details-regular .tito-release--tax,
+    .tito-widget .tito-widget-form .tito-price-details-regular span {
+        @apply text-gray-200;
     }
 
-    /* buttons to increase ticket count */
+    /* buttons to increase the ticket count */
     .tito-widget .tito-widget-form .tito-quantity svg[data-icon="plus-circle"] {
         @apply text-sn-yellow-dark;
     }
 
+    /* buttons to decreate the ticket count */
+    .tito-widget .tito-widget-form .tito-quantity svg[data-icon="minus-circle"] {
+        @apply text-gray-200;
+    }
+
     /* submit button */
     .tito-widget .tito-widget-form .tito-submit {
-        @apply flex w-full items-center justify-center rounded-xl bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide;
+        @apply flex w-full items-center justify-center border-2 border-transparent rounded-xl bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide;
     }
 }
