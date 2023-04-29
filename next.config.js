@@ -3,7 +3,7 @@ const ContentSecurityPolicy = `
   script-src * 'unsafe-inline' 'unsafe-eval';
   child-src *;
   style-src * 'unsafe-inline';
-  font-src *;
+  font-src * data:;
 `
 const securityHeaders = [
     {
