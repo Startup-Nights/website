@@ -18,6 +18,12 @@ module.exports = {
             },
             {
                 protocol: 'https',
+                hostname: 'startupnights.fra1.cdn.digitaloceanspaces.com',
+                port: '',
+                pathname: '/**'
+            },
+            {
+                protocol: 'https',
                 hostname: 'source.unsplash.com',
                 port: '',
                 pathname: '/**'
