@@ -105,6 +105,11 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/clement-dumont.jpg
             alt: Clément Dumont
+          - name: Jeannette Thums
+            position: Partner Documentation
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jeannette-thums.jpg
+            alt: Jeannette Thums
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
@@ -275,6 +280,7 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
 
 
 
