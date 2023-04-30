@@ -16,6 +16,10 @@
         "label": "About"
       },
       {
+        "href": "impressions",
+        "label": "Impression"
+      },
+      {
         "href": "contact",
         "label": "Contact"
       }
