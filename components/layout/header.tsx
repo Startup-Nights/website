@@ -68,7 +68,7 @@ export const Header = ({ data }) => {
                         </div>
                     </nav>
                     <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                        <Dialog.Panel className="fixed inset-0 z-40 overflow-y-auto backdrop-blur-md bg-sn-black/90 px-6 py-6 lg:hidden">
+                        <Dialog.Panel className="fixed inset-0 z-40 overflow-y-auto backdrop-blur-md bg-sn-black/90 px-8 py-6 lg:hidden">
                             <div className="flex items-center justify-between">
                                 <Link
                                     href="/"
@@ -101,11 +101,13 @@ export const Header = ({ data }) => {
                                                 </Link>
                                             );
                                         })}
+
+                                        <a className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-400 hover:bg-gray-400/10'
+                                            href='https://www.b2match.com/e/startup-nights-2023'>Tickets</a>
                                     </div>
                                     <div className='py-6'>
                                         <p className='-mx-3 block rounded-lg py-2 px-3 text-base leading-7 text-slate-400'>
                                             <Link href="https://startup-nights.ch" className="font-bold hover:text-gray-600">Startup Nights</Link> - an event organized by <Link href="https://ec-w.ch" className="font-bold hover:text-gray-600">ECW</Link>
-
                                         </p>
                                         <div className='-mx-3 flex justify-start space-x-2'>
                                             {data.social && data.social.map((item, i: number) => (
