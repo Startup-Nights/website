@@ -134,7 +134,7 @@ blocks:
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-voeller.jpg
           alt: Sandra Völler
       - name: Guy Parmelin
-        position: Founder BRACK.CH
+        position: Member of the Swiss Federal Council 
         description: ''
         image:
           src: >-
