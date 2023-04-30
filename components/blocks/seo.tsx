@@ -11,7 +11,7 @@ export const SEO = ({ data }) => {
             url: data?.openGraph?.url ? data?.openGraph?.url : 'https://startup-nights-sigma.vercel.app',
             site_name: data?.openGraph?.site_name ? data?.openGraph?.site_name : 'Startup Nights',
             images: data?.opengraph?.images ? data?.opengraph?.images : [{
-                url: '/og_image.png',
+                url: 'https://startup-nights-sigma.vercel.app/og_image.png',
                 alt: 'Startup Nights Stage',
             }],
         },
