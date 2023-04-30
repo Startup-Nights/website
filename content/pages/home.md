@@ -140,7 +140,7 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/guy-parmelin.jpg
           alt: Guy Parmelin
-      - name: Jeannette Wiget
+      - name: Janette Wiget
         position: CFO & Member of the Board Merantix
         description: ''
         image:
@@ -214,6 +214,7 @@ blocks:
           alt: Startup Nights Stage
     _template: seo
 ---
+
 
 
 
