@@ -278,7 +278,18 @@ blocks:
       link: 'https://www.b2match.com/e/startup-nights-2023'
       text: Tickets
     _template: countdown
+  - title: Startup Nights - the biggest startup event in Switzerland
+    description: Landing Page
+    openGraph:
+      url: 'https://startup-nights-sigma.vercel.app'
+      site_name: Startup Nights
+      images:
+        - url: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+          alt: Startup Nights Stage
+    _template: seo
 ---
+
 
 
 
