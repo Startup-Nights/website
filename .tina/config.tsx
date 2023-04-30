@@ -17,6 +17,7 @@ import { dropdownBlockSchema } from "../components/blocks/dropdown";
 import { benefitsBlockSchema } from "../components/blocks/benefits";
 import { galleryBlockSchema } from "../components/blocks/gallery";
 import { titoBlockSchema } from "../components/blocks/tito";
+import { seoBlockSchema } from "../components/blocks/seo";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -423,6 +424,7 @@ const config = defineStaticConfig({
                             benefitsBlockSchema,
                             galleryBlockSchema,
                             titoBlockSchema,
+                            seoBlockSchema,
                         ],
                     },
                 ],
