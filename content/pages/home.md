@@ -131,7 +131,7 @@ blocks:
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-voeller.jpg
           alt: Sandra Völler
       - name: Guy Parmelin
-        position: Member of the Swiss Federal Council 
+        position: Member of the Swiss Federal Council
         description: ''
         image:
           src: >-
@@ -191,8 +191,8 @@ blocks:
         text: Cherish the memories
     image:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
-      alt: some text
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-1-day-2-melanie-buob/0C1A3745.jpg
+      alt: Audience of a panel discussion at the main stage
     _template: impressions
   - title: Startup Nights - the biggest startup event in Switzerland
     description: Landing Page
@@ -205,6 +205,7 @@ blocks:
           alt: Startup Nights Stage
     _template: seo
 ---
+
 
 
 
