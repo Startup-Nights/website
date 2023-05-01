@@ -1,6 +1,4 @@
-import { Container } from "../../util/container";
 import { SocialIcon } from "../../items/social"
-import { Section } from "../../util/section"
 import Newsletter from "../../blocks/newsletter";
 import Link from "next/link";
 

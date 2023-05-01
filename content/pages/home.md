@@ -3,9 +3,6 @@ title: Startup Nights
 blocks:
   - subtitle: '2 & 3 November, Winterthur'
     title: Startup Nights
-    cta:
-      link: 'https://www.b2match.com/e/startup-nights-2023'
-      text: Get your ticket
     image:
       src: ''
       alt: ''
