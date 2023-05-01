@@ -1,7 +1,7 @@
 ---
 title: Hiring
 blocks:
-  - title: Startup Nights - We are looking for you!
+  - title: Hiring - Startup Nights
     description: >-
       The Startup Nights is the biggest event in Switzerland that brings the
       whole startup ecosystem to one table. With this event we want to create
