@@ -7,7 +7,7 @@ const analytics = Analytics({
     app: 'startup-nights',
     plugins: [
         googleAnalyticsPlugin({
-            trackingId: 'G-MNEKNWTZFY',
+            measurementIds: ['G-MNEKNWTZFY']
         }),
         {
             name: 'logger',
