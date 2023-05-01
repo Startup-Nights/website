@@ -47,22 +47,22 @@ blocks:
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
-          alt: asdfa
+          alt: Fireside chat format
       - name: Panel Discussion
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
-          alt: asdfa
+          alt: Panel discussion format
       - name: Keynote
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
-          alt: asfasdf
+          alt: Keynote format
       - name: Booth
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
-          alt: some format picture
+          alt: Booth format
     _template: formatsoverview
   - title: Contact information
     description: >-

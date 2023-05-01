@@ -9,12 +9,6 @@ const analytics = Analytics({
         googleAnalyticsPlugin({
             measurementIds: ['G-MNEKNWTZFY']
         }),
-        {
-            name: 'logger',
-            page: ({ payload }) => {
-                console.log('page', payload)
-            }
-        }
     ]
 })
 
