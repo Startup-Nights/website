@@ -12,6 +12,7 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Lightbox from "yet-another-react-lightbox";
+import { getCldImageUrl } from "next-cloudinary";
 
 
 export const Gallery = ({ data }) => {
@@ -62,43 +63,43 @@ export const galleryBlockSchema: Template = {
 
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
-const unsplashLink = (id: string, width: number, height: number) =>
-    `https://source.unsplash.com/${id}/${width}x${height}`;
-
 const unsplashPhotos = [
-    { id: "8gVv6nxq6gY", width: 1080, height: 800 },
-    { id: "Dhmn6ete6g8", width: 1080, height: 1620 },
-    { id: "RkBTPqPEGDo", width: 1080, height: 720 },
-    { id: "Yizrl9N_eDA", width: 1080, height: 721 },
-    { id: "KG3TyFi0iTU", width: 1080, height: 1620 },
-    { id: "Jztmx9yqjBw", width: 1080, height: 607 },
-    { id: "-heLWtuAN3c", width: 1080, height: 608 },
-    { id: "xOigCUcFdA8", width: 1080, height: 720 },
-    { id: "1azAjl8FTnU", width: 1080, height: 1549 },
-    { id: "ALrCdq-ui_Q", width: 1080, height: 720 },
-    { id: "twukN12EN7c", width: 1080, height: 694 },
-    { id: "9UjEyzA6pP4", width: 1080, height: 1620 },
-    { id: "sEXGgun3ZiE", width: 1080, height: 720 },
-    { id: "S-cdwrx-YuQ", width: 1080, height: 1440 },
-    { id: "q-motCAvPBM", width: 1080, height: 1620 },
-    { id: "Xn4L310ztMU", width: 1080, height: 810 },
-    { id: "iMchCC-3_fE", width: 1080, height: 610 },
-    { id: "X48pUOPKf7A", width: 1080, height: 160 },
-    { id: "GbLS6YVXj0U", width: 1080, height: 810 },
-    { id: "9CRd1J1rEOM", width: 1080, height: 720 },
-    { id: "xKhtkhc9HbQ", width: 1080, height: 1440 },
+    { id: "2022/impressions/oakzyzw4vkgvtsyvldjv", width: 2048, height: 1368 },
+    { id: "2022/impressions/dujuqbrg8yxxixdjnqut", width: 2048, height: 1368 },
+    { id: "2022/impressions/payahndptxc8yieykfzr", width: 2048, height: 1368 },
+    { id: "2022/impressions/fnwr3kvobu6iv7kiyeru", width: 2048, height: 1368 },
+    { id: "2022/impressions/usiuvdp102yxswdz83u6", width: 2048, height: 1368 },
+    { id: "2022/impressions/i7chwmvls09yj1hami5m", width: 1368, height: 2048 },
+    { id: "2022/impressions/sxzuru2owxg6dlxgxtvw", width: 2048, height: 1368 },
+    { id: "2022/impressions/idihsc0miofal8vk0np3", width: 2048, height: 1368 },
+    { id: "2022/impressions/sp9lm4wnhxyi1kcsx3r4", width: 1368, height: 2048 },
+    { id: "2022/impressions/cutnpogcpprcrfolm4lh", width: 2048, height: 1368 },
+    { id: "2022/impressions/nyxsp60kwtiys8m8u6sm", width: 1365, height: 2048 },
+    { id: "2022/impressions/iffdrcqa8kfxczgiw244", width: 2048, height: 1151 },
+    { id: "2022/impressions/lel8nnjzasfzys6oi7ha", width: 2048, height: 1365 },
+    { id: "2022/impressions/da6pe89lom938pj53p3w", width: 2048, height: 1365 },
 ];
 
 const photos = unsplashPhotos.map((photo) => ({
-    src: unsplashLink(photo.id, photo.width, photo.height),
+    src: cloudinaryLoader({ width: photo.width, quality: 75, src: photo.id }),
     width: photo.width,
     height: photo.height,
     srcSet: breakpoints.map((breakpoint) => {
         const height = Math.round((photo.height / photo.width) * breakpoint);
         return {
-            src: unsplashLink(photo.id, breakpoint, height),
+            src: cloudinaryLoader({ width: breakpoint, quality: 75, src: photo.id }),
             width: breakpoint,
             height,
         };
     }),
 }));
+
+function normalizeSrc(src) {
+    return src[0] === '/' ? src.slice(1) : src
+}
+
+// https://res.cloudinary.com/dal9ljm0y/image/upload/v1682959904/2022/impressions/oakzyzw4vkgvtsyvldjv.jpg
+function cloudinaryLoader({ src, width, quality }) {
+    const params = ['f_auto', 'c_limit', 'w_' + width, 'q_' + (quality || 'auto')];
+    return `https://res.cloudinary.com/dal9ljm0y/image/upload/${params.join(',')}/${normalizeSrc(src)}`;
+}
