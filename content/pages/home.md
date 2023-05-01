@@ -53,7 +53,7 @@ blocks:
         text: Become a partner
     figures:
       - name: Workshops
-        number: '40+'
+        number: 40+
         icon: chatbubble
         rows: '3'
         cols: '1'
@@ -197,7 +197,7 @@ blocks:
   - title: Startup Nights - the biggest startup event in Switzerland
     description: Landing Page
     openGraph:
-      url: 'https://startup-nights-sigma.vercel.app'
+      url: 'https://www.startup-nights.ch'
       site_name: Startup Nights
       images:
         - url: >-
@@ -205,6 +205,7 @@ blocks:
           alt: Startup Nights Stage
     _template: seo
 ---
+
 
 
 
