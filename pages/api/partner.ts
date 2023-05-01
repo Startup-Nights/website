@@ -6,7 +6,7 @@ const webhook = new IncomingWebhook(url);
 const stringify = (body: any) => {
     return `Company: ${body["company"]}
 Budget: ${body["budget"]}
-Name: ${body["first-name"]} ${body["last-name"]}
+Name: ${body["firstname"]} ${body["lastname"]}
 Email: ${body["email"]}
 Idea: ${body["idea"]}
 `

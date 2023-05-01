@@ -187,7 +187,7 @@ export default function Preregister({ data }) {
                                     </div>
                                     <div className="ml-3 w-0 flex-1 pt-0.5">
                                         <p className="text-sm font-medium text-gray-200">Oh yes!</p>
-                                        <p className="mt-1 text-sm text-gray-400">You are now subscribed to the newsletter.</p>
+                                        <p className="mt-1 text-sm text-gray-400">You are now on the list for the pre-registration.</p>
                                     </div>
                                     <div className="ml-4 flex flex-shrink-0">
                                         <button
