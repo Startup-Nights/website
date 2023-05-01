@@ -1,6 +1,19 @@
 ---
 title: Hiring
 blocks:
+  - title: Startup Nights - We are looking for you!
+    description: >-
+      The Startup Nights is the biggest event in Switzerland that brings the
+      whole startup ecosystem to one table. With this event we want to create
+      awareness for startups and their innovations.
+    openGraph:
+      url: 'https://www.startup-nights.ch/hiring'
+      site_name: Startup Nights
+      images:
+        - url: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+          alt: Startup Nights Stage
+    _template: seo
   - subtitle: Join our mission
     title: We are looking for you!
     image:
@@ -12,9 +25,11 @@ blocks:
     title: Shape the future with us.
     open_positions:
       - title: F&B Operations Manager
+        text: ''
         department: Infrastructure
         link: 'https://forms.gle/Rzyrz3t2NdBqH17z6'
       - title: Partner Communications
+        text: ''
         department: Partnerships
         link: 'https://forms.gle/v9ebh11DSZpk64iAA'
       - title: Partner - University / Academia
@@ -175,6 +190,7 @@ blocks:
         icon: checkbadge
     _template: benefits
 ---
+
 
 
 
