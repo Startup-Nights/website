@@ -195,7 +195,10 @@ blocks:
       alt: Audience of a panel discussion at the main stage
     _template: impressions
   - title: Startup Nights - the biggest startup event in Switzerland
-    description: Landing Page
+    description: >-
+      The Startup Nights is the biggest event in Switzerland that brings the
+      whole startup ecosystem to one table. With this event we want to create
+      awareness for startups and their innovations.
     openGraph:
       url: 'https://www.startup-nights.ch'
       site_name: Startup Nights
@@ -205,6 +208,7 @@ blocks:
           alt: Startup Nights Stage
     _template: seo
 ---
+
 
 
 
