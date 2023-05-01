@@ -2,12 +2,16 @@ import React from 'react'
 import Analytics from 'analytics'
 import { Router } from 'next/router'
 import googleAnalyticsPlugin from '@analytics/google-analytics'
+import googleTagManager from '@analytics/google-tag-manager'
 
 const analytics = Analytics({
     app: 'startup-nights',
     plugins: [
         googleAnalyticsPlugin({
             measurementIds: ['G-MNEKNWTZFY']
+        }),
+        googleTagManager({
+            containerId: 'G-MNEKNWTZFY'
         }),
     ]
 })
