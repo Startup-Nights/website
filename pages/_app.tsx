@@ -1,5 +1,6 @@
 import { Source_Sans_Pro } from 'next/font/google'
 import "../styles.css";
+import { useAnalytics } from '../components/items/analytics';
 
 // https://nextjs.org/docs/basic-features/font-optimization
 const sourceSansPro = Source_Sans_Pro({
@@ -9,6 +10,7 @@ const sourceSansPro = Source_Sans_Pro({
 })
 
 const App = ({ Component, pageProps }) => {
+  useAnalytics()
   return (
     <main className={sourceSansPro.className}>
       <Component {...pageProps} />
