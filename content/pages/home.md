@@ -87,7 +87,9 @@ blocks:
       link: ''
       text: ''
     speakers:
-      - image:
+      - name: Mershad Javan
+        position: Founder and CEO Octiive
+        image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/mershad-javan.jpg
           alt: Mershad Javan
@@ -212,6 +214,7 @@ blocks:
       alt: Audience of a panel discussion at the main stage
     _template: impressions
 ---
+
 
 
 
