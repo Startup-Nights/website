@@ -12,8 +12,6 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Lightbox from "yet-another-react-lightbox";
-import { getCldImageUrl } from "next-cloudinary";
-
 
 export const Gallery = ({ data }) => {
     const [index, setIndex] = useState(-1);
