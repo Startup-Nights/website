@@ -52,19 +52,19 @@ blocks:
         link: /partner
         text: Become a partner
     figures:
-      - name: Speakers
-        number: '42'
-        icon: Rocket
+      - name: Workshops
+        number: '40+'
+        icon: chatbubble
         rows: '3'
         cols: '1'
       - name: Founders
-        number: '500'
-        icon: Founder
+        number: '1200'
+        icon: rocket
         rows: '1'
         cols: '2'
       - name: Visitors
         number: '8000'
-        icon: Test
+        icon: usergroup
         rows: '2'
         cols: '2'
     _template: facts

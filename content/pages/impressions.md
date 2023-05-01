@@ -24,16 +24,19 @@ blocks:
         link: /hiring
         text: Join our mission
     figures:
-      - name: Speakers
-        number: '42'
+      - name: Workshops
+        number: '40+'
+        icon: chatbubble
         rows: '3'
         cols: '1'
       - name: Founders
-        number: '500'
+        number: '1200'
+        icon: rocket
         rows: '1'
         cols: '2'
       - name: Visitors
         number: '8000'
+        icon: usergroup
         rows: '2'
         cols: '2'
     _template: facts
