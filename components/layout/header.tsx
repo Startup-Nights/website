@@ -7,7 +7,7 @@ import Preregister from '../blocks/preregister'
 
 export const Header = ({ data }) => {
     // modal for the preregistration until we have tito ready
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
     // If we're on an admin path, other links should also link to their admin paths
     const [prefix, setPrefix] = useState("");
