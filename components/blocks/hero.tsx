@@ -1,13 +1,21 @@
 import * as React from "react";
 import type { Template } from "tinacms";
 import CTA from "./cta";
+import Image from "next/image";
 
 export const Hero = ({ data }) => {
     return (
         <div className="relative">
             {data.image && data.image.src && data.image.src !== '' && (
                 <div className='absolute inset-0'>
-                    <img className="w-full h-full object-cover" src={data.image.src} />
+                    <Image
+                        className="w-full h-full object-cover"
+                        src={data.image.src}
+                        alt={data.image.alt}
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                    />
                     <div className="absolute inset-0 mix-blend-multiply bg-slate-400" />
                 </div>
             )}
