@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
+    "build": "tinacms build && next build && next-sitemap",
     "start": "tinacms build && next start",
     "export": "npm run build && next export",
     "lint": "eslint . --ext .ts,.tsx"
@@ -46,6 +46,7 @@
     "install": "^0.13.0",
     "next": "^13.1.6",
     "next-seo": "^6.0.0",
+    "next-sitemap": "^4.0.9",
     "next-tinacms-dos": "^1.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
