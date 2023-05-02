@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /tickets
+
+Sitemap: https://startup-nights.ch/sitemap.xml

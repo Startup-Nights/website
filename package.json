@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build && next-sitemap",
+    "build": "tinacms build && next build && node ./scripts/sitemap.mjs",
     "start": "tinacms build && next start",
     "export": "npm run build && next export",
     "lint": "eslint . --ext .ts,.tsx"
@@ -22,6 +22,7 @@
     "@typescript-eslint/parser": "^5.20.0",
     "autoprefixer": "^10.4.0",
     "eslint": "^8.13.0",
+    "globby": "^13.1.4",
     "postcss": "^8.3.11",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^11.0.1"
@@ -46,7 +47,6 @@
     "install": "^0.13.0",
     "next": "^13.1.6",
     "next-seo": "^6.0.0",
-    "next-sitemap": "^4.0.9",
     "next-tinacms-dos": "^1.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
