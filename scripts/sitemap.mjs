@@ -9,6 +9,7 @@ async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc');
   const pages = await globby([
     'content/pages/*.md',
+    '!content/pages/tickets.md',
   ]);
 
   const sitemap = `
