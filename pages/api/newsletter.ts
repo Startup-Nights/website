@@ -1,4 +1,5 @@
 import mailchimp from '@mailchimp/mailchimp_marketing';
+import crypto from 'crypto';
 
 mailchimp.setConfig({
     apiKey: process.env.NEXT_MAILCHIMP as string,
@@ -10,25 +11,31 @@ export default async (req, res) => {
     // visible on audience -> settings -> audience name and defaults
     const list_id = "dc844d3c35";
 
+    const email = (req.body.email as string).toLowerCase()
+    const subscriber_hash = crypto.createHash('md5').update(email).digest('hex')
+
     try {
-        const response = await mailchimp.lists.addListMember(
-            list_id, {
+        // https://mailchimp.com/developer/marketing/api/list-members/add-or-update-list-member/
+        const response_update = await mailchimp.lists.setListMember(
+            list_id, 
+            subscriber_hash, 
+            {
             "email_address": req.body.email,
             "merge_fields": {
                 "FNAME": req.body.first,
                 "LNAME": req.body.last,
             },
-            tags: [
-                "Newsletter SN23",
-            ],
-            "status": "subscribed",
+            "status_if_new": "subscribed",
         });
 
-        if ((response.status as number) >= 400) {
-            return res.status(400).json({
-                error: `There was an error subscribing to the newsletter. Shoot us an email at [hello@startup-nights.ch] and we'll add you to the list.`
-            });
-        }
+        // https://mailchimp.com/developer/marketing/api/list-member-tags/add-or-remove-member-tags/
+        const response_tags = await mailchimp.lists.updateListMemberTags(
+            list_id,
+            subscriber_hash,
+            {tags: [
+                { name: "Newsletter SN23", status: "active" },
+            ]}
+        )
 
         return res.status(201).json({ error: '' });
     } catch (error) {
