@@ -25,6 +25,7 @@ export default async (req, res) => {
                 "FNAME": req.body.first,
                 "LNAME": req.body.last,
             },
+            "status": "subscribed",
             "status_if_new": "subscribed",
         });
 
