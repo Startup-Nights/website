@@ -152,7 +152,7 @@ export default function Preregister({ data }) {
                                     </div>
                                     <div className="ml-3 w-0 flex-1 pt-0.5">
                                         <p className="text-sm font-medium text-gray-200">Shoot! Something went wrong.</p>
-                                        <p className="mt-1 text-sm text-gray-400">Shoot us an email <a className="italic underline underline-offset-4" href="mailto:helo@startup-nights.ch">here</a> and we'll put you on the list.</p>
+                                        <p className="mt-1 text-sm text-gray-400">Shoot us an email <a className="italic underline underline-offset-4" href="mailto:hello@startup-nights.ch">here</a> and we'll put you on the list.</p>
                                     </div>
                                     <div className="ml-4 flex flex-shrink-0">
                                         <button
