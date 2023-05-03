@@ -178,7 +178,7 @@ const Modal = ({ open, setOpen }) => {
                                 <div>
                                     <div className="text-center">
                                         <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-200">
-                                            Preregister for the Startup Nights 2023 and subscribe our newsletter
+                                            Preregister for the Startup Nights 2023 and subscribe to our newsletter
                                         </Dialog.Title>
                                         <div className="mt-2">
                                             <Preregister data={{}} />
