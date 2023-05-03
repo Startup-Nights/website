@@ -176,9 +176,9 @@ const Modal = ({ open, setOpen }) => {
                         >
                             <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-sn-black-lightest p-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
                                 <div>
-                                    <div className="text-center sm:mt-5">
+                                    <div className="text-center">
                                         <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-200">
-                                            Preregister for Startup Nights 2023
+                                            Preregister for the Startup Nights 2023 and subscribe our newsletter
                                         </Dialog.Title>
                                         <div className="mt-2">
                                             <Preregister data={{}} />
