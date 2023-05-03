@@ -16,6 +16,8 @@ blocks:
     _template: seo
   - subtitle: '2 & 3 November, Winterthur'
     title: Startup Nights
+    ticket_cta:
+      text: Tickets
     image:
       src: ''
       alt: ''
@@ -89,6 +91,7 @@ blocks:
     speakers:
       - name: Mershad Javan
         position: Founder and CEO Octiive
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/mershad-javan.jpg
@@ -214,6 +217,7 @@ blocks:
       alt: Audience of a panel discussion at the main stage
     _template: impressions
 ---
+
 
 
 
