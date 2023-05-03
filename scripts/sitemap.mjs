@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs';
 import { globby } from 'globby';
 import prettier from 'prettier';
 
-const baseURL = 'https://startup-nights.ch'
+const baseURL = 'https://www.startup-nights.ch'
  
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc');
