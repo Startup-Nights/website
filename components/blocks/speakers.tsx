@@ -18,7 +18,7 @@ export const Speakers = ({ data }) => {
     }, [emblaApi])
 
     return (
-        <div className="max-w-8xl mx-auto pt-24 pb-16 bg-sn-black">
+        <div className="max-w-8xl mx-auto pt-12 lg:pt-24 pb-16 bg-sn-black">
             {/* <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} /> */}
 
             <div className="text-center mb-20">
@@ -68,11 +68,13 @@ export const Speakers = ({ data }) => {
                                     <p className="h5 m-0 px-2 py-1 skew-x-6 md:px-4 md:py-3 text-black">{speaker?.name}</p>
                                 </span>
                             </div>
-                            <div className='relative grid content-center justify-end text-center -mt-2'>
-                                <span className='bg-white -skew-x-6 rounded-sm'>
-                                    <p className="h6 m-0 px-2 skew-x-6 py-1 md:px-4 md:py-2 text-black">{speaker?.position}</p>
-                                </span>
-                            </div>
+                            {speaker?.position && (
+                                <div className='relative grid content-center justify-end text-center -mt-2'>
+                                    <span className='bg-white -skew-x-6 rounded-sm'>
+                                        <p className="h6 m-0 px-2 skew-x-6 py-1 md:px-4 md:py-2 text-black">{speaker?.position}</p>
+                                    </span>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
