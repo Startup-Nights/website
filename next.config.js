@@ -24,12 +24,6 @@ module.exports = {
             },
             {
                 protocol: 'https',
-                hostname: 'source.unsplash.com',
-                port: '',
-                pathname: '/**'
-            },
-            {
-                protocol: 'https',
                 hostname: 'res.cloudinary.com',
                 port: '',
                 pathname: '/**'
@@ -41,6 +35,10 @@ module.exports = {
             {
                 source: "/",
                 destination: "/home",
+            },
+            {
+                source: "/about-us",
+                destination: "/about",
             },
             {
                 source: "/admin",
