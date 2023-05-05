@@ -2,8 +2,10 @@ import Image from "next/image";
 import { Template } from "tinacms";
 import { TinaMarkdown, TinaMarkdownContent } from "tinacms/dist/rich-text";
 import { placeholderBox } from "../items/placeholder";
+import { SocialIcon } from "../items/social";
+import Link from "next/link";
 
-type Member = { name: string, src: string, position: string }
+type Member = { name: string, src: string, position: string, linkedin?: string }
 type Division = { title: string, subtitle: string, members: Member[] }
 
 export const Team = ({ data }) => {
@@ -33,23 +35,29 @@ export const Team = ({ data }) => {
                                 </h1>
                             </div>
 
-                            <ul role="list" className="grid gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-12 xl:col-span-2">
+                            <ul role="list" className="grid gap-4 sm:grid-cols-2 sm:gap-4 xl:col-span-2">
                                 {division.members && division.members.map((person: Member) => (
-                                    <li key={person?.name}>
-                                        <div className="flex items-center gap-x-6">
-                                            <Image
-                                                src={person.src ? person.src : '/user.svg'}
-                                                alt={person?.name}
-                                                className="rounded-full"
-                                                width={diameter}
-                                                height={diameter}
-                                            />
-                                            <div>
-                                                <h3 className="text-base font-semibold leading-7 tracking-tight">{person?.name}</h3>
-                                                <p className="text-sm font-semibold leading-6 text-slate-400">{person?.position}</p>
+                                    <Link key={person?.name}  href={person.linkedin ? person.linkedin : '/'} target="_blank" className="block group">
+                                        <li className="group relative transition-all">
+                                            <div className="absolute invisible -top-3 -right-3 p-2 bg-white rounded-full text-black group-hover:visible">
+                                                <SocialIcon name='linkedin' className="h-5 w-5" aria-hidden="true" />
                                             </div>
-                                        </div>
-                                    </li>
+
+                                            <div className="flex items-center gap-x-6 border-2 border-transparent rounded-3xl p-4 bg-sn-black-lightest group-hover:border-gray-200">
+                                                <Image
+                                                    src={person.src ? person.src : '/user.svg'}
+                                                    alt={person?.name}
+                                                    className="rounded-full"
+                                                    width={diameter}
+                                                    height={diameter}
+                                                />
+                                                <div>
+                                                    <h3 className="text-base font-semibold leading-7 tracking-tight">{person?.name}</h3>
+                                                    <p className="text-sm font-semibold leading-6 text-gray-400">{person?.position}</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </Link>
                                 ))}
                             </ul>
                         </div>
@@ -84,11 +92,13 @@ export const teamBlockSchema: Template = {
                 {
                     type: "string",
                     label: "Subtitle",
+                    required: true,
                     name: "subtitle",
                 },
                 {
                     type: "string",
                     label: "Title",
+                    required: true,
                     name: "title",
                 },
                 {
@@ -100,12 +110,20 @@ export const teamBlockSchema: Template = {
                         {
                             label: "Name",
                             name: "name",
+                            required: true,
                             type: "string",
                         },
                         {
                             label: "Position",
                             name: "position",
+                            required: true,
                             type: "string",
+                        },
+                        {
+                            label: "LinkedIn",
+                            name: "linkedin",
+                            required: true,
+                            type: "string"
                         },
                         {
                             name: "src",
