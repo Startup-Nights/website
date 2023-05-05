@@ -23,6 +23,7 @@ stateDiagram-v2
     vercel --> website: update website
     website --> mailchimp: sign up for\nnewsletter
     website --> digitalocean_spaces: store images
+    website --> cloudinary: store images (for responsive stuff)
 ```
 
 ## Local Development
@@ -38,18 +39,6 @@ stateDiagram-v2
 - http://localhost:3000/admin : connect to Tina Cloud and go in edit mode
 - http://localhost:3000/exit-admin : log out of Tina Cloud
 - http://localhost:4001/altair/ : GraphQL playground to test queries and browse the API documentation
-
-## Notes
-
-The website uses images that are loaded from DigitalOcean. This means that it 
-can't optimize images on build time, which leads to potential costs. The 
-pricing can be found [here](https://vercel.com/docs/concepts/limits/overview#typical-monthly-usage-guidelines).
-
-According to the definition of a [source image](https://vercel.com/docs/concepts/image-optimization#source-images),
-we shouldn't run into this issue unless we have a lot of images.
-
-If this definition / interpretation is not accurate, we may stil.l be able to 
-circumvent it by using a high [`miminumCacheTTL`](https://nextjs.org/docs/api-reference/next/image#minimum-cache-ttl).
 
 ### Structure
 
