@@ -9,7 +9,7 @@ export const RoundImage = ({ data }) => {
                 width="0"
                 height="0"
                 sizes="100vw"
-                className="w-full h-auto rounded-full"
+                className="w-full h-auto rounded-3xl"
             />
         </div>
     )
