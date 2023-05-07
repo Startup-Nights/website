@@ -29,7 +29,7 @@ export const Banner = ({ data, setOpen }) => {
     //   </div>
     // </div>
 
-    <div className="fixed inset-x-0 bottom-0 flex flex-col justify-between gap-x-8 gap-y-4 bg-sn-yellow p-6 ring-1 ring-gray-900/10 md:flex-row md:items-center lg:px-8">
+    <div className="fixed inset-x-0 z-10 bottom-0 flex flex-col justify-between gap-x-8 gap-y-4 bg-sn-yellow p-6 ring-1 ring-gray-900/10 md:flex-row md:items-center lg:px-8">
       <Modal content={<Newsletter data={{}} />} title={'Sign up for our newsletter'} text={"You'll receive the discount code once the ticket sales starts on 10. Mai."} open={openModal} setOpen={setOpenModal} />
 
       <p className="max-w-4xl text-sm leading-6 text-gray-900">
