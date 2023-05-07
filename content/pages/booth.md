@@ -1,5 +1,5 @@
 ---
-title: Tickets
+title: Booth
 blocks:
   - title: Tickets - Startup Nights
     description: >-
@@ -47,6 +47,7 @@ blocks:
         text: "You can get tickets via the button in the header. But you might want to apply for the booth first - we'll send you a little welcome present after you application \U0001F609"
     _template: partnerinfo
 ---
+
 
 
 

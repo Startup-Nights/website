@@ -58,10 +58,6 @@ export default function Newsletter({ data }) {
 
     return (
         <div className="">
-            <h3 className="text-sm font-semibold leading-6 text-white">Subscribe to our newsletter</h3>
-            <p className="mt-2 text-sm leading-6 text-gray-300">
-                Sign up for the latest news, speaker announcements and discounts.
-            </p>
             <form onSubmit={handleSubmit} className="mt-6 grid grid-cols-2 gap-y-3 gap-x-3">
                 <div className="col-span-1">
                     <label htmlFor="first" className="sr-only">
