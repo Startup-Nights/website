@@ -45,8 +45,14 @@ blocks:
           solving a problem, young startup.
       - name: Note that you have to buy tickets for the event separatly
         text: "You can get tickets via the button in the header. But you might want to apply for the booth first - we'll send you a little welcome present after you application \U0001F609"
-    _template: partnerinfo
+    background_color: bg-sn-black-light
+    _template: content
 ---
+
+
+
+
+
 
 
 

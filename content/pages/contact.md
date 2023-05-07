@@ -28,7 +28,7 @@ blocks:
         - >-
           We are first-class listeners and have an open ear for all your
           questions. Tell us how we may help you and we will get back to you as
-          soon as possible. 
+          soon as possible.
       cta:
         link: 'mailto:hello@startup-nights.ch'
         text: Drop us a line
@@ -41,15 +41,23 @@ blocks:
       - name: Event location and stay
         text: >-
           We have all the insights into good places to stay and where to get the
-          best food. And we are eager to share our knowledge with you. 
+          best food. And we are eager to share our knowledge with you.
         link: 'mailto:hello@startup-nights.ch'
       - name: Press and media
         text: >-
-          Everything media related – weather you need more pictures or want to
-          do an interview with a team member. 
+          Everything media related - whether you need more pictures or want to
+          do an interview with a team member.
         link: 'mailto:hello@startup-nights.ch'
-    _template: partnerinfo
+    contentblock_left: true
+    background_color: bg-sn-black-light
+    _template: content
 ---
+
+
+
+
+
+
 
 
 

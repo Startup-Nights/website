@@ -35,7 +35,10 @@ blocks:
           The Startup Nights is the biggest event in Switzerland that brings the
           whole startup ecosystem to one table. With this event we want to
           create awareness for startups and their innovations.
-        - ' Organized by a team of about 50 passionate people, purely out of passion and in our spare time, we shape the future of the Swiss startup scene. '
+        - >-
+          Organized by a team of about 50 passionate people, purely out of
+          passion and in our spare time, we shape the future of the Swiss
+          startup scene.
       cta:
         link: /about
         text: Get to know us
@@ -53,9 +56,11 @@ blocks:
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2021/speaker/melanie-gabriel.png
         alt: Melanie Gabriel
-    _template: about
+    contentblock_left: true
+    background_color: bg-sn-black
+    _template: content
   - content_block:
-      subtitle: Facts & Figures
+      subtitle: Facts & figures
       title: The biggest event!
       content:
         - >-
@@ -82,7 +87,9 @@ blocks:
         icon: usergroup
         rows: '2'
         cols: '2'
-    _template: facts
+    contentblock_left: false
+    background_color: bg-sn-black-light
+    _template: content
   - subtitle: Speaker
     title: Heavyweights.
     cta:
@@ -204,19 +211,44 @@ blocks:
         - >-
           Last year we had the first edition of two days in a new location. And
           it was awesome! 42 speakers, 500 founders, and 8000 visitors made the
-          Startup Nights 2022 unforgettable. 
+          Startup Nights 2022 unforgettable.
         - >-
           As we already started with the preaparations for this year's event, we
-          also like to take a look back. 
+          also like to take a look back.
       cta:
         link: /impressions
         text: Cherish the memories
     image:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-1-day-2-melanie-buob/0C1A3745.jpg
-      alt: Audience of a panel discussion at the main stage
-    _template: impressions
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-207.jpg
+      alt: People at a panel discussion
+    contentblock_left: true
+    background_color: bg-sn-black-light
+    _template: content
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

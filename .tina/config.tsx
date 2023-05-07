@@ -6,7 +6,6 @@ import { heroBlockSchema } from "../components/blocks/hero";
 import { partnerFormSchema } from "../components/blocks/partnerform";
 import { teamBlockSchema } from "../components/blocks/team";
 import { partnersBlockSchema } from "../components/blocks/partners";
-import { aboutBlockSchema } from "../components/blocks/about";
 import { factsBlockSchema } from "../components/blocks/facts";
 import { impressionsBlockSchema } from "../components/blocks/impressions";
 import { countdownBlockSchema } from "../components/blocks/countdown";
@@ -18,6 +17,7 @@ import { benefitsBlockSchema } from "../components/blocks/benefits";
 import { galleryBlockSchema } from "../components/blocks/gallery";
 import { titoBlockSchema } from "../components/blocks/tito";
 import { seoBlockSchema } from "../components/blocks/seo";
+import { contentBlockSchema } from "../components/blocks/content";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -449,9 +449,6 @@ const config = defineStaticConfig({
                         },
                         templates: [
                             heroBlockSchema,
-                            impressionsBlockSchema,
-                            factsBlockSchema,
-                            aboutBlockSchema,
                             speakersBlockSchema,
                             partnersBlockSchema,
                             countdownBlockSchema,
@@ -459,14 +456,13 @@ const config = defineStaticConfig({
                             partnerFormSchema,
                             teamBlockSchema,
                             gifBlockSchema,
-                            partnerinfoBlockSchema,
-                            formatsoverviewBlockSchema,
                             tabsBlockSchema,
                             dropdownBlockSchema,
                             benefitsBlockSchema,
                             galleryBlockSchema,
                             titoBlockSchema,
                             seoBlockSchema,
+                            contentBlockSchema,
                         ],
                     },
                 ],

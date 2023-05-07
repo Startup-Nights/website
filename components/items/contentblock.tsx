@@ -27,7 +27,7 @@ export const ContentBlock = ({ data }) => {
 
                     {data?.cta_secondary && data.cta_secondary.text !== '' && (
                         <div>
-                            <ButtonSecondary link={data?.cta_secondary.link} text={data?.cta_secondary.text}>
+                            <ButtonSecondary link={data?.cta_secondary?.link} text={data?.cta_secondary?.text}>
                             </ButtonSecondary>
                         </div>
                     )}
