@@ -2,8 +2,6 @@ import * as React from "react";
 import type { Template } from "tinacms";
 import Image from "next/image";
 import { placeholderBox } from "../items/placeholder";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
 
 // https://dev.to/holdmypotion/react-custom-cursor-no-extra-dependencies-25ki
