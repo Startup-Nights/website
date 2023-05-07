@@ -38,24 +38,19 @@ blocks:
           event worth more than the money we are asking for? We are thrilled to
           see you "twint" a little extra onsite to finance our well-deserved
           volunteer weekend.
-        - >-
-          Note: All attendees, including those with booths, must purchase a
-          ticket.
     infopoints:
-      - name: 'Founders: CHF 59'
-        text: Incl. matchmaking access
-      - name: 'Investors: CHF 149'
-        text: Incl. matchmaking access
-      - name: 'Corporates: CHF 149'
-        text: Incl. matchmaking access
-      - name: 'Ecosystem: CHF 149'
+      - name: Everybody needs a ticket
         text: >-
-          This category is for institutions such as universities and politics.
-          Incl. matchmaking access
-      - name: 'Visitors and Students: CHF 39'
-        text: No matchmaking access
+          This includes startups or companies that are renting a booth - this is
+          handled separately.
+      - name: Subscribe to our newsletter
+        text: >-
+          Get the latest news regarding speakers, partners that are onboard and
+          sometimes even discounts.
     contentblock_left: true
+    background_color: bg-sn-black-light
     _template: content
+  - _template: pricing
   - content_block:
       subtitle: 2 & 3 November 2023
       title: Eulachhallen Winterthur
@@ -69,6 +64,34 @@ blocks:
         text: Have some question?
     _template: tito
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,6 +4,7 @@ import { Infopoints, InfopointsBlockSchema } from '../items/infopoints';
 import { RoundImage, RoundImageBlockschema } from '../items/image';
 import { Disclosure } from '@headlessui/react'
 import { ChevronUpIcon } from '@heroicons/react/20/solid'
+import { Features, FeaturesBlockSchema } from '../items/features';
 
 export const Dropdown = ({ data }) => {
     return (
@@ -31,6 +32,10 @@ export const Dropdown = ({ data }) => {
                                         {item?.image && (
                                             <RoundImage data={item?.image} />
                                         )}
+
+                                        {item.features && (
+                                            <Features data={item.features} />
+                                        )}
                                     </div>
                                 </Disclosure.Panel>
                             </>
@@ -55,6 +60,7 @@ export const dropdownBlockSchema: Template = {
                 ContentBlockSchema,
                 RoundImageBlockschema,
                 InfopointsBlockSchema,
+                FeaturesBlockSchema,
             ],
         }
     ],

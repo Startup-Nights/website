@@ -13,6 +13,7 @@ import { galleryBlockSchema } from "../components/blocks/gallery";
 import { titoBlockSchema } from "../components/blocks/tito";
 import { seoBlockSchema } from "../components/blocks/seo";
 import { contentBlockSchema } from "../components/blocks/content";
+import { pricingBlockSchema } from "../components/blocks/pricing";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -456,6 +457,7 @@ const config = defineStaticConfig({
                             galleryBlockSchema,
                             titoBlockSchema,
                             seoBlockSchema,
+                            pricingBlockSchema,
                             contentBlockSchema,
                         ],
                     },
