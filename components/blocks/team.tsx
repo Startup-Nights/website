@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { Template } from "tinacms";
-import { TinaMarkdown, TinaMarkdownContent } from "tinacms/dist/rich-text";
-import { placeholderBox } from "../items/placeholder";
 import { SocialIcon } from "../items/social";
 import Link from "next/link";
 

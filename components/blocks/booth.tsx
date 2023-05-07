@@ -1,7 +1,5 @@
 import * as React from "react";
 import type { Template } from "tinacms";
-import Image from "next/image";
-import { placeholderBox } from "../items/placeholder";
 import Link from "next/link";
 
 const badges = [

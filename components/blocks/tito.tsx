@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import type { Template } from "tinacms";
-import { ContentBlock, ContentBlockSchema } from "../items/contentblock";
+import { ContentBlockSchema } from "../items/contentblock";
 import Head from "next/head";
 
 export const Tito = ({ data }) => {
