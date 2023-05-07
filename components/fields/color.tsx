@@ -2,9 +2,9 @@ import * as React from "react";
 import { wrapFieldsWithMeta } from "tinacms";
 
 export const colorOptions = [
-    "black",
-    "black_light",
-    "black_lightest",
+  "black",
+  "black_light",
+  "black_lightest",
 ]
 
 export const ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
@@ -18,17 +18,21 @@ export const ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
     <>
       <input type="text" id={input.name} className="hidden" {...input} />
       <div className="flex gap-2 flex-wrap">
+
+        {/* ugly hack because tailwind otherwise would not generate the necessary classes */}
+        <div className="hidden bg-sn-black"></div>
+        <div className="hidden bg-sn-black-light"></div>
+        <div className="hidden bg-sn-black-lightest"></div>
+
         {colorOptions.map((color) => {
           return (
             <button
-                key={color}
-              className={`w-9 h-9 rounded-full shadow border ${
-                inputClasses[color]
-              } ${
-                input.value === color
+              key={color}
+              className={`w-9 h-9 rounded-full shadow border ${inputClasses[color]
+                } ${input.value === inputClasses[color]
                   ? "ring-[3px] ring-offset-2 ring-blue-400"
                   : ""
-              }`}
+                }`}
               onClick={() => {
                 input.onChange(inputClasses[color]);
               }}
