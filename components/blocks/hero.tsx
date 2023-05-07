@@ -67,7 +67,7 @@ export const Hero = ({ data }) => {
                         <button
                             type="button"
                             onClick={() => setOpen(true)}
-                            className="rounded-full transition-all bg-sn-yellow px-6 py-3 text-black hover:bg-sn-yellow-dark text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
+                            className="rounded-full transition-all bg-sn-yellow px-6 py-2 text-black hover:bg-sn-yellow-dark text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
                         >
                             {data.ticket_cta.text}
                         </button>
