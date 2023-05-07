@@ -83,7 +83,11 @@
       }
     ],
     "banner": {
-      "title": "Get 30% off of your ticket when registering for our newsletter in Mai"
+      "text": "Get 30% off of your ticket in Mai when signing up for our newsletter. We'll email you the discount code once the ticket sale starts on 10th of Mai.",
+      "agree_button": "Sign me up!",
+      "close_button": "Close",
+      "modal_title": "Sign up for our newsletter",
+      "modal_text": "You'll receive the discount code once the ticket sales starts on 10. Mai."
     }
   }
 }
