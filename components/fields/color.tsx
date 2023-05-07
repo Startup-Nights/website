@@ -18,12 +18,6 @@ export const ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
     <>
       <input type="text" id={input.name} className="hidden" {...input} />
       <div className="flex gap-2 flex-wrap">
-
-        {/* ugly hack because tailwind otherwise would not generate the necessary classes */}
-        <div className="hidden bg-sn-black"></div>
-        <div className="hidden bg-sn-black-light"></div>
-        <div className="hidden bg-sn-black-lightest"></div>
-
         {colorOptions.map((color) => {
           return (
             <button
