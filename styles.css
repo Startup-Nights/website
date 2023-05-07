@@ -14,7 +14,8 @@
 
     /* tax text which has a special color in the original styling */
     .tito-widget .tito-widget-form div.tito-price-details-regular > span.tito-release--tax {
-        @apply text-gray-200;
+        @apply text-gray-400;
+        color: rgb(156 163 175) !important;
     }
 
     /* buttons to increase the ticket count */
@@ -40,5 +41,10 @@
     /* submit button */
     .tito-widget .tito-widget-form .tito-submit {
         @apply flex w-full items-center justify-center border-2 border-transparent rounded-xl bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide;
+    }
+
+    /* discount color */
+    .tito-widget .tito-discounted-from {
+        @apply sn-yellow-dark;
     }
 }
