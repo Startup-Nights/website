@@ -298,9 +298,29 @@ const config = defineStaticConfig({
                                 fields: [
                                     {
                                         type: "string",
-                                        label: "Title",
-                                        name: "title"
-                                    }
+                                        label: "Text",
+                                        name: "text"
+                                    },
+                                    {
+                                        type: "string",
+                                        label: "Agree button text",
+                                        name: "agree_button"
+                                    },
+                                    {
+                                        type: "string",
+                                        label: "Close button text",
+                                        name: "close_button"
+                                    },
+                                    {
+                                        type: "string",
+                                        label: "Modal title",
+                                        name: "modal_title"
+                                    },
+                                    {
+                                        type: "string",
+                                        label: "Modal text",
+                                        name: "modal_text"
+                                    },
                                 ]
                             }
                         ],
