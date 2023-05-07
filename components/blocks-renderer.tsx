@@ -2,17 +2,13 @@ import React from "react";
 import type { Page } from "../.tina/__generated__/types";
 import { Gif } from "./blocks/gif";
 import { Hero } from "./blocks/hero";
-import PartnerForm from "./blocks/partnerform";
+import { Content } from "./blocks/content";
+import { PartnerForm } from "./blocks/partnerform";
 import { Partners } from "./blocks/partners";
 import { Positions } from "./blocks/positions";
 import { Speakers } from "./blocks/speakers";
 import { Team } from "./blocks/team";
-import { About } from "./blocks/about";
-import { Facts } from "./blocks/facts";
-import { Impressions } from "./blocks/impressions";
 import { Countdown } from "./blocks/countdown";
-import { PartnerInfo } from "./blocks/partnerinfo";
-import { FormatsOverview } from "./blocks/formatsoverview";
 import { Tabs } from "./blocks/tabs";
 import { Dropdown } from "./blocks/dropdown";
 import { Benefits } from "./blocks/benefits";
@@ -89,33 +85,6 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     <Team data={block} />
                                 </div>
                             );
-                        case "PageBlocksAbout":
-                            return (
-                                <div
-                                    data-tinafield={`blocks.${i}`}
-                                    key={i + block.__typename}
-                                >
-                                    <About data={block} />
-                                </div>
-                            )
-                        case "PageBlocksFacts":
-                            return (
-                                <div
-                                    data-tinafield={`blocks.${i}`}
-                                    key={i + block.__typename}
-                                >
-                                    <Facts data={block} />
-                                </div>
-                            )
-                        case "PageBlocksImpressions":
-                            return (
-                                <div
-                                    data-tinafield={`blocks.${i}`}
-                                    key={i + block.__typename}
-                                >
-                                    <Impressions data={block} />
-                                </div>
-                            )
                         case "PageBlocksCountdown":
                             return (
                                 <div
@@ -123,24 +92,6 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Countdown data={block} />
-                                </div>
-                            )
-                        case "PageBlocksPartnerinfo":
-                            return (
-                                <div
-                                    data-tinafield={`blocks.${i}`}
-                                    key={i + block.__typename}
-                                >
-                                    <PartnerInfo data={block} />
-                                </div>
-                            )
-                        case "PageBlocksFormatsoverview":
-                            return (
-                                <div
-                                    data-tinafield={`blocks.${i}`}
-                                    key={i + block.__typename}
-                                >
-                                    <FormatsOverview data={block} />
                                 </div>
                             )
                         case "PageBlocksTabs":
@@ -195,6 +146,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <SEO data={block} />
+                                </div>
+                            )
+                        case "PageBlocksContent":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Content data={block} />
                                 </div>
                             )
 

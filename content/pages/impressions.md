@@ -22,7 +22,7 @@ blocks:
       alt: Stage Startup Nights 2022
     _template: hero
   - content_block:
-      subtitle: Facts & Figures
+      subtitle: Facts & figures
       title: The biggest event!
       content:
         - >-
@@ -38,7 +38,7 @@ blocks:
         text: Join our mission
     figures:
       - name: Workshops
-        number: '40+'
+        number: 40+
         icon: chatbubble
         rows: '3'
         cols: '1'
@@ -52,9 +52,14 @@ blocks:
         icon: usergroup
         rows: '2'
         cols: '2'
-    _template: facts
+    background_color: bg-sn-black-light
+    _template: content
   - _template: gallery
 ---
+
+
+
+
 
 
 

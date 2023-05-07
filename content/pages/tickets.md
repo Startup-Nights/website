@@ -22,7 +22,7 @@ blocks:
       alt: Startup Nights Stage
     _template: hero
   - content_block:
-      subtitle: Ticket & Pricing
+      subtitle: Ticket & pricing
       title: Ticket categories & our pricing.
       content:
         - >-
@@ -54,7 +54,8 @@ blocks:
           Incl. matchmaking access
       - name: 'Visitors and Students: CHF 39'
         text: No matchmaking access
-    _template: partnerinfo
+    contentblock_left: true
+    _template: content
   - content_block:
       subtitle: 2 & 3 November 2023
       title: Eulachhallen Winterthur
@@ -68,6 +69,14 @@ blocks:
         text: Have some question?
     _template: tito
 ---
+
+
+
+
+
+
+
+
 
 
 

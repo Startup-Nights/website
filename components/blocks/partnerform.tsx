@@ -3,7 +3,7 @@ import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/re
 import { Fragment, use, useRef, useState } from "react";
 import { Template } from "tinacms"
 
-export default function PartnerForm({ data }) {
+export const PartnerForm = ({ data }) => {
     const [err, setErr] = useState(false);
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);

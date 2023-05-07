@@ -27,18 +27,19 @@ blocks:
       content:
         - >-
           Startups shape the future with their innovations. That's why they need
-          more presence and recognition in Switzerland. 
+          more presence and recognition in Switzerland.
         - >-
           This is where we take action and bring the whole startup ecosystem to
-          one table. Purely out of passion and with a lot of drive. 
+          one table. Purely out of passion and with a lot of drive.
       cta:
         link: /hiring
         text: Join our mission
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
-      alt: Startup Nights 2022 Stage
-    _template: impressions
+      alt: The organising team on the stage
+    contentblock_left: true
+    _template: content
   - subtitle: Our Rockstars
     title: The people behind the scenes.
     divisions:
@@ -341,6 +342,10 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
+
+
+
 
 
 
