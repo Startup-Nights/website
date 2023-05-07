@@ -398,7 +398,7 @@ function classNames(...classes) {
 }
 
 const Categories = () => {
-    let [categories] = useState({
+    const [categories] = useState({
         Recent: [
             {
                 id: 1,
