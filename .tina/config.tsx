@@ -1,16 +1,11 @@
 import { defineStaticConfig } from "tinacms";
-import { gifBlockSchema } from "../components/blocks/gif";
 import { speakersBlockSchema } from "../components/blocks/speakers";
 import { positionsBlockSchema } from "../components/blocks/positions";
 import { heroBlockSchema } from "../components/blocks/hero";
 import { partnerFormSchema } from "../components/blocks/partnerform";
 import { teamBlockSchema } from "../components/blocks/team";
 import { partnersBlockSchema } from "../components/blocks/partners";
-import { factsBlockSchema } from "../components/blocks/facts";
-import { impressionsBlockSchema } from "../components/blocks/impressions";
 import { countdownBlockSchema } from "../components/blocks/countdown";
-import { partnerinfoBlockSchema } from "../components/blocks/partnerinfo";
-import { formatsoverviewBlockSchema } from "../components/blocks/formatsoverview";
 import { tabsBlockSchema } from "../components/blocks/tabs";
 import { dropdownBlockSchema } from "../components/blocks/dropdown";
 import { benefitsBlockSchema } from "../components/blocks/benefits";
@@ -455,7 +450,6 @@ const config = defineStaticConfig({
                             positionsBlockSchema,
                             partnerFormSchema,
                             teamBlockSchema,
-                            gifBlockSchema,
                             tabsBlockSchema,
                             dropdownBlockSchema,
                             benefitsBlockSchema,
