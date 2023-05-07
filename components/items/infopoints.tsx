@@ -29,7 +29,9 @@ const Content = ({ point }) => {
             <div className="font-semibold text-xl text-gray-300">
                 {point?.name}
             </div>
-            <div className="text-md mt-4 leading-6 text-gray-400">{point?.text}</div>
+            {point.text && (
+                <div className="text-md mt-4 leading-6 text-gray-400">{point?.text}</div>
+            )}
         </div>
 
     )
@@ -41,7 +43,9 @@ const ContentWithoutLink = ({ point }) => {
             <div className="font-semibold text-xl text-gray-300">
                 {point?.name}
             </div>
-            <div className="text-md mt-4 leading-6 text-gray-400">{point?.text}</div>
+            {point.text && (
+                <div className="text-md mt-4 leading-6 text-gray-400">{point?.text}</div>
+            )}
         </div>
 
     )

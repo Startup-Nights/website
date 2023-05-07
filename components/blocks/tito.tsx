@@ -19,7 +19,7 @@ export const Tito = ({ data }) => {
             </Head>
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                 <div className="grid grid-cols-1 items-center">
-                    <div className="flex items-center">
+                    <div id="sn-tito-embedded-widget" className="flex items-center">
                         <tito-widget
                             event="ecw/startup-nights-2023"
                             save-metadata-parameters="utm_*"
