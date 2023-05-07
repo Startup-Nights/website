@@ -1,9 +1,9 @@
-import { PartnerInfo } from "../components/blocks/partnerinfo";
+import { Content } from "../components/blocks/content";
 
 export default function FourOhFour() {
   return (
     <div className="bg-sn-black h-screen grid content-center">
-      <PartnerInfo
+      <Content
         data={{
           content_block: {
             title: "Something's wrong here.",
