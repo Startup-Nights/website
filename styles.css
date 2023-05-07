@@ -45,6 +45,6 @@
 
     /* discount color */
     .tito-widget .tito-discounted-from {
-        @apply sn-yellow-dark;
+        @apply text-sn-yellow-dark;
     }
 }
