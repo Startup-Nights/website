@@ -291,6 +291,18 @@ const config = defineStaticConfig({
                                     },
                                 ],
                             },
+                            {
+                                type: "object",
+                                label: "Banner",
+                                name: "banner",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        label: "Title",
+                                        name: "title"
+                                    }
+                                ]
+                            }
                         ],
                     },
                     {

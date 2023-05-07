@@ -22,7 +22,6 @@ export const Tito = ({ data }) => {
                     <div className="flex items-center">
                         <tito-widget
                             event="ecw/startup-nights-2023"
-                            discount-code="SNCOMMUNITY"
                             save-metadata-parameters="utm_*"
                         ></tito-widget>
                     </div>

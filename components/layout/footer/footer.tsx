@@ -1,10 +1,14 @@
 import { SocialIcon } from "../../items/social"
 import Newsletter from "../../blocks/newsletter";
 import Link from "next/link";
+import { Banner } from "../../items/banner";
+import { useState } from "react";
 
 export const Footer = ({ data }) => {
+    const [open, setOpen] = useState(true);
+
     return (
-        <footer className="bg-sn-black" aria-labelledby="footer-heading">
+        <footer className="bg-sn-black relative" aria-labelledby="footer-heading">
             <div className="max-w-7xl mx-auto pt-12 pb-8 px-8 lg:px-24">
                 <h2 id="footer-heading" className="sr-only">
                     Footer
@@ -30,7 +34,11 @@ export const Footer = ({ data }) => {
                         ))}
                     </div>
 
-                    <div className="mt-10 xl:mt-0">
+                    <div id="newsletter" className="mt-10 xl:mt-0">
+                        <h3 className="text-sm font-semibold leading-6 text-white">Subscribe to our newsletter</h3>
+                        <p className="mt-2 text-sm leading-6 text-gray-300">
+                            Sign up for the latest news, speaker announcements and discounts.
+                        </p>
                         <Newsletter data={data} />
                     </div>
                 </div>
@@ -49,6 +57,13 @@ export const Footer = ({ data }) => {
                     </p>
                 </div>
             </div>
+
+            {data.banner && open && (
+                <>
+                    <div className="h-16 lg:h-10"></div>
+                    <Banner setOpen={setOpen} data={data.banner} />
+                </>
+            )}
         </footer>
     )
 }
