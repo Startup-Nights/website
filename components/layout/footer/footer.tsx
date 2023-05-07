@@ -60,7 +60,7 @@ export const Footer = ({ data }) => {
 
             {data.banner && open && (
                 <>
-                    <div className="h-16 lg:h-10"></div>
+                    <div className="h-40 sm:h-24 md:h-20 lg:h-18"></div>
                     <Banner setOpen={setOpen} data={data.banner} />
                 </>
             )}
