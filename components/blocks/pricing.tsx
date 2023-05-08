@@ -24,8 +24,8 @@ export const PricingTable = ({ data }) => {
                             <h3 className={'text-gray-200 text-lg font-semibold leading-8'}>
                                 {category.name}
                             </h3>
-                            {category.description && category.description.map(description => (
-                                <p className="mt-4 leading-6 text-gray-400">{description}</p>
+                            {category.description && category.description.map((description, i) => (
+                                <p key={`${category.name}-description-${i}`} className="mt-4 leading-6 text-gray-400">{description}</p>
                             ))}
                             <p className="mt-6 flex items-baseline gap-x-1">
                                 <span className="text-4xl font-bold tracking-tight text-gray-200">CHF {category.price}</span>

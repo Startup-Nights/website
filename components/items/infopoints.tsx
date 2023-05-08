@@ -1,4 +1,7 @@
 import Link from "next/link"
+import { Modal } from "./modal"
+import Newsletter from "../blocks/newsletter"
+import { useState } from "react"
 
 export const Infopoints = ({ data }) => {
     return (
@@ -37,6 +40,8 @@ const Content = ({ point }) => {
 }
 
 const ContentWithoutLink = ({ point }) => {
+    const [openModal, setOpenModal] = useState(false)
+
     return (
         <div className="relative bg-sn-black-lightest rounded-3xl p-8 border-2 border-transparent">
             <div className="font-semibold text-xl text-gray-300">
@@ -45,8 +50,26 @@ const ContentWithoutLink = ({ point }) => {
             {point.text && (
                 <div className="text-md mt-4 leading-6 text-gray-400">{point?.text}</div>
             )}
-        </div>
+            {point.newsletter_cta && (
+                <>
+                    <button
+                        type="button"
+                        onClick={() => setOpenModal(true)}
+                        className="mt-4 rounded-full transition-all bg-sn-yellow border-2 border-sn-yellow px-4 py-1 text-black hover:bg-sn-yellow-dark hover:border-sn-yellow-dark text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
+                    >
+                        {point.newsletter_cta.agree_button}
+                    </button>
 
+                    <Modal
+                        content={<Newsletter data={{}} />}
+                        title={point.newsletter_cta.modal_title}
+                        text={point.newsletter_cta.modal_text}
+                        open={openModal}
+                        setOpen={setOpenModal}
+                    />
+                </>
+            )}
+        </div>
     )
 }
 
@@ -71,5 +94,27 @@ export const InfopointsBlockSchema: any = {
             label: "Link",
             name: "link",
         },
+        {
+            type: "object",
+            label: "Newsletter CTA (temporary)",
+            name: "newsletter_cta",
+            fields: [
+                {
+                    type: "string",
+                    label: "Signup button text",
+                    name: "agree_button",
+                },
+                {
+                    type: "string",
+                    label: "Modal title",
+                    name: "modal_title",
+                },
+                {
+                    type: "string",
+                    label: "Modal text",
+                    name: "modal_text",
+                },
+            ]
+        }
     ],
 }

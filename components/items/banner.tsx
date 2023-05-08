@@ -1,4 +1,3 @@
-import { XMarkIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
 import { Modal } from './modal'
 import Newsletter from '../blocks/newsletter'
@@ -9,7 +8,13 @@ export const Banner = ({ data, setOpen }) => {
   return (
     <div className='fixed inset-x-0 z-10 bottom-0 bg-sn-yellow py-6 ring-1 ring-gray-900/10'>
       <div className="max-w-7xl mx-auto px-8 lg:px-24 flex flex-col justify-between gap-x-8 gap-y-4 md:flex-row md:items-center ">
-        <Modal content={<Newsletter data={{}} />} title={data.modal_title} text={data.modal_text} open={openModal} setOpen={setOpenModal} />
+        <Modal
+          content={<Newsletter data={{}} />}
+          title={data.modal_title}
+          text={data.modal_text}
+          open={openModal}
+          setOpen={setOpenModal}
+        />
 
         <p className="max-w-4xl text-sm leading-6 text-gray-900">
           {data.text}
