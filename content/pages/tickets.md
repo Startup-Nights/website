@@ -59,7 +59,7 @@ blocks:
   - subtitle: Pricing
     title: Compare the different ticket categories.
     categories:
-      - price: 59
+      - price: 60
         name: Founders
         description:
           - >-
@@ -71,7 +71,7 @@ blocks:
           - Ticket for both days
           - Free drinks and food
           - Access to our matchmaking platform
-      - price: 149
+      - price: 169
         name: Investors
         description:
           - >-
@@ -83,7 +83,7 @@ blocks:
           - Free drinks and food
           - Access to our matchmaking platform
           - Access to the investor lounge
-      - price: 149
+      - price: 199
         name: Corporates
         description:
           - >-
@@ -94,13 +94,18 @@ blocks:
           - Ticket for both days
           - Free drinks and food
           - Access to our matchmaking platform
-      - price: 149
+      - price: 169
         name: Ecosystem
+        description:
+          - >-
+            Institutions such as universities and politics. They can expect
+            opportunities to partner with corporates and show their latest
+            research to aspiring founders.
         benefits:
           - Ticket for both days
           - Free drinks and food
           - Access to our matchmaking platform
-      - price: 39
+      - price: 49
         name: Visitors and students
         description:
           - >-
@@ -119,6 +124,13 @@ blocks:
     title: Get your tickets.
     _template: tito
 ---
+
+
+
+
+
+
+
 
 
 
