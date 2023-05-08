@@ -33,7 +33,6 @@ const Content = ({ point }) => {
                 <div className="text-md mt-4 leading-6 text-gray-400">{point?.text}</div>
             )}
         </div>
-
     )
 }
 
