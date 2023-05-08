@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+    .tito-widget {
+        margin: 0 !important;
+    }
+
     /* combination of partner form + facts container */
     .tito-widget .tito-widget-form {
         @apply bg-sn-black-lightest border-2 border-transparent rounded-3xl p-4 md:p-6 lg:p-8 text-gray-200 text-base font-medium leading-6;
