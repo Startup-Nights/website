@@ -50,20 +50,76 @@ blocks:
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
-  - _template: pricing
-  - content_block:
-      subtitle: 2 & 3 November 2023
-      title: Eulachhallen Winterthur
-      content:
-        - >-
-          Join us and experience the best Startup Nights yet. You can expect
-          famous speakers, interesting panel discussions, good food and much
-          more!
-      cta:
-        link: /contact
-        text: Have some question?
+  - subtitle: Pricing
+    title: Compare the different ticket categories.
+    categories:
+      - price: 59
+        name: Founders
+        description:
+          - >-
+            Founders can exhibit their products and services, connect with
+            investors and corporates for financing opportunities, network with
+            other founders, find new talent, and gain knowledge through
+            workshops and keynotes.
+        benefits:
+          - Ticket for both days
+          - Free drinks and food
+          - Access to our matchmaking platform
+      - price: 149
+        name: Investors
+        description:
+          - >-
+            Investors can look forward to discovering upcoming unicorns and
+            networking with other investors and corporates to explore potential
+            collaborations.
+        benefits:
+          - Ticket for both days
+          - Free drinks and food
+          - Access to our matchmaking platform
+          - Access to the investor lounge
+      - price: 149
+        name: Corporates
+        description:
+          - >-
+            Corporates can showcase their products and services to find new B2B
+            customers, explore collaboration opportunities with startups, and
+            network to discuss new technology.
+        benefits:
+          - Ticket for both days
+          - Free drinks and food
+          - Access to our matchmaking platform
+      - price: 149
+        name: Ecosystem
+        benefits:
+          - Ticket for both days
+          - Free drinks and food
+          - Access to our matchmaking platform
+      - price: 39
+        name: Visitors and students
+        description:
+          - >-
+            Students seeking job opportunities in startups will have the chance
+            to connect with potential employers and explore career options in
+            the dynamic startup ecosystem.
+          - >-
+            Startup enthusiasts can expect inspiration from the exhibiting
+            startups, engaging workshops, and insightful keynotes to fuel their
+            entrepreneurial spirit.
+        benefits:
+          - Ticket for both days
+          - Free drinks and food
+    _template: pricing
+  - subtitle: Tickets
+    title: Get your tickets.
     _template: tito
 ---
+
+
+
+
+
+
+
 
 
 

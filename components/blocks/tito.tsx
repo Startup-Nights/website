@@ -18,7 +18,17 @@ export const Tito = ({ data }) => {
                 <script src="https://js.tito.io/v2/with/inline" async></script>
             </Head>
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
-                <div className="grid grid-cols-1 items-center">
+
+                <div className="text-center mb-20">
+                    <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
+                        {data.subtitle}
+                    </h2>
+                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
+                        {data.title}
+                    </h1>
+                </div>
+
+                <div className="flex justify-center">
                     <div id="sn-tito-embedded-widget" className="flex items-center">
                         <tito-widget
                             event="ecw/startup-nights-2023"
@@ -35,6 +45,15 @@ export const titoBlockSchema: Template = {
     name: "tito",
     label: "Tito",
     fields: [
-        ContentBlockSchema,
+        {
+            type: "string",
+            label: "Subtitle",
+            name: "subtitle",
+        },
+        {
+            type: "string",
+            label: "Title",
+            name: "title",
+        },
     ],
 };
