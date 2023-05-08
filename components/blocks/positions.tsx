@@ -67,6 +67,10 @@ function getDepartmentTextColor(department: string): string {
             return 'text-rose-400'
         }
 
+        case 'General': {
+            return 'text-yellow-400'
+        }
+
         case 'Program': {
             return 'text-violet-400'
         }
@@ -88,55 +92,79 @@ function getDepartmentTextColor(department: string): string {
 }
 
 function getDepartmentBackgroundColor(department: string): string {
+    let color = 'bg-sky-600'
+
     switch (department) {
         case 'Marketing': {
-            return 'bg-rose-600'
+            color = 'bg-rose-600'
+            break
+        }
+
+        case 'General': {
+            color = 'bg-yellow-600'
+            break
         }
 
         case 'Program': {
-            return 'bg-violet-600'
+           color = 'bg-violet-600'
+            break
         }
 
         case 'Infrastructure': {
-            return 'bg-cyan-600'
+            color = 'bg-cyan-600'
+            break
         }
 
         case 'Partnerships': {
-            return 'bg-emerald-600'
+            color = 'bg-emerald-600'
+            break
         }
 
         case 'Operations': {
-            return 'bg-amber-600'
+            color = 'bg-amber-600'
+            break
         }
     }
 
-    return 'bg-sky-600'
+    return color + ' text-black'
 }
 
 function getDepartmentHoverBackgroundColor(department: string): string {
+    let color = 'hover:bg-sky-400';
+
     switch (department) {
         case 'Marketing': {
-            return 'hover:bg-rose-400'
+            color = 'hover:bg-rose-400'
+            break
+        }
+
+        case 'General': {
+            color = 'hover:bg-yellow-400'
+            break
         }
 
         case 'Program': {
-            return 'hover:bg-violet-400'
+            color = 'hover:bg-violet-400'
+            break
         }
 
         case 'Infrastructure': {
-            return 'hover:bg-cyan-400'
+            color = 'hover:bg-cyan-400'
+            break
         }
 
         case 'Partnerships': {
-            return 'hover:bg-emerald-400'
+            color = 'hover:bg-emerald-400'
+            break
         }
 
         case 'Operations': {
-            return 'hover:bg-amber-400'
+            color = 'hover:bg-amber-400'
+            break
         }
     }
 
-    return 'hover:bg-sky-400'
+    return color + ' text-gray hover:text-black'
 }
 
 
@@ -187,7 +215,7 @@ export const Positions = ({ data, parentField = "" }) => {
                         <a
                             onClick={() => setSelectedDepartment(department)}
                             key={`department-${i}`}
-                            className={`rounded-full px-3 py-0.5 my-1 text-sm font-semibold leading-5 text-gray-200 ${getDepartmentHoverBackgroundColor(department)} ${selectedDepartment == department ? getDepartmentBackgroundColor(department) : ''}`}>
+                            className={`rounded-full px-3 py-0.5 my-1 text-sm font-semibold transition-all hover:text-black leading-5 ${getDepartmentHoverBackgroundColor(department)} ${selectedDepartment === department ? getDepartmentBackgroundColor(department) : ''}`}>
                             {department}
                         </a>
                     ))}

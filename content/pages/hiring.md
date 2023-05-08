@@ -24,6 +24,10 @@ blocks:
   - subtitle: Open positions
     title: Shape the future with us.
     open_positions:
+      - title: Volunteer at the event
+        text: ''
+        department: General
+        link: 'https://forms.gle/CkXNgxhtmsjgvxCN8'
       - title: F&B Operations Manager
         text: ''
         department: Infrastructure
@@ -190,6 +194,7 @@ blocks:
         icon: checkbadge
     _template: benefits
 ---
+
 
 
 
