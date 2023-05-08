@@ -55,7 +55,7 @@ const ContentWithoutLink = ({ point }) => {
                     <button
                         type="button"
                         onClick={() => setOpenModal(true)}
-                        className="mt-4 rounded-full transition-all bg-sn-yellow border-2 border-sn-yellow px-4 py-1 text-black hover:bg-sn-yellow-dark hover:border-sn-yellow-dark text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
+                        className="mt-6 rounded-full transition-all bg-sn-yellow border-2 border-sn-yellow px-4 py-1 text-black hover:bg-sn-yellow-dark hover:border-sn-yellow-dark text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
                     >
                         {point.newsletter_cta.agree_button}
                     </button>
