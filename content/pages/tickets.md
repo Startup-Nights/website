@@ -47,6 +47,12 @@ blocks:
         text: >-
           Get the latest news regarding speakers, partners that are onboard and
           sometimes even discounts.
+        newsletter_cta:
+          agree_button: Sign me up!
+          modal_title: Sign me up for your newsletter
+          modal_text: >-
+            No worries, we don't spam your inbox. You can expect the latest
+            stuff.
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
@@ -113,6 +119,7 @@ blocks:
     title: Get your tickets.
     _template: tito
 ---
+
 
 
 
