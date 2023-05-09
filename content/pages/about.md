@@ -80,7 +80,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/leo-hess.jpg
             alt: Leo Hess
           - name: Alyssia Kugler
-            position: Head of Communications
+            position: Director of Startup Nights & Head of Communications
             linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
@@ -322,6 +322,12 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/noah-schuppli.jpg
             alt: Noah Schuppli
+          - name: Raphael Tobler
+            position: Partner Management
+            linkedin: 'https://www.linkedin.com/in/raphaeltobler/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/raphael-tobler.jpg
+            alt: Raphael Tobler
           - name: Baris Gökduman
             position: Corporates
             linkedin: 'https://www.linkedin.com/in/barisgoekduman/'
@@ -342,6 +348,9 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
+
+
 
 
 
