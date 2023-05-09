@@ -10,6 +10,11 @@ const badges = [
     '15.07.2023',
 ]
 
+const otherInterest = [
+    'Pitching competition',
+    'Startup inovation awards'
+]
+
 export const Booth = ({ data }) => {
     return (
         <div className="bg-sn-black">
@@ -32,7 +37,7 @@ export const Booth = ({ data }) => {
                         <div className="mt-6 rounded-xl bg-sn-black-light p-8">
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <InformationCircleIcon className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                                    <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
                                 </div>
                                 <div className="ml-3">
                                     <h3 className="font-medium text-gray-200">About the application process</h3>
@@ -57,7 +62,7 @@ export const Booth = ({ data }) => {
 
                         <div className="mt-4 flex flex-wrap justify-start gap-2">
                             {badges.map((badge, i) => (
-                                <span key={i} className="py-2 px-4 bg-sn-black-light hover:bg-sn-black-lightest rounded-xl">{badge}</span>
+                                <span key={i} className="py-2 px-4 bg-sn-black-light rounded-xl">{badge}</span>
                             ))}
                         </div>
 
@@ -68,7 +73,7 @@ export const Booth = ({ data }) => {
                         <div className="mt-6 rounded-xl bg-sn-black-light p-8">
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <InformationCircleIcon className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                                    <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
                                 </div>
                                 <div className="ml-3">
                                     <h3 className="font-medium text-gray-200">Note that you have to buy the tickets for the event separatly</h3>
@@ -242,6 +247,28 @@ export const Booth = ({ data }) => {
                                 <Categories />
                             </div>
 
+                            <div className="col-span-full">
+                                <label htmlFor="cover-photo" className="block text-sm font-medium leading-6">
+                                    Company logo
+                                </label>
+                                <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-200/25 px-6 py-10">
+                                    <div className="text-center">
+                                        <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
+                                        <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
+                                            <label
+                                                htmlFor="file-upload"
+                                                className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
+                                            >
+                                                <span>Upload a file</span>
+                                                <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                                            </label>
+                                            <p className="pl-1">or drag and drop</p>
+                                        </div>
+                                        <p className="text-xs leading-5 text-gray-600">PNG or SVG up to 10MB</p>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div className="sm:col-span-6 mt-16">
                                 <h3 className="text-xl font-semibold leading-6 text-slate-200">Contact person</h3>
                             </div>
@@ -333,18 +360,73 @@ export const Booth = ({ data }) => {
                                 <h3 className="text-xl font-semibold leading-6 text-slate-200">Other interests</h3>
                             </div>
 
+                            <div className="sm:col-span-6">
+                                <p className="block text-sm font-medium leading-6">Select other formats that you are interested in</p>
 
-                            <div className="sm:col-span-6 mt-16">
-                                <h3 className="text-xl font-semibold leading-6 text-slate-200">Booth</h3>
+                                <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                                    {otherInterest.map((interest, i) => (
+                                        <li key={interest} className="relative flex items-start">
+                                            <div className="flex h-6 items-center">
+                                                <input
+                                                    id={interest}
+                                                    aria-describedby="comments-description"
+                                                    name={interest}
+                                                    type="checkbox"
+                                                    className="h-4 w-4 rounded bg-sn-black-lightest border-sn-black-lightest text-sn-yellow-dark focus:ring-sn-yellow-dark"
+                                                />
+                                            </div>
+                                            <div className="ml-3 text-sm leading-6">
+                                                <label htmlFor={interest} className="font-medium text-gray-200">
+                                                    {interest}
+                                                </label>
+                                            </div>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div className="sm:col-span-6">
+                                {radiobuttons('Do you need support booking accommodation?', [
+                                    { id: 'accomodation-yes', title: 'yes' },
+                                    { id: 'accomodation-no', title: 'no' },
+                                ])}
+                            </div>
+
+                            <div className="col-span-full">
+                                <label htmlFor="cover-photo" className="block text-sm font-medium leading-6">
+                                    Do you already have an idea how your boot will look like?
+                                </label>
+                                <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-200/25 px-6 py-10">
+                                    <div className="text-center">
+                                        <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
+                                        <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
+                                            <label
+                                                htmlFor="file-upload"
+                                                className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
+                                            >
+                                                <span>Upload a file</span>
+                                                <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                                            </label>
+                                            <p className="pl-1">or drag and drop</p>
+                                        </div>
+                                        <p className="text-xs leading-5 text-gray-600">PNG or SVG up to 10MB</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="sm:col-span-6">
+                                {packages()}
                             </div>
 
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
+
 
 export const boothBlockSchema: Template = {
     name: "booth_registration",
@@ -365,7 +447,7 @@ export const boothBlockSchema: Template = {
 
 
 
-import { InformationCircleIcon } from '@heroicons/react/20/solid'
+import { InformationCircleIcon, PhotoIcon } from '@heroicons/react/20/solid'
 
 const Infobox = ({ text }) => {
     return (
@@ -479,7 +561,7 @@ const Categories = () => {
                         >
                             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                                 {posts.map((post, i) => (
-                                    <div key={i} className="relative flex items-start">
+                                    <li key={i} className="relative flex items-start">
                                         <div className="flex h-6 items-center">
                                             <input
                                                 id={post.title}
@@ -494,7 +576,7 @@ const Categories = () => {
                                                 Comments
                                             </label>
                                         </div>
-                                    </div>
+                                    </li>
                                 ))}
                             </ul>
                         </Tab.Panel>
@@ -502,5 +584,105 @@ const Categories = () => {
                 </Tab.Panels>
             </Tab.Group>
         </div>
+    )
+}
+
+interface RadioButton {
+    id: string;
+    title: string;
+}
+
+const radiobuttons = (title: string, data: RadioButton[]) => {
+    return (
+        <div>
+            <label className="text-base font-semibold">{title}</label>
+            <fieldset className="mt-4">
+                <legend className="sr-only">{title}</legend>
+                <div className="relative flex items-start space-x-8">
+                    {data.map((notificationMethod) => (
+                        <div key={notificationMethod.id} className="flex items-center">
+                            <input
+                                id={notificationMethod.id}
+                                name="notification-method"
+                                type="radio"
+                                defaultChecked={notificationMethod.id === 'email'}
+                                className="h-4 w-4 bg-sn-black-lightest border-sn-black-lightest text-sn-yellow focus:ring-indigo-600"
+                            />
+                            <label htmlFor={notificationMethod.id} className="ml-3 block text-sm font-medium leading-6">
+                                {notificationMethod.title}
+                            </label>
+                        </div>
+                    ))}
+                </div>
+            </fieldset>
+        </div>
+    )
+}
+
+
+import { RadioGroup } from '@headlessui/react'
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
+
+const mailingLists = [
+    { id: 1, title: 'Newsletter', description: 'Last message sent an hour ago', users: '621 users' },
+    { id: 2, title: 'Existing Customers', description: 'Last message sent 2 weeks ago', users: '1200 users' },
+    { id: 3, title: 'Trial Users', description: 'Last message sent 4 days ago', users: '2740 users' },
+]
+
+const packages = () => {
+    const [selectedMailingLists, setSelectedMailingLists] = useState(mailingLists[0])
+
+    return (
+        <RadioGroup value={selectedMailingLists} onChange={setSelectedMailingLists}>
+            <RadioGroup.Label className="block text-sm font-medium leading-6">
+                Select other formats that you are interested in
+            </RadioGroup.Label>
+
+            <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
+                {mailingLists.map((mailingList) => (
+                    <RadioGroup.Option
+                        key={mailingList.id}
+                        value={mailingList}
+                        className={({ checked, active }) =>
+                            classNames(
+                                checked ? 'border-transparent' : 'border-gray-600',
+                                active ? 'border-sn-yellow ring-2 ring-sn-yellow' : '',
+                                'relative flex cursor-pointer rounded-lg border bg-sn-black-light p-4 shadow-sm focus:outline-none'
+                            )
+                        }
+                    >
+                        {({ checked, active }) => (
+                            <>
+                                <span className="flex flex-1">
+                                    <span className="flex flex-col">
+                                        <RadioGroup.Label as="span" className="block text-sm font-medium text-gray-200">
+                                            {mailingList.title}
+                                        </RadioGroup.Label>
+                                        <RadioGroup.Description as="span" className="mt-1 flex items-center text-sm text-gray-200">
+                                            {mailingList.description}
+                                        </RadioGroup.Description>
+                                        <RadioGroup.Description as="span" className="mt-6 text-sm font-medium text-gray-400">
+                                            {mailingList.users}
+                                        </RadioGroup.Description>
+                                    </span>
+                                </span>
+                                <CheckCircleIcon
+                                    className={classNames(!checked ? 'invisible' : '', 'h-5 w-5 text-sn-yellow')}
+                                    aria-hidden="true"
+                                />
+                                <span
+                                    className={classNames(
+                                        active ? 'border' : 'border-2',
+                                        checked ? 'border-sn-yellow' : 'border-transparent',
+                                        'pointer-events-none absolute -inset-px rounded-lg'
+                                    )}
+                                    aria-hidden="true"
+                                />
+                            </>
+                        )}
+                    </RadioGroup.Option>
+                ))}
+            </div>
+        </RadioGroup>
     )
 }
