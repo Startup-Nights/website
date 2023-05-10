@@ -16,7 +16,8 @@ blocks:
     _template: seo
   - subtitle: '2 & 3 November, Winterthur'
     title: Startup Nights
-    ticket_cta:
+    cta:
+      link: /tickets
       text: Tickets
     image:
       src: ''
