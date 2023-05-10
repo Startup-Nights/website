@@ -7,6 +7,7 @@
     "build": "tinacms build && next build && node ./scripts/sitemap.mjs",
     "start": "tinacms build && next start",
     "export": "npm run build && next export",
+    "proxy": "local-ssl-proxy --source 3001 --target 3000",
     "lint": "eslint . --ext .ts,.tsx"
   },
   "devDependencies": {
@@ -23,6 +24,7 @@
     "autoprefixer": "^10.4.0",
     "eslint": "^8.13.0",
     "globby": "^13.1.4",
+    "local-ssl-proxy": "^2.0.5",
     "postcss": "^8.3.11",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^11.0.1"

@@ -32,6 +32,8 @@ stateDiagram-v2
 - copy `.env.example` to `.env.local` and update the variables
 - source the variables: `source .env.local`
 - run the server: `yarn dev`
+- run the ssl proxy: `yarn proxy` (https is required to show tito widget)
+- visit [https://localhost:3001](https://localhost:3001)
 
 ### Local URLs
 
