@@ -233,6 +233,8 @@ blocks:
           - name: Michel Lüscher
             position: Head of Startup Outreach
             linkedin: 'https://www.linkedin.com/in/michelluescher/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michel-luescher.jpeg
             alt: Michel Lüscher
           - name: Julian Stylianou
             position: Head of Pitching Sessions
@@ -350,6 +352,7 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
 
 
 
