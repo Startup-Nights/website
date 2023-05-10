@@ -337,6 +337,8 @@ blocks:
           - name: Annika Maibom
             position: Investors
             linkedin: 'https://www.linkedin.com/in/anmaibom/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/annika-maibom.jpeg
             alt: Annika Maibom
           - name: Hao Xu
             position: Startup & Corporate Matching
@@ -348,6 +350,7 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
 
 
 
