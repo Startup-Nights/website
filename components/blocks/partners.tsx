@@ -3,6 +3,7 @@ import type { Template } from "tinacms";
 import Image from "next/image";
 import { placeholderBox } from "../items/placeholder";
 import Link from "next/link";
+import CTA from "./cta";
 
 // https://dev.to/holdmypotion/react-custom-cursor-no-extra-dependencies-25ki
 export const Partners = ({ data }) => {
@@ -16,9 +17,15 @@ export const Partners = ({ data }) => {
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-sn-black sm:text-6xl">
                         {data.title}
                     </h1>
+
+                    {data.cta && data.cta.text !== '' && (
+                        <div className="mt-12 text-center">
+                            <CTA data={data} />
+                        </div>
+                    )}
                 </div>
 
-                <div className="space-y-24">
+                <div className="space-y-24 text-center">
                     {data.partners && data.partners.map((category, i: number) => (
                         <div key={category.title}>
                             <div className="lg:grid-cols-3"></div>
@@ -30,20 +37,21 @@ export const Partners = ({ data }) => {
                                 {category.title}
                             </h2>
 
-                            <ul className={`grid grid-cols-2 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} gap-12 md:gap-24 py-4 md:py-12`}>
+                            <ul className={`grid grid-cols-2 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} gap-8 md:gap-18 py-4 md:py-8`}>
                                 {category.partners && category.partners.map((partner, i: number) => (
-                                    <li key={`partner-${i}`}>
-                                        <Link href={partner?.link} target={'_blank'} className='relative'>
+                                    <Link href={partner?.link} key={`partner-${i}`} target={'_blank'} className='relative'>
+                                        <li className="group relative p-8 border-2 border-transparent rounded-3xl transition-all hover:bg-gray-50">
                                             <Image
                                                 width={300}
                                                 height={200}
                                                 alt={partner?.alt}
                                                 src={partner?.src}
                                                 placeholder="blur"
+                                                className="select-none"
                                                 blurDataURL={placeholderBox}
                                             />
-                                        </Link>
-                                    </li>
+                                        </li>
+                                    </Link>
                                 ))}
                             </ul>
                         </div>

@@ -16,7 +16,7 @@ export const Hero = ({ data }) => {
                         height="0"
                         sizes="100vw"
                     />
-                    <div className="absolute inset-0 mix-blend-multiply bg-slate-400" />
+                    <div className="absolute inset-0 mix-blend-multiply bg-slate-600" />
                 </div>
             )}
 
@@ -35,7 +35,7 @@ export const Hero = ({ data }) => {
                         />
                         Your browser does not support the video tag.
                     </video>
-                    <div className="absolute inset-0 mix-blend-multiply bg-slate-500" />
+                    <div className="absolute inset-0 mix-blend-multiply bg-slate-600" />
                 </div>
             )}
 
