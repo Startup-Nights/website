@@ -43,6 +43,15 @@ blocks:
   - subtitle: Our Rockstars
     title: The people behind the scenes.
     divisions:
+      - subtitle: Organising team
+        title: Keeping us on track.
+        members:
+          - name: Alyssia Kugler
+            position: Director of Startup Nights & Head of Communications
+            linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
+            alt: Alyssia Kugler
       - subtitle: Volunteer Team
         title: They organise people.
         members:
@@ -352,6 +361,7 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
 
 
 
