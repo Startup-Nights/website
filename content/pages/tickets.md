@@ -21,41 +21,6 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
       alt: Startup Nights Stage
     _template: hero
-  - content_block:
-      subtitle: Ticket & pricing
-      title: Ticket categories & our pricing.
-      content:
-        - >-
-          We are thrilled to support the startup ecosystem with our upcoming
-          event and want you to be a part of it! As a value-driven organization,
-          our top priority is ensuring everyone can participate and benefit from
-          this incredible opportunity. With over 100 dedicated volunteers
-          passionate about startups, we are confident this will be an event like
-          no other.
-        - >-
-          We understand that value is a key consideration, so we have ensured
-          that our prices are fair and affordable for all attendees. Is this
-          event worth more than the money we are asking for? We are thrilled to
-          see you "twint" a little extra onsite to finance our well-deserved
-          volunteer weekend.
-    infopoints:
-      - name: Everybody needs a ticket
-        text: >-
-          This includes startups or companies that are renting a booth - this is
-          handled separately.
-      - name: Subscribe to our newsletter
-        text: >-
-          Get the latest news regarding speakers, partners that are onboard and
-          sometimes even discounts.
-        newsletter_cta:
-          agree_button: Sign me up!
-          modal_title: Sign me up for your newsletter
-          modal_text: >-
-            No worries, we don't spam your inbox. You can expect the latest
-            stuff.
-    contentblock_left: true
-    background_color: bg-sn-black-light
-    _template: content
   - subtitle: Pricing
     title: Compare the different ticket categories.
     categories:
@@ -123,6 +88,7 @@ blocks:
           - Ticket for both days
           - Free drinks and food
         not_included:
+          - No access to our matchmaking platform
           - Booth
     _template: pricing
   - subtitle: Tickets
@@ -132,6 +98,7 @@ blocks:
       text: We are aware of the limitation and work on fixing this.
     _template: tito
 ---
+
 
 
 
