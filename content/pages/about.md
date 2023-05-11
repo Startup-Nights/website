@@ -43,7 +43,7 @@ blocks:
   - subtitle: Our Rockstars
     title: The people behind the scenes.
     divisions:
-      - subtitle: Organising team
+      - subtitle: ' '
         title: Keeping us on track.
         members:
           - name: Alyssia Kugler
@@ -52,15 +52,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
             alt: Alyssia Kugler
-      - subtitle: Volunteer Team
-        title: They organise people.
-        members:
-          - name: Jan Guddal
-            position: Head of Volunteers
-            linkedin: 'https://www.linkedin.com/in/jan-guddal-a48671167/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jan-guddal.jpg
-            alt: Jan Guddal
       - subtitle: Marketing Team
         title: Influencing you.
         members:
@@ -359,8 +350,18 @@ blocks:
             position: International Collaborations
             linkedin: 'https://www.linkedin.com/in/stefanobollmann/'
             alt: Stefano Bollmann
+      - subtitle: Volunteer Team
+        title: They organise people.
+        members:
+          - name: Jan Guddal
+            position: Head of Volunteers
+            linkedin: 'https://www.linkedin.com/in/jan-guddal-a48671167/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jan-guddal.jpg
+            alt: Jan Guddal
     _template: team
 ---
+
 
 
 
