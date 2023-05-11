@@ -22,7 +22,7 @@ export const ContentWide = ({ data }) => {
                             </h4>
 
                             {content.text && content.text.map((paragraph, i) => (
-                                <p className="mt-2 text-md leading-6 text-gray-400">
+                                <p key={`content-block-${data.title}-${i}`} className="mt-2 text-md leading-6 text-gray-400">
                                     {paragraph}
                                 </p>
                             ))}
