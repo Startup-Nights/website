@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import type { Template } from "tinacms";
 import { ContentBlockSchema } from "../items/contentblock";
 import Head from "next/head";
+import { InformationCircleIcon } from "@heroicons/react/24/outline";
 
 export const Tito = ({ data }) => {
     // https://stackoverflow.com/questions/55393226/disable-hydration-only-partially-hydrate-a-next-js-app
@@ -19,7 +20,7 @@ export const Tito = ({ data }) => {
             </Head>
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
 
-                <div className="text-center mb-20">
+                <div className="text-center mb-16">
                     <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
                         {data.subtitle}
                     </h2>
@@ -27,6 +28,22 @@ export const Tito = ({ data }) => {
                         {data.title}
                     </h1>
                 </div>
+
+                {data.note && (
+                    <div className="mx-auto max-w-3xl rounded-xl bg-sn-black-lightest p-8 mb-12">
+                        <div className="flex">
+                            <div className="flex-shrink-0">
+                                <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
+                            </div>
+                            <div className="ml-3">
+                                <h3 className="font-medium text-gray-200">{data.note.title}</h3>
+                                <p className="mt-2 text-gray-400">
+                                    {data.note.text}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                 <div className="flex justify-center">
                     <div id="sn-tito-embedded-widget" className="flex items-center">
@@ -55,5 +72,22 @@ export const titoBlockSchema: Template = {
             label: "Title",
             name: "title",
         },
+        {
+            type: "object",
+            label: "Note",
+            name: "note",
+            fields: [
+                {
+                    type: "string",
+                    label: "Title",
+                    name: "title",
+                },
+                {
+                    type: "string",
+                    label: "Text",
+                    name: "text",
+                },
+            ]
+        }
     ],
 };
