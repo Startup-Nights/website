@@ -1,10 +1,9 @@
 import React from "react";
 import type { Template } from "tinacms";
-import { ColorPickerInput } from "../fields/color";
 
 export const ContentWide = ({ data }) => {
     return (
-        <div className={data.background_color ? data.background_color : 'bg-sn-black'}>
+        <div className={data.background_color ? data.background_color : 'bg-sn-black-light'}>
             <div className="max-w-5xl mx-auto py-12 px-8 lg:p-24">
                 <div className="mb-12">
                     <h3 className="text-base font-medium leading-7 text-sn-yellow uppercase">
@@ -67,14 +66,6 @@ export const contentWideBlockSchema: Template = {
                     name: "text",
                 },
             ]
-        },
-        {
-            type: "string",
-            name: "background_color",
-            label: "Background color",
-            ui: {
-                component: ColorPickerInput
-            }
         },
     ],
 };
