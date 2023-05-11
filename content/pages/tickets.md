@@ -71,6 +71,8 @@ blocks:
           - Ticket for both days
           - Free drinks and food
           - Access to our matchmaking platform
+        not_included:
+          - Booth
       - price: 169
         name: Investors
         description:
@@ -83,6 +85,8 @@ blocks:
           - Free drinks and food
           - Access to our matchmaking platform
           - Access to the investor lounge
+        not_included:
+          - Booth
       - price: 199
         name: Corporates
         description:
@@ -94,6 +98,8 @@ blocks:
           - Ticket for both days
           - Free drinks and food
           - Access to our matchmaking platform
+        not_included:
+          - Booth
       - price: 169
         name: Ecosystem
         description:
@@ -105,6 +111,8 @@ blocks:
           - Ticket for both days
           - Free drinks and food
           - Access to our matchmaking platform
+        not_included:
+          - Booth
       - price: 49
         name: Visitors and students
         description:
@@ -119,6 +127,8 @@ blocks:
         benefits:
           - Ticket for both days
           - Free drinks and food
+        not_included:
+          - Booth
     _template: pricing
   - subtitle: Tickets
     title: Get your tickets.
@@ -127,6 +137,13 @@ blocks:
       text: We are aware of the limitation and working on fixing this.
     _template: tito
 ---
+
+
+
+
+
+
+
 
 
 

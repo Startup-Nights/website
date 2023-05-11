@@ -1,4 +1,4 @@
-import { CheckIcon } from '@heroicons/react/20/solid'
+import { CheckIcon, XMarkIcon } from '@heroicons/react/20/solid'
 import { Template } from 'tinacms'
 
 function classNames(...classes) {
@@ -37,9 +37,14 @@ export const PricingTable = ({ data }) => {
                                         {feature}
                                     </li>
                                 ))}
+                                {category.not_included && category.not_included.map((feature) => (
+                                    <li key={feature} className="flex gap-x-3">
+                                        <XMarkIcon className="h-6 w-5 flex-none text-red-500" aria-hidden="true" />
+                                        {feature}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
-
                     ))}
                 </div>
             </div>
@@ -87,6 +92,12 @@ export const pricingBlockSchema: Template = {
                     type: "string",
                     label: "Benefits",
                     name: "benefits",
+                    list: true
+                },
+                {
+                    type: "string",
+                    label: "Not included",
+                    name: "not_included",
                     list: true
                 },
             ]
