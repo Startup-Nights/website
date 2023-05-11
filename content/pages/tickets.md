@@ -63,10 +63,9 @@ blocks:
         name: Founders
         description:
           - >-
-            Founders can exhibit their products and services, connect with
-            investors and corporates for financing opportunities, network with
-            other founders, find new talent, and gain knowledge through
-            workshops and keynotes.
+            Exhibit your products and services, connect with investors and
+            corporates for financing opportunities, network with other founders,
+            find new talent, and gain knowledge through workshops and keynotes.
         benefits:
           - Ticket for both days
           - Free drinks and food
@@ -77,9 +76,8 @@ blocks:
         name: Investors
         description:
           - >-
-            Investors can look forward to discovering upcoming unicorns and
-            networking with other investors and corporates to explore potential
-            collaborations.
+            Discover upcoming unicorns and network with other investors and
+            corporates to explore potential collaborations.
         benefits:
           - Ticket for both days
           - Free drinks and food
@@ -91,9 +89,9 @@ blocks:
         name: Corporates
         description:
           - >-
-            Corporates can showcase their products and services to find new B2B
-            customers, explore collaboration opportunities with startups, and
-            network to discuss new technology.
+            Showcase your products and services to find new B2B customers,
+            explore collaboration opportunities with startups, and network to
+            discuss new technology.
         benefits:
           - Ticket for both days
           - Free drinks and food
@@ -104,8 +102,8 @@ blocks:
         name: Ecosystem
         description:
           - >-
-            Institutions such as universities and politics. They can expect
-            opportunities to partner with corporates and show their latest
+            Institutions such as universities and politics, you get
+            opportunities to partner with corporates and show your latest
             research to aspiring founders.
         benefits:
           - Ticket for both days
@@ -117,13 +115,10 @@ blocks:
         name: Visitors and students
         description:
           - >-
-            Students seeking job opportunities in startups will have the chance
-            to connect with potential employers and explore career options in
-            the dynamic startup ecosystem.
-          - >-
-            Startup enthusiasts can expect inspiration from the exhibiting
-            startups, engaging workshops, and insightful keynotes to fuel their
-            entrepreneurial spirit.
+            Seeking job opportunities in startups or just looking for
+            inspiration? Connect with potential employers and explore career
+            options and get inspired from exhibiting startups, engaging
+            workshops, and insightful keynotes.
         benefits:
           - Ticket for both days
           - Free drinks and food
@@ -134,9 +129,15 @@ blocks:
     title: Get your tickets.
     note:
       title: Note that you currently only can buy one ticket per email address
-      text: We are aware of the limitation and working on fixing this.
+      text: We are aware of the limitation and work on fixing this.
     _template: tito
 ---
+
+
+
+
+
+
 
 
 
