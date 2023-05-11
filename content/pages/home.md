@@ -186,7 +186,7 @@ blocks:
         description: ''
         image:
           src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/tino-krause.jpg
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tino-krause.jpg
           alt: Tino Krause
     _template: speakers
   - subtitle: Partner
@@ -227,6 +227,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
 
 
 

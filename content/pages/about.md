@@ -43,7 +43,7 @@ blocks:
   - subtitle: Our Rockstars
     title: The people behind the scenes.
     divisions:
-      - subtitle: ' '
+      - subtitle: ' Lead Startup Nights'
         title: Keeping us on track.
         members:
           - name: Alyssia Kugler
@@ -351,6 +351,8 @@ blocks:
           - name: Hao Xu
             position: Startup & Corporate Matching
             linkedin: 'https://www.linkedin.com/in/hao-xu-b9b32a189/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/hao-xu.jpg
             alt: Hao Xu
           - name: Stefano Bollmann
             position: International Collaborations
@@ -358,6 +360,8 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
+
 
 
 
