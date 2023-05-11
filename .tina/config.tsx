@@ -412,6 +412,12 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "terms-and-conditions") {
                             return `/terms-and-conditions`;
                         }
+                        if (document._sys.filename === "privacy-policy") {
+                            return `/privacy-policy`;
+                        }
+                        if (document._sys.filename === "imprint") {
+                            return `/imprint`;
+                        }
                         if (document._sys.filename === "booth") {
                             return `/booth`;
                         }

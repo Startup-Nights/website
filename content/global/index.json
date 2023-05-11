@@ -71,6 +71,14 @@
         "title": "",
         "listitems": [
           {
+            "title": "Imprint",
+            "link": "/imprint"
+          },
+          {
+            "title": "Privacy policy",
+            "link": "/privacy-policy"
+          },
+          {
             "title": "Terms & conditions",
             "link": "/terms-and-conditions"
           }
