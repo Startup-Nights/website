@@ -66,6 +66,15 @@
             "link": "/about"
           }
         ]
+      },
+      {
+        "title": "",
+        "listitems": [
+          {
+            "title": "Terms & conditions",
+            "link": "/terms-and-conditions"
+          }
+        ]
       }
     ],
     "social": [

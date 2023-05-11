@@ -13,6 +13,7 @@ import { galleryBlockSchema } from "../components/blocks/gallery";
 import { titoBlockSchema } from "../components/blocks/tito";
 import { seoBlockSchema } from "../components/blocks/seo";
 import { contentBlockSchema } from "../components/blocks/content";
+import { contentWideBlockSchema } from "../components/blocks/content_wide";
 import { pricingBlockSchema } from "../components/blocks/pricing";
 import { boothBlockSchema } from "../components/blocks/booth";
 
@@ -408,6 +409,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "tickets") {
                             return `/tickets`;
                         }
+                        if (document._sys.filename === "terms-and-conditions") {
+                            return `/terms-and-conditions`;
+                        }
                         if (document._sys.filename === "booth") {
                             return `/booth`;
                         }
@@ -461,6 +465,7 @@ const config = defineStaticConfig({
                             seoBlockSchema,
                             pricingBlockSchema,
                             contentBlockSchema,
+                            contentWideBlockSchema,
                         ],
                     },
                 ],
