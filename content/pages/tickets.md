@@ -59,7 +59,7 @@ blocks:
   - subtitle: Pricing
     title: Compare the different ticket categories.
     categories:
-      - price: 60
+      - price: 59
         name: Founders
         description:
           - >-
@@ -122,8 +122,12 @@ blocks:
     _template: pricing
   - subtitle: Tickets
     title: Get your tickets.
+    note:
+      title: Note that you currently only can buy one ticket per email address
+      text: We are aware of the limitation and working on fixing this.
     _template: tito
 ---
+
 
 
 
