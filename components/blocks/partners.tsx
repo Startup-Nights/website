@@ -18,22 +18,37 @@ export const Partners = ({ data }) => {
                     </h1>
                 </div>
 
-                <ul className="grid grid-cols-2 lg:grid-cols-3 gap-12 md:gap-24 py-4 md:py-12">
-                    {data.partners && data.partners.map((partner, i: number) => (
-                        <li key={`partner-${i}`}>
-                            <Link href={partner?.link} target={'_blank'} className='relative'>
-                                <Image
-                                    width={300}
-                                    height={200}
-                                    alt={partner?.alt}
-                                    src={partner?.src}
-                                    placeholder="blur"
-                                    blurDataURL={placeholderBox}
-                                />
-                            </Link>
-                        </li>
+                <div className="space-y-24">
+                    {data.partners && data.partners.map((category, i: number) => (
+                        <div key={category.title}>
+                            <div className="lg:grid-cols-3"></div>
+                            <div className="lg:grid-cols-4"></div>
+                            <div className="lg:grid-cols-5"></div>
+                            <div className="lg:grid-cols-6"></div>
+
+                            <h2 className="text-xl font-bold leading-7 text-sn-black-light uppercase">
+                                {category.title}
+                            </h2>
+
+                            <ul className={`grid grid-cols-2 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} gap-12 md:gap-24 py-4 md:py-12`}>
+                                {category.partners && category.partners.map((partner, i: number) => (
+                                    <li key={`partner-${i}`}>
+                                        <Link href={partner?.link} target={'_blank'} className='relative'>
+                                            <Image
+                                                width={300}
+                                                height={200}
+                                                alt={partner?.alt}
+                                                src={partner?.src}
+                                                placeholder="blur"
+                                                blurDataURL={placeholderBox}
+                                            />
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     );
@@ -71,25 +86,46 @@ export const partnersBlockSchema: Template = {
             ]
         },
         {
+            type: "object",
             label: "Partners",
             name: "partners",
-            type: "object",
             list: true,
             fields: [
                 {
-                    name: "src",
-                    label: "Image Source",
-                    type: "image",
+                    type: "string",
+                    label: "Category title",
+                    name: "title",
                 },
                 {
-                    name: "alt",
-                    label: "Alt Text",
-                    type: "string",
+                    type: "number",
+                    label: "Number of partners per line",
+                    name: "grid_cols",
                 },
                 {
-                    name: "link",
-                    label: "Partner website",
-                    type: "string",
+                    type: "object",
+                    label: "Partners",
+                    name: "partners",
+                    list: true,
+                    fields: [
+                        {
+                            type: "image",
+                            label: "Image Source",
+                            name: "src",
+                            required: true,
+                        },
+                        {
+                            type: "string",
+                            label: "Alt Text",
+                            name: "alt",
+                            required: true,
+                        },
+                        {
+                            type: "string",
+                            name: "link",
+                            label: "Partner website",
+                            required: true,
+                        },
+                    ]
                 },
             ]
         },

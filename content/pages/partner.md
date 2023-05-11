@@ -93,18 +93,124 @@ blocks:
   - subtitle: Partner
     title: Thank you very much!
     partners:
-      - src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2022/partners/ubs.png
-        alt: UBS
-        link: 'https://www.ubs.com/ch/en.html'
-      - src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2022/partners/mobiliar.png
-        alt: die Mobiliar
-        link: 'https://www.mobiliar.ch/'
-      - src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2022/partners/stadt-winterthur.png
-        alt: Stadt Winterthur
-        link: 'https://stadt.winterthur.ch/'
+      - title: Main Partner
+        grid_cols: 3
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ubs.png
+            alt: UBS
+            link: 'https://ubs.com'
+      - title: Legal Partner
+        grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/walderwyss.png
+            alt: Walder Wyss
+            link: 'https://walderwyss.com'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/prager-dreifuss.png
+            alt: Prager Dreifuss
+            link: 'https://prager-dreifuss.com'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/mme.png
+            alt: MME
+            link: 'https://mme.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/lexr.png
+            alt: LEXR
+            link: 'https://lexr.ch'
+      - title: Investor Partner
+        grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sparrow-ventures.png
+            alt: Sparrow Ventures
+            link: 'https://sparrow-ventures.com'
+      - title: Key Partner
+        grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
+            alt: IGE
+            link: 'https://ige.ch'
+      - title: Supporter
+        grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/wenger-vieli.png
+            alt: Wenger Vieli
+            link: 'https://wengervieli.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/zhaw.png
+            alt: ZHAW Marketing Institute
+            link: 'https://zhaw.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/vertt.png
+            alt: Vertt
+            link: 'https://vertt.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/Sympanorm_logo.png
+            alt: Sympanorm
+            link: 'https://sympanorm.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/swissventures_logo.jpeg
+            alt: Swissventures
+            link: 'https://swissventures.group'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/storyup.png
+            alt: StoryUP
+            link: 'https://storyup.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/probst.jpg
+            alt: Probst Partner
+            link: 'https://probstpartner.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/powerpitch.png
+            alt: Powerpitch
+            link: 'https://powerpitch.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/peax.png
+            alt: Peax
+            link: 'https://peax.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/obrist-helps.png
+            alt: Obrist Helps
+            link: 'https://obrist-helps.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kanton-zuerich.png
+            alt: Kanton Zürich
+            link: 'https://vd.zh.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/gobigname.jpg
+            alt: Gobigname
+            link: 'https://gobigname.com'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/genisuisse.png
+            alt: Genisuisse
+            link: 'https://genisuisse.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/fasoon.png
+            alt: Fasoon
+            link: 'https://fasoon.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/consultive.png
+            alt: Consultive
+            link: 'https://consultive.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/atlanto.png
+            alt: Atlanto
+            link: 'https://atlanto.ch'
+      - title: Other Partner
+        grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/showconcept.jpg
+            alt: Showconcept
+            link: 'https://show-concept.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ffhs.jpg
+            alt: FFHS
+            link: 'https://ffhs.ch'
     _template: partner_list
   - title: Contact information
     description: >-
@@ -112,6 +218,39 @@ blocks:
       offer for the partner package.
     _template: partnerform
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
