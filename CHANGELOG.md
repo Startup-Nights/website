@@ -2,6 +2,59 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/Startup-Nights/website/compare/v0.0.1...v0.0.2) (2023-05-11)
+
+
+### Features
+
+* **banner:** add discount banner ([e963406](https://github.com/Startup-Nights/website/commit/e963406e11550730c772b9f09cdd178ebd852b11))
+* **banner:** configurable modal text ([5858047](https://github.com/Startup-Nights/website/commit/5858047ab8c25e0f8c25b1d044688ed89865c5b4))
+* **blocks:** combine content blocks into one ([20f80cb](https://github.com/Startup-Nights/website/commit/20f80cb997c7598e08c700d39efb438c3d5c5d52))
+* **booth:** continue with form ([ab32f01](https://github.com/Startup-Nights/website/commit/ab32f01319f7ce91b5252ffeaa516bf5a71efc67))
+* **booth:** start with application page ([f73b6d9](https://github.com/Startup-Nights/website/commit/f73b6d90905cf0a2df3eade2ed5a2ebde7074744))
+* **hero:** add temporary ticket cta ([eb70bd6](https://github.com/Startup-Nights/website/commit/eb70bd6d82b549d8369cfc78f8d2373207f26b92))
+* **image:** use common rounded ([18deb1d](https://github.com/Startup-Nights/website/commit/18deb1d70b613e928a084359c3824acf880581f4))
+* **infopoints:** add newsletter cta ([f84f1e7](https://github.com/Startup-Nights/website/commit/f84f1e7dced68254969698436365ad144c46ab07))
+* **landing:** re-add counter ([4fba277](https://github.com/Startup-Nights/website/commit/4fba277c21bd0e101bec282ed1aaf3e601272b3d))
+* **layout:** more character for buttons, align modal layout to rest ([1233344](https://github.com/Startup-Nights/website/commit/12333446d3675c18175447693a074948ab5d5e25))
+* **partner:** add background on hover ([16dac46](https://github.com/Startup-Nights/website/commit/16dac4629bdb5d2d672e8e5693818fbf3f01b24d))
+* **partner:** add partner logos ([40db4ec](https://github.com/Startup-Nights/website/commit/40db4ec140ba3632eae63e7f085bbccdddb4e50e))
+* **partners:** update formats ([7c2e640](https://github.com/Startup-Nights/website/commit/7c2e640aadf211d79de456778c9ead3345a0d337))
+* **positions:** add volunteer position ([b989f7c](https://github.com/Startup-Nights/website/commit/b989f7c763a5570eddf848ffea544e6da231a9b4))
+* **pricing:** add not included to pricing section ([2ea8d11](https://github.com/Startup-Nights/website/commit/2ea8d11ee9f3f6a69a8890d0ad48f5e55f2c7f5f))
+* **sitemap:** generate on build ([608d155](https://github.com/Startup-Nights/website/commit/608d155cfdaf1a9522365775bc0c3320a085dfb3))
+* **sitemap:** switch to globby ([1771b36](https://github.com/Startup-Nights/website/commit/1771b3663945936afbae19016c6b05e034f761a0))
+* **tc:** add terms and conditions ([146d449](https://github.com/Startup-Nights/website/commit/146d4493c8cb28e50bfd13f7d98c5b4540da9236))
+* **team:** add linkedin link ([c635cf6](https://github.com/Startup-Nights/website/commit/c635cf632e5e219e28c2d94d755dd24c4f186ea4))
+* **tickets:** add newsletter hint ([098b4e8](https://github.com/Startup-Nights/website/commit/098b4e82a8815340aad7f15f80ff0bfcbc1443b8))
+* **tickets:** add pricing plan ([19c6e1a](https://github.com/Startup-Nights/website/commit/19c6e1a9744f56bb15ea84c8d36f0e1e158d066b))
+* **tickets:** clear path for go-live of ticket sale ([5295765](https://github.com/Startup-Nights/website/commit/52957656fe6f28b1cf2aae6b011d63456d9b6d59))
+* **tickets:** make content editable ([608d544](https://github.com/Startup-Nights/website/commit/608d54498ff293c4fcd5a958c797229090d9e8a9))
+* **tito:** add details and update block ([88e44cb](https://github.com/Startup-Nights/website/commit/88e44cbc4c83a28fa63e9ee6964be4c9d0aa02d7))
+* **tito:** add note about limitations ([a6ed05d](https://github.com/Startup-Nights/website/commit/a6ed05d52d5446970eba12c741be21b602532097))
+* **tito:** adjust card background color ([be41fce](https://github.com/Startup-Nights/website/commit/be41fcef0234b518768d35d692f87154dc7e96bc))
+* **tito:** check box on click ([5956066](https://github.com/Startup-Nights/website/commit/59560664263f813710d8011a42288d57589c7ad6))
+
+
+### Bug Fixes
+
+* **banner:** set z-index ([bd3e813](https://github.com/Startup-Nights/website/commit/bd3e81392a09162f266d7496059ce333d5e7d227))
+* **banner:** type in date ([a68403e](https://github.com/Startup-Nights/website/commit/a68403ee8b3917d2564bf83af9627e78a537a289))
+* **banner:** wording ([91e99f0](https://github.com/Startup-Nights/website/commit/91e99f0d50ddff67cfcf3eb85ed9c7eb155977e9))
+* **css:** adjust class name ([07dd88a](https://github.com/Startup-Nights/website/commit/07dd88afa323b299a0b603e03be0f61083511133))
+* **infopoints:** layout adjustment ([5cb459f](https://github.com/Startup-Nights/website/commit/5cb459f4c2229890b1d3cdf4442cb013c862fa1e))
+* **layout:** add responsive space for banner ([1cb0d41](https://github.com/Startup-Nights/website/commit/1cb0d41409ad31e5786faf69e4edda99a58ea28f))
+* **lint:** use const instead of let ([4152cad](https://github.com/Startup-Nights/website/commit/4152cad2786a985db63e484acff89d4256041828))
+* **mail:** adjust mail address ([35de360](https://github.com/Startup-Nights/website/commit/35de3600cb9b61f50e61e9a729a4edb42ab36d5e))
+* **mailchimp:** robustify handling with tags ([0514633](https://github.com/Startup-Nights/website/commit/051463323bebf1c17aae7cdb88d6dc469ae6e7fc))
+* **mailchimp:** sending a form will renew subscription ([f7b438c](https://github.com/Startup-Nights/website/commit/f7b438c83decc84010340dd2b1bf524631850c3b))
+* **pricing:** mobile layout ([39dc87a](https://github.com/Startup-Nights/website/commit/39dc87a4ce010b680f176bf057575c41c9a95f3a))
+* **sitemap:** adjust base url ([e3d0a46](https://github.com/Startup-Nights/website/commit/e3d0a46ada79bab38a77d5dd6eaf9ce3b32b5e14))
+* **sitemap:** exclude tickets ([6f00ebe](https://github.com/Startup-Nights/website/commit/6f00ebea25d810752f8d0281d432ffd2c101b89d))
+* **tickets:** typo in title ([9d9e8af](https://github.com/Startup-Nights/website/commit/9d9e8af935ed66ade84a713c53a6aec7ba67e770))
+* **tsx:** skip color input for now ([1b67d52](https://github.com/Startup-Nights/website/commit/1b67d52865a59fd10c0768780764a4115679a9bf))
+* **warnings:** add missing keys to list items ([df6a2d5](https://github.com/Startup-Nights/website/commit/df6a2d5edf37c2a32428cb05c3436f24789fd280))
+
 ### 0.0.1 (2023-05-01)
 
 
