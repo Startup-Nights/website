@@ -47,7 +47,7 @@ blocks:
         title: Keeping us on track.
         members:
           - name: Alyssia Kugler
-            position: Director of Startup Nights & Head of Communications
+            position: Director of Startup Nights
             linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
@@ -97,6 +97,12 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/joanna-rubin.jpg
             alt: Joanna Rubin
+          - name: Alyssia Kugler
+            position: Head of Communications
+            linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
+            alt: Alyssia Kugler
           - name: Nathan Brechbühl
             position: Content Manager Video
             linkedin: 'https://www.linkedin.com/in/nathan-brechbuehl/'
@@ -309,6 +315,12 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/fabio-furrer.jpg
             alt: Fabio Furrer
+          - name: Jan Guddal
+            position: Head of Volunteers
+            linkedin: 'https://www.linkedin.com/in/jan-guddal-a48671167/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jan-guddal.jpg
+            alt: Jan Guddal
       - subtitle: Partnerships Team
         title: Exchanging value.
         members:
@@ -344,17 +356,9 @@ blocks:
             position: International Collaborations
             linkedin: 'https://www.linkedin.com/in/stefanobollmann/'
             alt: Stefano Bollmann
-      - subtitle: Volunteer Team
-        title: They organise people.
-        members:
-          - name: Jan Guddal
-            position: Head of Volunteers
-            linkedin: 'https://www.linkedin.com/in/jan-guddal-a48671167/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jan-guddal.jpg
-            alt: Jan Guddal
     _template: team
 ---
+
 
 
 
