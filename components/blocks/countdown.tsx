@@ -39,7 +39,7 @@ export const Countdown = ({ data }) => {
     return (
         <div className="bg-sn-yellow">
             <div className="max-w-7xl mx-auto px-8 py-8 lg:py-12 lg:px-24">
-                <div className="grid grid-cols-1 gap-y-6 lg:flex lg:justify-between lg:self-center lg:items-baseline">
+                <div className="grid grid-cols-1 gap-y-6 justify-start lg:flex lg:justify-between lg:self-center lg:items-center">
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-6xl">
                         {data.title}
                     </h1>
@@ -54,10 +54,10 @@ export const Countdown = ({ data }) => {
                         : <p className="text-5xl font-bold">The time has come</p>}
 
                     {data.cta && data.cta.text !== '' && (
-                        <div className="flex justify-center self-center">
+                        <div className="flex justify-start self-center">
                             <Link href={data.cta.link}
                                 type="button"
-                                className="rounded-full bg-sn-black px-6 py-3 text-gray-100 hover:bg-sn-black-lightest text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
+                                className="rounded-full transition-all border-2 border-sn-black bg-sn-black px-6 py-2 text-sn-yellow hover:bg-sn-yellow hover:text-black hover:border-sn-black text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
                             >
                                 {data.cta.text}
                             </Link>
@@ -72,8 +72,8 @@ export const Countdown = ({ data }) => {
 const Text = ({ number, text }) => {
     return (
         <div className="flex space-x-1 align-baseline items-baseline">
-            <p className="text-3xl sm:text-5xl font-bold">{number}</p>
-            <p className="mt-2 text-md sm:text-xl">{text}</p>
+            <p className="text-2xl md:text-4xl font-bold">{number}</p>
+            <p className="mt-2 text-md md:text-xl">{text}</p>
         </div>
     )
 }
