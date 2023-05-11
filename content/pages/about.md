@@ -79,12 +79,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/leo-hess.jpg
             alt: Leo Hess
-          - name: Alyssia Kugler
-            position: Director of Startup Nights & Head of Communications
-            linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
-            alt: Alyssia Kugler
           - name: Daniel Moser
             position: Head of Social Media
             linkedin: 'https://www.linkedin.com/in/danielmoser1/'
@@ -361,6 +355,7 @@ blocks:
             alt: Jan Guddal
     _template: team
 ---
+
 
 
 
