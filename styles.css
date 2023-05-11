@@ -73,4 +73,8 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .tito-widget .tito-discount-code-field {
+        border: 1px solid #FDC900 !important;
+    }
 }
