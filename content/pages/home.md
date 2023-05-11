@@ -191,19 +191,28 @@ blocks:
     _template: speakers
   - subtitle: Partner
     title: Thank you very much!
+    cta:
+      link: /partner
+      text: All partners
     partners:
-      - src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2022/partners/ubs.png
-        alt: UBS
-        link: 'https://www.ubs.com/ch/en.html'
-      - src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2022/partners/mobiliar.png
-        alt: die Mobiliar
-        link: 'https://www.mobiliar.ch/'
-      - src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2022/partners/stadt-winterthur.png
-        alt: Stadt Winterthur
-        link: 'https://stadt.winterthur.ch/'
+      - grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ubs.png
+            alt: UBS
+            link: 'https://ubs.com'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
+            alt: IGE
+            link: 'https://ipi.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kanton-zuerich.png
+            alt: Kanton Zürich
+            link: 'https://vd.zh.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sparrow-ventures.png
+            alt: Sparrow Ventures
+            link: 'https://sparrow-ventures.com'
     _template: partner_list
   - content_block:
       subtitle: Impressions
@@ -227,6 +236,9 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
+
+
 
 
 
