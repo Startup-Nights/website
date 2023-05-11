@@ -74,7 +74,11 @@
         background-position: center;
     }
 
+    .tito-widget .tito-discount-code-field::placeholder {
+        color: #FDC900 !important;
+    }
+
     .tito-widget .tito-discount-code-field {
-        border: 1px solid #FDC900 !important;
+        color: #FDC900 !important;
     }
 }
