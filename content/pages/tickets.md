@@ -25,6 +25,7 @@ blocks:
     title: Compare the different ticket categories.
     categories:
       - price: 59
+        selector: '#tito-ticket-founder input[type=checkbox]'
         name: Founders
         description:
           - >-
@@ -38,6 +39,7 @@ blocks:
         not_included:
           - Booth
       - price: 169
+        selector: '#tito-ticket-investor input[type=checkbox]'
         name: Investors
         description:
           - >-
@@ -51,6 +53,7 @@ blocks:
         not_included:
           - Booth
       - price: 199
+        selector: '#tito-ticket-corporates input[type=checkbox]'
         name: Corporates
         description:
           - >-
@@ -64,6 +67,9 @@ blocks:
         not_included:
           - Booth
       - price: 169
+        selector: >-
+          #tito-ticket-ecosystem-visitors-from-institutions-like-universities-enablers-etc
+          input[type=checkbox]
         name: Ecosystem
         description:
           - >-
@@ -77,6 +83,7 @@ blocks:
         not_included:
           - Booth
       - price: 49
+        selector: '#tito-ticket-visitors-incl-students input[type=checkbox]'
         name: Visitors and students
         description:
           - >-
@@ -98,6 +105,13 @@ blocks:
       text: We are aware of the limitation and work on fixing this.
     _template: tito
 ---
+
+
+
+
+
+
+
 
 
 
