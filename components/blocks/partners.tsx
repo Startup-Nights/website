@@ -37,10 +37,10 @@ export const Partners = ({ data }) => {
                                 {category.title}
                             </h2>
 
-                            <ul className={`grid grid-cols-2 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} gap-8 md:gap-18 py-4 md:py-8`}>
+                            <ul className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} gap-8 md:gap-18 py-4 md:py-8`}>
                                 {category.partners && category.partners.map((partner, i: number) => (
                                     <Link href={partner?.link} key={`partner-${i}`} target={'_blank'} className='relative'>
-                                        <li className="group relative p-8 border-2 border-transparent rounded-3xl transition-all hover:bg-gray-50">
+                                        <li className="group relative p-2 sm:p-8 border-2 border-transparent rounded-xl sm:rounded-3xl transition-all hover:bg-gray-50">
                                             <Image
                                                 width={300}
                                                 height={200}
