@@ -3,7 +3,7 @@ import { Button, ButtonSecondary } from "./button"
 export const ContentBlock = ({ data }) => {
     return (
         <div className="max-w-md py-8">
-            <h3 className="text-base font-medium leading-7 text-sn-yellow uppercase">
+            <h3 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
                 {data?.subtitle}
             </h3>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">

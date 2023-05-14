@@ -11,7 +11,7 @@ export const Partners = ({ data }) => {
         <div className="bg-white">
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                 <div className="text-center mb-20">
-                    <h2 className="text-base font-medium leading-7 text-sn-black-light uppercase">
+                    <h2 className="text-base font-medium leading-7 text-sn-black-light uppercase tracking-widest">
                         {data.subtitle}
                     </h2>
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-sn-black sm:text-6xl">

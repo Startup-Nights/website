@@ -6,7 +6,7 @@ export const ContentWide = ({ data }) => {
         <div className={data.background_color ? data.background_color : 'bg-sn-black-light'}>
             <div className="max-w-5xl mx-auto py-12 px-8 lg:p-24">
                 <div className="mb-12">
-                    <h3 className="text-base font-medium leading-7 text-sn-yellow uppercase">
+                    <h3 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
                         {data?.subtitle}
                     </h3>
                     <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
