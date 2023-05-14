@@ -30,7 +30,7 @@ export const Tito = ({ data }) => {
                 </div>
 
                 {data.note && (
-                    <div className="mx-auto max-w-3xl rounded-xl bg-sn-black-lightest p-8 mb-12">
+                    <div className="mx-auto max-w-[739px] rounded-3xl bg-sn-black-lightest p-8 mb-12">
                         <div className="flex">
                             <div className="flex-shrink-0">
                                 <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
