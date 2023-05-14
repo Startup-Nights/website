@@ -80,7 +80,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/leo-hess.jpg
             alt: Leo Hess
           - name: Daniel Moser
-            position: Head of Social Media
+            position: Performance Marketing
             linkedin: 'https://www.linkedin.com/in/danielmoser1/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-moser.jpg
@@ -179,7 +179,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/livia-arena.jpeg
             alt: Livia Arena
           - name: Gabriel Riedo
-            position: Head of Material & Logicstics
+            position: Head of Material & Logistics
             linkedin: 'https://www.linkedin.com/in/gabriel-riedo-244865120/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/gabriel-riedo.png
@@ -280,7 +280,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/manuela-serena.png
             alt: Manuela Serena
           - name: Josephine Junker-Oels
-            position: Bookkeeping Creditors
+            position: Bookkeeping Creditors & Debitors
             linkedin: 'https://www.linkedin.com/in/josephine-junker-oels-b43383219/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/josephine-junker-oels.jpg
