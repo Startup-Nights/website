@@ -22,7 +22,7 @@ export const Speakers = ({ data }) => {
             {/* <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} /> */}
 
             <div className="text-center mb-20">
-                <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
+                <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
                     {data.subtitle}
                 </h2>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">

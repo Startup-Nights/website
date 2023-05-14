@@ -13,7 +13,7 @@ export const Team = ({ data }) => {
         <div className="bg-sn-black-light">
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                 <div className="text-center mb-24">
-                    <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
+                    <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
                         {data.subtitle}
                     </h2>
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
@@ -25,12 +25,12 @@ export const Team = ({ data }) => {
                     {data.divisions && data.divisions.map((division: Division, i) => (
                         <div key={`division-${i}`} className="mx-auto grid gap-y-20 items-start gap-x-16 xl:grid-cols-3">
                             <div className="max-w-2xl">
-                                <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
+                                <h3 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
                                     {division.subtitle}
-                                </h2>
-                                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">
+                                </h3>
+                                <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">
                                     {division.title}
-                                </h1>
+                                </h2>
                             </div>
 
                             <ul role="list" className="grid gap-4 sm:grid-cols-2 sm:gap-4 xl:col-span-2">
