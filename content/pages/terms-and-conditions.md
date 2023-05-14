@@ -18,11 +18,11 @@ blocks:
             Startup Nights exclusively signs contracts, which are subject to
             these General Terms and Conditions. Every contractual party
             (including any purchaser of a ticket or registering for an event or
-            conference organized by Startup Nights) is agreeing to comply with
-            and be bound by these terms and conditions. Startup Nights reserves
-            the right to amend and/or remove these terms and conditions as well
-            as any other information or content of the website at any time, to
-            any extent, and without prior notice.
+            conference organized by Entrepreneur Club Winterthur) is agreeing to
+            comply with and be bound by these terms and conditions. Startup
+            Nights reserves the right to amend and/or remove these terms and
+            conditions as well as any other information or content of the
+            website at any time, to any extent, and without prior notice.
       - title: 2. DATA PRIVACY PROTECTION
         text:
           - >-
@@ -55,8 +55,7 @@ blocks:
             4.1 A refund of the tickets for conferences and events is only
             possible up to 14 days before the event. Refunds are only possible
             under certain conditions. Reasons for a refund of the ticket price
-            are: i. Buying the wrong ticket. ii. Forgetting to apply a discount
-            code.
+            are: i. Buying the wrong ticket.
           - >-
             4.2 If the ticket is not returned within the time limit, no refund
             is possible. Additional claims are excluded. Thus, only the ticket
@@ -80,12 +79,7 @@ blocks:
             or gross negligence. Startup Nights strives to notify its customers
             of force majeure cases as quickly as possible.
           - >-
-            4.5 The order confirmation does not grant access to the virtual
-            event. Rather it contains a passcode, which can be used to redeem
-            the ticket on the official Startup Nights website [insert link]. The
-            tickets can be redeemed from one week prior to the event.
-          - >-
-            4.6 Startup Nights is not responsible for any loss or damage as a
+            4.5 Startup Nights is not responsible for any loss or damage as a
             result of a substitution, alteration, cancellation or postponement
             of an event. As such, Startup Nights reserves the right to alter or
             modify the advertised speakers, topics, and/or formats as well as
@@ -93,15 +87,15 @@ blocks:
             whatsoever. Any substitutions or alterations will be updated on our
             web page as soon as possible.
           - >-
-            4.7 In the case of either the event date or location (platform)
+            4.6 In the case of either the event date or location (platform)
             being changed, in general, tickets remain valid.
       - title: 5. PAYMENT
         text:
           - >-
-            5.1 Startup Nights uses third-party providers, such as PayPal, to
-            provide secure online payment services. The use of those services is
-            subject to their own terms and conditions and privacy policy
-            (provided on their own websites).
+            5.1 Startup Nights uses third-party providers, such as tito and
+            b2match, to provide secure online payment services. The use of those
+            services is subject to their own terms and conditions and privacy
+            policy (provided on their own websites).
           - >-
             5.2 Startup Nights may request verification of payment for the
             purpose of resolving possible disputes about the purchase.
@@ -167,9 +161,12 @@ blocks:
             immediately upon public posting. Your continued use of our Service
             and this Site following any such modification constitutes your
             acceptance of these modified Terms
-    background_color: bg-sn-black-light
     _template: content_wide
 ---
+
+
+
+
 
 
 
