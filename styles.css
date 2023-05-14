@@ -76,9 +76,18 @@
 
     .tito-widget .tito-discount-code-field::placeholder {
         color: #FDC900 !important;
+        @apply font-normal;
     }
 
     .tito-widget .tito-discount-code-field {
-        color: #FDC900 !important;
+        @apply font-normal;
+    }
+
+    .tito-widget .tito-widget-form input {
+        --tw-shadow: 0 0 0 0 rgb(0 0 0 / 0.0) !important;
+        --tw-shadow-colored: 0 0 0 0 var(--tw-shadow-color) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        /* @apply bg-sn-black-lightest; */
+        background-color: rgb(36, 36, 36) !important;
     }
 }
