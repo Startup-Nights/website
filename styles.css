@@ -90,4 +90,9 @@
         /* @apply bg-sn-black-lightest; */
         background-color: rgb(36, 36, 36) !important;
     }
+
+    /* react photo album gallery */
+    .react-photo-album .react-photo-album--row .react-photo-album--photo {
+        border-radius: 0.75rem !important;
+    }
 }
