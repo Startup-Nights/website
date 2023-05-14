@@ -23,7 +23,7 @@ export const Banner = ({ data, setOpen }) => {
           <button
             type="button"
             onClick={() => setOpenModal(true)}
-            className="rounded-full transition-all bg-sn-black border-2 border-sn-black px-4 py-1 text-sn-yellow hover:bg-sn-black-lightest hover:border-sn-black-lightest text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
+            className="rounded-full transition-all bg-sn-black border-2 border-sn-black px-4 py-1 text-sn-white hover:bg-sn-yellow hover:text-black hover:border-sn-black-lightest text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
           >
             {data.agree_button}
           </button>
