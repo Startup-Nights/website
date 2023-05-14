@@ -14,25 +14,17 @@ export const Footer = ({ data }) => {
                     Footer
                 </h2>
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-                    <div className="grid grid-flow-row-dense grid-cols-2 gap-8 xl:col-span-2">
+                    <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 gap-8 xl:col-span-2">
                         {data.navitems && data.navitems.map((navitem, i) => (
-                            <div key={`${navitem.title}-${i}`} className="md:grid md:grid-cols-2 md:gap-8 col-span-1">
-                                <div key={navitem.title}>
-                                    {i === 0 && (
-                                        <h3 className="text-sm font-semibold leading-6 text-white">{navitem.title}</h3>
-                                    )}
-                                    <ul role="list" className="mt-6 space-y-3">
-                                        {navitem.listitems.map((item) => (
-                                            <li key={item.title}>
-                                                <Link href={item.link} className="text-sm leading-6 text-gray-300 hover:text-white">
-                                                    {item.title}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-
+                            <ul key={`${navitem.title}-${i}`} role="list" className="space-y-3">
+                                {navitem.listitems.map((item) => (
+                                    <li key={item.title}>
+                                        <Link href={item.link} className="text-sm leading-6 text-gray-300 hover:text-white">
+                                            {item.title}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
                         ))}
                     </div>
 
