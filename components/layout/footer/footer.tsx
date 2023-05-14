@@ -37,8 +37,12 @@ export const Footer = ({ data }) => {
                     </div>
                 </div>
 
-                <div className="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
-                    <div className="flex space-x-6 md:order-2">
+                <div className="mt-8 border-t border-white/10 pt-8 flex items-center justify-between">
+                    <p className="text-sm leading-5 text-gray-400">
+                        &copy; {data.copyright}
+                    </p>
+
+                    <div className="flex justify-end space-x-2 items-center">
                         {data.social && data.social.map(item => (
                             <Link key={item.title} href={item.link} target='_blank' rel="noreferrer" className="text-gray-500 hover:text-gray-400">
                                 <span className="sr-only">{item.title}</span>
@@ -46,9 +50,6 @@ export const Footer = ({ data }) => {
                             </Link>
                         ))}
                     </div>
-                    <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-                        &copy; {data.copyright}
-                    </p>
                 </div>
             </div>
 
