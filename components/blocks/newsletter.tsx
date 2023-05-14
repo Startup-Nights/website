@@ -30,8 +30,8 @@ export default function Newsletter({ data }) {
             },
             body: JSON.stringify({
                 email: event.target.email.value,
-                first: event.target.last.value,
-                last: event.target.first.value,
+                first: event.target.first.value,
+                last: event.target.last.value,
             }),
         })
 
