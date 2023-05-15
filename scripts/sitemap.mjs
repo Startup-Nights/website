@@ -3,8 +3,25 @@ import { writeFileSync } from 'fs';
 import { globby } from 'globby';
 import prettier from 'prettier';
 
+const robots = `
+User-agent: *
+Disallow: /
+`
+
 const baseURL = 'https://www.startup-nights.ch'
+
+// Update the robots.txt for preview deployments to make sure the preview 
+// deployments are not indexed.
+async function updateRobotsTxt() {
+  const branch = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF;
+
+  if (branch !== 'main') {
+    writeFileSync('public/robots.txt', robots);
+  }
+}
  
+// Generate the sitemap for the website and update it every time that the site 
+// is deployed.
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc');
 
@@ -45,3 +62,4 @@ async function generate() {
 }
  
 generate();
+updateRobotsTxt();

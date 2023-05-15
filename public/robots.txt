@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /tickets
 Disallow: /booth
 
-Sitemap: https://startup-nights.ch/sitemap.xml
+Sitemap: https://www.startup-nights.ch/sitemap.xml
