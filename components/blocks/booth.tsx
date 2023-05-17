@@ -7,23 +7,17 @@ import { Tab } from '@headlessui/react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
-const badges = [
-    '15.07.2023',
-    '15.07.2023',
-    '15.07.2023',
-    '15.07.2023',
-    '15.07.2023',
-]
-
-const otherInterest = [
-    'Pitching competition',
-    'Startup inovation awards'
-]
 
 export const Booth = ({ data }) => {
     const [err, setErr] = useState(false);
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
+
+    const [categories, setCategories] = useState([]);
+    const [otherInterests, setOtherInterests] = useState([]);
+    const [accomodation, setAccomodation] = useState(null);
+    const [rollup, setRollup] = useState(null);
+    const [equipment, setEquipment] = useState(null);
 
     const [companyLogo, setCompanyLogo] = useState(null);
 
@@ -32,69 +26,63 @@ export const Booth = ({ data }) => {
         event.preventDefault()
         setLoading(true);
 
-        const fileBytes = []
-
         const data = event.target;
 
-        const reader = new FileReader()
-        reader.readAsArrayBuffer(companyLogo)
-        reader.addEventListener("load", async (ev) => {
-            const buffer = reader.result
-            const array = new Uint8Array(buffer as ArrayBuffer)
-
-            for (var i = 0; i < array.length; i++) {
-                fileBytes.push(array[i])
-            }
-
-            const response = await fetch('/api/booth', {
-                method: 'post',
-                headers: {
-                    'Content-Type': 'application/json',
+        const body = {
+            company: {
+                name: data.company_name.value,
+                website: data.company_website.value,
+                founding_date: data.company_founding_date.value,
+                employees: data.company_employees.value,
+                pitch: data.company_pitch.value,
+                categories: categories,
+                address: {
+                    street: data.company_street.value,
+                    zip: data.company_zip.value,
+                    city: data.company_city.value,
+                    country: data.company_country.value
                 },
-                body: JSON.stringify({
-                    company: {
-                        name: data.company_name.value,
-                        website: data.company_website.value,
-                        founding_date: data.company_founding_date.value,
-                        employees: data.company_employees.value,
-                        pitch: data.company_pitch.value,
-                        address: {
-                            street: data.company_street.value,
-                            zip: data.company_zip.value,
-                            city: data.company_city.value,
-                            country: data.company_country.value
-                        }
-                    },
-                    contact: {
-                        firstname: data.contact_first.value,
-                        lastname: data.contact_last.value,
-                        email: data.contact_email.value,
-                        phone: data.contact_phone.value,
-                        role: data.contact_role.value,
-                    },
-                    images: {
-                        logo: {
-                            name: companyLogo.name,
-                            data: fileBytes
-                        },
-                    },
-                    varia: {}
-                }),
-            })
-
-            const { error } = await response.json()
-            setLoading(false);
-
-            if (error) {
-                setSuccess(false);
-                setErr(true);
-            } else {
-                setErr(false);
-                setSuccess(true);
+                address_billing: {
+                    street: data.billing_street.value,
+                    zip: data.billing_zip.value,
+                    city: data.billing_city.value,
+                    country: data.billing_country.value
+                },
+            },
+            contact: {
+                firstname: data.contact_first.value,
+                lastname: data.contact_last.value,
+                email: data.contact_email.value,
+                phone: data.contact_phone.value,
+                role: data.contact_role.value,
+            },
+            images: {},
+            varia: {
+                formats: otherInterests,
+                accomodation: accomodation,
+                rollup: rollup,
+                equipment: equipment
             }
+        }
 
+        const response = await fetch('/api/booth', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
+        })
 
-        }, false)
+        const { error } = await response.json()
+        setLoading(false);
+
+        if (error) {
+            setSuccess(false);
+            setErr(true);
+        } else {
+            setErr(false);
+            setSuccess(true);
+        }
     }
 
     return (
@@ -316,7 +304,7 @@ export const Booth = ({ data }) => {
 
                             <div className="sm:col-span-6">
                                 <p className="block text-sm font-medium leading-6 mb-2">Company categories</p>
-                                <Categories />
+                                <Categories categories={categories} setCategories={setCategories} />
                             </div>
 
                             <div className="col-span-full">
@@ -449,6 +437,11 @@ export const Booth = ({ data }) => {
                                                     aria-describedby="comments-description"
                                                     name={interest}
                                                     type="checkbox"
+                                                    onClick={() => {
+                                                        otherInterests.push(interest)
+                                                        setOtherInterests(otherInterests)
+
+                                                    }}
                                                     className="h-4 w-4 rounded bg-sn-black-lightest border-sn-black-lightest text-sn-yellow-dark focus:ring-sn-yellow-dark"
                                                 />
                                             </div>
@@ -463,10 +456,10 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="sm:col-span-6">
-                                {radiobuttons('Do you need support booking accommodation?', [
+                                {radiobuttons('Do you need support booking accommodation?', 'accomodation', [
                                     { id: 'accomodation-yes', title: 'yes' },
                                     { id: 'accomodation-no', title: 'no' },
-                                ])}
+                                ], accomodation, setAccomodation)}
                             </div>
 
                             <div className="col-span-full">
@@ -478,15 +471,15 @@ export const Booth = ({ data }) => {
                                         <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
                                         <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
                                             <label
-                                                htmlFor="file-upload"
+                                                htmlFor="booth_image"
                                                 className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
                                             >
                                                 <span>Upload a file</span>
-                                                <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                                                <input id="both_image" name="booth_image" type="file" className="sr-only" />
                                             </label>
                                             <p className="pl-1">or drag and drop</p>
                                         </div>
-                                        <p className="text-xs leading-5 text-gray-600">PNG or SVG up to 10MB</p>
+                                        <p className="text-xs leading-5 text-gray-600">PNG or JPEG up to 10MB</p>
                                     </div>
                                 </div>
                             </div>
@@ -496,30 +489,30 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="sm:col-span-6">
-                                {radiobuttons('Do you have a rollup?', [
+                                {radiobuttons('Do you have a rollup?', 'rollup', [
                                     { id: 'rollup-yes', title: 'yes' },
                                     { id: 'rollup-no', title: "no (we will organize one) " },
-                                ])}
+                                ], rollup, setRollup)}
                             </div>
 
                             <div className="sm:col-span-6">
-                                {radiobuttons('Equipment', [
+                                {radiobuttons('Equipment', 'equipment', [
                                     { id: 'equipment-own', title: "We'll bring our own equipment" },
                                     { id: 'equipment-rent', title: "We want to rent equipment" },
                                     { id: 'equipment-not-sure', title: "We are not sure yet" },
-                                ])}
+                                ], equipment, setEquipment)}
                             </div>
 
                             <div className="sm:col-span-6">
                                 <label htmlFor="equipment_description" className="block text-sm font-medium leading-6">
-                                    Equipment
+                                    If you bring your own equipment, please describe what you'll bring:
                                 </label>
                                 <div className="mt-2">
                                     <textarea
                                         required={false}
                                         id="equipment_description"
                                         name="equipment_description"
-                                        placeholder="Please describe what you'll bring along"
+                                        placeholder="We'll bring along x + y..."
                                         rows={3}
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                         defaultValue={''}
@@ -527,11 +520,70 @@ export const Booth = ({ data }) => {
                                 </div>
                             </div>
 
+                            <div className="sm:col-span-6 mt-16">
+                                <h3 className="text-xl font-semibold leading-6 text-slate-200">Billing address</h3>
+                            </div>
+
                             <div className="sm:col-span-6">
-                                {radiobuttons('Does your billing address match the company address from above?', [
-                                    { id: 'billing_address_matches', title: "Yes" },
-                                    { id: 'billing_address_matches_not', title: "No" },
-                                ])}
+                                <label htmlFor="billing_street" className="block text-sm font-medium leading-6">
+                                    Street address
+                                </label>
+                                <div className="mt-2">
+                                    <input
+                                        required={true}
+                                        type="text"
+                                        placeholder="Musterstrasse"
+                                        name="billing_street"
+                                        id="billing_street"
+                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="sm:col-span-2">
+                                <label htmlFor="billing_zip" className="block text-sm font-medium leading-6">
+                                    ZIP / postal code
+                                </label>
+                                <div className="mt-2">
+                                    <input
+                                        required={true}
+                                        type="number"
+                                        placeholder="8400"
+                                        name="billing_zip"
+                                        id="billing_zip"
+                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                    />
+                                </div>
+                            </div>
+                            <div className="sm:col-span-2">
+                                <label htmlFor="billing_city" className="block text-sm font-medium leading-6">
+                                    City
+                                </label>
+                                <div className="mt-2">
+                                    <input
+                                        required={true}
+                                        type="text"
+                                        placeholder="Winterthur"
+                                        name="billing_city"
+                                        id="billing_city"
+                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                    />
+                                </div>
+                            </div>
+                            <div className="sm:col-span-2">
+                                <label htmlFor="billing_country" className="block text-sm font-medium leading-6">
+                                    Country
+                                </label>
+                                <div className="mt-2">
+                                    <input
+                                        required={true}
+                                        type="text"
+                                        placeholder="Switzerland"
+                                        name="billing_country"
+                                        id="billing_country"
+                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                    />
+                                </div>
                             </div>
 
                             <div className="sm:col-span-6 mt-16">
@@ -601,63 +653,12 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const Categories = () => {
-    const [categories] = useState({
-        Recent: [
-            {
-                id: 1,
-                title: 'Does drinking coffee make you smarter?',
-                date: '5h ago',
-                commentCount: 5,
-                shareCount: 2,
-            },
-            {
-                id: 2,
-                title: "So you've bought coffee... now what?",
-                date: '2h ago',
-                commentCount: 3,
-                shareCount: 2,
-            },
-        ],
-        Popular: [
-            {
-                id: 1,
-                title: 'Is tech making coffee better or worse?',
-                date: 'Jan 7',
-                commentCount: 29,
-                shareCount: 16,
-            },
-            {
-                id: 2,
-                title: 'The most innovative things happening in coffee',
-                date: 'Mar 19',
-                commentCount: 24,
-                shareCount: 12,
-            },
-        ],
-        Trending: [
-            {
-                id: 1,
-                title: 'Ask Me Anything: 10 answers to your questions about coffee',
-                date: '2d ago',
-                commentCount: 9,
-                shareCount: 5,
-            },
-            {
-                id: 2,
-                title: "The worst advice we've ever heard about coffee",
-                date: '4d ago',
-                commentCount: 1,
-                shareCount: 2,
-            },
-        ],
-    })
-
+const Categories = ({ categories, setCategories }) => {
     return (
         <div className="w-full">
             <Tab.Group>
                 <Tab.List className="flex space-x-1 rounded-xl bg-sn-black-light p-1">
-                    {Object.keys(categories).map((category) => (
+                    {Object.keys(companyCategories).map((category) => (
                         <Tab
                             key={category}
                             className={({ selected }) =>
@@ -674,7 +675,7 @@ const Categories = () => {
                     ))}
                 </Tab.List>
                 <Tab.Panels className="mt-2">
-                    {Object.values(categories).map((posts, idx) => (
+                    {Object.values(companyCategories).map((category, idx) => (
                         <Tab.Panel
                             key={idx}
                             className={classNames(
@@ -682,20 +683,25 @@ const Categories = () => {
                             )}
                         >
                             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                                {posts.map((post, i) => (
+                                {category.map((cat, i) => (
                                     <li key={i} className="relative flex items-start">
                                         <div className="flex h-6 items-center">
                                             <input
-                                                id={post.title}
+                                                id={cat.name}
                                                 aria-describedby="comments-description"
-                                                name={post.title}
+                                                name={cat.name}
                                                 type="checkbox"
                                                 className="h-4 w-4 rounded bg-sn-black-lightest border-sn-black-lightest text-sn-yellow-dark focus:ring-sn-yellow-dark"
+                                                onClick={() => {
+                                                    // todo: check if being checked or unchecked -> add / remove
+                                                    categories.push(cat.name)
+                                                    setCategories(categories)
+                                                }}
                                             />
                                         </div>
                                         <div className="ml-3 text-sm leading-6">
-                                            <label htmlFor={post.title} className="font-medium text-gray-200">
-                                                Comments
+                                            <label htmlFor={cat.name} className="font-medium text-gray-200">
+                                                {cat.name}
                                             </label>
                                         </div>
                                     </li>
@@ -714,7 +720,7 @@ interface RadioButton {
     title: string;
 }
 
-const radiobuttons = (title: string, data: RadioButton[]) => {
+const radiobuttons = (title: string, name: string, data: RadioButton[], state, setState) => {
     return (
         <div>
             <label className="text-sm font-medium leading-6">{title}</label>
@@ -725,10 +731,10 @@ const radiobuttons = (title: string, data: RadioButton[]) => {
                         <div key={notificationMethod.id} className="flex items-center">
                             <input
                                 id={notificationMethod.id}
-                                name="notification-method"
+                                name={name}
                                 type="radio"
-                                defaultChecked={notificationMethod.id === 'email'}
                                 className="h-4 w-4 bg-sn-black-lightest border-sn-black-lightest text-sn-yellow focus:ring-indigo-600"
+                                onChange={() => setState(notificationMethod.id)}
                             />
                             <label htmlFor={notificationMethod.id} className="ml-3 block text-sm font-medium leading-6">
                                 {notificationMethod.title}
@@ -741,13 +747,6 @@ const radiobuttons = (title: string, data: RadioButton[]) => {
     )
 }
 
-
-const mailingLists = [
-    { id: 1, title: 'Newsletter', description: 'Last message sent an hour ago', users: '621 users' },
-    { id: 2, title: 'Existing Customers', description: 'Last message sent 2 weeks ago', users: '1200 users' },
-    { id: 3, title: 'Trial Users', description: 'Last message sent 4 days ago', users: '2740 users' },
-]
-
 const packages = () => {
     const [selectedMailingLists, setSelectedMailingLists] = useState(mailingLists[0])
 
@@ -758,7 +757,7 @@ const packages = () => {
             </RadioGroup.Label>
 
             <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
-                {mailingLists.map((mailingList) => (
+                {registration_packages.map((mailingList) => (
                     <RadioGroup.Option
                         key={mailingList.id}
                         value={mailingList}
@@ -775,13 +774,13 @@ const packages = () => {
                                 <span className="flex flex-1">
                                     <span className="flex flex-col">
                                         <RadioGroup.Label as="span" className="block text-sm font-medium text-gray-200">
-                                            {mailingList.title}
+                                            {mailingList.icon} <span className='mx-2'></span> {mailingList.title}
                                         </RadioGroup.Label>
-                                        <RadioGroup.Description as="span" className="mt-1 flex items-center text-sm text-gray-200">
+                                        <RadioGroup.Description as="span" className="mt-2 flex items-center text-sm text-gray-200">
                                             {mailingList.description}
                                         </RadioGroup.Description>
                                         <RadioGroup.Description as="span" className="mt-6 text-sm font-medium text-gray-400">
-                                            {mailingList.users}
+                                            {mailingList.price}
                                         </RadioGroup.Description>
                                     </span>
                                 </span>
@@ -805,3 +804,86 @@ const packages = () => {
         </RadioGroup>
     )
 }
+
+const badges = [
+    '15.07.2023',
+    '15.07.2023',
+    '15.07.2023',
+    '15.07.2023',
+    '15.07.2023',
+]
+
+const companyCategories = {
+    'Autonomous Systems': [
+        // autonomous systems
+        { name: 'Artificial Intelligence' },
+        { name: 'Augmented & Virtual Reality' },
+        { name: 'Data Mining & Machine Learning' },
+        { name: 'Mobility Robotics' },
+        { name: 'Smart Buildings' },
+        { name: 'Smart Cities' },
+        { name: 'Supply Chain & Logistics', },
+    ],
+    'Health Tech': [
+        // healht tech
+        { name: 'Biotech', },
+        { name: 'Digital Health', },
+        { name: 'Healthcare', },
+        { name: 'Medtech & Pharma', },
+        { name: 'Wearables', },
+        { name: 'Wellbeing', },
+    ],
+    'Sustainable Tech': [
+        // sustainable tech
+        { name: 'Agricultural Tech', },
+        { name: 'CleanTech', },
+        { name: 'Energy Transition', },
+        { name: 'Environmental Economics', },
+        { name: 'Foodtech', },
+        { name: 'Micro- / Nanoech', },
+        { name: 'New Materials', },
+        { name: 'Social Entrepreneurship', },
+        { name: 'Sustainable Living', },
+    ],
+    'ICT & Services': [
+        { name: 'FinTech', },
+        { name: 'Funding / Alternative Finance', }, { name: 'InsurTech', },
+        { name: 'LegalTech', },
+        { name: 'Payments', },
+        { name: 'PropTech', },
+        { name: 'RegTech', },
+        { name: 'Security & Privacy', },
+        { name: 'Art & Culture', },
+        { name: 'Consumer Electronics', },
+        { name: 'E-Commerce & Online Marketplaces', },
+        { name: 'Education', },
+        { name: 'Enterprise Software', },
+        { name: 'Gaming', },
+        { name: 'Industrial Internet & IoT', },
+        { name: 'Lifestyle & Fashion', },
+        { name: 'Marketing & AdTech', },
+        { name: 'Mobile', },
+        { name: 'Hardware & Software', },
+        { name: 'News & Entertainment', },
+        { name: 'Social & Communities', },
+        { name: 'Sports & Performance', },
+        { name: 'Travel & Tourism', },
+    ],
+}
+
+const registration_packages = new Array(
+    { id: 1, icon: '✈️', title: 'Paperplane', price: 'CHF 200', description: '2x2m area with a bar table and 230V outlet', selected: true },
+    { id: 2, icon: '🚀', title: 'Rocket', price: 'CHF 400', description: '3x3m area with a bar table and 230V outlet', selected: false }
+);
+
+
+const otherInterest = [
+    'Pitching competition',
+    'Startup inovation awards'
+]
+
+const mailingLists = [
+    { id: 1, title: 'Newsletter', description: 'Last message sent an hour ago', users: '621 users' },
+    { id: 2, title: 'Existing Customers', description: 'Last message sent 2 weeks ago', users: '1200 users' },
+    { id: 3, title: 'Trial Users', description: 'Last message sent 4 days ago', users: '2740 users' },
+]
