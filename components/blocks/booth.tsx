@@ -871,11 +871,10 @@ const companyCategories = {
     ],
 }
 
-const registration_packages = new Array(
+const registration_packages = [
     { id: 1, icon: '✈️', title: 'Paperplane', price: 'CHF 200', description: '2x2m area with a bar table and 230V outlet', selected: true },
     { id: 2, icon: '🚀', title: 'Rocket', price: 'CHF 400', description: '3x3m area with a bar table and 230V outlet', selected: false }
-);
-
+]
 
 const otherInterest = [
     'Pitching competition',
