@@ -498,7 +498,6 @@ export const Booth = ({ data }) => {
                             <div className="sm:col-span-6">
                                 {radiobuttons('Equipment', 'equipment', [
                                     { id: 'equipment-own', title: "We'll bring our own equipment" },
-                                    { id: 'equipment-rent', title: "We want to rent equipment" },
                                     { id: 'equipment-not-sure', title: "We are not sure yet" },
                                 ], equipment, setEquipment)}
                             </div>
@@ -878,7 +877,8 @@ const registration_packages = [
 
 const otherInterest = [
     'Pitching competition',
-    'Startup inovation awards'
+    'Startup inovation awards',
+    'Matching with keynote speaker 1:1'
 ]
 
 const mailingLists = [
