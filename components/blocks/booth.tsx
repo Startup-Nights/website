@@ -19,6 +19,8 @@ export const Booth = ({ data }) => {
     const [rollup, setRollup] = useState(null);
     const [equipment, setEquipment] = useState(null);
 
+    const [regPackage, setRegPackage] = useState(registration_packages[0]);
+
     const [companyLogo, setCompanyLogo] = useState(null);
 
     // https://stackoverflow.com/a/47069615
@@ -58,6 +60,7 @@ export const Booth = ({ data }) => {
             },
             images: {},
             varia: {
+                package: regPackage,
                 formats: otherInterests,
                 accomodation: accomodation,
                 rollup: rollup,
@@ -485,7 +488,7 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="sm:col-span-6">
-                                {packages()}
+                                <Packages regPackage={regPackage} setRegPackage={setRegPackage} />
                             </div>
 
                             <div className="sm:col-span-6">
@@ -746,11 +749,9 @@ const radiobuttons = (title: string, name: string, data: RadioButton[], state, s
     )
 }
 
-const packages = () => {
-    const [selectedMailingLists, setSelectedMailingLists] = useState(mailingLists[0])
-
+const Packages = ({ regPackage, setRegPackage }) => {
     return (
-        <RadioGroup value={selectedMailingLists} onChange={setSelectedMailingLists}>
+        <RadioGroup value={regPackage} onChange={setRegPackage}>
             <RadioGroup.Label className="block text-sm font-medium leading-6">
                 Select other formats that you are interested in
             </RadioGroup.Label>
@@ -871,8 +872,8 @@ const companyCategories = {
 }
 
 const registration_packages = [
-    { id: 1, icon: '✈️', title: 'Paperplane', price: 'CHF 200', description: '2x2m area with a bar table and 230V outlet', selected: true },
-    { id: 2, icon: '🚀', title: 'Rocket', price: 'CHF 400', description: '3x3m area with a bar table and 230V outlet', selected: false }
+    { id: 1, icon: '✈️', title: 'Paperplane', price: 'CHF 200', description: '2x2m area with a bar table and 230V outlet' },
+    { id: 2, icon: '🚀', title: 'Rocket', price: 'CHF 400', description: '3x3m area with a bar table and 230V outlet' }
 ]
 
 const otherInterest = [
