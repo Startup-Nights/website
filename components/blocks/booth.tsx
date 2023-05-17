@@ -1,12 +1,10 @@
-import * as React from "react";
+import { useState } from "react";
 import type { Template } from "tinacms";
 import Link from "next/link";
 import { InformationCircleIcon, PhotoIcon } from '@heroicons/react/20/solid'
-import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
-
 
 const badges = [
     '15.07.2023',
@@ -22,6 +20,59 @@ const otherInterest = [
 ]
 
 export const Booth = ({ data }) => {
+    const [err, setErr] = useState(false);
+    const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async (event) => {
+        event.preventDefault()
+        setLoading(true);
+
+        const data = event.target;
+
+        const response = await fetch('/api/booth', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                company: {
+                    name: data.company_name.value,
+                    website: data.company_website.value,
+                    founding_date: data.company_founding_date.value,
+                    employees: data.company_employees.value,
+                    pitch: data.company_pitch.value,
+                    logo: data.company_logo.value,
+                    address: {
+                        street: data.company_street.value,
+                        zip: data.company_zip.value,
+                        city: data.company_city.value,
+                        country: data.company_country.value
+                    }
+                },
+                contact: {
+                    firstname: data.contact_first.value,
+                    lastname: data.contact_last.value,
+                    email: data.contact_email.value,
+                    phone: data.contact_phone.value,
+                    role: data.contact_role.value,
+                },
+                varia: {}
+            }),
+        })
+
+        const { error } = await response.json()
+        setLoading(false);
+
+        if (error) {
+            setSuccess(false);
+            setErr(true);
+        } else {
+            setErr(false);
+            setSuccess(true);
+        }
+    }
+
     return (
         <div className="bg-sn-black">
             <div className="max-w-5xl mx-auto py-12 px-8 lg:p-24">
@@ -92,7 +143,7 @@ export const Booth = ({ data }) => {
                         </div>
                     </div>
 
-                    <form action="" className="mt-16">
+                    <form onSubmit={handleSubmit} className="mt-16">
                         <h3 className="text-xl font-semibold leading-6 text-slate-200">Company details</h3>
                         <p className="mt-6 text-md leading-6 text-gray-300">
                             We'll get in touch with all the startups that have registered up until then. Stay tuned!
@@ -100,80 +151,75 @@ export const Booth = ({ data }) => {
 
                         <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
                             <div className="sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_name" className="block text-sm font-medium leading-6">
                                     Company name
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
                                         type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        placeholder="Muster AG"
+                                        name="company_name"
+                                        id="company_name"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div className="sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_website" className="block text-sm font-medium leading-6">
                                     Company website
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
                                         type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        placeholder="https://muster.ch"
+                                        name="company_website"
+                                        id="company_website"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
 
                             <div className="sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_founding_date" className="block text-sm font-medium leading-6">
                                     Founding date
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
-                                        type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        type="date"
+                                        name="company_founding_date"
+                                        id="company_founding_date"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div className="sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_employees" className="block text-sm font-medium leading-6">
                                     Number of employees
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
                                         type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        placeholder="5"
+                                        name="company_employees"
+                                        id="company_employees"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
 
                             <div className="sm:col-span-6">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_pitch" className="block text-sm font-medium leading-6">
                                     Company / product pitch
                                 </label>
                                 <div className="mt-2">
                                     <textarea
                                         required={true}
-                                        id="idea"
-                                        name="idea"
+                                        id="company_pitch"
+                                        name="company_pitch"
                                         placeholder="Write a few sentences about the company and / or the product in elevator-pitch style"
                                         rows={3}
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
@@ -183,66 +229,62 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="sm:col-span-6">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_street" className="block text-sm font-medium leading-6">
                                     Street address
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
                                         type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        placeholder="Musterstrasse"
+                                        name="company_street"
+                                        id="company_street"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
 
                             <div className="sm:col-span-2">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_zip" className="block text-sm font-medium leading-6">
                                     ZIP / postal code
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
-                                        type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        type="number"
+                                        placeholder="8400"
+                                        name="company_zip"
+                                        id="company_zip"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_city" className="block text-sm font-medium leading-6">
                                     City
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
                                         type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        placeholder="Winterthur"
+                                        name="company_city"
+                                        id="company_city"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_country" className="block text-sm font-medium leading-6">
                                     Country
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
                                         type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        placeholder="Switzerland"
+                                        name="company_country"
+                                        id="company_country"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
@@ -254,7 +296,7 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="col-span-full">
-                                <label htmlFor="cover-photo" className="block text-sm font-medium leading-6">
+                                <label htmlFor="company_logo" className="block text-sm font-medium leading-6">
                                     Company logo
                                 </label>
                                 <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-200/25 px-6 py-10">
@@ -262,11 +304,11 @@ export const Booth = ({ data }) => {
                                         <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
                                         <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
                                             <label
-                                                htmlFor="file-upload"
+                                                htmlFor="company_logo"
                                                 className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
                                             >
                                                 <span>Upload a file</span>
-                                                <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                                                <input id="company_logo" name="company_logo" type="file" className="sr-only" />
                                             </label>
                                             <p className="pl-1">or drag and drop</p>
                                         </div>
@@ -280,7 +322,7 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="contac_first" className="block text-sm font-medium leading-6">
                                     First name
                                 </label>
                                 <div className="mt-2">
@@ -288,48 +330,45 @@ export const Booth = ({ data }) => {
                                         required={true}
                                         type="text"
                                         placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        name="contact_first"
+                                        id="contact_first"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div className="sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="contact_last" className="block text-sm font-medium leading-6">
                                     Last name
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
                                         type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        placeholder="Muster"
+                                        name="contact_last"
+                                        id="contact_last"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
 
                             <div className="sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="contact_email" className="block text-sm font-medium leading-6">
                                     Email address
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
-                                        type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        type="email"
+                                        placeholder="max@muster.ag"
+                                        name="contact_email"
+                                        id="contact_email"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
                             <div className="sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
+                                <label htmlFor="contact_phone" className="block text-sm font-medium leading-6">
                                     Phone number
                                 </label>
                                 <div className="mt-2">
@@ -337,26 +376,24 @@ export const Booth = ({ data }) => {
                                         required={true}
                                         type="text"
                                         placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        name="contact_phone"
+                                        id="contact_phone"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
 
                             <div className="sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium leading-6">
-                                    Role
+                                <label htmlFor="contact_role" className="block text-sm font-medium leading-6">
+                                    Role / position
                                 </label>
                                 <div className="mt-2">
                                     <input
                                         required={true}
                                         type="text"
-                                        placeholder="Max"
-                                        name="firstname"
-                                        id="firstname"
-                                        autoComplete="given-name"
+                                        placeholder="CEO"
+                                        name="contact_role"
+                                        id="contact_role"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
@@ -399,7 +436,7 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="col-span-full">
-                                <label htmlFor="cover-photo" className="block text-sm font-medium leading-6">
+                                <label htmlFor="booth_image" className="block text-sm font-medium leading-6">
                                     Do you already have an idea how your boot will look like?
                                 </label>
                                 <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-200/25 px-6 py-10">
@@ -419,7 +456,6 @@ export const Booth = ({ data }) => {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div className="sm:col-span-6">
                                 {packages()}
@@ -441,13 +477,14 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="sm:col-span-6">
-                                <label htmlFor="idea" className="block text-sm font-medium leading-6">
+                                <label htmlFor="equipment_own" className="block text-sm font-medium leading-6">
+                                    Equipment
                                 </label>
                                 <div className="mt-2">
                                     <textarea
-                                        required={true}
-                                        id="idea"
-                                        name="idea"
+                                        required={false}
+                                        id="equipment_own"
+                                        name="equipment_own"
                                         placeholder="Please describe what you'll bring along"
                                         rows={3}
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
@@ -468,14 +505,14 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="sm:col-span-6">
-                                <label htmlFor="idea" className="block text-sm font-medium leading-6">
+                                <label htmlFor="remarks" className="block text-sm font-medium leading-6">
                                     Remarks and notes
                                 </label>
                                 <div className="mt-2">
                                     <textarea
-                                        required={true}
-                                        id="idea"
-                                        name="idea"
+                                        required={false}
+                                        id="remarks"
+                                        name="remarks"
                                         placeholder="Please note if you have any remarks"
                                         rows={3}
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
@@ -484,6 +521,20 @@ export const Booth = ({ data }) => {
                                 </div>
                             </div>
 
+                            <div className="col-span-1 sm:col-span-2 rounded-xl">
+                                <button
+                                    type="submit"
+                                    className="flex w-full items-center justify-center rounded-xl bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide"
+                                >
+                                    {loading && (
+                                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                        </svg>
+                                    )}
+                                    Submit
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
