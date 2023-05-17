@@ -1,6 +1,12 @@
 import * as React from "react";
 import type { Template } from "tinacms";
 import Link from "next/link";
+import { InformationCircleIcon, PhotoIcon } from '@heroicons/react/20/solid'
+import { useState } from 'react'
+import { Tab } from '@headlessui/react'
+import { RadioGroup } from '@headlessui/react'
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
+
 
 const badges = [
     '15.07.2023',
@@ -34,7 +40,7 @@ export const Booth = ({ data }) => {
                             This helps us to select interesting startups and think about the placement of your booth.
                         </p>
 
-                        <div className="mt-6 rounded-xl bg-sn-black-light p-8">
+                        <div className="mt-6 rounded-3xl bg-sn-black-light p-8">
                             <div className="flex">
                                 <div className="flex-shrink-0">
                                     <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
@@ -70,7 +76,7 @@ export const Booth = ({ data }) => {
                             We'll get in touch with all the startups that have registered up until then. Stay tuned!
                         </p>
 
-                        <div className="mt-6 rounded-xl bg-sn-black-light p-8">
+                        <div className="mt-6 rounded-3xl bg-sn-black-light p-8">
                             <div className="flex">
                                 <div className="flex-shrink-0">
                                     <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
@@ -419,6 +425,65 @@ export const Booth = ({ data }) => {
                                 {packages()}
                             </div>
 
+                            <div className="sm:col-span-6">
+                                {radiobuttons('Do you have a rollup?', [
+                                    { id: 'rollup-yes', title: 'yes' },
+                                    { id: 'rollup-no', title: "no (we will organize one) " },
+                                ])}
+                            </div>
+
+                            <div className="sm:col-span-6">
+                                {radiobuttons('Equipment', [
+                                    { id: 'equipment-own', title: "We'll bring our own equipment" },
+                                    { id: 'equipment-own', title: "We want to rent equipment" },
+                                    { id: 'equipment-own', title: "We are not sure yet" },
+                                ])}
+                            </div>
+
+                            <div className="sm:col-span-6">
+                                <label htmlFor="idea" className="block text-sm font-medium leading-6">
+                                </label>
+                                <div className="mt-2">
+                                    <textarea
+                                        required={true}
+                                        id="idea"
+                                        name="idea"
+                                        placeholder="Please describe what you'll bring along"
+                                        rows={3}
+                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                        defaultValue={''}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="sm:col-span-6">
+                                {radiobuttons('Does your billing address match the company address from above?', [
+                                    { id: 'equipment-own', title: "Yes" },
+                                    { id: 'equipment-own', title: "No" },
+                                ])}
+                            </div>
+
+                            <div className="sm:col-span-6 mt-16">
+                                <h3 className="text-xl font-semibold leading-6 text-slate-200">Additional information</h3>
+                            </div>
+
+                            <div className="sm:col-span-6">
+                                <label htmlFor="idea" className="block text-sm font-medium leading-6">
+                                    Remarks and notes
+                                </label>
+                                <div className="mt-2">
+                                    <textarea
+                                        required={true}
+                                        id="idea"
+                                        name="idea"
+                                        placeholder="Please note if you have any remarks"
+                                        rows={3}
+                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                        defaultValue={''}
+                                    />
+                                </div>
+                            </div>
+
                         </div>
                     </form>
                 </div>
@@ -446,34 +511,6 @@ export const boothBlockSchema: Template = {
 };
 
 
-
-import { InformationCircleIcon, PhotoIcon } from '@heroicons/react/20/solid'
-
-const Infobox = ({ text }) => {
-    return (
-        <div className="rounded-xl bg-sn-black-light p-8">
-            <div className="flex">
-                <div className="flex-shrink-0">
-                    <InformationCircleIcon className="h-5 w-5 text-blue-600" aria-hidden="true" />
-                </div>
-                <div className="ml-3">
-                    <h3 className="text-sm font-medium text-gray-200">There were 2 errors with your submission</h3>
-                    <p className="mt-2 text-sm text-gray-200">A new software update is available. See what’s new in version 2.0.4.</p>
-                    <div className="mt-2 text-sm text-gray-200">
-                        <ul role="list" className="list-disc space-y-1 pl-5">
-                            <li>Your password must be at least 8 characters</li>
-                            <li>Your password must include at least one pro wrestling finishing move</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-
-import { useState } from 'react'
-import { Tab } from '@headlessui/react'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -540,9 +577,9 @@ const Categories = () => {
                             key={category}
                             className={({ selected }) =>
                                 classNames(
-                                    'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-sn-yellow',
+                                    'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
                                     selected
-                                        ? 'bg-sn-black-lightest shadow'
+                                        ? 'bg-sn-black-lightest text-sn-yellow shadow'
                                         : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
                                 )
                             }
@@ -595,7 +632,7 @@ interface RadioButton {
 const radiobuttons = (title: string, data: RadioButton[]) => {
     return (
         <div>
-            <label className="text-base font-semibold">{title}</label>
+            <label className="text-sm font-medium leading-6">{title}</label>
             <fieldset className="mt-4">
                 <legend className="sr-only">{title}</legend>
                 <div className="relative flex items-start space-x-8">
@@ -619,9 +656,6 @@ const radiobuttons = (title: string, data: RadioButton[]) => {
     )
 }
 
-
-import { RadioGroup } from '@headlessui/react'
-import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
 const mailingLists = [
     { id: 1, title: 'Newsletter', description: 'Last message sent an hour ago', users: '621 users' },
