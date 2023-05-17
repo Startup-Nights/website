@@ -1,3 +1,4 @@
+import * as fs from 'fs';
 import { IncomingWebhook } from '@slack/webhook';
 import { uploadFile } from '../../components/util/digitalocean';
 
@@ -7,9 +8,11 @@ const webhook = new IncomingWebhook(url);
 export default async (req, res) => {
     const body = req.body
 
-    console.log(body)
+    console.log(body.images.logo)
 
-    await uploadFile(body.company.name, body.company.logo)
+    if (body.images.logo) {
+        await uploadFile(body.company.name, body.images.logo.data, body.images.logo.name)
+    }
 
     await webhook.send({
         text: `New booth signup received`,

@@ -1,3 +1,4 @@
+import * as fs from 'fs';
 import { useState } from "react";
 import type { Template } from "tinacms";
 import Link from "next/link";
@@ -24,53 +25,76 @@ export const Booth = ({ data }) => {
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
 
+    const [companyLogo, setCompanyLogo] = useState(null);
+
+    // https://stackoverflow.com/a/47069615
     const handleSubmit = async (event) => {
         event.preventDefault()
         setLoading(true);
 
+        const fileBytes = []
+
         const data = event.target;
 
-        const response = await fetch('/api/booth', {
-            method: 'post',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                company: {
-                    name: data.company_name.value,
-                    website: data.company_website.value,
-                    founding_date: data.company_founding_date.value,
-                    employees: data.company_employees.value,
-                    pitch: data.company_pitch.value,
-                    logo: data.company_logo.value,
-                    address: {
-                        street: data.company_street.value,
-                        zip: data.company_zip.value,
-                        city: data.company_city.value,
-                        country: data.company_country.value
-                    }
-                },
-                contact: {
-                    firstname: data.contact_first.value,
-                    lastname: data.contact_last.value,
-                    email: data.contact_email.value,
-                    phone: data.contact_phone.value,
-                    role: data.contact_role.value,
-                },
-                varia: {}
-            }),
-        })
+        const reader = new FileReader()
+        reader.readAsArrayBuffer(companyLogo)
+        reader.addEventListener("load", async (ev) => {
+            const buffer = reader.result
+            const array = new Uint8Array(buffer as ArrayBuffer)
 
-        const { error } = await response.json()
-        setLoading(false);
+            for (var i = 0; i < array.length; i++) {
+                fileBytes.push(array[i])
+            }
 
-        if (error) {
-            setSuccess(false);
-            setErr(true);
-        } else {
-            setErr(false);
-            setSuccess(true);
-        }
+            const response = await fetch('/api/booth', {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    company: {
+                        name: data.company_name.value,
+                        website: data.company_website.value,
+                        founding_date: data.company_founding_date.value,
+                        employees: data.company_employees.value,
+                        pitch: data.company_pitch.value,
+                        address: {
+                            street: data.company_street.value,
+                            zip: data.company_zip.value,
+                            city: data.company_city.value,
+                            country: data.company_country.value
+                        }
+                    },
+                    contact: {
+                        firstname: data.contact_first.value,
+                        lastname: data.contact_last.value,
+                        email: data.contact_email.value,
+                        phone: data.contact_phone.value,
+                        role: data.contact_role.value,
+                    },
+                    images: {
+                        logo: {
+                            name: companyLogo.name,
+                            data: fileBytes
+                        },
+                    },
+                    varia: {}
+                }),
+            })
+
+            const { error } = await response.json()
+            setLoading(false);
+
+            if (error) {
+                setSuccess(false);
+                setErr(true);
+            } else {
+                setErr(false);
+                setSuccess(true);
+            }
+
+
+        }, false)
     }
 
     return (
@@ -308,7 +332,17 @@ export const Booth = ({ data }) => {
                                                 className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
                                             >
                                                 <span>Upload a file</span>
-                                                <input id="company_logo" name="company_logo" type="file" className="sr-only" />
+                                                <input
+                                                    id="company_logo"
+                                                    name="company_logo"
+                                                    onChange={(event) => {
+                                                        if (event.target.files && event.target.files[0]) {
+                                                            setCompanyLogo(event.target.files[0])
+                                                        }
+                                                    }}
+                                                    type="file"
+                                                    className="sr-only"
+                                                />
                                             </label>
                                             <p className="pl-1">or drag and drop</p>
                                         </div>
@@ -471,20 +505,20 @@ export const Booth = ({ data }) => {
                             <div className="sm:col-span-6">
                                 {radiobuttons('Equipment', [
                                     { id: 'equipment-own', title: "We'll bring our own equipment" },
-                                    { id: 'equipment-own', title: "We want to rent equipment" },
-                                    { id: 'equipment-own', title: "We are not sure yet" },
+                                    { id: 'equipment-rent', title: "We want to rent equipment" },
+                                    { id: 'equipment-not-sure', title: "We are not sure yet" },
                                 ])}
                             </div>
 
                             <div className="sm:col-span-6">
-                                <label htmlFor="equipment_own" className="block text-sm font-medium leading-6">
+                                <label htmlFor="equipment_description" className="block text-sm font-medium leading-6">
                                     Equipment
                                 </label>
                                 <div className="mt-2">
                                     <textarea
                                         required={false}
-                                        id="equipment_own"
-                                        name="equipment_own"
+                                        id="equipment_description"
+                                        name="equipment_description"
                                         placeholder="Please describe what you'll bring along"
                                         rows={3}
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
@@ -495,8 +529,8 @@ export const Booth = ({ data }) => {
 
                             <div className="sm:col-span-6">
                                 {radiobuttons('Does your billing address match the company address from above?', [
-                                    { id: 'equipment-own', title: "Yes" },
-                                    { id: 'equipment-own', title: "No" },
+                                    { id: 'billing_address_matches', title: "Yes" },
+                                    { id: 'billing_address_matches_not', title: "No" },
                                 ])}
                             </div>
 
