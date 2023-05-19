@@ -1,4 +1,4 @@
-import { S3 } from "@aws-sdk/client-s3";
+import { PutObjectCommandInput, S3 } from "@aws-sdk/client-s3";
 import { PutObjectCommand } from "@aws-sdk/client-s3";
 
 const s3Client = new S3({
@@ -12,11 +12,11 @@ const s3Client = new S3({
 });
 
 // Uploads the specified file to the chosen path.
-export const uploadFile = async (name: string, data: any, filename: string) => {
-    // Specifies a path within your bucket and the file to upload.
-    const bucketParams = {
+export const uploadFile = async (name: string, data: Uint8Array, filename: string) => {
+    const bucketParams: PutObjectCommandInput = {
         Bucket: process.env.NEXT_PUBLIC_SPACES_NAME,
         Key: '2023/booth/' + name + filename,
+        ACL: 'public',
         Body: data,
     };
 

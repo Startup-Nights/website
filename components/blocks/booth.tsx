@@ -1,26 +1,23 @@
-import * as fs from 'fs';
-import { useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import type { Template } from "tinacms";
 import Link from "next/link";
 import { InformationCircleIcon, PhotoIcon } from '@heroicons/react/20/solid'
-import { Tab } from '@headlessui/react'
+import { Tab, Transition } from '@headlessui/react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { ExclamationCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 
 export const Booth = ({ data }) => {
     const [err, setErr] = useState(false);
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
-
     const [categories, setCategories] = useState([]);
     const [otherInterests, setOtherInterests] = useState([]);
     const [accomodation, setAccomodation] = useState(null);
     const [rollup, setRollup] = useState(null);
     const [equipment, setEquipment] = useState(null);
-
     const [regPackage, setRegPackage] = useState(registration_packages[0]);
-
     const [companyLogo, setCompanyLogo] = useState(null);
 
     // https://stackoverflow.com/a/47069615
@@ -87,6 +84,10 @@ export const Booth = ({ data }) => {
             setSuccess(true);
         }
     }
+
+    useEffect(() => {
+        setRegPackage(registration_packages[0])
+    }, [])
 
     return (
         <div className="bg-sn-black">
@@ -164,7 +165,7 @@ export const Booth = ({ data }) => {
                             We'll get in touch with all the startups that have registered up until then. Stay tuned!
                         </p>
 
-                        <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+                        <div className="mt-6 grid grid-cols-1 gap-y-8 gap-x-4 sm:grid-cols-6">
                             <div className="sm:col-span-3">
                                 <label htmlFor="company_name" className="block text-sm font-medium leading-6">
                                     Company name
@@ -310,7 +311,7 @@ export const Booth = ({ data }) => {
                                 <Categories categories={categories} setCategories={setCategories} />
                             </div>
 
-                            <div className="col-span-full">
+                            {/* <div className="col-span-full">
                                 <label htmlFor="company_logo" className="block text-sm font-medium leading-6">
                                     Company logo
                                 </label>
@@ -340,7 +341,7 @@ export const Booth = ({ data }) => {
                                         <p className="text-xs leading-5 text-gray-600">PNG or SVG up to 10MB</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="sm:col-span-6 mt-16">
                                 <h3 className="text-xl font-semibold leading-6 text-slate-200">Contact person</h3>
@@ -465,7 +466,7 @@ export const Booth = ({ data }) => {
                                 ], accomodation, setAccomodation)}
                             </div>
 
-                            <div className="col-span-full">
+                            {/* <div className="col-span-full">
                                 <label htmlFor="booth_image" className="block text-sm font-medium leading-6">
                                     Do you already have an idea how your boot will look like?
                                 </label>
@@ -485,7 +486,7 @@ export const Booth = ({ data }) => {
                                         <p className="text-xs leading-5 text-gray-600">PNG or JPEG up to 10MB</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="sm:col-span-6">
                                 <Packages regPackage={regPackage} setRegPackage={setRegPackage} />
@@ -627,6 +628,83 @@ export const Booth = ({ data }) => {
                     </form>
                 </div>
             </div >
+
+            <div
+                aria-live="assertive"
+                className="pointer-events-none fixed inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6 z-40"
+            >
+                <div className="flex w-full flex-col items-center space-y-4 sm:items-end">
+                    <Transition
+                        show={err}
+                        as={Fragment}
+                        enter="transform ease-out duration-300 transition"
+                        enterFrom="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
+                        enterTo="translate-y-0 opacity-100 sm:translate-x-0"
+                        leave="transition ease-in duration-100"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-sn-black ring-2 ring-sn-black-lightest shadow-xl shadow-sn-black">
+                            <div className="p-4">
+                                <div className="flex items-start">
+                                    <div className="flex-shrink-0">
+                                        <ExclamationCircleIcon className="h-6 w-6 text-red-400" aria-hidden="true" />
+                                    </div>
+                                    <div className="ml-3 w-0 flex-1 pt-0.5">
+                                        <p className="text-sm font-medium text-gray-200">Shoot! Something went wrong.</p>
+                                        <p className="mt-1 text-sm text-gray-400">Sorry about that. Please shoot us an email <a className="italic underline underline-offset-4" href="mailto:hello@startup-nights.ch">here</a> and we'll get in touch with you.</p>
+                                    </div>
+                                    <div className="ml-4 flex flex-shrink-0">
+                                        <button
+                                            type="button"
+                                            className="inline-flex rounded-md bg-sn-black-lightest text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                            onClick={() => { close() }}
+                                        >
+                                            <span className="sr-only">Close</span>
+                                            <XMarkIcon className="h-5 w-5" aria-hidden="true" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Transition>
+
+                    <Transition
+                        show={success}
+                        as={Fragment}
+                        enter="transform ease-out duration-300 transition"
+                        enterFrom="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
+                        enterTo="translate-y-0 opacity-100 sm:translate-x-0"
+                        leave="transition ease-in duration-100"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-sn-black ring-2 ring-sn-black-lightest shadow-xl shadow-sn-black">
+                            <div className="p-4">
+                                <div className="flex items-start">
+                                    <div className="flex-shrink-0">
+                                        <CheckCircleIcon className="h-6 w-6 text-green-400" aria-hidden="true" />
+                                    </div>
+                                    <div className="ml-3 w-0 flex-1 pt-0.5">
+                                        <p className="text-sm font-medium text-gray-200">Whoop-whoop!</p>
+                                        <p className="mt-1 text-sm text-gray-400">Thanks for your application. We'll get in touch soon. Pinky-promise.</p>
+                                    </div>
+                                    <div className="ml-4 flex flex-shrink-0">
+                                        <button
+                                            type="button"
+                                            className="inline-flex rounded-md bg-sn-black-lightest text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                            onClick={() => { close() }}
+                                        >
+                                            <span className="sr-only">Close</span>
+                                            <XMarkIcon className="h-5 w-5" aria-hidden="true" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Transition>
+                </div>
+            </div>
         </div >
     );
 };
@@ -729,12 +807,13 @@ const radiobuttons = (title: string, name: string, data: RadioButton[], state, s
             <fieldset className="mt-4">
                 <legend className="sr-only">{title}</legend>
                 <div className="relative flex items-start space-x-8">
-                    {data.map((notificationMethod) => (
+                    {data.map((notificationMethod, i) => (
                         <div key={notificationMethod.id} className="flex items-center">
                             <input
                                 id={notificationMethod.id}
                                 name={name}
                                 type="radio"
+                                checked={i === 0}
                                 className="h-4 w-4 bg-sn-black-lightest border-sn-black-lightest text-sn-yellow focus:ring-indigo-600"
                                 onChange={() => setState(notificationMethod.id)}
                             />
@@ -753,11 +832,11 @@ const Packages = ({ regPackage, setRegPackage }) => {
     return (
         <RadioGroup value={regPackage} onChange={setRegPackage}>
             <RadioGroup.Label className="block text-sm font-medium leading-6">
-                Select other formats that you are interested in
+                Select your booth package
             </RadioGroup.Label>
 
-            <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
-                {registration_packages.map((mailingList) => (
+            <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                {registration_packages.map((mailingList, i) => (
                     <RadioGroup.Option
                         key={mailingList.id}
                         value={mailingList}

@@ -49,6 +49,7 @@
     "fs": "^0.0.1-security",
     "graphql-tag": "^2.0.0",
     "install": "^0.13.0",
+    "multiparty": "^4.2.3",
     "next": "^13.1.6",
     "next-seo": "^6.0.0",
     "next-tinacms-dos": "^1.1.2",
