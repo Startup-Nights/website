@@ -102,16 +102,16 @@ export const Booth = ({ data }) => {
     return (
         <div className="bg-sn-black">
             <div className="max-w-5xl mx-auto py-12 px-8 lg:p-24">
-                <div className="text-center mb-20">
+                {/* <div className="text-center mb-20">
                     <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
                         Booth
                     </h2>
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
                         Application for a booth in our Startup World
                     </h1>
-                </div>
+                </div> */}
                 <div>
-                    <div className="mt-12">
+                    <div className="">
                         <p className="text-md leading-6 text-gray-300">
                             We are happy to have you here! Please fill out the form below so that we get to know you a bit better.
                             This helps us to select interesting startups and think about the placement of your booth.
