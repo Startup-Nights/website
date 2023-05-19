@@ -32,6 +32,7 @@
   "dependencies": {
     "@analytics/google-analytics": "^1.0.5",
     "@analytics/google-tag-manager": "^0.5.3",
+    "@aws-sdk/client-s3": "^3.332.0",
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.16",
     "@mailchimp/mailchimp_marketing": "^3.0.80",
@@ -45,8 +46,10 @@
     "embla-carousel-react": "^7.1.0",
     "eslint-config-next": "^13.1.6",
     "final-form": "^4.20.8",
+    "fs": "^0.0.1-security",
     "graphql-tag": "^2.0.0",
     "install": "^0.13.0",
+    "multiparty": "^4.2.3",
     "next": "^13.1.6",
     "next-seo": "^6.0.0",
     "next-tinacms-dos": "^1.1.2",
