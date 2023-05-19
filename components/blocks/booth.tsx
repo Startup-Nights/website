@@ -20,6 +20,11 @@ export const Booth = ({ data }) => {
     const [regPackage, setRegPackage] = useState(registration_packages[0]);
     const [companyLogo, setCompanyLogo] = useState(null);
 
+    const close = () => {
+        setSuccess(false)
+        setErr(false);
+    }
+
     // https://stackoverflow.com/a/47069615
     const handleSubmit = async (event) => {
         event.preventDefault()
@@ -83,6 +88,11 @@ export const Booth = ({ data }) => {
             setErr(false);
             setSuccess(true);
         }
+
+        // remove error messages after 20 seconds
+        setTimeout(() => {
+            close()
+        }, 20 * 1000);
     }
 
     useEffect(() => {
