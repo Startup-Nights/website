@@ -40,6 +40,7 @@ export const Booth = ({ data }) => {
                 employees: data.company_employees.value,
                 pitch: data.company_pitch.value,
                 categories: categories,
+                additional_categories: data.company_additional_category.value,
                 address: {
                     street: data.company_street.value,
                     zip: data.company_zip.value,
@@ -131,6 +132,7 @@ export const Booth = ({ data }) => {
                                     <div className="mt-2 text-gray-400">
                                         <ul role="list" className="list-disc space-y-1 pl-5">
                                             <li>high growth potential</li>
+                                            <li>innovative & unique topic</li>
                                             <li>disruptive approach to solving a problem</li>
                                             <li>young startup</li>
                                         </ul>
@@ -277,7 +279,7 @@ export const Booth = ({ data }) => {
                                 <div className="mt-2">
                                     <input
                                         required={true}
-                                        type="number"
+                                        type="text"
                                         placeholder="8400"
                                         name="company_zip"
                                         id="company_zip"
@@ -320,6 +322,23 @@ export const Booth = ({ data }) => {
                                 <p className="block text-sm font-medium leading-6 mb-2">Company categories</p>
                                 <Categories categories={categories} setCategories={setCategories} />
                             </div>
+
+                            <div className="sm:col-span-6">
+                                <label htmlFor="company_additional_category" className="block text-sm font-medium leading-6">
+                                    If your category is not on the list, please note it here:
+                                </label>
+                                <div className="mt-2">
+                                    <input
+                                        required={false}
+                                        type="text"
+                                        placeholder="Additional company categories..."
+                                        name="company_additional_category"
+                                        id="company_additional_category"
+                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                    />
+                                </div>
+                            </div>
+
 
                             {/* <div className="col-span-full">
                                 <label htmlFor="company_logo" className="block text-sm font-medium leading-6">
@@ -505,7 +524,7 @@ export const Booth = ({ data }) => {
                             <div className="sm:col-span-6">
                                 {radiobuttons('Do you have a rollup?', 'rollup', [
                                     { id: 'rollup-yes', title: 'yes' },
-                                    { id: 'rollup-no', title: "no (we will organize one) " },
+                                    { id: 'rollup-no', title: "no (not yet - you have to organize one!)" },
                                 ], rollup, setRollup)}
                             </div>
 
@@ -560,7 +579,7 @@ export const Booth = ({ data }) => {
                                 <div className="mt-2">
                                     <input
                                         required={true}
-                                        type="number"
+                                        type="text"
                                         placeholder="8400"
                                         name="billing_zip"
                                         id="billing_zip"
@@ -811,6 +830,10 @@ interface RadioButton {
 }
 
 const radiobuttons = (title: string, name: string, data: RadioButton[], state, setState) => {
+    useEffect(() => {
+        setState(data[0].id)
+    }, [])
+
     return (
         <div>
             <label className="text-sm font-medium leading-6">{title}</label>
@@ -823,7 +846,7 @@ const radiobuttons = (title: string, name: string, data: RadioButton[], state, s
                                 id={notificationMethod.id}
                                 name={name}
                                 type="radio"
-                                checked={i === 0}
+                                checked={notificationMethod.id === state}
                                 className="h-4 w-4 bg-sn-black-lightest border-sn-black-lightest text-sn-yellow focus:ring-indigo-600"
                                 onChange={() => setState(notificationMethod.id)}
                             />
@@ -895,11 +918,7 @@ const Packages = ({ regPackage, setRegPackage }) => {
 }
 
 const badges = [
-    '15.07.2023',
-    '15.07.2023',
-    '15.07.2023',
-    '15.07.2023',
-    '15.07.2023',
+    '30.06.23', '24.07.23', '28.07.23', '04.08.23', '18.08.23', '01.09.23'
 ]
 
 const companyCategories = {
