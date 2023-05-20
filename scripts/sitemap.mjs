@@ -27,7 +27,6 @@ async function generate() {
 
   const pages = await globby([
     'content/pages/*.md',
-    '!content/pages/booth.md',
     '!content/pages/terms-and-conditions.md',
     '!content/pages/privacy-policy.md',
   ]);
