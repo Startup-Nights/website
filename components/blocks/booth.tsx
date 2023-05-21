@@ -356,7 +356,7 @@ export const Booth = ({ data }) => {
                             </div>
 
 
-                            {/* <div className="col-span-full">
+                            {/* <div className="col-span-6">
                                 <label htmlFor="company_logo" className="block text-sm font-medium leading-6">
                                     Company logo
                                 </label>
@@ -477,7 +477,7 @@ export const Booth = ({ data }) => {
                             <div className="sm:col-span-6">
                                 <p className="block text-sm font-medium leading-6">Select other formats that you are interested in</p>
 
-                                <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                                <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-2">
                                     {otherInterest.map((interest, i) => (
                                         <li key={interest} className="relative flex items-start">
                                             <div className="flex h-6 items-center">
@@ -504,7 +504,7 @@ export const Booth = ({ data }) => {
                                 </ul>
                             </div>
 
-                            {/* <div className="col-span-full">
+                            {/* <div className="col-span-6">
                                 <label htmlFor="booth_image" className="block text-sm font-medium leading-6">
                                     Do you already have an idea how your boot will look like?
                                 </label>
@@ -534,7 +534,7 @@ export const Booth = ({ data }) => {
                                 <Packages regPackage={regPackage} setRegPackage={setRegPackage} />
                             </div>
 
-                            <div className="col-span-6">
+                            <div className="sm:col-span-6">
                                 <div className="rounded-3xl bg-sn-black-light p-8">
                                     <div className="flex">
                                         <div className="flex-shrink-0">
@@ -668,7 +668,7 @@ export const Booth = ({ data }) => {
                                 </div>
                             </div>
 
-                            <div className="col-span-1 sm:col-span-2 rounded-xl">
+                            <div className="sm:col-span-2 rounded-xl">
                                 <button
                                     type="submit"
                                     className="flex w-full items-center justify-center rounded-xl bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide"
@@ -868,7 +868,7 @@ const radiobuttons = (title: string, name: string, data: RadioButton[], state, s
             <label className="text-sm font-medium leading-6">{title}</label>
             <fieldset className="mt-4">
                 <legend className="sr-only">{title}</legend>
-                <div className="relative flex items-start space-x-8">
+                <div className="relative grid grid-cols-1 space-y-2 sm:flex sm:space-y-0 sm:items-start sm:space-x-8">
                     {data.map((notificationMethod, i) => (
                         <div key={notificationMethod.id} className="flex items-center">
                             <input
@@ -906,7 +906,7 @@ const Packages = ({ regPackage, setRegPackage }) => {
                             classNames(
                                 checked ? 'border-transparent' : 'border-gray-600',
                                 active ? 'border-sn-yellow ring-2 ring-sn-yellow' : '',
-                                'relative flex cursor-pointer rounded-lg border bg-sn-black-light p-4 shadow-sm focus:outline-none'
+                                'relative flex cursor-pointer rounded-3xl border bg-sn-black-light p-8 shadow-sm focus:outline-none'
                             )
                         }
                     >
@@ -914,13 +914,13 @@ const Packages = ({ regPackage, setRegPackage }) => {
                             <>
                                 <span className="flex flex-1">
                                     <span className="flex flex-col">
-                                        <RadioGroup.Label as="span" className="block text-sm font-medium text-gray-200">
-                                            {mailingList.icon} <span className='mx-2'></span> {mailingList.title}
+                                        <RadioGroup.Label as="span" className="block text-lg font-bold text-gray-200">
+                                            {mailingList.icon} <span className='mx-1'></span> {mailingList.title}
                                         </RadioGroup.Label>
-                                        <RadioGroup.Description as="span" className="mt-2 flex items-center text-sm text-gray-200">
+                                        <RadioGroup.Description as="span" className="mt-4 flex items-center text-sm text-gray-200">
                                             {mailingList.description}
                                         </RadioGroup.Description>
-                                        <RadioGroup.Description as="span" className="mt-6 text-sm font-medium text-gray-400">
+                                        <RadioGroup.Description as="span" className="mt-4 text-sm font-medium text-gray-400">
                                             {mailingList.price}
                                         </RadioGroup.Description>
                                     </span>
@@ -933,7 +933,7 @@ const Packages = ({ regPackage, setRegPackage }) => {
                                     className={classNames(
                                         active ? 'border' : 'border-2',
                                         checked ? 'border-sn-yellow' : 'border-transparent',
-                                        'pointer-events-none absolute -inset-px rounded-lg'
+                                        'pointer-events-none absolute -inset-px rounded-3xl'
                                     )}
                                     aria-hidden="true"
                                 />
