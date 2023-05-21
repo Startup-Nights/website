@@ -100,6 +100,13 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ubs.png
             alt: UBS
             link: 'https://ubs.com'
+      - title: Key Partner
+        grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
+            alt: IGE
+            link: 'https://ige.ch'
       - title: Legal Partner
         grid_cols: 4
         partners:
@@ -126,13 +133,6 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sparrow-ventures.png
             alt: Sparrow Ventures
             link: 'https://sparrow-ventures.com'
-      - title: Key Partner
-        grid_cols: 4
-        partners:
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
-            alt: IGE
-            link: 'https://ige.ch'
       - title: Supporter
         grid_cols: 4
         partners:
@@ -175,7 +175,7 @@ blocks:
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/obrist-helps.png
             alt: Obrist Helps
-            link: 'https://obrist-helps.ch'
+            link: 'https://www.obrist-helps.ch/startups'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kanton-zuerich.png
             alt: Kanton Zürich
