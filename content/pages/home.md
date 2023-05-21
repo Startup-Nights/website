@@ -214,12 +214,6 @@ blocks:
             alt: Sparrow Ventures
             link: 'https://sparrow-ventures.com'
     _template: partner_list
-  - title: Are you ready?
-    date: '2023-11-02'
-    cta:
-      link: /tickets
-      text: Get your ticket
-    _template: countdown
   - content_block:
       subtitle: Impressions
       title: Startup Nights 2022.
@@ -242,6 +236,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
 
 
 
