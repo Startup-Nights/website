@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import type { Template } from "tinacms";
 import Link from "next/link";
-import { InformationCircleIcon, PhotoIcon } from '@heroicons/react/20/solid'
+import { InformationCircleIcon } from '@heroicons/react/20/solid'
 import { Tab, Transition } from '@headlessui/react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
@@ -15,10 +15,8 @@ export const Booth = ({ data }) => {
     const [categories, setCategories] = useState([]);
     const [otherInterests, setOtherInterests] = useState([]);
     const [accomodation, setAccomodation] = useState(null);
-    const [rollup, setRollup] = useState(null);
     const [equipment, setEquipment] = useState(null);
     const [regPackage, setRegPackage] = useState(registration_packages[0]);
-    const [companyLogo, setCompanyLogo] = useState(null);
 
     const close = () => {
         setSuccess(false)
@@ -37,6 +35,9 @@ export const Booth = ({ data }) => {
                 name: data.company_name.value,
                 website: data.company_website.value,
                 founding_date: data.company_founding_date.value,
+                linkedin: {
+                    founder: data.company_founder_linkedin.value
+                },
                 employees: data.company_employees.value,
                 pitch: data.company_pitch.value,
                 categories: categories,
@@ -66,7 +67,6 @@ export const Booth = ({ data }) => {
                 package: regPackage,
                 formats: otherInterests,
                 accomodation: accomodation,
-                rollup: rollup,
                 equipment: equipment
             }
         }
@@ -142,7 +142,7 @@ export const Booth = ({ data }) => {
                         </div>
 
                         <p className="mt-6 text-md leading-6 text-gray-300">
-                            We review the registration in batches of 30 startups latest at the following dates:
+                            We review the registration in batches at the following dates:
                         </p>
 
                         <div className="mt-4 flex flex-wrap justify-start gap-2">
@@ -161,7 +161,7 @@ export const Booth = ({ data }) => {
                                     <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
                                 </div>
                                 <div className="ml-3">
-                                    <h3 className="font-medium text-gray-200">Note that you have to buy the tickets for the event separatly</h3>
+                                    <h3 className="font-medium text-gray-200">Note that you have to buy the tickets for the event separatley</h3>
                                     <p className="mt-2 text-gray-400">
                                         You can get the tickets <Link href={'/tickets'} className="text-sn-yellow underline hover:text-sn-yellow-dark underline-offset-4">here</Link>. But you might want to apply
                                         for the booth first - we'll send you a little welcome present after your application.
@@ -252,6 +252,22 @@ export const Booth = ({ data }) => {
                                         rows={3}
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                         defaultValue={''}
+                                    />
+                                </div>
+                            </div>
+
+                           <div className="sm:col-span-3">
+                                <label htmlFor="company_founder_linkedin" className="block text-sm font-medium leading-6">
+                                    LinkedIn profile of the founder
+                                </label>
+                                <div className="mt-2">
+                                    <input
+                                        required={true}
+                                        type="text"
+                                        placeholder="Link to LinkedIn profile"
+                                        name="company_founder_linkedin"
+                                        id="company_founder_linkedin"
+                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -488,13 +504,6 @@ export const Booth = ({ data }) => {
                                 </ul>
                             </div>
 
-                            <div className="sm:col-span-6">
-                                {radiobuttons('Do you need support booking accommodation?', 'accomodation', [
-                                    { id: 'accomodation-yes', title: 'yes' },
-                                    { id: 'accomodation-no', title: 'no' },
-                                ], accomodation, setAccomodation)}
-                            </div>
-
                             {/* <div className="col-span-full">
                                 <label htmlFor="booth_image" className="block text-sm font-medium leading-6">
                                     Do you already have an idea how your boot will look like?
@@ -517,15 +526,28 @@ export const Booth = ({ data }) => {
                                 </div>
                             </div> */}
 
+                            <div className="sm:col-span-6 mt-16">
+                                <h3 className="text-xl font-semibold leading-6 text-slate-200">Booth details</h3>
+                            </div>
+
                             <div className="sm:col-span-6">
                                 <Packages regPackage={regPackage} setRegPackage={setRegPackage} />
                             </div>
 
-                            <div className="sm:col-span-6">
-                                {radiobuttons('Do you have a rollup?', 'rollup', [
-                                    { id: 'rollup-yes', title: 'yes' },
-                                    { id: 'rollup-no', title: "no (not yet - you have to organize one!)" },
-                                ], rollup, setRollup)}
+                            <div className="col-span-6">
+                                <div className="rounded-3xl bg-sn-black-light p-8">
+                                    <div className="flex">
+                                        <div className="flex-shrink-0">
+                                            <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
+                                        </div>
+                                        <div className="ml-3">
+                                            <h3 className="font-medium text-gray-200">Note that you have to bring your own rollup</h3>
+                                            <p className="mt-2 text-gray-400">
+                                                If you don't have one yet, you'll have to organize one by yourself.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div className="sm:col-span-6">
@@ -620,6 +642,13 @@ export const Booth = ({ data }) => {
 
                             <div className="sm:col-span-6 mt-16">
                                 <h3 className="text-xl font-semibold leading-6 text-slate-200">Additional information</h3>
+                            </div>
+
+                            <div className="sm:col-span-6">
+                                {radiobuttons('Do you need support booking accommodation?', 'accomodation', [
+                                    { id: 'accomodation-yes', title: 'yes' },
+                                    { id: 'accomodation-no', title: 'no' },
+                                ], accomodation, setAccomodation)}
                             </div>
 
                             <div className="sm:col-span-6">
@@ -918,7 +947,7 @@ const Packages = ({ regPackage, setRegPackage }) => {
 }
 
 const badges = [
-    '30.06.23', '24.07.23', '28.07.23', '04.08.23', '18.08.23', '01.09.23'
+    '30.06.23', '14.07.23', '28.07.23', '04.08.23', '18.08.23', '01.09.23'
 ]
 
 const companyCategories = {
