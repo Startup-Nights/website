@@ -48,7 +48,7 @@ blocks:
         text: Join our mission
     testimonial:
       name: Melanie Gabriel
-      position: CEO Yokoy and Keynote Speaker 2021
+      position: 'Co-Founder & CMO Yokoy, Keynote Speaker 2021'
       quote: >-
         Such events are extremely important for the startup community. You get
         to meet people who have the same hassle and who can share their
@@ -236,6 +236,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
 
 
 
