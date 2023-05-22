@@ -156,7 +156,8 @@ export const PartnerForm = ({ data }) => {
                                     <input
                                         required={true}
                                         id="budget"
-                                        placeholder="2000"
+                                        placeholder="2500"
+                                        min={2500}
                                         ref={budgetRef}
                                         name="budget"
                                         type="number"
