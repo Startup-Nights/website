@@ -7,9 +7,9 @@ import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { ExclamationCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
-
 export const Booth = ({ data }) => {
     const [err, setErr] = useState(false);
+    const [sameBilling, setSameBilling] = useState(true)
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
     const [categories, setCategories] = useState([]);
@@ -30,7 +30,7 @@ export const Booth = ({ data }) => {
 
         const data = event.target;
 
-        const body = {
+        const body: any = {
             company: {
                 name: data.company_name.value,
                 website: data.company_website.value,
@@ -48,12 +48,7 @@ export const Booth = ({ data }) => {
                     city: data.company_city.value,
                     country: data.company_country.value
                 },
-                address_billing: {
-                    street: data.billing_street.value,
-                    zip: data.billing_zip.value,
-                    city: data.billing_city.value,
-                    country: data.billing_country.value
-                },
+                address_billing: {}
             },
             contact: {
                 firstname: data.contact_first.value,
@@ -68,6 +63,17 @@ export const Booth = ({ data }) => {
                 formats: otherInterests,
                 accomodation: accomodation,
                 equipment: equipment
+            }
+        }
+
+        if (sameBilling) {
+            body.company.address_billing = body.company.address
+        } else {
+            body.company.address_billing = {
+                street: data.billing_street.value,
+                zip: data.billing_zip.value,
+                city: data.billing_city.value,
+                country: data.billing_country.value
             }
         }
 
@@ -137,6 +143,10 @@ export const Booth = ({ data }) => {
                                             <li>young startup</li>
                                         </ul>
                                     </div>
+                                    <p className="mt-2 text-gray-400">
+                                        Are you not a startup (anymore) and still want to participate at the event with a booth? Then you
+                                        should check out our <Link className="text-sn-yellow underline hover:text-sn-yellow-dark underline-offset-4" href={'/partner#partner_form'}>partner application</Link>.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -256,7 +266,7 @@ export const Booth = ({ data }) => {
                                 </div>
                             </div>
 
-                           <div className="sm:col-span-3">
+                            <div className="sm:col-span-3">
                                 <label htmlFor="company_founder_linkedin" className="block text-sm font-medium leading-6">
                                     LinkedIn profile of the founder
                                 </label>
@@ -579,66 +589,93 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="sm:col-span-6">
-                                <label htmlFor="billing_street" className="block text-sm font-medium leading-6">
-                                    Street address
-                                </label>
-                                <div className="mt-2">
-                                    <input
-                                        required={true}
-                                        type="text"
-                                        placeholder="Musterstrasse"
-                                        name="billing_street"
-                                        id="billing_street"
-                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
-                                    />
+                                <div className="relative flex items-start">
+                                    <div className="flex h-6 items-center">
+                                        <input
+                                            id='same_billing_address'
+                                            aria-describedby="comments-description"
+                                            name='same_billing_address'
+                                            type="checkbox"
+                                            checked={sameBilling}
+                                            onClick={() => {
+                                                setSameBilling(!sameBilling)
+                                            }}
+                                            className="h-4 w-4 rounded bg-sn-black-lightest border-sn-black-lightest text-sn-yellow-dark focus:ring-sn-yellow-dark"
+                                        />
+                                    </div>
+                                    <div className="ml-3 text-sm leading-6">
+                                        <label htmlFor='same_billing_address' className="font-medium text-gray-200">
+                                            Same billing address as company address
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="sm:col-span-2">
-                                <label htmlFor="billing_zip" className="block text-sm font-medium leading-6">
-                                    ZIP / postal code
-                                </label>
-                                <div className="mt-2">
-                                    <input
-                                        required={true}
-                                        type="text"
-                                        placeholder="8400"
-                                        name="billing_zip"
-                                        id="billing_zip"
-                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
-                                    />
-                                </div>
-                            </div>
-                            <div className="sm:col-span-2">
-                                <label htmlFor="billing_city" className="block text-sm font-medium leading-6">
-                                    City
-                                </label>
-                                <div className="mt-2">
-                                    <input
-                                        required={true}
-                                        type="text"
-                                        placeholder="Winterthur"
-                                        name="billing_city"
-                                        id="billing_city"
-                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
-                                    />
-                                </div>
-                            </div>
-                            <div className="sm:col-span-2">
-                                <label htmlFor="billing_country" className="block text-sm font-medium leading-6">
-                                    Country
-                                </label>
-                                <div className="mt-2">
-                                    <input
-                                        required={true}
-                                        type="text"
-                                        placeholder="Switzerland"
-                                        name="billing_country"
-                                        id="billing_country"
-                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
-                                    />
-                                </div>
-                            </div>
+                            {!sameBilling && (
+                                <>
+                                    <div className="sm:col-span-6">
+                                        <label htmlFor="billing_street" className="block text-sm font-medium leading-6">
+                                            Street address
+                                        </label>
+                                        <div className="mt-2">
+                                            <input
+                                                required={true}
+                                                type="text"
+                                                placeholder="Musterstrasse"
+                                                name="billing_street"
+                                                id="billing_street"
+                                                className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div className="sm:col-span-2">
+                                        <label htmlFor="billing_zip" className="block text-sm font-medium leading-6">
+                                            ZIP / postal code
+                                        </label>
+                                        <div className="mt-2">
+                                            <input
+                                                required={true}
+                                                type="text"
+                                                placeholder="8400"
+                                                name="billing_zip"
+                                                id="billing_zip"
+                                                className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="sm:col-span-2">
+                                        <label htmlFor="billing_city" className="block text-sm font-medium leading-6">
+                                            City
+                                        </label>
+                                        <div className="mt-2">
+                                            <input
+                                                required={true}
+                                                type="text"
+                                                placeholder="Winterthur"
+                                                name="billing_city"
+                                                id="billing_city"
+                                                className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="sm:col-span-2">
+                                        <label htmlFor="billing_country" className="block text-sm font-medium leading-6">
+                                            Country
+                                        </label>
+                                        <div className="mt-2">
+                                            <input
+                                                required={true}
+                                                type="text"
+                                                placeholder="Switzerland"
+                                                name="billing_country"
+                                                id="billing_country"
+                                                className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                            />
+                                        </div>
+                                    </div>
+                                </>
+                            )}
 
                             <div className="sm:col-span-6 mt-16">
                                 <h3 className="text-xl font-semibold leading-6 text-slate-200">Additional information</h3>
@@ -792,6 +829,10 @@ function classNames(...classes) {
 }
 
 const Categories = ({ categories, setCategories }) => {
+    const checked = (cat: string): boolean => {
+        return categories.filter(i => i === cat).length > 0
+    }
+
     return (
         <div className="w-full">
             <Tab.Group>
@@ -1009,8 +1050,8 @@ const companyCategories = {
 }
 
 const registration_packages = [
-    { id: 1, icon: '✈️', title: 'Paperplane', price: 'CHF 200', description: '2x2m area with a bar table and 230V outlet' },
-    { id: 2, icon: '🚀', title: 'Rocket', price: 'CHF 400', description: '3x3m area with a bar table and 230V outlet' }
+    { id: 1, icon: '✈️', title: 'Paperplane', price: 'CHF 300', description: '2x2m area with a bar table and 230V outlet' },
+    { id: 2, icon: '🚀', title: 'Rocket', price: 'CHF 500', description: '3x3m area with a bar table and 230V outlet' }
 ]
 
 const otherInterest = [
