@@ -171,7 +171,7 @@ export const Booth = ({ data }) => {
                                     <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
                                 </div>
                                 <div className="ml-3">
-                                    <h3 className="font-medium text-gray-200">Note that you have to buy the tickets for the event separatley</h3>
+                                    <h3 className="font-medium text-gray-200">Note that you have to buy the tickets for the event separately</h3>
                                     <p className="mt-2 text-gray-400">
                                         You can get the tickets <Link href={'/tickets'} className="text-sn-yellow underline hover:text-sn-yellow-dark underline-offset-4">here</Link>. But you might want to apply
                                         for the booth first - we'll send you a little welcome present after your application.
