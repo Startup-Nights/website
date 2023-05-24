@@ -12,11 +12,21 @@ export const Booth = ({ data }) => {
     const [sameBilling, setSameBilling] = useState(true)
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
-    const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState(companyCategories);
     const [otherInterests, setOtherInterests] = useState([]);
     const [accomodation, setAccomodation] = useState(null);
     const [equipment, setEquipment] = useState(null);
     const [regPackage, setRegPackage] = useState(registration_packages[0]);
+
+    const getSelectedCategories = () => {
+        const selected = []
+        categories.forEach(item => item.subcategories.forEach(element => {
+            if (element.selected) {
+                selected.push(element.name)
+            }
+        }))
+        return selected
+    }
 
     const close = () => {
         setSuccess(false)
@@ -40,7 +50,7 @@ export const Booth = ({ data }) => {
                 },
                 employees: data.company_employees.value,
                 pitch: data.company_pitch.value,
-                categories: categories,
+                categories: getSelectedCategories(),
                 additional_categories: data.company_additional_category.value,
                 address: {
                     street: data.company_street.value,
@@ -346,6 +356,9 @@ export const Booth = ({ data }) => {
 
                             <div className="sm:col-span-6">
                                 <p className="block text-sm font-medium leading-6 mb-2">Company categories</p>
+                                <p className="mt-6 mb-4 text-sm leading-6 text-gray-300">
+                                    Selected: <span className="ml-2 italic">{getSelectedCategories().length > 0 ? getSelectedCategories().join(', ') : 'none'}</span>
+                                </p>
                                 <Categories categories={categories} setCategories={setCategories} />
                             </div>
 
@@ -597,7 +610,7 @@ export const Booth = ({ data }) => {
                                             name='same_billing_address'
                                             type="checkbox"
                                             checked={sameBilling}
-                                            onClick={() => {
+                                            onChange={() => {
                                                 setSameBilling(!sameBilling)
                                             }}
                                             className="h-4 w-4 rounded bg-sn-black-lightest border-sn-black-lightest text-sn-yellow-dark focus:ring-sn-yellow-dark"
@@ -829,17 +842,13 @@ function classNames(...classes) {
 }
 
 const Categories = ({ categories, setCategories }) => {
-    const checked = (cat: string): boolean => {
-        return categories.filter(i => i === cat).length > 0
-    }
-
     return (
         <div className="w-full">
             <Tab.Group>
                 <Tab.List className="flex space-x-1 rounded-xl bg-sn-black-light p-1">
-                    {Object.keys(companyCategories).map((category) => (
+                    {companyCategories.map((category) => (
                         <Tab
-                            key={category}
+                            key={category.name}
                             className={({ selected }) =>
                                 classNames(
                                     'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
@@ -849,12 +858,12 @@ const Categories = ({ categories, setCategories }) => {
                                 )
                             }
                         >
-                            {category}
+                            {category.name}
                         </Tab>
                     ))}
                 </Tab.List>
                 <Tab.Panels className="mt-2">
-                    {Object.values(companyCategories).map((category, idx) => (
+                    {companyCategories.map((category, idx) => (
                         <Tab.Panel
                             key={idx}
                             className={classNames(
@@ -862,24 +871,24 @@ const Categories = ({ categories, setCategories }) => {
                             )}
                         >
                             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                                {category.map((cat, i) => (
+                                {category.subcategories.map((cat, i) => (
                                     <li key={i} className="relative flex items-start">
                                         <div className="flex h-6 items-center">
                                             <input
-                                                id={cat.name}
+                                                id={`category-${idx}-${i}`}
                                                 aria-describedby="comments-description"
-                                                name={cat.name}
+                                                name={`category-${idx}-${i}`}
                                                 type="checkbox"
                                                 className="h-4 w-4 rounded bg-sn-black-lightest border-sn-black-lightest text-sn-yellow-dark focus:ring-sn-yellow-dark"
-                                                onClick={() => {
-                                                    // todo: check if being checked or unchecked -> add / remove
-                                                    categories.push(cat.name)
-                                                    setCategories(categories)
+                                                checked={categories[idx].subcategories[i].selected}
+                                                onChange={() => {
+                                                    categories[idx].subcategories[i].selected = !categories[idx].subcategories[i].selected
+                                                    setCategories([...categories])
                                                 }}
                                             />
                                         </div>
                                         <div className="ml-3 text-sm leading-6">
-                                            <label htmlFor={cat.name} className="font-medium text-gray-200">
+                                            <label htmlFor={`category-${idx}-${i}`} className="font-medium text-gray-200">
                                                 {cat.name}
                                             </label>
                                         </div>
@@ -991,63 +1000,73 @@ const badges = [
     '30.06.23', '14.07.23', '28.07.23', '04.08.23', '18.08.23', '01.09.23'
 ]
 
-const companyCategories = {
-    'Autonomous Systems': [
-        // autonomous systems
-        { name: 'Artificial Intelligence' },
-        { name: 'Augmented & Virtual Reality' },
-        { name: 'Data Mining & Machine Learning' },
-        { name: 'Mobility Robotics' },
-        { name: 'Smart Buildings' },
-        { name: 'Smart Cities' },
-        { name: 'Supply Chain & Logistics', },
-    ],
-    'Health Tech': [
-        // healht tech
-        { name: 'Biotech', },
-        { name: 'Digital Health', },
-        { name: 'Healthcare', },
-        { name: 'Medtech & Pharma', },
-        { name: 'Wearables', },
-        { name: 'Wellbeing', },
-    ],
-    'Sustainable Tech': [
-        // sustainable tech
-        { name: 'Agricultural Tech', },
-        { name: 'CleanTech', },
-        { name: 'Energy Transition', },
-        { name: 'Environmental Economics', },
-        { name: 'Foodtech', },
-        { name: 'Micro- / Nanoech', },
-        { name: 'New Materials', },
-        { name: 'Social Entrepreneurship', },
-        { name: 'Sustainable Living', },
-    ],
-    'ICT & Services': [
-        { name: 'FinTech', },
-        { name: 'Funding / Alternative Finance', }, { name: 'InsurTech', },
-        { name: 'LegalTech', },
-        { name: 'Payments', },
-        { name: 'PropTech', },
-        { name: 'RegTech', },
-        { name: 'Security & Privacy', },
-        { name: 'Art & Culture', },
-        { name: 'Consumer Electronics', },
-        { name: 'E-Commerce & Online Marketplaces', },
-        { name: 'Education', },
-        { name: 'Enterprise Software', },
-        { name: 'Gaming', },
-        { name: 'Industrial Internet & IoT', },
-        { name: 'Lifestyle & Fashion', },
-        { name: 'Marketing & AdTech', },
-        { name: 'Mobile', },
-        { name: 'Hardware & Software', },
-        { name: 'News & Entertainment', },
-        { name: 'Social & Communities', },
-        { name: 'Sports & Performance', },
-        { name: 'Travel & Tourism', },
-    ],
-}
+const companyCategories = [
+    {
+        name: 'Autonomous Systems',
+        subcategories: [
+            { name: 'Artificial Intelligence', selected: false },
+            { name: 'Augmented & Virtual Reality', selected: false },
+            { name: 'Data Mining & Machine Learning', selected: false },
+            { name: 'Mobility Robotics', selected: false },
+            { name: 'Smart Buildings', selected: false },
+            { name: 'Smart Cities', selected: false },
+            { name: 'Supply Chain & Logistics', selected: false },
+        ]
+    },
+    {
+        name: 'Health Tech',
+        subcategories: [
+            { name: 'Biotech', selected: false },
+            { name: 'Digital Health', selected: false },
+            { name: 'Healthcare', selected: false },
+            { name: 'Medtech & Pharma', selected: false },
+            { name: 'Wearables', selected: false },
+            { name: 'Wellbeing', selected: false },
+        ]
+    },
+    {
+        name: 'Sustainable Tech',
+        subcategories: [
+            { name: 'Agricultural Tech', selected: false },
+            { name: 'CleanTech', selected: false },
+            { name: 'Energy Transition', selected: false },
+            { name: 'Environmental Economics', selected: false },
+            { name: 'Foodtech', selected: false },
+            { name: 'Micro- / Nanoech', selected: false },
+            { name: 'New Materials', selected: false },
+            { name: 'Social Entrepreneurship', selected: false },
+            { name: 'Sustainable Living', selected: false },
+        ]
+    },
+    {
+        name: 'ICT & Services',
+        subcategories: [
+            { name: 'FinTech', selected: false },
+            { name: 'Funding / Alternative Finance', selected: false },
+            { name: 'InsurTech', selected: false },
+            { name: 'LegalTech', selected: false },
+            { name: 'Payments', selected: false },
+            { name: 'PropTech', selected: false },
+            { name: 'RegTech', selected: false },
+            { name: 'Security & Privacy', selected: false },
+            { name: 'Art & Culture', selected: false },
+            { name: 'Consumer Electronics', selected: false },
+            { name: 'E-Commerce & Online Marketplaces', selected: false },
+            { name: 'Education', selected: false },
+            { name: 'Enterprise Software', selected: false },
+            { name: 'Gaming', selected: false },
+            { name: 'Industrial Internet & IoT', selected: false },
+            { name: 'Lifestyle & Fashion', selected: false },
+            { name: 'Marketing & AdTech', selected: false },
+            { name: 'Mobile', selected: false },
+            { name: 'Hardware & Software', selected: false },
+            { name: 'News & Entertainment', selected: false },
+            { name: 'Social & Communities', selected: false },
+            { name: 'Sports & Performance', selected: false },
+            { name: 'Travel & Tourism', selected: false },
+        ]
+    }
+]
 
 const registration_packages = [
     { id: 1, icon: '✈️', title: 'Paperplane', price: 'CHF 300', description: '2x2m area with a bar table and 230V outlet' },
