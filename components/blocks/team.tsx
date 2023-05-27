@@ -44,7 +44,7 @@ export const Team = ({ data }) => {
                                             <div className="flex items-center gap-x-6 border-2 border-transparent rounded-3xl p-4 bg-sn-black-lightest group-hover:border-gray-200">
                                                 <Image
                                                     src={person.src ? person.src : '/user.svg'}
-                                                    alt={person?.name}
+                                                    alt={person?.name ? person.name : 'unknown'}
                                                     className="rounded-full"
                                                     width={diameter}
                                                     height={diameter}
@@ -108,19 +108,16 @@ export const teamBlockSchema: Template = {
                         {
                             label: "Name",
                             name: "name",
-                            required: true,
                             type: "string",
                         },
                         {
                             label: "Position",
                             name: "position",
-                            required: true,
                             type: "string",
                         },
                         {
                             label: "LinkedIn",
                             name: "linkedin",
-                            required: true,
                             type: "string"
                         },
                         {

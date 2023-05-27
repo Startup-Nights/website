@@ -202,6 +202,12 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/florent-beqiri.jpg
             alt: Florent Beqiri
+          - name: Holger Rannow
+            position: Waste Management
+            linkedin: 'https://www.linkedin.com/in/rannowholger/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/holger-rannow.png
+            alt: Holger Rannow
       - subtitle: Program Team
         title: Entertainers at heart.
         members:
@@ -360,6 +366,9 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
+
+
 
 
 
