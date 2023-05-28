@@ -23,6 +23,7 @@ export const Booth = ({ data }) => {
     const [accomodation, setAccomodation] = useState(null);
     const [equipment, setEquipment] = useState(null);
     const [regPackage, setRegPackage] = useState(registration_packages[0]);
+    const [ukraine, setUkraine] = useState(null)
 
     const [companyLogoLoading, setCompanyLogoLoading] = useState({
         downloadUrl: '',
@@ -122,6 +123,7 @@ export const Booth = ({ data }) => {
                 package: regPackage,
                 formats: otherInterests,
                 accomodation: accomodation,
+                ukraine: ukraine,
                 equipment: equipment
             }
         }
@@ -442,7 +444,7 @@ export const Booth = ({ data }) => {
                                                 })
                                             }}
                                         >
-                                            Re-upload logo
+                                            Change logo
                                         </button>
 
                                         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 group">
@@ -609,28 +611,6 @@ export const Booth = ({ data }) => {
                                 </ul>
                             </div>
 
-                            {/* <div className="col-span-6">
-                                <label htmlFor="booth_image" className="block text-sm font-medium leading-6">
-                                    Do you already have an idea how your boot will look like?
-                                </label>
-                                <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-200/25 px-6 py-10">
-                                    <div className="text-center">
-                                        <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
-                                        <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
-                                            <label
-                                                htmlFor="booth_image"
-                                                className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
-                                            >
-                                                <span>Upload a file</span>
-                                                <input id="both_image" name="booth_image" type="file" className="sr-only" />
-                                            </label>
-                                            <p className="pl-1">or drag and drop</p>
-                                        </div>
-                                        <p className="text-xs leading-5 text-gray-600">PNG or JPEG up to 10MB</p>
-                                    </div>
-                                </div>
-                            </div> */}
-
                             <div className="sm:col-span-6 mt-16">
                                 <h3 className="text-xl font-semibold leading-6 text-slate-200">Booth details</h3>
                             </div>
@@ -778,9 +758,16 @@ export const Booth = ({ data }) => {
 
                             <div className="sm:col-span-6">
                                 {radiobuttons('Do you need support booking accommodation?', 'accomodation', [
-                                    { id: 'accomodation-yes', title: 'yes' },
                                     { id: 'accomodation-no', title: 'no' },
+                                    { id: 'accomodation-yes', title: 'yes' },
                                 ], accomodation, setAccomodation)}
+                            </div>
+
+                            <div className="sm:col-span-6">
+                                {radiobuttons('Are you a startup from Ukraine?', 'ukraine', [
+                                    { id: 'ukraine-no', title: 'no' },
+                                    { id: 'ukraine-yes', title: 'yes' },
+                                ], ukraine, setUkraine)}
                             </div>
 
                             <div className="sm:col-span-6">
