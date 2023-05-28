@@ -7,6 +7,12 @@ import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { ExclamationCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
+enum uploadState {
+    None = 0,
+    Uploading,
+    Finished
+}
+
 export const Booth = ({ data }) => {
     const [err, setErr] = useState(false);
     const [sameBilling, setSameBilling] = useState(true)
@@ -18,8 +24,17 @@ export const Booth = ({ data }) => {
     const [equipment, setEquipment] = useState(null);
     const [regPackage, setRegPackage] = useState(registration_packages[0]);
 
+    const [companyLogoLoading, setCompanyLogoLoading] = useState({
+        downloadUrl: '',
+        state: uploadState.None
+    });
+
     // handle file uploads
     const handleUpload = async (event) => {
+        setCompanyLogoLoading({
+            downloadUrl: '',
+            state: uploadState.Uploading
+        })
         const url = 'https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/upload'
         const file = event.target.files[0]
 
@@ -37,7 +52,7 @@ export const Booth = ({ data }) => {
         if (data.error) {
             console.log(data.error)
         }
-        const uploadurl = data.url
+        const uploadurl = data.upload
 
         const uploadResponse = await fetch(uploadurl, {
             method: 'put',
@@ -47,9 +62,13 @@ export const Booth = ({ data }) => {
             },
             body: file,
         })
+
+        setCompanyLogoLoading({
+            state: uploadState.Finished,
+            downloadUrl: data.download,
+        })
     }
 
-    const [companyLogo, setCompanyLogo] = useState(null);
 
     const getSelectedCategories = () => {
         const selected = []
@@ -71,85 +90,76 @@ export const Booth = ({ data }) => {
         event.preventDefault()
         setLoading(true);
 
-        const reader = new FileReader()
-        reader.readAsDataURL(companyLogo)
-        reader.addEventListener("load", async (ev) => {
-            const buffer = reader.result as ArrayBuffer
-            const logo = Buffer.from(buffer).toString('base64')
+        const data = event.target;
 
-            const data = event.target;
-
-            const body: any = {
-                company: {
-                    name: data.company_name.value,
-                    website: data.company_website.value,
-                    founding_date: data.company_founding_date.value,
-                    linkedin: {
-                        founder: data.company_founder_linkedin.value
-                    },
-                    employees: data.company_employees.value,
-                    pitch: data.company_pitch.value,
-                    categories: getSelectedCategories(),
-                    additional_categories: data.company_additional_category.value,
-                    address: {
-                        street: data.company_street.value,
-                        zip: data.company_zip.value,
-                        city: data.company_city.value,
-                        country: data.company_country.value
-                    },
-                    address_billing: {}
+        const body: any = {
+            company: {
+                name: data.company_name.value,
+                website: data.company_website.value,
+                founding_date: data.company_founding_date.value,
+                linkedin: [data.company_founder_linkedin.value],
+                employees: data.company_employees.value,
+                pitch: data.company_pitch.value,
+                categories: getSelectedCategories(),
+                additional_categories: data.company_additional_category.value,
+                logo: companyLogoLoading.downloadUrl,
+                address: {
+                    street: data.company_street.value,
+                    zip: data.company_zip.value,
+                    city: data.company_city.value,
+                    country: data.company_country.value
                 },
-                contact: {
-                    firstname: data.contact_first.value,
-                    lastname: data.contact_last.value,
-                    email: data.contact_email.value,
-                    phone: data.contact_phone.value,
-                    role: data.contact_role.value,
-                },
-                images: {},
-                varia: {
-                    package: regPackage,
-                    formats: otherInterests,
-                    accomodation: accomodation,
-                    equipment: equipment
-                }
+                address_billing: {}
+            },
+            contact: {
+                firstname: data.contact_first.value,
+                lastname: data.contact_last.value,
+                email: data.contact_email.value,
+                phone: data.contact_phone.value,
+                role: data.contact_role.value,
+            },
+            varia: {
+                package: regPackage,
+                formats: otherInterests,
+                accomodation: accomodation,
+                equipment: equipment
             }
+        }
 
-            if (sameBilling) {
-                body.company.address_billing = body.company.address
-            } else {
-                body.company.address_billing = {
-                    street: data.billing_street.value,
-                    zip: data.billing_zip.value,
-                    city: data.billing_city.value,
-                    country: data.billing_country.value
-                }
+        if (sameBilling) {
+            body.company.address_billing = body.company.address
+        } else {
+            body.company.address_billing = {
+                street: data.billing_street.value,
+                zip: data.billing_zip.value,
+                city: data.billing_city.value,
+                country: data.billing_country.value
             }
+        }
 
-            const response = await fetch('https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/booth', {
-                method: 'post',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(body),
-            })
-
-            const { error } = await response.json()
-            setLoading(false);
-
-            if (error) {
-                setSuccess(false);
-                setErr(true);
-            } else {
-                setErr(false);
-                setSuccess(true);
-            }
-
-            // remove error messages after 20 seconds
-            setTimeout(() => {
-                close()
-            }, 20 * 1000);
+        const response = await fetch('https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/mail', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
         })
+
+        const { error } = await response.json()
+        setLoading(false);
+
+        if (error) {
+            setSuccess(false);
+            setErr(true);
+        } else {
+            setErr(false);
+            setSuccess(true);
+        }
+
+        // remove error messages after 20 seconds
+        setTimeout(() => {
+            close()
+        }, 20 * 1000);
     }
 
     useEffect(() => {
@@ -159,14 +169,6 @@ export const Booth = ({ data }) => {
     return (
         <div className="bg-sn-black">
             <div className="max-w-5xl mx-auto py-12 px-8 lg:p-24">
-                {/* <div className="text-center mb-20">
-                    <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
-                        Booth
-                    </h2>
-                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
-                        Application for a booth in our Startup World
-                    </h1>
-                </div> */}
                 <div>
                     <div className="">
                         <p className="text-md leading-6 text-gray-300">
@@ -418,37 +420,75 @@ export const Booth = ({ data }) => {
                                 </div>
                             </div>
 
-                            <div className="col-span-6">
+                            <div className="sm:col-span-6">
                                 <label htmlFor="company_logo" className="block text-sm font-medium leading-6">
                                     Company logo
                                 </label>
-                                {companyLogo && (
-                                    <p className="mt-2 block text-sm font-medium leading-6">
-                                        File selected
-                                    </p>
-                                )}
-                                {!companyLogo && (
-                                    <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-200/25 px-6 py-10">
-                                        <div className="text-center">
-                                            <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
-                                            <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
-                                                <label
-                                                    htmlFor="company_logo"
-                                                    className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
-                                                >
-                                                    <span>Upload a file</span>
-                                                    <input
-                                                        id="company_logo"
-                                                        name="company_logo"
-                                                        onChange={(event) => handleUpload(event)}
-                                                        type="file"
-                                                        className="sr-only"
-                                                    />
-                                                </label>
-                                                <p className="pl-1">or drag and drop</p>
+                                {companyLogoLoading.state === uploadState.Finished && (
+                                    <>
+                                        <p className="mt-2 block text-sm font-medium leading-6 text-gray-400">
+                                            Make sure that your logo does not have a background color unless it is intentional.
+                                            Note that we might use your logo on light and dark backgrounds.
+                                            You can see a preview of your logo on different backgrounds below.
+                                        </p>
+
+                                        <button
+                                            type="submit"
+                                            className="mt-4 flex items-center justify-center rounded-full bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide"
+                                            onClick={() => {
+                                                setCompanyLogoLoading({
+                                                    state: uploadState.None,
+                                                    downloadUrl: ''
+                                                })
+                                            }}
+                                        >
+                                            Re-upload logo
+                                        </button>
+
+                                        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 group">
+                                            <div className="relative group p-16 bg-white rounded-xl border-2 border-gray-200">
+                                                <img src={companyLogoLoading.downloadUrl} className="border-2 border-transparent group-hover:border-white" />
                                             </div>
-                                            <p className="text-xs leading-5 text-gray-600">PNG or SVG up to 10MB</p>
+
+                                            <div className="relative group p-16 bg-sn-black rounded-xl border-2 border-gray-200">
+                                                <img src={companyLogoLoading.downloadUrl} className="" />
+                                            </div>
                                         </div>
+                                    </>
+                                )}
+
+                                {companyLogoLoading.state !== uploadState.Finished && (
+                                    <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-200/25 px-6 py-10">
+                                        {companyLogoLoading.state === uploadState.Uploading && (
+                                            <svg className="animate-spin -ml-1 mr-3 h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                            </svg>
+                                        )}
+
+                                        {companyLogoLoading.state === uploadState.None && (
+                                            <div className="text-center">
+                                                <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
+
+                                                <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
+                                                    <label
+                                                        htmlFor="company_logo"
+                                                        className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
+                                                    >
+                                                        <span>Upload a file</span>
+                                                        <input
+                                                            id="company_logo"
+                                                            name="company_logo"
+                                                            onChange={(event) => handleUpload(event)}
+                                                            type="file"
+                                                            className="sr-only"
+                                                        />
+                                                    </label>
+                                                    <p className="pl-1">or drag and drop</p>
+                                                </div>
+                                                <p className="text-xs leading-5 text-gray-600">PNG or SVG up to 10MB</p>
+                                            </div>
+                                        )}
                                     </div>
                                 )}
                             </div>
