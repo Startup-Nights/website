@@ -10,6 +10,7 @@ import { ExclamationCircleIcon, PlusIcon, XMarkIcon } from '@heroicons/react/24/
 enum uploadState {
     None = 0,
     Uploading,
+    Error,
     Finished
 }
 
@@ -31,6 +32,7 @@ export const Booth = ({ data }) => {
 
     const [companyLogoLoading, setCompanyLogoLoading] = useState({
         downloadUrl: '',
+        error: '',
         state: uploadState.None
     });
 
@@ -38,10 +40,22 @@ export const Booth = ({ data }) => {
     const handleUpload = async (event) => {
         setCompanyLogoLoading({
             downloadUrl: '',
+            error: '',
             state: uploadState.Uploading
         })
         const url = 'https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/upload'
         const file = event.target.files[0]
+
+        // make sure that the file is not too big
+        if (file.size > 10 * 1000000) {
+            setCompanyLogoLoading({
+                downloadUrl: '',
+                error: 'Logo is too big: ' + Math.floor(file.size / 1000000) + ' MB instead of max. 10 MB',
+                state: uploadState.Error
+            })
+
+            return
+        }
 
         const response = await fetch(url, {
             method: 'post',
@@ -70,6 +84,7 @@ export const Booth = ({ data }) => {
 
         setCompanyLogoLoading({
             state: uploadState.Finished,
+            error: '',
             downloadUrl: data.download,
         })
     }
@@ -441,20 +456,31 @@ export const Booth = ({ data }) => {
                                 <label htmlFor="company_logo" className="block text-sm font-medium leading-6">
                                     Company logo
                                 </label>
+                                <div className="mt-2 mb-4 text-sm font-medium leading-6 text-gray-400">
+                                    <p className="">
+                                        Please make sure that your logo:
+                                    </p>
+                                    <ul role="list" className="mt-2 list-disc pl-5">
+                                        <li>is preferrably an SVG file</li>
+                                        <li>has no background color</li>
+                                        <li>can be used on light and dark backgrounds</li>
+                                        <li>is at least 600px x 300px in size</li>
+                                    </ul>
+                                </div>
+
                                 {companyLogoLoading.state === uploadState.Finished && (
                                     <>
-                                        <p className="mt-2 block text-sm font-medium leading-6 text-gray-400">
-                                            Make sure that your logo does not have a background color unless it is intentional.
-                                            Note that we might use your logo on light and dark backgrounds.
-                                            You can see a preview of your logo on different backgrounds below.
+                                        <p className="mt-2 italic block text-sm font-medium leading-6 text-gray-400">
+                                            Before you submit your application, make sure that you are happy with the preview below.
                                         </p>
 
                                         <button
                                             type="submit"
-                                            className="mt-4 flex items-center justify-center rounded-full bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide"
+                                            className="mt-6 flex items-center justify-center rounded-full bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide"
                                             onClick={() => {
                                                 setCompanyLogoLoading({
                                                     state: uploadState.None,
+                                                    error: '',
                                                     downloadUrl: ''
                                                 })
                                             }}
@@ -483,11 +509,11 @@ export const Booth = ({ data }) => {
                                             </svg>
                                         )}
 
-                                        {companyLogoLoading.state === uploadState.None && (
+                                        {(companyLogoLoading.state === uploadState.None || companyLogoLoading.state === uploadState.Error) && (
                                             <div className="text-center">
                                                 <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
 
-                                                <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
+                                                <div className="mx-auto flex justify-center mt-4 text-sm items-baseline leading-6 text-gray-600">
                                                     <label
                                                         htmlFor="company_logo"
                                                         className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
@@ -496,14 +522,18 @@ export const Booth = ({ data }) => {
                                                         <input
                                                             id="company_logo"
                                                             name="company_logo"
+                                                            accept=".svg,.png"
+                                                            multiple={false}
                                                             onChange={(event) => handleUpload(event)}
                                                             type="file"
                                                             className="sr-only"
                                                         />
                                                     </label>
-                                                    <p className="pl-1">or drag and drop</p>
                                                 </div>
-                                                <p className="text-xs leading-5 text-gray-600">PNG or SVG up to 10MB</p>
+                                                <p className="mt-2 text-xs leading-5 text-gray-500">PNG or SVG up to 10MB</p>
+                                                {companyLogoLoading.state === uploadState.Error && companyLogoLoading.error !== '' && (
+                                                    <p className="mt-4 text-xs leading-5 text-red-400">{companyLogoLoading.error}</p>
+                                                )}
                                             </div>
                                         )}
                                     </div>
