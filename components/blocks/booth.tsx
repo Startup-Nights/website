@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import type { Template } from "tinacms";
 import Link from "next/link";
-import { InformationCircleIcon } from '@heroicons/react/20/solid'
+import { InformationCircleIcon, PhotoIcon } from '@heroicons/react/20/solid'
 import { Tab, Transition } from '@headlessui/react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
@@ -17,6 +17,39 @@ export const Booth = ({ data }) => {
     const [accomodation, setAccomodation] = useState(null);
     const [equipment, setEquipment] = useState(null);
     const [regPackage, setRegPackage] = useState(registration_packages[0]);
+
+    // handle file uploads
+    const handleUpload = async (event) => {
+        const url = 'https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/upload'
+        const file = event.target.files[0]
+
+        const response = await fetch(url, {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                filename: file.name,
+            }),
+        })
+
+        const data = await response.json()
+        if (data.error) {
+            console.log(data.error)
+        }
+        const uploadurl = data.url
+
+        const uploadResponse = await fetch(uploadurl, {
+            method: 'put',
+            headers: {
+                'x-amz-acl': 'public-read',
+                'Content-Type': file.type,
+            },
+            body: file,
+        })
+    }
+
+    const [companyLogo, setCompanyLogo] = useState(null);
 
     const getSelectedCategories = () => {
         const selected = []
@@ -38,78 +71,85 @@ export const Booth = ({ data }) => {
         event.preventDefault()
         setLoading(true);
 
-        const data = event.target;
+        const reader = new FileReader()
+        reader.readAsDataURL(companyLogo)
+        reader.addEventListener("load", async (ev) => {
+            const buffer = reader.result as ArrayBuffer
+            const logo = Buffer.from(buffer).toString('base64')
 
-        const body: any = {
-            company: {
-                name: data.company_name.value,
-                website: data.company_website.value,
-                founding_date: data.company_founding_date.value,
-                linkedin: {
-                    founder: data.company_founder_linkedin.value
+            const data = event.target;
+
+            const body: any = {
+                company: {
+                    name: data.company_name.value,
+                    website: data.company_website.value,
+                    founding_date: data.company_founding_date.value,
+                    linkedin: {
+                        founder: data.company_founder_linkedin.value
+                    },
+                    employees: data.company_employees.value,
+                    pitch: data.company_pitch.value,
+                    categories: getSelectedCategories(),
+                    additional_categories: data.company_additional_category.value,
+                    address: {
+                        street: data.company_street.value,
+                        zip: data.company_zip.value,
+                        city: data.company_city.value,
+                        country: data.company_country.value
+                    },
+                    address_billing: {}
                 },
-                employees: data.company_employees.value,
-                pitch: data.company_pitch.value,
-                categories: getSelectedCategories(),
-                additional_categories: data.company_additional_category.value,
-                address: {
-                    street: data.company_street.value,
-                    zip: data.company_zip.value,
-                    city: data.company_city.value,
-                    country: data.company_country.value
+                contact: {
+                    firstname: data.contact_first.value,
+                    lastname: data.contact_last.value,
+                    email: data.contact_email.value,
+                    phone: data.contact_phone.value,
+                    role: data.contact_role.value,
                 },
-                address_billing: {}
-            },
-            contact: {
-                firstname: data.contact_first.value,
-                lastname: data.contact_last.value,
-                email: data.contact_email.value,
-                phone: data.contact_phone.value,
-                role: data.contact_role.value,
-            },
-            images: {},
-            varia: {
-                package: regPackage,
-                formats: otherInterests,
-                accomodation: accomodation,
-                equipment: equipment
+                images: {},
+                varia: {
+                    package: regPackage,
+                    formats: otherInterests,
+                    accomodation: accomodation,
+                    equipment: equipment
+                }
             }
-        }
 
-        if (sameBilling) {
-            body.company.address_billing = body.company.address
-        } else {
-            body.company.address_billing = {
-                street: data.billing_street.value,
-                zip: data.billing_zip.value,
-                city: data.billing_city.value,
-                country: data.billing_country.value
+            if (sameBilling) {
+                body.company.address_billing = body.company.address
+            } else {
+                body.company.address_billing = {
+                    street: data.billing_street.value,
+                    zip: data.billing_zip.value,
+                    city: data.billing_city.value,
+                    country: data.billing_country.value
+                }
             }
-        }
 
-        const response = await fetch('/api/booth', {
-            method: 'post',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(body),
+            const response = await fetch('https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/booth', {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(body),
+            })
+
+            const { error } = await response.json()
+            setLoading(false);
+
+            if (error) {
+                setSuccess(false);
+                setErr(true);
+            } else {
+                setErr(false);
+                setSuccess(true);
+            }
+
+            // remove error messages after 20 seconds
+            setTimeout(() => {
+                close()
+            }, 20 * 1000);
         })
-
-        const { error } = await response.json()
-        setLoading(false);
-
-        if (error) {
-            setSuccess(false);
-            setErr(true);
-        } else {
-            setErr(false);
-            setSuccess(true);
-        }
-
-        // remove error messages after 20 seconds
-        setTimeout(() => {
-            close()
-        }, 20 * 1000);
     }
 
     useEffect(() => {
@@ -378,38 +418,40 @@ export const Booth = ({ data }) => {
                                 </div>
                             </div>
 
-
-                            {/* <div className="col-span-6">
+                            <div className="col-span-6">
                                 <label htmlFor="company_logo" className="block text-sm font-medium leading-6">
                                     Company logo
                                 </label>
-                                <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-200/25 px-6 py-10">
-                                    <div className="text-center">
-                                        <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
-                                        <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
-                                            <label
-                                                htmlFor="company_logo"
-                                                className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
-                                            >
-                                                <span>Upload a file</span>
-                                                <input
-                                                    id="company_logo"
-                                                    name="company_logo"
-                                                    onChange={(event) => {
-                                                        if (event.target.files && event.target.files[0]) {
-                                                            setCompanyLogo(event.target.files[0])
-                                                        }
-                                                    }}
-                                                    type="file"
-                                                    className="sr-only"
-                                                />
-                                            </label>
-                                            <p className="pl-1">or drag and drop</p>
+                                {companyLogo && (
+                                    <p className="mt-2 block text-sm font-medium leading-6">
+                                        File selected
+                                    </p>
+                                )}
+                                {!companyLogo && (
+                                    <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-200/25 px-6 py-10">
+                                        <div className="text-center">
+                                            <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
+                                            <div className="mt-4 flex text-sm items-baseline leading-6 text-gray-600">
+                                                <label
+                                                    htmlFor="company_logo"
+                                                    className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
+                                                >
+                                                    <span>Upload a file</span>
+                                                    <input
+                                                        id="company_logo"
+                                                        name="company_logo"
+                                                        onChange={(event) => handleUpload(event)}
+                                                        type="file"
+                                                        className="sr-only"
+                                                    />
+                                                </label>
+                                                <p className="pl-1">or drag and drop</p>
+                                            </div>
+                                            <p className="text-xs leading-5 text-gray-600">PNG or SVG up to 10MB</p>
                                         </div>
-                                        <p className="text-xs leading-5 text-gray-600">PNG or SVG up to 10MB</p>
                                     </div>
-                                </div>
-                            </div> */}
+                                )}
+                            </div>
 
                             <div className="sm:col-span-6 mt-16">
                                 <h3 className="text-xl font-semibold leading-6 text-slate-200">Contact person</h3>
