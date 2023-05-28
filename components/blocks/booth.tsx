@@ -348,8 +348,13 @@ export const Booth = ({ data }) => {
                                         <div key={`founder-profile-${i}`} className="flex space-x-4 items-center">
                                             <input
                                                 type="text"
+                                                placeholder={founder}
                                                 name={`founder-linkedin-${i}`}
                                                 id={`founder-linkedin-${i}`}
+                                                onChange={(event) => {
+                                                    founders[i] = event.target.value
+                                                    setFounders([...founders])
+                                                }}
                                                 className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
                                             />
 
