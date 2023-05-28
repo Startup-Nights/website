@@ -1,17 +1,19 @@
 import { Fragment, useEffect, useState } from "react";
 import type { Template } from "tinacms";
 import Link from "next/link";
-import { InformationCircleIcon, PhotoIcon } from '@heroicons/react/20/solid'
+import { InformationCircleIcon, MinusIcon, PhotoIcon } from '@heroicons/react/20/solid'
 import { Tab, Transition } from '@headlessui/react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
-import { ExclamationCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { ExclamationCircleIcon, PlusIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 enum uploadState {
     None = 0,
     Uploading,
     Finished
 }
+
+const founderPlaceholder = 'Link to LinkedIn profile of founder'
 
 export const Booth = ({ data }) => {
     const [err, setErr] = useState(false);
@@ -24,6 +26,8 @@ export const Booth = ({ data }) => {
     const [equipment, setEquipment] = useState(null);
     const [regPackage, setRegPackage] = useState(registration_packages[0]);
     const [ukraine, setUkraine] = useState(null)
+
+    const [founders, setFounders] = useState([founderPlaceholder])
 
     const [companyLogoLoading, setCompanyLogoLoading] = useState({
         downloadUrl: '',
@@ -98,7 +102,7 @@ export const Booth = ({ data }) => {
                 name: data.company_name.value,
                 website: data.company_website.value,
                 founding_date: data.company_founding_date.value,
-                linkedin: [data.company_founder_linkedin.value],
+                linkedin: founders,
                 employees: data.company_employees.value,
                 pitch: data.company_pitch.value,
                 categories: getSelectedCategories(),
@@ -320,19 +324,30 @@ export const Booth = ({ data }) => {
                                 </div>
                             </div>
 
-                            <div className="sm:col-span-3">
-                                <label htmlFor="company_founder_linkedin" className="block text-sm font-medium leading-6">
-                                    LinkedIn profile of the founder
+                            <div className="sm:col-span-6">
+                                <label htmlFor="founder-linkedin-0" className="block text-sm font-medium leading-6">
+                                    LinkedIn profile of the founder(s)
                                 </label>
-                                <div className="mt-2">
-                                    <input
-                                        required={true}
-                                        type="text"
-                                        placeholder="Link to LinkedIn profile"
-                                        name="company_founder_linkedin"
-                                        id="company_founder_linkedin"
-                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
-                                    />
+                                <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    {founders.map((founder, i) => (
+                                        <div key={`founder-profile-${i}`} className="flex space-x-4 items-center">
+                                            <input
+                                                type="text"
+                                                name={`founder-linkedin-${i}`}
+                                                id={`founder-linkedin-${i}`}
+                                                className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                            />
+
+                                            {i === founders.length - 1 && (
+                                                <button className="p-1 bg-sn-yellow rounded-full text-black" onClick={() => {
+                                                    founders.push('Link to LinkedIn profile of founder')
+                                                    setFounders([...founders])
+                                                }}>
+                                                    <PlusIcon className="h-5 w-5" />
+                                                </button>
+                                            )}
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
 
