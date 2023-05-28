@@ -121,12 +121,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/nadine-ungricht.JPG
             alt: Nadine Ungricht
-          - name: Melina Fullin
-            position: Social Media Manager
-            linkedin: 'https://www.linkedin.com/in/melinafullin/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/melina-fullin.png
-            alt: Melina Fullin
           - name: Clément Dumont
             position: Support Video Cutter
             linkedin: 'https://www.linkedin.com/in/clement-dumont06102001/'
