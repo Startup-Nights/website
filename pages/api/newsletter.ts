@@ -1,5 +1,6 @@
 import mailchimp from '@mailchimp/mailchimp_marketing';
 import crypto from 'crypto';
+import { context, tracer } from '../../instrumentation';
 
 mailchimp.setConfig({
     apiKey: process.env.NEXT_MAILCHIMP as string,
@@ -8,6 +9,8 @@ mailchimp.setConfig({
 
 // https://leerob.io/blog/mailchimp-next-js
 export default async (req, res) => {
+    const span = tracer.startSpan('newsletter', undefined, context.active());
+
     // visible on audience -> settings -> audience name and defaults
     const list_id = "dc844d3c35";
 
@@ -38,8 +41,10 @@ export default async (req, res) => {
             ]}
         )
 
+        span.end()
         return res.status(201).json({ error: '' });
     } catch (error) {
+        span.end()
         return res.status(500).json({ error: error.message || error.toString() });
     }
 }

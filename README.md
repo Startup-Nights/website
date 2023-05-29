@@ -6,6 +6,7 @@
 - [External media provider (DigitalOcean Spaces)](https://tina.io/docs/reference/media/external/do-spaces/) to store media
 - [Vercel](https://vercel.com) deployment to visually edit your site from the `/admin` route
 - Local development workflow from the filesystem with a local GraqhQL server
+- [Telemetry for serverless functions](https://startupnights.grafana.net)
 
 ## Requirements and integrations
 
