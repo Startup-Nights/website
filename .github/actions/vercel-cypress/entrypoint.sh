@@ -8,5 +8,5 @@ echo "=> using deployment url: ${DEPLOYMENT_URL}"
 # install the dependencies (important for typescript)
 yarn install
 
-export CYPRESS_BASE_URL=${DEPLOYMENT_URL}
+export CYPRESS_BASE_URL="https://${DEPLOYMENT_URL}"
 npx cypress run --browser chrome --e2e
