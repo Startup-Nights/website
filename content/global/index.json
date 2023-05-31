@@ -100,11 +100,10 @@
       }
     ],
     "banner": {
-      "text": "Get 30% off of your ticket in May when signing up for our newsletter. We'll email you the discount code shortly afterwards.",
-      "agree_button": "Sign me up!",
+      "text": "Get your early bird ticket with 20% off the regular price!",
+      "agree_button": "Yes please",
       "close_button": "Close",
-      "modal_title": "Sign up for our newsletter",
-      "modal_text": "You'll receive the discount code shortly afterwards."
+      "link": "/tickets"
     }
   }
 }

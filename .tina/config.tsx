@@ -311,13 +311,8 @@ const config = defineStaticConfig({
                                     },
                                     {
                                         type: "string",
-                                        label: "Modal title",
-                                        name: "modal_title"
-                                    },
-                                    {
-                                        type: "string",
-                                        label: "Modal text",
-                                        name: "modal_text"
+                                        label: "Link",
+                                        name: "link"
                                     },
                                 ]
                             }
