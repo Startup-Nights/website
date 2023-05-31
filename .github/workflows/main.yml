@@ -9,6 +9,8 @@ jobs:
   regression:
     runs-on: ubuntu-latest
     steps:
-      - uses: joergmis/vercel-cypress@v0.0.3
+      - uses: actions/checkout@v3
+
+      - uses: ./.github/actions/vercel-cypress
         with:
           vercel-token: ${{ secrets.VERCEL_SECRET }}
