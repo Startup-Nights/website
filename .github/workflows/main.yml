@@ -1,0 +1,15 @@
+name: Cypress Tests
+
+on: deployment
+
+env:
+  CYPRESS_type: base
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/vercel-cypress@v1
+        with:
+          vercel-token: ${{ secrets.VERCEL_SECRET }}
+          repo: website
