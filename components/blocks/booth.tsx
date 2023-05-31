@@ -26,8 +26,7 @@ export const Booth = ({ data }) => {
     const [accomodation, setAccomodation] = useState(null);
     const [equipment, setEquipment] = useState(null);
     const [regPackage, setRegPackage] = useState(registration_packages[0]);
-    const [ukraine, setUkraine] = useState(null)
-
+    const [previous, setPrevious] = useState(null);
     const [founders, setFounders] = useState([founderPlaceholder])
 
     const [companyLogoLoading, setCompanyLogoLoading] = useState({
@@ -142,7 +141,8 @@ export const Booth = ({ data }) => {
                 package: regPackage,
                 formats: otherInterests,
                 accomodation: accomodation,
-                ukraine: ukraine,
+                previous_visitor: data.previous_visitor.value,
+                referral: data.referral.value,
                 equipment: equipment
             }
         }
@@ -814,10 +814,27 @@ export const Booth = ({ data }) => {
                             </div>
 
                             <div className="sm:col-span-6">
-                                {radiobuttons('Are you a startup from Ukraine?', 'ukraine', [
-                                    { id: 'ukraine-no', title: 'no' },
-                                    { id: 'ukraine-yes', title: 'yes' },
-                                ], ukraine, setUkraine)}
+                                {radiobuttons('Have you been at previous Startup Nights?', 'previous_visitor', [
+                                    { id: 'previous-no', title: 'no' },
+                                    { id: 'previous-visitor', title: 'yes, as a visitor' },
+                                    { id: 'previous-exhibitor', title: 'yes, as an exhibitor' },
+                                ], previous, setPrevious)}
+                            </div>
+
+                            <div className="sm:col-span-3">
+                                <label htmlFor="referral" className="block text-sm font-medium leading-6">
+                                    Referral person / notes
+                                </label>
+                                <div className="mt-2">
+                                    <input
+                                        required={true}
+                                        type="text"
+                                        placeholder="Switzerland"
+                                        name="referral"
+                                        id="referral"
+                                        className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                                    />
+                                </div>
                             </div>
 
                             <div className="sm:col-span-6">
