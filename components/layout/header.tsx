@@ -3,7 +3,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { SocialIcon } from '../items/social'
-import { Button } from '../items/button'
+import { Button, ButtonSecondary } from '../items/button'
 
 export const Header = ({ data }) => {
     // If we're on an admin path, other links should also link to their admin paths
@@ -22,35 +22,31 @@ export const Header = ({ data }) => {
             <div className="relative">
                 <div className='max-w-7xl mx-auto py-6 px-8 lg:px-24'>
                     <nav className="relative flex items-center justify-between" aria-label="Global">
-                        <div className="flex lg:flex-1">
-                            <Link href="/" className="-m-1.5 p-1.5 items-center whitespace-nowrap">
-                                <img className="h-8 sm:h-12 w-auto select-none" src="/logo/startup-nights.png" />
-                            </Link>
+                        <div className='flex justify-start items-center gap-x-16'>
+                            <div className="flex">
+                                <Link href="/" className="-m-1.5 p-1.5 items-center whitespace-nowrap">
+                                    <img className="h-8 sm:h-12 w-auto select-none" src="/logo/startup-nights.png" />
+                                </Link>
+                            </div>
+                            <div className="hidden lg:flex lg:gap-x-6">
+                                {data.nav && data.nav.map((item, i: number) => {
+                                    return (
+                                        <Link
+                                            key={`${item.label}-${i}`}
+                                            href={`${prefix}/${item.href}`}
+                                            className='text-sm font-semibold leading-6 text-slate-400 hover:text-slate-100'
+                                        >
+                                            {item.label}
+                                        </Link>
+                                    );
+                                })}
+                            </div>
                         </div>
-                        <div className="flex lg:hidden">
-                            <button
-                                type="button"
-                                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
-                                onClick={() => setMobileMenuOpen(true)}
-                            >
-                                <span className="sr-only">Open main menu</span>
-                                <Bars3CenterLeftIcon className="h-6 w-6" aria-hidden="true" />
-                            </button>
-                        </div>
-                        <div className="hidden lg:flex lg:gap-x-6 xl:gap-x-8">
-                            {data.nav && data.nav.map((item, i: number) => {
-                                return (
-                                    <Link
-                                        key={`${item.label}-${i}`}
-                                        href={`${prefix}/${item.href}`}
-                                        className='text-sm font-semibold leading-6 text-slate-400 hover:text-slate-100'
-                                    >
-                                        {item.label}
-                                    </Link>
-                                );
-                            })}
-                        </div>
-                        <div className="hidden lg:flex lg:flex-1 lg:justify-end space-x-2 justify-center items-center">
+                        <div className="hidden lg:flex lg:justify-end space-x-2 justify-center items-center">
+                            <div className=''>
+                                <ButtonSecondary text='Booth' link='/booth'></ButtonSecondary>
+                            </div>
+
                             <div className='mr-4'>
                                 <Button text='Tickets' link='/tickets'></Button>
                             </div>
@@ -66,6 +62,17 @@ export const Header = ({ data }) => {
                                 </a>
                             ))}
                         </div>
+                        <div className="flex lg:hidden">
+                            <button
+                                type="button"
+                                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+                                onClick={() => setMobileMenuOpen(true)}
+                            >
+                                <span className="sr-only">Open main menu</span>
+                                <Bars3CenterLeftIcon className="h-6 w-6" aria-hidden="true" />
+                            </button>
+                        </div>
+
                     </nav>
                     <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                         <Dialog.Panel className="fixed inset-0 z-40 overflow-y-auto backdrop-blur-md bg-sn-black/90 px-8 py-6 lg:hidden">
@@ -106,6 +113,11 @@ export const Header = ({ data }) => {
                                             href='/tickets'
                                             onClick={() => setMobileMenuOpen(false)}
                                         >Tickets</Link>
+                                        <Link
+                                            className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-400 hover:bg-gray-400/10'
+                                            href='/booth'
+                                            onClick={() => setMobileMenuOpen(false)}
+                                        >Booth</Link>
                                     </div>
                                     <div className='py-6'>
                                         <p className='-mx-3 block rounded-lg py-2 px-3 text-base leading-7 text-slate-400'>
