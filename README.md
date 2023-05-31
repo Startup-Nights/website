@@ -7,6 +7,7 @@
 - [Vercel](https://vercel.com) deployment to visually edit your site from the `/admin` route
 - Local development workflow from the filesystem with a local GraqhQL server
 - [Telemetry for serverless functions](https://startupnights.grafana.net)
+- Visual regression testing with [cypress-visual-regression](https://github.com/cypress-visual-regression/cypress-visual-regression)
 
 ## Requirements and integrations
 
