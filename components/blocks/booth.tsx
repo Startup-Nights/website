@@ -141,7 +141,7 @@ export const Booth = ({ data }) => {
                 package: regPackage,
                 formats: otherInterests,
                 accomodation: accomodation,
-                previous_visitor: data.previous_visitor.value,
+                previous_visitor: previous,
                 referral: data.referral.value,
                 equipment: equipment
             }
@@ -634,7 +634,7 @@ export const Booth = ({ data }) => {
                             <div className="sm:col-span-6">
                                 <p className="block text-sm font-medium leading-6">Select other formats that you are interested in</p>
 
-                                <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-2">
+                                <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-2 md:space-y-0">
                                     {otherInterest.map((interest, i) => (
                                         <li key={interest} className="relative flex items-start">
                                             <div className="flex h-6 items-center">
@@ -823,13 +823,13 @@ export const Booth = ({ data }) => {
 
                             <div className="sm:col-span-3">
                                 <label htmlFor="referral" className="block text-sm font-medium leading-6">
-                                    Referral person / notes
+                                    Referral (Person, Organisation)
                                 </label>
                                 <div className="mt-2">
                                     <input
-                                        required={true}
+                                        required={false}
                                         type="text"
-                                        placeholder="Switzerland"
+                                        placeholder="Who is promoting you?"
                                         name="referral"
                                         id="referral"
                                         className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
