@@ -9,4 +9,4 @@ echo "=> using deployment url: ${DEPLOYMENT_URL}"
 yarn install
 
 export CYPRESS_BASE_URL="https://${DEPLOYMENT_URL}"
-npx cypress run --browser chrome --e2e
+npx cypress run $3
