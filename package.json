@@ -10,7 +10,7 @@
     "proxy": "local-ssl-proxy --source 3001 --target 3000",
     "lint": "eslint . --ext .ts,.tsx",
     "cypress": "cypress open --browser chrome --e2e",
-    "cypress-generate-base": "cypress run --browser chrome --e2e --env type=base --spec cypress/e2e/visual_regression/*"
+    "cypress-generate-base": "cypress run --browser chrome --e2e --env type=base baseUrl=http://localhost:3000 --spec cypress/e2e/vrt/*"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.1.6",

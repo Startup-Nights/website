@@ -12,6 +12,7 @@ export default defineConfig({
     // default: dimensions of a 13 inch macbook
     viewportHeight: 800,
     viewportWidth: 1280,
+    video: false,
     baseUrl: 'https://www.startup-nights.ch',
     setupNodeEvents(on, config) {
       getCompareSnapshotsPlugin(on, config);
