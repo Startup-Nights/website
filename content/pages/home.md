@@ -72,6 +72,9 @@ blocks:
       cta:
         link: /partner
         text: Become a partner
+      cta_secondary:
+        link: /booth
+        text: Apply for a booth
     figures:
       - name: Workshops
         number: 40+
@@ -236,3 +239,4 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
