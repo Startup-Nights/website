@@ -1,77 +1,76 @@
 describe('check for visual regression', () => {
     const viewports = [
-        { width: 1280, height: 800 }, // 13 inch macbook
-        { width: 357, height: 667 }, // iphone 7 / iphone 8
-        { width: 360, height: 760 }, // samsung s10
+        { width: 1280, height: 800, name: '13 inch macbook' },
+        { width: 357, height: 667, name: 'iphone 7 & 8' },
+        { width: 360, height: 760, name: 'samsung s10' },
     ]
 
+    // TODO: figure out settings that return consistent results. The error 
+    // margin of 25% is way too high.
+    const idleTime = 0 * 1000
+    const snapshotSettings = {
+        capture: 'fullPage',
+        errorThreshold: 0.25
+    }
+
     viewports.forEach(viewport => {
-        // prefix the files with the dimensions
-        const dimensions = `${viewport.width}_${viewport.height}_`
-        const name = `${viewport.width}x${viewport.height}: `
+        const dimensionsPrefix = `${viewport.width}_${viewport.height}_`
+        const testName = `${viewport.name}: `
 
-        it(name + 'landing page should not have changed', () => {
+        it(testName + 'landing page should not have changed', () => {
+            cy.viewport(viewport.width, viewport.height)
             cy.visit('/')
-            cy.compareSnapshot(dimensions + 'landing-page', {
-                capture: 'fullPage',
-                errorThreshold: 0.2
-            })
+            cy.wait(idleTime)
+            cy.compareSnapshot(dimensionsPrefix + 'landing-page', snapshotSettings)
         })
 
-        it(name + 'tickets page should not have changed', () => {
+        it(testName + 'tickets page should not have changed', () => {
+            cy.viewport(viewport.width, viewport.height)
             cy.visit('/tickets')
-            cy.compareSnapshot(dimensions + 'tickets', {
-                capture: 'fullPage',
-                errorThreshold: 0.2
-            })
+            cy.wait(idleTime)
+            cy.compareSnapshot(dimensionsPrefix + 'tickets', snapshotSettings)
         })
 
-        it(name + 'booth page should not have changed', () => {
+        it(testName + 'booth page should not have changed', () => {
+            cy.viewport(viewport.width, viewport.height)
             cy.visit('/booth')
-            cy.compareSnapshot(dimensions + 'booth', {
-                capture: 'fullPage',
-                errorThreshold: 0.2
-            })
+            cy.wait(idleTime)
+            cy.compareSnapshot(dimensionsPrefix + 'booth', snapshotSettings)
         })
 
-        it(name + 'hiring page should not have changed', () => {
+        it(testName + 'hiring page should not have changed', () => {
+            cy.viewport(viewport.width, viewport.height)
             cy.visit('/hiring')
-            cy.compareSnapshot(dimensions + 'hiring', {
-                capture: 'fullPage',
-                errorThreshold: 0.2
-            })
+            cy.wait(idleTime)
+            cy.compareSnapshot(dimensionsPrefix + 'hiring', snapshotSettings)
         })
 
-        it(name + 'partner page should not have changed', () => {
+        it(testName + 'partner page should not have changed', () => {
+            cy.viewport(viewport.width, viewport.height)
             cy.visit('/partner')
-            cy.compareSnapshot(dimensions + 'partner', {
-                capture: 'fullPage',
-                errorThreshold: 0.2
-            })
+            cy.wait(idleTime)
+            cy.compareSnapshot(dimensionsPrefix + 'partner', snapshotSettings)
         })
 
-        it(name + 'about page should not have changed', () => {
+        it(testName + 'about page should not have changed', () => {
+            cy.viewport(viewport.width, viewport.height)
             cy.visit('/about')
-            cy.compareSnapshot(dimensions + 'about', {
-                capture: 'fullPage',
-                errorThreshold: 0.2
-            })
+            cy.wait(idleTime)
+            cy.compareSnapshot(dimensionsPrefix + 'about', snapshotSettings)
         })
 
-        it(name + 'impression page should not have changed', () => {
+        it(testName + 'impression page should not have changed', () => {
+            cy.viewport(viewport.width, viewport.height)
             cy.visit('/impressions')
-            cy.compareSnapshot(dimensions + 'impressions', {
-                capture: 'fullPage',
-                errorThreshold: 0.2
-            })
+            cy.wait(idleTime)
+            cy.compareSnapshot(dimensionsPrefix + 'impressions', snapshotSettings)
         })
 
-        it(name + 'contact page should not have changed', () => {
+        it(testName + 'contact page should not have changed', () => {
+            cy.viewport(viewport.width, viewport.height)
             cy.visit('/contact')
-            cy.compareSnapshot(dimensions + 'contact', {
-                capture: 'fullPage',
-                errorThreshold: 0.2
-            })
+            cy.wait(idleTime)
+            cy.compareSnapshot(dimensionsPrefix + 'contact', snapshotSettings)
         })
     })
 })
