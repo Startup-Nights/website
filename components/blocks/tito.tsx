@@ -50,6 +50,7 @@ export const Tito = ({ data }) => {
                         <tito-widget
                             event="ecw/startup-nights-2023"
                             save-metadata-parameters="utm_*"
+                            discount-code="SUPEREARLY"
                         ></tito-widget>
                     </div>
                 </div>
