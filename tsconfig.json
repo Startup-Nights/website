@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "lib": [
+      "es5",
       "dom",
       "dom.iterable",
       "esnext"
@@ -17,7 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "types": [
+      "cypress",
+      "node",
+      "cypress-visual-regression"
+    ]
   },
   "exclude": [
     "node_modules"
@@ -27,6 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".forestry/types.ts",
-    ".forestry/config.ts"
-, "components/util/mousecontext.js"  ]
+    ".forestry/config.ts",
+    "components/util/mousecontext.js"
+  ]
 }

@@ -8,7 +8,10 @@
     "start": "tinacms build && next start",
     "export": "npm run build && next export",
     "proxy": "local-ssl-proxy --source 3001 --target 3000",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "cypress": "cypress open --browser chrome --e2e",
+    "vrt:base": "cypress run --browser chrome --e2e --env type=base baseUrl=http://localhost:3000 --spec cypress/e2e/vrt/*",
+    "vrt:actual": "cypress run --browser chrome --e2e --env baseUrl=http://localhost:3000 --spec cypress/e2e/vrt/*"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.1.6",
@@ -22,6 +25,7 @@
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "autoprefixer": "^10.4.0",
+    "cypress": "^12.13.0",
     "eslint": "^8.13.0",
     "globby": "^13.1.4",
     "local-ssl-proxy": "^2.0.5",
@@ -50,6 +54,7 @@
     "@vercel/analytics": "^1.0.1",
     "@vercel/otel": "^0.3.0",
     "analytics": "^0.8.1",
+    "cypress-visual-regression": "^3.0.0",
     "date-fns": "^2.23.0",
     "embla-carousel-autoplay": "^7.1.0",
     "embla-carousel-react": "^7.1.0",
@@ -74,6 +79,7 @@
     "tailwindcss": "^3.2.4",
     "tinacms": "^1.5.6",
     "typescript": "^5.0.4",
+    "wait-on": "^7.0.1",
     "yet-another-react-lightbox": "^3.5.3"
   },
   "resolutions": {
