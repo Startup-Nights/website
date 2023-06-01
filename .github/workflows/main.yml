@@ -1,0 +1,35 @@
+name: Cypress Tests
+
+on: push
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache
+            **/node_modules
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+    
+      - name: install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: install chrome browser
+        run: |
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+      - name: run vrt cypress tests against dev server
+        run: |
+          npm run dev & npx wait-on http://127.0.0.1:3000
+          npx cypress run --browser chrome --env type=actual --env baseURL=http://127.0.0.1:3000 --spec cypress/e2e/vrt/*
+
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-vrt-diffs
+          path: cypress/snapshots/diff
