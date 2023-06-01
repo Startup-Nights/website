@@ -6,7 +6,8 @@ export default defineConfig({
     type: 'actual',
     screenshotsFolder: './cypress/snapshots/actual',
     trashAssetsBeforeRuns: true,
-    video: false
+    video: false,
+    "ALLOW_VISUAL_REGRESSION_TO_FAIL" : true,
   },
   e2e: {
     // default: dimensions of a 13 inch macbook

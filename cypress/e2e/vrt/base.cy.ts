@@ -5,12 +5,13 @@ describe('check for visual regression', () => {
         { width: 360, height: 760, name: 'samsung s10' },
     ]
 
-    // TODO: figure out settings that return consistent results. The error 
-    // margin of 25% is way too high.
+    // TODO: figure out settings that return consistent results so that we can
+    // move on and remove "ALLOW_VISUAL_REGRESSION_TO_FAIL" from the env 
+    // settings in 'cypress.config.ts' to actually make use of vrt.
     const idleTime = 0 * 1000
     const snapshotSettings = {
         capture: 'fullPage',
-        errorThreshold: 0.25
+        errorThreshold: 0.1
     }
 
     viewports.forEach(viewport => {
