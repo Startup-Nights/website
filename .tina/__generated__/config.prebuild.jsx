@@ -1041,6 +1041,47 @@ var FactsBlockSchema = {
   ]
 };
 
+// components/items/members.tsx
+import Image8 from "next/image";
+var MembersBlockSchema = {
+  type: "object",
+  label: "Members",
+  name: "members",
+  list: true,
+  fields: [
+    {
+      label: "Name",
+      name: "name",
+      type: "string"
+    },
+    {
+      label: "Position",
+      name: "position",
+      type: "string"
+    },
+    {
+      label: "LinkedIn",
+      name: "linkedin",
+      type: "string"
+    },
+    {
+      name: "src",
+      label: "Image Source",
+      type: "image"
+    },
+    {
+      name: "alt",
+      label: "Alt Text",
+      type: "string"
+    },
+    {
+      name: "stage",
+      label: "Stage",
+      type: "string"
+    }
+  ]
+};
+
 // components/blocks/content.tsx
 var contentBlockSchema = {
   name: "content",
@@ -1051,6 +1092,7 @@ var contentBlockSchema = {
     InfopointsBlockSchema,
     TestimonialBlockSchema,
     FactsBlockSchema,
+    MembersBlockSchema,
     FeaturesBlockSchema,
     {
       type: "boolean",
@@ -1197,7 +1239,7 @@ var boothBlockSchema = {
 };
 
 // components/blocks/imagegrid.tsx
-import Image8 from "next/image";
+import Image9 from "next/image";
 import React10 from "react";
 var imagegridBlockSchema = {
   name: "imagegrid",
