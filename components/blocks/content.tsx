@@ -7,6 +7,7 @@ import { Testimonial, TestimonialBlockSchema } from "../items/testimonial";
 import { ColorPickerInput } from "../fields/color";
 import { Facts, FactsBlockSchema } from "../items/facts";
 import { Features, FeaturesBlockSchema } from "../items/features";
+import { Members, MembersBlockSchema } from "../items/members";
 
 export const Content = ({ data }) => {
     return (
@@ -21,20 +22,24 @@ export const Content = ({ data }) => {
                         <Infopoints data={data?.infopoints} />
                     )}
 
-                    {data.image && (
+                    {data?.image && (
                         <RoundImage data={data?.image} />
                     )}
 
-                    {data.testimonial && (
+                    {data?.testimonial && (
                         <Testimonial data={data?.testimonial} />
                     )}
 
-                    {data.figures && (
+                    {data?.figures && (
                         <Facts data={data.figures} />
                     )}
 
-                    {data.features && (
+                    {data?.features && (
                         <Features data={data.features} />
+                    )}
+
+                    {data?.members && (
+                        <Members data={data.members} />
                     )}
 
                     {!data.contentblock_left && (
@@ -55,6 +60,7 @@ export const contentBlockSchema: Template = {
         InfopointsBlockSchema,
         TestimonialBlockSchema,
         FactsBlockSchema,
+        MembersBlockSchema,
         FeaturesBlockSchema,
         {
             type: "boolean",

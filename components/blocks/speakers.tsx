@@ -1,6 +1,5 @@
 import type { Template } from "tinacms";
 import Image from "next/image";
-import { placeholderBox } from "../items/placeholder";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
 import Autoplay from "embla-carousel-autoplay";
@@ -44,12 +43,10 @@ export const Speakers = ({ data }) => {
                                 <div className='absolute inset-0 w-full transition-all group-hover:scale-95'>
                                     <Image
                                         width={350}
-                                        height={450}
+                                        height={350}
                                         className="w-full h-full object-cover rounded-full"
-                                        alt={speaker?.image?.alt}
-                                        src={speaker?.image?.src}
-                                        placeholder="blur"
-                                        blurDataURL={placeholderBox}
+                                        alt={speaker?.image?.alt ? speaker?.image?.alt : 'unknown'}
+                                        src={speaker?.image?.src ? speaker?.image?.src : '/user.svg'}
                                     />
                                 </div>
                                 <div>
