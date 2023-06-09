@@ -1,7 +1,6 @@
 import type { Template } from "tinacms";
-import CTA from "./cta";
 import Image from "next/image";
-import { useState } from "react";
+import { Button, ButtonSecondary } from "../items/button";
 
 export const Hero = ({ data }) => {
     return (
@@ -49,9 +48,23 @@ export const Hero = ({ data }) => {
                     </h1>
                 </div>
 
-                {data.cta && data.cta.text !== '' && (
-                    <div className="mt-12">
-                        <CTA data={data} />
+                {(data?.cta || data?.cta_secondary) && (
+                    <div className="flex justify-center">
+                        <div className="mt-12 grid grid-cols-1 gap-y-6 md:flex md:flex-wrap md:gap-x-4">
+                            {data?.cta && data.cta.text !== '' && (
+                                <div>
+                                    <Button link={data?.cta?.link} new_tab={data?.cta?.new_tab} text={data?.cta?.text}>
+                                    </Button>
+                                </div>
+                            )}
+
+                            {data?.cta_secondary && data.cta_secondary.text !== '' && (
+                                <div>
+                                    <ButtonSecondary link={data?.cta_secondary?.link} without_background={data?.cta_secondary?.without_background} new_tab={data?.cta_secondary?.new_tab} text={data?.cta_secondary?.text}>
+                                    </ButtonSecondary>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 )}
             </div>
@@ -87,6 +100,38 @@ export const heroBlockSchema: Template = {
                     label: "Text",
                     name: "text",
                     type: "string"
+                },
+                {
+                    type: "boolean",
+                    label: "Open in new tab",
+                    name: "new_tab"
+                }
+            ]
+        },
+        {
+            label: "Call to action (secondary)",
+            name: "cta_secondary",
+            type: "object",
+            fields: [
+                {
+                    type: "string",
+                    label: "Link",
+                    name: "link",
+                },
+                {
+                    type: "string",
+                    label: "Text",
+                    name: "text",
+                },
+                {
+                    type: "boolean",
+                    label: "Open in new tab",
+                    name: "new_tab"
+                },
+                {
+                    type: "boolean",
+                    label: "Without background",
+                    name: "without_background"
                 }
             ]
         },
