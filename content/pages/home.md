@@ -14,11 +14,16 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: '2 & 3 November, Winterthur'
+  - subtitle: '2 & 3 November, Eulachhallen Winterthur'
     title: Startup Nights
     cta:
       link: /tickets
       text: Tickets
+    cta_secondary:
+      link: /Startup_Nights_2023.ics
+      text: Save the date
+      new_tab: true
+      without_background: true
     image:
       src: ''
       alt: ''
@@ -239,4 +244,9 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
+
+
+
+
 
