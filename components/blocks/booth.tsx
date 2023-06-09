@@ -5,7 +5,7 @@ import { InformationCircleIcon, MinusIcon, PhotoIcon } from '@heroicons/react/20
 import { Tab, Transition } from '@headlessui/react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
-import { ExclamationCircleIcon, PlusIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { ExclamationCircleIcon, PlusIcon, XCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 enum uploadState {
     None = 0,
@@ -888,7 +888,7 @@ export const Booth = ({ data }) => {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-sn-black ring-2 ring-sn-black-lightest shadow-xl shadow-sn-black">
+                        <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-sn-black ring-2 ring-red-400 shadow-xl shadow-red-900">
                             <div className="p-4">
                                 <div className="flex items-start">
                                     <div className="flex-shrink-0">
@@ -896,7 +896,7 @@ export const Booth = ({ data }) => {
                                     </div>
                                     <div className="ml-3 w-0 flex-1 pt-0.5">
                                         <p className="text-sm font-medium text-gray-200">Shoot! Something went wrong.</p>
-                                        <p className="mt-1 text-sm text-gray-400">Sorry about that. Please shoot us an email <a className="italic underline underline-offset-4" href="mailto:hello@startup-nights.ch">here</a> and we'll get in touch with you.</p>
+                                        <p className="mt-1 text-sm text-gray-400">Sorry about that. Please shoot us an email <a className="italic text-sn-yellow underline underline-offset-4" href="mailto:hello@startup-nights.ch">here</a> and we'll get in touch with you.</p>
                                     </div>
                                     <div className="ml-4 flex flex-shrink-0">
                                         <button
@@ -923,7 +923,7 @@ export const Booth = ({ data }) => {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-sn-black ring-2 ring-sn-black-lightest shadow-xl shadow-sn-black">
+                        <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-sn-black ring-2 ring-green-400 shadow-xl shadow-green-900">
                             <div className="p-4">
                                 <div className="flex items-start">
                                     <div className="flex-shrink-0">
