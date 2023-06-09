@@ -230,6 +230,49 @@ blocks:
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
           alt: Léa Miggiano
     _template: speakers
+  - content_block:
+      subtitle: Pitching Competition
+      title: Meet our jury.
+      content:
+        - >-
+          The competition is split into two parts; pre-seed and seed. You can 
+          pre-register now and we'll get back to you once we are ready to accept
+          applications.
+      cta:
+        link: https://forms.gle/ZVjdkjwyqA98nYxR7
+        text: Pre-register
+    members:
+      - name: Some Pre-Seed Jury Member
+        position: Some Jury Member
+        linkedin: 'https://startup-nights.ch'
+        stage: 'seed'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
+        alt: Some jury member
+      - name: Some Pre-Seed Jury Member
+        position: Some Jury Member
+        linkedin: 'https://startup-nights.ch'
+        stage: 'seed'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
+        alt: Some jury member
+      - name: Some Seed Jury Member
+        position: Some Jury Member
+        linkedin: 'https://startup-nights.ch'
+        stage: 'pre-seed'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
+        alt: Some jury member
+      - name: Some Seed Jury Member
+        position: Some Jury Member
+        linkedin: 'https://startup-nights.ch'
+        stage: 'pre-seed'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
+        alt: Some jury member
+    contentblock_left: true
+    background_color: bg-sn-black-light
+    _template: content
   - subtitle: Partner
     title: Thank you very much!
     cta:
@@ -277,15 +320,3 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
-
-
-
-
-
-
-
-
-
-
-
-
