@@ -39,13 +39,13 @@ export const Partners = ({ data }) => {
 
                             <ul className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} gap-8 md:gap-18 py-4 md:py-8`}>
                                 {category.partners && category.partners.map((partner, i: number) => (
-                                    <Link href={partner?.link} key={`partner-${i}`} target={'_blank'} className='relative'>
+                                    <Link href={partner?.link ? partner.link : '/'} key={`partner-${i}`} target={'_blank'} className='relative'>
                                         <li className="group relative p-2 sm:p-8 border-2 border-transparent rounded-xl sm:rounded-3xl transition-all hover:bg-gray-50">
                                             <Image
                                                 width={300}
                                                 height={200}
-                                                alt={partner?.alt}
-                                                src={partner?.src}
+                                                alt={partner?.alt ? partner.alt : 'undefined' }
+                                                src={partner?.src ? partner.src : '/user.svg' }
                                                 placeholder="blur"
                                                 className="select-none"
                                                 blurDataURL={placeholderBox}
@@ -119,19 +119,16 @@ export const partnersBlockSchema: Template = {
                             type: "image",
                             label: "Image Source",
                             name: "src",
-                            required: true,
                         },
                         {
                             type: "string",
                             label: "Alt Text",
                             name: "alt",
-                            required: true,
                         },
                         {
                             type: "string",
                             name: "link",
                             label: "Partner website",
-                            required: true,
                         },
                     ]
                 },

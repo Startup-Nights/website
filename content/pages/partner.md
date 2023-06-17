@@ -137,6 +137,10 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/farner.png
+            alt: Farner
+            link: 'https://farner.ch'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/wenger-vieli.png
             alt: Wenger Vieli
             link: 'https://wengervieli.ch'
@@ -218,6 +222,7 @@ blocks:
       offer for the partner package.
     _template: partnerform
 ---
+
 
 
 
