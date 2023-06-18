@@ -97,6 +97,12 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/joanna-rubin.jpg
             alt: Joanna Rubin
+          - name: Anastasiia Yuvchyk
+            position: Offline Marketing
+            linkedin: 'https://www.linkedin.com/in/anastasiia-yuvchyk/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/anastasiia-yuvchyk.png
+            alt: Anastasiia Yuvchyk
           - name: Alyssia Kugler
             position: Head of Communications
             linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
@@ -166,6 +172,12 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/demian-holderegger.jpg
             alt: Demian Holderegger
+          - name: Severin Bäuerle
+            position: Head of Technics
+            linkedin: 'https://www.linkedin.com/in/severin-bäuerle-695357113/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/severin-baeuerle.jpg
+            alt: Severin Bäuerle
           - name: Livia Arena
             position: Visual & Signage
             linkedin: 'https://www.linkedin.com/in/livia-arena-638700260/'
@@ -354,12 +366,23 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/hao-xu.jpg
             alt: Hao Xu
+          - name: Janine Luginbühl
+            position: Academia
+            linkedin: 'https://www.linkedin.com/in/janineluginbuehl/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/janine-luginbuehl.jpg
+            alt: Janine Luginbühl
           - name: Stefano Bollmann
             position: International Collaborations
             linkedin: 'https://www.linkedin.com/in/stefanobollmann/'
             alt: Stefano Bollmann
     _template: team
 ---
+
+
+
+
+
 
 
 
