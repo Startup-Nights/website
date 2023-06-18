@@ -14,8 +14,8 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: Booth
-    title: Apply for a booth in our Startup World.
+  - subtitle: Startup World Booth
+    title: Apply now to present your startup.
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
@@ -23,6 +23,7 @@ blocks:
     _template: hero
   - _template: booth_registration
 ---
+
 
 
 
