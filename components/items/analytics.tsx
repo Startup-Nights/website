@@ -72,3 +72,7 @@ export const MetaPixel = () => {
     </>
   );
 };
+
+export const TiktokPixel = () => {
+  return <Script src="/tiktok.js" strategy="beforeInteractive" />;
+};
