@@ -105,6 +105,44 @@ blocks:
       link: ''
       text: ''
     speakers:
+      - name: Christian Marty
+        position: Founder & CEO of evulpo
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/christian-marty.jpg
+          alt: Christian Marty
+      - name: Levent Künzi
+        position: 'Co-Founder, CEO & Chairman at Properti AG'
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/levent-kuenzi.jpg
+          alt: Levent Künzi
+      - name: Lukas Gysin
+        position: Co-Founder of uniqFEED
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/lukas-gysin.jpg
+          alt: Lukas Gysin
+      - name: Benno Burkhardt
+        position: Co-Owner & Member of the Board at Stash
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/benno-burkhardt.jpg
+          alt: Benno Burkhardt
+      - name: Catherine Meuter
+        position: Co-Founder VYN
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/catherine-meuter.jpg
+          alt: Catherine Meuter
+      - name: Julien Weissenberg
+        position: 'Founder Deep Tech Experts '
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/julien-weissenberg.jpg
+          alt: Julien Weissenberg
       - name: Mershad Javan
         position: Founder and CEO Octiive
         description: ''
@@ -244,6 +282,12 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
+
+
+
+
+
 
 
 
