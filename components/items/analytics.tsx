@@ -2,17 +2,13 @@ import Analytics from "analytics";
 import { Router } from "next/router";
 import googleAnalyticsPlugin from "@analytics/google-analytics";
 import googleTagManager from "@analytics/google-tag-manager";
-import Script from "next/script";
 import { useEffect } from "react";
 
 const analytics = Analytics({
   app: "startup-nights",
   plugins: [
-    googleAnalyticsPlugin({
-      measurementIds: ["G-MNEKNWTZFY"],
-    }),
     googleTagManager({
-      containerId: "G-MNEKNWTZFY",
+      containerId: "GTM-5JJCJM9",
     }),
   ],
 });
@@ -39,40 +35,4 @@ export const useAnalytics = () => {
   }, []);
 
   return analytics;
-};
-
-export const LinkedInPixel = () => {
-  return (
-    <>
-      <Script src="/linkedin.js" strategy="beforeInteractive" />
-      <noscript>
-        <img
-          height="1"
-          width="1"
-          className="hidden"
-          src="https://px.ads.linkedin.com/collect/?pid=5621425&fmt=gif"
-        />
-      </noscript>
-    </>
-  );
-};
-
-export const MetaPixel = () => {
-  return (
-    <>
-      <Script src="/meta.js" strategy="beforeInteractive" />
-      <noscript>
-        <img
-          height="1"
-          width="1"
-          className="hidden"
-          src="https://www.facebook.com/tr?id=202093386119683&ev=PageView&noscript=1"
-        />
-      </noscript>
-    </>
-  );
-};
-
-export const TiktokPixel = () => {
-  return <Script src="/tiktok.js" strategy="beforeInteractive" />;
 };
