@@ -1,6 +1,6 @@
 import { Source_Sans_Pro } from 'next/font/google'
 import "../styles.css";
-import { LinkedInPixel, MetaPixel, TiktokPixel, useAnalytics } from '../components/items/analytics';
+import { useAnalytics } from '../components/items/analytics';
 import { Analytics } from '@vercel/analytics/react';
 
 // https://nextjs.org/docs/basic-features/font-optimization
@@ -15,9 +15,6 @@ const App = ({ Component, pageProps }) => {
   return (
     <main className={sourceSansPro.className}>
       <Analytics />
-      <MetaPixel />
-      <LinkedInPixel />
-      <TiktokPixel />
       <Component {...pageProps} />
     </main>
   );
