@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Template } from "tinacms";
 import { SocialIcon } from "../items/social";
 import Link from "next/link";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 type Member = { name: string, src: string, position: string, linkedin?: string }
 type Division = { title: string, subtitle: string, members: Member[] }
@@ -38,7 +39,7 @@ export const Team = ({ data }) => {
                                     <Link key={person?.name}  href={person.linkedin ? person.linkedin : '/'} target="_blank" className="block group">
                                         <li className="group relative transition-all">
                                             <div className="absolute invisible -top-3 -right-3 p-2 bg-white rounded-full text-black group-hover:visible">
-                                                <SocialIcon name='linkedin' className="h-5 w-5" aria-hidden="true" />
+                                                <ArrowTopRightOnSquareIcon className="w-5 h-5" strokeWidth={2}/>
                                             </div>
 
                                             <div className="flex items-center gap-x-6 border-2 border-transparent rounded-3xl p-4 bg-sn-black-lightest group-hover:border-gray-200">

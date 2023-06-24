@@ -31,7 +31,7 @@ blocks:
           soon as possible.
       cta:
         link: 'mailto:hello@startup-nights.ch'
-        text: Drop us a line
+        text: Contact us
     infopoints:
       - name: Partners and investors
         text: >-
