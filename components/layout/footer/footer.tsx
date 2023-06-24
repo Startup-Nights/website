@@ -53,12 +53,12 @@ export const Footer = ({ data }) => {
                 </div>
             </div>
 
-            {/* {data.banner && open && (
+            {data.banner && open && (
                 <>
                     <div className="h-40 sm:h-24 md:h-20 lg:h-18"></div>
                     <Banner setOpen={setOpen} data={data.banner} />
                 </>
-            )} */}
+            )}
         </footer>
     )
 }
