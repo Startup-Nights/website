@@ -22,10 +22,10 @@ export const Header = ({ data }) => {
             <div className="relative">
                 <div className='max-w-7xl mx-auto py-6 px-8 lg:px-24'>
                     <nav className="relative flex items-center justify-between" aria-label="Global">
-                        <div className='flex justify-start items-center gap-x-16'>
+                        <div className='flex justify-start items-center gap-x-8 xl:gap-x-16'>
                             <div className="flex">
-                                <Link href="/" className="-m-1.5 p-1.5 items-center whitespace-nowrap">
-                                    <img className="h-8 sm:h-12 w-auto select-none" src="/logo/startup-nights.png" />
+                                <Link href="/" className="-m-1.5 p-2 items-center whitespace-nowrap">
+                                    <img className="h-6 sm:h-8 w-auto select-none" src="/logo/startup-nights.png" />
                                 </Link>
                             </div>
                             <div className="hidden lg:flex lg:gap-x-6">
@@ -34,7 +34,7 @@ export const Header = ({ data }) => {
                                         <Link
                                             key={`${item.label}-${i}`}
                                             href={`${prefix}/${item.href}`}
-                                            className='text-sm font-semibold leading-6 text-slate-400 hover:text-slate-100'
+                                            className='text-sm font-semibold leading-6 text-gray-400 hover:text-gray-100'
                                         >
                                             {item.label}
                                         </Link>
@@ -55,7 +55,7 @@ export const Header = ({ data }) => {
                                 <a
                                     key={`${item.title}-${i}`}
                                     href={item.link} target='_blank'
-                                    className='inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-100'
+                                    className='inline-flex items-center text-sm font-medium text-gray-400 hover:text-gray-100'
                                 >
                                     <span className="sr-only">{item.title}</span>
                                     <SocialIcon name={item.title} className="h-6 w-6" aria-hidden="true" />
@@ -102,25 +102,25 @@ export const Header = ({ data }) => {
                                                     key={`${item.label}-${i}`}
                                                     href={`${prefix}/${item.href}`}
                                                     onClick={() => setMobileMenuOpen(false)}
-                                                    className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-400 hover:bg-gray-400/10'
+                                                    className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-400 hover:bg-gray-400/10'
                                                 >
                                                     {item.label}
                                                 </Link>
                                             );
                                         })}
                                         <Link
-                                            className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-400 hover:bg-gray-400/10'
+                                            className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-400 hover:bg-gray-400/10'
                                             href='/tickets'
                                             onClick={() => setMobileMenuOpen(false)}
                                         >Tickets</Link>
                                         <Link
-                                            className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-400 hover:bg-gray-400/10'
+                                            className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-400 hover:bg-gray-400/10'
                                             href='/booth'
                                             onClick={() => setMobileMenuOpen(false)}
                                         >Booth</Link>
                                     </div>
                                     <div className='py-6'>
-                                        <p className='-mx-3 block rounded-lg py-2 px-3 text-base leading-7 text-slate-400'>
+                                        <p className='-mx-3 block rounded-lg py-2 px-3 text-base leading-7 text-gray-400'>
                                             <Link href="https://startup-nights.ch" className="font-bold hover:text-gray-600">Startup Nights</Link> - an event organized by <Link href="https://ec-w.ch" className="font-bold hover:text-gray-600">ECW</Link>
                                         </p>
                                         <div className='-mx-3 flex justify-start space-x-2'>
@@ -129,7 +129,7 @@ export const Header = ({ data }) => {
                                                     key={`${item.title}-${i}`}
                                                     href={item.link} target='_blank'
                                                     onClick={() => setMobileMenuOpen(false)}
-                                                    className='flex justify-center rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-slate-400 hover:bg-gray-400/10'
+                                                    className='flex justify-center rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-400 hover:bg-gray-400/10'
                                                 >
                                                     <span className="sr-only">{item.title}</span>
                                                     <SocialIcon name={item.title} className="h-6 w-6" aria-hidden="true" />
