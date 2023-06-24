@@ -1,18 +1,13 @@
 import { Fragment, useEffect, useState } from "react";
 import type { Template } from "tinacms";
 import Link from "next/link";
-import {
-  InformationCircleIcon,
-  MinusIcon,
-  PhotoIcon,
-} from "@heroicons/react/20/solid";
+import { InformationCircleIcon, PhotoIcon } from "@heroicons/react/20/solid";
 import { Tab, Transition } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import {
   ExclamationCircleIcon,
   PlusIcon,
-  XCircleIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
@@ -311,15 +306,86 @@ export const Booth = ({ data }) => {
           </div>
 
           <form onSubmit={handleSubmit} className="mt-16">
-            <h3 className="text-xl font-semibold leading-6 text-slate-200">
-              Company details
-            </h3>
-            <p className="mt-6 text-md leading-6 text-gray-300">
-              We'll get in touch with all the startups that have registered up
-              until then. Stay tuned!
-            </p>
-
             <div className="mt-6 grid grid-cols-1 gap-y-8 gap-x-4 sm:grid-cols-6">
+              <div className="sm:col-span-6">
+                <h3 className="text-xl font-semibold leading-6 text-slate-200">
+                  Booth details
+                </h3>
+              </div>
+
+              <div className="sm:col-span-6">
+                <Packages
+                  regPackage={regPackage}
+                  setRegPackage={setRegPackage}
+                />
+              </div>
+
+              <div className="sm:col-span-6">
+                <div className="rounded-3xl bg-sn-black-light p-8">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <InformationCircleIcon
+                        className="h-5 w-5 text-sn-yellow"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div className="ml-3">
+                      <h3 className="font-medium text-gray-200">
+                        Note that you have to bring your own rollup
+                      </h3>
+                      <p className="mt-2 text-gray-400">
+                        If you don't have one yet, you'll have to organize one
+                        by yourself.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="sm:col-span-6">
+                {radiobuttons(
+                  "Equipment",
+                  "equipment",
+                  [
+                    {
+                      id: "equipment-own",
+                      title: "We'll bring our own equipment",
+                    },
+                    { id: "equipment-not-sure", title: "We are not sure yet" },
+                  ],
+                  equipment,
+                  setEquipment
+                )}
+              </div>
+
+              <div className="sm:col-span-6">
+                <label
+                  htmlFor="equipment_description"
+                  className="block text-sm font-medium leading-6"
+                >
+                  If you bring your own equipment, please describe what you'll
+                  bring:
+                </label>
+                <div className="mt-2">
+                  <textarea
+                    required={false}
+                    id="equipment_description"
+                    name="equipment_description"
+                    placeholder="We'll bring along x + y..."
+                    rows={3}
+                    className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
+                    defaultValue={""}
+                  />
+                </div>
+              </div>
+
+
+              <div className="sm:col-span-6 mt-16">
+              <h3 className="text-xl font-semibold leading-6 text-slate-200">
+                Company details
+              </h3>
+              </div>
+
               <div className="sm:col-span-3">
                 <label
                   htmlFor="company_name"
@@ -825,78 +891,6 @@ export const Booth = ({ data }) => {
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div className="sm:col-span-6 mt-16">
-                <h3 className="text-xl font-semibold leading-6 text-slate-200">
-                  Booth details
-                </h3>
-              </div>
-
-              <div className="sm:col-span-6">
-                <Packages
-                  regPackage={regPackage}
-                  setRegPackage={setRegPackage}
-                />
-              </div>
-
-              <div className="sm:col-span-6">
-                <div className="rounded-3xl bg-sn-black-light p-8">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <InformationCircleIcon
-                        className="h-5 w-5 text-sn-yellow"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div className="ml-3">
-                      <h3 className="font-medium text-gray-200">
-                        Note that you have to bring your own rollup
-                      </h3>
-                      <p className="mt-2 text-gray-400">
-                        If you don't have one yet, you'll have to organize one
-                        by yourself.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="sm:col-span-6">
-                {radiobuttons(
-                  "Equipment",
-                  "equipment",
-                  [
-                    {
-                      id: "equipment-own",
-                      title: "We'll bring our own equipment",
-                    },
-                    { id: "equipment-not-sure", title: "We are not sure yet" },
-                  ],
-                  equipment,
-                  setEquipment
-                )}
-              </div>
-
-              <div className="sm:col-span-6">
-                <label
-                  htmlFor="equipment_description"
-                  className="block text-sm font-medium leading-6"
-                >
-                  If you bring your own equipment, please describe what you'll
-                  bring:
-                </label>
-                <div className="mt-2">
-                  <textarea
-                    required={false}
-                    id="equipment_description"
-                    name="equipment_description"
-                    placeholder="We'll bring along x + y..."
-                    rows={3}
-                    className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
-                    defaultValue={""}
-                  />
-                </div>
               </div>
 
               <div className="sm:col-span-6 mt-16">
