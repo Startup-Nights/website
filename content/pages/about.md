@@ -85,24 +85,36 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-moser.jpg
             alt: Daniel Moser
-          - name: Natalie Rotschi
-            position: Text
-            linkedin: 'https://www.linkedin.com/in/natalie-rotschi-7405b2151/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/natalie-rotschi.jpg
-            alt: Natalie Rotschi
           - name: Joanna Rubin
             position: Head of Social Media
             linkedin: 'https://www.linkedin.com/in/joannarubinmedia/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/joanna-rubin.jpg
             alt: Joanna Rubin
+          - name: Natalie Rotschi
+            position: Text
+            linkedin: 'https://www.linkedin.com/in/natalie-rotschi-7405b2151/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/natalie-rotschi.jpg
+            alt: Natalie Rotschi
           - name: Anastasiia Yuvchyk
             position: Offline Marketing
             linkedin: 'https://www.linkedin.com/in/anastasiia-yuvchyk/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/anastasiia-yuvchyk.png
             alt: Anastasiia Yuvchyk
+          - name: Javier Santillan
+            position: UX & Graphic Design
+            linkedin: 'https://www.linkedin.com/in/javier-santillan-amezcua/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/javier-santillan.jpg
+            alt: Javier Santillan
+          - name: Enrique Martin
+            position: UX & Graphic Design
+            linkedin: 'https://www.linkedin.com/in/enrique-martindelcampo-ux/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/enrique-martin.png
+            alt: Enrique Martin
           - name: Alyssia Kugler
             position: Head of Communications
             linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
@@ -378,6 +390,9 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
+
+
 
 
 
