@@ -42,7 +42,7 @@ export const Banner = ({ data, setOpen }) => {
           <button
             type="button"
             onClick={() => setOpen(false)}
-            className="rounded-full transition-all border-2 border-sn-black hover:bg-sn-black px-4 py-1 text-black hover:text-sn-yellow text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
+            className="rounded-full transition-all border-2 border-sn-black hover:bg-sn-black px-4 py-1 text-black hover:text-white text-base font-semibold leading-7 sm:text-sm sm:leading-6 tracking-wide"
           >
             {data.close_button}
           </button>

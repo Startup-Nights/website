@@ -9,7 +9,7 @@ module.exports = {
                 'sn-black-lightest': '#242424',
                 'sn-white': '#FFFFFF',
                 'sn-yellow': '#FDC900',
-                'sn-yellow-dark': '#EBB400'
+                'sn-yellow-dark': '#DEAA00'
             },
         }
     },

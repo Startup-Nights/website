@@ -1,3 +1,4 @@
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { Template } from "tinacms";
@@ -227,9 +228,7 @@ export const Positions = ({ data, parentField = "" }) => {
                             <Link key={`position-${i}`} href={position.link ? position.link : '/'} target="_blank" className="block group">
                                 <li key={position.id} className='relative grid grid-cols-1 justify-start items-center bg-sn-black-light rounded-3xl px-8 py-4 border-2 border-transparent hover:border-white'>
                                     <div className="absolute invisible -top-3 -right-3 p-2 bg-white rounded-full text-black group-hover:visible">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                                        </svg>
+                                        <ArrowTopRightOnSquareIcon className="w-5 h-5" strokeWidth={2}/>
                                     </div>
 
                                     <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between truncate pt-1">

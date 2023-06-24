@@ -112,8 +112,11 @@ blocks:
         icon: usergroup
       - title: Get a reference and volunteer certificate
         icon: checkbadge
+      - title: Peek behind the scenes and see how the Startup Nights are organised
+        icon: cog
     _template: benefits
 ---
+
 
 
 
