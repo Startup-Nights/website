@@ -69,9 +69,9 @@ export const PartnerForm = ({ data }) => {
     return (
         <div className="bg-sn-black-light">
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
-                <div id="partner_form" className='relative text-slate-200'>
+                <div id="partner_form" className='relative text-gray-200'>
                     <div>
-                        <h3 className="text-base font-semibold leading-6 text-slate-200 tracking-widest">{data.title}</h3>
+                        <h3 className="text-base font-semibold leading-6 text-gray-200 tracking-widest">{data.title}</h3>
                         <p className="mt-1 text-sm text-gray-500">{data.description}</p>
                     </div>
                     <form onSubmit={handleSubmit}>

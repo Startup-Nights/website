@@ -308,7 +308,7 @@ export const Booth = ({ data }) => {
           <form onSubmit={handleSubmit} className="mt-16">
             <div className="mt-6 grid grid-cols-1 gap-y-8 gap-x-4 sm:grid-cols-6">
               <div className="sm:col-span-6">
-                <h3 className="text-xl font-semibold leading-6 text-slate-200">
+                <h3 className="text-xl font-semibold leading-6 text-gray-200">
                   Booth details
                 </h3>
               </div>
@@ -381,7 +381,7 @@ export const Booth = ({ data }) => {
 
 
               <div className="sm:col-span-6 mt-16">
-              <h3 className="text-xl font-semibold leading-6 text-slate-200">
+              <h3 className="text-xl font-semibold leading-6 text-gray-200">
                 Company details
               </h3>
               </div>
@@ -755,7 +755,7 @@ export const Booth = ({ data }) => {
               </div>
 
               <div className="sm:col-span-6 mt-16">
-                <h3 className="text-xl font-semibold leading-6 text-slate-200">
+                <h3 className="text-xl font-semibold leading-6 text-gray-200">
                   Contact person
                 </h3>
               </div>
@@ -854,7 +854,7 @@ export const Booth = ({ data }) => {
               </div>
 
               <div className="sm:col-span-6 mt-16">
-                <h3 className="text-xl font-semibold leading-6 text-slate-200">
+                <h3 className="text-xl font-semibold leading-6 text-gray-200">
                   Other interests
                 </h3>
               </div>
@@ -894,7 +894,7 @@ export const Booth = ({ data }) => {
               </div>
 
               <div className="sm:col-span-6 mt-16">
-                <h3 className="text-xl font-semibold leading-6 text-slate-200">
+                <h3 className="text-xl font-semibold leading-6 text-gray-200">
                   Billing address
                 </h3>
               </div>
@@ -1004,7 +1004,7 @@ export const Booth = ({ data }) => {
               )}
 
               <div className="sm:col-span-6 mt-16">
-                <h3 className="text-xl font-semibold leading-6 text-slate-200">
+                <h3 className="text-xl font-semibold leading-6 text-gray-200">
                   Additional information
                 </h3>
               </div>
