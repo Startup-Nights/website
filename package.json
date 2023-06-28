@@ -69,6 +69,7 @@
     "next-tinacms-dos": "^1.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-gtm-module": "^2.0.11",
     "react-icons": "^4.2.0",
     "react-is": "^18.2.0",
     "react-photo-album": "^2.1.0",
