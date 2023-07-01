@@ -98,13 +98,6 @@
         "title": "youtube",
         "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
       }
-    ],
-    "banner": {
-      "text": "Get your early bird ticket with 20% off the regular price!",
-      "agree_button": "Yes please",
-      "close_button": "Close",
-      "date": "2023-07-01",
-      "link": "/tickets"
-    }
+    ]
   }
 }
