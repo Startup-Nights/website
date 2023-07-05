@@ -110,7 +110,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/javier-santillan.jpg
             alt: Javier Santillan
           - name: Enrique Martin
-            position: UX & Graphic Design
+            position: UX Design
             linkedin: 'https://www.linkedin.com/in/enrique-martindelcampo-ux/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/enrique-martin.png
@@ -161,7 +161,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/tobias-murbach.jpg
             alt: Tobias Murbach
           - name: Michael Kubli
-            position: Head of Technics
+            position: Head of Leisure & Working Area
             linkedin: 'https://www.linkedin.com/in/michael-kubli/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/michael-kubli.JPG
@@ -196,18 +196,24 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/livia-arena.jpeg
             alt: Livia Arena
+          - name: Michelle Nguyen
+            position: Deputy Head F&B
+            linkedin: 'https://www.linkedin.com/in/michelle-hai-mi-nguyen/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
+            alt: Michelle Nguyen
+          - name: Michel Lüscher
+            position: Head of Accomodation
+            linkedin: 'https://www.linkedin.com/in/michelluescher/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michel-luescher.jpeg
+            alt: Michel Lüscher
           - name: Gabriel Riedo
             position: Head of Material & Logistics
             linkedin: 'https://www.linkedin.com/in/gabriel-riedo-244865120/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/gabriel-riedo.png
             alt: Gabriel Riedo
-          - name: Raquel Ruiz
-            position: Snacks
-            linkedin: 'https://www.linkedin.com/in/raquel-ruiz-iniesta/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/raquel-ruiz.jpg
-            alt: Raquel Ruiz
           - name: Lukas Gamper
             position: Ticketing
             linkedin: 'https://www.linkedin.com/in/lukas-gamper-a508649/'
@@ -226,6 +232,14 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/holger-rannow.png
             alt: Holger Rannow
+          - name: David Barrera
+            position: Head of Power & Internet Supply
+            linkedin: 'https://www.linkedin.com/in/critsecdave/'
+            alt: David Barrera
+          - name: Seraina Mastai
+            position: F&B Snacks
+            linkedin: 'https://www.linkedin.com/in/seraina-mastai-706b14151/'
+            alt: Seraina Mastai
       - subtitle: Program Team
         title: Entertainers at heart.
         members:
@@ -272,10 +286,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/jonathan-hanhart.jpg
             alt: Jonathan Hanhart
-          - name: Natascha Waldkircher
-            position: After Party
-            linkedin: 'https://www.linkedin.com/in/natascha-juika-w-6a058524a/'
-            alt: Natascha Waldkircher
           - name: Désirée Egli
             position: Leaders Brunch
             linkedin: 'https://www.linkedin.com/in/désirée-egli/'
