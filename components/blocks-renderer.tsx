@@ -18,6 +18,7 @@ import { PricingTable } from "./blocks/pricing";
 import { Booth } from "./blocks/booth";
 import { ContentWide } from "./blocks/content_wide";
 import { Imagegrid } from "./blocks/imagegrid";
+import { Pitching } from "./blocks/pitching";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -185,6 +186,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <ContentWide data={block} />
+                                </div>
+                            )
+                        case "PageBlocksPitching_registration":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Pitching data={block} />
                                 </div>
                             )
 
