@@ -1293,6 +1293,32 @@ var imagegridBlockSchema = {
   ]
 };
 
+// components/blocks/pitching.tsx
+import { Fragment as Fragment6, useEffect as useEffect5, useState as useState9 } from "react";
+import { Transition as Transition5 } from "@headlessui/react";
+import { CheckCircleIcon as CheckCircleIcon4 } from "@heroicons/react/20/solid";
+import {
+  ExclamationCircleIcon as ExclamationCircleIcon4,
+  PlusIcon as PlusIcon2,
+  XMarkIcon as XMarkIcon5
+} from "@heroicons/react/24/outline";
+var pitchingBlockSchema = {
+  name: "pitching_registration",
+  label: "Pitching registration",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -1714,6 +1740,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "partner") {
               return `/partner`;
             }
+            if (document2._sys.filename === "pitching") {
+              return `/pitching`;
+            }
             if (document2._sys.filename === "party") {
               return `/party`;
             }
@@ -1755,7 +1784,8 @@ var config = defineStaticConfig({
               pricingBlockSchema,
               contentBlockSchema,
               contentWideBlockSchema,
-              imagegridBlockSchema
+              imagegridBlockSchema,
+              pitchingBlockSchema
             ]
           }
         ]
