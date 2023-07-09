@@ -239,7 +239,7 @@ blocks:
           pre-register now and we'll get back to you once we are ready to accept
           applications.
       cta:
-        link: https://forms.gle/ZVjdkjwyqA98nYxR7
+        link: /pitching
         text: Pre-register
     members:
       - name: Some Pre-Seed Jury Member

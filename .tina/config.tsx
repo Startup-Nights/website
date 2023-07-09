@@ -16,7 +16,8 @@ import { contentBlockSchema } from "../components/blocks/content";
 import { contentWideBlockSchema } from "../components/blocks/content_wide";
 import { pricingBlockSchema } from "../components/blocks/pricing";
 import { boothBlockSchema } from "../components/blocks/booth";
-import {imagegridBlockSchema } from "../components/blocks/imagegrid";
+import { imagegridBlockSchema } from "../components/blocks/imagegrid";
+import { pitchingBlockSchema } from "../components/blocks/pitching";
 
 const config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -436,6 +437,9 @@ const config = defineStaticConfig({
             if (document._sys.filename === "partner") {
               return `/partner`;
             }
+            if (document._sys.filename === "pitching") {
+              return `/pitching`;
+            }
             if (document._sys.filename === "party") {
               return `/party`;
             }
@@ -479,6 +483,7 @@ const config = defineStaticConfig({
               contentBlockSchema,
               contentWideBlockSchema,
               imagegridBlockSchema,
+              pitchingBlockSchema,
             ],
           },
         ],
