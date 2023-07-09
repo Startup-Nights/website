@@ -17,6 +17,7 @@ import { SEO } from "./blocks/seo";
 import { PricingTable } from "./blocks/pricing";
 import { Booth } from "./blocks/booth";
 import { ContentWide } from "./blocks/content_wide";
+import { Imagegrid } from "./blocks/imagegrid";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -166,6 +167,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Booth data={block} />
+                                </div>
+                            )
+                        case "PageBlocksImagegrid":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Imagegrid data={block} />
                                 </div>
                             )
                         case "PageBlocksContent_wide":
