@@ -4,8 +4,12 @@
     "color": "default",
     "nav": [
       {
-        "href": "hiring",
-        "label": "Hiring"
+        "href": "program",
+        "label": "Program"
+      },
+      {
+        "href": "impressions",
+        "label": "Impressions"
       },
       {
         "href": "partner",
@@ -14,10 +18,6 @@
       {
         "href": "about",
         "label": "About"
-      },
-      {
-        "href": "impressions",
-        "label": "Impression"
       },
       {
         "href": "contact",

@@ -1196,6 +1196,69 @@ var boothBlockSchema = {
   ]
 };
 
+// components/blocks/imagegrid.tsx
+import Image8 from "next/image";
+import React10 from "react";
+var imagegridBlockSchema = {
+  name: "imagegrid",
+  label: "Imagegrid",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    },
+    {
+      type: "object",
+      label: "Images",
+      name: "images",
+      list: true,
+      fields: [
+        {
+          type: "string",
+          label: "Name",
+          name: "name"
+        },
+        {
+          type: "string",
+          label: "Position",
+          name: "position"
+        },
+        {
+          type: "object",
+          label: "Image",
+          name: "image",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image"
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -1590,6 +1653,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "hiring") {
               return `/hiring`;
             }
+            if (document2._sys.filename === "program") {
+              return `/program`;
+            }
             if (document2._sys.filename === "tickets") {
               return `/tickets`;
             }
@@ -1654,7 +1720,8 @@ var config = defineStaticConfig({
               seoBlockSchema,
               pricingBlockSchema,
               contentBlockSchema,
-              contentWideBlockSchema
+              contentWideBlockSchema,
+              imagegridBlockSchema
             ]
           }
         ]
