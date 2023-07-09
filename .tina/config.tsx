@@ -402,6 +402,9 @@ const config = defineStaticConfig({
             if (document._sys.filename === "about") {
               return `/about`;
             }
+            if (document._sys.filename === "startup-city-winterthur") {
+              return `/startup-city-winterthur`;
+            }
             if (document._sys.filename === "hiring") {
               return `/hiring`;
             }
