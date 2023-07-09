@@ -1247,14 +1247,6 @@ var imagegridBlockSchema = {
           ]
         }
       ]
-    },
-    {
-      type: "string",
-      name: "background_color",
-      label: "Background color",
-      ui: {
-        component: ColorPickerInput
-      }
     }
   ]
 };
