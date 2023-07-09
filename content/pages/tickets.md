@@ -29,7 +29,7 @@ blocks:
         name: Founders
         description:
           - >-
-            Exhibit your products and services, connect with investors and
+            Represent your startup, connect with investors and
             corporates for financing opportunities, network with other founders,
             find new talent, and gain knowledge through workshops and keynotes.
         benefits:

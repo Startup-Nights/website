@@ -14,16 +14,11 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: '2 & 3 November, Eulachhallen Winterthur'
-    title: Startup Nights
+  - title: '2 & 3 November'
+    subtitle: Eulachhallen Winterthur
     cta:
       link: /tickets
       text: Tickets
-    cta_secondary:
-      link: /Startup_Nights_2023.ics
-      text: Save the date
-      new_tab: true
-      without_background: true
     image:
       src: ''
       alt: ''
@@ -105,6 +100,34 @@ blocks:
       link: ''
       text: ''
     speakers:
+      - name: Guy Parmelin
+        position: Member of the Swiss Federal Council
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/guy-parmelin.jpg
+          alt: Guy Parmelin
+      - name: Tino Krause
+        position: Regional Director Central Europe Meta
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tino-krause.jpg
+          alt: Tino Krause
+      - name: Roland Brack
+        position: Founder brack.ch & Investor on "Höhle der Löwen"
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2022/speakers/roland-brack.jpg
+          alt: Roland Brack
+      - name: Alan Frei
+        position: Founder Amorana
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/alan-frei.png
+          alt: Alan Frei
       - name: Christian Marty
         position: Founder & CEO of evulpo
         image:
@@ -150,13 +173,6 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/mershad-javan.jpg
           alt: Mershad Javan
-      - name: Roland Brack
-        position: Founder brack.ch & Investor on "Höhle der Löwen"
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2022/speakers/roland-brack.jpg
-          alt: Roland Brack
       - name: Viktor Calabro
         position: Founder Coople
         description: ''
@@ -171,13 +187,6 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
           alt: Aike Festini
-      - name: Alan Frei
-        position: Founder Amorana
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/alan-frei.png
-          alt: Alan Frei
       - name: Carsten Koerl
         position: Founder Sportsradar
         description: ''
@@ -206,13 +215,6 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-voeller.jpg
           alt: Sandra Völler
-      - name: Guy Parmelin
-        position: Member of the Swiss Federal Council
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/guy-parmelin.jpg
-          alt: Guy Parmelin
       - name: Janette Wiget
         position: CFO & Member of the Board Merantix
         description: ''
@@ -227,13 +229,6 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
           alt: Léa Miggiano
-      - name: Tino Krause
-        position: Regional Director Central Europe Meta
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tino-krause.jpg
-          alt: Tino Krause
     _template: speakers
   - subtitle: Partner
     title: Thank you very much!
