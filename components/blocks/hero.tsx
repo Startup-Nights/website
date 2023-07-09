@@ -38,7 +38,7 @@ export const Hero = ({ data }) => {
                 </div>
             )}
 
-            <div className="relative max-w-7xl mx-auto pb-12 pt-36 px-8 lg:pb-24 lg:pt-48 text-center">
+            <div className="relative max-w-7xl mx-auto pb-12 pt-12 px-8 lg:pb-24 lg:pt-24 text-center">
                 <div className="max-w-3xl mx-auto">
                     <h2 className="text-sm font-medium leading-7 text-gray-200 lg:text-2xl">
                         {data?.subtitle}

@@ -54,8 +54,33 @@ blocks:
         cols: '2'
     background_color: bg-sn-black-light
     _template: content
-  - _template: gallery
+  - subtitle: Aftermovies
+    title: Get inspired.
+    cta:
+      link: 'https://www.youtube.com/watch?v=PXoV8h_maMk'
+      text: Aftermovie 2022
+      new_tab: true
+    cta_secondary:
+      link: 'https://www.youtube.com/watch?v=FwDL17BO_ig'
+      text: Aftermoview 2021
+      new_tab: true
+      without_background: true
+    video:
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/videos/2022-aftermovie.mp4
+      fallback: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+    _template: hero
+  - subtitle: Snapshots of 2023
+    title: Impressions.
+    _template: gallery
 ---
+
+
+
+
+
+
 
 
 
