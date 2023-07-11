@@ -1740,6 +1740,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "partner") {
               return `/partner`;
             }
+            if (document2._sys.filename === "partner-documentation") {
+              return `/partner-documentation`;
+            }
             if (document2._sys.filename === "pitching") {
               return `/pitching`;
             }
