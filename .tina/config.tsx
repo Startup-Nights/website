@@ -437,6 +437,9 @@ const config = defineStaticConfig({
             if (document._sys.filename === "partner") {
               return `/partner`;
             }
+            if (document._sys.filename === "partner-documentation") {
+              return `/partner-documentation`;
+            }
             if (document._sys.filename === "pitching") {
               return `/pitching`;
             }
