@@ -14,8 +14,8 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - title: '2 & 3 November'
-    subtitle: Eulachhallen Winterthur
+  - subtitle: Eulachhallen Winterthur
+    title: 2 & 3 November
     cta:
       link: /tickets
       text: Tickets
@@ -130,6 +130,7 @@ blocks:
           alt: Alan Frei
       - name: Christian Marty
         position: Founder & CEO of evulpo
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/christian-marty.jpg
@@ -143,18 +144,21 @@ blocks:
           alt: Levent Künzi
       - name: Lukas Gysin
         position: Co-Founder of uniqFEED
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/lukas-gysin.jpg
           alt: Lukas Gysin
       - name: Benno Burkhardt
         position: Co-Owner & Member of the Board at Stash
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/benno-burkhardt.jpg
           alt: Benno Burkhardt
       - name: Catherine Meuter
         position: Co-Founder VYN
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/catherine-meuter.jpg
@@ -242,34 +246,13 @@ blocks:
         link: /pitching
         text: Pre-register
     members:
-      - name: Some Pre-Seed Jury Member
-        position: Some Jury Member
-        linkedin: 'https://startup-nights.ch'
-        stage: 'seed'
+      - name: Andreas Göldi
+        position: Partner at b2venture
+        linkedin: 'https://www.linkedin.com/in/agoeldi/'
         src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
-        alt: Some jury member
-      - name: Some Pre-Seed Jury Member
-        position: Some Jury Member
-        linkedin: 'https://startup-nights.ch'
-        stage: 'seed'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
-        alt: Some jury member
-      - name: Some Seed Jury Member
-        position: Some Jury Member
-        linkedin: 'https://startup-nights.ch'
-        stage: 'pre-seed'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
-        alt: Some jury member
-      - name: Some Seed Jury Member
-        position: Some Jury Member
-        linkedin: 'https://startup-nights.ch'
-        stage: 'pre-seed'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
-        alt: Some jury member
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-goeldi.png
+        alt: Andreas Göldi
+        stage: seed
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
@@ -320,3 +303,5 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
+
