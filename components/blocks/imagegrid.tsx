@@ -6,7 +6,7 @@ import { placeholderBox } from "../items/placeholder";
 export const Imagegrid = ({ data }) => {
   return (
     <div
-      className={data.background_color ? data.background_color : "bg-sn-black-light"}
+      className={data.background_color ? data.background_color : "bg-sn-black"}
     >
       <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
         <div className="text-center mb-20">
