@@ -23,9 +23,9 @@ export const Pitching = ({ data }) => {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [founders, setFounders] = useState([founderPlaceholder]);
-  const [pitchingSession, setPitchingSession] = useState(null)
-  const [raisingFunds, setRaisingFunds] = useState(null)
-  const [pitchedToInvestors, setPitchedToInvestors] = useState(null)
+  const [pitchingSession, setPitchingSession] = useState(null);
+  const [raisingFunds, setRaisingFunds] = useState(null);
+  const [pitchedToInvestors, setPitchedToInvestors] = useState(null);
 
   const close = () => {
     setSuccess(false);
@@ -37,32 +37,31 @@ export const Pitching = ({ data }) => {
     event.preventDefault();
     setLoading(true);
 
-    const data = event.target
+    const data = event.target;
 
-    const response = await fetch('/api/pitching', {
-        method: "post",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          firstname: data.contact_first.value,
-          lastname: data.contact_last.value,
-          email: data.contact_email.value,
-          startupname: data.startup_name.value,
-          website: data.startup_website.value,
-          pitchdeck: data.startup_slide.value,
-          round: pitchingSession,
-          problem: data.startup_problem.value,
-          solution: data.startup_solution.value,
-          approach: data.startup_uniqueness.value,
-          user: data.startup_customer.value,
-          funds: raisingFunds,
-          pitching: pitchedToInvestors,
-          money: data.startup_business.value,
-          linkedin: founders.join(',')
-        }),
-      }
-    );
+    const response = await fetch("/api/pitching", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstname: data.contact_first.value,
+        lastname: data.contact_last.value,
+        email: data.contact_email.value,
+        startupname: data.startup_name.value,
+        website: data.startup_website.value,
+        pitchdeck: data.startup_slide.value,
+        round: pitchingSession,
+        problem: data.startup_problem.value,
+        solution: data.startup_solution.value,
+        approach: data.startup_uniqueness.value,
+        user: data.startup_customer.value,
+        funds: raisingFunds,
+        pitching: pitchedToInvestors,
+        money: data.startup_business.value,
+        linkedin: founders.join(","),
+      }),
+    });
 
     const { error } = await response.json();
     setLoading(false);
@@ -82,11 +81,56 @@ export const Pitching = ({ data }) => {
   };
 
   return (
-    <div className="bg-sn-black">
+    <div className="bg-sn-black-light">
       <div className="max-w-5xl mx-auto py-12 px-8 lg:p-24">
         <div>
-          <form onSubmit={handleSubmit} className="mt-16">
+          <div className="max-w-2xl">
+            <p className="text-md leading-6 text-gray-300">Hi together</p>
+
+            <p className="mt-6 text-md leading-6 text-gray-300">
+              At Startup Nights 2023 there will again be two pitching sessions:
+            </p>
+
+            <ul className="list-disc ml-6 mt-6 text-md leading-6 text-gray-300">
+              <li>
+                <span className="mr-1 italic text-white">Pre-Seed:</span>{" "}
+                companies that are working on solving a problem and have not yet
+                reached product-market-fit
+              </li>
+              <li>
+                <span className="mr-1 italic text-white">Seed:</span>companies
+                that have first customers, ideally have revenue or other
+                meaningful traction and believe they have reached
+                product-market-fit
+              </li>
+            </ul>
+
+            <p className="mt-6 text-md leading-6 text-gray-300">
+              The pitch is expected to be delivered in English. We likely will
+              run a format of a 5 min Pitch & 10 min Q&A. Details will follow.
+              The jury will preview and nominate the startups that will get
+              invited to pitch.
+            </p>
+
+            <p className="mt-6 text-md leading-6 text-gray-300">
+              We are already very much looking forward to your application! We
+              will be happy to inform you as soon as possible whether you can
+              pitch on stage or not.
+            </p>
+
+            <p className="mt-6 text-md leading-6 text-gray-300">
+              Either way, we wish you much success with your startup!
+            </p>
+          </div>
+
+          <form onSubmit={handleSubmit} className="mt-16 md:mt-32">
             <div className="mt-6 grid grid-cols-1 gap-y-8 gap-x-4 sm:grid-cols-6">
+              <div className="sm:col-span-6">
+                <h3 className="text-xl font-semibold leading-6 text-gray-200">
+                  Application for the pitching sessions
+                </h3>
+              </div>
+
               <div className="sm:col-span-3">
                 <label
                   htmlFor="contact_first"
@@ -180,7 +224,7 @@ export const Pitching = ({ data }) => {
                 </div>
               </div>
 
-             <div className="sm:col-span-3">
+              <div className="sm:col-span-3">
                 <label
                   htmlFor="startup_slide"
                   className="block text-sm font-medium leading-6"
