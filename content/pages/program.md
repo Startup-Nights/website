@@ -3,15 +3,38 @@ title: Program
 blocks:
   - subtitle: Program of Startup Nights 2023
     title: What to expect
+    cta:
+      link: /tickets
+      text: Get your ticket now
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-2-jessica-baumgartner-noemi-aeschimann/17_Impressionen_Startup_World_Diverses/041122_StartupNights_Tag2_
         (15 von 182).jpg
       alt: Rollup from the Startup World 2023
-    cta:
-      link: /tickets
-      text: Get your ticket now
     _template: hero
+  - content_block:
+      subtitle: Program outline
+      title: Timetable.
+      content:
+        - >-
+          The detailed program is not yet finished but you can find the rough
+          outline here.
+        - >-
+          If you have any questions or need some additional information, tipps
+          for accomodation or the just want to say hi, feel free to ping us.
+      cta:
+        link: /contact
+        text: Get in touch
+    infopoints:
+      - name: 'Thursday, 2. November'
+        text: Door opening at 1 pm with program from 2 pm to 10 pm.
+      - name: 'Friday, 3. November'
+        text: >-
+          Door opening at 1 pm with program from 2 pm to 10.30 pm with the
+          afterparty afterwards.
+    contentblock_left: true
+    background_color: bg-sn-black-light
+    _template: content
   - subtitle: Formats
     title: Attention catching.
     speakers:
@@ -78,6 +101,28 @@ blocks:
             (1).jpg
           alt: Potential ideas for partner packages
     _template: speakers
+  - content_block:
+      subtitle: Pitching Competition
+      title: Meet our jury.
+      content:
+        - >-
+          The competition is split into two parts; pre-seed and seed. You can 
+          pre-register now and we'll get back to you once we are ready to accept
+          applications.
+      cta:
+        link: /pitching
+        text: Pre-register
+    members:
+      - name: Andreas Göldi
+        position: Partner at b2venture
+        linkedin: 'https://www.linkedin.com/in/agoeldi/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-goeldi.png
+        alt: Andreas Göldi
+        stage: seed
+    contentblock_left: true
+    background_color: bg-sn-black-light
+    _template: content
   - subtitle: Meet our speakers
     title: Heavyweights.
     images:
@@ -195,9 +240,15 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
           alt: Léa Miggiano
-    background_color: bg-sn-black-light
     _template: imagegrid
 ---
+
+
+
+
+
+
+
 
 
 
