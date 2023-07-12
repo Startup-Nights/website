@@ -5528,10 +5528,10 @@
     slate-react "^0.97.1"
     webfontloader "1.6.28"
 
-"@tinacms/toolkit@1.7.9":
-  version "1.7.9"
-  resolved "https://registry.yarnpkg.com/@tinacms/toolkit/-/toolkit-1.7.9.tgz#d4a57bda8586fd63cfbf32a1bc4af68bb8b2936e"
-  integrity sha512-RmIo0nFMaHm4hN7MHtbaydnj4fYFBjxcejBoKkROIeQQ3YfbIRD7kcvJ+15UmpSg5Ypp0ysoXQuYOvlQb9w8kg==
+"@tinacms/toolkit@1.7.11":
+  version "1.7.11"
+  resolved "https://registry.yarnpkg.com/@tinacms/toolkit/-/toolkit-1.7.11.tgz#23ebf787a3b7d878e120bb2c1d56b8ff23641586"
+  integrity sha512-XViXsLytxBymyLkl78SN2kn/1ohvRsO4uW/2pZYBmi/8tLzhZJ8yGXlrJEfnBQtV8yaDlP7DQgsKIstlQTMDkA==
   dependencies:
     "@floating-ui/dom" "^0.1.7"
     "@floating-ui/react-dom" "^0.3.3"
@@ -5544,7 +5544,7 @@
     "@react-types/combobox" "^3.2.0"
     "@react-types/shared" "^3.10.0"
     "@sambego/storybook-styles" "^1.0.0"
-    "@tinacms/search" "1.0.4"
+    "@tinacms/search" "1.0.5"
     "@tinacms/sharedctx" "1.0.1"
     "@udecode/plate-headless" "^21.4.0"
     atob "2.1.2"
@@ -14323,19 +14323,19 @@ tinacms@1.5.15:
     yup "^0.32.0"
     zod "^3.14.3"
 
-tinacms@^1.5.13:
-  version "1.5.13"
-  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-1.5.13.tgz#6c2273d48c85667d57073d8024d515e9a02fc78b"
-  integrity sha512-ZrFRRRz3rw625Oh23r/zd7NmR4bcRcnz2dcot0OmaqpGp39ibcgJLADaZPuMBGL9uVy95crDS9tmlH5kPBJYWQ==
+tinacms@^1.5.15:
+  version "1.5.15"
+  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-1.5.15.tgz#fc2df623d8928c311126da855ae6797648fe21aa"
+  integrity sha512-O9tXhEmliWV4FANfMRhVdeFhCN29WlEWMeA5J3pAv1E0hb7FB4csSHdNP9BHUC6CPbSQT6UXBdfSdHHRw2kHVw==
   dependencies:
     "@graphql-inspector/core" "^4.0.0"
     "@headlessui/react" "^1.5.0"
     "@heroicons/react" "^1.0.4"
     "@react-hook/window-size" "^3.0.7"
-    "@tinacms/schema-tools" "1.4.7"
-    "@tinacms/search" "1.0.4"
+    "@tinacms/schema-tools" "1.4.8"
+    "@tinacms/search" "1.0.5"
     "@tinacms/sharedctx" "1.0.1"
-    "@tinacms/toolkit" "1.7.9"
+    "@tinacms/toolkit" "1.7.11"
     crypto-js "^4.0.0"
     encoding "0.1.13"
     fetch-ponyfill "^7.1.0"
