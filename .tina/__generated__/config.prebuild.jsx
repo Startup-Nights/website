@@ -1423,6 +1423,45 @@ var pitchingBlockSchema = {
   ]
 };
 
+// components/blocks/hotels.tsx
+import React12, { useEffect as useEffect6, useState as useState10 } from "react";
+import Head2 from "next/head";
+import { InformationCircleIcon as InformationCircleIcon4 } from "@heroicons/react/24/outline";
+import Link11 from "next/link";
+var hotelsBlockSchema = {
+  name: "hotels",
+  label: "Hotels",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    },
+    {
+      type: "object",
+      label: "Note",
+      name: "note",
+      fields: [
+        {
+          type: "string",
+          label: "Title",
+          name: "title"
+        },
+        {
+          type: "string",
+          label: "Text",
+          name: "text"
+        }
+      ]
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -1859,6 +1898,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "party") {
               return `/party`;
             }
+            if (document2._sys.filename === "faq") {
+              return `/faq`;
+            }
             return void 0;
           }
         },
@@ -1897,6 +1939,7 @@ var config = defineStaticConfig({
               seoBlockSchema,
               pricingBlockSchema,
               contentBlockSchema,
+              hotelsBlockSchema,
               contentWideBlockSchema,
               imagegridBlockSchema,
               pitchingBlockSchema
