@@ -411,6 +411,15 @@ fragment PageParts on Page {
       contentblock_left
       background_color
     }
+    ... on PageBlocksHotels {
+      subtitle
+      title
+      note {
+        __typename
+        title
+        text
+      }
+    }
     ... on PageBlocksContent_wide {
       subtitle
       title
