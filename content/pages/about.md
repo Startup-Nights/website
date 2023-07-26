@@ -341,7 +341,7 @@ blocks:
             position: Head of Tasks
             linkedin: 'https://www.linkedin.com/in/jens-christian-thomsen-749422201/'
             src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jens-thomsen.jpeg
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jens-thomsen.jpg
             alt: Jens Thomson
           - name: Fabio Furrer
             position: Head of Sustainability
@@ -364,12 +364,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/noah-schuppli.jpg
             alt: Noah Schuppli
-          - name: Raphael Tobler
-            position: Partner Management
-            linkedin: 'https://www.linkedin.com/in/raphaeltobler/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/raphael-tobler.jpg
-            alt: Raphael Tobler
           - name: Baris Gökduman
             position: Corporates
             linkedin: 'https://www.linkedin.com/in/barisgoekduman/'
@@ -400,6 +394,8 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
+
 
 
 
