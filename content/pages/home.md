@@ -121,13 +121,6 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2022/speakers/roland-brack.jpg
           alt: Roland Brack
-      - name: Alan Frei
-        position: Founder Amorana
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/alan-frei.png
-          alt: Alan Frei
       - name: Christian Marty
         position: Founder & CEO of evulpo
         description: ''
