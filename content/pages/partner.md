@@ -100,9 +100,21 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ubs.png
             alt: UBS
             link: 'https://ubs.com'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/mobiliar.png
+            alt: Mobiliar
+            link: 'https://mobiliar.ch'
       - title: Key Partner
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sap.png
+            alt: SAP
+            link: 'https://www.sap.com/swiss/index.html'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/axa.png
+            alt: Axa
+            link: 'https://www.axa.ch/en/private-customers.html'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
             alt: IGE
@@ -136,6 +148,22 @@ blocks:
       - title: Supporter
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/peakora.png
+            alt: Peakora
+            link: 'https://www.peakora.io'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/koeln-business.png
+            alt: Köln Business Wirtschaftsförderung
+            link: 'https://koeln.business'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/worn-again.png
+            alt: Worn Again
+            link: 'https://wornagain.co.uk'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sulzer.png
+            alt: Sulzer
+            link: 'https://sulzer.ch'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/farner.png
             alt: Farner
@@ -208,6 +236,10 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/aktionariat.png
+            alt: Aktionariat
+            link: 'https://www.aktionariat.com'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/showconcept.jpg
             alt: Showconcept
             link: 'https://show-concept.ch'
@@ -222,6 +254,17 @@ blocks:
       offer for the partner package.
     _template: partnerform
 ---
+
+
+
+
+
+
+
+
+
+
+
 
 
 
