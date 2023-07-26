@@ -28,10 +28,6 @@ blocks:
         text: ''
         department: General
         link: 'https://forms.gle/CkXNgxhtmsjgvxCN8'
-      - title: Partner Communications
-        text: ''
-        department: Partnerships
-        link: 'https://forms.gle/v9ebh11DSZpk64iAA'
       - title: Video Content Creator
         text: >
           Deine Aufgaben:
@@ -61,43 +57,6 @@ blocks:
           bei der Arbeit
         department: Marketing
         link: 'https://forms.gle/9wNpRTqeUcy9g4b48'
-      - title: Social Media Manager
-        text: >
-          Deine Aufgaben:
-
-
-          * Mitverantwortung der Startup Nights Social Media Kanäle: LinkedIn,
-          Instagram, Youtube etc.
-
-          * Du sprichst beim Redaktionsplan mit und schaust zu, dass alles zum
-          geplanten Zeitpunkt publiziert wird
-
-          * Wenn du magst und dir das liegt, darfst du auch selbst Content
-          erstellen. Ansonsten darfst du bei der Umsetzung deiner Posts auf die
-          Unterstützung von Textern, Grafikern, Videografen und Fotografen
-          zählen.
-
-          * Community Management, Interaktionen auf den Kanälen
-
-          * Enge Zusammenarbeit mit Marketing-Team
-
-
-          Deine Qualifikation:
-
-
-          * Erfahrung im Bereich Content Planung, Erstellung oder Publishing im
-          Social Media-Bereich
-
-          * Ein gutes Gespür dafür, was unsere Community interessieren könnte
-          und ein Haufen Ideen, wie du das rüberbringen kannst
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * Unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
-        department: Marketing
-        link: 'https://forms.gle/DgPfuzzBR6LQi7qK7'
     _template: positions
   - subtitle: Benefits
     title: What you can expect.
@@ -116,6 +75,7 @@ blocks:
         icon: cog
     _template: benefits
 ---
+
 
 
 
