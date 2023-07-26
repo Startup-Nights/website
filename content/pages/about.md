@@ -151,6 +151,12 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/jeannette-thums.jpg
             alt: Jeannette Thums
+          - name: Sascha Bosshard
+            position: Video Content Creator
+            linkedin: 'https://www.linkedin.com/in/sascha-bosshard-a40404217/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/sascha-bosshard.jpg
+            alt: Sascha Bosshard
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
@@ -197,17 +203,11 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/livia-arena.jpeg
             alt: Livia Arena
           - name: Michelle Nguyen
-            position: Deputy Head F&B
+            position: Deputy Head of F&B
             linkedin: 'https://www.linkedin.com/in/michelle-hai-mi-nguyen/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
             alt: Michelle Nguyen
-          - name: Michel Lüscher
-            position: Head of Accomodation
-            linkedin: 'https://www.linkedin.com/in/michelluescher/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michel-luescher.jpeg
-            alt: Michel Lüscher
           - name: Gabriel Riedo
             position: Head of Material & Logistics
             linkedin: 'https://www.linkedin.com/in/gabriel-riedo-244865120/'
@@ -332,7 +332,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/pascal-angst.jpg
             alt: Pascal Angst
           - name: Michelle Nguyen
-            position: Head of HR & Tools
+            position: 'Head of HR, Tools & Accomodation'
             linkedin: 'https://www.linkedin.com/in/michelle-hai-mi-nguyen/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
@@ -400,6 +400,10 @@ blocks:
             alt: Stefano Bollmann
     _template: team
 ---
+
+
+
+
 
 
 
