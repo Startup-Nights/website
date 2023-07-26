@@ -239,6 +239,27 @@ blocks:
         link: /pitching
         text: Pre-register
     members:
+      - name: Teddy Amberg
+        position: FP @ Spicehaus Partners AG
+        linkedin: 'https://www.linkedin.com/in/teddyamberg/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/teddy-amberg.jpeg
+        alt: Teddy Amberg
+        stage: seed
+      - name: Andrea Buhofer
+        position: MP @ EquityPitcher Ventures
+        linkedin: 'https://www.linkedin.com/in/andrea-buhofer-721822182/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
+        alt: Andrea Buhofer
+        stage: seed
+      - name: Daniel Dillinger
+        position: VC @ Redalpine
+        linkedin: 'https://www.linkedin.com/in/daniel-dillinger-213173138/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/daniel-dillenger.jpg
+        alt: Daniel Dillinger
+        stage: seed
       - name: Andreas Göldi
         position: Partner at b2venture
         linkedin: 'https://www.linkedin.com/in/agoeldi/'
@@ -296,5 +317,10 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
+
+
+
+
 
 
