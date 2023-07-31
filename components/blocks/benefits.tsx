@@ -1,4 +1,4 @@
-import { Cog6ToothIcon , ChatBubbleLeftRightIcon, CheckBadgeIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import { Cog6ToothIcon, ChatBubbleLeftRightIcon, CheckBadgeIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import type { Template } from "tinacms";
 
@@ -29,7 +29,7 @@ export const Benefits = ({ data }) => {
 };
 
 const getIcon = (icon: string) => {
-    switch(icon) {
+    switch (icon) {
         case 'chatbubble': return <ChatBubbleLeftRightIcon className="mr-1.5 h-6 w-6 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
         case 'lightbulb': return <LightBulbIcon className="mr-1.5 h-6 w-6 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
         case 'heart': return <HeartIcon className="mr-1.5 h-6 w-6 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
