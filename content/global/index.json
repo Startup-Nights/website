@@ -1,107 +1,114 @@
 {
-  "header": {
-    "name": "Tina Starter",
-    "color": "default",
-    "nav": [
-      {
-        "href": "program",
-        "label": "Program"
-      },
-      {
-        "href": "impressions",
-        "label": "Impressions"
-      },
-      {
-        "href": "partner",
-        "label": "Partner"
-      },
-      {
-        "href": "about",
-        "label": "About"
-      },
-      {
-        "href": "contact",
-        "label": "Contact"
-      }
-    ],
-    "social": [
-      {
-        "title": "instagram",
-        "link": "https://www.instagram.com/startup_nights/"
-      },
-      {
-        "title": "linkedin",
-        "link": "https://www.linkedin.com/company/startup-nights"
-      },
-      {
-        "title": "youtube",
-        "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
-      }
-    ]
-  },
-  "footer": {
-    "copyright": "2023 Startup Nights",
-    "navitems": [
-      {
-        "title": "Startup Nights",
-        "listitems": [
-          {
-            "title": "Contact",
-            "link": "/contact"
-          },
-          {
-            "title": "Hiring",
-            "link": "/hiring"
-          },
-          {
-            "title": "Impressions",
-            "link": "/impressions"
-          },
-          {
-            "title": "Become a partner",
-            "link": "/partner"
-          },
-          {
-            "title": "About",
-            "link": "/about"
-          },
-          {
-            "title": "Startup City Winterthur",
-            "link": "/startup-city-winterthur"
-          }
+    "header": {
+        "name": "Tina Starter",
+        "color": "default",
+        "nav": [
+            {
+                "href": "program",
+                "label": "Program"
+            },
+            {
+                "href": "impressions",
+                "label": "Impressions"
+            },
+            {
+                "href": "partner",
+                "label": "Partner"
+            },
+            {
+                "href": "about",
+                "label": "About"
+            },
+            {
+                "href": "contact",
+                "label": "Contact"
+            }
+        ],
+        "social": [
+            {
+                "title": "instagram",
+                "link": "https://www.instagram.com/startup_nights/"
+            },
+            {
+                "title": "linkedin",
+                "link": "https://www.linkedin.com/company/startup-nights"
+            },
+            {
+                "title": "youtube",
+                "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
+            }
         ]
-      },
-      {
-        "title": "",
-        "listitems": [
-          {
-            "title": "Imprint",
-            "link": "/imprint"
-          },
-          {
-            "title": "Privacy policy",
-            "link": "/privacy-policy"
-          },
-          {
-            "title": "Terms & conditions",
-            "link": "/terms-and-conditions"
-          }
-        ]
-      }
-    ],
-    "social": [
-      {
-        "title": "instagram",
-        "link": "https://www.instagram.com/startup_nights/"
-      },
-      {
-        "title": "linkedin",
-        "link": "https://www.linkedin.com/company/startup-nights"
-      },
-      {
-        "title": "youtube",
-        "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
-      }
-    ]
-  }
+    },
+    "footer": {
+        "copyright": "2023 Startup Nights",
+        "navitems": [
+            {
+                "title": "Startup Nights",
+                "listitems": [
+                    {
+                        "title": "Contact",
+                        "link": "/contact"
+                    },
+                    {
+                        "title": "Hiring",
+                        "link": "/hiring"
+                    },
+                    {
+                        "title": "Impressions",
+                        "link": "/impressions"
+                    },
+                    {
+                        "title": "Become a partner",
+                        "link": "/partner"
+                    },
+                    {
+                        "title": "About",
+                        "link": "/about"
+                    },
+                    {
+                        "title": "Startup City Winterthur",
+                        "link": "/startup-city-winterthur"
+                    }
+                ]
+            },
+            {
+                "title": "",
+                "listitems": [
+                    {
+                        "title": "Imprint",
+                        "link": "/imprint"
+                    },
+                    {
+                        "title": "Privacy policy",
+                        "link": "/privacy-policy"
+                    },
+                    {
+                        "title": "Terms & conditions",
+                        "link": "/terms-and-conditions"
+                    }
+                ]
+            }
+        ],
+        "social": [
+            {
+                "title": "instagram",
+                "link": "https://www.instagram.com/startup_nights/"
+            },
+            {
+                "title": "linkedin",
+                "link": "https://www.linkedin.com/company/startup-nights"
+            },
+            {
+                "title": "youtube",
+                "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
+            }
+        ],
+        "banner": {
+            "text": "Get your early bird ticket with 10% off the regular price!",
+            "agree_button": "Yes please",
+            "close_button": "Close",
+            "date": "2023-08-01",
+            "link": "/tickets"
+        }
+    }
 }
