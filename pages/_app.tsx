@@ -1,23 +1,23 @@
-import { Source_Sans_Pro } from 'next/font/google'
+import { Source_Sans_3 } from 'next/font/google'
 import "../styles.css";
 import { useAnalytics } from '../components/items/analytics';
 import { Analytics } from '@vercel/analytics/react';
 
 // https://nextjs.org/docs/basic-features/font-optimization
-const sourceSansPro = Source_Sans_Pro({
-  weight: ['200', '300', '400', '600', '700', '900'],
-  style: ['normal', 'italic'],
-  subsets: ['latin']
+const sourceSansPro = Source_Sans_3({
+    weight: ['200', '300', '400', '600', '700', '900'],
+    style: ['normal', 'italic'],
+    subsets: ['latin']
 })
 
 const App = ({ Component, pageProps }) => {
-  useAnalytics()
-  return (
-    <main className={sourceSansPro.className}>
-      <Analytics />
-      <Component {...pageProps} />
-    </main>
-  );
+    useAnalytics()
+    return (
+        <main className={sourceSansPro.className}>
+            <Analytics />
+            <Component {...pageProps} />
+        </main>
+    );
 };
 
 export default App;
