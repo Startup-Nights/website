@@ -742,8 +742,84 @@ var benefitsBlockSchema = {
   ]
 };
 
+// components/blocks/overview.tsx
+import React6 from "react";
+
+// components/fields/color.tsx
+import * as React5 from "react";
+import { wrapFieldsWithMeta } from "tinacms";
+var colorOptions = [
+  "black",
+  "black_light",
+  "black_lightest"
+];
+var ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
+  const inputClasses = {
+    black: "bg-sn-black",
+    black_light: "bg-sn-black-light",
+    black_lightest: "bg-sn-black-lightest"
+  };
+  return React5.createElement(React5.Fragment, null, React5.createElement("input", { type: "text", id: input.name, className: "hidden", ...input }), React5.createElement("div", { className: "flex gap-2 flex-wrap" }, colorOptions.map((color) => {
+    return React5.createElement(
+      "button",
+      {
+        key: color,
+        className: `w-9 h-9 rounded-full shadow border ${inputClasses[color]} ${input.value === inputClasses[color] ? "ring-[3px] ring-offset-2 ring-blue-400" : ""}`,
+        onClick: () => {
+          input.onChange(inputClasses[color]);
+        }
+      }
+    );
+  })));
+});
+
+// components/blocks/overview.tsx
+var overviewBlockSchema = {
+  name: "overview",
+  label: "Overview",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    },
+    {
+      type: "object",
+      label: "Benefit items",
+      name: "benefit_items",
+      list: true,
+      fields: [
+        {
+          type: "string",
+          label: "Title",
+          name: "title"
+        },
+        {
+          type: "string",
+          label: "Description",
+          name: "description",
+          list: true
+        }
+      ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
+    }
+  ]
+};
+
 // components/blocks/gallery.tsx
-import React5, { useState as useState6 } from "react";
+import React7, { useState as useState6 } from "react";
 
 // components/items/nextimage.tsx
 import Image6 from "next/image";
@@ -840,7 +916,7 @@ function cloudinaryLoader({ src, width, quality }) {
 }
 
 // components/blocks/tito.tsx
-import React6, { useEffect as useEffect3, useState as useState7 } from "react";
+import React8, { useEffect as useEffect3, useState as useState7 } from "react";
 import Head from "next/head";
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
 import Link7 from "next/link";
@@ -933,7 +1009,7 @@ var seoBlockSchema = {
 };
 
 // components/blocks/content.tsx
-import React8 from "react";
+import React9 from "react";
 
 // components/items/testimonial.tsx
 import Image7 from "next/image";
@@ -976,34 +1052,6 @@ var TestimonialBlockSchema = {
     }
   ]
 };
-
-// components/fields/color.tsx
-import * as React7 from "react";
-import { wrapFieldsWithMeta } from "tinacms";
-var colorOptions = [
-  "black",
-  "black_light",
-  "black_lightest"
-];
-var ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
-  const inputClasses = {
-    black: "bg-sn-black",
-    black_light: "bg-sn-black-light",
-    black_lightest: "bg-sn-black-lightest"
-  };
-  return React7.createElement(React7.Fragment, null, React7.createElement("input", { type: "text", id: input.name, className: "hidden", ...input }), React7.createElement("div", { className: "flex gap-2 flex-wrap" }, colorOptions.map((color) => {
-    return React7.createElement(
-      "button",
-      {
-        key: color,
-        className: `w-9 h-9 rounded-full shadow border ${inputClasses[color]} ${input.value === inputClasses[color] ? "ring-[3px] ring-offset-2 ring-blue-400" : ""}`,
-        onClick: () => {
-          input.onChange(inputClasses[color]);
-        }
-      }
-    );
-  })));
-});
 
 // components/items/facts.tsx
 import { RocketLaunchIcon as RocketLaunchIcon2, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, HeartIcon as HeartIcon3, LightBulbIcon as LightBulbIcon3, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
@@ -1113,7 +1161,7 @@ var contentBlockSchema = {
 };
 
 // components/blocks/content_wide.tsx
-import React9 from "react";
+import React10 from "react";
 var contentWideBlockSchema = {
   name: "content_wide",
   label: "Content wide",
@@ -1242,7 +1290,7 @@ var boothBlockSchema = {
 
 // components/blocks/imagegrid.tsx
 import Image9 from "next/image";
-import React10 from "react";
+import React11 from "react";
 var imagegridBlockSchema = {
   name: "imagegrid",
   label: "Imagegrid",
@@ -1745,6 +1793,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "partner-documentation") {
               return `/partner-documentation`;
             }
+            if (document2._sys.filename === "partner-intro") {
+              return `/partner-intro`;
+            }
             if (document2._sys.filename === "pitching") {
               return `/pitching`;
             }
@@ -1783,6 +1834,7 @@ var config = defineStaticConfig({
               boothBlockSchema,
               dropdownBlockSchema,
               benefitsBlockSchema,
+              overviewBlockSchema,
               galleryBlockSchema,
               titoBlockSchema,
               seoBlockSchema,

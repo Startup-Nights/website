@@ -1,0 +1,440 @@
+fragment PostParts on Post {
+  title
+  heroImg
+  excerpt
+  author {
+    ... on Author {
+      name
+      avatar
+    }
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+  }
+  date
+  _body
+}
+
+fragment GlobalParts on Global {
+  header {
+    __typename
+    name
+    color
+    nav {
+      __typename
+      href
+      label
+    }
+    social {
+      __typename
+      title
+      link
+    }
+  }
+  footer {
+    __typename
+    copyright
+    navitems {
+      __typename
+      title
+      listitems {
+        __typename
+        title
+        link
+      }
+    }
+    social {
+      __typename
+      title
+      link
+    }
+    banner {
+      __typename
+      text
+      agree_button
+      close_button
+      link
+      date
+    }
+  }
+  theme {
+    __typename
+    font
+    darkMode
+  }
+}
+
+fragment AuthorParts on Author {
+  name
+  avatar
+}
+
+fragment PageParts on Page {
+  title
+  blocks {
+    __typename
+    ... on PageBlocksHero {
+      subtitle
+      title
+      cta {
+        __typename
+        link
+        text
+        new_tab
+      }
+      cta_secondary {
+        __typename
+        link
+        text
+        new_tab
+        without_background
+      }
+      image {
+        __typename
+        src
+        alt
+      }
+      video {
+        __typename
+        src
+        fallback
+      }
+    }
+    ... on PageBlocksSpeakers {
+      subtitle
+      title
+      cta {
+        __typename
+        link
+        text
+      }
+      speakers {
+        __typename
+        name
+        position
+        description
+        social_links {
+          __typename
+          linkedin
+        }
+        image {
+          __typename
+          src
+          alt
+        }
+      }
+    }
+    ... on PageBlocksPartner_list {
+      subtitle
+      title
+      cta {
+        __typename
+        link
+        text
+      }
+      partners {
+        __typename
+        title
+        grid_cols
+        partners {
+          __typename
+          src
+          alt
+          link
+        }
+      }
+    }
+    ... on PageBlocksCountdown {
+      title
+      date
+      cta {
+        __typename
+        link
+        text
+      }
+    }
+    ... on PageBlocksPositions {
+      subtitle
+      title
+      open_positions {
+        __typename
+        title
+        text
+        department
+        link
+      }
+    }
+    ... on PageBlocksPartnerform {
+      title
+      description
+    }
+    ... on PageBlocksTeam {
+      subtitle
+      title
+      divisions {
+        __typename
+        subtitle
+        title
+        members {
+          __typename
+          name
+          position
+          linkedin
+          src
+          alt
+        }
+      }
+    }
+    ... on PageBlocksTabs {
+      tabitems {
+        __typename
+        content_block {
+          __typename
+          subtitle
+          title
+          content
+          cta {
+            __typename
+            link
+            text
+          }
+          cta_secondary {
+            __typename
+            link
+            text
+          }
+        }
+        image {
+          __typename
+          src
+          alt
+        }
+        infopoints {
+          __typename
+          name
+          text
+          link
+          newsletter_cta {
+            __typename
+            agree_button
+            modal_title
+            modal_text
+          }
+        }
+      }
+    }
+    ... on PageBlocksBooth_registration {
+      subtitle
+      title
+    }
+    ... on PageBlocksDropdown {
+      items {
+        __typename
+        content_block {
+          __typename
+          subtitle
+          title
+          content
+          cta {
+            __typename
+            link
+            text
+          }
+          cta_secondary {
+            __typename
+            link
+            text
+          }
+        }
+        image {
+          __typename
+          src
+          alt
+        }
+        infopoints {
+          __typename
+          name
+          text
+          link
+          newsletter_cta {
+            __typename
+            agree_button
+            modal_title
+            modal_text
+          }
+        }
+        features {
+          __typename
+          title
+          text
+          icon
+        }
+      }
+    }
+    ... on PageBlocksBenefits {
+      subtitle
+      title
+      benefit_items {
+        __typename
+        title
+        icon
+      }
+    }
+    ... on PageBlocksOverview {
+      subtitle
+      title
+      benefit_items {
+        __typename
+        title
+        description
+      }
+      background_color
+    }
+    ... on PageBlocksGallery {
+      subtitle
+      title
+    }
+    ... on PageBlocksTito {
+      subtitle
+      title
+      note {
+        __typename
+        title
+        text
+      }
+    }
+    ... on PageBlocksSeo {
+      title
+      description
+      openGraph {
+        __typename
+        url
+        site_name
+        images {
+          __typename
+          url
+          alt
+        }
+      }
+    }
+    ... on PageBlocksPricing {
+      subtitle
+      title
+      categories {
+        __typename
+        price
+        selector
+        name
+        description
+        benefits
+        not_included
+      }
+    }
+    ... on PageBlocksContent {
+      content_block {
+        __typename
+        subtitle
+        title
+        content
+        cta {
+          __typename
+          link
+          text
+        }
+        cta_secondary {
+          __typename
+          link
+          text
+        }
+      }
+      image {
+        __typename
+        src
+        alt
+      }
+      infopoints {
+        __typename
+        name
+        text
+        link
+        newsletter_cta {
+          __typename
+          agree_button
+          modal_title
+          modal_text
+        }
+      }
+      testimonial {
+        __typename
+        name
+        position
+        quote
+        image {
+          __typename
+          src
+          alt
+        }
+      }
+      figures {
+        __typename
+        name
+        number
+        icon
+        rows
+        cols
+      }
+      members {
+        __typename
+        name
+        position
+        linkedin
+        src
+        alt
+        stage
+      }
+      features {
+        __typename
+        title
+        text
+        icon
+      }
+      contentblock_left
+      background_color
+    }
+    ... on PageBlocksContent_wide {
+      subtitle
+      title
+      content {
+        __typename
+        title
+        text
+      }
+    }
+    ... on PageBlocksImagegrid {
+      subtitle
+      title
+      images {
+        __typename
+        name
+        position
+        image {
+          __typename
+          src
+          alt
+        }
+      }
+    }
+    ... on PageBlocksPitching_registration {
+      subtitle
+      title
+    }
+  }
+}

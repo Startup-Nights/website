@@ -19,14 +19,15 @@ import { Booth } from "./blocks/booth";
 import { ContentWide } from "./blocks/content_wide";
 import { Imagegrid } from "./blocks/imagegrid";
 import { Pitching } from "./blocks/pitching";
+import { Overview } from "./blocks/overview";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
         <>
             {props.blocks
-                ? props.blocks.map(function (block, i) {
+                ? props.blocks.map(function(block, i) {
                     switch (block.__typename) {
-                         case "PageBlocksHero":
+                        case "PageBlocksHero":
                             return (
                                 <div
                                     data-tinafield={`blocks.${i}`}
@@ -35,7 +36,7 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     <Hero data={block} />
                                 </div>
                             );
-                         case "PageBlocksPositions":
+                        case "PageBlocksPositions":
                             return (
                                 <div
                                     data-tinafield={`blocks.${i}`}
@@ -44,7 +45,7 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     <Positions data={block} parentField={`blocks.${i}`} />
                                 </div>
                             );
-                       case "PageBlocksSpeakers":
+                        case "PageBlocksSpeakers":
                             return (
                                 <div
                                     data-tinafield={`blocks.${i}`}
@@ -195,6 +196,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Pitching data={block} />
+                                </div>
+                            )
+                        case "PageBlocksOverview":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Overview data={block} />
                                 </div>
                             )
 

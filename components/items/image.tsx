@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export const RoundImage = ({ data }) => {
     return (
-        <div className="relative ">
+        <div className="relative">
             <Image
                 src={data.src}
                 alt={data.alt}

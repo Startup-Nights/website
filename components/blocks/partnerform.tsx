@@ -1,12 +1,25 @@
 import { Transition } from "@headlessui/react";
 import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
-import { Fragment, use, useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import { Template } from "tinacms"
+
+
+const options = [
+    "Booth",
+    "Speaker Opportunities",
+    "Workshops",
+    "Startup Pitching Sessions",
+    "founded. Magazine",
+    "Promotional Opportunities",
+    "More Partnership Opportunities",
+];
+
 
 export const PartnerForm = ({ data }) => {
     const [err, setErr] = useState(false);
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
+    const [interests, setInterests] = useState([])
 
     const close = () => {
         setSuccess(false)
@@ -66,6 +79,8 @@ export const PartnerForm = ({ data }) => {
         }, 20 * 1000);
     }
 
+
+
     return (
         <div className="bg-sn-black-light">
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
@@ -76,6 +91,7 @@ export const PartnerForm = ({ data }) => {
                     </div>
                     <form onSubmit={handleSubmit}>
                         <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+
                             <div className="sm:col-span-2">
                                 <label htmlFor="first-name" className="block text-sm font-medium leading-6">
                                     First name *
@@ -184,7 +200,39 @@ export const PartnerForm = ({ data }) => {
                                 </div>
                             </div>
 
-                            <div className="">
+                            <div className="sm:col-span-6">
+                                <p className="block text-sm font-medium leading-6">We are interested in:</p>
+
+                                <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-2 md:space-y-0">
+                                    {options.map((interest, i) => (
+                                        <li key={interest} className="relative flex items-start">
+                                            <div className="flex h-6 items-center">
+                                                <input
+                                                    id={interest}
+                                                    name={interest}
+                                                    type="checkbox"
+                                                    onClick={() => {
+                                                        interests.push(interest);
+                                                        setInterests(interests);
+                                                    }}
+                                                    className="h-4 w-4 rounded bg-sn-black-lightest border-sn-black-lightest text-sn-yellow-dark focus:ring-sn-yellow-dark"
+                                                />
+                                            </div>
+                                            <div className="ml-3 text-sm leading-6">
+                                                <label
+                                                    htmlFor={interest}
+                                                    className="font-medium text-gray-200"
+                                                >
+                                                    {interest}
+                                                </label>
+                                            </div>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+
+                            <div className="mt-4">
                                 <button
                                     type="submit"
                                     className="flex w-full items-center justify-center rounded-xl bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sn-yellow sm:text-sm sm:leading-6"
@@ -201,7 +249,7 @@ export const PartnerForm = ({ data }) => {
                         </div>
                     </form>
                 </div>
-            </div>
+            </div >
 
             <div
                 aria-live="assertive"
@@ -279,7 +327,7 @@ export const PartnerForm = ({ data }) => {
                     </Transition>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
