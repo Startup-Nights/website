@@ -3,7 +3,6 @@ import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/re
 import { Fragment, useRef, useState } from "react";
 import { Template } from "tinacms"
 
-
 const options = [
     "Booth",
     "Speaker Opportunities",
@@ -13,7 +12,6 @@ const options = [
     "Promotional Opportunities",
     "More Partnership Opportunities",
 ];
-
 
 export const PartnerForm = ({ data }) => {
     const [err, setErr] = useState(false);
@@ -34,7 +32,7 @@ export const PartnerForm = ({ data }) => {
     const ideaRef = useRef(null);
 
     // Handles the submit event on form submit.
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: any) => {
         // Stop the form from submitting and refreshing the page.
         event.preventDefault()
         setLoading(true);
@@ -48,6 +46,7 @@ export const PartnerForm = ({ data }) => {
                 firstname: event.target.firstname.value,
                 lastname: event.target.lastname.value,
                 company: event.target.company.value,
+                interests: interests,
                 email: event.target.email.value,
                 budget: event.target.budget.value,
                 idea: event.target.idea.value,
@@ -78,8 +77,6 @@ export const PartnerForm = ({ data }) => {
             close()
         }, 20 * 1000);
     }
-
-
 
     return (
         <div className="bg-sn-black-light">
