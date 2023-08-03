@@ -146,215 +146,25 @@ blocks:
               on-site, and much more.
             - Let’s discuss your ideas.
     _template: Dropdown
-  - content_block:
-      subtitle: Schedule a call to get your tailored package
-      title: Ready To Partner Up?
-      content:
-        - >-
-          Fill out the form below to schedule a call with our partnership team.
-          We'll walk you through the available options, tailor a package to suit
-          your needs, and guide you toward success at the Startup Nights. 
-        - >-
-          If you have any immediate questions or require further information,
-          please reach out to our partnership team below.
-      cta:
-        link: 'mailto:partner@startup-nights.ch'
-        text: Drop us an email
-    infopoints:
-      - name: 'Step 1: Call with our partner team'
-        text: >-
-          Share your objectives and aspirations, and we show you the
-          opportunities that Startup Nights  has in store for your company.
-      - name: 'Step 2: Designing a tailored package'
-        text: >-
-          Our partner team creates a package, designed exclusively around your
-          goals and to maximize your time at the Startup Nights. 
-      - name: 'Step 3: Preparation'
-        text: >-
-          With your bespoke package in place, we guide you every step of the
-          way. From inception to execution, we're here to ensure you get
-          everything you desire from your Startup Nights partnership.
-      - name: 'Step 4: Embrace the Startup Nights Experience'
-        text: It's time for the Startup Nights! Get ready to seize the days!
-    contentblock_left: true
-    background_color: bg-sn-black-light
-    _template: content
+  - subtitle: Ready to partner up?
+    title: Schedule a call to get your tailored package.
+    content:
+      - text:
+          - >-
+            Fill out the form below to schedule a call with our partnership
+            team. We'll walk you through the available options, tailor a package
+            to suit your needs, and guide you toward success at the Startup
+            Nights. 
+    background_color: bg-sn-black-lightest
+    cta_secondary:
+      link: ''
+      text: ''
+    _template: content_wide
   - title: Contact information
     description: >-
       We will only use the information to get in contact with you regarding an
       offer for the partner package.
     _template: partnerform
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -26,12 +26,9 @@ LinkedIn profiles: ${body["linkedin"]}
 `
 };
 
-export default async (req, res) => {
+export default async (req: any, res: any) => {
     const span = tracer.startSpan('newsletter', undefined, context.active());
     const body = req.body
-    if (!body.email) {
-        res.redirect(302, '/404')
-    }
 
     webhook.send({
         text: `
