@@ -284,7 +284,7 @@ var heroBlockSchema = {
 // components/blocks/partnerform.tsx
 import { Transition } from "@headlessui/react";
 import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
-import { Fragment, useRef, useState as useState2 } from "react";
+import { Fragment, useState as useState2 } from "react";
 var partnerFormSchema = {
   name: "partnerform",
   label: "Partnerform",
