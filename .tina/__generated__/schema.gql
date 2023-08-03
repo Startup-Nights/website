@@ -734,10 +734,23 @@ type PageBlocksContent_wideContent {
   text: [String]
 }
 
+type PageBlocksContent_wideCta {
+  link: String
+  text: String
+}
+
+type PageBlocksContent_wideCta_secondary {
+  link: String
+  text: String
+}
+
 type PageBlocksContent_wide {
   subtitle: String
   title: String
   content: [PageBlocksContent_wideContent]
+  background_color: String
+  cta: PageBlocksContent_wideCta
+  cta_secondary: PageBlocksContent_wideCta_secondary
 }
 
 type PageBlocksImagegridImagesImage {
@@ -1184,10 +1197,23 @@ input PageBlocksContent_wideContentFilter {
   text: StringFilter
 }
 
+input PageBlocksContent_wideCtaFilter {
+  link: StringFilter
+  text: StringFilter
+}
+
+input PageBlocksContent_wideCta_secondaryFilter {
+  link: StringFilter
+  text: StringFilter
+}
+
 input PageBlocksContent_wideFilter {
   subtitle: StringFilter
   title: StringFilter
   content: PageBlocksContent_wideContentFilter
+  background_color: StringFilter
+  cta: PageBlocksContent_wideCtaFilter
+  cta_secondary: PageBlocksContent_wideCta_secondaryFilter
 }
 
 input PageBlocksImagegridImagesImageFilter {
@@ -1750,10 +1776,23 @@ input PageBlocksContent_wideContentMutation {
   text: [String]
 }
 
+input PageBlocksContent_wideCtaMutation {
+  link: String
+  text: String
+}
+
+input PageBlocksContent_wideCta_secondaryMutation {
+  link: String
+  text: String
+}
+
 input PageBlocksContent_wideMutation {
   subtitle: String
   title: String
   content: [PageBlocksContent_wideContentMutation]
+  background_color: String
+  cta: PageBlocksContent_wideCtaMutation
+  cta_secondary: PageBlocksContent_wideCta_secondaryMutation
 }
 
 input PageBlocksImagegridImagesImageMutation {

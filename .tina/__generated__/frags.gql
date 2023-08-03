@@ -417,6 +417,17 @@ fragment PageParts on Page {
         title
         text
       }
+      background_color
+      cta {
+        __typename
+        link
+        text
+      }
+      cta_secondary {
+        __typename
+        link
+        text
+      }
     }
     ... on PageBlocksImagegrid {
       subtitle

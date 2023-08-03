@@ -1,5 +1,7 @@
 import React from "react";
 import type { Template } from "tinacms";
+import { ColorPickerInput } from "../fields/color";
+import { Button, ButtonSecondary } from "../items/button";
 
 export const ContentWide = ({ data }) => {
     return (
@@ -29,6 +31,25 @@ export const ContentWide = ({ data }) => {
                         </div>
                     ))}
                 </div>
+
+                {(data?.cta?.text || data?.cta_secondary?.text) && (
+                    <div className="mt-12 grid grid-cols-1 gap-y-6 md:flex md:flex-wrap md:gap-x-4">
+                        {data?.cta && data.cta.text !== '' && (
+                            <div>
+                                <Button link={data?.cta?.link} text={data?.cta?.text}>
+                                </Button>
+                            </div>
+                        )}
+
+                        {data?.cta_secondary && data.cta_secondary.text !== '' && (
+                            <div>
+                                <ButtonSecondary link={data?.cta_secondary?.link} text={data?.cta_secondary?.text}>
+                                </ButtonSecondary>
+                            </div>
+                        )}
+                    </div>
+                )}
+
             </div>
         </div>
     );
@@ -65,6 +86,48 @@ export const contentWideBlockSchema: Template = {
                     list: true,
                     name: "text",
                 },
+            ]
+        },
+        {
+            type: "string",
+            name: "background_color",
+            label: "Background color",
+            ui: {
+                component: ColorPickerInput as any
+            }
+        },
+        {
+            label: "Call to action",
+            name: "cta",
+            type: "object",
+            fields: [
+                {
+                    type: "string",
+                    label: "Link",
+                    name: "link",
+                },
+                {
+                    type: "string",
+                    label: "Text",
+                    name: "text",
+                }
+            ]
+        },
+        {
+            label: "Call to action (secondary)",
+            name: "cta_secondary",
+            type: "object",
+            fields: [
+                {
+                    type: "string",
+                    label: "Link",
+                    name: "link",
+                },
+                {
+                    type: "string",
+                    label: "Text",
+                    name: "text",
+                }
             ]
         },
     ],

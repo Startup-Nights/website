@@ -1194,6 +1194,48 @@ var contentWideBlockSchema = {
           name: "text"
         }
       ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
+    },
+    {
+      label: "Call to action",
+      name: "cta",
+      type: "object",
+      fields: [
+        {
+          type: "string",
+          label: "Link",
+          name: "link"
+        },
+        {
+          type: "string",
+          label: "Text",
+          name: "text"
+        }
+      ]
+    },
+    {
+      label: "Call to action (secondary)",
+      name: "cta_secondary",
+      type: "object",
+      fields: [
+        {
+          type: "string",
+          label: "Link",
+          name: "link"
+        },
+        {
+          type: "string",
+          label: "Text",
+          name: "text"
+        }
+      ]
     }
   ]
 };
