@@ -700,6 +700,11 @@ var dropdownBlockSchema = {
         InfopointsBlockSchema,
         FeaturesBlockSchema
       ]
+    },
+    {
+      label: "Padding top",
+      name: "padding",
+      type: "boolean"
     }
   ]
 };

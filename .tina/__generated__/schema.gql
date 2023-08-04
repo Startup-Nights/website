@@ -573,6 +573,7 @@ type PageBlocksDropdownItems {
 
 type PageBlocksDropdown {
   items: [PageBlocksDropdownItems]
+  padding: Boolean
 }
 
 type PageBlocksBenefitsBenefit_items {
@@ -1036,6 +1037,7 @@ input PageBlocksDropdownItemsFilter {
 
 input PageBlocksDropdownFilter {
   items: PageBlocksDropdownItemsFilter
+  padding: BooleanFilter
 }
 
 input PageBlocksBenefitsBenefit_itemsFilter {
@@ -1615,6 +1617,7 @@ input PageBlocksDropdownItemsMutation {
 
 input PageBlocksDropdownMutation {
   items: [PageBlocksDropdownItemsMutation]
+  padding: Boolean
 }
 
 input PageBlocksBenefitsBenefit_itemsMutation {
