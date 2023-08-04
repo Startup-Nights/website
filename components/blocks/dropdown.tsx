@@ -9,7 +9,7 @@ import { Features, FeaturesBlockSchema } from '../items/features';
 export const Dropdown = ({ data }) => {
     return (
         <div className="bg-sn-black">
-            <div className="max-w-7xl mx-auto pt-0 pb-12 px-8 lg:p-24 lg:pt-0">
+            <div className={`max-w-7xl mx-auto ${data?.padding ? 'py-12' : 'pt-0 pb-12'} px-8 lg:p-24 ${data?.padding ? '' : 'lg:pt-0'}`}>
                 {data?.items && data?.items?.map(item => (
                     <Disclosure as="div" className="mb-2" key={item?.content_block?.title}>
                         {({ open }) => (
@@ -62,6 +62,11 @@ export const dropdownBlockSchema: Template = {
                 InfopointsBlockSchema,
                 FeaturesBlockSchema,
             ],
+        },
+        {
+            label: "Padding top",
+            name: "padding",
+            type: "boolean",
         }
     ],
 };
