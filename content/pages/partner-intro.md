@@ -145,6 +145,7 @@ blocks:
               Brunch, Afterparty, a stage or workshop room, sample your product
               on-site, and much more.
             - Let’s discuss your ideas.
+    padding: false
     _template: Dropdown
   - subtitle: Ready to partner up?
     title: Schedule a call to get your tailored package.
@@ -166,5 +167,6 @@ blocks:
       offer for the partner package.
     _template: partnerform
 ---
+
 
 

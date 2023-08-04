@@ -278,6 +278,7 @@ fragment PageParts on Page {
           icon
         }
       }
+      padding
     }
     ... on PageBlocksBenefits {
       subtitle

@@ -69,6 +69,7 @@ blocks:
               video also send us the video link (YouTube or Vimeo – listed or
               non-listed)
           - text: Newsletter
+    padding: true
     _template: Dropdown
   - subtitle: More details about specific options
     title: Further cooperation.
@@ -144,8 +145,11 @@ blocks:
           cta:
             link: 'mailto:julian_stylianou@hotmail.com'
             text: Get in touch
+    padding: true
     _template: Dropdown
 ---
+
+
 
 
 
