@@ -562,7 +562,7 @@ import { Dialog, Transition as Transition2 } from "@headlessui/react";
 import { Fragment as Fragment2 } from "react";
 
 // components/blocks/newsletter.tsx
-import { useRef as useRef2, useState as useState4, Fragment as Fragment3 } from "react";
+import { useRef, useState as useState4, Fragment as Fragment3 } from "react";
 import { Transition as Transition3 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon2 } from "@heroicons/react/24/outline";
 import { ExclamationCircleIcon as ExclamationCircleIcon2, XMarkIcon as XMarkIcon2 } from "@heroicons/react/20/solid";
@@ -779,6 +779,7 @@ var ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
 });
 
 // components/blocks/overview.tsx
+import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, Cog6ToothIcon as Cog6ToothIcon2, HeartIcon as HeartIcon3, LightBulbIcon as LightBulbIcon3, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
 var overviewBlockSchema = {
   name: "overview",
   label: "Overview",
@@ -799,6 +800,11 @@ var overviewBlockSchema = {
       name: "benefit_items",
       list: true,
       fields: [
+        {
+          type: "string",
+          label: "Icon",
+          name: "icon"
+        },
         {
           type: "string",
           label: "Title",
@@ -1059,7 +1065,7 @@ var TestimonialBlockSchema = {
 };
 
 // components/items/facts.tsx
-import { RocketLaunchIcon as RocketLaunchIcon2, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, HeartIcon as HeartIcon3, LightBulbIcon as LightBulbIcon3, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
+import { RocketLaunchIcon as RocketLaunchIcon2, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
 var FactsBlockSchema = {
   type: "object",
   label: "Figures",

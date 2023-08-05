@@ -1,7 +1,8 @@
 import { Transition } from "@headlessui/react";
 import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useState } from "react";
 import { Template } from "tinacms"
+import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 
 const options = [
     "Booth",
@@ -43,7 +44,6 @@ export const PartnerForm = ({ data }) => {
                 interests: interests.join(', '),
                 email: event.target.email.value,
                 budget: event.target.budget.value,
-                idea: event.target.idea.value,
             }),
         })
 
@@ -70,10 +70,19 @@ export const PartnerForm = ({ data }) => {
                 <div className="bg-sn-black-light">
                     <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                         <div id="partner_form" className='relative text-gray-200'>
-                            <div>
-                                <h3 className="text-base font-semibold leading-6 text-gray-200 tracking-widest">{data.title}</h3>
-                                <p className="mt-1 text-sm text-gray-500">{data.description}</p>
+                            <div className="max-w-3xl py-12">
+                                <h3 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
+                                    Ready to partner up?
+                                </h3>
+                                <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
+                                    Schedule a call to get your tailored package.
+                                </h2>
+
+                                <p className="mt-6 text-md leading-6 text-gray-300">
+                                    Fill out the form below to schedule a call with our partnership team. We'll walk you through the available options, tailor a package to suit your needs, and guide you toward success at the Startup Nights.
+                                </p>
                             </div>
+
                             <form onSubmit={handleSubmit}>
                                 <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
 
@@ -163,24 +172,7 @@ export const PartnerForm = ({ data }) => {
                                     </div>
 
                                     <div className="sm:col-span-6">
-                                        <label htmlFor="about" className="block text-sm font-medium leading-6">
-                                            What kind of partnership do you have in mind?
-                                        </label>
-                                        <div className="mt-2">
-                                            <textarea
-                                                required={true}
-                                                id="idea"
-                                                name="idea"
-                                                placeholder="Are you interested in a booth, a workshop, ...?"
-                                                rows={3}
-                                                className="w-full rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:text-sm sm:leading-6"
-                                                defaultValue={''}
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div className="sm:col-span-6">
-                                        <p className="block text-sm font-medium leading-6">We are interested in:</p>
+                                        <p className="block text-sm font-medium leading-6">What should we talk about?</p>
 
                                         <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-2 md:space-y-0">
                                             {options.map((interest, i) => (
@@ -363,19 +355,36 @@ const successMessage = () => {
                         Welcome aboard!
                     </h2>
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
-                        This is how our process continues
+                        We received your signup. This is how our process continues.
                     </h1>
                 </div>
 
-                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <ul className="grid grid-cols- md:grid-cols-2 gap-4">
                     {benefit_items.map((benefit: any, i: number) => (
-                        <li key={i} className="col-span-1 text-center flex flex-wrap justify-start items-start bg-sn-black-lightest rounded-3xl p-6 md:p-8">
-                            <h4 className="w-full text-center text-xl md:text-1xl mb-6">{benefit.title}</h4>
-                            <p className="w-full text-left md:text-1xl">{benefit.text}</p>
+                        <li key={i} className="col-span-1 text-left flex-wrap justify-start items-start bg-sn-black-lightest rounded-3xl p-6 md:p-8">
+                            <div className="flex justify-center mb-6">{getIcon(benefit.icon ? benefit.icon : 'cog')}</div>
+                            <p className="font-semibold text-xl text-center text-gray-300 mb-6">{benefit.title}</p>
+                            <div className="space-y-4">
+                                <p className="text-md leading-6 text-gray-400">{benefit.text}</p>
+                            </div>
                         </li>
+
                     ))}
                 </ul>
             </div>
         </div>
     )
 }
+
+
+const getIcon = (icon: string) => {
+    switch (icon) {
+        case 'chatbubble': return <ChatBubbleLeftRightIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'lightbulb': return <LightBulbIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'heart': return <HeartIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'usergroup': return <UserGroupIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'checkbadge': return <CheckBadgeIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'cog': return <Cog6ToothIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+    }
+}
+
