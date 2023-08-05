@@ -76,8 +76,7 @@ blocks:
               enhancing brand visibility and fostering meaningful connections.
         image:
           src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-37
-            (1).jpg
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/031122_StartupNights_Tag1_-37.jpeg
           alt: Startup Booth of Noii
       - content_block:
           title: Speaker Opportunities
@@ -92,8 +91,8 @@ blocks:
               ensure high visibility and prominence.
         image:
           src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-1-day-2-melanie-buob/0C1A4629.jpg
-          alt: Nikin Workshop
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/20221103-IMG_4970.jpg
+          alt: Speaker at Startup Nights on stage
       - content_block:
           title: Workshops
           content:
@@ -104,6 +103,10 @@ blocks:
               Showcase your expertise, products, or services to establish
               thought leadership and create meaningful connections with
               potential clients and industry peers.
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/0C1A4629.jpg
+          alt: Nikin Workshop
       - content_block:
           subtitle: ''
           title: Startup Pitching Sessions
@@ -116,6 +119,10 @@ blocks:
               and influential player in the startup ecosystem. You can identify
               potential investment or collaboration opportunities and stay
               abreast of the latest industry trends.
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/0C1A4915.jpg
+          alt: Winners of the pitching competition 2023
       - content_block:
           title: founded. Magazine
           content:
@@ -126,6 +133,11 @@ blocks:
             - >-
               Alternatively, you can enhance your brand visibility by placing a
               advertisement.
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/041122_StartupNights_Tag2_
+            (48 von 182).jpg
+          alt: Someone holding a founded magazine issue
       - content_block:
           title: Promotional Opportunities
           content:
@@ -136,6 +148,10 @@ blocks:
               This includes extensive logo presence on the event website,
               newsletters, social media, and on-site materials, blog posts on
               founded.ch, display ads on event screens.
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/0C1A4511.jpg
+          alt: Home of Innovation photo bus at Startup Nights
       - content_block:
           title: More Partnership Options
           content:
@@ -145,28 +161,20 @@ blocks:
               Brunch, Afterparty, a stage or workshop room, sample your product
               on-site, and much more.
             - Let’s discuss your ideas.
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/0C1A4614.jpg
+          alt: Alealeaf visit card
     padding: false
     _template: Dropdown
-  - subtitle: Ready to partner up?
-    title: Schedule a call to get your tailored package.
-    content:
-      - text:
-          - >-
-            Fill out the form below to schedule a call with our partnership
-            team. We'll walk you through the available options, tailor a package
-            to suit your needs, and guide you toward success at the Startup
-            Nights. 
-    background_color: bg-sn-black-lightest
-    cta_secondary:
-      link: ''
-      text: ''
-    _template: content_wide
   - title: Contact information
     description: >-
       We will only use the information to get in contact with you regarding an
       offer for the partner package.
     _template: partnerform
 ---
+
+
 
 
 

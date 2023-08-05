@@ -588,6 +588,7 @@ type PageBlocksBenefits {
 }
 
 type PageBlocksOverviewBenefit_items {
+  icon: String
   title: String
   description: [String]
 }
@@ -1052,6 +1053,7 @@ input PageBlocksBenefitsFilter {
 }
 
 input PageBlocksOverviewBenefit_itemsFilter {
+  icon: StringFilter
   title: StringFilter
   description: StringFilter
 }
@@ -1632,6 +1634,7 @@ input PageBlocksBenefitsMutation {
 }
 
 input PageBlocksOverviewBenefit_itemsMutation {
+  icon: String
   title: String
   description: [String]
 }
