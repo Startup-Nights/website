@@ -1,8 +1,8 @@
 ---
 title: Partner Documentation
 blocks:
-  - subtitle: All the infos you need
-    title: Partner documentation.
+  - subtitle: All you need to know
+    title: Partner Information.
     cta:
       link: ''
       text: ''
@@ -12,142 +12,155 @@ blocks:
       alt: Fireside Chat at Startup Nights 2022
     _template: hero
   - content_block:
-      subtitle: We are here to help
-      title: Contact us in case of questions.
+      subtitle: Happy to have you here
+      title: Welcome to the Startup Nights!
       content:
         - >-
-          Here we provide you with the information you need for our partnership.
-          Which of these advantages and services are suitable for you is part of
-          our already concluded partner agreement. If you need any further
-          information don’t hesitate to contact us
+          We are thrilled to have you as a partner for the Startup Nights 2023,
+          and we want to ensure that you have all the essential information you
+          need to prepare yourself for the event.
+        - >-
+          Below, you will find a comprehensive guide with all the important
+          details to make your experience smooth and successful.
       cta:
+        link: ''
+        text: ''
+    infopoints:
+      - name: Point of contact
+        text: >-
+          If you have any questions or concerns regarding your booked modules,
+          please contact the partner team.
         link: 'mailto:partner@startup-nights.ch'
-        text: Drop us an email
+    contentblock_left: true
     _template: content
   - items:
       - content_block:
-          subtitle: ''
-          title: Every sponsoring package
+          title: Event details
           content:
+            - 'Date: 2 & 3 November 2023'
             - >-
-              The following infos and details are required for every
-              partnership.
-        infopoints:
-          - text: >-
-              For the website: Quote saying why you became a partner of the
-              Startup Nights / Entrepreneur Club Winterthur focusing on telling
-              us about the value that you will bring to the event, the
-              ecosystem, and the event participants. (Max. 50 characters
-              including spaces)
-          - text: >-
-              Some insights (key words are sufficient) about how you see your
-              relationship between you and the Startup Nights / Entrepreneur
-              Club Winterthur so far. No character limitation, we will use these
-              insights as a foundation for texting the caption
-          - text: >-
-              What we can thank you for in the post (e.g. Technopark Winterthur:
-              “Thank you for being one of our biggest supporters since day 1.”)
-          - text: >-
-              Your Logo (for Newsletter, Website & Social Media Posts, png as
-              well as eps) - specifically for Social Media (LinkedIn &
-              Instagram)
+              Location: Eulachhallen Winterthur, Wartstrasse 73, 8400
+              Winterthur, Switzerland
+            - 'Event Organizer: Entrepreneur Club Winterthur'
+            - >-
+              Opening Hours For Visitors: 2 November 2023, from 1pm to 10.30pm
+              and 3 November 2023, from 1pm to 12am
+            - >-
+              Opening Hours For Partner & Exhibitors: 2 November 2023, from 9am
+              to 11pm and 3 November 2023, from 11am to 12am, 4 November 2023,
+              from 9am to 12pm
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/pictures/eulachhallen.jpg
+          alt: Location Eulachhallen Winterthur
       - content_block:
-          title: Medium and high level sponsoring packages
+          title: 'Set-up, dismantling & material (un)loading'
           content:
             - >-
-              These information are only applicable for medium to high
-              sponsoring packages.
-        infopoints:
-          - text: 'Voluntary: short Call to action and link'
-          - text: >-
-              Teasertext about what you will contribute to / do at the Startup
-              Nights (max. 300 characters including spaces). Important: We focus
-              on the value for the startup ecosystem and won’t publish teaser
-              texts that don’t serve this sector.
-          - text: >-
-              Photo with an aspect ratio of 3:2 and if you want us to link a
-              video also send us the video link (YouTube or Vimeo – listed or
-              non-listed)
-          - text: Newsletter
-    padding: true
+              Set-up Times: 2 November 2023, 7am - 12am and 2 November 2023,
+              until 12pm
+            - 'Dismantling Times: 3 November 2023, 11pm - 4 November, 7am'
+            - >-
+              Material (Un)Loading: The parking lot can be used for unloading.
+              On the side of the hall will be a large gate into which you can
+              enter directly into the exhibition hall. Don’t park before this
+              gate as everybody has to bring things through it. Large things
+              like cars must be brought early in the morning or the evening
+              before so that you can get through everywhere. The same also
+              applies for when you dismantle the booth.
+      - content_block:
+          title: Getting to the venue
+          content:
+            - 'Nearby airport: Zurich (ZRH)'
+            - 'Nearby train station: Winterthur, walk 10-15 minutes'
+            - >-
+              Parking: [Specify parking areas for partners and any
+              conditions/restrictions]
+          cta:
+            link: 'https://goo.gl/maps/uvv6Pfok8nBfaHMo9'
+            text: Google Maps
+      - content_block:
+          title: Tickets
+          content:
+            - >-
+              You may have booked the "Partner Tickets" module when you booked
+              your Partner Package. This means that you have a certain number of
+              tickets included in your package. In this case, you have received
+              the code to get your free tickets from the partner team. 
+            - >-
+              If you have not selected the ticket module, you do not have any
+              free tickets included. You have to buy your tickets separatly.
+          cta:
+            link: /tickets
+            text: Tickets
+      - content_block:
+          title: Accommodation
+          content:
+            - >-
+              If you require accommodation during the event, there are several
+              options nearby. Here are a few recommended hotels:
+            - 'Parkhotel: Stadthausstrasse 4, 8400 Winterthur'
+            - >-
+              Businesshotel & Seminarhotel Banana City Winterthur:
+              Schaffhauserstrasse 8, 8400 Winterthur
+            - 'ibis budget Winterthur: Brühlbergstrasse 7A, 8400 Winterthur'
+      - content_block:
+          title: Catering
+          content:
+            - >-
+              Before and after visitor opening hours as well as during set-up
+              and dismantling, no catering will be available for partners and
+              exhibitors. We kindly ask you to take care of your team's catering
+              yourself.
+            - >-
+              Throughout the event, there will be a variety of catering options
+              available. From coffee stands to snacks and full-course meals, you
+              and your team will have access to a diverse selection of
+              refreshments for free.
+      - content_block:
+          title: Hall plan
+          content:
+            - >-
+              A detailed hall plan will be provided to you upon your arrival at
+              the event. This plan will offer a comprehensive overview of the
+              venue layout, including booth locations, restroom facilities, and
+              other essential areas.
+            - >-
+              The plan already linked below is not final and most likely will
+              change before the event.
+          cta:
+            link: /plan_eulachhalle_v6.pdf
+            text: Current plan
+      - content_block:
+          title: Marketing measures
+          content:
+            - >-
+              After booking your partner package, you received an email with all
+              information about your booked modules. Please check this email to
+              see what you have to deliver to us by when, so that we can
+              implement your booked marketing measures in time.
+            - >-
+              In case you want to book additional advertising measures, you can
+              get an overview with the link below. Once you have an idea of what
+              you want to do, please contact the partner team asap.
+          cta:
+            link: /partner-intro
+            text: Marketing measures overview
+          cta_secondary:
+            link: 'mailto:partner@startup-nights.ch'
+            text: Contact the partner team
+    padding: false
     _template: Dropdown
-  - subtitle: More details about specific options
-    title: Further cooperation.
+  - subtitle: See you soon
+    title: We are looking forward to meeting you!
     image:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_
-        (35 von 139).jpg
-      alt: Audience at the Startup Nights
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+      alt: Helper at the Startup Nights 2022
     _template: hero
-  - items:
-      - content_block:
-          title: Free Ticket Package
-          content:
-            - >-
-              Are there free tickets included in your sponsoring package? Please
-              contact the person mentioned above to get a discount code.
-          cta:
-            link: 'mailto:partner@startup-nights.ch'
-            text: Contact us
-      - content_block:
-          title: Startup Magazin
-          content:
-            - 'Attention: Only possible until the end of August.'
-            - >-
-              For stories; Person’s contact data for a background conversation
-              to serve as a foundation for the article and to implement quotes
-              in the story Photo material (size must be at least 1 MB and have
-              300 dpi).
-            - >-
-              For advertisements; To be delivered as print-ready PDF, standard
-              PDF/X3 or PDF/X4. – Color mode CMYK, color profile ISO coated v2
-              300%. With crop mark.
-          cta:
-            link: 'mailto:partner@startup-nights.ch'
-            text: Send us the files
-      - content_block:
-          title: Booth
-          content:
-            - >-
-              We want to make sure you have everything you need for your amazing
-              booth. Therefore, please send the answers to the following
-              questions by e-mail.
-            - >-
-              What do you want to bring for your booth? Please send us a list of
-              items and their approximate dimensions.
-            - Do you have a sketch of your booth?
-            - >-
-              Do you need any extra equipment? Some additional equipment can be
-              rented.
-          cta:
-            link: 'mailto:philip.nussbaumer@philevate.com'
-            text: Send us the files
-      - content_block:
-          title: Workshops
-          content:
-            - 'Duration: 30-45 minutes'
-            - 'Number of available seats in the room: 80 seats'
-            - 'Equipment: a projection screen (beamer or screen) is available'
-          cta:
-            link: 'mailto:speaker@startup-nights.ch'
-            text: Let's plan a workshop
-      - content_block:
-          title: Keynote Speeches
-          content:
-            - 'Duration: 20 minutes (max. 30 minutes)'
-          cta:
-            link: 'mailto:speaker@startup-nights.ch'
-            text: Do you want to give a keynote speech?
-      - content_block:
-          title: Pitching Sessions
-          content:
-            - Will you be part of the jury at the pitching session?
-          cta:
-            link: 'mailto:julian_stylianou@hotmail.com'
-            text: Get in touch
-    padding: true
-    _template: Dropdown
 ---
+
+
 
 
 
