@@ -294,6 +294,7 @@ fragment PageParts on Page {
       title
       benefit_items {
         __typename
+        icon
         title
         description
       }
