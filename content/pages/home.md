@@ -226,6 +226,50 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
           alt: Léa Miggiano
+      - name: Tobias Gunzenhauser
+        position: Co-Founder & CEO yamo
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tobias_gunzenhauser.jpg
+          alt: Tobias Guzenhauser
+      - name: Patrik Deuss
+        position: President Board of Directors & CEO LEDCity
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/patrik_deuss.jpg
+          alt: Patrick Deuss
+      - name: Francisco Fernandez
+        position: CEO and Board Member Racing Unleashed
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/francisco_fernandez.jpg
+          alt: Francisco Fernandez
+      - name: Pascal Uffer
+        position: CEO & Founder Boostbar
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/pascal_uffer.jpg
+          alt: Pascal Uffer
+      - name: Jörg Sandrock
+        position: CEO neon
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/joerg_sandrock.jpg
+          alt: Jörg Sandrock
+      - name: Christian Meisser
+        position: CEO & Legal Expert at LEXR
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/christian_meisser.jpg
+          alt: Christian Meisser
+      - name: Adrien Stamm
+        position: CEO Yuno
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/adrien_stamm.jpg
+          alt: Adrien Stamm
     _template: speakers
   - content_block:
       subtitle: Pitching Competition
@@ -317,6 +361,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
 
 
 
