@@ -108,6 +108,26 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/schoch.png
+            alt: Büro Schoch Werkhaus AG
+            link: 'https://www.schoch.swiss/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/cisco.png
+            alt: Cisco
+            link: 'https://cisco.com'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/zhaw.png
+            alt: ZHAW
+            link: 'https://zhaw.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/wirtschaftsbildung.png
+            alt: Wirtschaftsbildung
+            link: 'https://wirtschaftsbildung.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/technopark_winterthur.png
+            alt: Technopark Winterthur
+            link: 'https://tpw.ch/en/'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sap.png
             alt: SAP
             link: 'https://www.sap.com/swiss/index.html'
@@ -148,6 +168,30 @@ blocks:
       - title: Supporter
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kadasolution.png
+            alt: Kadasolutions
+            link: 'https://kadasolutions.ch/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/zhaw.png
+            alt: ZHAW
+            link: 'https://zhaw.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sunrise.png
+            alt: Sunrise
+            link: 'https://sunrise.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/house_of_winterthur.png
+            alt: House of Winterthur
+            link: 'https://winterthur.com/de/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/haw.jpeg
+            alt: Handelskammer Winterthur
+            link: 'https://www.haw.ch/de/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/alpinium.png
+            alt: Alpinum
+            link: 'https://www.alpinumlaw.com/'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/peakora.png
             alt: Peakora
@@ -236,6 +280,14 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/splint_invest.png
+            alt: Splint Invest
+            link: 'https://splintinvest.com/en/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/quitt.png
+            alt: quitt
+            link: 'https://quitt.business/en/'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/aktionariat.png
             alt: Aktionariat
             link: 'https://www.aktionariat.com'
@@ -247,6 +299,13 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ffhs.jpg
             alt: FFHS
             link: 'https://ffhs.ch'
+      - title: Food and Beverage Partner
+        grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/noser_engineering.png
+            alt: Noser Engineering
+            link: 'https://www.noser.com/'
     _template: partner_list
   - title: Contact information
     description: >-
@@ -254,6 +313,7 @@ blocks:
       offer for the partner package.
     _template: partnerform
 ---
+
 
 
 
