@@ -228,12 +228,14 @@ blocks:
           alt: Léa Miggiano
       - name: Tobias Gunzenhauser
         position: Co-Founder & CEO yamo
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tobias_gunzenhauser.jpg
           alt: Tobias Guzenhauser
       - name: Patrik Deuss
         position: President Board of Directors & CEO LEDCity
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/patrik_deuss.jpg
@@ -247,12 +249,14 @@ blocks:
           alt: Francisco Fernandez
       - name: Pascal Uffer
         position: CEO & Founder Boostbar
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/pascal_uffer.jpg
           alt: Pascal Uffer
       - name: Jörg Sandrock
         position: CEO neon
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/joerg_sandrock.jpg
@@ -266,6 +270,7 @@ blocks:
           alt: Christian Meisser
       - name: Adrien Stamm
         position: CEO Yuno
+        description: ''
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/adrien_stamm.jpg
@@ -283,22 +288,29 @@ blocks:
         link: /pitching
         text: Pre-register
     members:
-      - name: Teddy Amberg
-        position: FP @ Spicehaus Partners AG
-        linkedin: 'https://www.linkedin.com/in/teddyamberg/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/teddy-amberg.jpeg
-        alt: Teddy Amberg
-        stage: seed
       - name: Andrea Buhofer
-        position: MP @ EquityPitcher Ventures
+        position: Managing Partner at EquityPitcher Ventures
         linkedin: 'https://www.linkedin.com/in/andrea-buhofer-721822182/'
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
         alt: Andrea Buhofer
         stage: seed
+      - name: Michael Blank
+        position: Head Investment Team at Verve Ventures
+        linkedin: 'https://www.linkedin.com/in/michael-blank-6a5635182/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/michael_blank.png
+        alt: Michael Blank
+        stage: seed
+      - name: Teddy Amberg
+        position: Founding Partner at Spicehaus Partners AG
+        linkedin: 'https://www.linkedin.com/in/teddyamberg/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/teddy-amberg.jpeg
+        alt: Teddy Amberg
+        stage: seed
       - name: Daniel Dillinger
-        position: VC @ Redalpine
+        position: Investment Parter at Redalpine
         linkedin: 'https://www.linkedin.com/in/daniel-dillinger-213173138/'
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/daniel-dillenger.jpg
@@ -361,6 +373,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
 
 
 
