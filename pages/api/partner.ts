@@ -5,7 +5,7 @@ export default async (req: any, res: any) => {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            recipient: 'tabita.sager@gmail.com',
+            recipient: 'partner@startup-nights.ch',
             title: 'Partner Anmeldung',
             content: stringify(req.body),
         }),
