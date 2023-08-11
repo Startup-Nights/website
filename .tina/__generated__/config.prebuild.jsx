@@ -285,6 +285,7 @@ var heroBlockSchema = {
 import { Transition } from "@headlessui/react";
 import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
 import { Fragment, useState as useState2 } from "react";
+import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 var partnerFormSchema = {
   name: "partnerform",
   label: "Partnerform",
@@ -659,7 +660,7 @@ import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 // components/items/features.tsx
-import { RocketLaunchIcon, ChatBubbleLeftRightIcon, CheckBadgeIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import { RocketLaunchIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon2, CheckBadgeIcon as CheckBadgeIcon2, HeartIcon as HeartIcon2, LightBulbIcon as LightBulbIcon2, UserGroupIcon as UserGroupIcon2 } from "@heroicons/react/24/outline";
 var FeaturesBlockSchema = {
   type: "object",
   label: "Features",
@@ -710,7 +711,7 @@ var dropdownBlockSchema = {
 };
 
 // components/blocks/benefits.tsx
-import { Cog6ToothIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon2, CheckBadgeIcon as CheckBadgeIcon2, HeartIcon as HeartIcon2, LightBulbIcon as LightBulbIcon2, UserGroupIcon as UserGroupIcon2 } from "@heroicons/react/24/outline";
+import { Cog6ToothIcon as Cog6ToothIcon2, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, HeartIcon as HeartIcon3, LightBulbIcon as LightBulbIcon3, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
 import React4 from "react";
 var benefitsBlockSchema = {
   name: "benefits",
@@ -779,7 +780,7 @@ var ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
 });
 
 // components/blocks/overview.tsx
-import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, Cog6ToothIcon as Cog6ToothIcon2, HeartIcon as HeartIcon3, LightBulbIcon as LightBulbIcon3, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
+import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
 var overviewBlockSchema = {
   name: "overview",
   label: "Overview",
@@ -1065,7 +1066,7 @@ var TestimonialBlockSchema = {
 };
 
 // components/items/facts.tsx
-import { RocketLaunchIcon as RocketLaunchIcon2, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
+import { RocketLaunchIcon as RocketLaunchIcon2, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon5, CheckBadgeIcon as CheckBadgeIcon5, HeartIcon as HeartIcon5, LightBulbIcon as LightBulbIcon5, UserGroupIcon as UserGroupIcon5 } from "@heroicons/react/24/outline";
 var FactsBlockSchema = {
   type: "object",
   label: "Figures",
