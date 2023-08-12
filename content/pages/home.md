@@ -277,16 +277,19 @@ blocks:
           alt: Adrien Stamm
     _template: speakers
   - content_block:
-      subtitle: Pitching Competition
-      title: Meet our jury.
+      subtitle: Pitch and win
+      title: Apply for the Pitching Competition.
       content:
         - >-
-          The competition is split into two parts; pre-seed and seed. You can 
-          pre-register now and we'll get back to you once we are ready to accept
-          applications.
+          There ar etwo categories in the competition; seed and pre-seed. For
+          each round, there is a dedicated jury that will select a winning
+          pitch.
+        - >-
+          The applications are open and we'll get in touch soon once you have
+          registered.
       cta:
         link: /pitching
-        text: Pre-register
+        text: Apply
     members:
       - name: Andrea Buhofer
         position: Managing Partner at EquityPitcher Ventures
@@ -294,6 +297,20 @@ blocks:
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
         alt: Andrea Buhofer
+        stage: seed
+      - name: Ralph Mogicato
+        position: Owner at Hixon AG
+        linkedin: 'https://www.linkedin.com/in/ralphmogicato/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/ralph_mogicato.jpg
+        alt: Ralph Mogicato
+        stage: seed
+      - name: Guy Giuffredi
+        position: Business Angel and Cofounder Aare Ventures
+        linkedin: 'https://www.linkedin.com/in/guy-giuffredi-45399751/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/guy_giuffredi.png
+        alt: Guy Giuffredi
         stage: seed
       - name: Michael Blank
         position: Head Investment Team at Verve Ventures
@@ -373,6 +390,8 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
+
 
 
 
