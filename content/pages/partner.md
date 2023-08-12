@@ -58,6 +58,10 @@ blocks:
             alt: Wirtschaftsbildung
             link: 'https://wirtschaftsbildung.ch'
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/technopark_graubuenden.png
+            alt: Technopark Graubünden
+            link: 'https://www.technopark-graubuenden.ch/en/'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/technopark_winterthur.png
             alt: Technopark Winterthur
             link: 'https://tpw.ch/en/'
@@ -242,4 +246,5 @@ blocks:
             link: 'https://www.noser.com/'
     _template: partner_list
 ---
+
 
