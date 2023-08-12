@@ -46,8 +46,6 @@ export const Booth = ({ data }) => {
             error: "",
             state: uploadState.Uploading,
         });
-        const url =
-            "https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/spaces";
         const file = event.target.files[0];
 
         // make sure that the file is not too big
@@ -64,7 +62,7 @@ export const Booth = ({ data }) => {
             return;
         }
 
-        const response = await fetch(url, {
+        const response = await fetch("https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/spaces", {
             method: "post",
             headers: {
                 "Content-Type": "application/json",
@@ -74,13 +72,13 @@ export const Booth = ({ data }) => {
             }),
         });
 
-        const data = await response.json();
+        let data = await response.json();
         if (data.error) {
             console.log(data.error);
         }
-        const uploadurl = data.upload;
+        const filename = data.filename
 
-        const uploadResponse = await fetch(uploadurl, {
+        const uploadResponse = await fetch(data.upload, {
             method: "put",
             headers: {
                 "x-amz-acl": "public-read",
@@ -88,6 +86,19 @@ export const Booth = ({ data }) => {
             },
             body: file,
         });
+
+        const resizeResponse = await fetch("https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/resize", {
+            method: 'post',
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ filename: filename }),
+        })
+
+        data = await resizeResponse.json()
+        if (data.error) {
+            console.log(data.error);
+        }
 
         setCompanyLogoLoading({
             state: uploadState.Finished,
@@ -643,10 +654,10 @@ export const Booth = ({ data }) => {
                                 <div className="mt-2 mb-4 text-sm font-medium leading-6 text-gray-400">
                                     <p className="">Please make sure that your logo:</p>
                                     <ul role="list" className="mt-2 list-disc pl-5">
-                                        <li>is preferrably an SVG file</li>
+                                        <li>is a PNG file</li>
                                         <li>has no background color</li>
                                         <li>can be used on light and dark backgrounds</li>
-                                        <li>is at least 600px x 300px in size</li>
+                                        <li>is at least 600px x 300px in size (that's more or less the size that will be used)</li>
                                     </ul>
                                 </div>
 
@@ -671,19 +682,42 @@ export const Booth = ({ data }) => {
                                             Change logo
                                         </button>
 
-                                        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 group">
-                                            <div className="relative group p-16 bg-white rounded-xl border-2 border-gray-200">
-                                                <img
-                                                    src={companyLogoLoading.downloadUrl}
-                                                    className="border-2 border-transparent group-hover:border-white"
-                                                />
+                                        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 group">
+                                            <div className="">
+                                                <p className="text-gray-400 pb-6">Without hover effect on light background (for example for print media)</p>
+                                                <div className="relative group p-8 bg-white rounded-xl border-2 border-gray-200">
+                                                    <div className="p-4 sm:p-8 rounded-xl">
+                                                        <img
+                                                            src={companyLogoLoading.downloadUrl}
+                                                            className=""
+                                                        />
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div className="relative group p-16 bg-sn-black rounded-xl border-2 border-gray-200">
-                                                <img
-                                                    src={companyLogoLoading.downloadUrl}
-                                                    className=""
-                                                />
+                                            <div className="">
+                                                <p className="text-gray-400 pb-6">With hover effect on light background (for example for links)</p>
+                                                <div className="relative group p-8 bg-white rounded-xl border-2 border-gray-200">
+                                                    <div className="hover:bg-gray-50 p-4 sm:p-8 rounded-xl">
+                                                        <img
+                                                            src={companyLogoLoading.downloadUrl}
+                                                            className=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div className="">
+                                                <p className="text-gray-400 pb-6">Without hover effect on dark background (for example for for print media)</p>
+                                                <div className="relative group p-8 bg-sn-black rounded-xl border-2 border-gray-200">
+                                                    <div className="p-4 sm:p-8 rounded-xl">
+                                                        <img
+                                                            src={companyLogoLoading.downloadUrl}
+                                                            className=""
+                                                        />
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </>
@@ -731,7 +765,7 @@ export const Booth = ({ data }) => {
                                                             <input
                                                                 id="company_logo"
                                                                 name="company_logo"
-                                                                accept=".svg,.png"
+                                                                accept=".png"
                                                                 multiple={false}
                                                                 onChange={(event) => handleUpload(event)}
                                                                 type="file"
@@ -740,7 +774,7 @@ export const Booth = ({ data }) => {
                                                         </label>
                                                     </div>
                                                     <p className="mt-2 text-xs leading-5 text-gray-500">
-                                                        PNG or SVG up to 10MB
+                                                        PNG up to 10MB
                                                     </p>
                                                     {companyLogoLoading.state === uploadState.Error &&
                                                         companyLogoLoading.error !== "" && (
