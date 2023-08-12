@@ -38,9 +38,9 @@ export const Hero = ({ data }) => {
                 </div>
             )}
 
-            <div className="relative max-w-7xl mx-auto pb-12 pt-12 px-8 lg:pb-24 lg:pt-24 text-center">
+            <div className="relative max-w-7xl mx-auto py-20 px-8 lg:pb-24 lg:pt-24 text-center">
                 <div className="max-w-3xl mx-auto">
-                    <h2 className="text-sm font-medium leading-7 text-gray-200 lg:text-2xl">
+                    <h2 className="font-medium leading-7 text-gray-200 lg:text-2xl">
                         {data?.subtitle}
                     </h2>
                     <h1 className="mt-2 text-6xl font-bold tracking-tight text-gray-200 lg:text-8xl">
@@ -50,7 +50,7 @@ export const Hero = ({ data }) => {
 
                 {(data?.cta || data?.cta_secondary) && (
                     <div className="flex justify-center">
-                        <div className="mt-12 grid grid-cols-1 gap-y-6 md:flex md:flex-wrap md:gap-x-4">
+                        <div className="mt-8 grid grid-cols-1 gap-y-6 md:flex md:flex-wrap md:gap-x-4">
                             {data?.cta && data.cta.text !== '' && (
                                 <div>
                                     <Button link={data?.cta?.link} new_tab={data?.cta?.new_tab} text={data?.cta?.text}>
