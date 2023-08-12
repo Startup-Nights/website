@@ -58,10 +58,6 @@ blocks:
             alt: Wirtschaftsbildung
             link: 'https://wirtschaftsbildung.ch'
           - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/technopark_graubuenden.png
-            alt: Technopark Graubünden
-            link: 'https://www.technopark-graubuenden.ch/en/'
-          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/technopark_winterthur.png
             alt: Technopark Winterthur
             link: 'https://tpw.ch/en/'
@@ -103,9 +99,24 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sparrow-ventures.png
             alt: Sparrow Ventures
             link: 'https://sparrow-ventures.com'
+      - title: International Partner
+        grid_cols: 3
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ukrainian_swiss_business_association.png
+            alt: Ukrainian Swiss Business Association
+            link: 'https://ukraine-swiss.ch/'
       - title: Supporter
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/hoststar.png
+            alt: Hoststar
+            link: 'https://www.hoststar.ch/en'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/technopark_graubuenden.png
+            alt: Technopark Graubünden
+            link: 'https://www.technopark-graubuenden.ch/en/'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kadasolution.png
             alt: Kadasolutions
@@ -246,5 +257,6 @@ blocks:
             link: 'https://www.noser.com/'
     _template: partner_list
 ---
+
 
 
