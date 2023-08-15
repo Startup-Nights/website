@@ -110,6 +110,18 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/axa_arag.png
+            alt: Axa Arag
+            link: 'https://www.axa.ch/en/about-axa/company/affiliates/axa-arag.html'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/axa_swibeco.png
+            alt: Swibeco
+            link: 'https://www.swibeco.ch/en/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/axa_upto.png
+            alt: Axa Upto
+            link: 'https://www.upto.ch/'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/hoststar.png
             alt: Hoststar
             link: 'https://www.hoststar.ch/en'
@@ -257,6 +269,7 @@ blocks:
             link: 'https://www.noser.com/'
     _template: partner_list
 ---
+
 
 
 
