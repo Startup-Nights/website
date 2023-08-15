@@ -1,12 +1,13 @@
 import { Fragment, useEffect, useState } from "react";
 import type { Template } from "tinacms";
 import { Transition } from "@headlessui/react";
-import { CheckCircleIcon } from "@heroicons/react/20/solid";
+import { CheckCircleIcon, InformationCircleIcon } from "@heroicons/react/20/solid";
 import {
     ExclamationCircleIcon,
     PlusIcon,
     XMarkIcon,
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const founderPlaceholder = "Link to LinkedIn profile of founder";
 
@@ -114,6 +115,18 @@ export const Pitching = ({ data }) => {
                             Either way, we wish you much success with your startup!
                         </p>
                     </div>
+
+                    <div className="mt-12 rounded-3xl bg-sn-black-lightest p-8 mb-12">
+                        <div className="flex">
+                            <div className="flex-shrink-0">
+                                <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
+                            </div>
+                            <div className="ml-3">
+                                <h3 className="font-medium text-gray-200">Deadline for the application is <span className="font-bold">30.09.23!</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <form onSubmit={handleSubmit} className="mt-16 md:mt-32">
                         <div className="mt-6 grid grid-cols-1 gap-y-8 gap-x-4 sm:grid-cols-6">
