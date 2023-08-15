@@ -1400,7 +1400,7 @@ var imagegridBlockSchema = {
 // components/blocks/pitching.tsx
 import { Fragment as Fragment6, useEffect as useEffect5, useState as useState9 } from "react";
 import { Transition as Transition5 } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon4 } from "@heroicons/react/20/solid";
+import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/20/solid";
 import {
   ExclamationCircleIcon as ExclamationCircleIcon4,
   PlusIcon as PlusIcon2,

@@ -112,10 +112,19 @@ blocks:
         - >-
           The applications are open and we'll get in touch soon once you have
           registered.
+        - >-
+          Note that the deadline for the registrations is 30.09.23!
       cta:
         link: /pitching
         text: Apply
     members:
+      - name: Arijana Walcott
+        position: Founder Dart Labs
+        linkedin: 'https://www.linkedin.com/in/arijanawalcott/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/arijana_walcott.png
+        alt: Arijana Walcott
+        stage: seed
       - name: Andrea Buhofer
         position: Managing Partner at EquityPitcher Ventures
         linkedin: 'https://www.linkedin.com/in/andrea-buhofer-721822182/'
@@ -123,8 +132,15 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
         alt: Andrea Buhofer
         stage: seed
+      - name: Aron Braun
+        position: Business Angel at BAS and Professor at BHF
+        linkedin: 'https://www.linkedin.com/in/aron-braun/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/aron_braun.jpeg
+        alt: Aron Braun
+        stage: seed
       - name: Ralph Mogicato
-        position: Owner at Hixon AG
+        position: Business Angel & Vice President at Sictic
         linkedin: 'https://www.linkedin.com/in/ralphmogicato/'
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/ralph_mogicato.jpg
