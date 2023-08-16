@@ -136,7 +136,7 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/levent-kuenzi.jpg
           alt: Levent Künzi
       - name: Lukas Gysin
-        position: Co-Founder of uniqFEED
+        position: Founder of uniqFEED
         description: ''
         image:
           src: >-
