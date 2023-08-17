@@ -240,7 +240,20 @@ blocks:
       - content_block:
           title: Promotion
           content:
-            - 'not finished yet - see slides at https://docs.google.com/presentation/d/1JPiW46ELT0Y59brFWO1eHKd5a-hOT30dofk0ofntpAo/edit#slide=id.g25ff8ae421a_0_53'
+            - >-
+              If you booked a spot in our newsletter, send us a short text (max
+              300 characters) and a picture of your company.
+            - >-
+              If your agreement includes a social media post (LinkedIn /
+              Instagram), send us a picture and a short text (max 300
+              characters) which describes why you are a part of the Startup
+              Nights.
+            - >-
+              If you have something in the founded.ch blog, get in touch with
+              redaktion@founded.ch for further information.
+            - >-
+              If your partnership includes a promotion video for the event
+              screens (5 - 10s), send it to us as an mp4 file.
     padding: true
     _template: Dropdown
   - subtitle: See you soon
@@ -251,6 +264,7 @@ blocks:
       alt: Helper at the Startup Nights 2022
     _template: hero
 ---
+
 
 
 
