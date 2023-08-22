@@ -77,45 +77,6 @@ export const Pitching = ({ data }) => {
         <div className="bg-sn-black-light">
             <div className="max-w-5xl mx-auto py-12 px-8 lg:p-24">
                 <div>
-                    <div className="max-w-2xl">
-                        <p className="text-md leading-6 text-gray-300">Hi together</p>
-
-                        <p className="mt-6 text-md leading-6 text-gray-300">
-                            At Startup Nights 2023 there will again be two pitching sessions:
-                        </p>
-
-                        <ul className="list-disc ml-6 mt-6 text-md leading-6 text-gray-300">
-                            <li>
-                                <span className="mr-1 italic text-white">Pre-Seed:</span>{" "}
-                                companies that are working on solving a problem and have not yet
-                                reached product-market-fit
-                            </li>
-                            <li>
-                                <span className="mr-1 italic text-white">Seed:</span>companies
-                                that have first customers, ideally have revenue or other
-                                meaningful traction and believe they have reached
-                                product-market-fit
-                            </li>
-                        </ul>
-
-                        <p className="mt-6 text-md leading-6 text-gray-300">
-                            The pitch is expected to be delivered in English. We likely will
-                            run a format of a 5 min Pitch & 10 min Q&A. Details will follow.
-                            The jury will preview and nominate the startups that will get
-                            invited to pitch.
-                        </p>
-
-                        <p className="mt-6 text-md leading-6 text-gray-300">
-                            We are already very much looking forward to your application! We
-                            will be happy to inform you as soon as possible whether you can
-                            pitch on stage or not.
-                        </p>
-
-                        <p className="mt-6 text-md leading-6 text-gray-300">
-                            Either way, we wish you much success with your startup!
-                        </p>
-                    </div>
-
                     <div className="mt-12 rounded-3xl bg-sn-black-lightest p-8 mb-12">
                         <div className="flex">
                             <div className="flex-shrink-0">
@@ -128,7 +89,7 @@ export const Pitching = ({ data }) => {
                     </div>
 
 
-                    <form onSubmit={handleSubmit} className="mt-16 md:mt-32">
+                    <form onSubmit={handleSubmit} className="mt-8 md:mt-16">
                         <div className="mt-6 grid grid-cols-1 gap-y-8 gap-x-4 sm:grid-cols-6">
                             <div className="sm:col-span-6">
                                 <h3 className="text-xl font-semibold leading-6 text-gray-200">

@@ -287,8 +287,7 @@ blocks:
         - >-
           The applications are open and we'll get in touch soon once you have
           registered.
-        - >-
-          Note that the deadline for the registrations is 30.09.23!
+        - Note that the deadline for the registrations is 30.09.23!
       cta:
         link: /pitching
         text: Apply
@@ -356,6 +355,21 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-goeldi.png
         alt: Andreas Göldi
         stage: seed
+      - name: Maurin Rüegg
+        position: Investment Manager at Sparrow Ventures
+        linkedin: >-
+          https://www.linkedin.com/in/maurin-r%C3%BCegg-5851a4117/
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/maurin_ruegg.jpg
+        alt: Maurin Rüegg
+        stage: seed
+      - name: Claudius Stammbach
+        position: Investment Manager at Sparrow Ventures
+        linkedin: 'https://www.linkedin.com/in/claudiusstammbach/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/claudius_stammbach.png
+        alt: Claudius Stammbach
+        stage: seed
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
@@ -406,6 +420,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
 
 
 

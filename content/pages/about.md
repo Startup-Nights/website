@@ -121,12 +121,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
             alt: Alyssia Kugler
-          - name: Nathan Brechbühl
-            position: Content Manager Video
-            linkedin: 'https://www.linkedin.com/in/nathan-brechbuehl/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/nathan-brechbuehl.jpg
-            alt: Nathan Brechbühl
           - name: Mischa Jörg
             position: Website
             linkedin: 'https://www.linkedin.com/in/mischa-jörg-87933b157/'
@@ -139,12 +133,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/nadine-ungricht.JPG
             alt: Nadine Ungricht
-          - name: Clément Dumont
-            position: Support Video Cutter
-            linkedin: 'https://www.linkedin.com/in/clement-dumont06102001/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/clement-dumont.jpg
-            alt: Clément Dumont
           - name: Jeannette Thums
             position: Partner Documentation
             linkedin: 'https://www.linkedin.com/in/jeannette-thums-697534101/'
@@ -157,6 +145,22 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/sascha-bosshard.jpg
             alt: Sascha Bosshard
+          - name: Shamir Yanay
+            position: Head of Photo & Video
+            linkedin: 'https://www.linkedin.com/in/shamiryanay/'
+            alt: Shamir Yanay
+          - name: Arianna Confalonieri
+            position: Social Media Manager
+            linkedin: 'https://www.linkedin.com/in/arianna-confalonieri-95299518b/'
+            alt: Arianna Confalonieri
+          - name: Marie-Sophie Grootens
+            position: Social Media Manager
+            linkedin: 'https://www.linkedin.com/in/marie-sophie-grootens/'
+            alt: Marie-Sophie Grootens
+          - name: Haris Bin Waris
+            position: Content Creator
+            linkedin: 'https://www.linkedin.com/in/haris-bin-waris-8a4234244/'
+            alt: Haris Bin Waris
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
@@ -232,14 +236,16 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/holger-rannow.png
             alt: Holger Rannow
+          - name: Seraina Mastai
+            position: F&B Snacks
+            linkedin: 'https://www.linkedin.com/in/seraina-mastai-706b14151/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/seraina_mastai.jpg
+            alt: Seraina Mastai
           - name: David Barrera
             position: Head of Power & Internet Supply
             linkedin: 'https://www.linkedin.com/in/critsecdave/'
             alt: David Barrera
-          - name: Seraina Mastai
-            position: F&B Snacks
-            linkedin: 'https://www.linkedin.com/in/seraina-mastai-706b14151/'
-            alt: Seraina Mastai
       - subtitle: Program Team
         title: Entertainers at heart.
         members:
@@ -355,6 +361,9 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/jan-guddal.jpg
             alt: Jan Guddal
+          - name: Jasmin Schoch
+            position: Coordination Volunteers
+            alt: Jasmin Schoch
       - subtitle: Partnerships Team
         title: Exchanging value.
         members:
@@ -370,12 +379,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/baris-goekduman.jpg
             alt: Baris Gökduman
-          - name: Annika Maibom
-            position: Investors
-            linkedin: 'https://www.linkedin.com/in/anmaibom/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/annika-maibom.jpeg
-            alt: Annika Maibom
           - name: Hao Xu
             position: Startup & Corporate Matching
             linkedin: 'https://www.linkedin.com/in/hao-xu-b9b32a189/'
@@ -388,12 +391,9 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/janine-luginbuehl.jpg
             alt: Janine Luginbühl
-          - name: Stefano Bollmann
-            position: International Collaborations
-            linkedin: 'https://www.linkedin.com/in/stefanobollmann/'
-            alt: Stefano Bollmann
     _template: team
 ---
+
 
 
 

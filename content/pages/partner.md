@@ -42,6 +42,10 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/gebert_ruef_stiftung.png
+            alt: Gebert Rüf Stiftung
+            link: 'https://www.grstiftung.ch/de.html'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/schoch.png
             alt: Büro Schoch Werkhaus AG
             link: 'https://www.schoch.swiss/'
@@ -109,6 +113,14 @@ blocks:
       - title: Supporter
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/swisspeers.png
+            alt: Swisspeers
+            link: 'https://www.swisspeers.ch/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/talentkick.png
+            alt: Talentkick
+            link: 'https://talentkick.ch'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/axa_arag.png
             alt: Axa Arag
@@ -269,6 +281,7 @@ blocks:
             link: 'https://www.noser.com/'
     _template: partner_list
 ---
+
 
 
 
