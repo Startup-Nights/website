@@ -731,11 +731,6 @@ type PageBlocksContent {
   background_color: String
 }
 
-type PageBlocksHotels {
-  subtitle: String
-  title: String
-}
-
 type PageBlocksContent_wideContent {
   title: String
   text: [String]
@@ -782,7 +777,7 @@ type PageBlocksPitching_registration {
   title: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksHotels | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration
 
 type Page implements Node & Document {
   title: String!
@@ -1201,11 +1196,6 @@ input PageBlocksContentFilter {
   background_color: StringFilter
 }
 
-input PageBlocksHotelsFilter {
-  subtitle: StringFilter
-  title: StringFilter
-}
-
 input PageBlocksContent_wideContentFilter {
   title: StringFilter
   text: StringFilter
@@ -1270,7 +1260,6 @@ input PageBlocksFilter {
   seo: PageBlocksSeoFilter
   pricing: PageBlocksPricingFilter
   content: PageBlocksContentFilter
-  hotels: PageBlocksHotelsFilter
   content_wide: PageBlocksContent_wideFilter
   imagegrid: PageBlocksImagegridFilter
   pitching_registration: PageBlocksPitching_registrationFilter
@@ -1788,11 +1777,6 @@ input PageBlocksContentMutation {
   background_color: String
 }
 
-input PageBlocksHotelsMutation {
-  subtitle: String
-  title: String
-}
-
 input PageBlocksContent_wideContentMutation {
   title: String
   text: [String]
@@ -1857,7 +1841,6 @@ input PageBlocksMutation {
   seo: PageBlocksSeoMutation
   pricing: PageBlocksPricingMutation
   content: PageBlocksContentMutation
-  hotels: PageBlocksHotelsMutation
   content_wide: PageBlocksContent_wideMutation
   imagegrid: PageBlocksImagegridMutation
   pitching_registration: PageBlocksPitching_registrationMutation
