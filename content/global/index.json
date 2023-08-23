@@ -1,6 +1,6 @@
 {
     "header": {
-        "name": "Tina Starter",
+        "name": "Startup Nights 2023",
         "color": "default",
         "nav": [
             {
@@ -74,6 +74,10 @@
             {
                 "title": "",
                 "listitems": [
+                    {
+                        "title": "FAQ",
+                        "link": "/faq"
+                    },
                     {
                         "title": "Imprint",
                         "link": "/imprint"
