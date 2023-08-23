@@ -20,7 +20,6 @@ import { ContentWide } from "./blocks/content_wide";
 import { Imagegrid } from "./blocks/imagegrid";
 import { Pitching } from "./blocks/pitching";
 import { Overview } from "./blocks/overview";
-import { Hotels } from "./blocks/hotels";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -206,16 +205,6 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Overview data={block} />
-                                </div>
-                            )
-
-                        case "PageBlocksHotels":
-                            return (
-                                <div
-                                    data-tinafield={`blocks.${i}`}
-                                    key={i + block.__typename}
-                                >
-                                    <Hotels data={block} />
                                 </div>
                             )
 
