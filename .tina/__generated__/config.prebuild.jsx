@@ -1423,26 +1423,6 @@ var pitchingBlockSchema = {
   ]
 };
 
-// components/blocks/hotels.tsx
-import React12, { useEffect as useEffect6, useState as useState10 } from "react";
-import Script from "next/script";
-var hotelsBlockSchema = {
-  name: "hotels",
-  label: "Hotels",
-  fields: [
-    {
-      type: "string",
-      label: "Subtitle",
-      name: "subtitle"
-    },
-    {
-      type: "string",
-      label: "Title",
-      name: "title"
-    }
-  ]
-};
-
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -1920,7 +1900,6 @@ var config = defineStaticConfig({
               seoBlockSchema,
               pricingBlockSchema,
               contentBlockSchema,
-              hotelsBlockSchema,
               contentWideBlockSchema,
               imagegridBlockSchema,
               pitchingBlockSchema
