@@ -1425,9 +1425,7 @@ var pitchingBlockSchema = {
 
 // components/blocks/hotels.tsx
 import React12, { useEffect as useEffect6, useState as useState10 } from "react";
-import Head2 from "next/head";
-import { InformationCircleIcon as InformationCircleIcon4 } from "@heroicons/react/24/outline";
-import Link11 from "next/link";
+import Script from "next/script";
 var hotelsBlockSchema = {
   name: "hotels",
   label: "Hotels",
@@ -1441,23 +1439,6 @@ var hotelsBlockSchema = {
       type: "string",
       label: "Title",
       name: "title"
-    },
-    {
-      type: "object",
-      label: "Note",
-      name: "note",
-      fields: [
-        {
-          type: "string",
-          label: "Title",
-          name: "title"
-        },
-        {
-          type: "string",
-          label: "Text",
-          name: "text"
-        }
-      ]
     }
   ]
 };

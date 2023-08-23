@@ -731,15 +731,9 @@ type PageBlocksContent {
   background_color: String
 }
 
-type PageBlocksHotelsNote {
-  title: String
-  text: String
-}
-
 type PageBlocksHotels {
   subtitle: String
   title: String
-  note: PageBlocksHotelsNote
 }
 
 type PageBlocksContent_wideContent {
@@ -1207,15 +1201,9 @@ input PageBlocksContentFilter {
   background_color: StringFilter
 }
 
-input PageBlocksHotelsNoteFilter {
-  title: StringFilter
-  text: StringFilter
-}
-
 input PageBlocksHotelsFilter {
   subtitle: StringFilter
   title: StringFilter
-  note: PageBlocksHotelsNoteFilter
 }
 
 input PageBlocksContent_wideContentFilter {
@@ -1800,15 +1788,9 @@ input PageBlocksContentMutation {
   background_color: String
 }
 
-input PageBlocksHotelsNoteMutation {
-  title: String
-  text: String
-}
-
 input PageBlocksHotelsMutation {
   subtitle: String
   title: String
-  note: PageBlocksHotelsNoteMutation
 }
 
 input PageBlocksContent_wideContentMutation {
