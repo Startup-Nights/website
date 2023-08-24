@@ -1847,8 +1847,8 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "partner-documentation") {
               return `/partner-documentation`;
             }
-            if (document2._sys.filename === "partner-documentation-old") {
-              return `/partner-documentation-old`;
+            if (document2._sys.filename === "partner-info") {
+              return `/partner-info`;
             }
             if (document2._sys.filename === "partner-intro") {
               return `/partner-intro`;
