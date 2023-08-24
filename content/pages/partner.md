@@ -100,6 +100,10 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/tenity.png
+            alt: Tenity
+            link: 'https://www.tenity.com/'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sparrow-ventures.png
             alt: Sparrow Ventures
             link: 'https://sparrow-ventures.com'
@@ -113,6 +117,10 @@ blocks:
       - title: Supporter
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/holycode.png
+            alt: Holycode
+            link: 'https://www.holycode.com/'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/swisspeers.png
             alt: Swisspeers
@@ -281,6 +289,7 @@ blocks:
             link: 'https://www.noser.com/'
     _template: partner_list
 ---
+
 
 
 
