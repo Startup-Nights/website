@@ -118,6 +118,20 @@ blocks:
               these timeslots, please get in touch with us as soon as possible.
             link: 'mailto:partner@startup-nights.ch'
       - content_block:
+          title: Hall plan
+          content:
+            - >-
+              A detailed hall plan will be provided to you upon your arrival at
+              the event. This plan will offer a comprehensive overview of the
+              venue layout, including booth locations, restroom facilities, and
+              other essential areas.
+            - >-
+              The plan already linked below is not final and most likely will
+              change before the event.
+          cta:
+            link: /plan_eulachhalle_v6.pdf
+            text: Current plan
+      - content_block:
           title: Getting to the venue
           content:
             - 'Nearby airport: Zurich (ZRH)'
@@ -172,20 +186,6 @@ blocks:
               available. From coffee stands to snacks and full-course meals, you
               and your team will have access to a diverse selection of
               refreshments for free.
-      - content_block:
-          title: Hall plan
-          content:
-            - >-
-              A detailed hall plan will be provided to you upon your arrival at
-              the event. This plan will offer a comprehensive overview of the
-              venue layout, including booth locations, restroom facilities, and
-              other essential areas.
-            - >-
-              The plan already linked below is not final and most likely will
-              change before the event.
-          cta:
-            link: /plan_eulachhalle_v6.pdf
-            text: Current plan
     padding: false
     _template: Dropdown
   - subtitle: Update or book formats
@@ -229,7 +229,7 @@ blocks:
               https://drive.google.com/drive/folders/1ADa6y1fSwDj1GOopZWttHz-PRJXSuDMu
             text: Check out the details
       - content_block:
-          title: Keynote Speeches
+          title: Pitching Competition
           content:
             - >-
               If you are part of the jury or sponsor of pichting prizes and have
