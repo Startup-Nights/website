@@ -68,19 +68,18 @@ blocks:
               not stated otherwise in your Receipt. Your booth will not
               necessarily have a back wall.
             - >-
-              If you would like you can order additional equipment of
-              infrastructure from our partner https://www.bexpo.ch/de/ who will
-              bring the equipment directly to the event.
+              For special equipment or add-ons to enhance your booth, we’ve
+              partnered with Bexpo. You can rent your equipment directly from
+              them.
             - >-
               In general we mix Startups and corporates as we think this will
               make the whole booth much more interesting. 
         infopoints:
           - name: Order additional equipment
             text: >-
-              Bexpo is our partner and will deliever ordered equipment right to
-              the Startup Nights location. In case you are missing something,
-              this might be a great option.
-            link: 'https://www.bexpo.ch/de/'
+              Fill out this form and get in touch with the email address
+              mentioned in the document.
+            link: /Bestellschein_StartUp_Nights_2023.pdf
           - name: Hall plan
             text: >-
               Note that the plan is provisional and will be updated from time to
@@ -264,6 +263,7 @@ blocks:
       alt: Helper at the Startup Nights 2022
     _template: hero
 ---
+
 
 
 
