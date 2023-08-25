@@ -15,10 +15,10 @@ blocks:
           alt: Startup Nights Stage
     _template: seo
   - subtitle: Eulachhallen Winterthur
-    title: 2 & 3 November
+    title: 2 & 3 November 2023
     cta:
       link: /tickets
-      text: Tickets
+      text: Get your ticket now
     image:
       src: ''
       alt: ''
@@ -28,72 +28,6 @@ blocks:
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
-  - content_block:
-      subtitle: About us
-      title: Who we are.
-      content:
-        - >-
-          The Startup Nights is the biggest event in Switzerland that brings the
-          whole startup ecosystem to one table. With this event we want to
-          create awareness for startups and their innovations.
-        - >-
-          Organized by a team of about 50 passionate people, purely out of
-          passion and in our spare time, we shape the future of the Swiss
-          startup scene.
-      cta:
-        link: /about
-        text: Get to know us
-      cta_secondary:
-        link: /hiring
-        text: Join our mission
-    testimonial:
-      name: Melanie Gabriel
-      position: 'Co-Founder & CMO Yokoy, Keynote Speaker 2021'
-      quote: >-
-        Such events are extremely important for the startup community. You get
-        to meet people who have the same hassle and who can share their
-        learnings with you.
-      image:
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2021/speaker/melanie-gabriel.png
-        alt: Melanie Gabriel
-    contentblock_left: true
-    background_color: bg-sn-black
-    _template: content
-  - content_block:
-      subtitle: Facts & figures
-      title: The biggest event!
-      content:
-        - >-
-          As the startup scene grows, we grow too. From a couple of hundred
-          visitors in 2017, we welcomed 8000 visitors at the 2022 edition. But
-          we want more! Accompanied by valued partners, we grow further and
-          improve constantly.
-      cta:
-        link: /partner
-        text: Become a partner
-      cta_secondary:
-        link: /booth
-        text: Apply for a booth
-    figures:
-      - name: Workshops
-        number: 40+
-        icon: chatbubble
-        rows: '3'
-        cols: '1'
-      - name: Founders
-        number: '1200'
-        icon: rocket
-        rows: '1'
-        cols: '2'
-      - name: Visitors
-        number: '8000'
-        icon: usergroup
-        rows: '2'
-        cols: '2'
-    contentblock_left: false
-    background_color: bg-sn-black-light
-    _template: content
   - subtitle: Speaker
     title: Heavyweights.
     cta:
@@ -277,6 +211,72 @@ blocks:
           alt: Adrien Stamm
     _template: speakers
   - content_block:
+      subtitle: About us
+      title: Who we are.
+      content:
+        - >-
+          The Startup Nights is the biggest event in Switzerland that brings the
+          whole startup ecosystem to one table. With this event we want to
+          create awareness for startups and their innovations.
+        - >-
+          Organized by a team of about 50 passionate people, purely out of
+          passion and in our spare time, we shape the future of the Swiss
+          startup scene.
+      cta:
+        link: /about
+        text: Get to know us
+      cta_secondary:
+        link: /hiring
+        text: Join our mission
+    testimonial:
+      name: Melanie Gabriel
+      position: 'Co-Founder & CMO Yokoy, Keynote Speaker 2021'
+      quote: >-
+        Such events are extremely important for the startup community. You get
+        to meet people who have the same hassle and who can share their
+        learnings with you.
+      image:
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2021/speaker/melanie-gabriel.png
+        alt: Melanie Gabriel
+    contentblock_left: true
+    background_color: bg-sn-black-light
+    _template: content
+  - content_block:
+      subtitle: Facts & figures
+      title: The biggest event!
+      content:
+        - >-
+          As the startup scene grows, we grow too. From a couple of hundred
+          visitors in 2017, we welcomed 8000 visitors at the 2022 edition. But
+          we want more! Accompanied by valued partners, we grow further and
+          improve constantly.
+      cta:
+        link: /partner
+        text: Become a partner
+      cta_secondary:
+        link: /booth
+        text: Apply for a booth
+    figures:
+      - name: Workshops
+        number: 40+
+        icon: chatbubble
+        rows: '3'
+        cols: '1'
+      - name: Founders
+        number: '1200'
+        icon: rocket
+        rows: '1'
+        cols: '2'
+      - name: Visitors
+        number: '8000'
+        icon: usergroup
+        rows: '2'
+        cols: '2'
+    contentblock_left: false
+    background_color: bg-sn-black
+    _template: content
+  - content_block:
       subtitle: Pitch and win
       title: Apply for the Pitching Competition.
       content:
@@ -299,27 +299,6 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/arijana_walcott.png
         alt: Arijana Walcott
         stage: seed
-      - name: Andrea Buhofer
-        position: Managing Partner at EquityPitcher Ventures
-        linkedin: 'https://www.linkedin.com/in/andrea-buhofer-721822182/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
-        alt: Andrea Buhofer
-        stage: seed
-      - name: Aron Braun
-        position: Business Angel at BAS and Professor at BHF
-        linkedin: 'https://www.linkedin.com/in/aron-braun/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/aron_braun.jpeg
-        alt: Aron Braun
-        stage: seed
-      - name: Ralph Mogicato
-        position: Business Angel & Vice President at Sictic
-        linkedin: 'https://www.linkedin.com/in/ralphmogicato/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/ralph_mogicato.jpg
-        alt: Ralph Mogicato
-        stage: seed
       - name: Guy Giuffredi
         position: Business Angel and Cofounder Aare Ventures
         linkedin: 'https://www.linkedin.com/in/guy-giuffredi-45399751/'
@@ -334,13 +313,6 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/michael_blank.png
         alt: Michael Blank
         stage: seed
-      - name: Teddy Amberg
-        position: Founding Partner at Spicehaus Partners AG
-        linkedin: 'https://www.linkedin.com/in/teddyamberg/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/teddy-amberg.jpeg
-        alt: Teddy Amberg
-        stage: seed
       - name: Daniel Dillinger
         position: Investment Parter at Redalpine
         linkedin: 'https://www.linkedin.com/in/daniel-dillinger-213173138/'
@@ -354,14 +326,6 @@ blocks:
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-goeldi.png
         alt: Andreas Göldi
-        stage: seed
-      - name: Maurin Rüegg
-        position: Investment Manager at Sparrow Ventures
-        linkedin: >-
-          https://www.linkedin.com/in/maurin-r%C3%BCegg-5851a4117/
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/maurin_ruegg.jpg
-        alt: Maurin Rüegg
         stage: seed
       - name: Claudius Stammbach
         position: Investment Manager at Sparrow Ventures
@@ -420,6 +384,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
 
 
 
