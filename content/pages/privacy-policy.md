@@ -174,7 +174,9 @@ blocks:
             policy will be deemed your acceptance of those changes.
     background_color: bg-sn-black-light
     _template: content_wide
+  - _template: cookieTable
 ---
+
 
 
 

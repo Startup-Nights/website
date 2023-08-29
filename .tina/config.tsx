@@ -19,6 +19,7 @@ import { pricingBlockSchema } from "../components/blocks/pricing";
 import { boothBlockSchema } from "../components/blocks/booth";
 import { imagegridBlockSchema } from "../components/blocks/imagegrid";
 import { pitchingBlockSchema } from "../components/blocks/pitching";
+import { cookieTableBlockSchema } from "../components/blocks/cookieTable";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -498,6 +499,7 @@ const config = defineStaticConfig({
                             contentWideBlockSchema,
                             imagegridBlockSchema,
                             pitchingBlockSchema,
+                            cookieTableBlockSchema,
                         ],
                     },
                 ],

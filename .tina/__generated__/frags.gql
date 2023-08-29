@@ -449,5 +449,9 @@ fragment PageParts on Page {
       subtitle
       title
     }
+    ... on PageBlocksCookieTable {
+      subtitle
+      title
+    }
   }
 }
