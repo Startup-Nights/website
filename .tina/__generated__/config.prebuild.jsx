@@ -1423,6 +1423,24 @@ var pitchingBlockSchema = {
   ]
 };
 
+// components/blocks/cookieTable.tsx
+var cookieTableBlockSchema = {
+  name: "cookieTable",
+  label: "CookieTable",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -1902,7 +1920,8 @@ var config = defineStaticConfig({
               contentBlockSchema,
               contentWideBlockSchema,
               imagegridBlockSchema,
-              pitchingBlockSchema
+              pitchingBlockSchema,
+              cookieTableBlockSchema
             ]
           }
         ]

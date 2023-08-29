@@ -777,7 +777,12 @@ type PageBlocksPitching_registration {
   title: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration
+type PageBlocksCookieTable {
+  subtitle: String
+  title: String
+}
+
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable
 
 type Page implements Node & Document {
   title: String!
@@ -1242,6 +1247,11 @@ input PageBlocksPitching_registrationFilter {
   title: StringFilter
 }
 
+input PageBlocksCookieTableFilter {
+  subtitle: StringFilter
+  title: StringFilter
+}
+
 input PageBlocksFilter {
   hero: PageBlocksHeroFilter
   speakers: PageBlocksSpeakersFilter
@@ -1263,6 +1273,7 @@ input PageBlocksFilter {
   content_wide: PageBlocksContent_wideFilter
   imagegrid: PageBlocksImagegridFilter
   pitching_registration: PageBlocksPitching_registrationFilter
+  cookieTable: PageBlocksCookieTableFilter
 }
 
 input PageFilter {
@@ -1823,6 +1834,11 @@ input PageBlocksPitching_registrationMutation {
   title: String
 }
 
+input PageBlocksCookieTableMutation {
+  subtitle: String
+  title: String
+}
+
 input PageBlocksMutation {
   hero: PageBlocksHeroMutation
   speakers: PageBlocksSpeakersMutation
@@ -1844,6 +1860,7 @@ input PageBlocksMutation {
   content_wide: PageBlocksContent_wideMutation
   imagegrid: PageBlocksImagegridMutation
   pitching_registration: PageBlocksPitching_registrationMutation
+  cookieTable: PageBlocksCookieTableMutation
 }
 
 input PageMutation {
