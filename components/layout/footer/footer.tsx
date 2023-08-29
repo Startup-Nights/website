@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Banner } from "../../items/banner";
 import { useState } from "react";
 
+declare const CCM: any;
+
 export const Footer = ({ data }) => {
     const [open, setOpen] = useState(true);
 
