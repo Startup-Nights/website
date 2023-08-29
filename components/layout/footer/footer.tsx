@@ -24,6 +24,18 @@ export const Footer = ({ data }) => {
                                         </Link>
                                     </li>
                                 ))}
+
+                                {i === 1 && (
+                                    <li >
+                                        <a
+                                            className="text-sm leading-6 text-gray-300 hover:text-white cursor-pointer"
+                                            onClick={() => {
+                                                CCM.openWidget();
+                                                return false;
+                                            }}>Cookies</a>
+                                    </li>
+                                )}
+
                             </ul>
                         ))}
                     </div>
