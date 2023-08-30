@@ -1103,8 +1103,6 @@ var FactsBlockSchema = {
 
 // components/items/members.tsx
 import Image8 from "next/image";
-import Link8 from "next/link";
-import { ArrowTopRightOnSquareIcon as ArrowTopRightOnSquareIcon3 } from "@heroicons/react/24/outline";
 var MembersBlockSchema = {
   type: "object",
   label: "Members",
@@ -1254,7 +1252,7 @@ var contentWideBlockSchema = {
 
 // components/blocks/pricing.tsx
 import { CheckIcon, XMarkIcon as XMarkIcon3 } from "@heroicons/react/20/solid";
-import Link9 from "next/link";
+import Link8 from "next/link";
 var pricingBlockSchema = {
   name: "pricing",
   label: "Pricing table",
@@ -1315,7 +1313,7 @@ var pricingBlockSchema = {
 
 // components/blocks/booth.tsx
 import { Fragment as Fragment5, useEffect as useEffect4, useState as useState8 } from "react";
-import Link10 from "next/link";
+import Link9 from "next/link";
 import { InformationCircleIcon as InformationCircleIcon2, PhotoIcon } from "@heroicons/react/20/solid";
 import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
