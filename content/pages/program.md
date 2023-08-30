@@ -200,6 +200,56 @@ blocks:
   - subtitle: Meet our speakers
     title: Heavyweights.
     images:
+      - name: 'Natascha Badmann '
+        position: 10x World Champion & 6x IRONMAN Hawaii World Champion
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/natascha-badmann.jpg
+          alt: 'Natascha Badmann '
+      - name: Luzia Schuler
+        position: Managing Director Programs & Partnerships Impact Hub Zurich
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/luzia-schuler.jpg
+          alt: Luzia Schuler
+      - name: Merle Zur
+        position: Program Manager Entrepreneurship & Diversity Impact Hub Zurich
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/merle-zur.jpg
+          alt: Merle Zur
+      - name: Tobias Wuelser
+        position: Founder Designwerk
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tobias-wuelser.jpg
+          alt: Tobias Wuelser
+      - name: Georg Schumacher
+        position: 'Senior Manager Partnering & Investing Axpo Services '
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/georg-schumacher.jpg
+          alt: Georg Schumacher
+      - name: Marusha Heyner
+        position: >-
+          Partner Manager VC & Accelerators at Microsoft for Startups
+          Switzerland
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/maruscha-heyner.jpg
+          alt: Marusha Heyner
+      - name: Sarah Meier
+        position: CEO & Founder parents@work
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/sarah-meier.jpg
+          alt: Sarah Meier
+      - name: Laurent Decrue
+        position: Co-CEO & CFO Holycode
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/laurent-decrue.jpg
+          alt: Laurent Decrue
       - name: Peter Kuhn
         position: Legal Partner MME
         image:
@@ -388,6 +438,7 @@ blocks:
           alt: Adrien Stamm
     _template: imagegrid
 ---
+
 
 
 
