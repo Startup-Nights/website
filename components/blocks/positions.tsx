@@ -107,7 +107,7 @@ function getDepartmentBackgroundColor(department: string): string {
         }
 
         case 'Program': {
-           color = 'bg-violet-600'
+            color = 'bg-violet-600'
             break
         }
 
@@ -189,6 +189,14 @@ export const Positions = ({ data, parentField = "" }) => {
     });
 
     useEffect(() => {
+        if (positions.filter(pos => pos.title === 'Initiative Application - Organizing Committee').length === 0) {
+            positions.push({
+                title: 'Initiative Application - Organizing Committee',
+                department: 'General',
+                link: 'https://docs.google.com/forms/d/1jwrMUmX2exdFAif2laGWBeVsQ6KJo0BPwOLmfbnpvyw/edit?no_redirect=true&pli=1'
+            })
+        }
+
         positions.sort((p1: any, p2: any) => {
             if (p1.department > p2.department) {
                 return 1
@@ -228,7 +236,7 @@ export const Positions = ({ data, parentField = "" }) => {
                             <Link key={`position-${i}`} href={position.link ? position.link : '/'} target="_blank" className="block group">
                                 <li key={position.id} className='relative grid grid-cols-1 justify-start items-center bg-sn-black-light rounded-3xl px-8 py-4 border-2 border-transparent hover:border-white'>
                                     <div className="absolute invisible -top-3 -right-3 p-2 bg-white rounded-full text-black group-hover:visible">
-                                        <ArrowTopRightOnSquareIcon className="w-5 h-5" strokeWidth={2}/>
+                                        <ArrowTopRightOnSquareIcon className="w-5 h-5" strokeWidth={2} />
                                     </div>
 
                                     <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between truncate pt-1">
