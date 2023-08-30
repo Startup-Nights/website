@@ -82,24 +82,6 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_
             (45 von 139).jpg
           alt: Workshop at the startup nights
-      - name: Founded Magazin
-        position: ''
-        description: ''
-        social_links: {}
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_
-            (83 von 139).jpg
-          alt: Founded magazin
-      - name: Other Options
-        position: ''
-        description: ''
-        social_links: {}
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-31
-            (1).jpg
-          alt: Potential ideas for partner packages
     _template: speakers
   - content_block:
       subtitle: Pitch and win
@@ -438,6 +420,7 @@ blocks:
           alt: Adrien Stamm
     _template: imagegrid
 ---
+
 
 
 
