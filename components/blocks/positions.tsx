@@ -69,7 +69,7 @@ function getDepartmentTextColor(department: string): string {
         }
 
         case 'General': {
-            return 'text-yellow-400'
+            return 'text-violet-400'
         }
 
         case 'Program': {
@@ -102,7 +102,7 @@ function getDepartmentBackgroundColor(department: string): string {
         }
 
         case 'General': {
-            color = 'bg-yellow-600'
+            color = 'bg-violet-600'
             break
         }
 
@@ -140,7 +140,7 @@ function getDepartmentHoverBackgroundColor(department: string): string {
         }
 
         case 'General': {
-            color = 'hover:bg-yellow-400'
+            color = 'hover:bg-violet-400'
             break
         }
 

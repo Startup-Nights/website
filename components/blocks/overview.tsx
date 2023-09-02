@@ -1,7 +1,7 @@
 import React from "react";
 import type { Template } from "tinacms";
 import { ColorPickerInput } from "../fields/color";
-import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, FunnelIcon, HeartIcon, LightBulbIcon, MegaphoneIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 
 export const Overview = ({ data }) => {
     return (
@@ -92,6 +92,8 @@ const getIcon = (icon: string) => {
         case 'usergroup': return <UserGroupIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
         case 'checkbadge': return <CheckBadgeIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
         case 'cog': return <Cog6ToothIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'megaphone': return <MegaphoneIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'funnel': return <FunnelIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
     }
 }
 

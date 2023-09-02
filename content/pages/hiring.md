@@ -24,6 +24,10 @@ blocks:
   - subtitle: Open positions
     title: Shape the future with us.
     open_positions:
+      - title: Bookkeeping
+        text: ''
+        department: Operations
+        link: 'https://forms.gle/WbS1AMVGRVGgmMpHA'
       - title: Volunteer at the event
         text: ''
         department: General
@@ -75,6 +79,7 @@ blocks:
         icon: cog
     _template: benefits
 ---
+
 
 
 

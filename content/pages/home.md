@@ -14,8 +14,8 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: Eulachhallen Winterthur
-    title: 2 & 3 November 2023
+  - subtitle: The biggest startup event in Switzerland
+    title: '2 & 3 November 2023, Winterthur'
     cta:
       link: /tickets
       text: Get your ticket now
@@ -384,6 +384,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
 ---
+
 
 
 
