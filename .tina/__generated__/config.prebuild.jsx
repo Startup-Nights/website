@@ -780,7 +780,7 @@ var ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
 });
 
 // components/blocks/overview.tsx
-import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
+import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
 var overviewBlockSchema = {
   name: "overview",
   label: "Overview",

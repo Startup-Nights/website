@@ -17,12 +17,6 @@ export const Partners = ({ data }) => {
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-sn-black sm:text-6xl">
                         {data.title}
                     </h1>
-
-                    {data.cta && data.cta.text !== '' && (
-                        <div className="mt-12 text-center">
-                            <CTA data={data} />
-                        </div>
-                    )}
                 </div>
 
                 <div className="space-y-24 text-center">
@@ -44,8 +38,8 @@ export const Partners = ({ data }) => {
                                             <Image
                                                 width={300}
                                                 height={200}
-                                                alt={partner?.alt ? partner.alt : 'undefined' }
-                                                src={partner?.src ? partner.src : '/user.svg' }
+                                                alt={partner?.alt ? partner.alt : 'undefined'}
+                                                src={partner?.src ? partner.src : '/user.svg'}
                                                 placeholder="blur"
                                                 className="select-none"
                                                 blurDataURL={placeholderBox}
@@ -57,6 +51,15 @@ export const Partners = ({ data }) => {
                         </div>
                     ))}
                 </div>
+
+                {data.cta && data.cta.text !== '' && (
+                    <div className="text-center mb-20">
+                        <div className="mt-12 text-center">
+                            <CTA data={data} />
+                        </div>
+                    </div>
+                )}
+
             </div>
         </div>
     );

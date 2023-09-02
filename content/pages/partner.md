@@ -26,6 +26,9 @@ blocks:
     _template: hero
   - subtitle: Partner
     title: Thank you very much!
+    cta:
+      link: /partner-intro
+      text: Become a partner
     partners:
       - title: Main Partner
         grid_cols: 3
@@ -289,6 +292,7 @@ blocks:
             link: 'https://www.noser.com/'
     _template: partner_list
 ---
+
 
 
 

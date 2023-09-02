@@ -13,7 +13,8 @@ blocks:
     _template: hero
   - title: Why partner with us?
     benefit_items:
-      - title: Brand Awarness & Image
+      - icon: megaphone
+        title: Brand Awarness & Image
         description:
           - >-
             Show our visitors that your company is participating actively in the
@@ -24,7 +25,8 @@ blocks:
           - >-
             With 8’000 visitors and X exhibiting startups last year, our event
             provides a thriving platform for networking and business growth.
-      - title: Lead Generation
+      - icon: funnel
+        title: Lead Generation
         description:
           - >-
             We offer a wide range of partnership formats and modules, carefully
@@ -32,7 +34,8 @@ blocks:
           - >-
             Whether you seek brand visibility, lead generation, or thought
             leadership opportunities, we have the perfect solution for you.
-      - title: Meet Your Target Audience
+      - icon: usergroup
+        title: Meet Your Target Audience
         description:
           - >-
             Startup Nights brings together a diverse range of startup
@@ -173,6 +176,7 @@ blocks:
       offer for the partner package.
     _template: partnerform
 ---
+
 
 
 
