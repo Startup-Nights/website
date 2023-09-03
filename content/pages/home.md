@@ -211,38 +211,6 @@ blocks:
           alt: Adrien Stamm
     _template: speakers
   - content_block:
-      subtitle: About us
-      title: Who we are.
-      content:
-        - >-
-          The Startup Nights is the biggest event in Switzerland that brings the
-          whole startup ecosystem to one table. With this event we want to
-          create awareness for startups and their innovations.
-        - >-
-          Organized by a team of about 50 passionate people, purely out of
-          passion and in our spare time, we shape the future of the Swiss
-          startup scene.
-      cta:
-        link: /about
-        text: Get to know us
-      cta_secondary:
-        link: /hiring
-        text: Join our mission
-    testimonial:
-      name: Melanie Gabriel
-      position: 'Co-Founder & CMO Yokoy, Keynote Speaker 2021'
-      quote: >-
-        Such events are extremely important for the startup community. You get
-        to meet people who have the same hassle and who can share their
-        learnings with you.
-      image:
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2021/speaker/melanie-gabriel.png
-        alt: Melanie Gabriel
-    contentblock_left: true
-    background_color: bg-sn-black-light
-    _template: content
-  - content_block:
       subtitle: Facts & figures
       title: The biggest event!
       content:
@@ -274,7 +242,7 @@ blocks:
         rows: '2'
         cols: '2'
     contentblock_left: false
-    background_color: bg-sn-black
+    background_color: bg-sn-black-light
     _template: content
   - content_block:
       subtitle: Pitch and win
@@ -335,7 +303,7 @@ blocks:
         alt: Claudius Stammbach
         stage: seed
     contentblock_left: true
-    background_color: bg-sn-black-light
+    background_color: bg-sn-black
     _template: content
   - subtitle: Partner
     title: Thank you very much!
@@ -383,7 +351,40 @@ blocks:
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
+  - content_block:
+      subtitle: About us
+      title: Who we are.
+      content:
+        - >-
+          The Startup Nights is the biggest event in Switzerland that brings the
+          whole startup ecosystem to one table. With this event we want to
+          create awareness for startups and their innovations.
+        - >-
+          Organized by a team of about 50 passionate people, purely out of
+          passion and in our spare time, we shape the future of the Swiss
+          startup scene.
+      cta:
+        link: /about
+        text: Get to know us
+      cta_secondary:
+        link: /hiring
+        text: Join our mission
+    testimonial:
+      name: Melanie Gabriel
+      position: 'Co-Founder & CMO Yokoy, Keynote Speaker 2021'
+      quote: >-
+        Such events are extremely important for the startup community. You get
+        to meet people who have the same hassle and who can share their
+        learnings with you.
+      image:
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2021/speaker/melanie-gabriel.png
+        alt: Melanie Gabriel
+    contentblock_left: true
+    background_color: bg-sn-black
+    _template: content
 ---
+
 
 
 
