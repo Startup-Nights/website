@@ -182,6 +182,42 @@ blocks:
   - subtitle: Meet our speakers
     title: Heavyweights.
     images:
+      - name: Patrick Forte
+        position: Head Corporate Finance UBS Switzerland
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/patrick-forte.jpg
+          alt: Patrick Forte
+      - name: Oscar Escalante
+        position: Startup Unit KölnBusiness
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/oscar-escalante.jpg
+          alt: Oscar Escalante
+      - name: Sven Corus
+        position: Leiter Wirtschaftsförderung House of Winterthur
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/sven-corus.jpg
+          alt: Sven Corus
+      - name: Anian Schreiber
+        position: Co-Founder and Managing Director Koa
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/anian-schreiber.jpg
+          alt: Anian Schreiber
+      - name: Pranay Jain
+        position: CEO & Co-Founder Enterprise Bot
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/pranay-jain.jpg
+          alt: Pranay Jain
+      - name: Adem Bilican
+        position: Co-Founder & CTO Relai
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/adem-bilican.jpg
+          alt: Adem Bilican
       - name: 'Natascha Badmann '
         position: 10x World Champion & 6x IRONMAN Hawaii World Champion
         image:
@@ -420,6 +456,7 @@ blocks:
           alt: Adrien Stamm
     _template: imagegrid
 ---
+
 
 
 
