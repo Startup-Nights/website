@@ -34,7 +34,7 @@ export const Hero = ({ data }) => {
                         />
                         Your browser does not support the video tag.
                     </video>
-                    <div className="absolute inset-0 mix-blend-multiply bg-slate-600" />
+                    <div className="absolute inset-0 mix-blend-multiply bg-slate-200" />
                 </div>
             )}
 
