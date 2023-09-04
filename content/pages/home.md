@@ -48,6 +48,13 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tino-krause.jpg
           alt: Tino Krause
+      - name: Catherine Meuter
+        position: Co-Founder VYN
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/catherine-meuter.jpg
+          alt: Catherine Meuter
       - name: Roland Brack
         position: Founder brack.ch & Investor on "Höhle der Löwen"
         description: ''
@@ -83,13 +90,6 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/benno-burkhardt.jpg
           alt: Benno Burkhardt
-      - name: Catherine Meuter
-        position: Co-Founder VYN
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/catherine-meuter.jpg
-          alt: Catherine Meuter
       - name: Julien Weissenberg
         position: 'Founder Deep Tech Experts '
         description: ''
@@ -132,13 +132,6 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/marcel-dobler.jpeg
           alt: Marcel Dobler
-      - name: Sandra-Stella Triebl
-        position: Founder Swiss Ladies Drive
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-stella-triebl.jpeg
-          alt: Sandra-Stella Triebl
       - name: Sandra Völler
         position: CEO and Founder Agilita
         description: ''
@@ -146,20 +139,6 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-voeller.jpg
           alt: Sandra Völler
-      - name: Janette Wiget
-        position: CFO & Member of the Board Merantix
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/janette-wiget.jpg
-          alt: Janette Wiget
-      - name: Léa Miggiano
-        position: Co-Founder & CMO Carvolution
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
-          alt: Léa Miggiano
       - name: Tobias Gunzenhauser
         position: Co-Founder & CEO yamo
         description: ''
@@ -181,6 +160,13 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/francisco_fernandez.jpg
           alt: Francisco Fernandez
+      - name: Janette Wiget
+        position: CFO & Member of the Board Merantix
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/janette-wiget.jpg
+          alt: Janette Wiget
       - name: Pascal Uffer
         position: CEO & Founder Boostbar
         description: ''
@@ -209,6 +195,20 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/adrien_stamm.jpg
           alt: Adrien Stamm
+      - name: Sandra-Stella Triebl
+        position: Founder Swiss Ladies Drive
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-stella-triebl.jpeg
+          alt: Sandra-Stella Triebl
+      - name: Léa Miggiano
+        position: Co-Founder & CMO Carvolution
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
+          alt: Léa Miggiano
     _template: speakers
   - content_block:
       subtitle: Facts & figures

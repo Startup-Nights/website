@@ -182,6 +182,12 @@ blocks:
   - subtitle: Meet our speakers
     title: Heavyweights.
     images:
+      - name: Sandra Völler
+        position: CEO and Founder Agilita
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-voeller.jpg
+          alt: Sandra Völler
       - name: Patrick Forte
         position: Head Corporate Finance UBS Switzerland
         image:
@@ -194,24 +200,36 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/oscar-escalante.jpg
           alt: Oscar Escalante
-      - name: Sven Corus
-        position: Leiter Wirtschaftsförderung House of Winterthur
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/sven-corus.jpg
-          alt: Sven Corus
-      - name: Anian Schreiber
-        position: Co-Founder and Managing Director Koa
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/anian-schreiber.jpg
-          alt: Anian Schreiber
       - name: Pranay Jain
         position: CEO & Co-Founder Enterprise Bot
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/pranay-jain.jpg
           alt: Pranay Jain
+      - name: Merle Zur
+        position: Program Manager Entrepreneurship & Diversity Impact Hub Zurich
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/merle-zur.jpg
+          alt: Merle Zur
+      - name: Anian Schreiber
+        position: Co-Founder and Managing Director Koa
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/anian-schreiber.jpg
+          alt: Anian Schreiber
+      - name: Luzia Schuler
+        position: Managing Director Programs & Partnerships Impact Hub Zurich
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/luzia-schuler.jpg
+          alt: Luzia Schuler
+      - name: Sven Corus
+        position: Leiter Wirtschaftsförderung House of Winterthur
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/sven-corus.jpg
+          alt: Sven Corus
       - name: Adem Bilican
         position: Co-Founder & CTO Relai
         image:
@@ -224,30 +242,12 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/natascha-badmann.jpg
           alt: 'Natascha Badmann '
-      - name: Luzia Schuler
-        position: Managing Director Programs & Partnerships Impact Hub Zurich
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/luzia-schuler.jpg
-          alt: Luzia Schuler
-      - name: Merle Zur
-        position: Program Manager Entrepreneurship & Diversity Impact Hub Zurich
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/merle-zur.jpg
-          alt: Merle Zur
       - name: Tobias Wuelser
         position: Founder Designwerk
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tobias-wuelser.jpg
           alt: Tobias Wuelser
-      - name: Georg Schumacher
-        position: 'Senior Manager Partnering & Investing Axpo Services '
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/georg-schumacher.jpg
-          alt: Georg Schumacher
       - name: Marusha Heyner
         position: >-
           Partner Manager VC & Accelerators at Microsoft for Startups
@@ -256,6 +256,12 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/maruscha-heyner.jpg
           alt: Marusha Heyner
+      - name: Georg Schumacher
+        position: 'Senior Manager Partnering & Investing Axpo Services '
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/georg-schumacher.jpg
+          alt: Georg Schumacher
       - name: Sarah Meier
         position: CEO & Founder parents@work
         image:
@@ -394,24 +400,12 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-stella-triebl.jpeg
           alt: Sandra-Stella Triebl
-      - name: Sandra Völler
-        position: CEO and Founder Agilita
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-voeller.jpg
-          alt: Sandra Völler
       - name: Janette Wiget
         position: CFO & Member of the Board Merantix
         image:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/janette-wiget.jpg
           alt: Janette Wiget
-      - name: Léa Miggiano
-        position: Co-Founder & CMO Carvolution
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
-          alt: Léa Miggiano
       - name: Tobias Gunzenhauser
         position: Co-Founder & CEO yamo
         image:
@@ -454,8 +448,15 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/adrien_stamm.jpg
           alt: Adrien Stamm
+      - name: Léa Miggiano
+        position: Co-Founder & CMO Carvolution
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
+          alt: Léa Miggiano
     _template: imagegrid
 ---
+
 
 
 
