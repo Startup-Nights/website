@@ -15,7 +15,7 @@ export const Hero = ({ data }) => {
                         height="0"
                         sizes="100vw"
                     />
-                    <div className="absolute inset-0 mix-blend-multiply bg-slate-600" />
+                    <div className="absolute inset-0 mix-blend-multiply bg-slate-400" />
                 </div>
             )}
 

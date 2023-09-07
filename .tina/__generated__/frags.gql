@@ -453,5 +453,10 @@ fragment PageParts on Page {
       subtitle
       title
     }
+    ... on PageBlocksProgram {
+      subtitle
+      title
+      background_color
+    }
   }
 }

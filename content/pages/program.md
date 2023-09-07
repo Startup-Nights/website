@@ -12,6 +12,9 @@ blocks:
         (15 von 182).jpg
       alt: Rollup from the Startup World 2023
     _template: hero
+  - subtitle: Program outline
+    title: Timetable.
+    _template: program
   - content_block:
       subtitle: Program outline
       title: Timetable.
@@ -35,54 +38,6 @@ blocks:
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
-  - subtitle: Formats
-    title: Attention catching.
-    speakers:
-      - name: Fireside Chat
-        position: ''
-        description: ''
-        social_links: {}
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
-          alt: Fireside chat at the startup nights
-      - name: Panel Discussion
-        position: ''
-        description: ''
-        social_links: {}
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-177
-            (1).jpg
-          alt: Panel discussion at the startup nights
-      - name: Booth
-        position: ''
-        description: ''
-        social_links: {}
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-37
-            (1).jpg
-          alt: Booth at the startup nights
-      - name: Keynote
-        position: ''
-        description: ''
-        social_links: {}
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Kopie
-            von 031122_StartupNights_Tag1_-261.jpg
-          alt: Keynote speaker at the startup nights
-      - name: Workshop
-        position: ''
-        description: ''
-        social_links: {}
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_
-            (45 von 139).jpg
-          alt: Workshop at the startup nights
-    _template: speakers
   - content_block:
       subtitle: Pitch and win
       title: Apply for the Pitching Competition.
@@ -456,6 +411,7 @@ blocks:
           alt: Léa Miggiano
     _template: imagegrid
 ---
+
 
 
 
