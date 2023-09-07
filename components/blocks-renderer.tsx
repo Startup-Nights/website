@@ -21,6 +21,7 @@ import { Imagegrid } from "./blocks/imagegrid";
 import { Pitching } from "./blocks/pitching";
 import { Overview } from "./blocks/overview";
 import { CookieTable } from "./blocks/cookieTable";
+import { Program } from "./blocks/program";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -215,6 +216,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <CookieTable data={block} />
+                                </div>
+                            )
+                        case "PageBlocksProgram":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Program data={block} />
                                 </div>
                             )
 

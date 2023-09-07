@@ -1439,6 +1439,36 @@ var cookieTableBlockSchema = {
   ]
 };
 
+// components/blocks/program.tsx
+import { useEffect as useEffect6, useState as useState10 } from "react";
+import useSWR from "swr";
+import Link10 from "next/link";
+import { ArrowTopRightOnSquareIcon as ArrowTopRightOnSquareIcon3 } from "@heroicons/react/20/solid";
+var programBlockSchema = {
+  name: "program",
+  label: "Program",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -1919,7 +1949,8 @@ var config = defineStaticConfig({
               contentWideBlockSchema,
               imagegridBlockSchema,
               pitchingBlockSchema,
-              cookieTableBlockSchema
+              cookieTableBlockSchema,
+              programBlockSchema
             ]
           }
         ]
