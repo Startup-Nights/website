@@ -1441,7 +1441,7 @@ var cookieTableBlockSchema = {
 
 // components/blocks/program.tsx
 import { useEffect as useEffect6, useState as useState10 } from "react";
-import pako from "pako";
+import useSWR from "swr";
 import Link10 from "next/link";
 import { ArrowTopRightOnSquareIcon as ArrowTopRightOnSquareIcon3 } from "@heroicons/react/20/solid";
 var programBlockSchema = {

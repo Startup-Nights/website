@@ -51,6 +51,7 @@
         "@tinacms/auth": "^1.0.3",
         "@vercel/analytics": "^1.0.1",
         "@vercel/otel": "^0.3.0",
+        "add": "^2.0.6",
         "analytics": "^0.8.9",
         "date-fns": "^2.30.0",
         "embla-carousel-autoplay": "^8.0.0-rc11",
@@ -75,10 +76,12 @@
         "standard-version": "^9.5.0",
         "styled-components": "^6.0.5",
         "styled-jsx": "^5.1.2",
+        "swr": "^2.2.2",
         "tailwindcss": "^3.3.3",
         "tinacms": "^1.5.20",
         "typescript": "^5.1.6",
         "wait-on": "^7.0.1",
+        "yarn": "^1.22.19",
         "yet-another-react-lightbox": "^3.12.0"
     },
     "resolutions": {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import useSWR from 'swr';
 import type { Template } from "tinacms";
 import { ColorPickerInput } from "../fields/color";
-import pako from 'pako';
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
@@ -14,45 +14,29 @@ type Event = {
     link: string
 }
 
-const decode = (str: string): string => Buffer.from(str, 'base64').toString('binary');
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export const Program = ({ data }) => {
-    const [events, setEvents] = useState([])
     const [formats, setFormats] = useState([])
-
-    const getEvents = async () => {
-        const res = await fetch('https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/program', {
-            method: "post",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                url: 'https://portal.startup-nights.ch/components/28350',
-            }),
-        })
-        const data = await res.json();
-        try {
-            const decoded = Uint8Array.from(Array.from(decode(data.data)).map(letter => letter.charCodeAt(0)))
-            const programEvents = JSON.parse(pako.inflate(decoded, { to: 'string' }))
-            setEvents(programEvents)
-
-            const tmp: string[] = ['All']
-            programEvents.forEach(event => {
-                if (tmp.indexOf(event.format) === -1) {
-                    tmp.push(event.format)
-                }
-            })
-            setFormats(tmp)
-        } catch (err) {
-            console.log(err)
-        }
-    }
-
     const [selectedFormat, setSelectedFormat] = useState('All');
 
+    const eventData = useSWR('/program_data.json', fetcher)
+
+    const events = eventData.data || []
+
     useEffect(() => {
-        getEvents()
-    }, [])
+        const tmp: string[] = ['All']
+        events.forEach((event: any) => {
+            if (tmp.indexOf(event.format) === -1) {
+                tmp.push(event.format)
+            }
+        })
+
+        setFormats(tmp)
+    }, [eventData.isLoading])
+
+    if (eventData.error) return <div>failed to load</div>
+    if (eventData.isLoading) return <div>loading...</div>
 
     return (
         <div className={data.background_color ? data.background_color : 'bg-sn-black'}>
@@ -88,7 +72,7 @@ export const Program = ({ data }) => {
                                 <div className="flex justify-between justify-items-center items-center">
                                     <div>
                                         <div className="hidden md:block mb-2">
-                                            {event.format !== "" && (<span className={`inline-flex flex-shrink-0 items-center rounded-full px-1.5 py-0.5 font-normal text-xs ${statuses[event.format]}`}>{event.format}</span>)}
+                                            {event.format !== "" && (<span className={`inline-flex flex-shrink-0 items-center rounded-full px-1.5 py-0.5 font-normal text-xs ${formatBgColor(event.format)}`}>{event.format}</span>)}
                                             <span className={`inline-flex flex-shrink-0 items-center rounded-full px-1.5 py-0.5 font-normal text-xs`}>{event.location}</span>
                                         </div>
                                         <p className={`font-medium text-gray-300`}><span className="font-bold">{event.time}</span> - {event.name}</p>
@@ -146,7 +130,7 @@ function formatTextColor(department: string): string {
         }
 
         case 'Panel Discussion': {
-            return 'text-violet-400'
+            return 'text-amber-400'
         }
 
         case 'Workshop': {
@@ -179,7 +163,7 @@ function formatBgColor(department: string): string {
         }
 
         case 'Panel Discussion': {
-            color = 'bg-violet-600'
+            color = 'bg-amber-600'
             break
         }
 
@@ -197,11 +181,6 @@ function formatBgColor(department: string): string {
             color = 'bg-emerald-600'
             break
         }
-
-        case 'Operations': {
-            color = 'bg-amber-600'
-            break
-        }
     }
 
     return color + ' text-black'
@@ -217,7 +196,7 @@ function formatBgHoverColor(department: string): string {
         }
 
         case 'Panel Discussion': {
-            color = 'hover:bg-violet-400'
+            color = 'hover:bg-amber-400'
             break
         }
 

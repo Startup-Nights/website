@@ -1,0 +1,612 @@
+[
+    {
+        "time": "14:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Opening Ceremony",
+        "speakers": [
+            "Alyssia Kugler"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwODU="
+    },
+    {
+        "time": "14:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Relai: let's build a Bitcoin unicorn!",
+        "speakers": [
+            "Adem Bilican"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQxOTE="
+    },
+    {
+        "time": "15:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": " Female Founders in the spotlight",
+        "speakers": [
+            "Catherine Meuter",
+            "Sandra-Stella Triebl",
+            "Sandra Völler"
+        ],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwODY="
+    },
+    {
+        "time": "15:00",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "A tool kit to test your business idea | Kick Foundation",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MDQ="
+    },
+    {
+        "time": "15:00",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "From starting up to exit: corporate and tax law pitfalls| Prager Dreyfuss",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTEzOTg="
+    },
+    {
+        "time": "15:00",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Run your business digitally and paperless. True to the motto: Less paperwork. More business! | Peax",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MDY="
+    },
+    {
+        "time": "15:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "From ownership to usership: Circular business models as a driver for sustainable consumption",
+        "speakers": [
+            "Adrien Stamm"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwODc="
+    },
+    {
+        "time": "16:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "How to R\u0026D - how successful companies innovate and what startups can learn from them",
+        "speakers": [],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwODg="
+    },
+    {
+        "time": "16:00",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Workshop | IGE",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MDk="
+    },
+    {
+        "time": "16:00",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "Add your own data to ChatGPT | Noser",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MDg="
+    },
+    {
+        "time": "16:00",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "Smart Machines | Handelskammer Winterthur (HAW)",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MDc="
+    },
+    {
+        "time": "16:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "The Reality of the Entrepreneurship Rollercoaster: Managing the Highs and Lows",
+        "speakers": [
+            "Aike Festini",
+            "Tobias Gunzenhauser",
+            "Mershad Javan"
+        ],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwODk="
+    },
+    {
+        "time": "17:00",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Pitch the Pitch| Farner x Dropbox",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MTA="
+    },
+    {
+        "time": "17:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Pitching Session - Pre-Seed",
+        "speakers": [],
+        "format": "Pitching Session",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTA="
+    },
+    {
+        "time": "18:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "UBS Startup Talk",
+        "speakers": [],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTE="
+    },
+    {
+        "time": "Title to be announced soon",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "Workshop | GoBigname",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MTI="
+    },
+    {
+        "time": "Title to be announced soon",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Workshop | Walder Wyss",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2NjE="
+    },
+    {
+        "time": "18:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "How Liquidation Preference, Valuation and Anti-Dilution have an impact on your Exit",
+        "speakers": [
+            "Peter Kuhn",
+            "Christoph Zellweger"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTI="
+    },
+    {
+        "time": "19:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Fireside Chat with Victor Calabro",
+        "speakers": [
+            "Viktor Calabro"
+        ],
+        "format": "Fireside Chat",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTM="
+    },
+    {
+        "time": "19:00",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "Benefits of collaborations with universities: How start-ups can leverage academic ecosystems | ZHAW Institut für Marketing Management",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MTM="
+    },
+    {
+        "time": "19:00",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Smart Start: Crafting Cost-Effective Software Prototypes | Kadasolutions",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2NTY="
+    },
+    {
+        "time": "Title to be announced soon",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "Workshop | AXA",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2NTQ="
+    },
+    {
+        "time": "19:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Scaling Success: Overcoming the Challenges of Fast Growth",
+        "speakers": [
+            "Joel Capt",
+            "Patrik Deuss",
+            "Christian Marty",
+            "Markus Naef"
+        ],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTQ="
+    },
+    {
+        "time": "20:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Fireside Chat mit Marcel Dobler",
+        "speakers": [],
+        "format": "Fireside Chat",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTU="
+    },
+    {
+        "time": "20:00",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "Cologne; Your springboard into the German/European market  | KölnBusiness – City of Cologne",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2NTc="
+    },
+    {
+        "time": "20:00",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "You’ve got 99 problems, but to scale ain’t one | SAP",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQyMTY="
+    },
+    {
+        "time": "20:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "From Adversity to Triumph: Natascha Badmann's Unconventional Journey to Ironman Legend",
+        "speakers": [
+            "Natascha Badmann"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2Mjk="
+    },
+    {
+        "time": "21:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Fireside Chat with Pascal Uffer",
+        "speakers": [
+            "Pascal Uffer"
+        ],
+        "format": "Fireside Chat",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTY="
+    },
+    {
+        "time": "21:00",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "The optimal composition of the Startup/ScaleUp Board | BlackRiver",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2NTU="
+    },
+    {
+        "time": "21:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Navigating Unconscious Bias: how unconcious biases can effect your entrepreneurial journey",
+        "speakers": [
+            "Laurent Decrue",
+            "Lea Firmin",
+            "Luzia Schuler",
+            "Merle Zur"
+        ],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM3MjU="
+    },
+    {
+        "time": "22:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Closing Ceremony",
+        "speakers": [
+            "Alyssia Kugler"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTc="
+    },
+    {
+        "time": "14:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Opening Speech by the Federal Council Guy Parmelin",
+        "speakers": [
+            "Guy Parmelin"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTg="
+    },
+    {
+        "time": "14:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Virtual advertising in live sport – in future personalized by viewer?",
+        "speakers": [
+            "Lukas Gysin"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMwOTk="
+    },
+    {
+        "time": "15:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Disrupt or Be Disrupted: How Innovation is Changing the Game",
+        "speakers": [
+            "Benno Burkhardt",
+            "Olya Klueppel",
+            "Levent Künzi",
+            "Jörg Sandrock"
+        ],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDA="
+    },
+    {
+        "time": "15:00",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "Fundraising during challenging times | UBS",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MTE="
+    },
+    {
+        "time": "15:00",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "Migros’ Approach to Venture Capital \u0026 Building | Sparrow Ventures",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2NTk="
+    },
+    {
+        "time": "15:00",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Startup Financing – Key Terms | LEXR",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MTU="
+    },
+    {
+        "time": "15:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Fireside Chat with Carsten Koerl",
+        "speakers": [
+            "Carsten Koerl"
+        ],
+        "format": "Fireside Chat",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDE="
+    },
+    {
+        "time": "16:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Wirtschaftsbildung",
+        "speakers": [],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDI="
+    },
+    {
+        "time": "16:00",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "Beyond Scores: A Scorecard Approach to Business Model Validation | Sparrow Ventures",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQyNjc="
+    },
+    {
+        "time": "16:00",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Startup financing with Tokenized Shares| Aktionariat AG",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MTc="
+    },
+    {
+        "time": "Title to be announced soon",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "Workshop | IGE ",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MTY="
+    },
+    {
+        "time": "16:15",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Talentkick",
+        "speakers": [],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDM="
+    },
+    {
+        "time": "16:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Fireside Chat with Léa Miggiano",
+        "speakers": [
+            "Léa Miggiano"
+        ],
+        "format": "Fireside Chat",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDQ="
+    },
+    {
+        "time": "17:00",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "How to Make a Compelling Pitch (a.o. with AI) | StoryUp \u0026 aiEndoscopic",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MjA="
+    },
+    {
+        "time": "17:00",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "Talent Kick Ceremony: Team Kick Winners 2023 | Talent Kick",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MjE="
+    },
+    {
+        "time": "17:00",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Traction - How to generate rapid customer growth through agile market development? | FFHS",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MTg="
+    },
+    {
+        "time": "17:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Pitching Session - Seed",
+        "speakers": [],
+        "format": "Pitching Session",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDU="
+    },
+    {
+        "time": "18:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Forging Synergy: The Tale of a Startup and Investor Partnership",
+        "speakers": [
+            "Jessica Farda",
+            "Ertan Wittwer"
+        ],
+        "format": "Fireside Chat",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMyNjQ="
+    },
+    {
+        "time": "18:00",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "\"From the idea to the foundation (or to the first financing) - stumbling blocks for founders\". | MME",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2NTg="
+    },
+    {
+        "time": "Title to be announced soon",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Building Information Management (BIM) and the Energy transition | Axpo",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQyNjU="
+    },
+    {
+        "time": "Title to be announced soon",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "Workshop | GoBigname",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTE0MjI="
+    },
+    {
+        "time": "18:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "The Rise of AI: Opportunities and Challenges",
+        "speakers": [
+            "Tino Krause",
+            "Julien Weissenberg",
+            "Janette Wiget"
+        ],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDY="
+    },
+    {
+        "time": "19:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Going big out of the Hinterland",
+        "speakers": [],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDc="
+    },
+    {
+        "time": "19:00",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "How to prepare for the perfect Exit? | BlackRiver",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2Nzg="
+    },
+    {
+        "time": "19:00",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "Product-Market Fit | Bexio",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQyNjY="
+    },
+    {
+        "time": "Title to be announced soon",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "Workshop | ZHAW",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM2NjI="
+    },
+    {
+        "time": "19:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "The Art of the Pitch: How to Attract Investors to Your Startup",
+        "speakers": [
+            "Andreas Goeldi",
+            "Maruscha Heyner",
+            "Georg Schumacher"
+        ],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM3Mjc="
+    },
+    {
+        "time": "20:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Entrepreneurship is my favourite sport",
+        "speakers": [
+            "Francisco Fernandez"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDg="
+    },
+    {
+        "time": "20:00",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "How to get angel investors excited about your startup | SICTIC",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQyOTY="
+    },
+    {
+        "time": "20:00",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "Start and Grow with SAP | SAP",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQyMTc="
+    },
+    {
+        "time": "Title to be announced soon",
+        "location": "Workshop Room \"Dragon\" (Hall 1)",
+        "name": "Workshop | Personio",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQzMjg="
+    },
+    {
+        "time": "20:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "What makes startup-ecosystems unstoppable?",
+        "speakers": [],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM3Mjk="
+    },
+    {
+        "time": "21:00",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "Panel Discussion hosted by AXA",
+        "speakers": [],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQyOTU="
+    },
+    {
+        "time": "21:00",
+        "location": "Workshop Room \"Lion\" (Hall 2)",
+        "name": "Energy markets: short term bidding with batteries | Axpo",
+        "speakers": [],
+        "format": "Workshop",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQyNjQ="
+    },
+    {
+        "time": "21:30",
+        "location": "Workshop Room \"Shark\" (Hall 2)",
+        "name": "Balancing Parenting and Founderhood: Navigating the Dual Journey",
+        "speakers": [
+            "Merle Zur",
+            "Sarah Meier"
+        ],
+        "format": "Panel Discussion",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTM3MjY="
+    },
+    {
+        "time": "22:00",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "Award Ceremony and Closing",
+        "speakers": [
+            "Alyssia Kugler"
+        ],
+        "format": "Keynote",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTMxMDk="
+    },
+    {
+        "time": "22:30",
+        "location": "Main Stage \"Unicorn\" (Hall 1)",
+        "name": "After Party (until 2 AM)",
+        "speakers": [],
+        "format": "",
+        "link": "https://portal.startup-nights.ch/sessions/c2Vzc2lvbjoxNTQ1ODg="
+    }
+]

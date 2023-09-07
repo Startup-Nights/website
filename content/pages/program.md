@@ -16,29 +16,6 @@ blocks:
     title: Timetable.
     _template: program
   - content_block:
-      subtitle: Program outline
-      title: Timetable.
-      content:
-        - >-
-          The detailed program is not yet finished but you can find the rough
-          outline here.
-        - >-
-          If you have any questions or need some additional information, tipps
-          for accomodation or the just want to say hi, feel free to ping us.
-      cta:
-        link: /contact
-        text: Get in touch
-    infopoints:
-      - name: 'Thursday, 2. November'
-        text: Door opening at 1 pm with program from 2 pm to 10 pm.
-      - name: 'Friday, 3. November'
-        text: >-
-          Door opening at 1 pm with program from 2 pm to 10.30 pm with the
-          afterparty afterwards.
-    contentblock_left: true
-    background_color: bg-sn-black-light
-    _template: content
-  - content_block:
       subtitle: Pitch and win
       title: Apply for the Pitching Competition.
       content:
