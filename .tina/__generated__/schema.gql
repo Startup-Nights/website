@@ -782,7 +782,13 @@ type PageBlocksCookieTable {
   title: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable
+type PageBlocksProgram {
+  subtitle: String
+  title: String
+  background_color: String
+}
+
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksProgram
 
 type Page implements Node & Document {
   title: String!
@@ -1252,6 +1258,12 @@ input PageBlocksCookieTableFilter {
   title: StringFilter
 }
 
+input PageBlocksProgramFilter {
+  subtitle: StringFilter
+  title: StringFilter
+  background_color: StringFilter
+}
+
 input PageBlocksFilter {
   hero: PageBlocksHeroFilter
   speakers: PageBlocksSpeakersFilter
@@ -1274,6 +1286,7 @@ input PageBlocksFilter {
   imagegrid: PageBlocksImagegridFilter
   pitching_registration: PageBlocksPitching_registrationFilter
   cookieTable: PageBlocksCookieTableFilter
+  program: PageBlocksProgramFilter
 }
 
 input PageFilter {
@@ -1839,6 +1852,12 @@ input PageBlocksCookieTableMutation {
   title: String
 }
 
+input PageBlocksProgramMutation {
+  subtitle: String
+  title: String
+  background_color: String
+}
+
 input PageBlocksMutation {
   hero: PageBlocksHeroMutation
   speakers: PageBlocksSpeakersMutation
@@ -1861,6 +1880,7 @@ input PageBlocksMutation {
   imagegrid: PageBlocksImagegridMutation
   pitching_registration: PageBlocksPitching_registrationMutation
   cookieTable: PageBlocksCookieTableMutation
+  program: PageBlocksProgramMutation
 }
 
 input PageMutation {
