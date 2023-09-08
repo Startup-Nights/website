@@ -50,41 +50,8 @@ export const Program = ({ data }) => {
                     </h1>
                 </div>
 
-                <div className='flex flex-wrap justify-center space-x-2 mb-4'>
-                    {formats.map((department: string, i: number) => (
-                        <a
-                            onClick={() => setSelectedFormat(department)}
-                            key={`department-${i}`}
-                            className={`rounded-full px-3 py-0.5 my-1 text-sm font-semibold transition-all hover:text-black leading-5 ${formatBgHoverColor(department)} ${selectedFormat === department ? formatBgColor(department) : ''}`}>
-                            {department}
-                        </a>
-                    ))}
-                </div>
+                <iframe className="w-full h-[1000px]" src="https://portal.startup-nights.ch/components/28350" />
 
-                <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 p-4">
-                    {events.length > 0 && events.filter(event => selectedFormat === 'All' || selectedFormat == event.format).map((event: Event, i: number) => (
-                        <Link key={`position-${i}`} href={event.link} target="_blank" className="block group">
-                            <li key={i} className='relative grid grid-cols-1 justify-start items-center bg-sn-black-light rounded-3xl px-8 py-4 border-2 border-transparent hover:border-white'>
-                                <div className="absolute invisible -top-3 -right-3 p-2 bg-white rounded-full text-black group-hover:visible">
-                                    <ArrowTopRightOnSquareIcon className="w-5 h-5" strokeWidth={2} />
-                                </div>
-
-                                <div className="flex justify-between justify-items-center items-center">
-                                    <div>
-                                        <div className="hidden md:block mb-2">
-                                            {event.format !== "" && (<span className={`inline-flex flex-shrink-0 items-center rounded-full px-1.5 py-0.5 font-normal text-xs ${formatBgColor(event.format)}`}>{event.format}</span>)}
-                                            <span className={`inline-flex flex-shrink-0 items-center rounded-full px-1.5 py-0.5 font-normal text-xs`}>{event.location}</span>
-                                        </div>
-                                        <p className={`font-medium text-gray-300`}><span className="font-bold">{event.time}</span> - {event.name}</p>
-                                        {event.speakers.length > 0 && (
-                                            <p className={`mt-2 font-regular italic text-gray-300`}>With {event.speakers.join(', ')}</p>
-                                        )}
-                                    </div>
-                                </div>
-                            </li>
-                        </Link>
-                    ))}
-                </ul>
             </div>
         </div>
     );
