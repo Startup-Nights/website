@@ -1440,8 +1440,6 @@ var cookieTableBlockSchema = {
 };
 
 // components/blocks/program.tsx
-import { useEffect as useEffect6, useState as useState10 } from "react";
-import useSWR from "swr";
 var programBlockSchema = {
   name: "program",
   label: "Program",
