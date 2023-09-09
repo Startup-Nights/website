@@ -788,7 +788,13 @@ type PageBlocksProgram {
   background_color: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksProgram
+type PageBlocksBooth_approved {
+  subtitle: String
+  title: String
+  background_color: String
+}
+
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksProgram | PageBlocksBooth_approved
 
 type Page implements Node & Document {
   title: String!
@@ -1264,6 +1270,12 @@ input PageBlocksProgramFilter {
   background_color: StringFilter
 }
 
+input PageBlocksBooth_approvedFilter {
+  subtitle: StringFilter
+  title: StringFilter
+  background_color: StringFilter
+}
+
 input PageBlocksFilter {
   hero: PageBlocksHeroFilter
   speakers: PageBlocksSpeakersFilter
@@ -1287,6 +1299,7 @@ input PageBlocksFilter {
   pitching_registration: PageBlocksPitching_registrationFilter
   cookieTable: PageBlocksCookieTableFilter
   program: PageBlocksProgramFilter
+  booth_approved: PageBlocksBooth_approvedFilter
 }
 
 input PageFilter {
@@ -1858,6 +1871,12 @@ input PageBlocksProgramMutation {
   background_color: String
 }
 
+input PageBlocksBooth_approvedMutation {
+  subtitle: String
+  title: String
+  background_color: String
+}
+
 input PageBlocksMutation {
   hero: PageBlocksHeroMutation
   speakers: PageBlocksSpeakersMutation
@@ -1881,6 +1900,7 @@ input PageBlocksMutation {
   pitching_registration: PageBlocksPitching_registrationMutation
   cookieTable: PageBlocksCookieTableMutation
   program: PageBlocksProgramMutation
+  booth_approved: PageBlocksBooth_approvedMutation
 }
 
 input PageMutation {
