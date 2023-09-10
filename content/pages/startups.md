@@ -1,18 +1,21 @@
 ---
 title: Booths
 blocks:
-  - subtitle: Program of Startup Nights 2023
-    title: What to expect
+  - subtitle: Startup World 2023
+    title: Check out the exhibiting startups!
     cta:
-      link: /tickets
-      text: Get your ticket now
+      link: /booth
+      text: Apply now
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-2-jessica-baumgartner-noemi-aeschimann/17_Impressionen_Startup_World_Diverses/041122_StartupNights_Tag2_
         (15 von 182).jpg
       alt: Rollup from the Startup World 2023
     _template: hero
-  - _template: booth_approved
+  - subtitle: Exhibiting Startups
+    title: The upcoming unicorns.
+    _template: booth_approved
 ---
+
 
 

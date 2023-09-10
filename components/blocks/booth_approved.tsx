@@ -2,8 +2,16 @@ import type { Template } from "tinacms";
 import { ColorPickerInput } from "../fields/color";
 import { useEffect, useState } from "react";
 
+interface Booth {
+    company: string
+    website: string
+    image: string
+    categories: string[]
+}
+
 export const BoothApproved = ({ data }) => {
     const [booths, setBooths] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const getData = async () => {
         // save in sheets
@@ -14,12 +22,43 @@ export const BoothApproved = ({ data }) => {
             },
             body: JSON.stringify({
                 id: '1WX6vvcCJihBJ9tFN-8AixYAyt5i1nSfMeX81gsEEwjs',
-                range: 'A:AB',
+                range: 'A:AL',
             }),
         })
 
         const data = await response.json()
-        setBooths(data.data)
+        const booths = data.data
+        const filtered: Booth[] = []
+
+        // remove head row
+        booths.splice(0, 1)
+
+        booths.forEach((booth: any) => {
+            if (booth[37] !== "NO") {
+                // check for duplicates
+                if (booths.filter((b: any) => b[0] === booth[0]).length === 1) {
+                    booth[8] = encodeURI(booth[8])
+
+                    // cleanup website link
+                    if (!booth[1].includes('http')) {
+                        booth[1] = 'https://' + booth[1]
+                    }
+
+                    const boothCategories = booth[6].split('\n')
+
+                    // convert data
+                    filtered.push({
+                        company: booth[0],
+                        website: booth[1],
+                        image: booth[8],
+                        categories: boothCategories,
+                    })
+                }
+            }
+        })
+
+        setLoading(false)
+        setBooths(filtered)
     }
 
     useEffect(() => {
@@ -27,28 +66,41 @@ export const BoothApproved = ({ data }) => {
     }, [])
 
     return (
-        <div className={data.background_color ? data.background_color : 'bg-sn-black'}>
+        <div className='bg-white'>
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                 <div className="text-center mb-20">
                     <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
                         {data.subtitle}
                     </h2>
-                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
+                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-black sm:text-6xl">
                         {data.title}
                     </h1>
                 </div>
 
-                <div className="grid grid-cols-5 gap-12">
-                    {booths.map((booth: any, i: number) => (
-                        <div className="flex justify-center items-center">
-                            <a className="" href={booth[1]} target="_blank">
-                                <img key={i} src={booth[8]} alt={booth[0]}
-                                    className=""
-                                />
-                            </a>
-                        </div>
-                    ))}
-                </div>
+                {loading && (
+                    <p className="font-bold text-black">Loading data...</p>
+                )}
+
+                {!loading && (
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8">
+                        {booths.map((booth: Booth, i: number) => (
+                            <div className="aspect-[3/2] relative bg-gray-100 rounded-xl flex justify-center items-center p-4 hover:bg-gray-200">
+                                <a className="" href={booth.website} target="_blank">
+                                    {booth.image === "" && (
+                                        <p className="text-black font-bold">{booth.company}</p>
+                                    )}
+                                    {booth.image !== "" && (
+                                        <div className='absolute inset-0 p-4 '>
+                                            <img key={i} src={booth.image} alt={booth.company}
+                                                className="w-full h-full object-contain"
+                                            />
+                                        </div>
+                                    )}
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );
