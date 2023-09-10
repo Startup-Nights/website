@@ -5,8 +5,8 @@ export const Members = ({ data }) => {
     return (
         <div className="">
             <ul role="list" className="grid gap-4 grid-cols-2 sm:gap-4 xl:grid-cols-3">
-                {data.map((person: any) => (
-                    <li className="relative transition-all">
+                {data.map((person: any, i: number) => (
+                    <li key={i} className="relative transition-all">
                         <div className="grid grid-cols-1 align-top h-full gap-x-6 p-4 bg-sn-black-lightest border-2 rounded-3xl border-transparent">
                             <div className="text-center">
                                 <Image

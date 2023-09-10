@@ -84,13 +84,13 @@ export const BoothApproved = ({ data }) => {
                 {!loading && (
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8">
                         {booths.map((booth: Booth, i: number) => (
-                            <div className="aspect-[3/2] relative bg-gray-100 rounded-xl flex justify-center items-center p-4 hover:bg-gray-200">
+                            <div key={i} className="aspect-[3/2] relative bg-gray-100 rounded-xl flex justify-center items-center p-4 sm:p-6 hover:bg-gray-200">
                                 <a className="" href={booth.website} target="_blank">
                                     {booth.image === "" && (
                                         <p className="text-black font-bold">{booth.company}</p>
                                     )}
                                     {booth.image !== "" && (
-                                        <div className='absolute inset-0 p-4 '>
+                                        <div className='absolute inset-0 p-6 '>
                                             <img key={i} src={booth.image} alt={booth.company}
                                                 className="w-full h-full object-contain"
                                             />

@@ -17,7 +17,7 @@ export const Benefits = ({ data }) => {
 
                 <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {data?.benefit_items && data.benefit_items.map((benefit: any, i: number) => (
-                        <li key={i} className="col-span-1 text-center flex space-y-4 flex-wrap justify-center items-center bg-sn-black-lightest rounded-3xl p-6 md:p-8">
+                        <li key={i} className="col-span-1 text-center flex space-y-4 flex-wrap justify-center items-center bg-gradient-to-tr from-sn-black-lightest to-gray-900 rounded-3xl p-6 md:p-8">
                             <div className="">{getIcon(benefit.icon)}</div>
                             <h4 className="w-full text-center text-sm md:text-1xl">{benefit.title}</h4>
                         </li>
