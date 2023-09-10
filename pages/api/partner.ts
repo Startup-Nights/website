@@ -25,6 +25,12 @@ ${JSON.stringify(req.body)}`,
 
     const { error } = await response.json()
     if (error) {
+        webhook.send({
+            text: `FAILURE: send partner signupg mail: ${error.message || error.toString()} (<@U032DKKUCLX>)`,
+        }).catch(errorSlack => {
+            return res.status(500).json({ error: errorSlack.message || errorSlack.toString() + ' --- ' + error.message || error.toString() });
+        });
+
         return res.status(500).json({ error: error.message || error.toString() });
     }
 
