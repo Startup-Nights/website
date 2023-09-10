@@ -363,6 +363,7 @@ type PageBlocksHeroVideo {
 type PageBlocksHero {
   subtitle: String
   title: String
+  title_line2: String
   cta: PageBlocksHeroCta
   cta_secondary: PageBlocksHeroCta_secondary
   image: PageBlocksHeroImage
@@ -838,6 +839,7 @@ input PageBlocksHeroVideoFilter {
 input PageBlocksHeroFilter {
   subtitle: StringFilter
   title: StringFilter
+  title_line2: StringFilter
   cta: PageBlocksHeroCtaFilter
   cta_secondary: PageBlocksHeroCta_secondaryFilter
   image: PageBlocksHeroImageFilter
@@ -1452,6 +1454,7 @@ input PageBlocksHeroVideoMutation {
 input PageBlocksHeroMutation {
   subtitle: String
   title: String
+  title_line2: String
   cta: PageBlocksHeroCtaMutation
   cta_secondary: PageBlocksHeroCta_secondaryMutation
   image: PageBlocksHeroImageMutation

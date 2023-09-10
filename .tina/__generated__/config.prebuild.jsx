@@ -201,6 +201,11 @@ var heroBlockSchema = {
       name: "title"
     },
     {
+      type: "string",
+      label: "Title second line",
+      name: "title_line2"
+    },
+    {
       label: "Call to action",
       name: "cta",
       type: "object",

@@ -84,6 +84,7 @@ fragment PageParts on Page {
     ... on PageBlocksHero {
       subtitle
       title
+      title_line2
       cta {
         __typename
         link
