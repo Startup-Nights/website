@@ -113,6 +113,7 @@ blocks:
     _template: content
   - subtitle: Meet our speakers
     title: Heavyweights.
+    id: speakers
     images:
       - name: Sandra Völler
         position: CEO and Founder Agilita

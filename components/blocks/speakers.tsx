@@ -4,6 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid";
+import { Button, ButtonSecondary } from "../items/button";
 
 export const Speakers = ({ data }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
@@ -20,13 +21,18 @@ export const Speakers = ({ data }) => {
         <div className="max-w-8xl mx-auto pt-12 lg:pt-24 pb-16 bg-sn-black">
             {/* <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} /> */}
 
-            <div className="text-center mb-20">
+            <div className="text-center mb-20 px-8">
                 <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
                     {data.subtitle}
                 </h2>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
                     {data.title}
                 </h1>
+                {data.paragraph && (
+                    <p className="max-w-2xl mx-auto mt-8 text-left text-base font-regular tracking-normal text-gray-200">
+                        {data.paragraph}
+                    </p>
+                )}
             </div>
 
             <div className="overflow-hidden" ref={emblaRef}>
@@ -77,14 +83,24 @@ export const Speakers = ({ data }) => {
                 </div>
             </div>
 
-            <div className="flex justify-center gap-x-4 mt-12">
-                <button onClick={scrollPrev} >
+            <div className="flex justify-center items-center gap-x-8 mt-12">
+                <button onClick={scrollPrev} className="rounded-full p-3 hover:bg-sn-black-light">
                     <ArrowLongLeftIcon className="h-6 w-6" />
                 </button>
-                <button onClick={scrollNext} >
+
+
+                {data?.cta && (
+                    <div className="h-auto">
+                        <ButtonSecondary link={data?.cta?.link} text={data?.cta?.text}>
+                        </ButtonSecondary>
+                    </div>
+                )}
+
+                <button onClick={scrollNext} className="rounded-full p-3 hover:bg-sn-black-light">
                     <ArrowLongRightIcon className="h-6 w-6" />
                 </button>
             </div>
+
         </div>
     );
 };
@@ -120,6 +136,11 @@ export const speakersBlockSchema: Template = {
             type: "string",
             label: "Title",
             name: "title",
+        },
+        {
+            type: "string",
+            label: "Text",
+            name: "paragraph",
         },
         {
             label: "Call to action",

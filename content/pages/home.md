@@ -30,9 +30,13 @@ blocks:
     _template: hero
   - subtitle: Speaker
     title: Heavyweights.
+    paragraph: >-
+      Discover the thought leaders, innovators, and industry pioneers who will
+      take the stage at Startup Nights. From tech titans to seasoned investors,
+      our speakers ignite inspiration and drive change.
     cta:
-      link: ''
-      text: ''
+      link: /program#speakers
+      text: Discover more
     speakers:
       - name: Guy Parmelin
         position: Member of the Swiss Federal Council
@@ -41,13 +45,6 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/guy-parmelin.jpg
           alt: Guy Parmelin
-      - name: Tino Krause
-        position: Regional Director Central Europe Meta
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tino-krause.jpg
-          alt: Tino Krause
       - name: Catherine Meuter
         position: Co-Founder VYN
         description: ''
@@ -55,6 +52,20 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/catherine-meuter.jpg
           alt: Catherine Meuter
+      - name: Tino Krause
+        position: Regional Director Central Europe Meta
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tino-krause.jpg
+          alt: Tino Krause
+      - name: Aike Festini
+        position: Founder Rebels With A Cause / LuckaBox
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
+          alt: Aike Festini
       - name: Roland Brack
         position: Founder brack.ch & Investor on "Höhle der Löwen"
         description: ''
@@ -69,69 +80,6 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/christian-marty.jpg
           alt: Christian Marty
-      - name: Levent Künzi
-        position: 'Co-Founder, CEO & Chairman at Properti AG'
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/levent-kuenzi.jpg
-          alt: Levent Künzi
-      - name: Lukas Gysin
-        position: Founder of uniqFEED
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/lukas-gysin.jpg
-          alt: Lukas Gysin
-      - name: Benno Burkhardt
-        position: Co-Owner & Member of the Board at Stash
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/benno-burkhardt.jpg
-          alt: Benno Burkhardt
-      - name: Julien Weissenberg
-        position: 'Founder Deep Tech Experts '
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/julien-weissenberg.jpg
-          alt: Julien Weissenberg
-      - name: Mershad Javan
-        position: Founder and CEO Octiive
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/mershad-javan.jpg
-          alt: Mershad Javan
-      - name: Viktor Calabro
-        position: Founder Coople
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/viktor-calabro.jpeg
-          alt: Viktor Calabro
-      - name: Aike Festini
-        position: Founder Rebels With A Cause / LuckaBox
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
-          alt: Aike Festini
-      - name: Carsten Koerl
-        position: Founder Sportsradar
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/carsten-koerl.jpg
-          alt: Carsten Koerl
-      - name: Marcel Dobler
-        position: Member of the Swiss National Council & Founder Digitec Galaxus
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/marcel-dobler.jpeg
-          alt: Marcel Dobler
       - name: Sandra Völler
         position: CEO and Founder Agilita
         description: ''
@@ -139,55 +87,6 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-voeller.jpg
           alt: Sandra Völler
-      - name: Tobias Gunzenhauser
-        position: Co-Founder & CEO yamo
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/tobias_gunzenhauser.jpg
-          alt: Tobias Guzenhauser
-      - name: Patrik Deuss
-        position: President Board of Directors & CEO LEDCity
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/patrik_deuss.jpg
-          alt: Patrick Deuss
-      - name: Francisco Fernandez
-        position: CEO and Board Member Racing Unleashed
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/francisco_fernandez.jpg
-          alt: Francisco Fernandez
-      - name: Janette Wiget
-        position: CFO & Member of the Board Merantix
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/janette-wiget.jpg
-          alt: Janette Wiget
-      - name: Pascal Uffer
-        position: CEO & Founder Boostbar
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/pascal_uffer.jpg
-          alt: Pascal Uffer
-      - name: Jörg Sandrock
-        position: CEO neon
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/joerg_sandrock.jpg
-          alt: Jörg Sandrock
-      - name: Christian Meisser
-        position: CEO & Legal Expert at LEXR
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/christian_meisser.jpg
-          alt: Christian Meisser
       - name: Adrien Stamm
         position: CEO Yuno
         description: ''
@@ -195,13 +94,6 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/adrien_stamm.jpg
           alt: Adrien Stamm
-      - name: Sandra-Stella Triebl
-        position: Founder Swiss Ladies Drive
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/sandra-stella-triebl.jpeg
-          alt: Sandra-Stella Triebl
       - name: Léa Miggiano
         position: Co-Founder & CMO Carvolution
         description: ''
@@ -384,6 +276,8 @@ blocks:
     background_color: bg-sn-black
     _template: content
 ---
+
+
 
 
 

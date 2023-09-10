@@ -111,6 +111,7 @@ fragment PageParts on Page {
     ... on PageBlocksSpeakers {
       subtitle
       title
+      paragraph
       cta {
         __typename
         link
@@ -434,6 +435,7 @@ fragment PageParts on Page {
     ... on PageBlocksImagegrid {
       subtitle
       title
+      id
       images {
         __typename
         name
