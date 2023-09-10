@@ -22,6 +22,7 @@ import { Pitching } from "./blocks/pitching";
 import { Overview } from "./blocks/overview";
 import { CookieTable } from "./blocks/cookieTable";
 import { Program } from "./blocks/program";
+import { BoothApproved } from "./blocks/booth_approved";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -227,6 +228,17 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     <Program data={block} />
                                 </div>
                             )
+                        case "PageBlocksBooth_approved":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <BoothApproved data={block} />
+                                </div>
+                            )
+
+
 
                         default:
                             return null;
