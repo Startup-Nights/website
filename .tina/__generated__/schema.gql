@@ -398,6 +398,7 @@ type PageBlocksSpeakers {
   paragraph: String
   cta: PageBlocksSpeakersCta
   speakers: [PageBlocksSpeakersSpeakers]
+  background_color: String
 }
 
 type PageBlocksPartner_listCta {
@@ -875,6 +876,7 @@ input PageBlocksSpeakersFilter {
   paragraph: StringFilter
   cta: PageBlocksSpeakersCtaFilter
   speakers: PageBlocksSpeakersSpeakersFilter
+  background_color: StringFilter
 }
 
 input PageBlocksPartner_listCtaFilter {
@@ -1491,6 +1493,7 @@ input PageBlocksSpeakersMutation {
   paragraph: String
   cta: PageBlocksSpeakersCtaMutation
   speakers: [PageBlocksSpeakersSpeakersMutation]
+  background_color: String
 }
 
 input PageBlocksPartner_listCtaMutation {

@@ -43,10 +43,10 @@ export const Hero = ({ data }) => {
                     <h2 className="font-medium leading-7 text-gray-200 lg:text-2xl">
                         {data?.subtitle}
                     </h2>
-                    <h1 className="mt-2 block text-6xl font-bold tracking-tight text-gray-200 lg:text-8xl">
+                    <h1 className="mt-2 block text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
                         {data?.title}
                     </h1>
-                    <h2 className="mt-2 text-6xl font-bold tracking-tight text-gray-200 lg:text-8xl">
+                    <h2 className="mt-2 text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
                         {data?.title_line2}
                     </h2>
                 </div>

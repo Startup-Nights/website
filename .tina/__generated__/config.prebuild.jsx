@@ -11,6 +11,34 @@ import { ArrowLongLeftIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid
 // components/items/button.tsx
 import Link from "next/link";
 
+// components/fields/color.tsx
+import * as React2 from "react";
+import { wrapFieldsWithMeta } from "tinacms";
+var colorOptions = [
+  "black",
+  "black_light",
+  "black_lightest"
+];
+var ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
+  const inputClasses = {
+    black: "bg-sn-black",
+    black_light: "bg-sn-black-light",
+    black_lightest: "bg-sn-black-lightest"
+  };
+  return React2.createElement(React2.Fragment, null, React2.createElement("input", { type: "text", id: input.name, className: "hidden", ...input }), React2.createElement("div", { className: "flex gap-2 flex-wrap" }, colorOptions.map((color) => {
+    return React2.createElement(
+      "button",
+      {
+        key: color,
+        className: `w-9 h-9 rounded-full shadow border ${inputClasses[color]} ${input.value === inputClasses[color] ? "ring-[3px] ring-offset-2 ring-blue-400" : ""}`,
+        onClick: () => {
+          input.onChange(inputClasses[color]);
+        }
+      }
+    );
+  })));
+});
+
 // components/blocks/speakers.tsx
 var speakersBlockSchema = {
   name: "speakers",
@@ -117,6 +145,14 @@ var speakersBlockSchema = {
           ]
         }
       ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
     }
   ]
 };
@@ -294,7 +330,7 @@ var heroBlockSchema = {
 // components/blocks/partnerform.tsx
 import { Transition } from "@headlessui/react";
 import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
-import { Fragment, useState as useState2 } from "react";
+import { Fragment as Fragment2, useState as useState2 } from "react";
 import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 var partnerFormSchema = {
   name: "partnerform",
@@ -388,7 +424,7 @@ var teamBlockSchema = {
 };
 
 // components/blocks/partners.tsx
-import * as React2 from "react";
+import * as React3 from "react";
 import Image4 from "next/image";
 import Link4 from "next/link";
 var partnersBlockSchema = {
@@ -473,7 +509,7 @@ var partnersBlockSchema = {
 
 // components/blocks/countdown.tsx
 import Link5 from "next/link";
-import React3, { useEffect as useEffect2, useState as useState3 } from "react";
+import React4, { useEffect as useEffect2, useState as useState3 } from "react";
 var countdownBlockSchema = {
   name: "countdown",
   label: "Countdown",
@@ -575,10 +611,10 @@ import Link6 from "next/link";
 
 // components/items/modal.tsx
 import { Dialog, Transition as Transition2 } from "@headlessui/react";
-import { Fragment as Fragment2 } from "react";
+import { Fragment as Fragment3 } from "react";
 
 // components/blocks/newsletter.tsx
-import { useRef, useState as useState4, Fragment as Fragment3 } from "react";
+import { useRef, useState as useState4, Fragment as Fragment4 } from "react";
 import { Transition as Transition3 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon2 } from "@heroicons/react/24/outline";
 import { ExclamationCircleIcon as ExclamationCircleIcon2, XMarkIcon as XMarkIcon2 } from "@heroicons/react/20/solid";
@@ -727,7 +763,7 @@ var dropdownBlockSchema = {
 
 // components/blocks/benefits.tsx
 import { Cog6ToothIcon as Cog6ToothIcon2, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, HeartIcon as HeartIcon3, LightBulbIcon as LightBulbIcon3, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
-import React4 from "react";
+import React5 from "react";
 var benefitsBlockSchema = {
   name: "benefits",
   label: "Benefits",
@@ -765,36 +801,6 @@ var benefitsBlockSchema = {
 
 // components/blocks/overview.tsx
 import React6 from "react";
-
-// components/fields/color.tsx
-import * as React5 from "react";
-import { wrapFieldsWithMeta } from "tinacms";
-var colorOptions = [
-  "black",
-  "black_light",
-  "black_lightest"
-];
-var ColorPickerInput = wrapFieldsWithMeta(({ input }) => {
-  const inputClasses = {
-    black: "bg-sn-black",
-    black_light: "bg-sn-black-light",
-    black_lightest: "bg-sn-black-lightest"
-  };
-  return React5.createElement(React5.Fragment, null, React5.createElement("input", { type: "text", id: input.name, className: "hidden", ...input }), React5.createElement("div", { className: "flex gap-2 flex-wrap" }, colorOptions.map((color) => {
-    return React5.createElement(
-      "button",
-      {
-        key: color,
-        className: `w-9 h-9 rounded-full shadow border ${inputClasses[color]} ${input.value === inputClasses[color] ? "ring-[3px] ring-offset-2 ring-blue-400" : ""}`,
-        onClick: () => {
-          input.onChange(inputClasses[color]);
-        }
-      }
-    );
-  })));
-});
-
-// components/blocks/overview.tsx
 import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
 var overviewBlockSchema = {
   name: "overview",

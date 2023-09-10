@@ -72,7 +72,7 @@ export const contentBlockSchema: Template = {
             name: "background_color",
             label: "Background color",
             ui: {
-                component: ColorPickerInput
+                component: ColorPickerInput as any
             }
         },
     ],

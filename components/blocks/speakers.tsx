@@ -4,7 +4,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid";
-import { Button, ButtonSecondary } from "../items/button";
+import { ButtonSecondary } from "../items/button";
+import { ColorPickerInput } from "../fields/color";
 
 export const Speakers = ({ data }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
@@ -18,9 +19,7 @@ export const Speakers = ({ data }) => {
     }, [emblaApi])
 
     return (
-        <div className="max-w-8xl mx-auto pt-12 lg:pt-24 pb-16 bg-sn-black">
-            {/* <SpeakerModal isOpen={isOpen} setIsOpen={setIsOpen} speaker={currentSpeaker} /> */}
-
+        <div className={`max-w-8xl mx-auto pt-12 lg:pt-24 pb-16 ${data.background_color ? data.background_color : 'bg-sn-black'}`}>
             <div className="text-center mb-20 px-8">
                 <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
                     {data.subtitle}
@@ -84,7 +83,7 @@ export const Speakers = ({ data }) => {
             </div>
 
             <div className="flex justify-center items-center gap-x-8 mt-12">
-                <button onClick={scrollPrev} className="rounded-full p-3 hover:bg-sn-black-light">
+                <button onClick={scrollPrev} className="rounded-full p-3 hover:bg-sn-black-lightest">
                     <ArrowLongLeftIcon className="h-6 w-6" />
                 </button>
 
@@ -96,7 +95,7 @@ export const Speakers = ({ data }) => {
                     </div>
                 )}
 
-                <button onClick={scrollNext} className="rounded-full p-3 hover:bg-sn-black-light">
+                <button onClick={scrollNext} className="rounded-full p-3 hover:bg-sn-black-lightest">
                     <ArrowLongRightIcon className="h-6 w-6" />
                 </button>
             </div>
@@ -210,6 +209,14 @@ export const speakersBlockSchema: Template = {
                     ],
                 },
             ],
+        },
+        {
+            type: "string",
+            name: "background_color",
+            label: "Background color",
+            ui: {
+                component: ColorPickerInput as any
+            }
         },
     ],
 };
