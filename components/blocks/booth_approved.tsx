@@ -34,7 +34,7 @@ export const BoothApproved = ({ data }) => {
         booths.splice(0, 1)
 
         booths.forEach((booth: any) => {
-            if (booth[37] !== "NO") {
+            if (booth[34] === "OK") {
                 // check for duplicates
                 if (booths.filter((b: any) => b[0] === booth[0]).length === 1) {
                     booth[8] = encodeURI(booth[8])

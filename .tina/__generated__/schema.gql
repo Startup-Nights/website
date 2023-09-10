@@ -795,13 +795,17 @@ type PageBlocksProgram {
   background_color: String
 }
 
+type PageBlocksCrop {
+  title: String
+}
+
 type PageBlocksBooth_approved {
   subtitle: String
   title: String
   background_color: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksProgram | PageBlocksBooth_approved
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved
 
 type Page implements Node & Document {
   title: String!
@@ -1284,6 +1288,10 @@ input PageBlocksProgramFilter {
   background_color: StringFilter
 }
 
+input PageBlocksCropFilter {
+  title: StringFilter
+}
+
 input PageBlocksBooth_approvedFilter {
   subtitle: StringFilter
   title: StringFilter
@@ -1313,6 +1321,7 @@ input PageBlocksFilter {
   pitching_registration: PageBlocksPitching_registrationFilter
   cookieTable: PageBlocksCookieTableFilter
   program: PageBlocksProgramFilter
+  crop: PageBlocksCropFilter
   booth_approved: PageBlocksBooth_approvedFilter
 }
 
@@ -1892,6 +1901,10 @@ input PageBlocksProgramMutation {
   background_color: String
 }
 
+input PageBlocksCropMutation {
+  title: String
+}
+
 input PageBlocksBooth_approvedMutation {
   subtitle: String
   title: String
@@ -1921,6 +1934,7 @@ input PageBlocksMutation {
   pitching_registration: PageBlocksPitching_registrationMutation
   cookieTable: PageBlocksCookieTableMutation
   program: PageBlocksProgramMutation
+  crop: PageBlocksCropMutation
   booth_approved: PageBlocksBooth_approvedMutation
 }
 

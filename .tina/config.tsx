@@ -22,6 +22,7 @@ import { pitchingBlockSchema } from "../components/blocks/pitching";
 import { cookieTableBlockSchema } from "../components/blocks/cookieTable";
 import { programBlockSchema } from "../components/blocks/program";
 import { boothApprovedBlockSchema } from "../components/blocks/booth_approved";
+import { cropBlockSchema } from "../components/blocks/crop";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -417,6 +418,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "program") {
                             return `/program`;
                         }
+                        if (document._sys.filename === "crop") {
+                            return `/crop`;
+                        }
                         if (document._sys.filename === "speakers") {
                             return `/speakers`;
                         }
@@ -509,6 +513,7 @@ const config = defineStaticConfig({
                             pitchingBlockSchema,
                             cookieTableBlockSchema,
                             programBlockSchema,
+                            cropBlockSchema,
                             boothApprovedBlockSchema,
                         ],
                     },
