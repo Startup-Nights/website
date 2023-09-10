@@ -102,7 +102,32 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
           alt: Léa Miggiano
+    background_color: bg-sn-black-light
     _template: speakers
+  - content_block:
+      subtitle: Become a part of the event
+      title: What's in for me?
+      content:
+        - >-
+          As a non-profit, we empower founders to reach for the stars. We
+          connect them with investors and the sharpest minds in startups,
+          propelling their visions into reality. We’re not just a platform;
+          we’re the launchpad for insights and a spotlight for breakthrough
+          innovations
+      cta:
+        link: /tickets
+        text: Get your ticket now
+      cta_secondary:
+        link: /partner
+        text: Become a partner
+    image:
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-1-jessica-baumgartner-noemi-aeschimann/02_Impressions_Startup_World_Diverses/031122_StartupNights_Tag1_
+        (49 von 139).jpg
+      alt: Startup World Booth 2022
+    contentblock_left: true
+    background_color: bg-sn-black
+    _template: content
   - content_block:
       subtitle: Facts & figures
       title: The biggest event!
@@ -278,9 +303,12 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2021/speaker/melanie-gabriel.png
         alt: Melanie Gabriel
     contentblock_left: true
-    background_color: bg-sn-black
+    background_color: bg-sn-black-lightest
     _template: content
 ---
+
+
+
 
 
 

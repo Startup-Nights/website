@@ -133,6 +133,7 @@ fragment PageParts on Page {
           alt
         }
       }
+      background_color
     }
     ... on PageBlocksPartner_list {
       subtitle
