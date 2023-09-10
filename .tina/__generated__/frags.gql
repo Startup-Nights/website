@@ -136,6 +136,7 @@ fragment PageParts on Page {
     ... on PageBlocksPartner_list {
       subtitle
       title
+      paragraph
       cta {
         __typename
         link
