@@ -772,6 +772,7 @@ type PageBlocksImagegridImages {
 type PageBlocksImagegrid {
   subtitle: String
   title: String
+  paragraph: String
   id: String
   images: [PageBlocksImagegridImages]
 }
@@ -1258,6 +1259,7 @@ input PageBlocksImagegridImagesFilter {
 input PageBlocksImagegridFilter {
   subtitle: StringFilter
   title: StringFilter
+  paragraph: StringFilter
   id: StringFilter
   images: PageBlocksImagegridImagesFilter
 }
@@ -1863,6 +1865,7 @@ input PageBlocksImagegridImagesMutation {
 input PageBlocksImagegridMutation {
   subtitle: String
   title: String
+  paragraph: String
   id: String
   images: [PageBlocksImagegridImagesMutation]
 }

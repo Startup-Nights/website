@@ -17,6 +17,11 @@ export const Imagegrid = ({ data }) => {
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
                         {data.title}
                     </h1>
+                    {data.paragraph && (
+                        <p className="max-w-2xl mx-auto mt-8 text-left text-base font-regular tracking-normal text-gray-200">
+                            {data.paragraph}
+                        </p>
+                    )}
                 </div>
 
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-12">
@@ -69,6 +74,11 @@ export const imagegridBlockSchema: Template = {
             type: "string",
             label: "Title",
             name: "title",
+        },
+        {
+            type: "string",
+            label: "Text",
+            name: "paragraph",
         },
         {
             type: "string",

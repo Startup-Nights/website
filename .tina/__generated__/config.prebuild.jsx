@@ -1374,6 +1374,11 @@ var imagegridBlockSchema = {
     },
     {
       type: "string",
+      label: "Text",
+      name: "paragraph"
+    },
+    {
+      type: "string",
       label: "ID",
       name: "id"
     },
