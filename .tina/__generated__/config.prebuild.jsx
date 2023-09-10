@@ -1531,6 +1531,21 @@ var boothApprovedBlockSchema = {
   ]
 };
 
+// components/blocks/crop.tsx
+import { PhotoIcon as PhotoIcon2 } from "@heroicons/react/24/outline";
+import { useState as useState11 } from "react";
+var cropBlockSchema = {
+  name: "crop",
+  label: "crop",
+  fields: [
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -1928,6 +1943,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "program") {
               return `/program`;
             }
+            if (document2._sys.filename === "crop") {
+              return `/crop`;
+            }
             if (document2._sys.filename === "speakers") {
               return `/speakers`;
             }
@@ -2019,6 +2037,7 @@ var config = defineStaticConfig({
               pitchingBlockSchema,
               cookieTableBlockSchema,
               programBlockSchema,
+              cropBlockSchema,
               boothApprovedBlockSchema
             ]
           }

@@ -1551,24 +1551,3 @@ const otherInterest = [
     "Startup inovation awards",
     "Matching with keynote speaker 1:1",
 ];
-
-const mailingLists = [
-    {
-        id: 1,
-        title: "Newsletter",
-        description: "Last message sent an hour ago",
-        users: "621 users",
-    },
-    {
-        id: 2,
-        title: "Existing Customers",
-        description: "Last message sent 2 weeks ago",
-        users: "1200 users",
-    },
-    {
-        id: 3,
-        title: "Trial Users",
-        description: "Last message sent 4 days ago",
-        users: "2740 users",
-    },
-];

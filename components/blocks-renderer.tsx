@@ -23,6 +23,7 @@ import { Overview } from "./blocks/overview";
 import { CookieTable } from "./blocks/cookieTable";
 import { Program } from "./blocks/program";
 import { BoothApproved } from "./blocks/booth_approved";
+import { Crop } from "./blocks/crop";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -237,8 +238,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     <BoothApproved data={block} />
                                 </div>
                             )
-
-
+                        case "PageBlocksCrop":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Crop data={block} />
+                                </div>
+                            )
 
                         default:
                             return null;

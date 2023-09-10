@@ -465,6 +465,9 @@ fragment PageParts on Page {
       title
       background_color
     }
+    ... on PageBlocksCrop {
+      title
+    }
     ... on PageBlocksBooth_approved {
       subtitle
       title
