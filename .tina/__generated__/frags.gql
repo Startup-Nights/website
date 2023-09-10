@@ -458,5 +458,10 @@ fragment PageParts on Page {
       title
       background_color
     }
+    ... on PageBlocksBooth_approved {
+      subtitle
+      title
+      background_color
+    }
   }
 }

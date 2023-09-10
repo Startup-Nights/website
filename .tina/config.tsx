@@ -21,6 +21,7 @@ import { imagegridBlockSchema } from "../components/blocks/imagegrid";
 import { pitchingBlockSchema } from "../components/blocks/pitching";
 import { cookieTableBlockSchema } from "../components/blocks/cookieTable";
 import { programBlockSchema } from "../components/blocks/program";
+import { boothApprovedBlockSchema } from "../components/blocks/booth_approved";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -431,6 +432,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "booth") {
                             return `/booth`;
                         }
+                        if (document._sys.filename === "startups") {
+                            return `/startups`;
+                        }
                         if (document._sys.filename === "contact") {
                             return `/contact`;
                         }
@@ -502,6 +506,7 @@ const config = defineStaticConfig({
                             pitchingBlockSchema,
                             cookieTableBlockSchema,
                             programBlockSchema,
+                            boothApprovedBlockSchema,
                         ],
                     },
                 ],

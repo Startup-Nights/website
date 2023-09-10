@@ -1465,6 +1465,33 @@ var programBlockSchema = {
   ]
 };
 
+// components/blocks/booth_approved.tsx
+import { useEffect as useEffect6, useState as useState10 } from "react";
+var boothApprovedBlockSchema = {
+  name: "booth_approved",
+  label: "Booth Approved",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -1877,6 +1904,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "booth") {
               return `/booth`;
             }
+            if (document2._sys.filename === "startups") {
+              return `/startups`;
+            }
             if (document2._sys.filename === "contact") {
               return `/contact`;
             }
@@ -1946,7 +1976,8 @@ var config = defineStaticConfig({
               imagegridBlockSchema,
               pitchingBlockSchema,
               cookieTableBlockSchema,
-              programBlockSchema
+              programBlockSchema,
+              boothApprovedBlockSchema
             ]
           }
         ]
