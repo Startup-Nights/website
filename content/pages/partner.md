@@ -45,6 +45,14 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/891468767-301258488-Microsoft_logo_scaled_scaled.png
+            alt: Microsoft For Startups
+            link: 'https://www.microsoft.com/de-ch/startups'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/759861217-tdsynnex_scaled.png
+            alt: TD Synnex
+            link: 'https://www.tdsynnex.com'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/gebert_ruef_stiftung.png
             alt: Gebert Rüf Stiftung
             link: 'https://www.grstiftung.ch/de.html'
@@ -121,6 +129,26 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/115811413-swico_scaled.png
+            alt: Swico
+            link: 'https://www.swico.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/361800990-beriflapp_scaled.png
+            alt: Beriflapp
+            link: 'https://www.beriflapp.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/370075960-home-of-innovation_scaled.png
+            alt: Home of Innovation
+            link: 'https://homeofinnovation.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/145243547-swisslife_scaled.png
+            alt: Swisslife
+            link: 'https://www.swisslife.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/611196457-axpo_scaled.png
+            alt: Axpo
+            link: 'https://www.axpo.ch/'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/holycode.png
             alt: Holycode
             link: 'https://www.holycode.com/'
@@ -153,7 +181,7 @@ blocks:
             alt: Technopark Graubünden
             link: 'https://www.technopark-graubuenden.ch/en/'
           - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kadasolution.png
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/660368404-kadasolutions_scaled.png
             alt: Kadasolutions
             link: 'https://kadasolutions.ch/'
           - src: >-
