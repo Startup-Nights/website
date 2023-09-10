@@ -7,21 +7,19 @@ export const Members = ({ data }) => {
             <ul role="list" className="grid gap-4 grid-cols-2 sm:gap-4 xl:grid-cols-3">
                 {data.map((person: any) => (
                     <li className="relative transition-all">
-                        <div className="grid grid-cols-1 text-center gap-x-6 p-4 bg-sn-black-lightest border-2 rounded-3xl border-transparent">
-                            <div className="flex justify-center mb-6">
+                        <div className="grid grid-cols-1 align-top h-full gap-x-6 p-4 bg-sn-black-lightest border-2 rounded-3xl border-transparent">
+                            <div className="text-center">
                                 <Image
                                     src={person.src ? person.src : "/user.svg"}
                                     alt={person?.name ? person.name : "unknown"}
-                                    className="rounded-full bg-sn-black-light"
+                                    className="rounded-full mx-auto bg-sn-black-light"
                                     width={data?.diameter ? data.diameter : 100}
                                     height={data?.diameter ? data.diameter : 100}
                                 />
-                            </div>
-                            <div>
-                                <h3 className="text-sm font-semibold leading-7 tracking-tight">
+                                <h3 className="text-sm font-semibold leading-7 mt-4 tracking-tight">
                                     {person?.name}
                                 </h3>
-                                <p className="text-sm font-semibold leading-6 text-gray-400">
+                                <p className="text-sm font-semibold leading-6 mt-2 text-gray-400">
                                     {person?.position}
                                 </p>
                             </div>

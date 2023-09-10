@@ -450,6 +450,7 @@ fragment PageParts on Page {
           alt
         }
       }
+      background_color
     }
     ... on PageBlocksPitching_registration {
       subtitle

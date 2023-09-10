@@ -39,16 +39,18 @@ export const Partners = ({ data }) => {
                             <ul className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} gap-8 md:gap-18 py-4 md:py-8`}>
                                 {category.partners && category.partners.map((partner, i: number) => (
                                     <Link href={partner?.link ? partner.link : '/'} key={`partner-${i}`} target={'_blank'} className='relative'>
-                                        <li className="group relative p-2 sm:p-8 border-2 border-transparent rounded-xl sm:rounded-3xl transition-all hover:bg-gray-50">
-                                            <Image
-                                                width={300}
-                                                height={200}
-                                                alt={partner?.alt ? partner.alt : 'undefined'}
-                                                src={partner?.src ? partner.src : '/user.svg'}
-                                                placeholder="blur"
-                                                className="select-none"
-                                                blurDataURL={placeholderBox}
-                                            />
+                                        <li className="group aspect-[3/2] relative hover:bg-gray-100 rounded-xl flex justify-center items-center p-4 ">
+                                            <div className='absolute inset-0 p-4 '>
+                                                <Image
+                                                    width={300}
+                                                    height={200}
+                                                    alt={partner?.alt ? partner.alt : 'undefined'}
+                                                    src={partner?.src ? partner.src : '/user.svg'}
+                                                    placeholder="blur"
+                                                    className="w-full h-full object-contain select-none"
+                                                    blurDataURL={placeholderBox}
+                                                />
+                                            </div>
                                         </li>
                                     </Link>
                                 ))}

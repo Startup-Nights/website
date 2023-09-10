@@ -417,6 +417,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "program") {
                             return `/program`;
                         }
+                        if (document._sys.filename === "speakers") {
+                            return `/speakers`;
+                        }
                         if (document._sys.filename === "tickets") {
                             return `/tickets`;
                         }

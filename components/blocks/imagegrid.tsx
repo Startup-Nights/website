@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import type { Template } from "tinacms";
 import { placeholderBox } from "../items/placeholder";
+import { ColorPickerInput } from "../fields/color";
 
 export const Imagegrid = ({ data }) => {
     return (
@@ -119,6 +120,14 @@ export const imagegridBlockSchema: Template = {
                     ],
                 },
             ],
+        },
+        {
+            type: "string",
+            name: "background_color",
+            label: "Background color",
+            ui: {
+                component: ColorPickerInput as any
+            }
         },
     ],
 };

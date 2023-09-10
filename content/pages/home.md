@@ -14,12 +14,12 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: The biggest startup event in Switzerland
-    title: 2 & 3 November 2023
-    title_line2: Winterthur
+  - subtitle: '2 & 3 November 2023, Winterthur'
+    title: The biggest startup event in Switzerland
+    title_line2: ''
     cta:
       link: /tickets
-      text: Get your ticket now
+      text: Buy ticket
     image:
       src: ''
       alt: ''
@@ -36,7 +36,7 @@ blocks:
       take the stage at Startup Nights. From tech titans to seasoned investors,
       our speakers ignite inspiration and drive change.
     cta:
-      link: /program#speakers
+      link: /speakers
       text: Discover more
     speakers:
       - name: Guy Parmelin
@@ -104,30 +104,49 @@ blocks:
           alt: Léa Miggiano
     background_color: bg-sn-black-light
     _template: speakers
-  - content_block:
-      subtitle: Become a part of the event
-      title: What's in for me?
-      content:
-        - >-
-          As a non-profit, we empower founders to reach for the stars. We
-          connect them with investors and the sharpest minds in startups,
-          propelling their visions into reality. We’re not just a platform;
-          we’re the launchpad for insights and a spotlight for breakthrough
-          innovations
-      cta:
-        link: /tickets
-        text: Get your ticket now
-      cta_secondary:
-        link: /partner
-        text: Become a partner
-    image:
-      src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-1-jessica-baumgartner-noemi-aeschimann/02_Impressions_Startup_World_Diverses/031122_StartupNights_Tag1_
-        (49 von 139).jpg
-      alt: Startup World Booth 2022
-    contentblock_left: true
+  - subtitle: Become a part of the event
+    title: Why attend?
+    benefit_items:
+      - icon: lightbulb
+        title: Knowledge Extravaganza
+        description:
+          - >-
+            Over 60 workshops, keynotes, panel discussions, and fireside chats,
+            give you the opportunity to immerse yourself in the wisdom of
+            experienced founders, investors,  operators, and other startup
+            insiders.
+          - >-
+            Whether you're seeking inspiration, eager to expand your knowledge,
+            or aiming to make lasting connections, Startup Nights promises to
+            deliver on all fronts.
+      - icon: usergroup
+        title: Connect
+        description:
+          - >-
+            Expecting over 8,000 attendees, Startup Nights is the place to be
+            for startup enthusiasts, founders, investors, influential figures
+            from the political and startup ecosystems, corporate
+            decision-makers, and students on the lookout for career
+            opportunities.
+          - >-
+            Forge valuable connections, schedule meetings with potential
+            collaborators, and tap into a diverse pool of expertise.
+      - icon: rocket
+        title: Innovation Unleashed
+        description:
+          - >-
+            Explore the future as 120 startups take center stage. Spanning
+            diverse sectors such as e-commerce, ICT, Health Tech, and more, they
+            are here to showcase their game-changing solutions.
+          - >-
+            You can not only experience these innovations but also connect
+            directly with the brilliant minds behind them.
+          - >-
+            Whether you're looking for investment opportunities, job prospects,
+            or avenues for collaboration, this is your chance to engage with
+            them.
     background_color: bg-sn-black
-    _template: content
+    _template: overview
   - content_block:
       subtitle: Facts & figures
       title: The biggest event!
@@ -223,35 +242,6 @@ blocks:
     contentblock_left: true
     background_color: bg-sn-black
     _template: content
-  - subtitle: Partner
-    title: Thank you very much!
-    paragraph: >-
-      None of this would be possible without our esteemed partners who amplify
-      our influence and work with us to create an event that helps startups
-      reach new heights.
-    cta:
-      link: /partner
-      text: All partners
-    partners:
-      - grid_cols: 4
-        partners:
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ubs.png
-            alt: UBS
-            link: 'https://ubs.com'
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
-            alt: IGE
-            link: 'https://ipi.ch'
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kanton-zuerich.png
-            alt: Kanton Zürich
-            link: 'https://vd.zh.ch'
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sparrow-ventures.png
-            alt: Sparrow Ventures
-            link: 'https://sparrow-ventures.com'
-    _template: partner_list
   - content_block:
       subtitle: Impressions
       title: Startup Nights 2022.
@@ -270,7 +260,7 @@ blocks:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-207.jpg
       alt: People at a panel discussion
-    contentblock_left: true
+    contentblock_left: false
     background_color: bg-sn-black-light
     _template: content
   - content_block:
@@ -305,7 +295,64 @@ blocks:
     contentblock_left: true
     background_color: bg-sn-black-lightest
     _template: content
+  - subtitle: Partner
+    title: Thank you very much!
+    paragraph: >-
+      None of this would be possible without our esteemed partners who amplify
+      our influence and work with us to create an event that helps startups
+      reach new heights.
+    cta:
+      link: /partner
+      text: All partners
+    partners:
+      - grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ubs.png
+            alt: UBS
+            link: 'https://ubs.com'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
+            alt: IGE
+            link: 'https://ipi.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kanton-zuerich.png
+            alt: Kanton Zürich
+            link: 'https://vd.zh.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sparrow-ventures.png
+            alt: Sparrow Ventures
+            link: 'https://sparrow-ventures.com'
+    _template: partner_list
+  - subtitle: Startup World
+    title: Discover the next unicorn.
+    cta:
+      link: /startups
+      text: Check out all exhibitors
+    partners:
+      - partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/711765031-Kopie+von+OoomniumLogo_Wide_Color.png
+            alt: oomnium
+            link: 'https://oomnium.com/en'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/740971315-Type%253DCombined+Mark%252C+Color%253DPrimary_scaled.png
+            alt: graphe health
+            link: 'https://grapehealth.ch/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/632614960-steasy_black_registered_CMYK.png
+            alt: steasy
+            link: 'https://steasy.ch/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/769135031-onify_Logo_Black_RGB.svg
+            alt: onify
+            link: 'https://www.onify.ch/'
+    _template: partner_list
 ---
+
+
+
+
 
 
 
