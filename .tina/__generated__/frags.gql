@@ -437,6 +437,7 @@ fragment PageParts on Page {
     ... on PageBlocksImagegrid {
       subtitle
       title
+      paragraph
       id
       images {
         __typename

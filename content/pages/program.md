@@ -113,6 +113,10 @@ blocks:
     _template: content
   - subtitle: Meet our speakers
     title: Heavyweights.
+    paragraph: >-
+      Discover the thought leaders, innovators, and industry pioneers who will
+      take the stage at Startup Nights. From tech titans to seasoned investors,
+      our speakers ignite inspiration and drive change.
     id: speakers
     images:
       - name: Sandra Völler
