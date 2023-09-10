@@ -5,7 +5,7 @@ const webhook = new IncomingWebhook(url);
 
 export default async (req: any, res: any) => {
     webhook.send({
-        text: `Data Backup - Booth Signup
+        text: `Data Backup - Booth Signup (<@U032DKKUCLX>)
 ${JSON.stringify(req.body)}`,
     }).catch(error => {
         return res.status(500).json({ error: error.message || error.toString() });
@@ -27,6 +27,12 @@ ${JSON.stringify(req.body)}`,
 
         const { error } = await response.json()
         if (error) {
+            webhook.send({
+                text: `FAILURE: saving booth signup in sheets: ${error.message || error.toString()} (<@U032DKKUCLX>)`,
+            }).catch(errorSlack => {
+                return res.status(500).json({ error: errorSlack.message || errorSlack.toString() + ' --- ' + error.message || error.toString() });
+            });
+
             return res.status(500).json({ error: error.message || error.toString() });
         }
     }
@@ -47,6 +53,12 @@ ${JSON.stringify(req.body)}`,
 
         const { error } = await response.json()
         if (error) {
+            webhook.send({
+                text: `FAILURE: sending booth signup mail: ${error.message || error.toString()} (<@U032DKKUCLX>)`,
+            }).catch(errorSlack => {
+                return res.status(500).json({ error: errorSlack.message || errorSlack.toString() + ' --- ' + error.message || error.toString() });
+            });
+
             return res.status(500).json({ error: error.message || error.toString() });
         }
     }
