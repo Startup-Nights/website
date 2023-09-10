@@ -394,6 +394,7 @@ type PageBlocksSpeakersSpeakers {
 type PageBlocksSpeakers {
   subtitle: String
   title: String
+  paragraph: String
   cta: PageBlocksSpeakersCta
   speakers: [PageBlocksSpeakersSpeakers]
 }
@@ -769,6 +770,7 @@ type PageBlocksImagegridImages {
 type PageBlocksImagegrid {
   subtitle: String
   title: String
+  id: String
   images: [PageBlocksImagegridImages]
 }
 
@@ -866,6 +868,7 @@ input PageBlocksSpeakersSpeakersFilter {
 input PageBlocksSpeakersFilter {
   subtitle: StringFilter
   title: StringFilter
+  paragraph: StringFilter
   cta: PageBlocksSpeakersCtaFilter
   speakers: PageBlocksSpeakersSpeakersFilter
 }
@@ -1251,6 +1254,7 @@ input PageBlocksImagegridImagesFilter {
 input PageBlocksImagegridFilter {
   subtitle: StringFilter
   title: StringFilter
+  id: StringFilter
   images: PageBlocksImagegridImagesFilter
 }
 
@@ -1477,6 +1481,7 @@ input PageBlocksSpeakersSpeakersMutation {
 input PageBlocksSpeakersMutation {
   subtitle: String
   title: String
+  paragraph: String
   cta: PageBlocksSpeakersCtaMutation
   speakers: [PageBlocksSpeakersSpeakersMutation]
 }
@@ -1852,6 +1857,7 @@ input PageBlocksImagegridImagesMutation {
 input PageBlocksImagegridMutation {
   subtitle: String
   title: String
+  id: String
   images: [PageBlocksImagegridImagesMutation]
 }
 

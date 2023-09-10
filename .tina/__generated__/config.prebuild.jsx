@@ -7,6 +7,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid";
+
+// components/items/button.tsx
+import Link from "next/link";
+
+// components/blocks/speakers.tsx
 var speakersBlockSchema = {
   name: "speakers",
   label: "Speakers",
@@ -38,6 +43,11 @@ var speakersBlockSchema = {
       type: "string",
       label: "Title",
       name: "title"
+    },
+    {
+      type: "string",
+      label: "Text",
+      name: "paragraph"
     },
     {
       label: "Call to action",
@@ -113,7 +123,7 @@ var speakersBlockSchema = {
 
 // components/blocks/positions.tsx
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+import Link2 from "next/link";
 import { useEffect, useState } from "react";
 var positionsBlockSchema = {
   name: "positions",
@@ -176,11 +186,6 @@ var positionsBlockSchema = {
 
 // components/blocks/hero.tsx
 import Image2 from "next/image";
-
-// components/items/button.tsx
-import Link2 from "next/link";
-
-// components/blocks/hero.tsx
 var heroBlockSchema = {
   name: "hero",
   label: "Hero",
@@ -1356,6 +1361,11 @@ var imagegridBlockSchema = {
       type: "string",
       label: "Title",
       name: "title"
+    },
+    {
+      type: "string",
+      label: "ID",
+      name: "id"
     },
     {
       type: "object",
