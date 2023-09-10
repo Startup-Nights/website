@@ -15,7 +15,8 @@ blocks:
           alt: Startup Nights Stage
     _template: seo
   - subtitle: The biggest startup event in Switzerland
-    title: '2 & 3 November 2023, Winterthur'
+    title: 2 & 3 November 2023
+    title_line2: Winterthur
     cta:
       link: /tickets
       text: Get your ticket now
@@ -200,7 +201,9 @@ blocks:
   - subtitle: Partner
     title: Thank you very much!
     paragraph: >-
-        None of this would be possible without our esteemed partners who amplify our influence and work with us to create an event that helps startups reach new heights.
+      None of this would be possible without our esteemed partners who amplify
+      our influence and work with us to create an event that helps startups
+      reach new heights.
     cta:
       link: /partner
       text: All partners
@@ -278,6 +281,7 @@ blocks:
     background_color: bg-sn-black
     _template: content
 ---
+
 
 
 
