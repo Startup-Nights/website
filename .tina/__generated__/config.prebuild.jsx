@@ -801,7 +801,7 @@ var benefitsBlockSchema = {
 
 // components/blocks/overview.tsx
 import React6 from "react";
-import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
+import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, RocketLaunchIcon as RocketLaunchIcon2, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
 var overviewBlockSchema = {
   name: "overview",
   label: "Overview",
@@ -1087,7 +1087,7 @@ var TestimonialBlockSchema = {
 };
 
 // components/items/facts.tsx
-import { RocketLaunchIcon as RocketLaunchIcon2, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon5, CheckBadgeIcon as CheckBadgeIcon5, HeartIcon as HeartIcon5, LightBulbIcon as LightBulbIcon5, UserGroupIcon as UserGroupIcon5 } from "@heroicons/react/24/outline";
+import { RocketLaunchIcon as RocketLaunchIcon3, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon5, CheckBadgeIcon as CheckBadgeIcon5, HeartIcon as HeartIcon5, LightBulbIcon as LightBulbIcon5, UserGroupIcon as UserGroupIcon5 } from "@heroicons/react/24/outline";
 var FactsBlockSchema = {
   type: "object",
   label: "Figures",
@@ -1422,6 +1422,14 @@ var imagegridBlockSchema = {
           ]
         }
       ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
     }
   ]
 };
@@ -1919,6 +1927,9 @@ var config = defineStaticConfig({
             }
             if (document2._sys.filename === "program") {
               return `/program`;
+            }
+            if (document2._sys.filename === "speakers") {
+              return `/speakers`;
             }
             if (document2._sys.filename === "tickets") {
               return `/tickets`;

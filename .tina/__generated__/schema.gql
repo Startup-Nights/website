@@ -776,6 +776,7 @@ type PageBlocksImagegrid {
   paragraph: String
   id: String
   images: [PageBlocksImagegridImages]
+  background_color: String
 }
 
 type PageBlocksPitching_registration {
@@ -1264,6 +1265,7 @@ input PageBlocksImagegridFilter {
   paragraph: StringFilter
   id: StringFilter
   images: PageBlocksImagegridImagesFilter
+  background_color: StringFilter
 }
 
 input PageBlocksPitching_registrationFilter {
@@ -1871,6 +1873,7 @@ input PageBlocksImagegridMutation {
   paragraph: String
   id: String
   images: [PageBlocksImagegridImagesMutation]
+  background_color: String
 }
 
 input PageBlocksPitching_registrationMutation {

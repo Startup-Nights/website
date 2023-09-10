@@ -1,7 +1,7 @@
 import React from "react";
 import type { Template } from "tinacms";
 import { ColorPickerInput } from "../fields/color";
-import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, FunnelIcon, HeartIcon, LightBulbIcon, MegaphoneIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, FunnelIcon, HeartIcon, LightBulbIcon, MegaphoneIcon, RocketLaunchIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 
 export const Overview = ({ data }) => {
     return (
@@ -18,7 +18,7 @@ export const Overview = ({ data }) => {
 
                 <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {data?.benefit_items && data.benefit_items.map((benefit: any, i: number) => (
-                        <li key={i} className="col-span-1 text-left flex-wrap justify-start items-start bg-sn-black-lightest rounded-3xl p-6 md:p-8">
+                        <li key={i} className="col-span-1 text-left flex-wrap justify-start items-start bg-gradient-to-tr from-sn-black-lightest to-gray-900 rounded-3xl p-6 md:p-8">
                             <div className="flex justify-center mb-6">{getIcon(benefit.icon ? benefit.icon : 'cog')}</div>
                             <p className="font-semibold text-xl text-center text-gray-300 mb-6">{benefit.title}</p>
                             <div className="space-y-4">
@@ -94,6 +94,7 @@ const getIcon = (icon: string) => {
         case 'cog': return <Cog6ToothIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
         case 'megaphone': return <MegaphoneIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
         case 'funnel': return <FunnelIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'rocket': return <RocketLaunchIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
     }
 }
 
