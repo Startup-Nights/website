@@ -82,7 +82,7 @@ export const Speakers = ({ data }) => {
                 </div>
             </div>
 
-            <div className="flex justify-center items-center gap-x-8 mt-12">
+            <div className="flex justify-center items-center gap-x-8 mt-16 sm:mt-20">
                 <button onClick={scrollPrev} className="rounded-full p-3 hover:bg-sn-black-lightest">
                     <ArrowLongLeftIcon className="h-6 w-6" />
                 </button>

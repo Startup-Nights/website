@@ -7,7 +7,7 @@ export const Overview = ({ data }) => {
     return (
         <div className={data.background_color ? data.background_color : 'bg-sn-black'}>
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
-                <div className="text-center mb-20">
+                <div className="text-center mb-12 sm:mb-20">
                     <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
                         {data.subtitle}
                     </h2>
