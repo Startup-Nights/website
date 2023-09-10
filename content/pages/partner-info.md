@@ -31,6 +31,10 @@ blocks:
           If you have any questions or concerns regarding your booked modules,
           please contact the partner team.
         link: 'mailto:partner@startup-nights.ch'
+      - name: Brand and promotion assets
+        text: >-
+          Here you find all our templates for social media posts and stories.
+        link: 'https://company-239260.frontify.com/d/6Us5PJua15yW/guidelines?#/partner-communication/partner-communication'
     contentblock_left: true
     _template: content
   - items:
