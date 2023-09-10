@@ -199,6 +199,8 @@ blocks:
     _template: content
   - subtitle: Partner
     title: Thank you very much!
+    paragraph: >-
+        None of this would be possible without our esteemed partners who amplify our influence and work with us to create an event that helps startups reach new heights.
     cta:
       link: /partner
       text: All partners

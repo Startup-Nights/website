@@ -17,6 +17,11 @@ export const Partners = ({ data }) => {
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-sn-black sm:text-6xl">
                         {data.title}
                     </h1>
+                    {data.paragraph && (
+                        <p className="max-w-2xl mx-auto mt-8 text-left text-base font-regular tracking-normal text-black">
+                            {data.paragraph}
+                        </p>
+                    )}
                 </div>
 
                 <div className="space-y-24 text-center">
@@ -53,7 +58,7 @@ export const Partners = ({ data }) => {
                 </div>
 
                 {data.cta && data.cta.text !== '' && (
-                    <div className="text-center mb-20">
+                    <div className="text-center">
                         <div className="mt-12 text-center">
                             <CTA data={data} />
                         </div>
@@ -78,6 +83,11 @@ export const partnersBlockSchema: Template = {
             type: "string",
             label: "Title",
             name: "title",
+        },
+        {
+            type: "string",
+            label: "Text",
+            name: "paragraph",
         },
         {
             label: "Call to action",

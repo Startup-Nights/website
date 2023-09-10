@@ -401,6 +401,11 @@ var partnersBlockSchema = {
       name: "title"
     },
     {
+      type: "string",
+      label: "Text",
+      name: "paragraph"
+    },
+    {
       label: "Call to action",
       name: "cta",
       type: "object",
