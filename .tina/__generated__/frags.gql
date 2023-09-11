@@ -300,6 +300,11 @@ fragment PageParts on Page {
         __typename
         icon
         title
+        image {
+          __typename
+          src
+          alt
+        }
         description
       }
       background_color
@@ -334,15 +339,22 @@ fragment PageParts on Page {
     ... on PageBlocksPricing {
       subtitle
       title
+      cta {
+        __typename
+        link
+        text
+      }
       categories {
         __typename
         price
         selector
+        link
         name
         description
         benefits
         not_included
       }
+      background_color
     }
     ... on PageBlocksContent {
       content_block {

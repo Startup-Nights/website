@@ -1,7 +1,8 @@
 import { CheckIcon, XMarkIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
-import { useEffect } from 'react'
 import { Template } from 'tinacms'
+import { ColorPickerInput } from '../fields/color'
+import { Button } from '../items/button'
 
 export const PricingTable = ({ data }) => {
     const tickBox = (selector: string) => {
@@ -12,7 +13,7 @@ export const PricingTable = ({ data }) => {
     }
 
     return (
-        <div className="bg-sn-black">
+        <div className={data.background_color ? data.background_color : 'bg-sn-black'}>
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                 <div className="text-center mb-20">
                     <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase">
@@ -21,12 +22,18 @@ export const PricingTable = ({ data }) => {
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
                         {data.title}
                     </h1>
+
+                    {data?.cta && (
+                        <div className='mt-12'>
+                            <Button link={data?.cta?.link} text={data?.cta?.text} />
+                        </div>
+                    )}
                 </div>
 
                 <div className="isolate mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
                     {data.categories && data.categories.map((category, i) => (
-                        <Link key={`category-${i}`} href={'#sn-tito-embedded-widget'} onClick={() => tickBox(category.selector)} className='flex group items-stretch'>
-                            <div className='bg-sn-black-light rounded-3xl px-8 py-6 transition-all relative grid grid-cols-1 justify-start items-center border-2 border-transparent hover:border-white'>
+                        <Link key={`category-${i}`} href={`${category.selector ? '#sn-tito-embedded-widget' : category.link}`} onClick={() => category.selector ? tickBox(category.selector) : {}} className='flex group items-stretch w-full'>
+                            <div className='bg-sn-black-light w-full rounded-3xl px-8 py-6 transition-all relative grid grid-cols-1 justify-start items-center border-2 border-transparent hover:border-white'>
                                 <div className="absolute invisible -top-3 -right-3 p-2 bg-white rounded-full text-black group-hover:visible">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -80,6 +87,23 @@ export const pricingBlockSchema: Template = {
             name: "title",
         },
         {
+            label: "Call to action",
+            name: "cta",
+            type: "object",
+            fields: [
+                {
+                    type: "string",
+                    label: "Link",
+                    name: "link",
+                },
+                {
+                    type: "string",
+                    label: "Text",
+                    name: "text",
+                }
+            ]
+        },
+        {
             type: "object",
             label: "Categories",
             name: "categories",
@@ -94,6 +118,11 @@ export const pricingBlockSchema: Template = {
                     type: "string",
                     label: "CSS input selector",
                     name: "selector",
+                },
+                {
+                    type: "string",
+                    label: "Link (instead of CSS selector)",
+                    name: "link"
                 },
                 {
                     type: "string",
@@ -119,6 +148,14 @@ export const pricingBlockSchema: Template = {
                     list: true
                 },
             ]
-        }
+        },
+        {
+            type: "string",
+            name: "background_color",
+            label: "Background color",
+            ui: {
+                component: ColorPickerInput as any
+            }
+        },
     ]
 }
