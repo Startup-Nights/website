@@ -5,7 +5,7 @@ const webhook = new IncomingWebhook(url);
 
 export default async (req: any, res: any) => {
     webhook.send({
-        text: `Data Backup - Booth Signup (<@U032DKKUCLX>)
+        text: `Data Backup - Booth Signup
 ${JSON.stringify(req.body)}`,
     }).catch(error => {
         return res.status(500).json({ error: error.message || error.toString() });

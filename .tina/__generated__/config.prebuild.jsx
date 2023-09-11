@@ -4,7 +4,7 @@ import { defineStaticConfig } from "tinacms";
 // components/blocks/speakers.tsx
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid";
 
@@ -160,7 +160,7 @@ var speakersBlockSchema = {
 // components/blocks/positions.tsx
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Link2 from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect as useEffect2, useState as useState2 } from "react";
 var positionsBlockSchema = {
   name: "positions",
   label: "Positions",
@@ -330,7 +330,7 @@ var heroBlockSchema = {
 // components/blocks/partnerform.tsx
 import { Transition } from "@headlessui/react";
 import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
-import { Fragment as Fragment2, useState as useState2 } from "react";
+import { Fragment as Fragment2, useState as useState3 } from "react";
 import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 var partnerFormSchema = {
   name: "partnerform",
@@ -509,7 +509,7 @@ var partnersBlockSchema = {
 
 // components/blocks/countdown.tsx
 import Link5 from "next/link";
-import React4, { useEffect as useEffect2, useState as useState3 } from "react";
+import React4, { useEffect as useEffect3, useState as useState4 } from "react";
 var countdownBlockSchema = {
   name: "countdown",
   label: "Countdown",
@@ -614,13 +614,13 @@ import { Dialog, Transition as Transition2 } from "@headlessui/react";
 import { Fragment as Fragment3 } from "react";
 
 // components/blocks/newsletter.tsx
-import { useRef, useState as useState4, Fragment as Fragment4 } from "react";
+import { useRef, useState as useState5, Fragment as Fragment4 } from "react";
 import { Transition as Transition3 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon2 } from "@heroicons/react/24/outline";
 import { ExclamationCircleIcon as ExclamationCircleIcon2, XMarkIcon as XMarkIcon2 } from "@heroicons/react/20/solid";
 
 // components/items/infopoints.tsx
-import { useState as useState5 } from "react";
+import { useState as useState6 } from "react";
 var InfopointsBlockSchema = {
   type: "object",
   label: "Infopoints",
@@ -802,6 +802,7 @@ var benefitsBlockSchema = {
 // components/blocks/overview.tsx
 import React6 from "react";
 import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, RocketLaunchIcon as RocketLaunchIcon2, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
+import Image6 from "next/image";
 var overviewBlockSchema = {
   name: "overview",
   label: "Overview",
@@ -833,6 +834,23 @@ var overviewBlockSchema = {
           name: "title"
         },
         {
+          type: "object",
+          label: "Image",
+          name: "image",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image"
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string"
+            }
+          ]
+        },
+        {
           type: "string",
           label: "Description",
           name: "description",
@@ -852,10 +870,10 @@ var overviewBlockSchema = {
 };
 
 // components/blocks/gallery.tsx
-import React7, { useState as useState6 } from "react";
+import React7, { useState as useState7 } from "react";
 
 // components/items/nextimage.tsx
-import Image6 from "next/image";
+import Image7 from "next/image";
 
 // components/blocks/gallery.tsx
 import { PhotoAlbum } from "react-photo-album";
@@ -949,7 +967,7 @@ function cloudinaryLoader({ src, width, quality }) {
 }
 
 // components/blocks/tito.tsx
-import React8, { useEffect as useEffect3, useState as useState7 } from "react";
+import React8, { useEffect as useEffect4, useState as useState8 } from "react";
 import Head from "next/head";
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
 import Link7 from "next/link";
@@ -1045,7 +1063,7 @@ var seoBlockSchema = {
 import React9 from "react";
 
 // components/items/testimonial.tsx
-import Image7 from "next/image";
+import Image8 from "next/image";
 var TestimonialBlockSchema = {
   type: "object",
   label: "Testimonial",
@@ -1123,7 +1141,7 @@ var FactsBlockSchema = {
 };
 
 // components/items/members.tsx
-import Image8 from "next/image";
+import Image9 from "next/image";
 var MembersBlockSchema = {
   type: "object",
   label: "Members",
@@ -1289,6 +1307,23 @@ var pricingBlockSchema = {
       name: "title"
     },
     {
+      label: "Call to action",
+      name: "cta",
+      type: "object",
+      fields: [
+        {
+          type: "string",
+          label: "Link",
+          name: "link"
+        },
+        {
+          type: "string",
+          label: "Text",
+          name: "text"
+        }
+      ]
+    },
+    {
       type: "object",
       label: "Categories",
       name: "categories",
@@ -1303,6 +1338,11 @@ var pricingBlockSchema = {
           type: "string",
           label: "CSS input selector",
           name: "selector"
+        },
+        {
+          type: "string",
+          label: "Link (instead of CSS selector)",
+          name: "link"
         },
         {
           type: "string",
@@ -1328,12 +1368,20 @@ var pricingBlockSchema = {
           list: true
         }
       ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
     }
   ]
 };
 
 // components/blocks/booth.tsx
-import { Fragment as Fragment5, useEffect as useEffect4, useState as useState8 } from "react";
+import { Fragment as Fragment5, useEffect as useEffect5, useState as useState9 } from "react";
 import Link9 from "next/link";
 import { InformationCircleIcon as InformationCircleIcon2, PhotoIcon } from "@heroicons/react/20/solid";
 import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
@@ -1362,7 +1410,7 @@ var boothBlockSchema = {
 };
 
 // components/blocks/imagegrid.tsx
-import Image9 from "next/image";
+import Image10 from "next/image";
 import React11 from "react";
 var imagegridBlockSchema = {
   name: "imagegrid",
@@ -1435,7 +1483,7 @@ var imagegridBlockSchema = {
 };
 
 // components/blocks/pitching.tsx
-import { Fragment as Fragment6, useEffect as useEffect5, useState as useState9 } from "react";
+import { Fragment as Fragment6, useEffect as useEffect6, useState as useState10 } from "react";
 import { Transition as Transition5 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/20/solid";
 import {
@@ -1505,7 +1553,7 @@ var programBlockSchema = {
 };
 
 // components/blocks/booth_approved.tsx
-import { useEffect as useEffect6, useState as useState10 } from "react";
+import { useEffect as useEffect7, useState as useState11 } from "react";
 var boothApprovedBlockSchema = {
   name: "booth_approved",
   label: "Booth Approved",
@@ -1533,7 +1581,7 @@ var boothApprovedBlockSchema = {
 
 // components/blocks/crop.tsx
 import { PhotoIcon as PhotoIcon2 } from "@heroicons/react/24/outline";
-import { useState as useState11 } from "react";
+import { useState as useState12 } from "react";
 var cropBlockSchema = {
   name: "crop",
   label: "crop",

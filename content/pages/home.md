@@ -37,7 +37,7 @@ blocks:
       our speakers ignite inspiration and drive change.
     cta:
       link: /speakers
-      text: Discover more
+      text: Explore all speaker
     speakers:
       - name: Guy Parmelin
         position: Member of the Swiss Federal Council
@@ -102,13 +102,38 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
           alt: Léa Miggiano
-    background_color: bg-sn-black-light
+      - name: Pascal Uffer
+        position: CEO & Founder Boostbar
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/pascal_uffer.jpg
+          alt: Pascal Uffer
+      - name: Jörg Sandrock
+        position: CEO neon
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/joerg_sandrock.jpg
+          alt: Jörg Sandrock
+      - name: Christian Meisser
+        position: CEO & Legal Expert at LEXR
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/christian_meisser.jpg
+          alt: Christian Meisser
+    background_color: bg-sn-black
     _template: speakers
-  - subtitle: Become a part of the event
+  - subtitle: Be part of the Startup Nights
     title: Why attend?
     benefit_items:
       - icon: lightbulb
         title: Knowledge Extravaganza
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-207.jpg
+          alt: Auidence at startup nights
         description:
           - >-
             Over 60 workshops, keynotes, panel discussions, and fireside chats,
@@ -121,6 +146,10 @@ blocks:
             deliver on all fronts.
       - icon: usergroup
         title: Connect
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/041122_StartupNights_Tag2_.jpg
+          alt: Attendees speaking together at Startup Nights
         description:
           - >-
             Expecting over 8,000 attendees, Startup Nights is the place to be
@@ -133,6 +162,10 @@ blocks:
             collaborators, and tap into a diverse pool of expertise.
       - icon: rocket
         title: Innovation Unleashed
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/0C1A4726.jpg
+          alt: Attendees at a startup booth
         description:
           - >-
             Explore the future as 120 startups take center stage. Spanning
@@ -145,54 +178,64 @@ blocks:
             Whether you're looking for investment opportunities, job prospects,
             or avenues for collaboration, this is your chance to engage with
             them.
-    background_color: bg-sn-black
-    _template: overview
-  - content_block:
-      subtitle: Facts & figures
-      title: The biggest event!
-      content:
-        - >-
-          As the startup scene grows, we grow too. From a couple of hundred
-          visitors in 2017, we welcomed 8000 visitors at the 2022 edition. But
-          we want more! Accompanied by valued partners, we grow further and
-          improve constantly.
-      cta:
-        link: /partner
-        text: Become a partner
-      cta_secondary:
-        link: /booth
-        text: Apply for a booth
-    figures:
-      - name: Workshops
-        number: 40+
-        icon: chatbubble
-        rows: '3'
-        cols: '1'
-      - name: Founders
-        number: '1200'
-        icon: rocket
-        rows: '1'
-        cols: '2'
-      - name: Visitors
-        number: '8000'
-        icon: usergroup
-        rows: '2'
-        cols: '2'
-    contentblock_left: false
     background_color: bg-sn-black-light
-    _template: content
+    _template: overview
+  - subtitle: Compare the ticket categories
+    title: Get your Ticket!
+    cta:
+      link: /tickets
+      text: More details
+    categories:
+      - price: 59
+        link: /tickets#sn-tito-embedded-widget
+        name: Founder Ticket
+        benefits:
+          - 2-day access to Startup Nights
+          - Free drinks & food
+          - Access to Matchmaking Platform
+      - price: 169
+        link: /tickets#sn-tito-embedded-widget
+        name: Investor Ticket
+        benefits:
+          - 2-day access to Startup Nights
+          - Free drinks & food
+          - Access to Matchmaking Platform & Investor lounge
+      - price: 199
+        link: /tickets#sn-tito-embedded-widget
+        name: Corporate Ticket
+        benefits:
+          - 2-day access to Startup Nights
+          - Free drinks and food
+          - Access to Matchmaking Platform & Leaders Brunch
+      - price: 169
+        link: /tickets#sn-tito-embedded-widget
+        name: Ecosystem Ticket
+        benefits:
+          - 2-day access to Startup Nights
+          - Free drinks and food
+          - Access to Matchmaking Platform
+      - price: 49
+        link: /tickets#sn-tito-embedded-widget
+        name: Visitor & Student Ticket
+        benefits:
+          - 2-day access to Startup Nights
+          - Free drinks and food
+    background_color: bg-sn-black
+    _template: pricing
   - content_block:
       subtitle: Pitch and win
       title: Apply for the Pitching Competition.
       content:
         - >-
-          There ar etwo categories in the competition; seed and pre-seed. For
-          each round, there is a dedicated jury that will select a winning
-          pitch.
+          Are you an early-stage startup and ready to take it to the next level?
+          Don't miss out on this incredible opportunity at Startup Nights 2023.
+          Leave a lasting impression that opens doors to future opportunities!
         - >-
-          The applications are open and we'll get in touch soon once you have
-          registered.
-        - Note that the deadline for the registrations is 30.09.23!
+          Our jury of well-known investors is coming together to identify the
+          cream of the crop among early-stage startups. There will be two
+          winners at Startup Nights 2023: a "pre-seed" and a "seed" stage
+          winner.
+        - 'Application Deadline: 30 September 2023'
       cta:
         link: /pitching
         text: Apply
@@ -240,7 +283,7 @@ blocks:
         alt: Claudius Stammbach
         stage: seed
     contentblock_left: true
-    background_color: bg-sn-black
+    background_color: bg-sn-black-light
     _template: content
   - content_block:
       subtitle: Impressions
@@ -250,19 +293,40 @@ blocks:
           Last year we had the first edition of two days in a new location. And
           it was awesome! 42 speakers, 500 founders, and 8000 visitors made the
           Startup Nights 2022 unforgettable.
-        - >-
-          As we already started with the preaparations for this year's event, we
-          also like to take a look back.
       cta:
         link: /impressions
-        text: Cherish the memories
+        text: More impressions
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-207.jpg
       alt: People at a panel discussion
     contentblock_left: false
-    background_color: bg-sn-black-light
+    background_color: bg-sn-black
     _template: content
+  - subtitle: Startup World
+    title: Discover the next unicorn.
+    cta:
+      link: /startups
+      text: Check all exhibiting startups
+    partners:
+      - partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/711765031-Kopie+von+OoomniumLogo_Wide_Color.png
+            alt: oomnium
+            link: 'https://oomnium.com/en'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/740971315-Type%253DCombined+Mark%252C+Color%253DPrimary_scaled.png
+            alt: graphe health
+            link: 'https://grapehealth.ch/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/632614960-steasy_black_registered_CMYK.png
+            alt: steasy
+            link: 'https://steasy.ch/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/769135031-onify_Logo_Black_RGB.svg
+            alt: onify
+            link: 'https://www.onify.ch/'
+    _template: partner_list
   - content_block:
       subtitle: About us
       title: Who we are.
@@ -293,7 +357,7 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2021/speaker/melanie-gabriel.png
         alt: Melanie Gabriel
     contentblock_left: true
-    background_color: bg-sn-black-lightest
+    background_color: bg-sn-black
     _template: content
   - subtitle: Partner
     title: Thank you very much!
@@ -324,31 +388,15 @@ blocks:
             alt: Sparrow Ventures
             link: 'https://sparrow-ventures.com'
     _template: partner_list
-  - subtitle: Startup World
-    title: Discover the next unicorn.
-    cta:
-      link: /startups
-      text: Check out all exhibitors
-    partners:
-      - partners:
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/711765031-Kopie+von+OoomniumLogo_Wide_Color.png
-            alt: oomnium
-            link: 'https://oomnium.com/en'
-          - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/740971315-Type%253DCombined+Mark%252C+Color%253DPrimary_scaled.png
-            alt: graphe health
-            link: 'https://grapehealth.ch/'
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/632614960-steasy_black_registered_CMYK.png
-            alt: steasy
-            link: 'https://steasy.ch/'
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/769135031-onify_Logo_Black_RGB.svg
-            alt: onify
-            link: 'https://www.onify.ch/'
-    _template: partner_list
 ---
+
+
+
+
+
+
+
+
 
 
 

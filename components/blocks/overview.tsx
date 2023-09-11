@@ -2,6 +2,7 @@ import React from "react";
 import type { Template } from "tinacms";
 import { ColorPickerInput } from "../fields/color";
 import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, FunnelIcon, HeartIcon, LightBulbIcon, MegaphoneIcon, RocketLaunchIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export const Overview = ({ data }) => {
     return (
@@ -16,15 +17,32 @@ export const Overview = ({ data }) => {
                     </h1>
                 </div>
 
-                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {data?.benefit_items && data.benefit_items.map((benefit: any, i: number) => (
-                        <li key={i} className="col-span-1 text-left flex-wrap justify-start items-start bg-gradient-to-tr from-sn-black-lightest to-gray-900 rounded-3xl p-6 md:p-8">
-                            <div className="flex justify-center mb-6">{getIcon(benefit.icon ? benefit.icon : 'cog')}</div>
-                            <p className="font-semibold text-xl text-center text-gray-300 mb-6">{benefit.title}</p>
-                            <div className="space-y-4">
-                                {benefit?.description && benefit.description.map((description: any, key: number) => (
-                                    <p key={`description-${i}-${key}`} className="text-md leading-6 text-gray-400">{description}</p>
-                                ))}
+                        <li key={i} className={'relative text-left bg-gradient-to-tr from-sn-black-lightest to-gray-900' +
+                            ' rounded-3xl py-8 px-6 md:py-16 md:px-12 overflow-hidden'}>
+                            {benefit.image && benefit.image.src && benefit.image.src !== '' && (
+                                <div className='absolute inset-0'>
+                                    <Image
+                                        className="w-full h-full object-cover blur-[2px]"
+                                        src={benefit.image.src}
+                                        alt={benefit.image.alt}
+                                        width="0"
+                                        height="0"
+                                        sizes="100vw"
+                                    />
+                                    <div className="absolute inset-0 mix-blend-multiply bg-gradient-to-tr from-sn-black-lightest to-gray-600" />
+                                </div>
+                            )}
+
+                            <div className="relative">
+                                <div className="flex justify-center mb-6">{getIcon(benefit.icon ? benefit.icon : 'cog')}</div>
+                                <p className="font-semibold text-2xl text-center text-gray-300 mb-6">{benefit.title}</p>
+                                <div className="space-y-4">
+                                    {benefit?.description && benefit.description.map((description: any, key: number) => (
+                                        <p key={`description-${i}-${key}`} className="text-md leading-6 text-gray-300">{description}</p>
+                                    ))}
+                                </div>
                             </div>
                         </li>
                     ))}
@@ -65,6 +83,23 @@ export const overviewBlockSchema: Template = {
                     name: "title",
                 },
                 {
+                    type: "object",
+                    label: "Image",
+                    name: "image",
+                    fields: [
+                        {
+                            name: "src",
+                            label: "Image Source",
+                            type: "image",
+                        },
+                        {
+                            name: "alt",
+                            label: "Alt Text",
+                            type: "string",
+                        },
+                    ],
+                },
+                {
                     type: "string",
                     label: "Description",
                     name: "description",
@@ -86,15 +121,15 @@ export const overviewBlockSchema: Template = {
 
 const getIcon = (icon: string) => {
     switch (icon) {
-        case 'chatbubble': return <ChatBubbleLeftRightIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'lightbulb': return <LightBulbIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'heart': return <HeartIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'usergroup': return <UserGroupIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'checkbadge': return <CheckBadgeIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'cog': return <Cog6ToothIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'megaphone': return <MegaphoneIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'funnel': return <FunnelIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'rocket': return <RocketLaunchIcon className="mr-1.5 h-8 w-8 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'chatbubble': return <ChatBubbleLeftRightIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'lightbulb': return <LightBulbIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'heart': return <HeartIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'usergroup': return <UserGroupIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'checkbadge': return <CheckBadgeIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'cog': return <Cog6ToothIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'megaphone': return <MegaphoneIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'funnel': return <FunnelIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
+        case 'rocket': return <RocketLaunchIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
     }
 }
 
