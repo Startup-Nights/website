@@ -801,8 +801,12 @@ var benefitsBlockSchema = {
 
 // components/blocks/overview.tsx
 import React6 from "react";
-import { ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, RocketLaunchIcon as RocketLaunchIcon2, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
 import Image6 from "next/image";
+
+// components/util/icons.tsx
+import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, InformationCircleIcon, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon as RocketLaunchIcon2, StarIcon, TicketIcon, TrophyIcon, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
+
+// components/blocks/overview.tsx
 var overviewBlockSchema = {
   name: "overview",
   label: "Overview",
@@ -969,7 +973,7 @@ function cloudinaryLoader({ src, width, quality }) {
 // components/blocks/tito.tsx
 import React8, { useEffect as useEffect4, useState as useState8 } from "react";
 import Head from "next/head";
-import { InformationCircleIcon } from "@heroicons/react/24/outline";
+import { InformationCircleIcon as InformationCircleIcon2 } from "@heroicons/react/24/outline";
 import Link7 from "next/link";
 var titoBlockSchema = {
   name: "tito",
@@ -1383,7 +1387,7 @@ var pricingBlockSchema = {
 // components/blocks/booth.tsx
 import { Fragment as Fragment5, useEffect as useEffect5, useState as useState9 } from "react";
 import Link9 from "next/link";
-import { InformationCircleIcon as InformationCircleIcon2, PhotoIcon } from "@heroicons/react/20/solid";
+import { InformationCircleIcon as InformationCircleIcon3, PhotoIcon } from "@heroicons/react/20/solid";
 import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/20/solid";
@@ -1486,7 +1490,7 @@ var imagegridBlockSchema = {
 // components/blocks/pitching.tsx
 import { Fragment as Fragment6, useEffect as useEffect6, useState as useState10 } from "react";
 import { Transition as Transition5 } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/20/solid";
+import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon4 } from "@heroicons/react/20/solid";
 import {
   ExclamationCircleIcon as ExclamationCircleIcon4,
   PlusIcon as PlusIcon2,
@@ -1768,15 +1772,6 @@ var config = defineStaticConfig({
                 label: "Nav Links",
                 name: "nav",
                 list: true,
-                ui: {
-                  itemProps: (item) => {
-                    return { label: item?.label };
-                  },
-                  defaultItem: {
-                    href: "home",
-                    label: "Home"
-                  }
-                },
                 fields: [
                   {
                     type: "string",
@@ -1787,6 +1782,56 @@ var config = defineStaticConfig({
                     type: "string",
                     label: "Label",
                     name: "label"
+                  },
+                  {
+                    type: "object",
+                    name: "subitems",
+                    list: true,
+                    fields: [
+                      {
+                        type: "string",
+                        label: "Link",
+                        name: "href"
+                      },
+                      {
+                        type: "string",
+                        label: "Label",
+                        name: "label"
+                      },
+                      {
+                        type: "string",
+                        label: "Description",
+                        name: "description"
+                      },
+                      {
+                        type: "string",
+                        label: "Icon",
+                        name: "icon"
+                      }
+                    ]
+                  },
+                  {
+                    type: "object",
+                    label: "CTAs",
+                    name: "callsToAction",
+                    list: true,
+                    fields: [
+                      {
+                        type: "string",
+                        label: "Link",
+                        name: "href"
+                      },
+                      {
+                        type: "string",
+                        label: "Label",
+                        name: "label"
+                      },
+                      {
+                        type: "string",
+                        label: "Icon",
+                        name: "icon"
+                      }
+                    ]
                   }
                 ]
               },

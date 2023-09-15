@@ -194,15 +194,6 @@ const config = defineStaticConfig({
                                 label: "Nav Links",
                                 name: "nav",
                                 list: true,
-                                ui: {
-                                    itemProps: (item) => {
-                                        return { label: item?.label };
-                                    },
-                                    defaultItem: {
-                                        href: "home",
-                                        label: "Home",
-                                    },
-                                },
                                 fields: [
                                     {
                                         type: "string",
@@ -214,6 +205,56 @@ const config = defineStaticConfig({
                                         label: "Label",
                                         name: "label",
                                     },
+                                    {
+                                        type: "object",
+                                        name: "subitems",
+                                        list: true,
+                                        fields: [
+                                            {
+                                                type: "string",
+                                                label: "Link",
+                                                name: "href",
+                                            },
+                                            {
+                                                type: "string",
+                                                label: "Label",
+                                                name: "label",
+                                            },
+                                            {
+                                                type: "string",
+                                                label: "Description",
+                                                name: "description"
+                                            },
+                                            {
+                                                type: "string",
+                                                label: "Icon",
+                                                name: "icon"
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        type: "object",
+                                        label: "CTAs",
+                                        name: "callsToAction",
+                                        list: true,
+                                        fields: [
+                                            {
+                                                type: "string",
+                                                label: "Link",
+                                                name: "href",
+                                            },
+                                            {
+                                                type: "string",
+                                                label: "Label",
+                                                name: "label",
+                                            },
+                                            {
+                                                type: "string",
+                                                label: "Icon",
+                                                name: "icon"
+                                            },
+                                        ]
+                                    }
                                 ],
                             },
                             {

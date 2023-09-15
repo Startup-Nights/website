@@ -183,9 +183,24 @@ type PostConnection implements Connection {
   edges: [PostConnectionEdges]
 }
 
+type GlobalHeaderNavSubitems {
+  href: String
+  label: String
+  description: String
+  icon: String
+}
+
+type GlobalHeaderNavCallsToAction {
+  href: String
+  label: String
+  icon: String
+}
+
 type GlobalHeaderNav {
   href: String
   label: String
+  subitems: [GlobalHeaderNavSubitems]
+  callsToAction: [GlobalHeaderNavCallsToAction]
 }
 
 type GlobalHeaderSocial {
@@ -244,9 +259,24 @@ type Global implements Node & Document {
   _values: JSON!
 }
 
+input GlobalHeaderNavSubitemsFilter {
+  href: StringFilter
+  label: StringFilter
+  description: StringFilter
+  icon: StringFilter
+}
+
+input GlobalHeaderNavCallsToActionFilter {
+  href: StringFilter
+  label: StringFilter
+  icon: StringFilter
+}
+
 input GlobalHeaderNavFilter {
   href: StringFilter
   label: StringFilter
+  subitems: GlobalHeaderNavSubitemsFilter
+  callsToAction: GlobalHeaderNavCallsToActionFilter
 }
 
 input GlobalHeaderSocialFilter {
@@ -1408,9 +1438,24 @@ input PostMutation {
   _body: JSON
 }
 
+input GlobalHeaderNavSubitemsMutation {
+  href: String
+  label: String
+  description: String
+  icon: String
+}
+
+input GlobalHeaderNavCallsToActionMutation {
+  href: String
+  label: String
+  icon: String
+}
+
 input GlobalHeaderNavMutation {
   href: String
   label: String
+  subitems: [GlobalHeaderNavSubitemsMutation]
+  callsToAction: [GlobalHeaderNavCallsToActionMutation]
 }
 
 input GlobalHeaderSocialMutation {

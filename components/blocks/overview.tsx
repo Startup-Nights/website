@@ -1,8 +1,8 @@
 import React from "react";
 import type { Template } from "tinacms";
 import { ColorPickerInput } from "../fields/color";
-import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, FunnelIcon, HeartIcon, LightBulbIcon, MegaphoneIcon, RocketLaunchIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import { getIcon } from "../util/icons";
 
 export const Overview = ({ data }) => {
     return (
@@ -36,7 +36,7 @@ export const Overview = ({ data }) => {
                             )}
 
                             <div className="relative">
-                                <div className="flex justify-center mb-6">{getIcon(benefit.icon ? benefit.icon : 'cog')}</div>
+                                <div className="flex justify-center mb-6">{getIcon(benefit.icon ? benefit.icon : 'cog', 'mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200 ')}</div>
                                 <p className="font-semibold text-2xl text-center text-gray-300 mb-6">{benefit.title}</p>
                                 <div className="space-y-4">
                                     {benefit?.description && benefit.description.map((description: any, key: number) => (
@@ -117,19 +117,4 @@ export const overviewBlockSchema: Template = {
         },
     ],
 };
-
-
-const getIcon = (icon: string) => {
-    switch (icon) {
-        case 'chatbubble': return <ChatBubbleLeftRightIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'lightbulb': return <LightBulbIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'heart': return <HeartIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'usergroup': return <UserGroupIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'checkbadge': return <CheckBadgeIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'cog': return <Cog6ToothIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'megaphone': return <MegaphoneIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'funnel': return <FunnelIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-        case 'rocket': return <RocketLaunchIcon className="mr-1.5 h-10 w-10 md:h-10 md:w-10 flex-shrink-0 text-gray-200" aria-hidden="true" />
-    }
-}
 

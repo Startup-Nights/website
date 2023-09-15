@@ -32,6 +32,19 @@ fragment GlobalParts on Global {
       __typename
       href
       label
+      subitems {
+        __typename
+        href
+        label
+        description
+        icon
+      }
+      callsToAction {
+        __typename
+        href
+        label
+        icon
+      }
     }
     social {
       __typename
