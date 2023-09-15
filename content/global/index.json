@@ -34,7 +34,7 @@
                 ],
                 "callsToAction": [
                     {
-                        "href": "ticket",
+                        "href": "tickets",
                         "label": "Get your ticket",
                         "icon": "ticket"
                     },
