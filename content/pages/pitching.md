@@ -26,6 +26,13 @@ blocks:
         link: ''
         text: ''
     members:
+      - name: Andreas Schlenker
+        position: 'Head of M&A, Partnering and Investing at Axpo Group'
+        linkedin: 'https://www.linkedin.com/in/andreasschlenker/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-schlenker.jpg
+        alt: Andreas Schlenker
+        stage: seed
       - name: Arijana Walcott
         position: Founder Dart Labs
         linkedin: 'https://www.linkedin.com/in/arijanawalcott/'
@@ -108,6 +115,7 @@ blocks:
     _template: content
   - _template: pitching_registration
 ---
+
 
 
 
