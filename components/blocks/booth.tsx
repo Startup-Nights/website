@@ -7,6 +7,7 @@ import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import {
     ExclamationCircleIcon,
+    ExclamationTriangleIcon,
     PlusIcon,
     XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -1395,16 +1396,16 @@ const Packages = ({ regPackage, setRegPackage }) => {
                         value={mailingList}
                         className={({ checked, active }) =>
                             classNames(
-                                checked ? "border-transparent" : "border-gray-600",
-                                active ? "border-sn-yellow ring-2 ring-sn-yellow" : "",
-                                "relative flex cursor-pointer rounded-3xl border bg-sn-black-light p-8 shadow-sm focus:outline-none"
+                                active ? "border-2 border-sn-yellow" : "border-2 border-gray-600",
+                                checked ? "border-sn-yellow" : "border-gray-600",
+                                "relative flex cursor-pointer rounded-3xl p-8 shadow-sm bg-sn-black-lightest"
                             )
                         }
                     >
                         {({ checked, active }) => (
-                            <>
-                                <span className="flex flex-1">
-                                    <span className="flex flex-col">
+                            <div className="overflow-hidden p-0">
+                                <span className="flex flex-1 mb-8">
+                                    <span className="flex flex-col z-10">
                                         <RadioGroup.Label
                                             as="span"
                                             className="block text-lg font-bold text-gray-200"
@@ -1416,7 +1417,9 @@ const Packages = ({ regPackage, setRegPackage }) => {
                                             as="span"
                                             className="mt-4 flex items-center text-sm text-gray-200"
                                         >
-                                            {mailingList.description}
+                                            <div className="flex flex-wrap">
+                                                {mailingList.description}
+                                            </div>
                                         </RadioGroup.Description>
                                         <RadioGroup.Description
                                             as="span"
@@ -1429,19 +1432,24 @@ const Packages = ({ regPackage, setRegPackage }) => {
                                 <CheckCircleIcon
                                     className={classNames(
                                         !checked ? "invisible" : "",
-                                        "h-5 w-5 text-sn-yellow"
+                                        "h-5 w-5 text-sn-yellow absolute top-5 right-5"
                                     )}
                                     aria-hidden="true"
                                 />
                                 <span
                                     className={classNames(
-                                        active ? "border" : "border-2",
-                                        checked ? "border-sn-yellow" : "border-transparent",
                                         "pointer-events-none absolute -inset-px rounded-3xl"
                                     )}
                                     aria-hidden="true"
                                 />
-                            </>
+
+                                {mailingList.note && (
+                                    <div className="absolute overflow-hidden lef-0 w-full right-0 bottom-0 flex justify-center items-center gap-x-4 py-2 px-4 pl-3 rounded-3xl rounded-t-none bg-red-800">
+                                        <ExclamationTriangleIcon className="h-6 w-5" />
+                                        <span className="font-semibold">{mailingList.note}</span>
+                                    </div>
+                                )}
+                            </div>
                         )}
                     </RadioGroup.Option>
                 ))}
@@ -1543,6 +1551,7 @@ const registration_packages = [
         title: "Rocket",
         price: "CHF 500",
         description: "3x3m area with a bar table and 230V outlet",
+        note: "Limited availability!",
     },
 ];
 
