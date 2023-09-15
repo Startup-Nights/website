@@ -5,7 +5,45 @@
         "nav": [
             {
                 "href": "program",
-                "label": "Program"
+                "label": "Program",
+                "subitems": [
+                    {
+                        "href": "program",
+                        "label": "Timetable",
+                        "description": "When, where, what.",
+                        "icon": "calendar"
+                    },
+                    {
+                        "href": "speakers",
+                        "label": "Speakers",
+                        "description": "Discover the thought leaders, innovators, and industry pioneers",
+                        "icon": "chatbubble"
+                    },
+                    {
+                        "href": "startups",
+                        "label": "Startup World",
+                        "description": "Explore the exhibiting startups",
+                        "icon": "booth"
+                    },
+                    {
+                        "href": "pitching",
+                        "label": "Pitching Competition",
+                        "description": "Apply for a spot and pitch your product",
+                        "icon": "trophy"
+                    }
+                ],
+                "callsToAction": [
+                    {
+                        "href": "ticket",
+                        "label": "Get your ticket",
+                        "icon": "ticket"
+                    },
+                    {
+                        "href": "faq",
+                        "label": "FAQ",
+                        "icon": "info"
+                    }
+                ]
             },
             {
                 "href": "impressions",
@@ -17,11 +55,33 @@
             },
             {
                 "href": "about",
-                "label": "About"
-            },
-            {
-                "href": "contact",
-                "label": "Contact"
+                "label": "About",
+                "subitems": [
+                    {
+                        "href": "about",
+                        "label": "About us",
+                        "description": "Meet the people behind the scenes",
+                        "icon": "star"
+                    },
+                    {
+                        "href": "startup-city-winterthur",
+                        "label": "Startup City Winterthur",
+                        "description": "Discover the locations and benefits",
+                        "icon": "office"
+                    },
+                    {
+                        "href": "hiring",
+                        "label": "Volunteer",
+                        "description": "Join our cause and mission",
+                        "icon": "heart"
+                    },
+                    {
+                        "href": "contact",
+                        "label": "Contact us",
+                        "description": "Get in touch and drop us an email",
+                        "icon": "phone"
+                    }
+                ]
             }
         ],
         "social": [
