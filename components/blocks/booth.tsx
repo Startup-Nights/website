@@ -1444,7 +1444,9 @@ const Packages = ({ regPackage, setRegPackage }) => {
                                 />
 
                                 {mailingList.note && (
-                                    <div className="absolute overflow-hidden lef-0 w-full right-0 bottom-0 flex justify-center items-center gap-x-4 py-2 px-4 pl-3 rounded-3xl rounded-t-none bg-red-800">
+                                    <div className={'absolute overflow-hidden lef-0 w-full right-0 bottom-0 flex ' +
+                                        'justify-center items-center gap-x-4 py-2 px-4 pl-3 rounded-3xl rounded-t-none ' +
+                                        'bg-gradient-to-r from-rose-700 to-red-700'}>
                                         <ExclamationTriangleIcon className="h-6 w-5" />
                                         <span className="font-semibold">{mailingList.note}</span>
                                     </div>
