@@ -45,7 +45,7 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/891468767-301258488-Microsoft_logo_scaled_scaled.png
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/925682086-microsoft_scaled.png
             alt: Microsoft For Startups
             link: 'https://www.microsoft.com/de-ch/startups'
           - src: >-
@@ -104,12 +104,16 @@ blocks:
             alt: MME
             link: 'https://mme.ch'
           - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/lexr.png
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/724142705-lexr_scaled.png
             alt: LEXR
             link: 'https://lexr.ch'
       - title: Investor Partner
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/392600770-wingman_scaled.png
+            alt: wingman
+            link: 'https://www.wingman.ch/'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/tenity.png
             alt: Tenity
@@ -314,6 +318,26 @@ blocks:
       - title: Food and Beverage Partner
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/4019791-danko-catering_scaled.png
+            alt: Danko Catering
+            link: 'https://www.danko-catering.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/230083181-focuswater_scaled.png
+            alt: Focus Water
+            link: 'https://focuswater.ch/en/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/17024589-nespresso_scaled.png
+            alt: Nespresso
+            link: 'https://www.nespresso.com/ch/en/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/653511610-valser_scaled.png
+            alt: Valser
+            link: 'https://www.valser.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/241280900-vivikola_scaled.png
+            alt: Vivikola
+            link: 'https://vivikola.ch/en/'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/noser_engineering.png
             alt: Noser Engineering
