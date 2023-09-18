@@ -10,6 +10,14 @@ enum uploadState {
 }
 
 export const Crop = ({ data }) => {
+    const checks = [
+        { name: 'is a png file', id: 'png-format', checked: false },
+        { name: 'has your company in the filename (SEO relevant)', id: 'company-filename', checked: false },
+        { name: 'has a sufficient quality (not pixelated, at least 600 x 300 px)', id: 'quality', checked: false },
+        { name: 'has a transparent background', id: 'background', checked: false },
+    ]
+
+    const [checkItems, setCheckItems] = useState(checks)
     const [companyLogoLoading, setCompanyLogoLoading] = useState({
         downloadUrl: "",
         error: "",
@@ -86,12 +94,15 @@ export const Crop = ({ data }) => {
     return (
         <div className="bg-sn-black-light">
             <div className="max-w-5xl mx-auto py-12 px-8 lg:p-24">
-                <div className="text-center mb-20">
+                <div className="text-center mb-16">
                     <h1 className="mb-12 block text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
                         Logo preview
                     </h1>
                     <p className="max-w-2xl mx-auto mt-8 text-left text-base font-regular tracking-normal text-gray-400">
-                        Here you have the possibility to check how your logo will appear on our website. We have listed the different type of usages that we might have so you don't have to worry about your logo not being visible.
+                        In order to make sure that we use the right logo and that it complies with your CI/CD, we ask you to check the preview of your logo first before sending it to us. To make this process as frictionless as possible, the logo also has to comply to a minimal set of rules.
+                    </p>
+                    <p className="max-w-2xl mx-auto mt-4 text-left text-base font-regular tracking-normal text-gray-400">
+                        Once you are happy with the preview, you can simply send us the generated link from the bottom.
                     </p>
                 </div>
 
@@ -157,7 +168,6 @@ export const Crop = ({ data }) => {
                             If you are not happy and want to adjust the logo, either click the button below or refresh the page.
                         </p>
 
-
                         <button
                             className="mt-6 flex items-center justify-center rounded-full bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide"
                             onClick={() => {
@@ -201,19 +211,56 @@ export const Crop = ({ data }) => {
 
                         {(companyLogoLoading.state === uploadState.None ||
                             companyLogoLoading.state === uploadState.Error) && (
+
                                 <div className="text-center">
                                     <PhotoIcon
                                         className="mx-auto h-12 w-12 text-gray-300"
                                         aria-hidden="true"
                                     />
 
-                                    <div className="mx-auto flex justify-center mt-4 text-sm items-baseline leading-6 text-gray-600">
+                                    <div className="max-w-2xl grid mt-4 text-sm items-baseline leading-6 text-gray-600">
+                                        <p className="text-left text-base font-regular tracking-normal text-gray-400">
+                                            Quality check; your logo...
+                                        </p>
+                                        <div className="mx-auto text-left mt-2 text-gray-400">
+                                            <ul role="list" className="">
+                                                {checkItems.map((check: any, i: number) => (
+                                                    <li key={check.id}>
+                                                        <div className="flex h-6 items-center">
+                                                            <input
+                                                                id={check.id}
+                                                                name={check.id}
+                                                                type="checkbox"
+                                                                className="h-4 w-4 rounded bg-sn-black-lightest border-sn-black-lightest text-sn-yellow-dark focus:ring-sn-yellow-dark"
+                                                                checked={checkItems[i].checked}
+                                                                onChange={() => {
+                                                                    checkItems[i].checked = !checkItems[i].checked
+                                                                    setCheckItems([...checkItems])
+                                                                }}
+                                                            />
+                                                            <div className="ml-3 text-sm leading-6">
+                                                                <label
+                                                                    htmlFor={check.id}
+                                                                    className="font-medium text-gray-200"
+                                                                >
+                                                                    {check.name}
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+
                                         <label
                                             htmlFor="company_logo"
-                                            className="relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-light hover:bg-sn-black-lightest font-semibold text-sn-yellow focus-within:outline-none focus-within:ring-2 focus-within:ring-sn-yellow focus-within:ring-offset-2"
+                                            className={
+                                                `relative cursor-pointer py-1 px-2 rounded-md bg-sn-black-lightest hover:bg-sn-black-lightest font-semibold mt-6 ${checkItems.filter(check => check.checked).length !== checks.length ? 'text-gray-400 line-through' : 'text-sn-yellow'}`
+                                            }
                                         >
                                             <span>Upload a file</span>
                                             <input
+                                                disabled={checkItems.filter(check => check.checked).length !== checks.length}
                                                 id="company_logo"
                                                 name="company_logo"
                                                 accept=".png"
@@ -224,6 +271,7 @@ export const Crop = ({ data }) => {
                                             />
                                         </label>
                                     </div>
+
                                     <p className="mt-2 text-xs leading-5 text-gray-500">
                                         PNG up to 10MB
                                     </p>
