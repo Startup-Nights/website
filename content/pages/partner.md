@@ -317,7 +317,15 @@ blocks:
             link: 'https://ffhs.ch'
       - title: Food and Beverage Partner
         grid_cols: 4
-        partners:
+        partners: 
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/733092173-rebels00_scaled.png
+            alt: Rebels00
+            link: 'https://www.rebels00.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/785954316-ve-refinery_scaled.png
+            alt: VE Refinery
+            link: 'https://ve-refinery.ch/'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/4019791-danko-catering_scaled.png
             alt: Danko Catering
