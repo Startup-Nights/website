@@ -1,4 +1,5 @@
-import { PhotoIcon } from "@heroicons/react/24/outline";
+import { ExclamationTriangleIcon, InformationCircleIcon, PhotoIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 import { useState } from "react";
 import { Template } from "tinacms";
 
@@ -12,7 +13,7 @@ enum uploadState {
 export const Crop = ({ data }) => {
     const checks = [
         { name: 'is a png file', id: 'png-format', checked: false },
-        { name: 'has a sensible filename (like startup-nights.png)', id: 'sensible-filename', checked: false },
+        { name: 'has a sensible filename (like startup-nights.png, SEO relevant)', id: 'sensible-filename', checked: false },
         { name: 'has your company in the filename (SEO relevant)', id: 'company-filename', checked: false },
         { name: 'has a sufficient quality (not pixelated, at least 600 x 300 px)', id: 'quality', checked: false },
         { name: 'has a transparent background', id: 'background', checked: false },
@@ -105,6 +106,29 @@ export const Crop = ({ data }) => {
                     <p className="max-w-2xl mx-auto mt-4 text-left text-base font-regular tracking-normal text-gray-400">
                         Once you are happy with the preview, you can simply send us the generated link from the bottom.
                     </p>
+
+                    <div className="mt-6 rounded-3xl bg-sn-black-lightest p-8 text-left max-w-2xl mx-auto">
+                        <div className="flex">
+                            <div className="flex-shrink-0">
+                                <ExclamationTriangleIcon
+                                    className="h-5 w-5 text-sn-yellow"
+                                    aria-hidden="true"
+                                />
+                            </div>
+                            <div className="ml-3">
+                                <h3 className="font-medium text-gray-200">
+                                    About this preview
+                                </h3>
+                                <p className="mt-2 text-gray-400">
+                                    To be very explicit - it will display your logo exactly the way it will show up on the website!
+                                    We won't edit or adjust your logo.
+                                </p>
+                                <p className="mt-2 text-gray-400">
+                                    To get an idea how this will be used, you can take a look <Link className="italic underline underline-offset-4 text-sn-yellow" href={'/partner'}>at the partner page</Link>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 {companyLogoLoading.state === uploadState.Finished && (
