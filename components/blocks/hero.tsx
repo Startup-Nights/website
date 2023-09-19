@@ -38,39 +38,80 @@ export const Hero = ({ data }) => {
                 </div>
             )}
 
-            <div className="relative max-w-7xl mx-auto py-32 px-8 lg:py-52 text-center">
-                <div className="max-w-3xl mx-auto">
-                    <h2 className="font-medium leading-7 text-gray-200 lg:text-2xl">
-                        {data?.subtitle}
-                    </h2>
-                    <h1 className="mt-2 block text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
-                        {data?.title}
-                    </h1>
-                    <h2 className="mt-2 text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
-                        {data?.title_line2}
-                    </h2>
-                </div>
-
-                {(data?.cta || data?.cta_secondary) && (
-                    <div className="flex justify-center">
-                        <div className="mt-8 grid grid-cols-1 gap-y-6 md:flex md:flex-wrap md:gap-x-4">
-                            {data?.cta && data.cta.text !== '' && (
-                                <div>
-                                    <Button link={data?.cta?.link} new_tab={data?.cta?.new_tab} text={data?.cta?.text}>
-                                    </Button>
-                                </div>
-                            )}
-
-                            {data?.cta_secondary && data.cta_secondary.text !== '' && (
-                                <div>
-                                    <ButtonSecondary link={data?.cta_secondary?.link} without_background={data?.cta_secondary?.without_background} new_tab={data?.cta_secondary?.new_tab} text={data?.cta_secondary?.text}>
-                                    </ButtonSecondary>
-                                </div>
-                            )}
+            {data.video && data.video.src && (
+                <div className="relative max-w-7xl mx-auto text-center h-[500px] md:h-[600px] lg:h-[800px]">
+                    <div className="absolute bottom-0 left-0 right-0 pb-12 px-8">
+                        <div className="max-w-3xl mx-auto">
+                            <h2 className="font-medium leading-7 text-gray-200 lg:text-2xl">
+                                {data?.subtitle}
+                            </h2>
+                            <h1 className="mt-2 block text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
+                                {data?.title}
+                            </h1>
+                            <h2 className="mt-2 text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
+                                {data?.title_line2}
+                            </h2>
                         </div>
+
+                        {(data?.cta || data?.cta_secondary) && (
+                            <div className="flex justify-center">
+                                <div className="mt-8 grid grid-cols-1 gap-y-6 md:flex md:flex-wrap md:gap-x-4">
+                                    {data?.cta && data.cta.text !== '' && (
+                                        <div>
+                                            <Button link={data?.cta?.link} new_tab={data?.cta?.new_tab} text={data?.cta?.text}>
+                                            </Button>
+                                        </div>
+                                    )}
+
+                                    {data?.cta_secondary && data.cta_secondary.text !== '' && (
+                                        <div>
+                                            <ButtonSecondary link={data?.cta_secondary?.link} without_background={data?.cta_secondary?.without_background} new_tab={data?.cta_secondary?.new_tab} text={data?.cta_secondary?.text}>
+                                            </ButtonSecondary>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        )}
                     </div>
-                )}
-            </div>
+                </div>
+            )}
+
+            {!data.video && (
+                <div className="relative max-w-7xl mx-auto py-32 px-8 lg:py-52 text-center">
+                    <div className="max-w-3xl mx-auto">
+                        <h2 className="font-medium leading-7 text-gray-200 lg:text-2xl">
+                            {data?.subtitle}
+                        </h2>
+                        <h1 className="mt-2 block text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
+                            {data?.title}
+                        </h1>
+                        <h2 className="mt-2 text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
+                            {data?.title_line2}
+                        </h2>
+                    </div>
+
+                    {(data?.cta || data?.cta_secondary) && (
+                        <div className="flex justify-center">
+                            <div className="mt-8 grid grid-cols-1 gap-y-6 md:flex md:flex-wrap md:gap-x-4">
+                                {data?.cta && data.cta.text !== '' && (
+                                    <div>
+                                        <Button link={data?.cta?.link} new_tab={data?.cta?.new_tab} text={data?.cta?.text}>
+                                        </Button>
+                                    </div>
+                                )}
+
+                                {data?.cta_secondary && data.cta_secondary.text !== '' && (
+                                    <div>
+                                        <ButtonSecondary link={data?.cta_secondary?.link} without_background={data?.cta_secondary?.without_background} new_tab={data?.cta_secondary?.new_tab} text={data?.cta_secondary?.text}>
+                                        </ButtonSecondary>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    )}
+                </div>
+            )}
+
         </div>
     );
 };
