@@ -12,6 +12,7 @@ enum uploadState {
 export const Crop = ({ data }) => {
     const checks = [
         { name: 'is a png file', id: 'png-format', checked: false },
+        { name: 'has a sensible filename (like startup-nights.png)', id: 'sensible-filename', checked: false },
         { name: 'has your company in the filename (SEO relevant)', id: 'company-filename', checked: false },
         { name: 'has a sufficient quality (not pixelated, at least 600 x 300 px)', id: 'quality', checked: false },
         { name: 'has a transparent background', id: 'background', checked: false },
@@ -132,54 +133,30 @@ export const Crop = ({ data }) => {
                                     </div>
                                 </div>
                             </div>
-
-
-                            <div className="">
-                                <p className="text-gray-400 pb-6">Dark background</p>
-                                <div className="relative group p-8 bg-sn-black rounded-xl border-2 border-gray-200">
-                                    <div className="p-4 sm:p-8 rounded-xl">
-                                        <img
-                                            src={companyLogoLoading.downloadUrl}
-                                            className=""
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="">
-                                <p className="text-gray-400 pb-6">Dark background + hover preview</p>
-                                <div className="relative group p-8 bg-sn-black rounded-xl border-2 border-gray-200">
-                                    <div className="bg-sn-black-light p-4 sm:p-8 rounded-xl">
-                                        <img
-                                            src={companyLogoLoading.downloadUrl}
-                                            className=""
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
 
-                        <p className="mt-12 block text-base font-medium leading-6 text-gray-400">
-                            Before using this link, make sure that you are happy with the transparency, the spacing around your logo and in general with the preview. If you are happy, you can use the following link to reference your logo in booth or partner applications. Link to the image:</p>
-                        <p className="mt-4"><code className="bg-sn-black-lightest text-sm px-2 py-1 rounded-md leading-8 text-gray-200">{companyLogoLoading.downloadUrl}</code></p>
+                        <div className="max-w-2xl mx-auto">
+                            <p className="mt-12 block text-base font-medium leading-6 text-gray-400">
+                                Before using this link, make sure that you are happy with the transparency, the spacing around your logo and in general with the preview. If you are happy, you can use the following link to reference your logo in booth or partner applications. Link to the image:</p>
+                            <p className="mt-4"><code className="bg-sn-black-lightest text-sm px-2 py-1 rounded-md leading-8 text-gray-200">{companyLogoLoading.downloadUrl}</code></p>
 
-                        <p className="mt-12 block text-base font-medium leading-6 text-gray-400">
-                            If you are not happy and want to adjust the logo, either click the button below or refresh the page.
-                        </p>
+                            <p className="mt-12 block text-base font-medium leading-6 text-gray-400">
+                                If you are not happy and want to adjust the logo, either click the button below or refresh the page.
+                            </p>
 
-                        <button
-                            className="mt-6 flex items-center justify-center rounded-full bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide"
-                            onClick={() => {
-                                setCompanyLogoLoading({
-                                    state: uploadState.None,
-                                    error: "",
-                                    downloadUrl: "",
-                                });
-                            }}
-                        >
-                            Change logo
-                        </button>
+                            <button
+                                className="mt-6 flex items-center justify-center rounded-full bg-sn-yellow py-1.5 px-3 text-base font-semibold leading-7 sm:text-sm sm:leading-6 text-black hover:bg-sn-yellow-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 tracking-wide"
+                                onClick={() => {
+                                    setCompanyLogoLoading({
+                                        state: uploadState.None,
+                                        error: "",
+                                        downloadUrl: "",
+                                    });
+                                }}
+                            >
+                                Change logo
+                            </button>
+                        </div>
 
                     </>
                 )}
