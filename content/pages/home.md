@@ -222,6 +222,12 @@ blocks:
           - Free drinks and food
     background_color: bg-sn-black
     _template: pricing
+  - title: Opening doors in...
+    date: '2023-11-02'
+    cta:
+      link: /tickets
+      text: Get your ticket
+    _template: countdown
   - content_block:
       subtitle: Pitch and win
       title: Apply for the Pitching Competition.
@@ -389,6 +395,7 @@ blocks:
             link: 'https://sparrow-ventures.com'
     _template: partner_list
 ---
+
 
 
 
