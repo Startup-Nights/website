@@ -1394,11 +1394,13 @@ const Packages = ({ regPackage, setRegPackage }) => {
                     <RadioGroup.Option
                         key={mailingList.id}
                         value={mailingList}
+                        disabled={mailingList.disabled}
                         className={({ checked, active }) =>
                             classNames(
                                 active ? "border-2 border-sn-yellow" : "border-2 border-gray-600",
                                 checked ? "border-sn-yellow" : "border-gray-600",
-                                "relative flex cursor-pointer rounded-3xl p-8 shadow-sm bg-sn-black-lightest"
+                                mailingList.disabled ? '' : 'cursor-pointer',
+                                "relative flex rounded-3xl p-8 shadow-sm bg-sn-black-lightest"
                             )
                         }
                     >
@@ -1436,19 +1438,33 @@ const Packages = ({ regPackage, setRegPackage }) => {
                                     )}
                                     aria-hidden="true"
                                 />
-                                <span
-                                    className={classNames(
-                                        "pointer-events-none absolute -inset-px rounded-3xl"
-                                    )}
-                                    aria-hidden="true"
-                                />
 
-                                {mailingList.note && (
+                                {!mailingList.disabled && (
+                                    <>
+                                        <span
+                                            className={classNames(
+                                                "pointer-events-none absolute -inset-px rounded-3xl"
+                                            )}
+                                            aria-hidden="true"
+                                        />
+
+                                        {mailingList.note && (
+                                            <div className={'absolute overflow-hidden lef-0 w-full right-0 bottom-0 flex ' +
+                                                'justify-center items-center gap-x-4 py-2 px-4 pl-3 rounded-3xl rounded-t-none ' +
+                                                'bg-gradient-to-r from-rose-700 to-red-700'}>
+                                                <ExclamationTriangleIcon className="h-6 w-5" />
+                                                <span className="font-semibold">{mailingList.note}</span>
+                                            </div>
+                                        )}
+                                    </>
+                                )}
+
+                                {mailingList.disabled && (
                                     <div className={'absolute overflow-hidden lef-0 w-full right-0 bottom-0 flex ' +
                                         'justify-center items-center gap-x-4 py-2 px-4 pl-3 rounded-3xl rounded-t-none ' +
                                         'bg-gradient-to-r from-rose-700 to-red-700'}>
                                         <ExclamationTriangleIcon className="h-6 w-5" />
-                                        <span className="font-semibold">{mailingList.note}</span>
+                                        <span className="font-semibold">Sold out!</span>
                                     </div>
                                 )}
                             </div>
@@ -1545,6 +1561,7 @@ const registration_packages = [
         icon: "✈️",
         title: "Paperplane",
         price: "CHF 300",
+        disabled: false,
         description: "2x2m area with a bar table and 230V outlet",
     },
     {
@@ -1552,6 +1569,7 @@ const registration_packages = [
         icon: "🚀",
         title: "Rocket",
         price: "CHF 500",
+        disabled: true,
         description: "3x3m area with a bar table and 230V outlet",
         note: "Limited availability!",
     },
