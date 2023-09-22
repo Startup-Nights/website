@@ -135,8 +135,8 @@ export const Header = ({ data }) => {
 
                     </nav>
                     <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                        <Dialog.Panel className="fixed inset-0 z-40 overflow-y-auto backdrop-blur-md bg-sn-black/90 px-8 py-6 lg:hidden">
-                            <div className="flex items-center justify-between">
+                        <Dialog.Panel className="fixed inset-0 z-40 overflow-y-auto backdrop-blur-md bg-sn-black/95 py-6 lg:hidden">
+                            <div className="flex items-center justify-between px-8 ">
                                 <Link
                                     href="/"
                                     onClick={() => setMobileMenuOpen(false)}
@@ -153,49 +153,90 @@ export const Header = ({ data }) => {
                                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                                 </button>
                             </div>
-                            <div className="mt-6 flow-root">
-                                <div className="-my-6 divide-y-2 divide-slate-600">
-                                    <div className="space-y-2 py-6">
-                                        {data.nav && data.nav.map((item, i: number) => {
-                                            return (
-                                                <Link
-                                                    key={`${item.label}-${i}`}
-                                                    href={`${prefix}/${item.href}`}
-                                                    onClick={() => setMobileMenuOpen(false)}
-                                                    className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-400 hover:bg-gray-400/10'
-                                                >
-                                                    {item.label}
-                                                </Link>
-                                            );
-                                        })}
+                            <div className='px-6 sm:px-8'>
+                                <div className="mt-6 grid grid-cols-2 gap-x-4">
+                                    {data.nav && data.nav.filter(item => item.subitems).map((item: any, i: number) => (
+                                        <div key={item.label}>
+                                            <h3 className='block rounded-lg text-base font-semibold leading-7 text-gray-500'>
+                                                {item.label}
+                                            </h3>
+                                            <div className='space-y-4 mt-4'>
+                                                {item.subitems.map(subitem => (
+                                                    <Link
+                                                        key={`${subitem.label}-${i}`}
+                                                        href={`${prefix}/${subitem.href}`}
+                                                        onClick={() => setMobileMenuOpen(false)}
+                                                        className='flex items-center gap-x-5 rounded-lg text-xs sm:text-base font-semibold leading-7 text-gray-300'
+                                                    >
+                                                        {getIcon(subitem.icon, 'h-5 w-5 sm:h-6 sm:w-6 text-gray-200')}
+                                                        {subitem.label}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="mt-6 grid grid-cols-2 gap-x-4">
+                                    {data.nav && data.nav.filter(item => !item.subitems).map((item: any, i: number) => (
                                         <Link
-                                            className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-400 hover:bg-gray-400/10'
+                                            key={`${item.label}-${i}`}
+                                            href={`${prefix}/${item.href}`}
+                                            onClick={() => setMobileMenuOpen(false)}
+                                            className='text-base font-semibold leading-7 text-gray-300'
+                                        >
+                                            {item.label}
+                                        </Link>
+                                    ))}
+                                </div>
+                                <h3 className='mt-8 block rounded-lg text-base font-semibold leading-7 text-gray-500'>
+                                    Take part
+                                </h3>
+                                <div className="mt-4 grid grid-cols-2 gap-x-4">
+                                    <div className='space-y-4'>
+                                        <Link
+                                            className='flex items-center gap-x-5 rounded-lg text-xs sm:text-base font-semibold leading-7 text-gray-300'
                                             href='/tickets'
                                             onClick={() => setMobileMenuOpen(false)}
-                                        >Tickets</Link>
+                                        >
+                                            {getIcon('ticket', 'h-5 w-5 sm:h-6 sm:w-6 text-gray-200')}
+                                            Buy ticket
+                                        </Link>
                                         <Link
-                                            className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-400 hover:bg-gray-400/10'
+                                            className='flex items-center gap-x-5 rounded-lg text-xs sm:text-base font-semibold leading-7 text-gray-300'
                                             href='/booth'
                                             onClick={() => setMobileMenuOpen(false)}
-                                        >Booth</Link>
+                                        >
+                                            {getIcon('booth', 'h-5 w-5 sm:h-6 sm:w-6 text-gray-200')}
+                                            Apply for a booth
+                                        </Link>
                                     </div>
-                                    <div className='py-6'>
-                                        <p className='-mx-3 block rounded-lg py-2 px-3 text-base leading-7 text-gray-400'>
-                                            <Link href="https://startup-nights.ch" className="font-bold hover:text-gray-600">Startup Nights</Link> - an event organized by <Link href="https://ec-w.ch" className="font-bold hover:text-gray-600">ECW</Link>
-                                        </p>
-                                        <div className='-mx-3 flex justify-start space-x-2'>
-                                            {data.social && data.social.map((item, i: number) => (
-                                                <a
-                                                    key={`${item.title}-${i}`}
-                                                    href={item.link} target='_blank'
-                                                    onClick={() => setMobileMenuOpen(false)}
-                                                    className='flex justify-center rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-400 hover:bg-gray-400/10'
-                                                >
-                                                    <span className="sr-only">{item.title}</span>
-                                                    <SocialIcon name={item.title} className="h-6 w-6" aria-hidden="true" />
-                                                </a>
-                                            ))}
-                                        </div>
+                                    <div className='space-y-4'>
+                                        <Link
+                                            className='flex items-center gap-x-5 rounded-lg text-xs sm:text-base font-semibold leading-7 text-gray-300'
+                                            href='/pitching'
+                                            onClick={() => setMobileMenuOpen(false)}
+                                        >
+                                            {getIcon('trophy', 'h-5 w-5 sm:h-6 sm:w-6 text-gray-200')}
+                                            Apply for pitching
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className='mt-8'>
+                                    <p className='text-sm text-center leading-7 text-gray-400'>
+                                        <Link href="https://startup-nights.ch" className="font-bold hover:text-gray-600">Startup Nights</Link> - an event organized by <Link href="https://ec-w.ch" className="font-bold hover:text-gray-600">ECW</Link>
+                                    </p>
+                                    <div className='flex justify-center space-x-2 mt-4'>
+                                        {data.social && data.social.map((item, i: number) => (
+                                            <a
+                                                key={`${item.title}-${i}`}
+                                                href={item.link} target='_blank'
+                                                onClick={() => setMobileMenuOpen(false)}
+                                                className='flex justify-center rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-400 hover:bg-gray-400/10'
+                                            >
+                                                <span className="sr-only">{item.title}</span>
+                                                <SocialIcon name={item.title} className="h-6 w-6" aria-hidden="true" />
+                                            </a>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
