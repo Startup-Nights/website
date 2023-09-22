@@ -485,6 +485,19 @@ fragment PageParts on Page {
       subtitle
       title
     }
+    ... on PageBlocksQuotes {
+      subtitle
+      title
+      videos {
+        __typename
+        video {
+          __typename
+          src
+          fallback
+        }
+      }
+      background_color
+    }
     ... on PageBlocksProgram {
       subtitle
       title

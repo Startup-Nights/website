@@ -833,6 +833,22 @@ type PageBlocksCookieTable {
   title: String
 }
 
+type PageBlocksQuotesVideosVideo {
+  src: String
+  fallback: String
+}
+
+type PageBlocksQuotesVideos {
+  video: PageBlocksQuotesVideosVideo
+}
+
+type PageBlocksQuotes {
+  subtitle: String
+  title: String
+  videos: [PageBlocksQuotesVideos]
+  background_color: String
+}
+
 type PageBlocksProgram {
   subtitle: String
   title: String
@@ -849,7 +865,7 @@ type PageBlocksBooth_approved {
   background_color: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved
 
 type Page implements Node & Document {
   title: String!
@@ -1340,6 +1356,22 @@ input PageBlocksCookieTableFilter {
   title: StringFilter
 }
 
+input PageBlocksQuotesVideosVideoFilter {
+  src: ImageFilter
+  fallback: ImageFilter
+}
+
+input PageBlocksQuotesVideosFilter {
+  video: PageBlocksQuotesVideosVideoFilter
+}
+
+input PageBlocksQuotesFilter {
+  subtitle: StringFilter
+  title: StringFilter
+  videos: PageBlocksQuotesVideosFilter
+  background_color: StringFilter
+}
+
 input PageBlocksProgramFilter {
   subtitle: StringFilter
   title: StringFilter
@@ -1378,6 +1410,7 @@ input PageBlocksFilter {
   imagegrid: PageBlocksImagegridFilter
   pitching_registration: PageBlocksPitching_registrationFilter
   cookieTable: PageBlocksCookieTableFilter
+  quotes: PageBlocksQuotesFilter
   program: PageBlocksProgramFilter
   crop: PageBlocksCropFilter
   booth_approved: PageBlocksBooth_approvedFilter
@@ -1982,6 +2015,22 @@ input PageBlocksCookieTableMutation {
   title: String
 }
 
+input PageBlocksQuotesVideosVideoMutation {
+  src: String
+  fallback: String
+}
+
+input PageBlocksQuotesVideosMutation {
+  video: PageBlocksQuotesVideosVideoMutation
+}
+
+input PageBlocksQuotesMutation {
+  subtitle: String
+  title: String
+  videos: [PageBlocksQuotesVideosMutation]
+  background_color: String
+}
+
 input PageBlocksProgramMutation {
   subtitle: String
   title: String
@@ -2020,6 +2069,7 @@ input PageBlocksMutation {
   imagegrid: PageBlocksImagegridMutation
   pitching_registration: PageBlocksPitching_registrationMutation
   cookieTable: PageBlocksCookieTableMutation
+  quotes: PageBlocksQuotesMutation
   program: PageBlocksProgramMutation
   crop: PageBlocksCropMutation
   booth_approved: PageBlocksBooth_approvedMutation

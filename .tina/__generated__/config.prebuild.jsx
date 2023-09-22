@@ -1600,6 +1600,58 @@ var cropBlockSchema = {
   ]
 };
 
+// components/blocks/quotes.tsx
+import React12 from "react";
+var quotesBlockSchema = {
+  name: "quotes",
+  label: "Quotes",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    },
+    {
+      type: "object",
+      label: "Videos",
+      name: "videos",
+      list: true,
+      fields: [
+        {
+          type: "object",
+          label: "Background video",
+          name: "video",
+          fields: [
+            {
+              name: "src",
+              label: "Video source",
+              type: "image"
+            },
+            {
+              name: "fallback",
+              label: "Fallback image",
+              type: "image"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -2131,6 +2183,7 @@ var config = defineStaticConfig({
               imagegridBlockSchema,
               pitchingBlockSchema,
               cookieTableBlockSchema,
+              quotesBlockSchema,
               programBlockSchema,
               cropBlockSchema,
               boothApprovedBlockSchema

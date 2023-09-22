@@ -24,6 +24,7 @@ import { CookieTable } from "./blocks/cookieTable";
 import { Program } from "./blocks/program";
 import { BoothApproved } from "./blocks/booth_approved";
 import { Crop } from "./blocks/crop";
+import { Quotes } from "./blocks/quotes";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -245,6 +246,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Crop data={block} />
+                                </div>
+                            )
+                        case "PageBlocksQuotes":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Quotes data={block} />
                                 </div>
                             )
 

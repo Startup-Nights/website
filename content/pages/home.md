@@ -180,6 +180,41 @@ blocks:
             them.
     background_color: bg-sn-black-light
     _template: overview
+  - subtitle: Listen to previous attendees
+    title: Here is what you'll get
+    videos:
+      - video:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/videos/advantages.mp4
+          fallback: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+      - video:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/videos/expressions.mp4
+          fallback: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+      - video:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/videos/first_expressions.mp4
+          fallback: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+      - video:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/videos/reasons_to_come.mp4
+          fallback: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+      - video:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/videos/recommendations.mp4
+          fallback: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+      - video:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/videos/three_words.mp4
+          fallback: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
+    background_color: bg-sn-black-lightest
+    _template: quotes
   - subtitle: Compare the ticket categories
     title: Get your Ticket!
     cta:
@@ -229,7 +264,7 @@ blocks:
       text: Get your ticket
     _template: countdown
   - content_block:
-      subtitle: Pitch and win
+      subtitle: Pitch and win 5000 CHF
       title: Apply for the Pitching Competition.
       content:
         - >-
@@ -395,6 +430,7 @@ blocks:
             link: 'https://sparrow-ventures.com'
     _template: partner_list
 ---
+
 
 
 
