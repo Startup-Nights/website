@@ -137,7 +137,7 @@ blocks:
             alt: Swico
             link: 'https://www.swico.ch/'
           - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/361800990-beriflapp_scaled.png
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/687406457-beriflapp_scaled.png
             alt: Beriflapp
             link: 'https://www.beriflapp.com/'
           - src: >-
