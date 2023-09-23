@@ -180,8 +180,8 @@ blocks:
             them.
     background_color: bg-sn-black-light
     _template: overview
-  - subtitle: Listen to previous attendees
-    title: Here is what you'll get
+  - subtitle: 
+    title: What last year's speakers said about the event
     videos:
       - video:
           src: >-
@@ -213,7 +213,7 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/videos/three_words.mp4
           fallback: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
-    background_color: bg-sn-black-lightest
+    background_color: bg-sn-black-light
     _template: quotes
   - subtitle: Compare the ticket categories
     title: Get your Ticket!

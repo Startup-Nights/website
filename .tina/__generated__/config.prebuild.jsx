@@ -1602,6 +1602,7 @@ var cropBlockSchema = {
 
 // components/blocks/quotes.tsx
 import React12 from "react";
+import Link11 from "next/link";
 var quotesBlockSchema = {
   name: "quotes",
   label: "Quotes",
