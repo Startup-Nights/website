@@ -1603,6 +1603,7 @@ var cropBlockSchema = {
 // components/blocks/quotes.tsx
 import React12 from "react";
 import Link11 from "next/link";
+import { ArrowTopRightOnSquareIcon as ArrowTopRightOnSquareIcon3 } from "@heroicons/react/20/solid";
 var quotesBlockSchema = {
   name: "quotes",
   label: "Quotes",
