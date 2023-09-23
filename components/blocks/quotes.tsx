@@ -8,16 +8,13 @@ export const Quotes = ({ data }) => {
     return (
         <div className={data.background_color ? data.background_color : 'bg-sn-black'}>
             <div className="pb-12 px-8 lg:pb-24">
-                <div className="max-w-7xl mx-auto text-center mb-12 sm:mb-20">
-                    <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
-                        {data.subtitle}
-                    </h2>
-                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200">
+                <div className="max-w-7xl mx-auto text-center mb-8 sm:mb-12">
+                    <h1 className="text-3xl font-bold tracking-tight text-gray-200">
                         {data.title}
                     </h1>
                 </div>
 
-                <div className="relative snap-x scroll-smoth flex gap-8 w-auto overflow-x-scroll transition-all py-8">
+                <div className="snap-x w-full scroll-smoth flex gap-8 overflow-x-scroll transition-all py-8">
                     {data?.videos && data.videos.map((item: any, i: number) => (
                         <div className="group relative h-[200px] w-[240px] snap-center rounded-3xl shrink-0  border-2 border-transparent hover:border-white">
                             <div className="absolute -top-3 -right-3 p-2 bg-white rounded-full text-black z-10 invisible group-hover:visible">
