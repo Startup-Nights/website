@@ -276,7 +276,7 @@ blocks:
           cream of the crop among early-stage startups. There will be two
           winners at Startup Nights 2023: a "pre-seed" and a "seed" stage
           winner.
-        - 'Application Deadline: 30 September 2023'
+        - 'Application Deadline: 05.10.23'
       cta:
         link: /pitching
         text: Apply
