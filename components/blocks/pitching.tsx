@@ -83,7 +83,7 @@ export const Pitching = ({ data }) => {
                                 <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
                             </div>
                             <div className="ml-3">
-                                <h3 className="font-medium text-gray-200">Deadline for the application is <span className="font-bold">30.09.23!</span></h3>
+                                <h3 className="font-medium text-gray-200">Deadline for the application is <span className="font-bold">05.10.23!</span></h3>
                             </div>
                         </div>
                     </div>
