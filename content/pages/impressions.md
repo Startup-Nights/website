@@ -71,10 +71,11 @@ blocks:
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
     _template: hero
-  - subtitle: Snapshots of 2023
+  - subtitle: Snapshots of 2022
     title: Impressions.
     _template: gallery
 ---
+
 
 
 
