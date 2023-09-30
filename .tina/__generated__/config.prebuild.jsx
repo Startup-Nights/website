@@ -602,6 +602,24 @@ var ContentBlockSchema = {
           name: "text"
         }
       ]
+    },
+    {
+      label: "List at the end",
+      name: "list",
+      type: "object",
+      fields: [
+        {
+          type: "string",
+          label: "List title",
+          name: "title"
+        },
+        {
+          type: "string",
+          label: "Items",
+          name: "list_items",
+          list: true
+        }
+      ]
     }
   ]
 };

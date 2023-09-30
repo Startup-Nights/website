@@ -10,7 +10,7 @@ export const ContentBlock = ({ data }) => {
                 {data?.title}
             </h2>
 
-            {data?.content && data.content.map((content, i) => (
+            {data?.content && data.content.map((content: string, i: number) => (
                 <p key={`content-block-${data?.title}-${i}`} className="mt-6 text-md leading-6 text-gray-300">
                     {content}
                 </p>
@@ -31,6 +31,20 @@ export const ContentBlock = ({ data }) => {
                             </ButtonSecondary>
                         </div>
                     )}
+                </div>
+            )}
+
+            {data?.list && (
+                <div className="">
+                    <h3 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
+                        {data?.list?.title}
+                    </h3>
+
+                    <ul className="mt-4 space-y-1">
+                        {data.list.list_items.map((item: string, i: number) => (
+                            <li key={i} className="ml-4 list-disc">{item}</li>
+                        ))}
+                    </ul>
                 </div>
             )}
         </div>
@@ -92,5 +106,23 @@ export const ContentBlockSchema: any = {
                 }
             ]
         },
+        {
+            label: "List at the end",
+            name: "list",
+            type: "object",
+            fields: [
+                {
+                    type: "string",
+                    label: "List title",
+                    name: "title",
+                },
+                {
+                    type: "string",
+                    label: "Items",
+                    name: "list_items",
+                    list: true,
+                },
+            ]
+        }
     ]
 }

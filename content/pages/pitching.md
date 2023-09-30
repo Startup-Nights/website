@@ -8,11 +8,11 @@ blocks:
         - 'At Startup Nights 2023 there will again be two pitching sessions:'
         - >-
           Pre-Seed: companies that are working on solving a problem and have not
-          yet reached product-market-fit
+          yet reached product-market-fit.
         - >-
           Seed:companies that have first customers, ideally have revenue or
           other meaningful traction and believe they have reached
-          product-market-fit
+          product-market-fit.
         - >-
           The pitch is expected to be delivered in English. We likely will run a
           format of a 5 min Pitch & 10 min Q&A. Details will follow. The jury
@@ -25,6 +25,12 @@ blocks:
       cta:
         link: ''
         text: ''
+      list:
+        title: Prices per category
+        list_items:
+          - CHF 5000 for 1st place
+          - CHF 3000 for 2nd place
+          - CHF 2000 for 3rd place
     members:
       - name: Andreas Schlenker
         position: 'Head of M&A, Partnering and Investing at Axpo Group'
@@ -115,6 +121,10 @@ blocks:
     _template: content
   - _template: pitching_registration
 ---
+
+
+
+
 
 
 

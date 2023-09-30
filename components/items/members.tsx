@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export const Members = ({ data }) => {
     return (
@@ -8,15 +7,15 @@ export const Members = ({ data }) => {
                 {data.map((person: any, i: number) => (
                     <li key={i} className="relative transition-all">
                         <div className="grid grid-cols-1 align-top h-full gap-x-6 p-4 bg-sn-black-lightest border-2 rounded-3xl border-transparent">
-                            <div className="text-center">
+                            <div className="text-center ">
                                 <Image
                                     src={person.src ? person.src : "/user.svg"}
                                     alt={person?.name ? person.name : "unknown"}
-                                    className="rounded-full mx-auto bg-sn-black-light"
+                                    className="rounded-full mx-auto bg-sn-black-light hidden sm:block"
                                     width={data?.diameter ? data.diameter : 100}
                                     height={data?.diameter ? data.diameter : 100}
                                 />
-                                <h3 className="text-sm font-semibold leading-7 mt-4 tracking-tight">
+                                <h3 className="text-sm font-semibold leading-7 sm:mt-4 tracking-tight">
                                     {person?.name}
                                 </h3>
                                 <p className="text-sm font-semibold leading-6 mt-2 text-gray-400">
