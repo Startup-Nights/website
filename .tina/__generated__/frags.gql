@@ -228,6 +228,11 @@ fragment PageParts on Page {
             link
             text
           }
+          list {
+            __typename
+            title
+            list_items
+          }
         }
         image {
           __typename
@@ -269,6 +274,11 @@ fragment PageParts on Page {
             __typename
             link
             text
+          }
+          list {
+            __typename
+            title
+            list_items
           }
         }
         image {
@@ -384,6 +394,11 @@ fragment PageParts on Page {
           __typename
           link
           text
+        }
+        list {
+          __typename
+          title
+          list_items
         }
       }
       image {

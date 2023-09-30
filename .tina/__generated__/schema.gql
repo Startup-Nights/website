@@ -515,12 +515,18 @@ type PageBlocksTabsTabitemsContent_blockCta_secondary {
   text: String
 }
 
+type PageBlocksTabsTabitemsContent_blockList {
+  title: String
+  list_items: [String]
+}
+
 type PageBlocksTabsTabitemsContent_block {
   subtitle: String
   title: String
   content: [String]
   cta: PageBlocksTabsTabitemsContent_blockCta
   cta_secondary: PageBlocksTabsTabitemsContent_blockCta_secondary
+  list: PageBlocksTabsTabitemsContent_blockList
 }
 
 type PageBlocksTabsTabitemsImage {
@@ -566,12 +572,18 @@ type PageBlocksDropdownItemsContent_blockCta_secondary {
   text: String
 }
 
+type PageBlocksDropdownItemsContent_blockList {
+  title: String
+  list_items: [String]
+}
+
 type PageBlocksDropdownItemsContent_block {
   subtitle: String
   title: String
   content: [String]
   cta: PageBlocksDropdownItemsContent_blockCta
   cta_secondary: PageBlocksDropdownItemsContent_blockCta_secondary
+  list: PageBlocksDropdownItemsContent_blockList
 }
 
 type PageBlocksDropdownItemsImage {
@@ -706,12 +718,18 @@ type PageBlocksContentContent_blockCta_secondary {
   text: String
 }
 
+type PageBlocksContentContent_blockList {
+  title: String
+  list_items: [String]
+}
+
 type PageBlocksContentContent_block {
   subtitle: String
   title: String
   content: [String]
   cta: PageBlocksContentContent_blockCta
   cta_secondary: PageBlocksContentContent_blockCta_secondary
+  list: PageBlocksContentContent_blockList
 }
 
 type PageBlocksContentImage {
@@ -1038,12 +1056,18 @@ input PageBlocksTabsTabitemsContent_blockCta_secondaryFilter {
   text: StringFilter
 }
 
+input PageBlocksTabsTabitemsContent_blockListFilter {
+  title: StringFilter
+  list_items: StringFilter
+}
+
 input PageBlocksTabsTabitemsContent_blockFilter {
   subtitle: StringFilter
   title: StringFilter
   content: StringFilter
   cta: PageBlocksTabsTabitemsContent_blockCtaFilter
   cta_secondary: PageBlocksTabsTabitemsContent_blockCta_secondaryFilter
+  list: PageBlocksTabsTabitemsContent_blockListFilter
 }
 
 input PageBlocksTabsTabitemsImageFilter {
@@ -1089,12 +1113,18 @@ input PageBlocksDropdownItemsContent_blockCta_secondaryFilter {
   text: StringFilter
 }
 
+input PageBlocksDropdownItemsContent_blockListFilter {
+  title: StringFilter
+  list_items: StringFilter
+}
+
 input PageBlocksDropdownItemsContent_blockFilter {
   subtitle: StringFilter
   title: StringFilter
   content: StringFilter
   cta: PageBlocksDropdownItemsContent_blockCtaFilter
   cta_secondary: PageBlocksDropdownItemsContent_blockCta_secondaryFilter
+  list: PageBlocksDropdownItemsContent_blockListFilter
 }
 
 input PageBlocksDropdownItemsImageFilter {
@@ -1229,12 +1259,18 @@ input PageBlocksContentContent_blockCta_secondaryFilter {
   text: StringFilter
 }
 
+input PageBlocksContentContent_blockListFilter {
+  title: StringFilter
+  list_items: StringFilter
+}
+
 input PageBlocksContentContent_blockFilter {
   subtitle: StringFilter
   title: StringFilter
   content: StringFilter
   cta: PageBlocksContentContent_blockCtaFilter
   cta_secondary: PageBlocksContentContent_blockCta_secondaryFilter
+  list: PageBlocksContentContent_blockListFilter
 }
 
 input PageBlocksContentImageFilter {
@@ -1697,12 +1733,18 @@ input PageBlocksTabsTabitemsContent_blockCta_secondaryMutation {
   text: String
 }
 
+input PageBlocksTabsTabitemsContent_blockListMutation {
+  title: String
+  list_items: [String]
+}
+
 input PageBlocksTabsTabitemsContent_blockMutation {
   subtitle: String
   title: String
   content: [String]
   cta: PageBlocksTabsTabitemsContent_blockCtaMutation
   cta_secondary: PageBlocksTabsTabitemsContent_blockCta_secondaryMutation
+  list: PageBlocksTabsTabitemsContent_blockListMutation
 }
 
 input PageBlocksTabsTabitemsImageMutation {
@@ -1748,12 +1790,18 @@ input PageBlocksDropdownItemsContent_blockCta_secondaryMutation {
   text: String
 }
 
+input PageBlocksDropdownItemsContent_blockListMutation {
+  title: String
+  list_items: [String]
+}
+
 input PageBlocksDropdownItemsContent_blockMutation {
   subtitle: String
   title: String
   content: [String]
   cta: PageBlocksDropdownItemsContent_blockCtaMutation
   cta_secondary: PageBlocksDropdownItemsContent_blockCta_secondaryMutation
+  list: PageBlocksDropdownItemsContent_blockListMutation
 }
 
 input PageBlocksDropdownItemsImageMutation {
@@ -1888,12 +1936,18 @@ input PageBlocksContentContent_blockCta_secondaryMutation {
   text: String
 }
 
+input PageBlocksContentContent_blockListMutation {
+  title: String
+  list_items: [String]
+}
+
 input PageBlocksContentContent_blockMutation {
   subtitle: String
   title: String
   content: [String]
   cta: PageBlocksContentContent_blockCtaMutation
   cta_secondary: PageBlocksContentContent_blockCta_secondaryMutation
+  list: PageBlocksContentContent_blockListMutation
 }
 
 input PageBlocksContentImageMutation {
