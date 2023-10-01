@@ -207,6 +207,11 @@ var positionsBlockSchema = {
         },
         {
           type: "string",
+          label: "Note",
+          name: "note"
+        },
+        {
+          type: "string",
           label: "Department",
           name: "department"
         },

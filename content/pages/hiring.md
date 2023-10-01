@@ -24,6 +24,10 @@ blocks:
   - subtitle: Open positions
     title: Shape the future with us.
     open_positions:
+      - title: 'Initiative Application - Organizing Committee'
+        text: ''
+        department: General
+        link: 'https://docs.google.com/forms/d/1jwrMUmX2exdFAif2laGWBeVsQ6KJo0BPwOLmfbnpvyw/edit?no_redirect=true&pli=1'
       - title: Bookkeeping
         text: ''
         department: Operations
@@ -31,34 +35,10 @@ blocks:
       - title: Volunteer at the event
         text: ''
         department: General
-        link: 'https://forms.gle/CkXNgxhtmsjgvxCN8'
+        link: 'https://portal.helfereinsatz.ch/entrepreneur-club-winterthur/de'
+        note: New
       - title: Video Content Creator
-        text: >
-          Deine Aufgaben:
-
-
-          * Mitverantwortung für die videografische Dokumentation des Events und
-          unseren Weg dorthin (Behind the Scenes, Medien für Social Media etc.)
-
-          * Entwicklung und Produktion von Videoreihen für Social Media
-
-          * Enge Zusammenarbeit mit Marketing-Team und im Foto- und Videoteam am
-          Event
-
-
-          Deine Qualifikation:
-
-
-          * Erfahrung im Bereich Videoproduktionen
-
-          * Ein gutes Auge dafür, was unsere Community interessieren könnte und
-          ein Haufen Ideen, wie du das mit der Kamera einfangen kannst
-
-          * Freude am Startup-Umfeld und bereit in Form eines Engagements dich
-          für dieses einzusetzen
-
-          * Unkompliziert, kollegial im Umgang, professionell und strukturiert
-          bei der Arbeit
+        text: ''
         department: Marketing
         link: 'https://forms.gle/9wNpRTqeUcy9g4b48'
     _template: positions

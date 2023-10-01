@@ -185,6 +185,7 @@ fragment PageParts on Page {
         __typename
         title
         text
+        note
         department
         link
       }
