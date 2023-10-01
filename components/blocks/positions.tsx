@@ -1,4 +1,4 @@
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { ArrowTopRightOnSquareIcon, FireIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { Template } from "tinacms";
@@ -46,6 +46,11 @@ export const positionsBlockSchema: Template = {
                     type: "rich-text",
                     label: "Text",
                     name: "text",
+                },
+                {
+                    type: "string",
+                    label: "Note",
+                    name: "note"
                 },
                 {
                     type: "string",
@@ -189,14 +194,6 @@ export const Positions = ({ data, parentField = "" }) => {
     });
 
     useEffect(() => {
-        if (positions.filter(pos => pos.title === 'Initiative Application - Organizing Committee').length === 0) {
-            positions.push({
-                title: 'Initiative Application - Organizing Committee',
-                department: 'General',
-                link: 'https://docs.google.com/forms/d/1jwrMUmX2exdFAif2laGWBeVsQ6KJo0BPwOLmfbnpvyw/edit?no_redirect=true&pli=1'
-            })
-        }
-
         positions.sort((p1: any, p2: any) => {
             if (p1.department > p2.department) {
                 return 1
@@ -244,6 +241,9 @@ export const Positions = ({ data, parentField = "" }) => {
                                             <p className="hidden md:block font-normal text-xs text-gray-300">{position.department}</p>
                                             <p className={`font-medium ${getDepartmentTextColor(position.department)}`}>{position.title}</p>
                                         </div>
+                                        {position?.note && (
+                                            <FireIcon className={`invisible sm:visible h-0 w-0 sm:w-6 sm:h-6 rounded-full ${getDepartmentTextColor(position.department)}`} strokeWidth={2} />
+                                        )}
                                     </div>
                                 </li>
                             </Link>
