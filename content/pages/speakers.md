@@ -296,6 +296,46 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-miggiano.jpg
           alt: Léa Miggiano
+      - name: Dr. Maurizio Mantovani
+        position: Head of Research and Technology Autoneum Holding AG
+        image:
+          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/maurizio-mantovani.jpg
+          alt: Dr. Maurizio Mantovani
+      - name: Joël Capt
+        position: CEO & Founder Peakora
+        image:
+          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/moderation-joel-capt.jpg
+          alt: Joël Capt
+      - name: Lea Firmin
+        position: CEO of venture.ch
+        image:
+          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-firmin.jpg
+          alt: Lea Firmin
+      - name: Olya Klueppel
+        position: Partner at GP Bullhound
+        image:
+          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/moderation-olya-klueppel.jpg
+          alt: Olya Klueppel
+      - name: Klara Zürcher
+        position: Co-Founder Tadah
+        image:
+          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/klara-zuercher.jpeg
+          alt: Klara Zürcher
+      - name: Julia Bislin
+        position: Entrepreneurship Program Manager Swissney
+        image:
+          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/julia-bislin.jpeg
+          alt: Julia Bislin
+      - name: Michael Dudli
+        position: CEO Xelon AG, Vertreter Swiss Startup Association
+        image:
+          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/michael-dudli.jpg
+          alt: Michael Dudli
+      - name: Uliana Pereskotska
+        position: Board Member Ukrainian-Swiss Business Association
+        image:
+          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/uliana-pereskotska.jpg
+          alt: Uliana Pereskotska
     background_color: bg-sn-black-light
     _template: imagegrid
 ---
