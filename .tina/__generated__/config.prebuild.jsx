@@ -158,7 +158,7 @@ var speakersBlockSchema = {
 };
 
 // components/blocks/positions.tsx
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { ArrowTopRightOnSquareIcon, FireIcon } from "@heroicons/react/24/outline";
 import Link2 from "next/link";
 import { useEffect as useEffect2, useState as useState2 } from "react";
 var positionsBlockSchema = {
