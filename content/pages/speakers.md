@@ -24,6 +24,30 @@ blocks:
       our speakers ignite inspiration and drive change.
     id: speakers
     images:
+      - name: Fadri Furrer
+        position: CEO & Co-Founder incon.ai
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/fadri-furrer.jpg
+          alt: Fadri Furrer
+      - name: Mensur Jasari
+        position: CEO UPTO
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/mensur-jasari.jpg
+          alt: Mensur Jasari
+      - name: Pascal Wanner
+        position: Business Development Manager at Deedster
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/pascal-wanner.jpg
+          alt: Pascal Wanner
+      - name: Philipp Koller
+        position: Head of Foreign Direct Investment Desk at Italian Trade Agency
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/philipp-koller.jpeg
+          alt: Philipp Koller
       - name: Sandra Völler
         position: CEO and Founder Agilita
         image:
@@ -82,7 +106,7 @@ blocks:
         position: 10x World Champion & 6x IRONMAN Hawaii World Champion
         image:
           src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/natascha-badmann.jpg
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/natascha_badmann.png
           alt: 'Natascha Badmann '
       - name: Tobias Wuelser
         position: Founder Designwerk
@@ -299,46 +323,55 @@ blocks:
       - name: Dr. Maurizio Mantovani
         position: Head of Research and Technology Autoneum Holding AG
         image:
-          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/maurizio-mantovani.jpg
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/maurizio-mantovani.jpg
           alt: Dr. Maurizio Mantovani
       - name: Joël Capt
         position: CEO & Founder Peakora
         image:
-          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/moderation-joel-capt.jpg
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/moderation-joel-capt.jpg
           alt: Joël Capt
       - name: Lea Firmin
         position: CEO of venture.ch
         image:
-          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-firmin.jpg
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-firmin.jpg
           alt: Lea Firmin
       - name: Olya Klueppel
         position: Partner at GP Bullhound
         image:
-          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/moderation-olya-klueppel.jpg
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/moderation-olya-klueppel.jpg
           alt: Olya Klueppel
       - name: Klara Zürcher
         position: Co-Founder Tadah
         image:
-          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/klara-zuercher.jpeg
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/klara-zuercher.jpeg
           alt: Klara Zürcher
       - name: Julia Bislin
         position: Entrepreneurship Program Manager Swissney
         image:
-          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/julia-bislin.jpeg
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/julia-bislin.jpeg
           alt: Julia Bislin
       - name: Michael Dudli
-        position: CEO Xelon AG, Vertreter Swiss Startup Association
+        position: 'CEO Xelon AG, Vertreter Swiss Startup Association'
         image:
-          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/michael-dudli.jpg
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/michael-dudli.jpg
           alt: Michael Dudli
       - name: Uliana Pereskotska
         position: Board Member Ukrainian-Swiss Business Association
         image:
-          src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/uliana-pereskotska.jpg
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/uliana-pereskotska.jpg
           alt: Uliana Pereskotska
     background_color: bg-sn-black-light
     _template: imagegrid
 ---
+
 
 
 
