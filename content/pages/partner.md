@@ -130,9 +130,21 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ukrainian_swiss_business_association.png
             alt: Ukrainian Swiss Business Association
             link: 'https://ukraine-swiss.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/624781559-LOGO_ITALIAN_TRADE_AGENCY_internationalPartner_scaled.png
+            alt: Italian Trade Agency
+            link: 'https://www.ice.it/en/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/koeln-business.png
+            alt: Köln Business Wirtschaftsförderung
+            link: 'https://koeln.business'
       - title: Supporter
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/52015929-uzh_innovation_hub_scaled.png
+            alt: UZH Innovation Hub
+            link: 'https://www.innovation.uzh.ch/de.html'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/115811413-swico_scaled.png
             alt: Swico
@@ -213,10 +225,6 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/peakora.png
             alt: Peakora
             link: 'https://www.peakora.io'
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/koeln-business.png
-            alt: Köln Business Wirtschaftsförderung
-            link: 'https://koeln.business'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/worn-again.png
             alt: Worn Again

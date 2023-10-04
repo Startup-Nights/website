@@ -128,10 +128,8 @@ blocks:
       - content_block:
           title: 'Booth set-up, dismantling & material (un)loading'
           content:
-            - >-
-              Set-up Times: 2 November 2023, 7am - 12am and 2 November 2023,
-              until 12pm
-            - 'Dismantling Times: 3 November 2023, 11pm - 4 November, 7am'
+            - 'Set-up Times: 2 November 2023, 7 am - 12 pm'
+            - 'Dismantling Times: 3 November 2023, 11pm - 12am and 4 November 2023 7 am - 12 pm'
             - >-
               Material (Un)Loading: The parking lot can be used for unloading.
               On the side of the hall will be a large gate into which you can
