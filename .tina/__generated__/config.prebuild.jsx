@@ -502,6 +502,11 @@ var partnersBlockSchema = {
             },
             {
               type: "string",
+              label: "Quote",
+              name: "quote"
+            },
+            {
+              type: "string",
               name: "link",
               label: "Partner website"
             }

@@ -165,6 +165,7 @@ fragment PageParts on Page {
           __typename
           src
           alt
+          quote
           link
         }
       }

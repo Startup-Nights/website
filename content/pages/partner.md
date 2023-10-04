@@ -31,18 +31,19 @@ blocks:
       text: Check partner opportunities
     partners:
       - title: Main Partner
-        grid_cols: 3
+        grid_cols: 2
         partners:
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ubs.png
             alt: UBS
             link: 'https://ubs.com'
+            quote: 'As the main partner of the Entrepreneur Club Winterthur and the Startup Nights, it is our ambition to support entrepreneurship and innovation. The Startup Nights provide an important platform to meet entrepreneurs and investors, exchange ideas and discuss future plans.'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/mobiliar.png
             alt: Mobiliar
             link: 'https://mobiliar.ch'
       - title: Key Partner
-        grid_cols: 4
+        grid_cols: 3
         partners:
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/925682086-microsoft_scaled.png

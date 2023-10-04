@@ -439,6 +439,7 @@ type PageBlocksPartner_listCta {
 type PageBlocksPartner_listPartnersPartners {
   src: String
   alt: String
+  quote: String
   link: String
 }
 
@@ -981,6 +982,7 @@ input NumberFilter {
 input PageBlocksPartner_listPartnersPartnersFilter {
   src: ImageFilter
   alt: StringFilter
+  quote: StringFilter
   link: StringFilter
 }
 
@@ -1659,6 +1661,7 @@ input PageBlocksPartner_listCtaMutation {
 input PageBlocksPartner_listPartnersPartnersMutation {
   src: String
   alt: String
+  quote: String
   link: String
 }
 
