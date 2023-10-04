@@ -63,13 +63,16 @@ export const Booth = ({ data }) => {
             return;
         }
 
+        let uploadName = file.name
+        uploadName = uploadName.replace('(', '').replace(')', '').replace(' ', '')
+
         const response = await fetch("https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/spaces", {
             method: "post",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                filename: file.name,
+                filename: uploadName,
             }),
         });
 
