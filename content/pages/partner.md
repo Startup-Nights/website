@@ -46,6 +46,18 @@ blocks:
         grid_cols: 3
         partners:
           - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/603161180-ruag_scaled.png
+            alt: Innoversity
+            link: 'https://ruag.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/337554133-innoversity_scaled.png
+            alt: Innoversity
+            link: 'https://ecomlab.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/623721913-ergon_scaled.png
+            alt: Ergon
+            link: 'https://www.ergon.ch/'
+          - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/925682086-microsoft_scaled.png
             alt: Microsoft For Startups
             link: 'https://www.microsoft.com/de-ch/startups'
@@ -142,6 +154,18 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/823730552-racing-unleashed_scaled.png
+            alt: Racing Unleashed
+            link: 'https://www.racing-unleashed.com/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/zhaw.png
+            alt: ZHAW
+            link: 'https://zhaw.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ffhs.jpg
+            alt: FFHS
+            link: 'https://ffhs.ch'
+          - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/52015929-uzh_innovation_hub_scaled.png
             alt: UZH Innovation Hub
             link: 'https://www.innovation.uzh.ch/de.html'
@@ -201,10 +225,6 @@ blocks:
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/660368404-kadasolutions_scaled.png
             alt: Kadasolutions
             link: 'https://kadasolutions.ch/'
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/zhaw.png
-            alt: ZHAW
-            link: 'https://zhaw.ch'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sunrise.png
             alt: Sunrise
@@ -305,6 +325,10 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/440829066-personio_scaled.png
+            alt: Personio
+            link: 'https://personio.de/'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/splint_invest.png
             alt: Splint Invest
             link: 'https://splintinvest.com/en/'
@@ -320,10 +344,6 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/showconcept.jpg
             alt: Showconcept
             link: 'https://show-concept.ch'
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ffhs.jpg
-            alt: FFHS
-            link: 'https://ffhs.ch'
       - title: Food and Beverage Partner
         grid_cols: 4
         partners: 
