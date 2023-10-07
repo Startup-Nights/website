@@ -119,7 +119,7 @@ blocks:
             text: >-
               Note that the plan is provisional and will be updated from time to
               time.
-            link: /plan_eulachhalle_v12.pdf
+            link: /plan_eulachhalle_v14.pdf
           - name: Questions
             text: >-
               In case you are not happy with the placement of your booth, please
@@ -143,7 +143,7 @@ blocks:
             text: >-
               Note that the plan is provisional and will be updated from time to
               time.
-            link: /plan_eulachhalle_v12.pdf
+            link: /plan_eulachhalle_v14.pdf
           - name: Questions
             text: >-
               In case you are not able to set-up or dismantle your booth during
@@ -161,7 +161,7 @@ blocks:
               The plan already linked below is not final and most likely will
               change before the event.
           cta:
-            link: /plan_eulachhalle_v12.pdf
+            link: /plan_eulachhalle_v14.pdf
             text: Current plan
       - content_block:
           title: Workshops
