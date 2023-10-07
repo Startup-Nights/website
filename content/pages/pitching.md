@@ -17,11 +17,7 @@ blocks:
           The pitch is expected to be delivered in English. We likely will run a
           format of a 5 min Pitch & 10 min Q&A. Details will follow. The jury
           will preview and nominate the startups that will get invited to pitch.
-        - >-
-          We are already very much looking forward to your application! We will
-          be happy to inform you as soon as possible whether you can pitch on
-          stage or not.
-        - 'Either way, we wish you much success with your startup!'
+        - 'Note: the application deadline was 05.10.2023 - applications are no longer accepted.'
       cta:
         link: ''
         text: ''
@@ -117,9 +113,8 @@ blocks:
         alt: Claudius Stammbach
         stage: seed
     contentblock_left: true
-    background_color: bg-sn-black
+    background_color: bg-sn-black-light
     _template: content
-  - _template: pitching_registration
 ---
 
 

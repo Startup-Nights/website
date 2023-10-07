@@ -265,21 +265,17 @@ blocks:
     _template: countdown
   - content_block:
       subtitle: Pitch and win 5000 CHF
-      title: Apply for the Pitching Competition.
+      title: Pitching at the Startup Nights.
       content:
-        - >-
-          Are you an early-stage startup and ready to take it to the next level?
-          Don't miss out on this incredible opportunity at Startup Nights 2023.
-          Leave a lasting impression that opens doors to future opportunities!
         - >-
           Our jury of well-known investors is coming together to identify the
           cream of the crop among early-stage startups. There will be two
           winners at Startup Nights 2023: a "pre-seed" and a "seed" stage
           winner.
-        - 'Application Deadline: 05.10.23'
+        - 'The application deadline was 05.10.2023 - applications are no longer accepted.'
       cta:
         link: /pitching
-        text: Apply
+        text: Check out all jury members
     members:
       - name: Arijana Walcott
         position: Founder Dart Labs
