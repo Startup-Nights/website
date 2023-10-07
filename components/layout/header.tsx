@@ -7,6 +7,7 @@ import { Button, ButtonSecondary } from '../items/button'
 
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { getIcon } from '../util/icons'
+import HeaderBanner from '../items/header_banner'
 
 export const Header = ({ data }) => {
     // If we're on an admin path, other links should also link to their admin paths
@@ -23,6 +24,7 @@ export const Header = ({ data }) => {
     return (
         <div className="bg-sn-black fixed top-0 z-20 w-full backdrop-blur-md bg-sn-black/90 outline-sn-yellow focus:outline-none ">
             <div className="relative">
+                <HeaderBanner />
                 <div className='max-w-7xl mx-auto py-6 px-8 lg:px-24'>
                     <nav className="relative flex items-center justify-between" aria-label="Global">
                         <div className='flex justify-start items-center gap-x-8 xl:gap-x-16'>
@@ -132,6 +134,7 @@ export const Header = ({ data }) => {
                                 <Bars3CenterLeftIcon className="h-6 w-6" aria-hidden="true" />
                             </button>
                         </div>
+
 
                     </nav>
                     <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
