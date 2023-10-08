@@ -1,9 +1,11 @@
 fragment PostParts on Post {
+  __typename
   title
   heroImg
   excerpt
   author {
     ... on Author {
+      __typename
       name
       avatar
     }
@@ -24,6 +26,7 @@ fragment PostParts on Post {
 }
 
 fragment GlobalParts on Global {
+  __typename
   header {
     __typename
     name
@@ -86,11 +89,13 @@ fragment GlobalParts on Global {
 }
 
 fragment AuthorParts on Author {
+  __typename
   name
   avatar
 }
 
 fragment PageParts on Page {
+  __typename
   title
   blocks {
     __typename

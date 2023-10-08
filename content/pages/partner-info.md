@@ -245,6 +245,7 @@ blocks:
               Businesshotel & Seminarhotel Banana City Winterthur:
               Schaffhauserstrasse 8, 8400 Winterthur
             - 'ibis budget Winterthur: Brühlbergstrasse 7A, 8400 Winterthur'
+            - 'You can also use the code "Startup1123" to get 20% off your stay.'
     padding: false
     _template: Dropdown
   - subtitle: See you soon
