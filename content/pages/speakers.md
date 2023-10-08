@@ -24,6 +24,18 @@ blocks:
       our speakers ignite inspiration and drive change.
     id: speakers
     images:
+      - name: Claudia Bienentreu
+        position: Head Open Innovation at AXA
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/claudia-bienentreu.jpg
+          alt: Claudia Bienentreu
+      - name: Samuel Müller
+        position: CEO and Co-Founder Scandit
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/samuel-mueller.jpg
+          alt: Samuel Müller
       - name: Fadri Furrer
         position: CEO & Co-Founder incon.ai
         image:
@@ -371,27 +383,4 @@ blocks:
     background_color: bg-sn-black-light
     _template: imagegrid
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
