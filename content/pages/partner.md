@@ -150,6 +150,25 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/koeln-business.png
             alt: Köln Business Wirtschaftsförderung
             link: 'https://koeln.business'
+      - title: Media Partner
+        grid_cols: 3
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/473850834-founded_scaled.png
+            alt: founded
+            link: 'https://www.founded.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/571069799-nzz_scaled.png
+            alt: NZZ
+            link: 'https://www.nzz.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/554181213-landbote_scaled.png
+            alt: Landbote
+            link: 'https://www.landbote.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/411395174-startupticker_scaled.png
+            alt: Startupticker
+            link: 'https://www.startupticker.ch'
       - title: Supporter
         grid_cols: 4
         partners:

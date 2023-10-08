@@ -109,12 +109,6 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/javier-santillan.jpg
             alt: Javier Santillan
-          - name: Enrique Martin
-            position: UX Design
-            linkedin: 'https://www.linkedin.com/in/enrique-martindelcampo-ux/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/enrique-martin.png
-            alt: Enrique Martin
           - name: Alyssia Kugler
             position: Head of Communications
             linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
