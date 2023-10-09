@@ -46,18 +46,6 @@ blocks:
         grid_cols: 3
         partners:
           - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/603161180-ruag_scaled.png
-            alt: Innoversity
-            link: 'https://ruag.ch/'
-          - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/337554133-innoversity_scaled.png
-            alt: Innoversity
-            link: 'https://ecomlab.ch/'
-          - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/623721913-ergon_scaled.png
-            alt: Ergon
-            link: 'https://www.ergon.ch/'
-          - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/925682086-microsoft_scaled.png
             alt: Microsoft For Startups
             link: 'https://www.microsoft.com/de-ch/startups'
@@ -96,7 +84,7 @@ blocks:
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/axa.png
             alt: Axa
-            link: 'https://www.axa.ch/en/private-customers.html'
+            link: 'https://www.axa.ch/en/corporate-customers/your-situation/you-are/self-employed-start-up.html'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
             alt: IGE
@@ -172,6 +160,22 @@ blocks:
       - title: Supporter
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/603161180-ruag_scaled.png
+            alt: Innoversity
+            link: 'https://ruag.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/337554133-innoversity_scaled.png
+            alt: Innoversity
+            link: 'https://ecomlab.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/623721913-ergon_scaled.png
+            alt: Ergon
+            link: 'https://www.ergon.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/969180824-ihk_scaled.png
+            alt: Industrie und Handelskammer Thurgau
+            link: 'https://www.ihk-thurgau.ch/'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/startups/823730552-racing-unleashed_scaled.png
             alt: Racing Unleashed
