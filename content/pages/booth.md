@@ -1,7 +1,7 @@
 ---
 title: Booth
 blocks:
-  - title: Tickets - Startup Nights
+  - title: Booth Signup - Startup Nights
     description: >-
       The Startup Nights is the biggest event in Switzerland that brings the
       whole startup ecosystem to one table. With this event we want to create
@@ -14,8 +14,8 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: Startup World Booth
-    title: Apply now to present your startup.
+  - subtitle: ''
+    title: 'Startup World Booth'
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
