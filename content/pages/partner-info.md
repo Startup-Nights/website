@@ -58,16 +58,16 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2023/pictures/eulachhallen.jpg
           alt: Location Eulachhallen Winterthur
       - content_block:
-          title: Getting to the venue
+          title: 'Getting to the venue & parking'
           content:
             - 'Nearby airport: Zurich (ZRH)'
             - 'Nearby train station: Winterthur, walk 10-15 minutes'
-            - >-
-              Parking: [Specify parking areas for partners and any
-              conditions/restrictions]
           cta:
             link: 'https://goo.gl/maps/uvv6Pfok8nBfaHMo9'
             text: Google Maps
+          cta_secondary:
+            link: 'https://ti.to/ecw/parking-startup-nights-2023'
+            text: Reserve parking spot
       - content_block:
           title: Tickets
           content:
