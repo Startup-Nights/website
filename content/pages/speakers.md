@@ -24,6 +24,20 @@ blocks:
       our speakers ignite inspiration and drive change.
     id: speakers
     images:
+      - name: Isabelle von Känel
+        position: Head of Sales Swibeco
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/isabelle-von-kaenel.png
+          alt: Isabelle von Känel
+      - name: Michael Chobanian
+        position: >-
+          Founder and CEO of Kuna, President of Blockchain Association of
+          Ukraine
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/michael-chobanian.jpeg
+          alt: Michael Chobanian
       - name: Claudia Bienentreu
         position: Head Open Innovation at AXA
         image:
@@ -363,13 +377,13 @@ blocks:
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/klara-zuercher.jpeg
           alt: Klara Zürcher
       - name: Julia Bislin
-        position: Entrepreneurship Program Manager Swissney
+        position: Entrepreneurship Program Manager Swissnex
         image:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/julia-bislin.jpeg
           alt: Julia Bislin
       - name: Michael Dudli
-        position: 'CEO Xelon AG, Vertreter Swiss Startup Association'
+        position: 'CEO Xelon AG, Board Member Swiss Startup Association'
         image:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/michael-dudli.jpg

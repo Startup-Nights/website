@@ -64,7 +64,7 @@ blocks:
           - Ticket for both days
           - Free drinks and food
           - Access to our matchmaking platform
-          - Per partner; an invitation for our leaders brunch on Friday morning
+          - Invitation for our leaders brunch on Friday morning (limited number of participants)
         not_included:
           - Booth
       - price: 169

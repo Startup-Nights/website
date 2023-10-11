@@ -161,6 +161,10 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/645438382-kuna-pay_scaled.png
+            alt: Kuna Pay
+            link: 'https://pay.kuna.io/'
+          - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/603161180-ruag_scaled.png
             alt: Innoversity
             link: 'https://ruag.ch/'
