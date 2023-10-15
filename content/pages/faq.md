@@ -20,6 +20,17 @@ blocks:
             link: 'https://goo.gl/maps/CUdt6eEqGUUi1a3F9'
             text: Google Maps
       - content_block:
+          title: Is there a parking spot available?
+          content:
+            - >-
+              There is no parking available for visitors. Since the train
+              station is in walking distance, we encourage you to use the train
+              or take the bus to the nearest station.
+            - >-
+              If you absolutely need to come by car, there are a few parking
+              garages around the train station: Kesselhaus, Neuwiesen, Bahnhof.
+              Make sure to check the opening times.
+      - content_block:
           title: Opening Hours and Venue
           content:
             - 'Date: 2 & 3 November 2023'
@@ -339,7 +350,9 @@ blocks:
           title: 'Booth set-up, dismantling & material (un)loading'
           content:
             - 'Set-up Times: 2 November 2023, 7 am - 12 pm'
-            - 'Dismantling Times: 3 November 2023, 11pm - 12am and 4 November 2023 7 am - 12 pm'
+            - >-
+              Dismantling Times: 3 November 2023, 11pm - 12am and 4 November
+              2023 7 am - 12 pm
             - >-
               Material (Un)Loading: The parking lot can be used for unloading.
               On the side of the hall will be a large gate into which you can
@@ -455,18 +468,18 @@ blocks:
               Businesshotel & Seminarhotel Banana City Winterthur:
               Schaffhauserstrasse 8, 8400 Winterthur
             - 'ibis budget Winterthur: Brühlbergstrasse 7A, 8400 Winterthur'
-    padding: true 
+    padding: true
     _template: Dropdown
   - subtitle: Everything clear?
     title: See you soon!
+    cta:
+      link: /contact
+      text: I still have some questions
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-37
         (1).jpg
       alt: Startup World Exhibitor Noii
-    cta:
-        link: '/contact'
-        text: 'I still have some questions'
     _template: hero
 ---
 

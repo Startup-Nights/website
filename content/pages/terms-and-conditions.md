@@ -52,16 +52,14 @@ blocks:
       - title: 4. EVENTS ORGANIZED BY STARTUP NIGHTS AND/OR ITS AFFILIATED ENTITIES
         text:
           - >-
-            4.1 A refund of the tickets for conferences and events is only
-            possible up to 14 days before the event. Refunds are only possible
-            under certain conditions. Reasons for a refund of the ticket price
-            are: i. Buying the wrong ticket.
+            4.1 A refund of the tickets for conferences and events is not
+            possible. Also in the event of a no-show (the ticket owner does not
+            follow the event), there will be no refund of the ticket price.
           - >-
-            4.2 If the ticket is not returned within the time limit, no refund
-            is possible. Additional claims are excluded. Thus, only the ticket
-            price is refundable. In the event of a no-show (the ticket owner
-            does not follow the event), there will be no refund of the ticket
-            price.
+            4.2 The booking of a startup booth is binding and trigger invoicing.
+            The cancellation of a booked booth can only be refunded up until 1
+            month before the event. If you cancel less than one month before the
+            event, no refund will be possible.
           - >-
             4.3 The tickets purchased are for your own personal use or that of
             your business only and may not be re-sold or transferred for
@@ -89,6 +87,14 @@ blocks:
           - >-
             4.6 In the case of either the event date or location (platform)
             being changed, in general, tickets remain valid.
+          - >-
+            4.7 During all Startup Nights Events, audio, picture and video
+            recording of the attendees are free of charge and can be used
+            unlimited spatio-temporal for press reports, advertising, posters,
+            calendars, brochures, commercial products and manuals, and on
+            Startup Nights websites as well as third party websites. The rights
+            of use by Startup Nights can also be given to third parties both
+            free of charge and against payment.
       - title: 5. PAYMENT
         text:
           - >-
@@ -134,14 +140,6 @@ blocks:
             reimbursement of the ticket price or any other claim of the
             participant, unless Startup Nights has caused the defect in the
             provision through gross negligence or intentionally.
-          - >-
-            7.4 During all Startup Nights Events, audio, picture and video
-            recording of the attendees are free of charge and can be used
-            unlimited spatio-temporal for press reports, advertising, posters,
-            calendars, brochures, commercial products and manuals, and on
-            Startup Nights websites as well as third party websites. The rights
-            of use by Startup Nights can also be given to third parties both
-            free of charge and against payment.
       - title: 8. MISCELLANEOUS
         text:
           - >-
@@ -163,33 +161,4 @@ blocks:
             acceptance of these modified Terms
     _template: content_wide
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
