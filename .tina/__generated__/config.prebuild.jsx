@@ -1002,7 +1002,6 @@ function cloudinaryLoader({ src, width, quality }) {
 import React8, { useEffect as useEffect4, useState as useState8 } from "react";
 import Head from "next/head";
 import { InformationCircleIcon as InformationCircleIcon2 } from "@heroicons/react/24/outline";
-import Link7 from "next/link";
 var titoBlockSchema = {
   name: "tito",
   label: "Tito",
@@ -1323,7 +1322,7 @@ var contentWideBlockSchema = {
 
 // components/blocks/pricing.tsx
 import { CheckIcon, XMarkIcon as XMarkIcon3 } from "@heroicons/react/20/solid";
-import Link8 from "next/link";
+import Link7 from "next/link";
 var pricingBlockSchema = {
   name: "pricing",
   label: "Pricing table",
@@ -1613,7 +1612,7 @@ var boothApprovedBlockSchema = {
 
 // components/blocks/crop.tsx
 import { ExclamationTriangleIcon as ExclamationTriangleIcon2, PhotoIcon as PhotoIcon2 } from "@heroicons/react/24/outline";
-import Link9 from "next/link";
+import Link8 from "next/link";
 import { useState as useState12 } from "react";
 var cropBlockSchema = {
   name: "crop",
@@ -1629,7 +1628,7 @@ var cropBlockSchema = {
 
 // components/blocks/quotes.tsx
 import React12 from "react";
-import Link10 from "next/link";
+import Link9 from "next/link";
 import { ArrowTopRightOnSquareIcon as ArrowTopRightOnSquareIcon3 } from "@heroicons/react/20/solid";
 var quotesBlockSchema = {
   name: "quotes",

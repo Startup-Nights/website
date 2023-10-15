@@ -46,20 +46,6 @@ export const Tito = ({ data }) => {
                     </div>
                 )}
 
-                <div className="mx-auto max-w-[739px] rounded-3xl bg-sn-black-lightest p-8 mb-12">
-                    <div className="flex">
-                        <div className="flex-shrink-0">
-                            <InformationCircleIcon className="h-5 w-5 text-sn-yellow" aria-hidden="true" />
-                        </div>
-                        <div className="ml-3">
-                            <h3 className="font-medium text-gray-200">Apply for a booth</h3>
-                            <p className="mt-2 text-gray-400">
-                                To get a place for a booth, you have to apply <Link href={'/booth'} className="text-sn-yellow underline hover:text-sn-yellow-dark underline-offset-4">here</Link>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
                 <div className="flex justify-center">
                     <div id="sn-tito-embedded-widget" className="flex items-center">
                         <tito-widget
