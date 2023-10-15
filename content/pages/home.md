@@ -14,7 +14,7 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: '2 & 3 November 2023, Winterthur'
+  - subtitle: '2 & 3 November 2023, Eulachhallen Winterthur'
     title: The biggest startup event in Switzerland
     title_line2: ''
     cta:
@@ -180,7 +180,7 @@ blocks:
             them.
     background_color: bg-sn-black-light
     _template: overview
-  - subtitle: 
+  - subtitle: null
     title: What last year's speakers said about the event
     videos:
       - video:
@@ -272,7 +272,9 @@ blocks:
           cream of the crop among early-stage startups. There will be two
           winners at Startup Nights 2023: a "pre-seed" and a "seed" stage
           winner.
-        - 'The application deadline was 05.10.2023 - applications are no longer accepted.'
+        - >-
+          The application deadline was 05.10.2023 - applications are no longer
+          accepted.
       cta:
         link: /pitching
         text: Check out all jury members
@@ -426,39 +428,4 @@ blocks:
             link: 'https://sparrow-ventures.com'
     _template: partner_list
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
