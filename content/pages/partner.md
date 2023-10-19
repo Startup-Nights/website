@@ -50,7 +50,7 @@ blocks:
             alt: Microsoft For Startups
             link: 'https://www.microsoft.com/de-ch/startups'
           - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/759861217-tdsynnex_scaled.png
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/946197681-synnex_scaled.png
             alt: TD Synnex
             link: 'https://www.tdsynnex.com'
           - src: >-
@@ -92,6 +92,10 @@ blocks:
       - title: Legal Partner
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/wenger-vieli.png
+            alt: Wenger Vieli
+            link: 'https://wengervieli.ch'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/walderwyss.png
             alt: Walder Wyss
@@ -160,6 +164,22 @@ blocks:
       - title: Supporter
         grid_cols: 4
         partners:
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/650287751-weshapetech_scaled.png
+            alt: weshapetech
+            link: 'https://weshape.tech'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/371987253-swissnex_scaled.png
+            alt: Swissnex
+            link: 'https://swissnex.org'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/364627479-swissdevjobs_scaled.png
+            alt: SwissDevJobs
+            link: 'https://swissdevjobs.ch'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/198503039-sge_scaled.png
+            alt: Switzerland Global Enterprise
+            link: 'https://s-ge.com/en'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/645438382-kuna-pay_scaled.png
             alt: Kuna Pay
@@ -285,10 +305,6 @@ blocks:
             alt: Farner
             link: 'https://farner.ch'
           - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/wenger-vieli.png
-            alt: Wenger Vieli
-            link: 'https://wengervieli.ch'
-          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/zhaw.png
             alt: ZHAW Marketing Institute
             link: 'https://zhaw.ch'
@@ -391,7 +407,7 @@ blocks:
             alt: Focus Water
             link: 'https://focuswater.ch/en/'
           - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/17024589-nespresso_scaled.png
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/886847504-nespresso_scaled.png
             alt: Nespresso
             link: 'https://www.nespresso.com/ch/en/'
           - src: >-
@@ -408,11 +424,4 @@ blocks:
             link: 'https://www.noser.com/'
     _template: partner_list
 ---
-
-
-
-
-
-
-
 
