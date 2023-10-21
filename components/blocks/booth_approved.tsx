@@ -13,6 +13,9 @@ export const BoothApproved = ({ data }) => {
   const [booths, setBooths] = useState([])
   const [loading, setLoading] = useState(true)
 
+  const [selectedCategorie, setSelectedCategorie] = useState('All');
+  const [categories, setCategories] = useState([]);
+
   const getData = async () => {
     const response = await fetch('https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/sheets', {
       method: 'post',
@@ -29,6 +32,8 @@ export const BoothApproved = ({ data }) => {
     const booths = data.data
     const filtered: Booth[] = []
 
+    const tmp_categories = ['All']
+
     // remove head row
     booths.splice(0, 1)
 
@@ -43,7 +48,12 @@ export const BoothApproved = ({ data }) => {
             booth[1] = 'https://' + booth[1]
           }
 
-          const boothCategories = booth[6].split('\n')
+          const boothCategories = booth[6].split(/[\n.,]+/).map((categorie: string) => categorie.trim())
+          boothCategories.forEach((element: string) => {
+            if (element !== '' && tmp_categories.indexOf(element) === -1) {
+              tmp_categories.push(element);
+            }
+          });
 
           // convert data
           filtered.push({
@@ -56,6 +66,7 @@ export const BoothApproved = ({ data }) => {
       }
     })
 
+    setCategories(tmp_categories)
     setLoading(false)
     setBooths(filtered)
   }
@@ -67,7 +78,7 @@ export const BoothApproved = ({ data }) => {
   return (
     <div className='bg-white'>
       <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
             {data.subtitle}
           </h2>
@@ -76,13 +87,26 @@ export const BoothApproved = ({ data }) => {
           </h1>
         </div>
 
+        <div className='flex flex-wrap justify-center space-x-2 mb-20'>
+          {categories.map((categorie: string, i: number) => (
+            <a
+              key={`department-${i}`}
+              onClick={() => setSelectedCategorie(categorie)}
+              className={`rounded-full px-3 py-0.5 my-1 text-sm text-gray-600 font-semibold ` +
+                `transition-all hover:text-black leading-5 ` +
+                `${selectedCategorie === categorie ? 'bg-gray-200 text-gray-800 hover:bg-gray-100' : 'bg-gray-100 hover:bg-gray-200 hover:text-gray-800'}`}>
+              {categorie}
+            </a>
+          ))}
+        </div>
+
         {loading && (
           <p className="font-bold text-black">Loading data...</p>
         )}
 
         {!loading && (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8">
-            {booths.map((booth: Booth, i: number) => (
+            {booths.filter((booth: Booth) => selectedCategorie === 'All' || booth.categories.indexOf(selectedCategorie) !== -1).map((booth: Booth, i: number) => (
               <div key={i} className="aspect-[3/2] relative bg-gray-100 rounded-xl flex justify-center items-center p-4 sm:p-6 hover:bg-gray-200">
                 <a className="" href={booth.website} target="_blank">
                   {booth.image === "" && (
