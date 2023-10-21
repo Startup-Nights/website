@@ -54,7 +54,7 @@ export const Booth = ({ data }) => {
       setCompanyLogoLoading({
         downloadUrl: "",
         error:
-          "Logo is too big: " +
+        "Logo is too big: " +
           Math.floor(file.size / 1000000) +
           " MB instead of max. 10 MB",
         state: uploadState.Error,
