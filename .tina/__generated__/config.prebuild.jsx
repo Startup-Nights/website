@@ -832,7 +832,7 @@ import React6 from "react";
 import Image6 from "next/image";
 
 // components/util/icons.tsx
-import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, InformationCircleIcon, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon as RocketLaunchIcon2, StarIcon, TicketIcon, TrophyIcon, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
+import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, InformationCircleIcon, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon as RocketLaunchIcon2, StarIcon, TicketIcon, TrophyIcon, UserCircleIcon, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
 
 // components/blocks/overview.tsx
 var overviewBlockSchema = {
@@ -1840,12 +1840,31 @@ var config = defineStaticConfig({
                 name: "name"
               },
               {
-                type: "string",
-                label: "Color",
-                name: "color",
-                options: [
-                  { label: "Default", value: "default" },
-                  { label: "Primary", value: "primary" }
+                type: "object",
+                label: "Nav CTAs",
+                name: "nav_ctas",
+                list: true,
+                fields: [
+                  {
+                    type: "string",
+                    label: "Link",
+                    name: "href"
+                  },
+                  {
+                    type: "string",
+                    label: "Title",
+                    name: "title"
+                  },
+                  {
+                    type: "string",
+                    label: "Icon",
+                    name: "icon"
+                  },
+                  {
+                    type: "boolean",
+                    label: "Primary button",
+                    name: "primary"
+                  }
                 ]
               },
               {

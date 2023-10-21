@@ -1,4 +1,4 @@
-import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, FunnelIcon, HeartIcon, InformationCircleIcon, LightBulbIcon, MegaphoneIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon, StarIcon, TicketIcon, TrophyIcon, UserGroupIcon } from '@heroicons/react/24/outline';
+import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, FunnelIcon, HeartIcon, InformationCircleIcon, LightBulbIcon, MegaphoneIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon, StarIcon, TicketIcon, TrophyIcon, UserCircleIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 
 export const getIcon = (icon: string, classes: string) => {
   switch (icon) {
@@ -19,6 +19,7 @@ export const getIcon = (icon: string, classes: string) => {
     case 'phone': return <PhoneIcon className={classes} />
     case 'trophy': return <TrophyIcon className={classes} />
     case 'ticket': return <TicketIcon className={classes} />
+    case 'login': return <UserCircleIcon className={classes} />
     case 'info': return <InformationCircleIcon className={classes} />
   }
 }
