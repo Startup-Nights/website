@@ -30,7 +30,13 @@ fragment GlobalParts on Global {
   header {
     __typename
     name
-    color
+    nav_ctas {
+      __typename
+      href
+      title
+      icon
+      primary
+    }
     nav {
       __typename
       href

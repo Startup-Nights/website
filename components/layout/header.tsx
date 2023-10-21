@@ -4,7 +4,6 @@ import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { SocialIcon } from '../items/social'
 import { Button, ButtonSecondary } from '../items/button'
-
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { getIcon } from '../util/icons'
 import HeaderBanner from '../items/header_banner'
@@ -104,13 +103,15 @@ export const Header = ({ data }) => {
               </div>
             </div>
             <div className="hidden lg:flex lg:justify-end space-x-2 justify-center items-center">
-              <div className=''>
-                <ButtonSecondary text='Volunteer' link='/hiring'></ButtonSecondary>
-              </div>
-
-              <div className='mr-4'>
-                <Button text='Tickets' link='/tickets'></Button>
-              </div>
+              {data.nav_ctas && data.nav_ctas.map((item: any, i: number) => (
+                <div key={i} className={i < data.nav_ctas.length - 1 ? '' : 'mr-4'}>
+                  {item.primary ? (
+                    <Button text={item.title} link={item.href}></Button>
+                  ) : (
+                    <ButtonSecondary text={item.title} link={item.href} without_background={true}></ButtonSecondary>
+                  )}
+                </div>
+              ))}
 
               {data.social && data.social.map((item, i: number) => (
                 <a
@@ -193,35 +194,18 @@ export const Header = ({ data }) => {
                 <h3 className='mt-8 block rounded-lg text-base font-semibold leading-7 text-gray-500'>
                   Take part
                 </h3>
-                <div className="mt-4 grid grid-cols-2 gap-x-4">
-                  <div className='space-y-4'>
+                <div className="mt-4 grid grid-cols-2 gap-y-4 gap-x-4">
+                  {data.nav_ctas && data.nav_ctas.map((item: any, i: number) => (
                     <Link
+                      key={i}
                       className='flex items-center gap-x-5 rounded-lg text-xs sm:text-base font-semibold leading-7 text-gray-300'
-                      href='/tickets'
+                      href={item.href}
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {getIcon('ticket', 'h-5 w-5 sm:h-6 sm:w-6 text-gray-200')}
-                      Buy ticket
+                      {getIcon(item.icon, 'h-5 w-5 sm:h-6 sm:w-6 text-gray-200')}
+                      {item.title}
                     </Link>
-                    {/* <Link */}
-                    {/*     className='flex items-center gap-x-5 rounded-lg text-xs sm:text-base font-semibold leading-7 text-gray-300' */}
-                    {/*     href='/' */}
-                    {/*     onClick={() => setMobileMenuOpen(false)} */}
-                    {/* > */}
-                    {/*     {getIcon('booth', 'h-5 w-5 sm:h-6 sm:w-6 text-gray-200')} */}
-                    {/*     Apply for a booth */}
-                    {/* </Link> */}
-                  </div>
-                  {/* <div className='space-y-4'> */}
-                  {/*     <Link */}
-                  {/*         className='flex items-center gap-x-5 rounded-lg text-xs sm:text-base font-semibold leading-7 text-gray-300' */}
-                  {/*         href='/pitching' */}
-                  {/*         onClick={() => setMobileMenuOpen(false)} */}
-                  {/*     > */}
-                  {/*         {getIcon('trophy', 'h-5 w-5 sm:h-6 sm:w-6 text-gray-200')} */}
-                  {/*         Apply for pitching */}
-                  {/*     </Link> */}
-                  {/* </div> */}
+                  ))}
                 </div>
                 <div className='mt-8'>
                   <p className='text-sm text-center leading-7 text-gray-400'>

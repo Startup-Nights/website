@@ -183,6 +183,13 @@ type PostConnection implements Connection {
   edges: [PostConnectionEdges]
 }
 
+type GlobalHeaderNav_ctas {
+  href: String
+  title: String
+  icon: String
+  primary: Boolean
+}
+
 type GlobalHeaderNavSubitems {
   href: String
   label: String
@@ -210,7 +217,7 @@ type GlobalHeaderSocial {
 
 type GlobalHeader {
   name: String
-  color: String
+  nav_ctas: [GlobalHeaderNav_ctas]
   nav: [GlobalHeaderNav]
   social: [GlobalHeaderSocial]
 }
@@ -259,6 +266,18 @@ type Global implements Node & Document {
   _values: JSON!
 }
 
+input BooleanFilter {
+  eq: Boolean
+  exists: Boolean
+}
+
+input GlobalHeaderNav_ctasFilter {
+  href: StringFilter
+  title: StringFilter
+  icon: StringFilter
+  primary: BooleanFilter
+}
+
 input GlobalHeaderNavSubitemsFilter {
   href: StringFilter
   label: StringFilter
@@ -286,7 +305,7 @@ input GlobalHeaderSocialFilter {
 
 input GlobalHeaderFilter {
   name: StringFilter
-  color: StringFilter
+  nav_ctas: GlobalHeaderNav_ctasFilter
   nav: GlobalHeaderNavFilter
   social: GlobalHeaderSocialFilter
 }
@@ -893,11 +912,6 @@ type Page implements Node & Document {
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
-}
-
-input BooleanFilter {
-  eq: Boolean
-  exists: Boolean
 }
 
 input PageBlocksHeroCtaFilter {
@@ -1511,6 +1525,13 @@ input PostMutation {
   _body: JSON
 }
 
+input GlobalHeaderNav_ctasMutation {
+  href: String
+  title: String
+  icon: String
+  primary: Boolean
+}
+
 input GlobalHeaderNavSubitemsMutation {
   href: String
   label: String
@@ -1538,7 +1559,7 @@ input GlobalHeaderSocialMutation {
 
 input GlobalHeaderMutation {
   name: String
-  color: String
+  nav_ctas: [GlobalHeaderNav_ctasMutation]
   nav: [GlobalHeaderNavMutation]
   social: [GlobalHeaderSocialMutation]
 }

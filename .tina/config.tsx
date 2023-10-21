@@ -182,13 +182,32 @@ const config = defineStaticConfig({
                 name: "name",
               },
               {
-                type: "string",
-                label: "Color",
-                name: "color",
-                options: [
-                  { label: "Default", value: "default" },
-                  { label: "Primary", value: "primary" },
-                ],
+                type: "object",
+                label: "Nav CTAs",
+                name: "nav_ctas",
+                list: true,
+                fields: [
+                  {
+                    type: "string",
+                    label: "Link",
+                    name: "href",
+                  },
+                  {
+                    type: "string",
+                    label: "Title",
+                    name: "title",
+                  },
+                  {
+                    type: "string",
+                    label: "Icon",
+                    name: "icon"
+                  },
+                  {
+                    type: "boolean",
+                    label: "Primary button",
+                    name: "primary"
+                  }
+                ]
               },
               {
                 type: "object",

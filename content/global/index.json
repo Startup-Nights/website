@@ -2,6 +2,24 @@
   "header": {
     "name": "Startup Nights 2023",
     "color": "default",
+    "nav_ctas": [
+      {
+        "href": "hiring",
+        "title": "Volunteer",
+        "icon": "heart"
+      },
+      {
+        "href": "https://portal.startup-nights.ch",
+        "title": "Login",
+        "icon": "login"
+      },
+      {
+        "href": "tickets",
+        "title": "Tickets",
+        "icon": "ticket",
+        "primary": true
+      }
+    ],
     "nav": [
       {
         "href": "program",
@@ -92,10 +110,6 @@
       {
         "title": "linkedin",
         "link": "https://www.linkedin.com/company/startup-nights"
-      },
-      {
-        "title": "youtube",
-        "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
       }
     ]
   },
