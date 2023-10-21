@@ -1,17 +1,20 @@
 import type { Template } from "tinacms";
 import { ColorPickerInput } from "../fields/color";
 import { useEffect, useState } from "react";
-
-interface Booth {
-  company: string
-  website: string
-  image: string
-  categories: string[]
-}
+import { Booth } from "../data/booth"
+import BoothModal from "./boothmodal";
 
 export const BoothApproved = ({ data }) => {
   const [booths, setBooths] = useState([])
   const [loading, setLoading] = useState(true)
+
+  const [open, setOpen] = useState(false)
+  const [booth, setBooth] = useState({
+    company: '',
+    website: '',
+    description: '',
+    image: '',
+  } as Booth)
 
   const [selectedCategorie, setSelectedCategorie] = useState('All');
   const [categories, setCategories] = useState([]);
@@ -60,6 +63,7 @@ export const BoothApproved = ({ data }) => {
             company: booth[0],
             website: booth[1],
             image: booth[8],
+            description: booth[5],
             categories: boothCategories,
           })
         }
@@ -69,6 +73,7 @@ export const BoothApproved = ({ data }) => {
     setCategories(tmp_categories)
     setLoading(false)
     setBooths(filtered)
+    setBooth(filtered[0])
   }
 
   useEffect(() => {
@@ -94,7 +99,7 @@ export const BoothApproved = ({ data }) => {
               onClick={() => setSelectedCategorie(categorie)}
               className={`rounded-full px-3 py-0.5 my-1 text-sm text-gray-600 font-semibold ` +
                 `transition-all hover:text-black leading-5 ` +
-                `${selectedCategorie === categorie ? 'bg-gray-200 text-gray-800 hover:bg-gray-100' : 'bg-gray-100 hover:bg-gray-200 hover:text-gray-800'}`}>
+                `${selectedCategorie === categorie ? 'bg-gray-300 text-gray-800 hover:bg-gray-100' : 'bg-gray-100 hover:bg-gray-200 hover:text-gray-800'}`}>
               {categorie}
             </a>
           ))}
@@ -105,24 +110,33 @@ export const BoothApproved = ({ data }) => {
         )}
 
         {!loading && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8">
-            {booths.filter((booth: Booth) => selectedCategorie === 'All' || booth.categories.indexOf(selectedCategorie) !== -1).map((booth: Booth, i: number) => (
-              <div key={i} className="aspect-[3/2] relative bg-gray-100 rounded-xl flex justify-center items-center p-4 sm:p-6 hover:bg-gray-200">
-                <a className="" href={booth.website} target="_blank">
-                  {booth.image === "" && (
-                    <p className="text-black font-bold">{booth.company}</p>
-                  )}
-                  {booth.image !== "" && (
-                    <div className='absolute inset-0 p-6 '>
-                      <img key={i} src={booth.image} alt={booth.company}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                  )}
-                </a>
-              </div>
-            ))}
-          </div>
+          <>
+            <BoothModal booth={booth} open={open} setOpen={setOpen} />
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8">
+              {booths.filter((booth: Booth) => selectedCategorie === 'All' || booth.categories.indexOf(selectedCategorie) !== -1).map((booth: Booth, i: number) => (
+                <div key={i} className="aspect-[3/2] relative bg-gray-50 rounded-xl flex justify-center items-center p-4 sm:p-6 hover:bg-gray-100">
+                  <a className=""
+                    onClick={() => {
+                      setBooth(booth)
+                      setOpen(true)
+                    }}
+                  >
+                    {booth.image === "" && (
+                      <p className="text-black font-bold">{booth.company}</p>
+                    )}
+                    {booth.image !== "" && (
+                      <div className='absolute inset-0 p-6 '>
+                        <img key={i} src={booth.image} alt={booth.company}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                    )}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </>
         )}
       </div>
     </div>
