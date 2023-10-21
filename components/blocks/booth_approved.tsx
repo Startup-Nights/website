@@ -16,7 +16,7 @@ export const BoothApproved = ({ data }) => {
     image: '',
   } as Booth)
 
-  const [selectedCategorie, setSelectedCategorie] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState('All');
   const [categories, setCategories] = useState([]);
 
   const getData = async () => {
@@ -51,7 +51,7 @@ export const BoothApproved = ({ data }) => {
             booth[1] = 'https://' + booth[1]
           }
 
-          const boothCategories = booth[6].split(/[\n.,]+/).map((categorie: string) => categorie.trim())
+          const boothCategories = (booth[41] ? booth[41] : '').split(/[\n.,]+/).map((category: string) => category.trim())
           boothCategories.forEach((element: string) => {
             if (element !== '' && tmp_categories.indexOf(element) === -1) {
               tmp_categories.push(element);
@@ -93,14 +93,14 @@ export const BoothApproved = ({ data }) => {
         </div>
 
         <div className='flex flex-wrap justify-center space-x-2 mb-20'>
-          {categories.map((categorie: string, i: number) => (
+          {categories.map((category: string, i: number) => (
             <a
               key={`department-${i}`}
-              onClick={() => setSelectedCategorie(categorie)}
+              onClick={() => setSelectedCategory(category)}
               className={`rounded-full px-3 py-0.5 my-1 text-sm text-gray-600 font-semibold ` +
                 `transition-all hover:text-black leading-5 ` +
-                `${selectedCategorie === categorie ? 'bg-gray-300 text-gray-800 hover:bg-gray-100' : 'bg-gray-100 hover:bg-gray-200 hover:text-gray-800'}`}>
-              {categorie}
+                `${selectedCategory === category ? 'bg-gray-300 text-gray-800 hover:bg-gray-100' : 'bg-gray-100 hover:bg-gray-200 hover:text-gray-800'}`}>
+              {category}
             </a>
           ))}
         </div>
@@ -114,7 +114,7 @@ export const BoothApproved = ({ data }) => {
             <BoothModal booth={booth} open={open} setOpen={setOpen} />
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8">
-              {booths.filter((booth: Booth) => selectedCategorie === 'All' || booth.categories.indexOf(selectedCategorie) !== -1).map((booth: Booth, i: number) => (
+              {booths.filter((booth: Booth) => selectedCategory === 'All' || booth.categories.indexOf(selectedCategory) !== -1).map((booth: Booth, i: number) => (
                 <div key={i} className="aspect-[3/2] relative bg-gray-50 rounded-xl flex justify-center items-center p-4 sm:p-6 hover:bg-gray-100">
                   <a className=""
                     onClick={() => {
