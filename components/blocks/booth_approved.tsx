@@ -62,6 +62,8 @@ export const BoothApproved = ({ data }) => {
           filtered.push({
             company: booth[0],
             website: booth[1],
+            founding_date: booth[2] ? booth[2] : '',
+            employees: booth[4] ? booth[4] : '',
             image: booth[8],
             description: booth[5],
             categories: boothCategories,
