@@ -70,9 +70,11 @@ const BoothModal = (props: { booth: Booth, open: any, setOpen: any }) => {
                       ))}
                     </div>
 
-                    <p className="mt-6 text-md leading-6 text-gray-800">
-                      {props.booth.description}
-                    </p>
+                    {props.booth.description.split('\n').map((paragraph: string, i: number) => (
+                      <p key={i} className="mt-6 text-md leading-6 text-gray-800">
+                        {paragraph}
+                      </p>
+                    ))}
                   </div>
                   <div className='mt-12'>
                     <Button link={props.booth.website} text={'Website'} new_tab={true} />
