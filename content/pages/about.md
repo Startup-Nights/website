@@ -55,18 +55,18 @@ blocks:
       - subtitle: Marketing Team
         title: Influencing you.
         members:
-          - name: Tabita Sager
-            position: Director of MarCom
-            linkedin: 'https://www.linkedin.com/in/tabita-rueegg/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/tabita-sager.jpg
-            alt: Tabita Sager
           - name: Micha Neumair
-            position: Head of Marketing
+            position: Director of MarCom
             linkedin: 'https://www.linkedin.com/in/neumairmicha/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/micha-neumair.jpg
             alt: Micha Neumair
+          - name: Tabita Sager
+            position: Head of Marketing
+            linkedin: 'https://www.linkedin.com/in/tabita-rueegg/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/tabita-sager.jpg
+            alt: Tabita Sager
           - name: Laura Merz
             position: Co-Head of Branding & Design
             linkedin: 'https://www.linkedin.com/in/laura-merz-379081147/'
@@ -143,18 +143,22 @@ blocks:
             position: Head of Photo & Video
             linkedin: 'https://www.linkedin.com/in/shamiryanay/'
             alt: Shamir Yanay
+            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/shamir-yanay.jpeg
           - name: Arianna Confalonieri
             position: Social Media Manager
             linkedin: 'https://www.linkedin.com/in/arianna-confalonieri-95299518b/'
             alt: Arianna Confalonieri
+            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/arianna-confalonieri.jpeg
           - name: Marie-Sophie Grootens
             position: Social Media Manager
             linkedin: 'https://www.linkedin.com/in/marie-sophie-grootens/'
             alt: Marie-Sophie Grootens
+            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/marie-sophie-grootens.jpeg
           - name: Haris Bin Waris
             position: Content Creator
             linkedin: 'https://www.linkedin.com/in/haris-bin-waris-8a4234244/'
             alt: Haris Bin Waris
+            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/haris-bin-waris.jpeg
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
@@ -240,6 +244,7 @@ blocks:
             position: Head of Power & Internet Supply
             linkedin: 'https://www.linkedin.com/in/critsecdave/'
             alt: David Barrera
+            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/david-barrera.jpeg
       - subtitle: Program Team
         title: Entertainers at heart.
         members:
@@ -358,6 +363,7 @@ blocks:
           - name: Jasmin Schoch
             position: Coordination Volunteers
             alt: Jasmin Schoch
+            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/jasmin-schoch.jpg
       - subtitle: Partnerships Team
         title: Exchanging value.
         members:

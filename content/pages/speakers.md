@@ -30,6 +30,12 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/isabelle-von-kaenel.png
           alt: Isabelle von Känel
+      - name: Silvan Krähenbühl
+        position: Managing Director at Swisspreneur
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/silvan-kraehenbuehl.jpg
+          alt: Silvan Krähenbühl
       - name: Michael Chobanian
         position: >-
           Founder and CEO of Kuna, President of Blockchain Association of
@@ -74,6 +80,12 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/philipp-koller.jpeg
           alt: Philipp Koller
+      - name: Patric Much
+        position: Moderator Startup Nights 2023
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/patric-much.jpg
+          alt: Patric Much
       - name: Sandra Völler
         position: CEO and Founder Agilita
         image:
@@ -134,6 +146,12 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/natascha_badmann.png
           alt: 'Natascha Badmann '
+      - name: Giuliana Breu
+        position: Moderator Startup Nights 2023
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/giuliana-breu.jpg
+          alt: Giuliana Breu
       - name: Tobias Wuelser
         position: Founder Designwerk
         image:
@@ -166,6 +184,12 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/laurent-decrue.jpg
           alt: Laurent Decrue
+      - name: Fabio Furrer
+        position: Moderator Startup Nights 2023
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/team/fabio-furrer.jpg
+          alt: Fabio Furrer
       - name: Peter Kuhn
         position: Legal Partner MME
         image:
@@ -365,7 +389,7 @@ blocks:
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/lea-firmin.jpg
           alt: Lea Firmin
       - name: Olya Klueppel
-        position: Partner at GP Bullhound
+        position: Partner at GP Bullhound / Moderator Startup Nights 2023
         image:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/moderation-olya-klueppel.jpg
