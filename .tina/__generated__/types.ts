@@ -3398,38 +3398,38 @@ export const PageConnectionDocument = gql`
 export type Requester<C= {}> = <R, V>(doc: DocumentNode, vars?: V, options?: C) => Promise<R>
   export function getSdk<C>(requester: Requester<C>) {
     return {
-      pageQuery(variables?: PageQueryQueryVariables, options?: C): Promise<{data: PageQueryQuery, variables: PageQueryQueryVariables, query: string}> {
-        return requester<{data: PageQueryQuery, variables: PageQueryQueryVariables, query: string}, PageQueryQueryVariables>(PageQueryDocument, variables, options);
+      pageQuery(variables?: PageQueryQueryVariables, options?: C): Promise<{data: PageQueryQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PageQueryQueryVariables, query: string}> {
+        return requester<{data: PageQueryQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PageQueryQueryVariables, query: string}, PageQueryQueryVariables>(PageQueryDocument, variables, options);
       },
-    contentQuery(variables: ContentQueryQueryVariables, options?: C): Promise<{data: ContentQueryQuery, variables: ContentQueryQueryVariables, query: string}> {
-        return requester<{data: ContentQueryQuery, variables: ContentQueryQueryVariables, query: string}, ContentQueryQueryVariables>(ContentQueryDocument, variables, options);
+    contentQuery(variables: ContentQueryQueryVariables, options?: C): Promise<{data: ContentQueryQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: ContentQueryQueryVariables, query: string}> {
+        return requester<{data: ContentQueryQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: ContentQueryQueryVariables, query: string}, ContentQueryQueryVariables>(ContentQueryDocument, variables, options);
       },
-    blogPostQuery(variables: BlogPostQueryQueryVariables, options?: C): Promise<{data: BlogPostQueryQuery, variables: BlogPostQueryQueryVariables, query: string}> {
-        return requester<{data: BlogPostQueryQuery, variables: BlogPostQueryQueryVariables, query: string}, BlogPostQueryQueryVariables>(BlogPostQueryDocument, variables, options);
+    blogPostQuery(variables: BlogPostQueryQueryVariables, options?: C): Promise<{data: BlogPostQueryQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: BlogPostQueryQueryVariables, query: string}> {
+        return requester<{data: BlogPostQueryQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: BlogPostQueryQueryVariables, query: string}, BlogPostQueryQueryVariables>(BlogPostQueryDocument, variables, options);
       },
-    post(variables: PostQueryVariables, options?: C): Promise<{data: PostQuery, variables: PostQueryVariables, query: string}> {
-        return requester<{data: PostQuery, variables: PostQueryVariables, query: string}, PostQueryVariables>(PostDocument, variables, options);
+    post(variables: PostQueryVariables, options?: C): Promise<{data: PostQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PostQueryVariables, query: string}> {
+        return requester<{data: PostQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PostQueryVariables, query: string}, PostQueryVariables>(PostDocument, variables, options);
       },
-    postConnection(variables?: PostConnectionQueryVariables, options?: C): Promise<{data: PostConnectionQuery, variables: PostConnectionQueryVariables, query: string}> {
-        return requester<{data: PostConnectionQuery, variables: PostConnectionQueryVariables, query: string}, PostConnectionQueryVariables>(PostConnectionDocument, variables, options);
+    postConnection(variables?: PostConnectionQueryVariables, options?: C): Promise<{data: PostConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PostConnectionQueryVariables, query: string}> {
+        return requester<{data: PostConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PostConnectionQueryVariables, query: string}, PostConnectionQueryVariables>(PostConnectionDocument, variables, options);
       },
-    global(variables: GlobalQueryVariables, options?: C): Promise<{data: GlobalQuery, variables: GlobalQueryVariables, query: string}> {
-        return requester<{data: GlobalQuery, variables: GlobalQueryVariables, query: string}, GlobalQueryVariables>(GlobalDocument, variables, options);
+    global(variables: GlobalQueryVariables, options?: C): Promise<{data: GlobalQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: GlobalQueryVariables, query: string}> {
+        return requester<{data: GlobalQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: GlobalQueryVariables, query: string}, GlobalQueryVariables>(GlobalDocument, variables, options);
       },
-    globalConnection(variables?: GlobalConnectionQueryVariables, options?: C): Promise<{data: GlobalConnectionQuery, variables: GlobalConnectionQueryVariables, query: string}> {
-        return requester<{data: GlobalConnectionQuery, variables: GlobalConnectionQueryVariables, query: string}, GlobalConnectionQueryVariables>(GlobalConnectionDocument, variables, options);
+    globalConnection(variables?: GlobalConnectionQueryVariables, options?: C): Promise<{data: GlobalConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: GlobalConnectionQueryVariables, query: string}> {
+        return requester<{data: GlobalConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: GlobalConnectionQueryVariables, query: string}, GlobalConnectionQueryVariables>(GlobalConnectionDocument, variables, options);
       },
-    author(variables: AuthorQueryVariables, options?: C): Promise<{data: AuthorQuery, variables: AuthorQueryVariables, query: string}> {
-        return requester<{data: AuthorQuery, variables: AuthorQueryVariables, query: string}, AuthorQueryVariables>(AuthorDocument, variables, options);
+    author(variables: AuthorQueryVariables, options?: C): Promise<{data: AuthorQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: AuthorQueryVariables, query: string}> {
+        return requester<{data: AuthorQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: AuthorQueryVariables, query: string}, AuthorQueryVariables>(AuthorDocument, variables, options);
       },
-    authorConnection(variables?: AuthorConnectionQueryVariables, options?: C): Promise<{data: AuthorConnectionQuery, variables: AuthorConnectionQueryVariables, query: string}> {
-        return requester<{data: AuthorConnectionQuery, variables: AuthorConnectionQueryVariables, query: string}, AuthorConnectionQueryVariables>(AuthorConnectionDocument, variables, options);
+    authorConnection(variables?: AuthorConnectionQueryVariables, options?: C): Promise<{data: AuthorConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: AuthorConnectionQueryVariables, query: string}> {
+        return requester<{data: AuthorConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: AuthorConnectionQueryVariables, query: string}, AuthorConnectionQueryVariables>(AuthorConnectionDocument, variables, options);
       },
-    page(variables: PageQueryVariables, options?: C): Promise<{data: PageQuery, variables: PageQueryVariables, query: string}> {
-        return requester<{data: PageQuery, variables: PageQueryVariables, query: string}, PageQueryVariables>(PageDocument, variables, options);
+    page(variables: PageQueryVariables, options?: C): Promise<{data: PageQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PageQueryVariables, query: string}> {
+        return requester<{data: PageQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PageQueryVariables, query: string}, PageQueryVariables>(PageDocument, variables, options);
       },
-    pageConnection(variables?: PageConnectionQueryVariables, options?: C): Promise<{data: PageConnectionQuery, variables: PageConnectionQueryVariables, query: string}> {
-        return requester<{data: PageConnectionQuery, variables: PageConnectionQueryVariables, query: string}, PageConnectionQueryVariables>(PageConnectionDocument, variables, options);
+    pageConnection(variables?: PageConnectionQueryVariables, options?: C): Promise<{data: PageConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PageConnectionQueryVariables, query: string}> {
+        return requester<{data: PageConnectionQuery, errors?: { message: string, locations: { line: number, column: number }[], path: string[] }[], variables: PageConnectionQueryVariables, query: string}, PageConnectionQueryVariables>(PageConnectionDocument, variables, options);
       }
     };
   }
@@ -3459,7 +3459,7 @@ const generateRequester = (
       url,
     })
 
-    return { data: data?.data, query: doc, variables: vars || {} }
+    return { data: data?.data, errors: data?.errors, query: doc, variables: vars || {} }
   }
 
   return requester
