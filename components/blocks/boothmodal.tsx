@@ -69,7 +69,14 @@ const BoothModal = (props: { booth: Booth, open: any, setOpen: any }) => {
                         </span>
                       ))}
                     </div>
-
+                    <div className='space-y-2 my-6'>
+                      {props.booth.founding_date !== '' && (
+                        <p className='text-md italic leading-6 text-gray-600'><span className='font-semibold mr-2'>Founding date:</span> {props.booth.founding_date}</p>
+                      )}
+                      {props.booth.employees !== '' && (
+                        <p className='text-md italic leading-6 text-gray-600'><span className='font-semibold mr-2'>Employees:</span> {props.booth.employees}</p>
+                      )}
+                    </div>
                     {props.booth.description.split('\n').map((paragraph: string, i: number) => (
                       <p key={i} className="mt-6 text-md leading-6 text-gray-800">
                         {paragraph}
