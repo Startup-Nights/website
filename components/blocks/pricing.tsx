@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Template } from 'tinacms'
 import { ColorPickerInput } from '../fields/color'
 import { Button } from '../items/button'
+import { InformationCircleIcon } from '@heroicons/react/24/outline'
+import { Tooltip } from "@nextui-org/react";
 
 export const PricingTable = ({ data }) => {
   const tickBox = (selector: string) => {
@@ -51,15 +53,40 @@ export const PricingTable = ({ data }) => {
                 </p>
                 <ul role="list" className="mt-8 space-y-3 leading-6 text-gray-200">
                   {category.benefits && category.benefits.map((feature) => (
-                    <li key={feature} className="flex gap-x-3">
+                    <li key={feature} className={`flex gap-x-3 ` +
+                      ``}>
                       <CheckIcon className="h-6 w-5 flex-none text-sn-yellow" aria-hidden="true" />
                       {feature}
+                      {feature.includes('match') ? (
+                        <Tooltip
+                          content={
+                            <div className='max-w-lg bg-sn-black-light text-sm border-2 border-gray-600 text-gray-200 rounded-md p-4'>
+                              <p>With matchmaking, you have the possibility to schedule onsite meetings with other participants (except Visitor category) prior the event.</p>
+                            </div>
+                          }
+                          color={'default'}
+                        >
+                          <InformationCircleIcon className="h-6 w-5 flex-none text-gray-300" aria-hidden="true" />
+                        </Tooltip>
+                      ) : (<></>)}
                     </li>
                   ))}
                   {category.not_included && category.not_included.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
                       <XMarkIcon className="h-6 w-5 flex-none text-red-500" aria-hidden="true" />
                       {feature}
+                      {feature.includes('match') ? (
+                        <Tooltip
+                          content={
+                            <div className='max-w-lg bg-sn-black-light text-sm border-2 border-gray-600 text-gray-200 rounded-md p-4'>
+                              <p>With matchmaking, you have the possibility to schedule onsite meetings with other participants (except Visitor category) prior the event.</p>
+                            </div>
+                          }
+                          color={'default'}
+                        >
+                          <InformationCircleIcon className="h-6 w-5 flex-none text-gray-300" aria-hidden="true" />
+                        </Tooltip>
+                      ) : (<></>)}
                     </li>
                   ))}
                 </ul>

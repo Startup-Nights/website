@@ -1323,6 +1323,8 @@ var contentWideBlockSchema = {
 // components/blocks/pricing.tsx
 import { CheckIcon, XMarkIcon as XMarkIcon3 } from "@heroicons/react/20/solid";
 import Link7 from "next/link";
+import { InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/24/outline";
+import { Tooltip } from "@nextui-org/react";
 var pricingBlockSchema = {
   name: "pricing",
   label: "Pricing table",
@@ -1413,7 +1415,7 @@ var pricingBlockSchema = {
 
 // components/blocks/booth.tsx
 import { Fragment as Fragment5, useEffect as useEffect5, useState as useState9 } from "react";
-import { InformationCircleIcon as InformationCircleIcon3, PhotoIcon } from "@heroicons/react/20/solid";
+import { InformationCircleIcon as InformationCircleIcon4, PhotoIcon } from "@heroicons/react/20/solid";
 import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/20/solid";
@@ -1516,7 +1518,7 @@ var imagegridBlockSchema = {
 // components/blocks/pitching.tsx
 import { Fragment as Fragment6, useEffect as useEffect6, useState as useState10 } from "react";
 import { Transition as Transition5 } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon4 } from "@heroicons/react/20/solid";
+import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon5 } from "@heroicons/react/20/solid";
 import {
   ExclamationCircleIcon as ExclamationCircleIcon4,
   PlusIcon as PlusIcon2,
