@@ -898,13 +898,17 @@ type PageBlocksCrop {
   title: String
 }
 
+type PageBlocksMap {
+  title: String
+}
+
 type PageBlocksBooth_approved {
   subtitle: String
   title: String
   background_color: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksMap | PageBlocksBooth_approved
 
 type Page implements Node & Document {
   title: String!
@@ -1436,6 +1440,10 @@ input PageBlocksCropFilter {
   title: StringFilter
 }
 
+input PageBlocksMapFilter {
+  title: StringFilter
+}
+
 input PageBlocksBooth_approvedFilter {
   subtitle: StringFilter
   title: StringFilter
@@ -1467,6 +1475,7 @@ input PageBlocksFilter {
   quotes: PageBlocksQuotesFilter
   program: PageBlocksProgramFilter
   crop: PageBlocksCropFilter
+  map: PageBlocksMapFilter
   booth_approved: PageBlocksBooth_approvedFilter
 }
 
@@ -2122,6 +2131,10 @@ input PageBlocksCropMutation {
   title: String
 }
 
+input PageBlocksMapMutation {
+  title: String
+}
+
 input PageBlocksBooth_approvedMutation {
   subtitle: String
   title: String
@@ -2153,6 +2166,7 @@ input PageBlocksMutation {
   quotes: PageBlocksQuotesMutation
   program: PageBlocksProgramMutation
   crop: PageBlocksCropMutation
+  map: PageBlocksMapMutation
   booth_approved: PageBlocksBooth_approvedMutation
 }
 

@@ -8,6 +8,8 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
       alt: Startup Nights Stage
     _template: hero
+  - title: General information
+    _template: map
   - items:
       - content_block:
           subtitle: ''
