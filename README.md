@@ -68,6 +68,14 @@ If you want to work with tito you have to use a proxy:
 - run the ssl proxy: `yarn proxy` (https is required to show tito widget)
 - visit [https://localhost:3001](https://localhost:3001)
 
+## Notes
+
+For the map, [pmtiles](https://docs.protomaps.com) is used.
+
+```sh
+pmtiles extract https://build.protomaps.com/20231022.pmtiles startupnights.pmtiles --bbox=8.0056,47.2018,9.5231,47.7906
+```
+
 ## LICENSE
 
 Licensed under the [Apache 2.0 license](./LICENSE).

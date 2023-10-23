@@ -1635,6 +1635,24 @@ var cropBlockSchema = {
   ]
 };
 
+// components/blocks/map.tsx
+import { useEffect as useEffect8, useRef as useRef2, useState as useState13 } from "react";
+import { Protocol } from "pmtiles";
+import maplibregl from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
+import { Switch } from "@headlessui/react";
+var mapBlockSchema = {
+  name: "map",
+  label: "Map",
+  fields: [
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    }
+  ]
+};
+
 // components/blocks/quotes.tsx
 import React12 from "react";
 import Link9 from "next/link";
@@ -2242,6 +2260,7 @@ var config = defineStaticConfig({
               quotesBlockSchema,
               programBlockSchema,
               cropBlockSchema,
+              mapBlockSchema,
               boothApprovedBlockSchema
             ]
           }

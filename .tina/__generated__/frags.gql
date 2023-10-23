@@ -534,6 +534,9 @@ fragment PageParts on Page {
     ... on PageBlocksCrop {
       title
     }
+    ... on PageBlocksMap {
+      title
+    }
     ... on PageBlocksBooth_approved {
       subtitle
       title

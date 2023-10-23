@@ -23,6 +23,7 @@ import { cookieTableBlockSchema } from "../components/blocks/cookieTable";
 import { programBlockSchema } from "../components/blocks/program";
 import { boothApprovedBlockSchema } from "../components/blocks/booth_approved";
 import { cropBlockSchema } from "../components/blocks/crop";
+import { mapBlockSchema } from "../components/blocks/map";
 import { quotesBlockSchema } from "../components/blocks/quotes";
 
 const config = defineStaticConfig({
@@ -576,6 +577,7 @@ const config = defineStaticConfig({
               quotesBlockSchema,
               programBlockSchema,
               cropBlockSchema,
+              mapBlockSchema,
               boothApprovedBlockSchema,
             ],
           },
