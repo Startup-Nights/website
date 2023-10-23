@@ -41,34 +41,32 @@ export const BoothApproved = ({ data }) => {
     booths.splice(0, 1)
 
     booths.forEach((booth: any) => {
-      if (booth[29] === "OK") {
+      if (booth[39] === "Yes") {
         // check for duplicates
-        if (booths.filter((b: any) => b[0] === booth[0]).length === 1) {
-          booth[8] = encodeURI(booth[8])
+        booth[8] = encodeURI(booth[8])
 
-          // cleanup website link
-          if (!booth[1].includes('http')) {
-            booth[1] = 'https://' + booth[1]
-          }
-
-          const boothCategories = (booth[41] ? booth[41] : '').split(/[\n.,]+/).map((category: string) => category.trim())
-          boothCategories.forEach((element: string) => {
-            if (element !== '' && tmp_categories.indexOf(element) === -1) {
-              tmp_categories.push(element);
-            }
-          });
-
-          // convert data
-          filtered.push({
-            company: booth[0],
-            website: booth[1],
-            founding_date: booth[2] ? booth[2] : '',
-            employees: booth[4] ? booth[4] : '',
-            image: booth[8],
-            description: booth[5],
-            categories: boothCategories,
-          })
+        // cleanup website link
+        if (!booth[1].includes('http')) {
+          booth[1] = 'https://' + booth[1]
         }
+
+        const boothCategories = (booth[41] ? booth[41] : '').split(/[\n.,]+/).map((category: string) => category.trim())
+        boothCategories.forEach((element: string) => {
+          if (element !== '' && tmp_categories.indexOf(element) === -1) {
+            tmp_categories.push(element);
+          }
+        });
+
+        // convert data
+        filtered.push({
+          company: booth[0],
+          website: booth[1],
+          founding_date: booth[2] ? booth[2] : '',
+          employees: booth[4] ? booth[4] : '',
+          image: booth[8],
+          description: booth[5],
+          categories: boothCategories,
+        })
       }
     })
 
