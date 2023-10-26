@@ -41,7 +41,8 @@ export const BoothApproved = ({ data }) => {
     booths.splice(0, 1)
 
     booths.forEach((booth: any) => {
-      if (booth[39] === "Yes") {
+      const status = booth[39]
+      if (status === "Yes" || status === "Not paid yet") {
         // check for duplicates
         booth[8] = encodeURI(booth[8])
 

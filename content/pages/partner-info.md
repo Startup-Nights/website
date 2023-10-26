@@ -246,6 +246,11 @@ blocks:
               Schaffhauserstrasse 8, 8400 Winterthur
             - 'ibis budget Winterthur: Brühlbergstrasse 7A, 8400 Winterthur'
             - 'You can also use the code "Startup1123" to get 20% off your stay.'
+      - content_block:
+          title: WLAN
+          content:
+            - 'WLAN name: StartupNights'
+            - 'Password: StartupNights2023'
     padding: false
     _template: Dropdown
   - subtitle: See you soon

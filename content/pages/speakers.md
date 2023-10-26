@@ -24,6 +24,12 @@ blocks:
       our speakers ignite inspiration and drive change.
     id: speakers
     images:
+      - name: Adrian Melliger
+        position: CEO Designwerk
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/adrian-melliger.jpg
+          alt: Adrian Melliger
       - name: Isabelle von Känel
         position: Head of Sales Swibeco
         image:
