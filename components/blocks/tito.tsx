@@ -17,7 +17,7 @@ export const Tito = ({ data }) => {
   return (
     <div className="bg-sn-black-light">
       <Head>
-        <script src="https://js.tito.io/v2/with/inline,ga4" async></script>
+        <script src="https://js.tito.io/v2/with/inline" async></script>
       </Head>
       <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
 
