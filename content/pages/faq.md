@@ -116,6 +116,11 @@ blocks:
           cta:
             link: /partner-intro
             text: Check out your options
+      - content_block:
+          title: WLAN
+          content:
+            - 'WLAN name: StartupNights'
+            - 'Password: StartupNights2023'
     padding: true
     _template: Dropdown
   - subtitle: Booth information

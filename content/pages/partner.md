@@ -165,6 +165,10 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/150199321-nordpass_scaled.png
+            alt: 'NordPass'
+            link: 'https://nordpass.com/'
+          - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/648648744-plug-and-play_scaled.png
             alt: 'plug&play'
             link: 'https://www.plugandplaytechcenter.com/'
