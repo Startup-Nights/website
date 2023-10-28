@@ -27,7 +27,7 @@ blocks:
       - title: 'Initiative Application - Organizing Committee'
         text: ''
         department: General
-        link: 'https://docs.google.com/forms/d/1jwrMUmX2exdFAif2laGWBeVsQ6KJo0BPwOLmfbnpvyw/edit?no_redirect=true&pli=1'
+        link: 'https://forms.gle/d76tawoBwpZZWb5X9'
       - title: Bookkeeping
         text: ''
         department: Operations

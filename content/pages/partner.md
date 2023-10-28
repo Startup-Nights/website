@@ -161,6 +161,13 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/startups/411395174-startupticker_scaled.png
             alt: Startupticker
             link: 'https://www.startupticker.ch'
+      - title: Location Partner
+        grid_cols: 4
+        partners:
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/44809611-stadt_winterthur_scaled.png
+            alt: 'Stadt Winterthur'
+            link: 'https://stadt.winterthur.ch/'
       - title: Supporter
         grid_cols: 4
         partners:
