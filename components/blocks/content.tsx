@@ -12,8 +12,12 @@ import { Members, MembersBlockSchema } from "../items/members";
 export const Content = ({ data }) => {
   return (
     <div className={data.background_color ? data.background_color : 'bg-sn-black'}>
+      {data.id && (
+        <div id={data.id}></div>
+      )}
       <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-24 items-center">
+
           {data.contentblock_left && (
             <ContentBlock data={data?.content_block} />
           )}
@@ -66,6 +70,11 @@ export const contentBlockSchema: Template = {
       type: "boolean",
       name: "contentblock_left",
       label: "Contentblock on left side"
+    },
+    {
+      type: "string",
+      name: "id",
+      label: "HTML id"
     },
     {
       type: "string",

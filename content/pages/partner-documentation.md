@@ -127,7 +127,7 @@ blocks:
               The plan already linked below is not final and most likely will
               change before the event.
           cta:
-            link: /plan_eulachhalle_v14.pdf
+            link: /plan_eulachhalle_v16.pdf
             text: Current plan
       - content_block:
           title: Marketing measures

@@ -815,6 +815,7 @@ type PageBlocksContent {
   members: [PageBlocksContentMembers]
   features: [PageBlocksContentFeatures]
   contentblock_left: Boolean
+  id: String
   background_color: String
 }
 
@@ -1353,6 +1354,7 @@ input PageBlocksContentFilter {
   members: PageBlocksContentMembersFilter
   features: PageBlocksContentFeaturesFilter
   contentblock_left: BooleanFilter
+  id: StringFilter
   background_color: StringFilter
 }
 
@@ -2039,6 +2041,7 @@ input PageBlocksContentMutation {
   members: [PageBlocksContentMembersMutation]
   features: [PageBlocksContentFeaturesMutation]
   contentblock_left: Boolean
+  id: String
   background_color: String
 }
 

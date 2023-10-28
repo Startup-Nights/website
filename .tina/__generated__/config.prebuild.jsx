@@ -1231,6 +1231,11 @@ var contentBlockSchema = {
     },
     {
       type: "string",
+      name: "id",
+      label: "HTML id"
+    },
+    {
+      type: "string",
       name: "background_color",
       label: "Background color",
       ui: {
