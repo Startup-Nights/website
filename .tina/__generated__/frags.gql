@@ -466,6 +466,7 @@ fragment PageParts on Page {
         icon
       }
       contentblock_left
+      id
       background_color
     }
     ... on PageBlocksContent_wide {

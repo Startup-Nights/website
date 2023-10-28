@@ -8,6 +8,26 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
       alt: Startup Nights Stage
     _template: hero
+  - content_block:
+      subtitle: Eulachhallen Winterthur
+      title: Check out the location.
+      content:
+        - >-
+          Explore the Startup Nights! The map can be downloaded as a PDF and
+          contains a list of all the important locations - find your favorite
+          startup, navigate to the workshop room or meet up with another
+          visitor.
+      cta:
+        link: /2023_floorplan_visitor.pdf
+        text: Download the PDF
+    image:
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2023/location/floorplan_visitors.png
+      alt: Map of the Startup Nights 2023 at Eulachhallen Winterthur
+    contentblock_left: true
+    id: location
+    background_color: bg-sn-black-light
+    _template: content
   - items:
       - content_block:
           subtitle: ''
@@ -345,7 +365,7 @@ blocks:
             text: >-
               Note that the plan is provisional and will be updated from time to
               time.
-            link: /plan_eulachhalle_v14.pdf
+            link: /plan_eulachhalle_v16.pdf
           - name: Questions
             text: >-
               In case you are not happy with the placement of your booth, please
@@ -371,7 +391,7 @@ blocks:
             text: >-
               Note that the plan is provisional and will be updated from time to
               time.
-            link: /plan_eulachhalle_v14.pdf
+            link: /plan_eulachhalle_v16.pdf
           - name: Questions
             text: >-
               In case you are not able to set-up or dismantle your booth during
@@ -389,7 +409,7 @@ blocks:
               The plan already linked below is not final and most likely will
               change before the event.
           cta:
-            link: /plan_eulachhalle_v14.pdf
+            link: /plan_eulachhalle_v16.pdf
             text: Current plan
       - content_block:
           title: Workshops
