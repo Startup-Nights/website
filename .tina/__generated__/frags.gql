@@ -517,6 +517,7 @@ fragment PageParts on Page {
         icon
       }
       contentblock_left
+      preregister
       id
       background_color
     }

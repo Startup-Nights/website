@@ -18,8 +18,8 @@ export default async (req, res) => {
   try {
     // https://mailchimp.com/developer/marketing/api/list-members/add-or-update-list-member/
     const response_update = await mailchimp.lists.setListMember(
-      list_id, 
-      subscriber_hash, 
+      list_id,
+      subscriber_hash,
       {
         "email_address": req.body.email,
         "merge_fields": {
@@ -34,9 +34,11 @@ export default async (req, res) => {
     const response_tags = await mailchimp.lists.updateListMemberTags(
       list_id,
       subscriber_hash,
-      {tags: [
-        { name: "2023-pre-registration", status: "active" },
-      ]}
+      {
+        tags: [
+          { name: "2024-pre-registration", status: "active" },
+        ]
+      }
     )
 
     return res.status(201).json({ error: '' });

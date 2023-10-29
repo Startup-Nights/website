@@ -28,15 +28,11 @@ blocks:
         text: ''
         department: General
         link: 'https://forms.gle/d76tawoBwpZZWb5X9'
+        note: New
       - title: Bookkeeping
         text: ''
         department: Operations
         link: 'https://forms.gle/WbS1AMVGRVGgmMpHA'
-      - title: Volunteer at the event
-        text: ''
-        department: General
-        link: 'https://portal.helfereinsatz.ch/entrepreneur-club-winterthur/de'
-        note: New
       - title: Video Content Creator
         text: ''
         department: Marketing

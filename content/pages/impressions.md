@@ -15,7 +15,7 @@ blocks:
           alt: Startup Nights Stage
     _template: seo
   - subtitle: Cherish the memories
-    title: That was Startup Nights 2022.
+    title: That was Startup Nights 2023.
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
@@ -71,27 +71,8 @@ blocks:
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
     _template: hero
-  - subtitle: Snapshots of 2022
+  - subtitle: Snapshots of 2023
     title: Impressions.
     _template: gallery
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
