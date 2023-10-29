@@ -8,6 +8,7 @@ import { ColorPickerInput } from "../fields/color";
 import { Facts, FactsBlockSchema } from "../items/facts";
 import { Features, FeaturesBlockSchema } from "../items/features";
 import { Members, MembersBlockSchema } from "../items/members";
+import Preregister from "./preregister";
 
 export const Content = ({ data }) => {
   return (
@@ -46,6 +47,10 @@ export const Content = ({ data }) => {
             <Members data={data.members} />
           )}
 
+          {data?.preregister && (
+            <Preregister data={data.preregister} />
+          )}
+
           {!data.contentblock_left && (
             <ContentBlock data={data?.content_block} />
           )}
@@ -70,6 +75,11 @@ export const contentBlockSchema: Template = {
       type: "boolean",
       name: "contentblock_left",
       label: "Contentblock on left side"
+    },
+    {
+      type: "boolean",
+      name: "preregister",
+      label: "Pregister form"
     },
     {
       type: "string",

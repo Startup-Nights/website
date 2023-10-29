@@ -1241,6 +1241,12 @@ var MembersBlockSchema = {
   ]
 };
 
+// components/blocks/preregister.tsx
+import { useRef as useRef2, useState as useState9, Fragment as Fragment5 } from "react";
+import { Transition as Transition4 } from "@headlessui/react";
+import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/24/outline";
+import { ExclamationCircleIcon as ExclamationCircleIcon3, XMarkIcon as XMarkIcon3 } from "@heroicons/react/20/solid";
+
 // components/blocks/content.tsx
 var contentBlockSchema = {
   name: "content",
@@ -1257,6 +1263,11 @@ var contentBlockSchema = {
       type: "boolean",
       name: "contentblock_left",
       label: "Contentblock on left side"
+    },
+    {
+      type: "boolean",
+      name: "preregister",
+      label: "Pregister form"
     },
     {
       type: "string",
@@ -1355,7 +1366,7 @@ var contentWideBlockSchema = {
 };
 
 // components/blocks/pricing.tsx
-import { CheckIcon, XMarkIcon as XMarkIcon3 } from "@heroicons/react/20/solid";
+import { CheckIcon, XMarkIcon as XMarkIcon4 } from "@heroicons/react/20/solid";
 import Link7 from "next/link";
 import { InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/24/outline";
 import { Tooltip } from "@nextui-org/react";
@@ -1448,16 +1459,16 @@ var pricingBlockSchema = {
 };
 
 // components/blocks/booth.tsx
-import { Fragment as Fragment5, useEffect as useEffect5, useState as useState9 } from "react";
+import { Fragment as Fragment6, useEffect as useEffect5, useState as useState10 } from "react";
 import { InformationCircleIcon as InformationCircleIcon4, PhotoIcon } from "@heroicons/react/20/solid";
-import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
+import { Tab as Tab2, Transition as Transition5 } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/20/solid";
+import { CheckCircleIcon as CheckCircleIcon4 } from "@heroicons/react/20/solid";
 import {
-  ExclamationCircleIcon as ExclamationCircleIcon3,
+  ExclamationCircleIcon as ExclamationCircleIcon4,
   ExclamationTriangleIcon,
   PlusIcon,
-  XMarkIcon as XMarkIcon4
+  XMarkIcon as XMarkIcon5
 } from "@heroicons/react/24/outline";
 var boothBlockSchema = {
   name: "booth_registration",
@@ -1550,13 +1561,13 @@ var imagegridBlockSchema = {
 };
 
 // components/blocks/pitching.tsx
-import { Fragment as Fragment6, useEffect as useEffect6, useState as useState10 } from "react";
-import { Transition as Transition5 } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon5 } from "@heroicons/react/20/solid";
+import { Fragment as Fragment7, useEffect as useEffect6, useState as useState11 } from "react";
+import { Transition as Transition6 } from "@headlessui/react";
+import { CheckCircleIcon as CheckCircleIcon5, InformationCircleIcon as InformationCircleIcon5 } from "@heroicons/react/20/solid";
 import {
-  ExclamationCircleIcon as ExclamationCircleIcon4,
+  ExclamationCircleIcon as ExclamationCircleIcon5,
   PlusIcon as PlusIcon2,
-  XMarkIcon as XMarkIcon5
+  XMarkIcon as XMarkIcon6
 } from "@heroicons/react/24/outline";
 var pitchingBlockSchema = {
   name: "pitching_registration",
@@ -1620,12 +1631,12 @@ var programBlockSchema = {
 };
 
 // components/blocks/booth_approved.tsx
-import { useEffect as useEffect7, useState as useState11 } from "react";
+import { useEffect as useEffect7, useState as useState12 } from "react";
 
 // components/blocks/boothmodal.tsx
-import { Fragment as Fragment7 } from "react";
-import { Dialog as Dialog2, Transition as Transition6 } from "@headlessui/react";
-import { XMarkIcon as XMarkIcon6 } from "@heroicons/react/24/outline";
+import { Fragment as Fragment8 } from "react";
+import { Dialog as Dialog2, Transition as Transition7 } from "@headlessui/react";
+import { XMarkIcon as XMarkIcon7 } from "@heroicons/react/24/outline";
 
 // components/blocks/booth_approved.tsx
 var boothApprovedBlockSchema = {
@@ -1656,7 +1667,7 @@ var boothApprovedBlockSchema = {
 // components/blocks/crop.tsx
 import { ExclamationTriangleIcon as ExclamationTriangleIcon2, PhotoIcon as PhotoIcon2 } from "@heroicons/react/24/outline";
 import Link8 from "next/link";
-import { useState as useState12 } from "react";
+import { useState as useState13 } from "react";
 var cropBlockSchema = {
   name: "crop",
   label: "crop",
