@@ -172,6 +172,10 @@ blocks:
         grid_cols: 4
         partners:
           - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/501623245-startup-academy-zurich_scaled.png
+            alt: 'Startup Academy Zürich'
+            link: 'https://startup-academy.ch/'
+          - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/150199321-nordpass_scaled.png
             alt: 'NordPass'
             link: 'https://nordpass.com/'
