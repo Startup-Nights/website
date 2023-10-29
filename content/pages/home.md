@@ -14,12 +14,12 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: '2 & 3 November 2023, Eulachhallen Winterthur'
+  - subtitle: '31. Oct & 1. Nov, Eulachhallen Winterthur'
     title: The biggest startup event in Switzerland
     title_line2: ''
     cta:
       link: /tickets
-      text: Buy ticket
+      text: Preregister
     image:
       src: ''
       alt: ''
@@ -29,6 +29,9 @@ blocks:
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
+  - subtitle: Impressions
+    title: 2023 was awesome!
+    _template: gallery
   - subtitle: Speaker
     title: Heavyweights.
     paragraph: >-
@@ -215,109 +218,6 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
     background_color: bg-sn-black-light
     _template: quotes
-  - subtitle: Compare the ticket categories
-    title: Get your Ticket!
-    cta:
-      link: /tickets
-      text: More details
-    categories:
-      - price: 59
-        link: /tickets#sn-tito-embedded-widget
-        name: Founder Ticket
-        benefits:
-          - 2-day access to Startup Nights
-          - Free drinks & food
-          - Access to Matchmaking Platform
-      - price: 169
-        link: /tickets#sn-tito-embedded-widget
-        name: Investor Ticket
-        benefits:
-          - 2-day access to Startup Nights
-          - Free drinks & food
-          - Access to Matchmaking Platform & Investor lounge
-      - price: 199
-        link: /tickets#sn-tito-embedded-widget
-        name: Corporate Ticket
-        benefits:
-          - 2-day access to Startup Nights
-          - Free drinks and food
-          - Access to Matchmaking Platform & Leaders Brunch
-      - price: 169
-        link: /tickets#sn-tito-embedded-widget
-        name: Ecosystem Ticket
-        benefits:
-          - 2-day access to Startup Nights
-          - Free drinks and food
-          - Access to Matchmaking Platform
-      - price: 49
-        link: /tickets#sn-tito-embedded-widget
-        name: Visitor & Student Ticket
-        benefits:
-          - 2-day access to Startup Nights
-          - Free drinks and food
-    background_color: bg-sn-black
-    _template: pricing
-  - content_block:
-      subtitle: Pitch and win 5000 CHF
-      title: Pitching at the Startup Nights.
-      content:
-        - >-
-          Our jury of well-known investors is coming together to identify the
-          cream of the crop among early-stage startups. There will be two
-          winners at Startup Nights 2023: a "pre-seed" and a "seed" stage
-          winner.
-        - >-
-          The application deadline was 05.10.2023 - applications are no longer
-          accepted.
-      cta:
-        link: /pitching
-        text: Check out all jury members
-    members:
-      - name: Arijana Walcott
-        position: Founder Dart Labs
-        linkedin: 'https://www.linkedin.com/in/arijanawalcott/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/arijana_walcott.png
-        alt: Arijana Walcott
-        stage: seed
-      - name: Guy Giuffredi
-        position: Business Angel and Cofounder Aare Ventures
-        linkedin: 'https://www.linkedin.com/in/guy-giuffredi-45399751/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/guy_giuffredi.png
-        alt: Guy Giuffredi
-        stage: seed
-      - name: Michael Blank
-        position: Head Investment Team at Verve Ventures
-        linkedin: 'https://www.linkedin.com/in/michael-blank-6a5635182/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/michael_blank.png
-        alt: Michael Blank
-        stage: seed
-      - name: Daniel Dillinger
-        position: Investment Parter at Redalpine
-        linkedin: 'https://www.linkedin.com/in/daniel-dillinger-213173138/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/daniel-dillenger.jpg
-        alt: Daniel Dillinger
-        stage: seed
-      - name: Andreas Göldi
-        position: Partner at b2venture
-        linkedin: 'https://www.linkedin.com/in/agoeldi/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-goeldi.png
-        alt: Andreas Göldi
-        stage: seed
-      - name: Claudius Stammbach
-        position: Investment Manager at Sparrow Ventures
-        linkedin: 'https://www.linkedin.com/in/claudiusstammbach/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/claudius_stammbach.png
-        alt: Claudius Stammbach
-        stage: seed
-    contentblock_left: true
-    background_color: bg-sn-black-light
-    _template: content
   - content_block:
       subtitle: Impressions
       title: Startup Nights 2022.
