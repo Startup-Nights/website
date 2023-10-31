@@ -23,7 +23,7 @@ blocks:
     _template: hero
   - content_block:
       subtitle: Get ready for 2024
-      title: Preregister now!
+      title: Pre-register now!
       content:
         - You'll be the first one to hear from us once the registration opens!
     contentblock_left: true

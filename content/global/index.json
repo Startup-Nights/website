@@ -1,185 +1,185 @@
 {
-  "header": {
-    "name": "Startup Nights 2023",
-    "color": "default",
-    "nav_ctas": [
-      {
-        "href": "hiring",
-        "title": "Volunteer",
-        "icon": "heart"
-      },
-      {
-        "href": "https://portal.startup-nights.ch",
-        "title": "Login",
-        "icon": "login"
-      },
-      {
-        "href": "tickets",
-        "title": "Preregister",
-        "icon": "ticket",
-        "primary": true
-      }
-    ],
-    "nav": [
-      {
-        "href": "program",
-        "label": "Program",
-        "subitems": [
-          {
-            "href": "program",
-            "label": "Timetable",
-            "description": "When, where, what",
-            "icon": "calendar"
-          },
-          {
-            "href": "speakers",
-            "label": "Speakers",
-            "description": "Discover the thought leaders, innovators, and industry pioneers",
-            "icon": "chatbubble"
-          },
-          {
-            "href": "startups",
-            "label": "Startup World",
-            "description": "Explore the exhibiting startups",
-            "icon": "booth"
-          },
-          {
-            "href": "pitching",
-            "label": "Pitching Competition",
-            "description": "Apply for a spot and pitch your product",
-            "icon": "trophy"
-          }
+    "header": {
+        "name": "Startup Nights 2023",
+        "color": "default",
+        "nav_ctas": [
+            {
+                "href": "hiring",
+                "title": "Volunteer",
+                "icon": "heart"
+            },
+            {
+                "href": "https://portal.startup-nights.ch",
+                "title": "Login",
+                "icon": "login"
+            },
+            {
+                "href": "tickets",
+                "title": "Pre-register",
+                "icon": "ticket",
+                "primary": true
+            }
         ],
-        "callsToAction": [
-          {
-            "href": "tickets",
-            "label": "Get your ticket",
-            "icon": "ticket"
-          },
-          {
-            "href": "faq",
-            "label": "FAQ",
-            "icon": "info"
-          }
+        "nav": [
+            {
+                "href": "program",
+                "label": "Program",
+                "subitems": [
+                    {
+                        "href": "program",
+                        "label": "Timetable",
+                        "description": "When, where, what",
+                        "icon": "calendar"
+                    },
+                    {
+                        "href": "speakers",
+                        "label": "Speakers",
+                        "description": "Discover the thought leaders, innovators, and industry pioneers",
+                        "icon": "chatbubble"
+                    },
+                    {
+                        "href": "startups",
+                        "label": "Startup World",
+                        "description": "Explore the exhibiting startups",
+                        "icon": "booth"
+                    },
+                    {
+                        "href": "pitching",
+                        "label": "Pitching Competition",
+                        "description": "Apply for a spot and pitch your product",
+                        "icon": "trophy"
+                    }
+                ],
+                "callsToAction": [
+                    {
+                        "href": "tickets",
+                        "label": "Get your ticket",
+                        "icon": "ticket"
+                    },
+                    {
+                        "href": "faq",
+                        "label": "FAQ",
+                        "icon": "info"
+                    }
+                ]
+            },
+            {
+                "href": "impressions",
+                "label": "Impressions"
+            },
+            {
+                "href": "partner",
+                "label": "Partner"
+            },
+            {
+                "href": "about",
+                "label": "About",
+                "subitems": [
+                    {
+                        "href": "about",
+                        "label": "About us",
+                        "description": "Meet the people behind the scenes",
+                        "icon": "star"
+                    },
+                    {
+                        "href": "startup-city-winterthur",
+                        "label": "Startup City Winterthur",
+                        "description": "Discover the locations and benefits",
+                        "icon": "office"
+                    },
+                    {
+                        "href": "hiring",
+                        "label": "Volunteer",
+                        "description": "Join our cause and mission",
+                        "icon": "heart"
+                    },
+                    {
+                        "href": "contact",
+                        "label": "Contact us",
+                        "description": "Get in touch and drop us an email",
+                        "icon": "phone"
+                    }
+                ]
+            }
+        ],
+        "social": [
+            {
+                "title": "instagram",
+                "link": "https://www.instagram.com/startup_nights/"
+            },
+            {
+                "title": "linkedin",
+                "link": "https://www.linkedin.com/company/startup-nights"
+            }
         ]
-      },
-      {
-        "href": "impressions",
-        "label": "Impressions"
-      },
-      {
-        "href": "partner",
-        "label": "Partner"
-      },
-      {
-        "href": "about",
-        "label": "About",
-        "subitems": [
-          {
-            "href": "about",
-            "label": "About us",
-            "description": "Meet the people behind the scenes",
-            "icon": "star"
-          },
-          {
-            "href": "startup-city-winterthur",
-            "label": "Startup City Winterthur",
-            "description": "Discover the locations and benefits",
-            "icon": "office"
-          },
-          {
-            "href": "hiring",
-            "label": "Volunteer",
-            "description": "Join our cause and mission",
-            "icon": "heart"
-          },
-          {
-            "href": "contact",
-            "label": "Contact us",
-            "description": "Get in touch and drop us an email",
-            "icon": "phone"
-          }
+    },
+    "footer": {
+        "copyright": "2023 Startup Nights",
+        "navitems": [
+            {
+                "title": "Startup Nights",
+                "listitems": [
+                    {
+                        "title": "Contact",
+                        "link": "/contact"
+                    },
+                    {
+                        "title": "Hiring",
+                        "link": "/hiring"
+                    },
+                    {
+                        "title": "Impressions",
+                        "link": "/impressions"
+                    },
+                    {
+                        "title": "Become a partner",
+                        "link": "/partner-info"
+                    },
+                    {
+                        "title": "About",
+                        "link": "/about"
+                    },
+                    {
+                        "title": "Startup City Winterthur",
+                        "link": "/startup-city-winterthur"
+                    }
+                ]
+            },
+            {
+                "title": "",
+                "listitems": [
+                    {
+                        "title": "FAQ",
+                        "link": "/faq"
+                    },
+                    {
+                        "title": "Imprint",
+                        "link": "/imprint"
+                    },
+                    {
+                        "title": "Privacy policy",
+                        "link": "/privacy-policy"
+                    },
+                    {
+                        "title": "Terms & conditions",
+                        "link": "/terms-and-conditions"
+                    }
+                ]
+            }
+        ],
+        "social": [
+            {
+                "title": "instagram",
+                "link": "https://www.instagram.com/startup_nights/"
+            },
+            {
+                "title": "linkedin",
+                "link": "https://www.linkedin.com/company/startup-nights"
+            },
+            {
+                "title": "youtube",
+                "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
+            }
         ]
-      }
-    ],
-    "social": [
-      {
-        "title": "instagram",
-        "link": "https://www.instagram.com/startup_nights/"
-      },
-      {
-        "title": "linkedin",
-        "link": "https://www.linkedin.com/company/startup-nights"
-      }
-    ]
-  },
-  "footer": {
-    "copyright": "2023 Startup Nights",
-    "navitems": [
-      {
-        "title": "Startup Nights",
-        "listitems": [
-          {
-            "title": "Contact",
-            "link": "/contact"
-          },
-          {
-            "title": "Hiring",
-            "link": "/hiring"
-          },
-          {
-            "title": "Impressions",
-            "link": "/impressions"
-          },
-          {
-            "title": "Become a partner",
-            "link": "/partner-info"
-          },
-          {
-            "title": "About",
-            "link": "/about"
-          },
-          {
-            "title": "Startup City Winterthur",
-            "link": "/startup-city-winterthur"
-          }
-        ]
-      },
-      {
-        "title": "",
-        "listitems": [
-          {
-            "title": "FAQ",
-            "link": "/faq"
-          },
-          {
-            "title": "Imprint",
-            "link": "/imprint"
-          },
-          {
-            "title": "Privacy policy",
-            "link": "/privacy-policy"
-          },
-          {
-            "title": "Terms & conditions",
-            "link": "/terms-and-conditions"
-          }
-        ]
-      }
-    ],
-    "social": [
-      {
-        "title": "instagram",
-        "link": "https://www.instagram.com/startup_nights/"
-      },
-      {
-        "title": "linkedin",
-        "link": "https://www.linkedin.com/company/startup-nights"
-      },
-      {
-        "title": "youtube",
-        "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
-      }
-    ]
-  }
+    }
 }

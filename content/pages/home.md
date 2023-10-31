@@ -19,7 +19,7 @@ blocks:
     title_line2: ''
     cta:
       link: /tickets
-      text: Preregister
+      text: Pre-register
     image:
       src: ''
       alt: ''
