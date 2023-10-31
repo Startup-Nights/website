@@ -264,6 +264,57 @@ fragment PageParts on Page {
             modal_text
           }
         }
+        dropdown_items {
+          __typename
+          items {
+            __typename
+            content_block {
+              __typename
+              subtitle
+              title
+              content
+              cta {
+                __typename
+                link
+                text
+              }
+              cta_secondary {
+                __typename
+                link
+                text
+              }
+              list {
+                __typename
+                title
+                list_items
+              }
+            }
+            image {
+              __typename
+              src
+              alt
+            }
+            infopoints {
+              __typename
+              name
+              text
+              link
+              newsletter_cta {
+                __typename
+                agree_button
+                modal_title
+                modal_text
+              }
+            }
+            features {
+              __typename
+              title
+              text
+              icon
+            }
+          }
+          padding
+        }
       }
     }
     ... on PageBlocksBooth_registration {

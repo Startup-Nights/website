@@ -568,10 +568,71 @@ type PageBlocksTabsTabitemsInfopoints {
   newsletter_cta: PageBlocksTabsTabitemsInfopointsNewsletter_cta
 }
 
+type PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta {
+  link: String
+  text: String
+}
+
+type PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta_secondary {
+  link: String
+  text: String
+}
+
+type PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockList {
+  title: String
+  list_items: [String]
+}
+
+type PageBlocksTabsTabitemsDropdown_itemsItemsContent_block {
+  subtitle: String
+  title: String
+  content: [String]
+  cta: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta
+  cta_secondary: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta_secondary
+  list: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockList
+}
+
+type PageBlocksTabsTabitemsDropdown_itemsItemsImage {
+  src: String
+  alt: String
+}
+
+type PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_cta {
+  agree_button: String
+  modal_title: String
+  modal_text: String
+}
+
+type PageBlocksTabsTabitemsDropdown_itemsItemsInfopoints {
+  name: String
+  text: String
+  link: String
+  newsletter_cta: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_cta
+}
+
+type PageBlocksTabsTabitemsDropdown_itemsItemsFeatures {
+  title: String
+  text: String
+  icon: String
+}
+
+type PageBlocksTabsTabitemsDropdown_itemsItems {
+  content_block: PageBlocksTabsTabitemsDropdown_itemsItemsContent_block
+  image: PageBlocksTabsTabitemsDropdown_itemsItemsImage
+  infopoints: [PageBlocksTabsTabitemsDropdown_itemsItemsInfopoints]
+  features: [PageBlocksTabsTabitemsDropdown_itemsItemsFeatures]
+}
+
+type PageBlocksTabsTabitemsDropdown_items {
+  items: [PageBlocksTabsTabitemsDropdown_itemsItems]
+  padding: Boolean
+}
+
 type PageBlocksTabsTabitems {
   content_block: PageBlocksTabsTabitemsContent_block
   image: PageBlocksTabsTabitemsImage
   infopoints: [PageBlocksTabsTabitemsInfopoints]
+  dropdown_items: PageBlocksTabsTabitemsDropdown_items
 }
 
 type PageBlocksTabs {
@@ -1107,10 +1168,71 @@ input PageBlocksTabsTabitemsInfopointsFilter {
   newsletter_cta: PageBlocksTabsTabitemsInfopointsNewsletter_ctaFilter
 }
 
+input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCtaFilter {
+  link: StringFilter
+  text: StringFilter
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta_secondaryFilter {
+  link: StringFilter
+  text: StringFilter
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockListFilter {
+  title: StringFilter
+  list_items: StringFilter
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockFilter {
+  subtitle: StringFilter
+  title: StringFilter
+  content: StringFilter
+  cta: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCtaFilter
+  cta_secondary: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta_secondaryFilter
+  list: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockListFilter
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsImageFilter {
+  src: ImageFilter
+  alt: StringFilter
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_ctaFilter {
+  agree_button: StringFilter
+  modal_title: StringFilter
+  modal_text: StringFilter
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsFilter {
+  name: StringFilter
+  text: StringFilter
+  link: StringFilter
+  newsletter_cta: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_ctaFilter
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsFeaturesFilter {
+  title: StringFilter
+  text: StringFilter
+  icon: StringFilter
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsFilter {
+  content_block: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockFilter
+  image: PageBlocksTabsTabitemsDropdown_itemsItemsImageFilter
+  infopoints: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsFilter
+  features: PageBlocksTabsTabitemsDropdown_itemsItemsFeaturesFilter
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsFilter {
+  items: PageBlocksTabsTabitemsDropdown_itemsItemsFilter
+  padding: BooleanFilter
+}
+
 input PageBlocksTabsTabitemsFilter {
   content_block: PageBlocksTabsTabitemsContent_blockFilter
   image: PageBlocksTabsTabitemsImageFilter
   infopoints: PageBlocksTabsTabitemsInfopointsFilter
+  dropdown_items: PageBlocksTabsTabitemsDropdown_itemsFilter
 }
 
 input PageBlocksTabsFilter {
@@ -1794,10 +1916,71 @@ input PageBlocksTabsTabitemsInfopointsMutation {
   newsletter_cta: PageBlocksTabsTabitemsInfopointsNewsletter_ctaMutation
 }
 
+input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCtaMutation {
+  link: String
+  text: String
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta_secondaryMutation {
+  link: String
+  text: String
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockListMutation {
+  title: String
+  list_items: [String]
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockMutation {
+  subtitle: String
+  title: String
+  content: [String]
+  cta: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCtaMutation
+  cta_secondary: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta_secondaryMutation
+  list: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockListMutation
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsImageMutation {
+  src: String
+  alt: String
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_ctaMutation {
+  agree_button: String
+  modal_title: String
+  modal_text: String
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsMutation {
+  name: String
+  text: String
+  link: String
+  newsletter_cta: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_ctaMutation
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsFeaturesMutation {
+  title: String
+  text: String
+  icon: String
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsItemsMutation {
+  content_block: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockMutation
+  image: PageBlocksTabsTabitemsDropdown_itemsItemsImageMutation
+  infopoints: [PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsMutation]
+  features: [PageBlocksTabsTabitemsDropdown_itemsItemsFeaturesMutation]
+}
+
+input PageBlocksTabsTabitemsDropdown_itemsMutation {
+  items: [PageBlocksTabsTabitemsDropdown_itemsItemsMutation]
+  padding: Boolean
+}
+
 input PageBlocksTabsTabitemsMutation {
   content_block: PageBlocksTabsTabitemsContent_blockMutation
   image: PageBlocksTabsTabitemsImageMutation
   infopoints: [PageBlocksTabsTabitemsInfopointsMutation]
+  dropdown_items: PageBlocksTabsTabitemsDropdown_itemsMutation
 }
 
 input PageBlocksTabsMutation {

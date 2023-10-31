@@ -715,26 +715,7 @@ var RoundImageBlockschema = {
   ]
 };
 
-// components/blocks/tabs.tsx
-var tabsBlockSchema = {
-  name: "tabs",
-  label: "Tabs",
-  fields: [
-    {
-      label: "Tabitems",
-      name: "tabitems",
-      type: "object",
-      list: true,
-      fields: [
-        ContentBlockSchema,
-        RoundImageBlockschema,
-        InfopointsBlockSchema
-      ]
-    }
-  ]
-};
-
-// components/blocks/dropdown.tsx
+// components/blocks/minidropdown.tsx
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
@@ -764,7 +745,55 @@ var FeaturesBlockSchema = {
   ]
 };
 
+// components/blocks/minidropdown.tsx
+var miniDropdownBlockSchema = {
+  type: "object",
+  name: "dropdown_items",
+  label: "Dropdown Items",
+  fields: [
+    {
+      label: "Items",
+      name: "items",
+      type: "object",
+      list: true,
+      fields: [
+        ContentBlockSchema,
+        RoundImageBlockschema,
+        InfopointsBlockSchema,
+        FeaturesBlockSchema
+      ]
+    },
+    {
+      label: "Padding top",
+      name: "padding",
+      type: "boolean"
+    }
+  ]
+};
+
+// components/blocks/tabs.tsx
+var tabsBlockSchema = {
+  name: "tabs",
+  label: "Tabs",
+  fields: [
+    {
+      label: "Tabitems",
+      name: "tabitems",
+      type: "object",
+      list: true,
+      fields: [
+        ContentBlockSchema,
+        RoundImageBlockschema,
+        InfopointsBlockSchema,
+        miniDropdownBlockSchema
+      ]
+    }
+  ]
+};
+
 // components/blocks/dropdown.tsx
+import { Disclosure as Disclosure2 } from "@headlessui/react";
+import { ChevronUpIcon as ChevronUpIcon2 } from "@heroicons/react/20/solid";
 var dropdownBlockSchema = {
   name: "Dropdown",
   label: "Dropdown",
