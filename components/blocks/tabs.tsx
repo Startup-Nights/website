@@ -43,7 +43,7 @@ export const Tabs = ({ data }) => {
                                             'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
                                         )}
                                     >
-                                        <div className="grid grid-cols-2 gap-24 items-center">
+                                        <div className="grid md:grid-cols-2 gap-24 items-center">
                                             <ContentBlock data={item?.content_block} />
 
                                             {item?.infopoints && (
