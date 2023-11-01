@@ -257,12 +257,6 @@ blocks:
           - Free drinks and food
     background_color: bg-sn-black
     _template: pricing
-  - title: Opening doors in...
-    date: '2023-11-02'
-    cta:
-      link: /tickets
-      text: Get your ticket
-    _template: countdown
   - content_block:
       subtitle: Pitch and win 5000 CHF
       title: Pitching at the Startup Nights.
