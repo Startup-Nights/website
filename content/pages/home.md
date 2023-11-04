@@ -220,7 +220,7 @@ blocks:
     _template: quotes
   - content_block:
       subtitle: Impressions
-      title: Startup Nights 2022.
+      title: Startup Nights 2023.
       content:
         - >-
           Last year we had the first edition of two days in a new location. And
