@@ -5,11 +5,7 @@ blocks:
     title: What to expect
     cta:
       link: /tickets
-      text: Get your ticket now
-    cta_secondary:
-      link: /program
-      text: Check out the event agenda
-      without_background: true
+      text: Pre-register for 2024
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-2-jessica-baumgartner-noemi-aeschimann/17_Impressionen_Startup_World_Diverses/041122_StartupNights_Tag2_
@@ -17,7 +13,7 @@ blocks:
       alt: Rollup from the Startup World 2023
     _template: hero
   - subtitle: Meet our speakers
-    title: Heavyweights.
+    title: Heavyweights 2023.
     paragraph: >-
       Discover the thought leaders, innovators, and industry pioneers who will
       take the stage at Startup Nights. From tech titans to seasoned investors,

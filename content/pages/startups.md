@@ -13,7 +13,7 @@ blocks:
       alt: Rollup from the Startup World 2023
     _template: hero
   - subtitle: Exhibiting Startups
-    title: The upcoming unicorns.
+    title: Startups of 2023.
     _template: booth_approved
 ---
 
