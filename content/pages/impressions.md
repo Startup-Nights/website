@@ -43,12 +43,12 @@ blocks:
         rows: '3'
         cols: '1'
       - name: Founders
-        number: '1200'
+        number: '1400'
         icon: rocket
         rows: '1'
         cols: '2'
       - name: Visitors
-        number: '8000'
+        number: '9000'
         icon: usergroup
         rows: '2'
         cols: '2'

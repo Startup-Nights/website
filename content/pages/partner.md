@@ -24,7 +24,7 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
       alt: Fireside Chat at Startup Nights 2022
     _template: hero
-  - subtitle: Partner
+  - subtitle: Partner 2023
     title: Thank you very much!
     cta:
       link: /partner-intro

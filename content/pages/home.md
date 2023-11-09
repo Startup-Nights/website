@@ -14,12 +14,12 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: '31. Oct & 1. Nov, Eulachhallen Winterthur'
+  - subtitle: '31. Oct & 1. Nov 2024, Eulachhallen Winterthur'
     title: The biggest startup event in Switzerland
     title_line2: ''
     cta:
       link: /tickets
-      text: Pre-register
+      text: Pre-register 2024
     image:
       src: ''
       alt: ''
@@ -33,7 +33,7 @@ blocks:
     title: 2023 was awesome!
     _template: gallery
   - subtitle: Speaker
-    title: Heavyweights.
+    title: Heavyweights 2023.
     paragraph: >-
       Discover the thought leaders, innovators, and industry pioneers who will
       take the stage at Startup Nights. From tech titans to seasoned investors,
