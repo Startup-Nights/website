@@ -301,7 +301,7 @@ blocks:
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/aike-festini.jpg
           alt: Aike Festini
       - name: Carsten Koerl
-        position: Founder Sportsradar
+        position: Founder Sportradar
         image:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/speakers/carsten-koerl.jpg
