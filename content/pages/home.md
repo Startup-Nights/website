@@ -25,7 +25,7 @@ blocks:
       alt: ''
     video:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/videos/2022-aftermovie.mp4
+        https://startupnights.fra1.digitaloceanspaces.com/2023/pictures/2023_aftermovie_startup_nights.webm
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
