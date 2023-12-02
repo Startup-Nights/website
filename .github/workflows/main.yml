@@ -1,0 +1,19 @@
+name: Cypress Tests
+
+on: deployment
+
+env:
+  CYPRESS_type: base
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: joergmis/vercel-cypress@main
+        with:
+          vercel-token: ${{ secrets.VERCEL_SECRET }}
+          project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          team-id: ${{ secrets.VERCEL_TEAM_ID }}
+          options: "--browser chrome --spec cypress/e2e/*"
