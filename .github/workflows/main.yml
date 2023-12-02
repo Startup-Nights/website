@@ -9,11 +9,20 @@ jobs:
   regression:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: checkout the code
+        uses: actions/checkout@v3
 
-      - uses: joergmis/vercel-cypress@main
+      - name: run cypress tests
+        uses: joergmis/vercel-cypress@main
         with:
           vercel-token: ${{ secrets.VERCEL_SECRET }}
           project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           team-id: ${{ secrets.VERCEL_TEAM_ID }}
           options: "--browser chrome --spec cypress/e2e/*"
+
+      - name: upload the test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-test-result
+          path: cypress/results
+          retention-days: 7
