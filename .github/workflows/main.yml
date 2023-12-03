@@ -2,9 +2,6 @@ name: Cypress Tests
 
 on: deployment
 
-env:
-  CYPRESS_type: base
-
 jobs:
   regression:
     runs-on: ubuntu-latest
