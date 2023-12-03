@@ -30,8 +30,8 @@ export default function Preregister({ data }) {
             },
             body: JSON.stringify({
                 email: event.target.email.value,
-                first: event.target.last.value,
-                last: event.target.first.value,
+                first: event.target.firstname.value,
+                last: event.target.lastname.value,
             }),
         })
 
@@ -57,17 +57,17 @@ export default function Preregister({ data }) {
     }
 
     return (
-        <div className="">
+        <div id="pre-register" className="">
             <form onSubmit={handleSubmit} className="mt-6 grid grid-cols-2 gap-y-3 gap-x-3">
                 <div className="col-span-1">
-                    <label htmlFor="first" className="sr-only">
+                    <label htmlFor="firstname" className="sr-only">
                         First name
                     </label>
                     <div className="flex">
                         <input
                             type="text"
-                            name="first"
-                            id="first"
+                            name="firstname"
+                            id="firstname"
                             ref={firstnameRef}
                             autoComplete="first-name"
                             required
@@ -78,14 +78,14 @@ export default function Preregister({ data }) {
                 </div>
 
                 <div className="col-span-1">
-                    <label htmlFor="last" className="sr-only">
+                    <label htmlFor="lastname" className="sr-only">
                         Last name
                     </label>
                     <div className="flex">
                         <input
                             type="text"
-                            name="last"
-                            id="last"
+                            name="lastname"
+                            id="lastname"
                             ref={lastnameRef}
                             autoComplete="last-name"
                             required
