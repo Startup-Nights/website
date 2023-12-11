@@ -43,7 +43,7 @@ blocks:
         rows: '3'
         cols: '1'
       - name: Founders
-        number: '1400'
+        number: '2800'
         icon: rocket
         rows: '1'
         cols: '2'
@@ -57,17 +57,17 @@ blocks:
   - subtitle: Aftermovies
     title: Get inspired.
     cta:
-      link: 'https://www.youtube.com/watch?v=PXoV8h_maMk'
-      text: Aftermovie 2022
+      link: 'https://www.youtube.com/watch?v=Xqr-5zXQJc4'
+      text: Aftermovie 2023
       new_tab: true
     cta_secondary:
-      link: 'https://www.youtube.com/watch?v=FwDL17BO_ig'
-      text: Aftermoview 2021
+      link: 'https://www.youtube.com/watch?v=PXoV8h_maMk'
+      text: Aftermovie 2022
       new_tab: true
       without_background: true
     video:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/videos/2022-aftermovie.mp4
+        https://startupnights.fra1.digitaloceanspaces.com/2023/pictures/2023_aftermovie_startup_nights.mov
       fallback: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
     _template: hero
