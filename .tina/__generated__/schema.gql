@@ -511,7 +511,6 @@ type PageBlocksTeamDivisionsMembers {
   position: String
   linkedin: String
   src: String
-  alt: String
 }
 
 type PageBlocksTeamDivisions {
@@ -1112,7 +1111,6 @@ input PageBlocksTeamDivisionsMembersFilter {
   position: StringFilter
   linkedin: StringFilter
   src: ImageFilter
-  alt: StringFilter
 }
 
 input PageBlocksTeamDivisionsFilter {
@@ -1861,7 +1859,6 @@ input PageBlocksTeamDivisionsMembersMutation {
   position: String
   linkedin: String
   src: String
-  alt: String
 }
 
 input PageBlocksTeamDivisionsMutation {

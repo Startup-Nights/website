@@ -219,7 +219,6 @@ fragment PageParts on Page {
           position
           linkedin
           src
-          alt
         }
       }
     }

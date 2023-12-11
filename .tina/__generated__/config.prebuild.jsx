@@ -415,11 +415,6 @@ var teamBlockSchema = {
               name: "src",
               label: "Image Source",
               type: "image"
-            },
-            {
-              name: "alt",
-              label: "Alt Text",
-              type: "string"
             }
           ]
         }
