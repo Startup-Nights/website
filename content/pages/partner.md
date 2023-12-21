@@ -386,6 +386,9 @@ blocks:
       - title: Other Partner
         grid_cols: 4
         partners:
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/125430459-meistertask_scaled.png
+            alt: Meistertask
+            link: 'https://www.meistertask.com/'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/startups/440829066-personio_scaled.png
             alt: Personio
