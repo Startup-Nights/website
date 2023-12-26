@@ -196,7 +196,6 @@ fragment PageParts on Page {
       open_positions {
         __typename
         title
-        text
         note
         department
         link
