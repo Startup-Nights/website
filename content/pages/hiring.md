@@ -25,13 +25,13 @@ blocks:
     title: Shape the future with us.
     open_positions:
       - title: 'Partner Communication'
-        department: Marketing
+        department: Communication
         link: 'https://forms.gle/nzFGsQ2eHjdHyBjg9'
       - title: 'Partner Reporting'
-        department: Marketing
+        department: Communication
         link: 'https://forms.gle/rVz6uiCioA7Z45Cn6'
       - title: 'PR / Media Relations'
-        department: Marketing
+        department: Communication 
         link: 'https://forms.gle/m7zfH7uorNRT5StR8'
       - title: 'Social Media Manager'
         department: Marketing
@@ -73,41 +73,5 @@ blocks:
         icon: cog
     _template: benefits
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
