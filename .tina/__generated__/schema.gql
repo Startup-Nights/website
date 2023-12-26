@@ -489,7 +489,6 @@ type PageBlocksCountdown {
 
 type PageBlocksPositionsOpen_positions {
   title: String
-  text: JSON
   note: String
   department: String
   link: String
@@ -1089,7 +1088,6 @@ input PageBlocksCountdownFilter {
 
 input PageBlocksPositionsOpen_positionsFilter {
   title: StringFilter
-  text: RichTextFilter
   note: StringFilter
   department: StringFilter
   link: StringFilter
@@ -1837,7 +1835,6 @@ input PageBlocksCountdownMutation {
 
 input PageBlocksPositionsOpen_positionsMutation {
   title: String
-  text: JSON
   note: String
   department: String
   link: String

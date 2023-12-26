@@ -164,20 +164,6 @@ import { useEffect as useEffect2, useState as useState2 } from "react";
 var positionsBlockSchema = {
   name: "positions",
   label: "Positions",
-  ui: {
-    previewSrc: "/blocks/content.png",
-    defaultItem: {
-      open_positions: [
-        {
-          title: "Head of Branding and Design",
-          description: "Dieser Job ist verantwortlich f\xFCr xxx.",
-          qualifications: ["kann zeichen"],
-          tasks: ["logo entwerfen"],
-          link: "https://startup-nights.ch"
-        }
-      ]
-    }
-  },
   fields: [
     {
       type: "string",
@@ -199,11 +185,6 @@ var positionsBlockSchema = {
           type: "string",
           label: "Title",
           name: "title"
-        },
-        {
-          type: "rich-text",
-          label: "Text",
-          name: "text"
         },
         {
           type: "string",
