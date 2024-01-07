@@ -23,3 +23,9 @@ jobs:
           name: cypress-test-result
           path: cypress/results
           retention-days: 7
+
+      - name: cleanup the cypress tests
+        run: npx --yes ts-node scripts/cleanup_cypress_tests.ts
+        env:
+          NEXT_MAILCHIMP_LIST: ${{ secrets.NEXT_MAILCHIMP_LIST }}
+          NEXT_MAILCHIMP: ${{ secrets.NEXT_MAILCHIMP }}
