@@ -99,11 +99,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/nadine-ungricht-bb68b1121/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/nadine-ungricht.JPG
-          - name: Jeannette Thums
-            position: Partner Documentation
-            linkedin: 'https://www.linkedin.com/in/jeannette-thums-697534101/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jeannette-thums.jpg
           - name: Marie-Sophie Grootens
             position: Social Media Manager
             linkedin: 'https://www.linkedin.com/in/marie-sophie-grootens/'
@@ -286,11 +281,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/hao-xu-b9b32a189/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/hao-xu.jpg
-          - name: Janine Luginbühl
-            position: Academia
-            linkedin: 'https://www.linkedin.com/in/janineluginbuehl/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/janine-luginbuehl.jpg
     _template: team
 ---
 
