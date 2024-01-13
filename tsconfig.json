@@ -20,7 +20,9 @@
         "jsx": "preserve",
         "incremental": true,
         "types": [
-            "node"
+            "node",
+            "cypress",
+            "cypress-axe"
         ]
     },
     "exclude": [
