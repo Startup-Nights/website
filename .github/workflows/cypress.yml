@@ -6,10 +6,10 @@ jobs:
   cypress-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout the code
+      - name: checkout code
         uses: actions/checkout@v4
 
-      - name: Cypress run
+      - name: run cypress tests
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
@@ -17,3 +17,10 @@ jobs:
           config: baseUrl=http://localhost:3000
           spec: |
             cypress/e2e/accessibility.cy.ts
+
+      - name: upload test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-test-result
+          path: cypress/results
+          retention-days: 1
