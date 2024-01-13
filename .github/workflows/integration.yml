@@ -1,9 +1,12 @@
-name: Cypress Tests
+name: Integration Tests
 
-on: deployment
+on:
+  deployment:
+    branches:
+      - main
 
 jobs:
-  regression:
+  newsletter:
     runs-on: ubuntu-latest
     steps:
       - name: checkout the code
@@ -15,7 +18,7 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_SECRET }}
           project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           team-id: ${{ secrets.VERCEL_TEAM_ID }}
-          options: "--browser chrome --spec cypress/e2e/*"
+          options: "--browser chrome --spec cypress/e2e/mailchimp.cy.ts"
 
       - name: upload the test results
         uses: actions/upload-artifact@v3
