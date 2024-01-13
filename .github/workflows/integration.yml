@@ -2,8 +2,7 @@ name: Integration Tests
 
 on:
   deployment:
-    branches:
-      - main
+    GITHUB_REF: main
 
 jobs:
   newsletter:
