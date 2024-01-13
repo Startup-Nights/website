@@ -1,3 +1,5 @@
+import { logAccessibilityViolations } from "../support/accessibility"
+
 describe('accessibility', () => {
     const pages = [
         '/',
@@ -26,7 +28,7 @@ describe('accessibility', () => {
         it(`'${page}' has no detectable a11y violations upon page load`, () => {
             cy.visit(page)
             cy.injectAxe()
-            cy.checkA11y()
+            cy.checkA11y(null, null, logAccessibilityViolations)
         })
     })
 })
