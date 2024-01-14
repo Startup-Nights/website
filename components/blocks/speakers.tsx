@@ -82,7 +82,7 @@ export const Speakers = ({ data }) => {
             </div>
 
             <div className="flex justify-center items-center gap-x-8 mt-8 sm:mt-12">
-                <button onClick={scrollPrev} className="rounded-full p-3 hover:bg-sn-black-lightest">
+                <button onClick={scrollPrev} className="rounded-full p-3 hover:bg-sn-black-lightest" title="Scroll to previous speaker">
                     <ArrowLongLeftIcon className="h-6 w-6" />
                 </button>
 
@@ -94,7 +94,7 @@ export const Speakers = ({ data }) => {
                     </div>
                 )}
 
-                <button onClick={scrollNext} className="rounded-full p-3 hover:bg-sn-black-lightest">
+                <button onClick={scrollNext} className="rounded-full p-3 hover:bg-sn-black-lightest" title="Scroll to next speaker">
                     <ArrowLongRightIcon className="h-6 w-6" />
                 </button>
             </div>
