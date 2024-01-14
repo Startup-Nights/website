@@ -27,7 +27,7 @@ export const Header = ({ data }) => {
                         <div className='flex justify-start items-center gap-x-8 xl:gap-x-16'>
                             <div className="flex">
                                 <Link href="/" className="-m-1.5 p-2 items-center whitespace-nowrap">
-                                    <img className="h-6 sm:h-8 w-auto select-none" src="/logo/startup-nights.png" />
+                                    <img className="h-6 sm:h-8 w-auto select-none" alt="Startup Nights logo" src="/logo/startup-nights.png" />
                                 </Link>
                             </div>
                             <div className="hidden lg:flex lg:gap-x-6">
@@ -148,7 +148,7 @@ export const Header = ({ data }) => {
                                     onClick={() => setMobileMenuOpen(false)}
                                     className="-m-1.5 p-1.5 flex gap-1 items-center whitespace-nowrap"
                                 >
-                                    <img className="h-8 sm:h-12 w-auto" src="/logo/startup-nights.png" />
+                                    <img className="h-8 sm:h-12 w-auto" alt="Startup Nights logo" src="/logo/startup-nights.png" />
                                 </Link>
                                 <button
                                     type="button"
