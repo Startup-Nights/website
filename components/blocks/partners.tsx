@@ -27,9 +27,11 @@ export const Partners = ({ data }) => {
                 <div className="space-y-24 text-center">
                     {data.partners && data.partners.map((category, i: number) => (
                         <div key={category.title}>
-                            <h2 className="text-xl font-bold leading-7 text-sn-black-light uppercase">
-                                {category.title}
-                            </h2>
+                            {category?.title && (
+                                <h2 className="text-xl font-bold leading-7 text-sn-black-light uppercase">
+                                    {category.title}
+                                </h2>
+                            )}
 
                             <ul className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} gap-4 sm:gap-8 md:gap-12 py-4 md:py-8`}>
                                 {category.partners && category.partners.map((partner, i: number) => (

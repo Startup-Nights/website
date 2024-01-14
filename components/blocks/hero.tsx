@@ -42,15 +42,19 @@ export const Hero = ({ data }) => {
                 <div className="relative max-w-7xl mx-auto text-center h-[500px] md:h-[600px] lg:h-[800px]">
                     <div className="absolute bottom-0 left-0 right-0 pb-12 px-8">
                         <div className="max-w-3xl mx-auto">
-                            <h2 className="font-medium leading-7 text-gray-200 lg:text-2xl">
-                                {data?.subtitle}
-                            </h2>
+                            {data?.subtitle && (
+                                <h2 className="font-medium leading-7 text-gray-200 lg:text-2xl">
+                                    {data?.subtitle}
+                                </h2>
+                            )}
                             <h1 className="mt-2 block text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
                                 {data?.title}
                             </h1>
-                            <h2 className="mt-2 text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
-                                {data?.title_line2}
-                            </h2>
+                            {data?.title_line2 && (
+                                <h2 className="mt-2 text-6xl font-bold tracking-tight text-gray-200 lg:text-6xl">
+                                    {data?.title_line2}
+                                </h2>
+                            )}
                         </div>
 
                         {(data?.cta || data?.cta_secondary) && (
