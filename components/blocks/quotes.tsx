@@ -14,7 +14,7 @@ export const Quotes = ({ data }) => {
                     </h1>
                 </div>
 
-                <div className="snap-x w-full scroll-smoth flex gap-8 overflow-x-scroll transition-all py-8">
+                <div className="snap-x w-full scroll-smoth flex gap-8 overflow-x-auto transition-all py-8" tabIndex={0}>
                     {data?.videos && data.videos.map((item: any, i: number) => (
                         <div key={i} className="group relative h-[200px] w-[240px] snap-center rounded-3xl shrink-0  border-2 border-transparent hover:border-white">
                             <div className="absolute -top-3 -right-3 p-2 bg-white rounded-full text-black z-10 invisible group-hover:visible">

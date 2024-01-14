@@ -19,7 +19,7 @@ export const Overview = ({ data }) => {
 
                 <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {data?.benefit_items && data.benefit_items.map((benefit: any, i: number) => (
-                        <li key={i} className={'relative text-left bg-gradient-to-tr from-sn-black-lightest to-gray-900' +
+                        <li key={i} tabIndex={0} className={'relative text-left bg-gradient-to-tr from-sn-black-lightest to-gray-900' +
                             ' rounded-3xl py-8 px-6 md:py-16 md:px-12 overflow-hidden'}>
                             {benefit.image && benefit.image.src && benefit.image.src !== '' && (
                                 <div className='absolute inset-0'>
