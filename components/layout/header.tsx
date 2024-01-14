@@ -34,8 +34,11 @@ export const Header = ({ data }) => {
                                 {data.nav && data.nav.map((item: any, i: number) => {
                                     if (item.subitems) return (
                                         <Popover className="relative" key={i}>
-                                            <Popover.Button className={'inline-flex items-center gap-x-1 text-sm font-semibold leading-6 ' +
-                                                'text-sm font-semibold leading-6 text-gray-400 hover:text-gray-100'}>
+                                            <Popover.Button
+                                                className={'inline-flex items-center gap-x-1 text-sm font-semibold leading-6 ' +
+                                                    'text-sm font-semibold leading-6 text-gray-400 hover:text-gray-100'}
+                                                title={item.label}
+                                            >
                                                 <span>{item.label}</span>
                                                 <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
                                             </Popover.Button>
@@ -126,6 +129,7 @@ export const Header = ({ data }) => {
                         <div className="flex lg:hidden">
                             <button
                                 type="button"
+                                title='Open mobile menu'
                                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
                                 onClick={() => setMobileMenuOpen(true)}
                             >
@@ -148,6 +152,7 @@ export const Header = ({ data }) => {
                                 </Link>
                                 <button
                                     type="button"
+                                    title='Close mobile menu'
                                     className="-m-2.5 rounded-md p-2.5 text-gray-400"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
