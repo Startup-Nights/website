@@ -15,7 +15,9 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
-          config: baseUrl=https://startup-nights.ch
+          config: baseUrl=https://www.startup-nights.ch
+          spec: |
+            cypress/e2e/mailchimp.cy.ts
 
       - name: upload test results
         uses: actions/upload-artifact@v3
