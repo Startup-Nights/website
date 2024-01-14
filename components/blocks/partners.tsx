@@ -35,8 +35,8 @@ export const Partners = ({ data }) => {
 
                             <ul className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} gap-4 sm:gap-8 md:gap-12 py-4 md:py-8`}>
                                 {category.partners && category.partners.map((partner, i: number) => (
-                                    <Link key={`partner-${i}`} href={partner?.link ? partner.link : '/'} target={'_blank'} className=''>
-                                        <li className="p-4 grid grid-cols-1 group">
+                                    <li key={`partner-${i}`}>
+                                        <Link href={partner?.link ? partner.link : '/'} target={'_blank'} className='p-4 grid grid-cols-1 group'>
                                             <div className="relative aspect-[3/2] w-full h-auto group-hover:bg-gray-100 rounded-xl ">
                                                 <div className={`absolute inset-0 px-8 py-4 ${category.grid_cols == 2 ? 'lg:px-16 lg:py-4 ' : ''} `}>
                                                     <Image
@@ -53,8 +53,8 @@ export const Partners = ({ data }) => {
                                             <p className="invisible h-0 italic lg:mt-6 lg:visible lg:h-auto text-lg font-semibold leading-7 text-sn-black-light">
                                                 {partner?.quote}
                                             </p>
-                                        </li>
-                                    </Link>
+                                        </Link>
+                                    </li>
                                 ))}
                             </ul>
                         </div>
