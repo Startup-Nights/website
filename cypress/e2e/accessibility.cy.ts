@@ -1,35 +1,8 @@
 import { logAccessibilityViolations } from "../support/accessibility"
+import { viewports, pages } from "../support/constants"
 
 describe('accessibility', () => {
-    const viewports = [
-        'iphone-6',
-        'macbook-11',
-        'macbook-16'
-    ]
-
-    const pages = [
-        '/',
-        '/about',
-        '/startup-city-winterthur',
-        '/hiring',
-        '/program',
-        '/crop',
-        '/speakers',
-        '/tickets',
-        '/terms-and-conditions',
-        '/privacy-policy',
-        '/imprint',
-        '/booth',
-        '/startups',
-        '/contact',
-        '/impressions',
-        '/partner',
-        '/partner-documentation',
-        '/partner-info',
-        '/pitching',
-        '/faq',
-    ]
-
+    // disable specific rules of the axe linter
     const axeConfig = {
         rules: [
             {
@@ -43,6 +16,7 @@ describe('accessibility', () => {
     viewports.forEach(viewport => {
         pages.forEach(page => {
             it(`${viewport}: '${page}' has no detectable a11y violations upon page load`, () => {
+                // @ts-ignore
                 cy.viewport(viewport)
 
                 cy.visit(page)
