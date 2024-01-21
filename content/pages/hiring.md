@@ -46,6 +46,15 @@ blocks:
       - title: Bookkeeping
         department: Operations
         link: 'https://forms.gle/WbS1AMVGRVGgmMpHA'
+      - title: Director of Operations
+        department: Operations
+        link: 'https://forms.gle/FaLQe9LzvgS7kDiP8'
+      - title: Head of Sustainability
+        department: Operations
+        link: 'https://forms.gle/YpM1qmbL1j9ixaf26'
+      - title: Head of Snacks
+        department: 'Food and Beverage'
+        link: 'https://forms.gle/igFTiw8YCdG8V38f9'
     _template: positions
   - subtitle: Benefits
     title: What you can expect.
