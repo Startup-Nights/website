@@ -24,9 +24,9 @@ const colors = [
     },
     {
         name: "Program",
-        text: "text-violet-400",
-        background: "bg-violet-600",
-        background_hover: "hover:bg-violet-400",
+        text: "text-pink-400",
+        background: "bg-pink-600",
+        background_hover: "hover:bg-pink-400",
     },
     {
         name: "Infrastructure",
@@ -45,6 +45,12 @@ const colors = [
         text: "text-amber-400",
         background: "bg-amber-600",
         background_hover: "hover:bg-amber-400",
+    },
+    {
+        name: "Food and Beverage",
+        text: "text-teal-400",
+        background: "bg-teal-600",
+        background_hover: "hover:bg-teal-400",
     },
 ];
 
