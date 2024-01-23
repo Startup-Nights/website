@@ -85,6 +85,11 @@ export const formatsoverviewBlockSchema: Template = {
             label: "Options",
             name: "options",
             list: true,
+            ui: {
+                itemProps: (item) => {
+                    return { label: item?.name }
+                },
+            },
             fields: [
                 {
                     type: "string",

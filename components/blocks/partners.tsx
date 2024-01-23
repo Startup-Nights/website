@@ -113,6 +113,11 @@ export const partnersBlockSchema: Template = {
             label: "Partners",
             name: "partners",
             list: true,
+            ui: {
+                itemProps: (item) => {
+                    return { label: item?.title }
+                },
+            },
             fields: [
                 {
                     type: "string",
@@ -129,6 +134,11 @@ export const partnersBlockSchema: Template = {
                     label: "Partners",
                     name: "partners",
                     list: true,
+                    ui: {
+                        itemProps: (item) => {
+                            return { label: item?.alt }
+                        },
+                    },
                     fields: [
                         {
                             type: "image",

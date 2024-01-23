@@ -91,6 +91,11 @@ export const imagegridBlockSchema: Template = {
             label: "Images",
             name: "images",
             list: true,
+            ui: {
+                itemProps: (item) => {
+                    return { label: item?.name }
+                },
+            },
             fields: [
                 {
                     type: "string",

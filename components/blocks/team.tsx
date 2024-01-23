@@ -120,6 +120,11 @@ export const teamBlockSchema: Template = {
             name: "divisions",
             type: "object",
             list: true,
+            ui: {
+                itemProps: (item) => {
+                    return { label: item?.subtitle }
+                },
+            },
             fields: [
                 {
                     type: "string",
@@ -138,6 +143,11 @@ export const teamBlockSchema: Template = {
                     name: "members",
                     type: "object",
                     list: true,
+                    ui: {
+                        itemProps: (item) => {
+                            return { label: item?.name }
+                        },
+                    },
                     fields: [
                         {
                             label: "Name",

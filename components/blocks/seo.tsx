@@ -54,6 +54,11 @@ export const seoBlockSchema: Template = {
                     list: true,
                     name: "images",
                     label: "Images",
+                    ui: {
+                        itemProps: (item) => {
+                            return { label: item?.alt }
+                        },
+                    },
                     fields: [
                         {
                             type: "image",

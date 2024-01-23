@@ -135,6 +135,11 @@ export const pricingBlockSchema: Template = {
             label: "Categories",
             name: "categories",
             list: true,
+            ui: {
+                itemProps: (item) => {
+                    return { label: item?.name }
+                },
+            },
             fields: [
                 {
                     type: "number",

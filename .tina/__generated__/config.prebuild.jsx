@@ -99,6 +99,11 @@ var speakersBlockSchema = {
       label: "Speakers",
       name: "speakers",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.name };
+        }
+      },
       fields: [
         {
           type: "string",
@@ -180,6 +185,11 @@ var positionsBlockSchema = {
       label: "Open positions",
       name: "open_positions",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.title };
+        }
+      },
       fields: [
         {
           type: "string",
@@ -358,6 +368,11 @@ var teamBlockSchema = {
       name: "divisions",
       type: "object",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.subtitle };
+        }
+      },
       fields: [
         {
           type: "string",
@@ -376,6 +391,11 @@ var teamBlockSchema = {
           name: "members",
           type: "object",
           list: true,
+          ui: {
+            itemProps: (item) => {
+              return { label: item?.name };
+            }
+          },
           fields: [
             {
               label: "Name",
@@ -449,6 +469,11 @@ var partnersBlockSchema = {
       label: "Partners",
       name: "partners",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.title };
+        }
+      },
       fields: [
         {
           type: "string",
@@ -465,6 +490,11 @@ var partnersBlockSchema = {
           label: "Partners",
           name: "partners",
           list: true,
+          ui: {
+            itemProps: (item) => {
+              return { label: item?.alt };
+            }
+          },
           fields: [
             {
               type: "image",
@@ -816,6 +846,11 @@ var benefitsBlockSchema = {
       label: "Benefit items",
       name: "benefit_items",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.title };
+        }
+      },
       fields: [
         {
           type: "string",
@@ -859,6 +894,11 @@ var overviewBlockSchema = {
       label: "Benefit items",
       name: "benefit_items",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.title };
+        }
+      },
       fields: [
         {
           type: "string",
@@ -1122,6 +1162,11 @@ var seoBlockSchema = {
           list: true,
           name: "images",
           label: "Images",
+          ui: {
+            itemProps: (item) => {
+              return { label: item?.alt };
+            }
+          },
           fields: [
             {
               type: "image",
@@ -1327,6 +1372,11 @@ var contentWideBlockSchema = {
       label: "Content",
       name: "content",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.title };
+        }
+      },
       fields: [
         {
           type: "string",
@@ -1427,6 +1477,11 @@ var pricingBlockSchema = {
       label: "Categories",
       name: "categories",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.name };
+        }
+      },
       fields: [
         {
           type: "number",
@@ -1540,6 +1595,11 @@ var imagegridBlockSchema = {
       label: "Images",
       name: "images",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.name };
+        }
+      },
       fields: [
         {
           type: "string",
