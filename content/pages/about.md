@@ -89,6 +89,20 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
+          - name: Nik Harb
+            position: 'Video Creator / Cutter'
+            linkedin: 'https://www.linkedin.com/in/nik-harb-6bb7311b7/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_nik_harb.jpg
+          - name: Janick Rolli
+            position: Performance Marketing
+            linkedin: 'https://www.linkedin.com/in/janickrolli/'
+            src: ''
+          - name: 'Julian Schöb'
+            position: 'Photo & Video Content Creator'
+            linkedin: ''
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_julian_schoeb_.jpg
           - name: Mischa Jörg
             position: Website
             linkedin: 'https://www.linkedin.com/in/mischa-jörg-87933b157/'
@@ -176,6 +190,11 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/timo-glasbrenner-7324b913a/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1702326048_team_timo_glasbrenner.jpeg
+          - name: Gabriel Riedo
+            position: Head of Afterparty
+            linkedin: 'https://www.linkedin.com/in/gabriel-riedo-244865120/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_gabriel_riedo.png
           - name: Simon Beyer
             position: Head of Workshops
             linkedin: 'https://www.linkedin.com/in/sibeyer/'
@@ -190,11 +209,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/julian-stylianou-00489240/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/julian-styliainou.jpg
-          - name: Jonathan Hanhart
-            position: Head of After Party
-            linkedin: 'https://www.linkedin.com/in/jonathan-hanhart-835161150/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jonathan-hanhart.jpg
           - name: Désirée Egli
             position: Leaders Brunch
             linkedin: 'https://www.linkedin.com/in/désirée-egli/'
@@ -250,6 +264,16 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/fabiofurrer/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/fabio-furrer.jpg
+          - name: 'Nelson Zürcher'
+            position: Head of Tools
+            linkedin: 'https://www.linkedin.com/in/nelson-z%C3%BCrcher/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_nelson_zuercher.jpg
+          - name: Joel Sidler
+            position: Head of Accomodations
+            linkedin: 'https://www.linkedin.com/in/joel-sidler-a55b57235/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_joel_sidler.jpg
           - name: Jan Guddal
             position: Head of Volunteers
             linkedin: 'https://www.linkedin.com/in/jan-guddal-a48671167/'
