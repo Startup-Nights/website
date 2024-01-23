@@ -40,7 +40,7 @@ export const Team = ({ data }) => {
                                 </h2>
                             </div>
 
-                            <ul role="list" className="grid gap-4 sm:grid-cols-2 sm:gap-4 xl:col-span-2">
+                            <ul className="grid gap-4 sm:grid-cols-2 sm:gap-4 xl:col-span-2">
                                 {division.members && division.members.map((person: TeamMember) => (
                                     render_member(person)
                                 ))}

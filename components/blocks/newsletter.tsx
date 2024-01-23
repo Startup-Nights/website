@@ -69,7 +69,7 @@ export default function Newsletter({ data }) {
                             name="firstname"
                             id="firstname"
                             ref={firstnameRef}
-                            autoComplete="first-name"
+                            autoComplete="given-name"
                             required
                             className="w-full min-w-0 flex-1 appearance-none rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                             placeholder="Max"
@@ -87,7 +87,7 @@ export default function Newsletter({ data }) {
                             name="lastname"
                             id="lastname"
                             ref={lastnameRef}
-                            autoComplete="last-name"
+                            autoComplete="family-name"
                             required
                             className="w-full min-w-0 flex-1 appearance-none rounded-xl border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-white placeholder-gray-500 shadow-sm focus:border-sn-yellow focus:ring-sn-yellow sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                             placeholder="Muster"

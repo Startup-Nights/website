@@ -9,6 +9,7 @@ export const Layout = ({ data = layoutData, children }) => {
         <>
             <Head>
                 <title>Startup Nights</title>
+                <html lang={'en'} />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <div className='min-h-screen flex flex-col'>
