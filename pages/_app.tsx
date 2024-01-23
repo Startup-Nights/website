@@ -16,9 +16,7 @@ const sourceSansPro = Source_Sans_3({
 // https://stackoverflow.com/a/74158550
 const App = ({ Component, pageProps }) => {
     useEffect(() => {
-        if (process.env.VERCEL_ENV === "production") {
-            TagManager.initialize({ gtmId: 'GTM-5JJCJM9' });
-        }
+        TagManager.initialize({ gtmId: 'GTM-5JJCJM9' });
     }, []);
 
     // https://stackoverflow.com/a/62088643
