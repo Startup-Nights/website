@@ -74,6 +74,11 @@ export const contentWideBlockSchema: Template = {
             label: "Content",
             name: "content",
             list: true,
+            ui: {
+                itemProps: (item) => {
+                    return { label: item?.title }
+                },
+            },
             fields: [
                 {
                     type: "string",

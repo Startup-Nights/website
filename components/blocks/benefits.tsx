@@ -58,6 +58,11 @@ export const benefitsBlockSchema: Template = {
             label: "Benefit items",
             name: "benefit_items",
             list: true,
+            ui: {
+                itemProps: (item) => {
+                    return { label: item?.title }
+                },
+            },
             fields: [
                 {
                     type: "string",

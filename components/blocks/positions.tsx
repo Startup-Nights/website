@@ -73,6 +73,11 @@ export const positionsBlockSchema: Template = {
             label: "Open positions",
             name: "open_positions",
             list: true,
+            ui: {
+                itemProps: (item) => {
+                    return { label: item?.title }
+                },
+            },
             fields: [
                 {
                     type: "string",

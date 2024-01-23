@@ -162,6 +162,11 @@ export const speakersBlockSchema: Template = {
             label: "Speakers",
             name: "speakers",
             list: true,
+            ui: {
+                itemProps: (item) => {
+                    return { label: item?.name }
+                },
+            },
             fields: [
                 {
                     type: "string",
