@@ -117,6 +117,7 @@ export const Header = ({ data }) => {
 
                             {data.social && data.social.map((item, i: number) => (
                                 <a
+                                    rel="noopener noreferrer"
                                     key={`${item.title}-${i}`}
                                     href={item.link} target='_blank'
                                     className='inline-flex items-center text-sm font-medium text-gray-400 hover:text-gray-100'
