@@ -9,9 +9,9 @@
                 "icon": "heart"
             },
             {
-                "href": "https://portal.startup-nights.ch",
-                "title": "Login",
-                "icon": "login"
+                "href": "/partner-intro",
+                "title": "Partner Up",
+                "icon": "megaphone"
             },
             {
                 "href": "tickets",

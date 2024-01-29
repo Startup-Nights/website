@@ -568,6 +568,11 @@ var ContentBlockSchema = {
   label: "Content block",
   name: "content_block",
   type: "object",
+  ui: {
+    itemProps: (item) => {
+      return { label: item?.title };
+    }
+  },
   fields: [
     {
       type: "string",
@@ -636,6 +641,14 @@ var ContentBlockSchema = {
           list: true
         }
       ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
     }
   ]
 };
@@ -888,6 +901,33 @@ var overviewBlockSchema = {
       type: "string",
       label: "Title",
       name: "title"
+    },
+    {
+      type: "string",
+      label: "Text",
+      name: "paragraph"
+    },
+    {
+      label: "Call to action",
+      name: "cta",
+      type: "object",
+      fields: [
+        {
+          label: "Link",
+          name: "link",
+          type: "string"
+        },
+        {
+          label: "Text",
+          name: "text",
+          type: "string"
+        },
+        {
+          type: "boolean",
+          label: "Open in new tab",
+          name: "new_tab"
+        }
+      ]
     },
     {
       type: "object",

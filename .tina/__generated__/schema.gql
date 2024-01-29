@@ -546,6 +546,7 @@ type PageBlocksTabsTabitemsContent_block {
   cta: PageBlocksTabsTabitemsContent_blockCta
   cta_secondary: PageBlocksTabsTabitemsContent_blockCta_secondary
   list: PageBlocksTabsTabitemsContent_blockList
+  background_color: String
 }
 
 type PageBlocksTabsTabitemsImage {
@@ -588,6 +589,7 @@ type PageBlocksTabsTabitemsDropdown_itemsItemsContent_block {
   cta: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta
   cta_secondary: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta_secondary
   list: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockList
+  background_color: String
 }
 
 type PageBlocksTabsTabitemsDropdown_itemsItemsImage {
@@ -664,6 +666,7 @@ type PageBlocksDropdownItemsContent_block {
   cta: PageBlocksDropdownItemsContent_blockCta
   cta_secondary: PageBlocksDropdownItemsContent_blockCta_secondary
   list: PageBlocksDropdownItemsContent_blockList
+  background_color: String
 }
 
 type PageBlocksDropdownItemsImage {
@@ -713,6 +716,12 @@ type PageBlocksBenefits {
   benefit_items: [PageBlocksBenefitsBenefit_items]
 }
 
+type PageBlocksOverviewCta {
+  link: String
+  text: String
+  new_tab: Boolean
+}
+
 type PageBlocksOverviewBenefit_itemsImage {
   src: String
   alt: String
@@ -728,6 +737,8 @@ type PageBlocksOverviewBenefit_items {
 type PageBlocksOverview {
   subtitle: String
   title: String
+  paragraph: String
+  cta: PageBlocksOverviewCta
   benefit_items: [PageBlocksOverviewBenefit_items]
   background_color: String
 }
@@ -810,6 +821,7 @@ type PageBlocksContentContent_block {
   cta: PageBlocksContentContent_blockCta
   cta_secondary: PageBlocksContentContent_blockCta_secondary
   list: PageBlocksContentContent_blockList
+  background_color: String
 }
 
 type PageBlocksContentImage {
@@ -1145,6 +1157,7 @@ input PageBlocksTabsTabitemsContent_blockFilter {
   cta: PageBlocksTabsTabitemsContent_blockCtaFilter
   cta_secondary: PageBlocksTabsTabitemsContent_blockCta_secondaryFilter
   list: PageBlocksTabsTabitemsContent_blockListFilter
+  background_color: StringFilter
 }
 
 input PageBlocksTabsTabitemsImageFilter {
@@ -1187,6 +1200,7 @@ input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockFilter {
   cta: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCtaFilter
   cta_secondary: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta_secondaryFilter
   list: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockListFilter
+  background_color: StringFilter
 }
 
 input PageBlocksTabsTabitemsDropdown_itemsItemsImageFilter {
@@ -1263,6 +1277,7 @@ input PageBlocksDropdownItemsContent_blockFilter {
   cta: PageBlocksDropdownItemsContent_blockCtaFilter
   cta_secondary: PageBlocksDropdownItemsContent_blockCta_secondaryFilter
   list: PageBlocksDropdownItemsContent_blockListFilter
+  background_color: StringFilter
 }
 
 input PageBlocksDropdownItemsImageFilter {
@@ -1312,6 +1327,12 @@ input PageBlocksBenefitsFilter {
   benefit_items: PageBlocksBenefitsBenefit_itemsFilter
 }
 
+input PageBlocksOverviewCtaFilter {
+  link: StringFilter
+  text: StringFilter
+  new_tab: BooleanFilter
+}
+
 input PageBlocksOverviewBenefit_itemsImageFilter {
   src: ImageFilter
   alt: StringFilter
@@ -1327,6 +1348,8 @@ input PageBlocksOverviewBenefit_itemsFilter {
 input PageBlocksOverviewFilter {
   subtitle: StringFilter
   title: StringFilter
+  paragraph: StringFilter
+  cta: PageBlocksOverviewCtaFilter
   benefit_items: PageBlocksOverviewBenefit_itemsFilter
   background_color: StringFilter
 }
@@ -1409,6 +1432,7 @@ input PageBlocksContentContent_blockFilter {
   cta: PageBlocksContentContent_blockCtaFilter
   cta_secondary: PageBlocksContentContent_blockCta_secondaryFilter
   list: PageBlocksContentContent_blockListFilter
+  background_color: StringFilter
 }
 
 input PageBlocksContentImageFilter {
@@ -1892,6 +1916,7 @@ input PageBlocksTabsTabitemsContent_blockMutation {
   cta: PageBlocksTabsTabitemsContent_blockCtaMutation
   cta_secondary: PageBlocksTabsTabitemsContent_blockCta_secondaryMutation
   list: PageBlocksTabsTabitemsContent_blockListMutation
+  background_color: String
 }
 
 input PageBlocksTabsTabitemsImageMutation {
@@ -1934,6 +1959,7 @@ input PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockMutation {
   cta: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCtaMutation
   cta_secondary: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockCta_secondaryMutation
   list: PageBlocksTabsTabitemsDropdown_itemsItemsContent_blockListMutation
+  background_color: String
 }
 
 input PageBlocksTabsTabitemsDropdown_itemsItemsImageMutation {
@@ -2010,6 +2036,7 @@ input PageBlocksDropdownItemsContent_blockMutation {
   cta: PageBlocksDropdownItemsContent_blockCtaMutation
   cta_secondary: PageBlocksDropdownItemsContent_blockCta_secondaryMutation
   list: PageBlocksDropdownItemsContent_blockListMutation
+  background_color: String
 }
 
 input PageBlocksDropdownItemsImageMutation {
@@ -2059,6 +2086,12 @@ input PageBlocksBenefitsMutation {
   benefit_items: [PageBlocksBenefitsBenefit_itemsMutation]
 }
 
+input PageBlocksOverviewCtaMutation {
+  link: String
+  text: String
+  new_tab: Boolean
+}
+
 input PageBlocksOverviewBenefit_itemsImageMutation {
   src: String
   alt: String
@@ -2074,6 +2107,8 @@ input PageBlocksOverviewBenefit_itemsMutation {
 input PageBlocksOverviewMutation {
   subtitle: String
   title: String
+  paragraph: String
+  cta: PageBlocksOverviewCtaMutation
   benefit_items: [PageBlocksOverviewBenefit_itemsMutation]
   background_color: String
 }
@@ -2156,6 +2191,7 @@ input PageBlocksContentContent_blockMutation {
   cta: PageBlocksContentContent_blockCtaMutation
   cta_secondary: PageBlocksContentContent_blockCta_secondaryMutation
   list: PageBlocksContentContent_blockListMutation
+  background_color: String
 }
 
 input PageBlocksContentImageMutation {

@@ -244,6 +244,7 @@ fragment PageParts on Page {
             title
             list_items
           }
+          background_color
         }
         image {
           __typename
@@ -286,6 +287,7 @@ fragment PageParts on Page {
                 title
                 list_items
               }
+              background_color
             }
             image {
               __typename
@@ -342,6 +344,7 @@ fragment PageParts on Page {
             title
             list_items
           }
+          background_color
         }
         image {
           __typename
@@ -381,6 +384,13 @@ fragment PageParts on Page {
     ... on PageBlocksOverview {
       subtitle
       title
+      paragraph
+      cta {
+        __typename
+        link
+        text
+        new_tab
+      }
       benefit_items {
         __typename
         icon
@@ -462,6 +472,7 @@ fragment PageParts on Page {
           title
           list_items
         }
+        background_color
       }
       image {
         __typename

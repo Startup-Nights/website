@@ -1,4 +1,5 @@
 import { Button, ButtonSecondary } from "./button"
+import { ColorPickerInput } from "../fields/color";
 
 export const ContentBlock = ({ data }) => {
     return (
@@ -55,6 +56,11 @@ export const ContentBlockSchema: any = {
     label: "Content block",
     name: "content_block",
     type: "object",
+    ui: {
+        itemProps: (item) => {
+            return { label: item?.title }
+        },
+    },
     fields: [
         {
             type: "string",
@@ -123,6 +129,14 @@ export const ContentBlockSchema: any = {
                     list: true,
                 },
             ]
-        }
+        },
+        {
+            type: "string",
+            name: "background_color",
+            label: "Background color",
+            ui: {
+                component: ColorPickerInput as any
+            }
+        },
     ]
 }
