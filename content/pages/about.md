@@ -75,7 +75,7 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/leo-hess.jpg
           - name: Natalie Rotschi
-            position: Text
+            position: Allrounder
             linkedin: 'https://www.linkedin.com/in/natalie-rotschi-7405b2151/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/natalie-rotschi.jpg
@@ -131,15 +131,10 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/michael-kubli.JPG
           - name: Thomas Caspar
-            position: Head of Event Area
+            position: Head of Floor Plan Manager
             linkedin: 'https://www.linkedin.com/in/thomas-caspar/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/thomas-caspar.jpg
-          - name: Oliver Rau
-            position: Head of F&B
-            linkedin: 'https://www.linkedin.com/in/rauoliver/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/oliver-rau.jpg
           - name: Demian Holderegger
             position: Head of Welcome Area
             linkedin: 'https://www.linkedin.com/in/demian-holderegger-065a21bb/'
@@ -155,11 +150,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/livia-arena-638700260/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/livia-arena.jpeg
-          - name: Michelle Nguyen
-            position: Deputy Head of F&B
-            linkedin: 'https://www.linkedin.com/in/michelle-hai-mi-nguyen/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
           - name: Patrick Untersee
             position: Head of Material & Logistics / Power Supply & Network
           - name: Lukas Gamper
@@ -172,11 +162,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/florentbeqiri/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/florent-beqiri.jpg
-          - name: Holger Rannow
-            position: Waste Management
-            linkedin: 'https://www.linkedin.com/in/rannowholger/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/holger-rannow.png
       - subtitle: Program Team
         title: Entertainers at heart.
         members:
@@ -199,18 +184,13 @@ blocks:
             position: Head of Workshops
             linkedin: 'https://www.linkedin.com/in/sibeyer/'
           - name: Adrian Tureatca
-            position: Head of Startup Onboarding
+            position: Head of Startup World
             linkedin: 'https://www.linkedin.com/in/adrian-tureatca/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/adrian-tureatca
               .jpeg
-          - name: Julian Stylianou
-            position: Head of Pitching Sessions
-            linkedin: 'https://www.linkedin.com/in/julian-stylianou-00489240/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/julian-styliainou.jpg
           - name: Désirée Egli
-            position: Leaders Brunch
+            position: 'Leaders Brunch & Pitching Sessions'
             linkedin: 'https://www.linkedin.com/in/désirée-egli/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/desiree-egli.jpg
@@ -226,44 +206,16 @@ blocks:
       - subtitle: Operations Team
         title: Keeping our HQ organised.
         members:
-          - name: Daniel Caspar
+          - name: Jens Thomson
             position: Director of Operations
-            linkedin: 'https://www.linkedin.com/in/caspar-daniel/'
+            linkedin: 'https://www.linkedin.com/in/jens-christian-thomsen-749422201/'
             src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-caspar.jpg
-          - name: Manuela Serena
-            position: Head of Finance
-            linkedin: 'https://www.linkedin.com/in/manuela-serena-zürich/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/manuela-serena.png
-          - name: Soren Gade
-            position: Finance Specialist
-            linkedin: 'https://www.linkedin.com/in/sorengade/'
-          - name: Josephine Junker-Oels
-            position: Bookkeeping Creditors & Debitors
-            linkedin: 'https://www.linkedin.com/in/josephine-junker-oels-b43383219/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/josephine-junker-oels.jpg
-          - name: Daniel Kress
-            position: Support Bookkeeping
-            linkedin: 'https://www.linkedin.com/in/daniel-kreß-b7198921b/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-kress.jpg
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jens-thomsen.jpg
           - name: Michelle Nguyen
             position: 'Head of HR'
             linkedin: 'https://www.linkedin.com/in/michelle-hai-mi-nguyen/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
-          - name: Jens Thomson
-            position: Head of Tasks
-            linkedin: 'https://www.linkedin.com/in/jens-christian-thomsen-749422201/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jens-thomsen.jpg
-          - name: Fabio Furrer
-            position: Head of Bar 
-            linkedin: 'https://www.linkedin.com/in/fabiofurrer/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/fabio-furrer.jpg
           - name: 'Nelson Zürcher'
             position: Head of Tools
             linkedin: 'https://www.linkedin.com/in/nelson-z%C3%BCrcher/'
@@ -274,14 +226,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/joel-sidler-a55b57235/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_joel_sidler.jpg
-          - name: Jan Guddal
-            position: Head of Volunteers
-            linkedin: 'https://www.linkedin.com/in/jan-guddal-a48671167/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jan-guddal.jpg
-          - name: Jasmin Schoch
-            position: Coordination Volunteers
-            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/jasmin-schoch.jpg
       - subtitle: Partnerships Team
         title: Exchanging value.
         members:
@@ -305,87 +249,68 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/hao-xu-b9b32a189/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/hao-xu.jpg
+      - subtitle: Finance Team
+        title: Paying for your food.
+        members:
+          - name: Manuela Serena
+            position: Head of Finance
+            linkedin: 'https://www.linkedin.com/in/manuela-serena-zürich/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/manuela-serena.png
+          - name: Soren Gade
+            position: Finance Specialist
+            linkedin: 'https://www.linkedin.com/in/sorengade/'
+          - name: Josephine Junker-Oels
+            position: Bookkeeping Creditors & Debitors
+            linkedin: 'https://www.linkedin.com/in/josephine-junker-oels-b43383219/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/josephine-junker-oels.jpg
+          - name: Daniel Kress
+            position: Support Bookkeeping
+            linkedin: 'https://www.linkedin.com/in/daniel-kreß-b7198921b/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-kress.jpg
+      - subtitle: F&B Team
+        title: Serving you joy.
+        members:
+          - name: Oliver Rau
+            position: Head of F&B
+            linkedin: 'https://www.linkedin.com/in/rauoliver/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/oliver-rau.jpg
+          - name: Michelle Nguyen
+            position: Deputy Head of F&B
+            linkedin: 'https://www.linkedin.com/in/michelle-hai-mi-nguyen/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
+          - name: Fabio Furrer
+            position: Head of Bar 
+            linkedin: 'https://www.linkedin.com/in/fabiofurrer/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/fabio-furrer.jpg
+          - name: Holger Rannow
+            position: Waste Management
+            linkedin: 'https://www.linkedin.com/in/rannowholger/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/holger-rannow.png
+      - subtitle: Communications Team
+        title: Your source for texts.
+        members:
+          - name: Alyssia Kugler
+            position: Director of Communications
+            linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
+      - subtitle: Volunteer Team
+        title: Organizing helping hands.
+        members:
+          - name: Daniel Caspar
+            position: Director of Volunteers
+            linkedin: 'https://www.linkedin.com/in/caspar-daniel/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-caspar.jpg
+          - name: Jasmin Schoch
+            position: Coordination Volunteers
+            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/jasmin-schoch.jpg
     _template: team
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
