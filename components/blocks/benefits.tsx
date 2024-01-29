@@ -1,5 +1,6 @@
 import { Cog6ToothIcon, ChatBubbleLeftRightIcon, CheckBadgeIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 import React from "react";
+import { Button } from "../items/button";
 import type { Template } from "tinacms";
 
 export const Benefits = ({ data }) => {

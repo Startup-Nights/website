@@ -2,15 +2,17 @@ import Image from "next/image"
 
 export const RoundImage = ({ data }) => {
     return (
-        <div className="relative">
-            <Image
-                src={data.src}
-                alt={data.alt}
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="w-full h-auto rounded-3xl"
-            />
+        <div className="relative aspect-video overflow-hidden rounded-3xl">
+            <div className='absolute inset-0'>
+                <Image
+                    className="w-full h-full object-cover"
+                    src={data.src}
+                    alt={data.alt}
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                />
+            </div>
         </div>
     )
 }

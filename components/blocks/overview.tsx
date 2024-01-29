@@ -2,6 +2,7 @@ import React from "react";
 import type { Template } from "tinacms";
 import { ColorPickerInput } from "../fields/color";
 import Image from "next/image";
+import { Button } from "../items/button";
 import { getIcon } from "../util/icons";
 
 export const Overview = ({ data }) => {
@@ -15,6 +16,11 @@ export const Overview = ({ data }) => {
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-6xl">
                         {data.title}
                     </h1>
+                    {data.paragraph && (
+                        <p className="max-w-2xl mx-auto mt-8 text-left text-base font-regular tracking-normal">
+                            {data.paragraph}
+                        </p>
+                    )}
                 </div>
 
                 <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -47,6 +53,18 @@ export const Overview = ({ data }) => {
                         </li>
                     ))}
                 </ul>
+
+                {data?.cta && (
+                    <div className="flex justify-center mt-12 sm:mt-20">
+                        <div className="mt-8 grid grid-cols-1 gap-y-6 md:flex md:flex-wrap md:gap-x-4">
+                            <div>
+                                <Button link={data?.cta?.link} new_tab={data?.cta?.new_tab} text={data?.cta?.text}>
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
             </div>
         </div>
     );
@@ -65,6 +83,33 @@ export const overviewBlockSchema: Template = {
             type: "string",
             label: "Title",
             name: "title",
+        },
+        {
+            type: "string",
+            label: "Text",
+            name: "paragraph",
+        },
+        {
+            label: "Call to action",
+            name: "cta",
+            type: "object",
+            fields: [
+                {
+                    label: "Link",
+                    name: "link",
+                    type: "string"
+                },
+                {
+                    label: "Text",
+                    name: "text",
+                    type: "string"
+                },
+                {
+                    type: "boolean",
+                    label: "Open in new tab",
+                    name: "new_tab"
+                }
+            ]
         },
         {
             type: "object",
