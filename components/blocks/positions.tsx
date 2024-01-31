@@ -52,6 +52,12 @@ const colors = [
         background: "bg-teal-600",
         background_hover: "hover:bg-teal-400",
     },
+    {
+        name: "Finance",
+        text: "text-fuchsia-400",
+        background: "bg-fuchsia-600",
+        background_hover: "hover:bg-fuchsia-400",
+    },
 ];
 
 export const positionsBlockSchema: Template = {
