@@ -43,7 +43,7 @@ blocks:
   - subtitle: Our Rockstars
     title: The people behind the scenes.
     divisions:
-      - subtitle: ' Lead Startup Nights'
+      - subtitle: 'Lead Startup Nights'
         title: Keeping us on track.
         members:
           - name: Alyssia Kugler
@@ -84,11 +84,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/javier-santillan-amezcua/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/javier-santillan.jpg
-          - name: Alyssia Kugler
-            position: Head of Communications
-            linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
           - name: Nik Harb
             position: 'Video Creator / Cutter'
             linkedin: 'https://www.linkedin.com/in/nik-harb-6bb7311b7/'
