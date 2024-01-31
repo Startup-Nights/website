@@ -58,14 +58,13 @@ blocks:
             solutions and business opportunities.
     background_color: bg-sn-black-light
     _template: overview
-  - subtitle: Partner
-    title: Thank you very much!
-    paragraph: >-
-      None of this would be possible without our esteemed partners who amplify
-      our influence and work with us to create an event that helps startups
-      reach new heights.
+  - subtitle: ''
+    title: 'Some of our partners from 2023'
+    cta:
+      link: /partner
+      text: Check all previous partner
     partners:
-      - title: Main Partner
+      - title: ''
         grid_cols: 4
         partners:
           - src: >-
@@ -106,7 +105,7 @@ blocks:
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/031122_StartupNights_Tag1_-37.jpeg
-      alt: 
+      alt: Noii startup booth at the startup nights
     contentblock_left: false
     _template: content
   - content_block:
