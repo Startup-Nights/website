@@ -44,7 +44,7 @@ blocks:
                 title: When and where is the event taking place?
                 content:
                   - >-
-                    Startup Nights will be held on 2 & 3 November 2023 at
+                    Startup Nights will be held on 31. Oct & 1. Nov 2024 at
                     Eulachhallen in Winterthur, Switzerland.
                 cta:
                   link: 'https://goo.gl/maps/CUdt6eEqGUUi1a3F9'
