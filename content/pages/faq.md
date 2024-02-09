@@ -35,7 +35,7 @@ blocks:
           content:
             - >-
               We are thrilled to have you as a visitor at the Startup Nights
-              2023! Below, you will find a comprehensive guide with all the
+              2024! Below, you will find a comprehensive guide with all the
               important  details to make your experience smooth and successful.
         dropdown_items:
           items:
