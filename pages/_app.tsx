@@ -39,10 +39,7 @@ const App = ({ Component, pageProps }) => {
 
     return (
         <main className={sourceSansPro.className}>
-            {process.env.VERCEL_ENV === "production" && (
-                <Script src={`https://cloud.ccm19.de/app.js?apiKey=${process.env.CCM19_API_KEY}&amp;domain=${process.env.CCM19_DOMAIN}`} />
-            )}
-
+            <Script src="https://cloud.ccm19.de/app.js?apiKey=89e260c85efd4f09942508c7065b0a08a35d71a51cab5e0b&amp;domain=64ede395cb4e98fd3603d3a3" />
             <Analytics />
             <Component {...pageProps} />
         </main>
