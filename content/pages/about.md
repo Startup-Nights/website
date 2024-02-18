@@ -112,6 +112,14 @@ blocks:
             position: Social Media Manager
             linkedin: 'https://www.linkedin.com/in/marie-sophie-grootens/'
             src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/marie-sophie-grootens.jpeg
+          - name: 'Karin Da Silva'
+            position: 'CRM & Newsletter'
+            linkedin: 'https://www.linkedin.com/in/karin-da-silva/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_karin_da_silva.jpg'
+          - name: 'Kyra Jetzer'
+            position: 'Social Media Manager'
+            linkedin: 'https://www.linkedin.com/in/kyra-jetzer'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_kyra_jetzer.jpg'
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
@@ -198,6 +206,10 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/nicolas-fischer-756589197/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/nicolas-fischer.jpg
+          - name: 'Valerie Grüter'
+            position: 'Startup Onboarding'
+            linkedin: 'https://www.linkedin.com/in/val%C3%A9rie-gr%C3%BCter-28564b111/'
+            src: ''
       - subtitle: Operations Team
         title: Keeping our HQ organised.
         members:
@@ -296,6 +308,10 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
+          - name: 'Michael Wagner'
+            position: 'Partner Communication'
+            linkedin: 'https://www.linkedin.com/in/michael-wagner-27208345/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_wagner_michael.jpg'
       - subtitle: Volunteer Team
         title: Organizing helping hands.
         members:
