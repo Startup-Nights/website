@@ -5,7 +5,7 @@ blocks:
       subtitle: Apply here
       title: Pitching sessions.
       content:
-        - 'At Startup Nights 2023 there will again be two pitching sessions:'
+        - 'At Startup Nights 2024 there will again be two pitching sessions:'
         - >-
           Pre-Seed: companies that are working on solving a problem and have not
           yet reached product-market-fit.
@@ -17,7 +17,7 @@ blocks:
           The pitch is expected to be delivered in English. We likely will run a
           format of a 5 min Pitch & 10 min Q&A. Details will follow. The jury
           will preview and nominate the startups that will get invited to pitch.
-        - 'Note: the application deadline was 05.10.2023 - applications are no longer accepted.'
+        - 'Note: registration opens on July 30, 2024.'
       cta:
         link: ''
         text: ''
