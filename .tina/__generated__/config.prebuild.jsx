@@ -319,6 +319,23 @@ var heroBlockSchema = {
           type: "image"
         }
       ]
+    },
+    {
+      type: "object",
+      label: "Background video for mobile devices",
+      name: "video_mobile",
+      fields: [
+        {
+          name: "src",
+          label: "Video source",
+          type: "image"
+        },
+        {
+          name: "fallback",
+          label: "Fallback image",
+          type: "image"
+        }
+      ]
     }
   ]
 };
