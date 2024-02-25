@@ -29,14 +29,8 @@ export const Hero = ({ data }) => {
                         poster={data.video.fallback}
                     >
                         <source
-                            src={data.video_mobile?.src ? data.video_mobile.src : data.video.src}
-                            type="video/mp4"
-                            media="all and (max-width:800px)"
-                        />
-                        <source
                             src={data.video.src}
                             type="video/mp4"
-                            media={data.video_mobile?.src ? 'all and (min-width:801px)' : 'all'}
                         />
                         Your browser does not support the video tag.
                     </video>

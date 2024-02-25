@@ -218,6 +218,7 @@ var positionsBlockSchema = {
 
 // components/blocks/hero.tsx
 import Image2 from "next/image";
+import { useEffect as useEffect3 } from "react";
 var heroBlockSchema = {
   name: "hero",
   label: "Hero",
@@ -542,7 +543,7 @@ var partnersBlockSchema = {
 
 // components/blocks/countdown.tsx
 import Link5 from "next/link";
-import React4, { useEffect as useEffect3, useState as useState4 } from "react";
+import React4, { useEffect as useEffect4, useState as useState4 } from "react";
 var countdownBlockSchema = {
   name: "countdown",
   label: "Countdown",
@@ -1146,7 +1147,7 @@ function cloudinaryLoader({ src, width: width2, quality }) {
 }
 
 // components/blocks/tito.tsx
-import React8, { useEffect as useEffect4, useState as useState8 } from "react";
+import React8, { useEffect as useEffect5, useState as useState8 } from "react";
 import Head from "next/head";
 import { InformationCircleIcon as InformationCircleIcon2 } from "@heroicons/react/24/outline";
 var titoBlockSchema = {
@@ -1592,7 +1593,7 @@ var pricingBlockSchema = {
 };
 
 // components/blocks/booth.tsx
-import { Fragment as Fragment6, useEffect as useEffect5, useState as useState10 } from "react";
+import { Fragment as Fragment6, useEffect as useEffect6, useState as useState10 } from "react";
 import { InformationCircleIcon as InformationCircleIcon4, PhotoIcon } from "@heroicons/react/20/solid";
 import { Tab as Tab2, Transition as Transition5 } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
@@ -1699,7 +1700,7 @@ var imagegridBlockSchema = {
 };
 
 // components/blocks/pitching.tsx
-import { Fragment as Fragment7, useEffect as useEffect6, useState as useState11 } from "react";
+import { Fragment as Fragment7, useEffect as useEffect7, useState as useState11 } from "react";
 import { Transition as Transition6 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon5, InformationCircleIcon as InformationCircleIcon5 } from "@heroicons/react/20/solid";
 import {
@@ -1769,7 +1770,7 @@ var programBlockSchema = {
 };
 
 // components/blocks/booth_approved.tsx
-import { useEffect as useEffect7, useState as useState12 } from "react";
+import { useEffect as useEffect8, useState as useState12 } from "react";
 
 // components/blocks/boothmodal.tsx
 import { Fragment as Fragment8 } from "react";
