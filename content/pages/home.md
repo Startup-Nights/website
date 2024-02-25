@@ -24,10 +24,10 @@ blocks:
       src: ''
       alt: ''
     video:
-      src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/movies/2023_aftermovie_medium_quality.webm
+      src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/movies/aftermovie.mp4
       fallback: https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     video_mobile:
-      src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/movies/2023_aftermovie_low_quality.webm
+      src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/movies/aftermovie_mobile.mp4
       fallback: https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
   - subtitle: Impressions
