@@ -409,6 +409,11 @@ type PageBlocksHeroVideo {
   fallback: String
 }
 
+type PageBlocksHeroVideo_mobile {
+  src: String
+  fallback: String
+}
+
 type PageBlocksHero {
   subtitle: String
   title: String
@@ -417,6 +422,7 @@ type PageBlocksHero {
   cta_secondary: PageBlocksHeroCta_secondary
   image: PageBlocksHeroImage
   video: PageBlocksHeroVideo
+  video_mobile: PageBlocksHeroVideo_mobile
 }
 
 type PageBlocksSpeakersCta {
@@ -1010,6 +1016,11 @@ input PageBlocksHeroVideoFilter {
   fallback: ImageFilter
 }
 
+input PageBlocksHeroVideo_mobileFilter {
+  src: ImageFilter
+  fallback: ImageFilter
+}
+
 input PageBlocksHeroFilter {
   subtitle: StringFilter
   title: StringFilter
@@ -1018,6 +1029,7 @@ input PageBlocksHeroFilter {
   cta_secondary: PageBlocksHeroCta_secondaryFilter
   image: PageBlocksHeroImageFilter
   video: PageBlocksHeroVideoFilter
+  video_mobile: PageBlocksHeroVideo_mobileFilter
 }
 
 input PageBlocksSpeakersCtaFilter {
@@ -1779,6 +1791,11 @@ input PageBlocksHeroVideoMutation {
   fallback: String
 }
 
+input PageBlocksHeroVideo_mobileMutation {
+  src: String
+  fallback: String
+}
+
 input PageBlocksHeroMutation {
   subtitle: String
   title: String
@@ -1787,6 +1804,7 @@ input PageBlocksHeroMutation {
   cta_secondary: PageBlocksHeroCta_secondaryMutation
   image: PageBlocksHeroImageMutation
   video: PageBlocksHeroVideoMutation
+  video_mobile: PageBlocksHeroVideo_mobileMutation
 }
 
 input PageBlocksSpeakersCtaMutation {

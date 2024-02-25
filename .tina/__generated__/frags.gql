@@ -132,6 +132,11 @@ fragment PageParts on Page {
         src
         fallback
       }
+      video_mobile {
+        __typename
+        src
+        fallback
+      }
     }
     ... on PageBlocksSpeakers {
       subtitle

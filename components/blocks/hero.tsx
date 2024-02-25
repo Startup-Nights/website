@@ -29,8 +29,14 @@ export const Hero = ({ data }) => {
                         poster={data.video.fallback}
                     >
                         <source
+                            src={data.video_mobile?.src ? data.video_mobile.src : data.video.src}
+                            type="video/webm"
+                            media="all and (max-width:800px)"
+                        />
+                        <source
                             src={data.video.src}
-                            type="video/mp4"
+                            type="video/webm"
+                            media={data.video_mobile ? 'all and (min-width:801px)' : 'all'}
                         />
                         Your browser does not support the video tag.
                     </video>
@@ -218,6 +224,22 @@ export const heroBlockSchema: Template = {
                 },
             ],
         },
-
+        {
+            type: "object",
+            label: "Background video for mobile devices",
+            name: "video_mobile",
+            fields: [
+                {
+                    name: "src",
+                    label: "Video source",
+                    type: "image",
+                },
+                {
+                    name: "fallback",
+                    label: "Fallback image",
+                    type: "image",
+                },
+            ],
+        },
     ],
 };
