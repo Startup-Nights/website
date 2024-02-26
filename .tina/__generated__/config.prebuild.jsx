@@ -218,7 +218,6 @@ var positionsBlockSchema = {
 
 // components/blocks/hero.tsx
 import Image2 from "next/image";
-import { useEffect as useEffect3 } from "react";
 var heroBlockSchema = {
   name: "hero",
   label: "Hero",
@@ -337,28 +336,6 @@ var heroBlockSchema = {
           type: "image"
         }
       ]
-    }
-  ]
-};
-
-// components/blocks/partnerform.tsx
-import { Transition } from "@headlessui/react";
-import { CheckCircleIcon, ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
-import { Fragment as Fragment2, useState as useState3 } from "react";
-import { ChatBubbleLeftRightIcon, CheckBadgeIcon, Cog6ToothIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
-var partnerFormSchema = {
-  name: "partnerform",
-  label: "Partnerform",
-  fields: [
-    {
-      type: "string",
-      label: "Title",
-      name: "title"
-    },
-    {
-      type: "string",
-      label: "Description",
-      name: "description"
     }
   ]
 };
@@ -543,7 +520,7 @@ var partnersBlockSchema = {
 
 // components/blocks/countdown.tsx
 import Link5 from "next/link";
-import React4, { useEffect as useEffect4, useState as useState4 } from "react";
+import React4, { useEffect as useEffect3, useState as useState3 } from "react";
 var countdownBlockSchema = {
   name: "countdown",
   label: "Countdown",
@@ -675,17 +652,17 @@ var ContentBlockSchema = {
 import Link6 from "next/link";
 
 // components/items/modal.tsx
-import { Dialog, Transition as Transition2 } from "@headlessui/react";
-import { Fragment as Fragment3 } from "react";
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment as Fragment2 } from "react";
 
 // components/blocks/newsletter.tsx
-import { useRef, useState as useState5, Fragment as Fragment4 } from "react";
-import { Transition as Transition3 } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon2 } from "@heroicons/react/24/outline";
-import { ExclamationCircleIcon as ExclamationCircleIcon2, XMarkIcon as XMarkIcon2 } from "@heroicons/react/20/solid";
+import { useRef, useState as useState4, Fragment as Fragment3 } from "react";
+import { Transition as Transition2 } from "@headlessui/react";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import { ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
 
 // components/items/infopoints.tsx
-import { useState as useState6 } from "react";
+import { useState as useState5 } from "react";
 var InfopointsBlockSchema = {
   type: "object",
   label: "Infopoints",
@@ -757,7 +734,7 @@ import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 // components/items/features.tsx
-import { RocketLaunchIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon2, CheckBadgeIcon as CheckBadgeIcon2, HeartIcon as HeartIcon2, LightBulbIcon as LightBulbIcon2, UserGroupIcon as UserGroupIcon2 } from "@heroicons/react/24/outline";
+import { RocketLaunchIcon, ChatBubbleLeftRightIcon, CheckBadgeIcon, HeartIcon, LightBulbIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 var FeaturesBlockSchema = {
   type: "object",
   label: "Features",
@@ -856,7 +833,7 @@ var dropdownBlockSchema = {
 };
 
 // components/blocks/benefits.tsx
-import { Cog6ToothIcon as Cog6ToothIcon2, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, HeartIcon as HeartIcon3, LightBulbIcon as LightBulbIcon3, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
+import { Cog6ToothIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon2, CheckBadgeIcon as CheckBadgeIcon2, HeartIcon as HeartIcon2, LightBulbIcon as LightBulbIcon2, UserGroupIcon as UserGroupIcon2 } from "@heroicons/react/24/outline";
 import React5 from "react";
 var benefitsBlockSchema = {
   name: "benefits",
@@ -903,7 +880,7 @@ import React6 from "react";
 import Image6 from "next/image";
 
 // components/util/icons.tsx
-import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, Cog6ToothIcon as Cog6ToothIcon3, FunnelIcon, HeartIcon as HeartIcon4, InformationCircleIcon, LightBulbIcon as LightBulbIcon4, MegaphoneIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon as RocketLaunchIcon2, StarIcon, TicketIcon, TrophyIcon, UserCircleIcon, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
+import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, Cog6ToothIcon as Cog6ToothIcon2, FunnelIcon, HeartIcon as HeartIcon3, InformationCircleIcon, LightBulbIcon as LightBulbIcon3, MegaphoneIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon as RocketLaunchIcon2, StarIcon, TicketIcon, TrophyIcon, UserCircleIcon, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
 
 // components/blocks/overview.tsx
 var overviewBlockSchema = {
@@ -1005,7 +982,7 @@ var overviewBlockSchema = {
 };
 
 // components/blocks/gallery.tsx
-import React7, { useState as useState7 } from "react";
+import React7, { useState as useState6 } from "react";
 
 // components/items/nextimage.tsx
 import Image7 from "next/image";
@@ -1147,7 +1124,7 @@ function cloudinaryLoader({ src, width: width2, quality }) {
 }
 
 // components/blocks/tito.tsx
-import React8, { useEffect as useEffect5, useState as useState8 } from "react";
+import React8, { useEffect as useEffect4, useState as useState7 } from "react";
 import Head from "next/head";
 import { InformationCircleIcon as InformationCircleIcon2 } from "@heroicons/react/24/outline";
 var titoBlockSchema = {
@@ -1289,7 +1266,7 @@ var TestimonialBlockSchema = {
 };
 
 // components/items/facts.tsx
-import { RocketLaunchIcon as RocketLaunchIcon3, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon5, CheckBadgeIcon as CheckBadgeIcon5, HeartIcon as HeartIcon5, LightBulbIcon as LightBulbIcon5, UserGroupIcon as UserGroupIcon5 } from "@heroicons/react/24/outline";
+import { RocketLaunchIcon as RocketLaunchIcon3, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon4, CheckBadgeIcon as CheckBadgeIcon4, HeartIcon as HeartIcon4, LightBulbIcon as LightBulbIcon4, UserGroupIcon as UserGroupIcon4 } from "@heroicons/react/24/outline";
 var FactsBlockSchema = {
   type: "object",
   label: "Figures",
@@ -1366,10 +1343,10 @@ var MembersBlockSchema = {
 };
 
 // components/blocks/preregister.tsx
-import { useRef as useRef2, useState as useState9, Fragment as Fragment5 } from "react";
-import { Transition as Transition4 } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/24/outline";
-import { ExclamationCircleIcon as ExclamationCircleIcon3, XMarkIcon as XMarkIcon3 } from "@heroicons/react/20/solid";
+import { useRef as useRef2, useState as useState8, Fragment as Fragment4 } from "react";
+import { Transition as Transition3 } from "@headlessui/react";
+import { CheckCircleIcon as CheckCircleIcon2 } from "@heroicons/react/24/outline";
+import { ExclamationCircleIcon as ExclamationCircleIcon2, XMarkIcon as XMarkIcon2 } from "@heroicons/react/20/solid";
 
 // components/blocks/content.tsx
 var contentBlockSchema = {
@@ -1495,7 +1472,7 @@ var contentWideBlockSchema = {
 };
 
 // components/blocks/pricing.tsx
-import { CheckIcon, XMarkIcon as XMarkIcon4 } from "@heroicons/react/20/solid";
+import { CheckIcon, XMarkIcon as XMarkIcon3 } from "@heroicons/react/20/solid";
 import Link7 from "next/link";
 import { InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/24/outline";
 import { Tooltip } from "@nextui-org/react";
@@ -1593,16 +1570,16 @@ var pricingBlockSchema = {
 };
 
 // components/blocks/booth.tsx
-import { Fragment as Fragment6, useEffect as useEffect6, useState as useState10 } from "react";
+import { Fragment as Fragment5, useEffect as useEffect5, useState as useState9 } from "react";
 import { InformationCircleIcon as InformationCircleIcon4, PhotoIcon } from "@heroicons/react/20/solid";
-import { Tab as Tab2, Transition as Transition5 } from "@headlessui/react";
+import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon4 } from "@heroicons/react/20/solid";
+import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/20/solid";
 import {
-  ExclamationCircleIcon as ExclamationCircleIcon4,
+  ExclamationCircleIcon as ExclamationCircleIcon3,
   ExclamationTriangleIcon,
   PlusIcon,
-  XMarkIcon as XMarkIcon5
+  XMarkIcon as XMarkIcon4
 } from "@heroicons/react/24/outline";
 var boothBlockSchema = {
   name: "booth_registration",
@@ -1700,13 +1677,13 @@ var imagegridBlockSchema = {
 };
 
 // components/blocks/pitching.tsx
-import { Fragment as Fragment7, useEffect as useEffect7, useState as useState11 } from "react";
-import { Transition as Transition6 } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon5, InformationCircleIcon as InformationCircleIcon5 } from "@heroicons/react/20/solid";
+import { Fragment as Fragment6, useEffect as useEffect6, useState as useState10 } from "react";
+import { Transition as Transition5 } from "@headlessui/react";
+import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon5 } from "@heroicons/react/20/solid";
 import {
-  ExclamationCircleIcon as ExclamationCircleIcon5,
+  ExclamationCircleIcon as ExclamationCircleIcon4,
   PlusIcon as PlusIcon2,
-  XMarkIcon as XMarkIcon6
+  XMarkIcon as XMarkIcon5
 } from "@heroicons/react/24/outline";
 var pitchingBlockSchema = {
   name: "pitching_registration",
@@ -1770,12 +1747,12 @@ var programBlockSchema = {
 };
 
 // components/blocks/booth_approved.tsx
-import { useEffect as useEffect8, useState as useState12 } from "react";
+import { useEffect as useEffect7, useState as useState11 } from "react";
 
 // components/blocks/boothmodal.tsx
-import { Fragment as Fragment8 } from "react";
-import { Dialog as Dialog2, Transition as Transition7 } from "@headlessui/react";
-import { XMarkIcon as XMarkIcon7 } from "@heroicons/react/24/outline";
+import { Fragment as Fragment7 } from "react";
+import { Dialog as Dialog2, Transition as Transition6 } from "@headlessui/react";
+import { XMarkIcon as XMarkIcon6 } from "@heroicons/react/24/outline";
 
 // components/blocks/booth_approved.tsx
 var boothApprovedBlockSchema = {
@@ -1806,7 +1783,7 @@ var boothApprovedBlockSchema = {
 // components/blocks/crop.tsx
 import { ExclamationTriangleIcon as ExclamationTriangleIcon2, PhotoIcon as PhotoIcon2 } from "@heroicons/react/24/outline";
 import Link8 from "next/link";
-import { useState as useState13 } from "react";
+import { useState as useState12 } from "react";
 var cropBlockSchema = {
   name: "crop",
   label: "crop",
@@ -2407,7 +2384,6 @@ var config = defineStaticConfig({
               partnersBlockSchema,
               countdownBlockSchema,
               positionsBlockSchema,
-              partnerFormSchema,
               teamBlockSchema,
               tabsBlockSchema,
               boothBlockSchema,

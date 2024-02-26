@@ -506,11 +506,6 @@ type PageBlocksPositions {
   open_positions: [PageBlocksPositionsOpen_positions]
 }
 
-type PageBlocksPartnerform {
-  title: String
-  description: String
-}
-
 type PageBlocksTeamDivisionsMembers {
   name: String
   position: String
@@ -983,7 +978,7 @@ type PageBlocksBooth_approved {
   background_color: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksPartnerform | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved
 
 type Page implements Node & Document {
   title: String!
@@ -1121,11 +1116,6 @@ input PageBlocksPositionsFilter {
   subtitle: StringFilter
   title: StringFilter
   open_positions: PageBlocksPositionsOpen_positionsFilter
-}
-
-input PageBlocksPartnerformFilter {
-  title: StringFilter
-  description: StringFilter
 }
 
 input PageBlocksTeamDivisionsMembersFilter {
@@ -1606,7 +1596,6 @@ input PageBlocksFilter {
   partner_list: PageBlocksPartner_listFilter
   countdown: PageBlocksCountdownFilter
   positions: PageBlocksPositionsFilter
-  partnerform: PageBlocksPartnerformFilter
   team: PageBlocksTeamFilter
   tabs: PageBlocksTabsFilter
   booth_registration: PageBlocksBooth_registrationFilter
@@ -1886,11 +1875,6 @@ input PageBlocksPositionsMutation {
   subtitle: String
   title: String
   open_positions: [PageBlocksPositionsOpen_positionsMutation]
-}
-
-input PageBlocksPartnerformMutation {
-  title: String
-  description: String
 }
 
 input PageBlocksTeamDivisionsMembersMutation {
@@ -2371,7 +2355,6 @@ input PageBlocksMutation {
   partner_list: PageBlocksPartner_listMutation
   countdown: PageBlocksCountdownMutation
   positions: PageBlocksPositionsMutation
-  partnerform: PageBlocksPartnerformMutation
   team: PageBlocksTeamMutation
   tabs: PageBlocksTabsMutation
   booth_registration: PageBlocksBooth_registrationMutation
