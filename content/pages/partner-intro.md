@@ -59,7 +59,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: overview
   - subtitle: ''
-    title: 'Some of our partners from 2023'
+    title: Some of our partners from 2023
     cta:
       link: /partner
       text: Check all previous partner
@@ -77,7 +77,7 @@ blocks:
             link: 'https://mobiliar.ch'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/44809611-stadt_winterthur_scaled.png
-            alt: 'Stadt Winterthur'
+            alt: Stadt Winterthur
             link: 'https://stadt.winterthur.ch/'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/925682086-microsoft_scaled.png
@@ -89,19 +89,19 @@ blocks:
             link: 'https://wengervieli.ch'
     _template: partner_list
   - content_block:
-      subtitle: 
+      subtitle: null
       title: Booth
       content:
         - >-
-          We offer a wide range of formats and modules. Each partnership is
-          Set up an eye-catching booth area of either 2x2m or 3x3m,
-          specially designed for optimal visitor interaction.
+          We offer a wide range of formats and modules. Each partnership is Set
+          up an eye-catching booth area of either 2x2m or 3x3m, specially
+          designed for optimal visitor interaction.
         - >-
-          Whether you seek brand visibility, lead generation, or thought
-          The booth serves as a dedicated event space, providing with direct
-          engagement opportunities with event attendees. It can be utilized
-          as a place to host meetings, demos, and networking sessions,
-          enhancing brand visibility and fostering meaningful connections.
+          Whether you seek brand visibility, lead generation, or thought The
+          booth serves as a dedicated event space, providing with direct
+          engagement opportunities with event attendees. It can be utilized as a
+          place to host meetings, demos, and networking sessions, enhancing
+          brand visibility and fostering meaningful connections.
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/031122_StartupNights_Tag1_-37.jpeg
@@ -109,7 +109,7 @@ blocks:
     contentblock_left: false
     _template: content
   - content_block:
-      subtitle: 
+      subtitle: null
       title: Speaker Opportunities
       content:
         - >-
@@ -119,8 +119,8 @@ blocks:
         - >-
           This exclusive opportunity allows you to address a large audience,
           positioning your brand as an authority in the industry and
-          demonstrates expertise and thought leadership. Limited spots
-          ensure high visibility and prominence.
+          demonstrates expertise and thought leadership. Limited spots ensure
+          high visibility and prominence.
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/20221103-IMG_4970.jpg
@@ -129,17 +129,17 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
   - content_block:
-      subtitle: 
+      subtitle: null
       title: Workshops
       content:
         - >-
-          We offer a wide range of formats and modules. Each partnership is
-          Host a workshops of 30-45 minutes, reaching an audience of 80
-          participants per session.
+          We offer a wide range of formats and modules. Each partnership is Host
+          a workshops of 30-45 minutes, reaching an audience of 80 participants
+          per session.
         - >-
-          Showcase your expertise, products, or services to establish
-          thought leadership and create meaningful connections with
-          potential clients and industry peers.
+          Showcase your expertise, products, or services to establish thought
+          leadership and create meaningful connections with potential clients
+          and industry peers.
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/0C1A4629.jpg
@@ -147,17 +147,17 @@ blocks:
     contentblock_left: false
     _template: content
   - content_block:
-      subtitle: 
+      subtitle: null
       title: Startup Pitching Sessions
       content:
         - >-
           Join the jury at the pitching sessions to witness cutting-edge
           innovations and emerging startups.
         - >-
-          Being part of the jury elevates your reputation as a discerning
-          and influential player in the startup ecosystem. You can identify
-          potential investment or collaboration opportunities and stay
-          abreast of the latest industry trends.
+          Being part of the jury elevates your reputation as a discerning and
+          influential player in the startup ecosystem. You can identify
+          potential investment or collaboration opportunities and stay abreast
+          of the latest industry trends.
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/0C1A4915.jpg
@@ -166,13 +166,13 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
   - content_block:
-      subtitle: 
+      subtitle: null
       title: founded. Magazine
       content:
         - >-
-          Get featured in the founded Magazine by sharing an engaging story
-          with over 67,000 readers. This could be a background story of a
-          executive board member.
+          Get featured in the founded Magazine by sharing an engaging story with
+          over 67,000 readers. This could be a background story of a executive
+          board member.
         - >-
           Alternatively, you can enhance your brand visibility by placing a
           advertisement.
@@ -184,7 +184,7 @@ blocks:
     contentblock_left: false
     _template: content
   - content_block:
-      subtitle: 
+      subtitle: null
       title: Promotional Opportunities
       content:
         - >-
@@ -203,26 +203,52 @@ blocks:
     background_color: bg-sn-black-light
     _template: content
   - content_block:
-      subtitle: 
+      subtitle: null
       title: More Partnership Options
       content:
         - >-
-          Sponsoring the photo booth, pitching prizes, goodie bags or place
-          a product in the goodie bag, sponsor the Gala Dinner, Leaders
-          Brunch, Afterparty, a stage or workshop room, sample your product
-          on-site, and much more.
-        - >-
-          Let’s discuss your ideas.
+          Sponsoring the photo booth, pitching prizes, goodie bags or place a
+          product in the goodie bag, sponsor the Gala Dinner, Leaders Brunch,
+          Afterparty, a stage or workshop room, sample your product on-site, and
+          much more.
+        - Let’s discuss your ideas.
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/Partner/0C1A4614.jpg
       alt: Alealeaf visit card
     contentblock_left: false
     _template: content
-  - title: Contact information
-    description: >-
-      We will only use the information to get in contact with you regarding an
-      offer for the partner package.
-    _template: partnerform
+  - content_block:
+      subtitle: Let's discuss your ideas
+      title: Partner Up
+      content:
+        - >-
+          Contact us to get your tailored partner package today. Connect with
+          founders, the ecosystem.
+      cta:
+        link: 'https://share-eu1.hsforms.com/1sKkrx-ffRuOn0QpVzMV2IQ2dk1uq'
+        text: Get in touch
+      background_color: bg-sn-black
+    figures:
+      - name: Workshops
+        number: 40+
+        icon: chatbubble
+        rows: '3'
+        cols: '1'
+      - name: Founders
+        number: '2800'
+        icon: rocket
+        rows: '1'
+        cols: '2'
+      - name: Visitors
+        number: '9000'
+        icon: usergroup
+        rows: '2'
+        cols: '2'
+    contentblock_left: true
+    preregister: false
+    id: partner_form
+    background_color: bg-sn-black-light
+    _template: content
 ---
 
