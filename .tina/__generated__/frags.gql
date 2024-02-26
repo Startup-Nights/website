@@ -206,10 +206,6 @@ fragment PageParts on Page {
         link
       }
     }
-    ... on PageBlocksPartnerform {
-      title
-      description
-    }
     ... on PageBlocksTeam {
       subtitle
       title

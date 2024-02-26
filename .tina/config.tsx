@@ -2,7 +2,6 @@ import { defineStaticConfig } from "tinacms";
 import { speakersBlockSchema } from "../components/blocks/speakers";
 import { positionsBlockSchema } from "../components/blocks/positions";
 import { heroBlockSchema } from "../components/blocks/hero";
-import { partnerFormSchema } from "../components/blocks/partnerform";
 import { teamBlockSchema } from "../components/blocks/team";
 import { partnersBlockSchema } from "../components/blocks/partners";
 import { countdownBlockSchema } from "../components/blocks/countdown";
@@ -557,7 +556,6 @@ const config = defineStaticConfig({
                             partnersBlockSchema,
                             countdownBlockSchema,
                             positionsBlockSchema,
-                            partnerFormSchema,
                             teamBlockSchema,
                             tabsBlockSchema,
                             boothBlockSchema,
