@@ -11,14 +11,14 @@ blocks:
       site_name: Startup Nights
       images:
         - url: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/pictures/2023-sn-fireside-chat-01.jpg
           alt: Startup Nights Stage
     _template: seo
   - subtitle: Join our mission
     title: We are looking for you!
     image:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
+        https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/pictures/2023-sn-fireside-chat-01.jpg
       alt: Volunteers chatting at the Startup Nights 2023
     _template: hero
   - subtitle: Open positions

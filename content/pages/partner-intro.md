@@ -4,7 +4,7 @@ blocks:
   - subtitle: Unlock Your Business Potential
     title: Become a partner.
     cta:
-      link: /partner-intro#partner_form
+      link: 'https://share-eu1.hsforms.com/1sKkrx-ffRuOn0QpVzMV2IQ2dk1uq'
       text: Partner up!
     image:
       src: >-
