@@ -26,12 +26,6 @@
                 "label": "Program",
                 "subitems": [
                     {
-                        "href": "program",
-                        "label": "Timetable",
-                        "description": "When, where, what",
-                        "icon": "calendar"
-                    },
-                    {
                         "href": "speakers",
                         "label": "Speakers",
                         "description": "Discover the thought leaders, innovators, and industry pioneers",
