@@ -11,14 +11,14 @@ blocks:
       site_name: Startup Nights
       images:
         - url: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/pictures/2023-sn-main-stage-01.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: Tickets
-    title: Get your ticket now!
+  - subtitle: 31. Oct & 1. Nov 2024, Eulachhallen Winterthur
+    title: The biggest startup event in Switzerland!
     image:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
+        https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/pictures/2023-sn-main-stage-01.jpg
       alt: Startup Nights Stage
     _template: hero
   - content_block:

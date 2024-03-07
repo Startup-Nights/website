@@ -8,8 +8,7 @@ blocks:
       text: Pre-register for 2024
     image:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-2-jessica-baumgartner-noemi-aeschimann/17_Impressionen_Startup_World_Diverses/041122_StartupNights_Tag2_
-        (15 von 182).jpg
+        https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/pictures/2023-sn-fireside-chat-02.jpg
       alt: Rollup from the Startup World 2023
     _template: hero
   - subtitle: Meet our speakers
