@@ -8202,7 +8202,7 @@ __metadata:
     styled-jsx: "npm:^5.1.2"
     tailwind-variants: "npm:^0.1.20"
     tailwindcss: "npm:^3.4.1"
-    tinacms: "npm:^1.5.29"
+    tinacms: "npm:^1.6.0"
     typescript: "npm:^5.3.3"
     wait-on: "npm:^7.2.0"
     yarn: "npm:^1.22.21"
@@ -20720,9 +20720,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinacms@npm:^1.5.29":
-  version: 1.5.29
-  resolution: "tinacms@npm:1.5.29"
+"tinacms@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "tinacms@npm:1.6.0"
   dependencies:
     "@floating-ui/dom": "npm:^1.4.4"
     "@floating-ui/react-dom": "npm:^2.0.1"
@@ -20780,7 +20780,7 @@ __metadata:
   peerDependencies:
     react: ">=16.14.0"
     react-dom: ">=16.14.0"
-  checksum: c006b53cd8c4ecda18f9d258aafb5266b7f335e4f3ddab383334b88d24e7376c35f1335ab90aa0c3518bedbbadc055d72b0e16aab49e67be905bc20e343b89ea
+  checksum: 3ec2e94ee56eae2ea1dc84bd8bdd55587692ad050914b704bdaae4e972e39576547e2c84358c93ef0c4c53bfd8063b02b48a2d671f5032df212cee8c9e1a6e79
   languageName: node
   linkType: hard
 
