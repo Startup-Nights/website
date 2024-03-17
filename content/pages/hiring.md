@@ -24,12 +24,15 @@ blocks:
   - subtitle: Open positions
     title: Shape the future with us.
     open_positions:
-      - title: Partner Communication
-        department: Communication
-        link: 'https://forms.gle/nzFGsQ2eHjdHyBjg9'
-      - title: Partner Reporting
-        department: Communication
-        link: 'https://forms.gle/rVz6uiCioA7Z45Cn6'
+      - title: Goodie Bags
+        department: Operations
+        link: 'https://forms.gle/Gv6YyDDNQopS7uEU9'
+      - title: Allrounder
+        department: Operations
+        link: 'https://forms.gle/S9hcT6CscPY5jE5XA'
+      - title: Sustainability Manager
+        department: Operations
+        link: 'https://forms.gle/uJ1Y1t1cqFssM5L7A'
       - title: PR / Media Relations
         department: Communication
         link: 'https://forms.gle/m7zfH7uorNRT5StR8'
@@ -46,12 +49,6 @@ blocks:
       - title: Bookkeeping
         department: Finance
         link: 'https://forms.gle/WbS1AMVGRVGgmMpHA'
-      - title: Head of Sustainability
-        department: Operations
-        link: 'https://forms.gle/YpM1qmbL1j9ixaf26'
-      - title: Head of Snacks
-        department: 'Food and Beverage'
-        link: 'https://forms.gle/igFTiw8YCdG8V38f9'
     _template: positions
   - subtitle: Benefits
     title: What you can expect.
