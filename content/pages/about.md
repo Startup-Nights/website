@@ -43,7 +43,7 @@ blocks:
   - subtitle: Our Rockstars
     title: The people behind the scenes.
     divisions:
-      - subtitle: 'Lead Startup Nights'
+      - subtitle: Lead Startup Nights
         title: Keeping us on track.
         members:
           - name: Alyssia Kugler
@@ -85,12 +85,12 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/javier-santillan.jpg
           - name: Nik Harb
-            position: 'Video Creator / Cutter'
+            position: Video Creator / Cutter
             linkedin: 'https://www.linkedin.com/in/nik-harb-6bb7311b7/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_nik_harb.jpg
-          - name: 'Julian Schöb'
-            position: 'Photo & Video Content Creator'
+          - name: Julian Schöb
+            position: Photo & Video Content Creator
             linkedin: ''
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_julian_schoeb_.jpg
@@ -107,27 +107,33 @@ blocks:
           - name: Marie-Sophie Grootens
             position: Social Media Manager
             linkedin: 'https://www.linkedin.com/in/marie-sophie-grootens/'
-            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/marie-sophie-grootens.jpeg
-          - name: 'Karin Da Silva'
-            position: 'CRM & Newsletter'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/marie-sophie-grootens.jpeg
+          - name: Karin Da Silva
+            position: CRM & Newsletter
             linkedin: 'https://www.linkedin.com/in/karin-da-silva/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_karin_da_silva.jpg'
-          - name: 'Kyra Jetzer'
-            position: 'Social Media Manager'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_karin_da_silva.jpg
+          - name: Kyra Jetzer
+            position: Social Media Manager
             linkedin: 'https://www.linkedin.com/in/kyra-jetzer'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_kyra_jetzer.jpg'
-          - name: 'Adam Opuchlik'
-            position: 'Head of Campaigns'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_kyra_jetzer.jpg
+          - name: Adam Opuchlik
+            position: Head of Campaigns
             linkedin: 'https://www.linkedin.com/in/adamopuchlik/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_adam_opuchlik.png'
-          - name: 'Janick Rolli'
-            position: 'Performance Marketing'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_adam_opuchlik.png
+          - name: Janick Rolli
+            position: Performance Marketing
             linkedin: 'https://www.linkedin.com/in/janickrolli/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_janick_rolli.png'
-          - name: 'Sanjai Sasikaran'
-            position: 'Content Creator / Podcast'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_janick_rolli.png
+          - name: Sanjai Sasikaran
+            position: Content Creator / Podcast
             linkedin: 'https://www.linkedin.com/in/sanjai-sasikaran-b0b35b218/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_sanjai_sasikaran.jpg'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_sanjai_sasikaran.jpg
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
@@ -171,10 +177,11 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/florentbeqiri/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/florent-beqiri.jpg
-          - name: 'Patrick Untersee'
-            position: 'Head of Material & Logistics / Power Supply & Network'
+          - name: Patrick Untersee
+            position: Head of Material & Logistics / Power Supply & Network
             linkedin: ''
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_patrick_untersee.png'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_patrick_untersee.png
       - subtitle: Program Team
         title: Entertainers at heart.
         members:
@@ -193,10 +200,11 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/gabriel-riedo-244865120/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_gabriel_riedo.png
-          - name: 'Simon Beyer'
-            position: 'Head of Workshops'
+          - name: Simon Beyer
+            position: Head of Workshops
             linkedin: 'https://www.linkedin.com/in/sibeyer/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_simon_beyer.png'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_simon_beyer.png
           - name: Adrian Tureatca
             position: Head of Startup World
             linkedin: 'https://www.linkedin.com/in/adrian-tureatca/'
@@ -204,7 +212,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/adrian-tureatca
               .jpeg
           - name: Désirée Egli
-            position: 'Leaders Brunch & Pitching Sessions'
+            position: Leaders Brunch & Pitching Sessions
             linkedin: 'https://www.linkedin.com/in/désirée-egli/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/desiree-egli.jpg
@@ -217,10 +225,11 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/nicolas-fischer-756589197/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/nicolas-fischer.jpg
-          - name: 'Valérie Grüter'
-            position: 'Startup Onboarding'
+          - name: Valérie Grüter
+            position: Startup Onboarding
             linkedin: 'https://www.linkedin.com/in/val%C3%A9rie-gr%C3%BCter-28564b111/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_valérie_grueter.png'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_valérie_grueter.png
       - subtitle: Operations Team
         title: Keeping our HQ organised.
         members:
@@ -230,11 +239,11 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/jens-thomsen.jpg
           - name: Michelle Nguyen
-            position: 'Head of HR'
+            position: Head of HR
             linkedin: 'https://www.linkedin.com/in/michelle-hai-mi-nguyen/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
-          - name: 'Nelson Zürcher'
+          - name: Nelson Zürcher
             position: Head of Tools
             linkedin: 'https://www.linkedin.com/in/nelson-z%C3%BCrcher/'
             src: >-
@@ -267,10 +276,11 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/hao-xu-b9b32a189/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/hao-xu.jpg
-          - name: 'Peter Raschle'
-            position: 'Partner Manager'
+          - name: Peter Raschle
+            position: Partner Manager
             linkedin: 'https://www.linkedin.com/in/peter-raschle-260536a4/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_peter_raschle.jpeg'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_peter_raschle.jpeg
       - subtitle: Finance Team
         title: Paying for your food.
         members:
@@ -279,20 +289,16 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/manuela-serena-zürich/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/manuela-serena.png
-          - name: 'Soren Gade'
-            position: 'Finance Specialist'
+          - name: Soren Gade
+            position: Finance Specialist
             linkedin: 'https://www.linkedin.com/in/sorengade/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_soren_gade.png'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_soren_gade.png
           - name: Josephine Junker-Oels
             position: Bookkeeping Creditors & Debitors
             linkedin: 'https://www.linkedin.com/in/josephine-junker-oels-b43383219/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/josephine-junker-oels.jpg
-          - name: Daniel Kress
-            position: Support Bookkeeping
-            linkedin: 'https://www.linkedin.com/in/daniel-kreß-b7198921b/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-kress.jpg
       - subtitle: F&B Team
         title: Serving you joy.
         members:
@@ -307,7 +313,7 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/michelle-nguyen.JPG
           - name: Fabio Furrer
-            position: Head of Bar 
+            position: Head of Bar
             linkedin: 'https://www.linkedin.com/in/fabiofurrer/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/fabio-furrer.jpg
@@ -324,10 +330,11 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/alyssia-kugler/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/alyssia-kugler.JPG
-          - name: 'Michael Wagner'
-            position: 'Partner Communication'
+          - name: Michael Wagner
+            position: Partner Communication
             linkedin: 'https://www.linkedin.com/in/michael-wagner-27208345/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_wagner_michael.jpg'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_wagner_michael.jpg
       - subtitle: Volunteer Team
         title: Organizing helping hands.
         members:
@@ -338,6 +345,8 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/daniel-caspar.jpg
           - name: Jasmin Schoch
             position: Coordination Volunteers
-            src: https://startupnights.fra1.digitaloceanspaces.com/2023/team/jasmin-schoch.jpg
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/jasmin-schoch.jpg
     _template: team
 ---
+
