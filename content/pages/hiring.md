@@ -24,9 +24,6 @@ blocks:
   - subtitle: Open positions
     title: Shape the future with us.
     open_positions:
-      - title: Goodie Bags
-        department: Operations
-        link: 'https://forms.gle/Gv6YyDDNQopS7uEU9'
       - title: Allrounder
         department: Operations
         link: 'https://forms.gle/S9hcT6CscPY5jE5XA'
@@ -36,9 +33,6 @@ blocks:
       - title: PR / Media Relations
         department: Communication
         link: 'https://forms.gle/m7zfH7uorNRT5StR8'
-      - title: Social Media Manager
-        department: Marketing
-        link: 'https://forms.gle/847AQ9M783ofJNax5'
       - title: Head of Photo & Video on-site
         department: Marketing
         link: 'https://forms.gle/dvboJDjQy4XocpkV9'
