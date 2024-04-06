@@ -134,6 +134,16 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/sanjai-sasikaran-b0b35b218/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_sanjai_sasikaran.jpg
+          - name: Dario Müller
+            position: Head of Social Media
+            linkedin: 'https://www.linkedin.com/in/dariom%C3%BCller/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392537_team_dario_mueller.jpeg
+          - name: Diana Kottmann
+            position: Social media Manager
+            linkedin: 'https://www.linkedin.com/in/diana-kottmann-7138a879'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_diana_kottmann.jpg
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
@@ -253,14 +263,23 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/joel-sidler-a55b57235/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_joel_sidler.jpg
+          - name: Fabienne Schuler
+            position: Goodie Bags
+            linkedin: 'https://www.linkedin.com/in/fabienne-schuler/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_fabienne_schuler.png
+          - name: Anton Toman
+            position: Head of Sustainability
+            linkedin: 'http://linkedin.com/in/antontoman'
+            src: ''
       - subtitle: Partnerships Team
         title: Exchanging value.
         members:
-          - name: Michael Goetschi
+          - name: Michael Kubli
             position: Director of Partner Management
-            linkedin: 'https://www.linkedin.com/in/michael-goetschi-01572299/'
+            linkedin: 'https://www.linkedin.com/in/michael-kubli/'
             src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1702326048_team_michael_goetschi.jpeg
+              https://startupnights.fra1.digitaloceanspaces.com/2023/team/michael-kubli.JPG
           - name: Baris Gökduman
             position: Corporates
             linkedin: 'https://www.linkedin.com/in/barisgoekduman/'
@@ -276,11 +295,11 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/hao-xu-b9b32a189/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/hao-xu.jpg
-          - name: Peter Raschle
-            position: Partner Manager
-            linkedin: 'https://www.linkedin.com/in/peter-raschle-260536a4/'
+          - name: Martyna Gorska
+            position: Partner Reporting
+            linkedin: 'https://www.linkedin.com/in/martyna-g%C3%B3rska-1495154a/'
             src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_peter_raschle.jpeg
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_martyna_gorska.jpeg
       - subtitle: Finance Team
         title: Paying for your food.
         members:
@@ -322,6 +341,16 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/rannowholger/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/holger-rannow.png
+          - name: Enrico Acker
+            position: Co-Head of Snacks & Investor Apéro
+            linkedin: 'https://www.linkedin.com/in/enrico-acker/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_enrico_acker1.png
+          - name: Sophie Knobel
+            position: Co-Head of Snacks & Investor Apéro
+            linkedin: 'https://www.linkedin.com/in/sophie-knobel-5b3369204/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_sophie_knobel.png
       - subtitle: Communications Team
         title: Your source for texts.
         members:
