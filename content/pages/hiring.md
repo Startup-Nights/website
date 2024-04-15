@@ -37,6 +37,9 @@ blocks:
         note: New
         department: General
         link: 'https://forms.gle/d76tawoBwpZZWb5X9'
+      - title: (Technical) Website Specialist
+        department: Marketing
+        link: 'https://forms.gle/wpmw8GzKUkRko6LV7'
     _template: positions
   - subtitle: Benefits
     title: What you can expect.
