@@ -264,14 +264,22 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_joel_sidler.jpg
           - name: Fabienne Schuler
-            position: Goodie Bags
+            position: Goodie Bag Coordinator
             linkedin: 'https://www.linkedin.com/in/fabienne-schuler/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_fabienne_schuler.png
           - name: Anton Toman
             position: Head of Sustainability
             linkedin: 'http://linkedin.com/in/antontoman'
-            src: ''
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_anton_toman.jpeg'
+          - name: 'Emine Dudus'
+            position: 'Sustainability Manager'
+            linkedin: 'https://www.linkedin.com/in/emine-d-866868107/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_emine_dudus.jpeg'
+          - name: 'Philipp Wesselburg'
+            position: 'Sustainability Manager'
+            linkedin: 'https://www.linkedin.com/in/philipp-wesselburg-31458018b/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_philipp_wesselburg.png'
       - subtitle: Partnerships Team
         title: Exchanging value.
         members:
@@ -295,11 +303,10 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/hao-xu-b9b32a189/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/hao-xu.jpg
-          - name: Martyna Gorska
-            position: Partner Reporting
-            linkedin: 'https://www.linkedin.com/in/martyna-g%C3%B3rska-1495154a/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_martyna_gorska.jpeg
+          - name: 'Robin Muntwyler'
+            position: 'Partner Manager'
+            linkedin: 'https://www.linkedin.com/in/robin-muntwyler/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_muntwyler_robin.jpg'
       - subtitle: Finance Team
         title: Paying for your food.
         members:
@@ -318,6 +325,10 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/josephine-junker-oels-b43383219/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/josephine-junker-oels.jpg
+          - name: 'Marc Müller'
+            position: 'Support Bookkeeping'
+            linkedin: 'https://www.linkedin.com/in/marc-mueller-mm/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_marc_mueller.jpg'
       - subtitle: F&B Team
         title: Serving you joy.
         members:
@@ -364,6 +375,11 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/michael-wagner-27208345/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708293552_team_wagner_michael.jpg
+          - name: Martyna Gorska
+            position: Partner Reporting
+            linkedin: 'https://www.linkedin.com/in/martyna-g%C3%B3rska-1495154a/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_martyna_gorska.jpeg
       - subtitle: Volunteer Team
         title: Organizing helping hands.
         members:
