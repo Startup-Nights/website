@@ -25,7 +25,8 @@ blocks:
       subtitle: Get ready for 2024
       title: Pre-register now!
       content:
-        - You'll be the first one to hear from us once the registration opens!
+        - Pre-register and benefit from an one-off Startup Nights community discount.
+        - Ticket sales will start on July 1 2024.
     contentblock_left: true
     preregister: true
     background_color: bg-sn-black-light
