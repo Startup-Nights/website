@@ -228,6 +228,7 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/desiree-egli.jpg
           - name: Sarah Egli
             position: Co-Lead Leaders Brunch & Pitching Sessions
+            linkedin: ''
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1702326048_team_sarah_egli.jpeg
           - name: Nicolas Fischer
