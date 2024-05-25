@@ -20,7 +20,7 @@ ${JSON.stringify(req.body)}`,
             },
             body: JSON.stringify({
                 id: '1WX6vvcCJihBJ9tFN-8AixYAyt5i1nSfMeX81gsEEwjs',
-                range: 'A:AB',
+                range: 'A:AC',
                 data: toDataSlice(req.body),
             }),
         })
@@ -95,6 +95,7 @@ const toDataSlice = (body: any): string[] => {
         body.varia.accomodation,
         body.varia.referral,
         body.varia.equipment,
+        body.varia.equipment_image,
         body.varia.previous_visitor
     ]
 }
