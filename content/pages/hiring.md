@@ -40,6 +40,9 @@ blocks:
       - title: (Technical) Website Specialist
         department: Marketing
         link: 'https://forms.gle/wpmw8GzKUkRko6LV7'
+      - title: Social Media Manager
+        department: Marketing
+        link: 'https://forms.gle/847AQ9M783ofJNax5'
     _template: positions
   - subtitle: Benefits
     title: What you can expect.
