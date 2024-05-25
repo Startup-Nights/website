@@ -1787,7 +1787,7 @@ var boothApprovedBlockSchema = {
 };
 
 // components/blocks/crop.tsx
-import { ExclamationTriangleIcon as ExclamationTriangleIcon2, PhotoIcon as PhotoIcon3 } from "@heroicons/react/24/outline";
+import { ExclamationTriangleIcon as ExclamationTriangleIcon2, PhotoIcon as PhotoIcon2 } from "@heroicons/react/24/outline";
 import Link9 from "next/link";
 import { useState as useState12 } from "react";
 var cropBlockSchema = {
