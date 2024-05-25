@@ -1571,7 +1571,8 @@ var pricingBlockSchema = {
 
 // components/blocks/booth.tsx
 import { Fragment as Fragment5, useEffect as useEffect5, useState as useState9 } from "react";
-import { InformationCircleIcon as InformationCircleIcon4, PhotoIcon } from "@heroicons/react/20/solid";
+import Link8 from "next/link";
+import { InformationCircleIcon as InformationCircleIcon4 } from "@heroicons/react/20/solid";
 import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/20/solid";
@@ -1581,6 +1582,11 @@ import {
   PlusIcon,
   XMarkIcon as XMarkIcon4
 } from "@heroicons/react/24/outline";
+
+// components/items/imageupload.tsx
+import { PhotoIcon } from "@heroicons/react/24/solid";
+
+// components/blocks/booth.tsx
 var boothBlockSchema = {
   name: "booth_registration",
   label: "Booth registration",
@@ -1781,8 +1787,8 @@ var boothApprovedBlockSchema = {
 };
 
 // components/blocks/crop.tsx
-import { ExclamationTriangleIcon as ExclamationTriangleIcon2, PhotoIcon as PhotoIcon2 } from "@heroicons/react/24/outline";
-import Link8 from "next/link";
+import { ExclamationTriangleIcon as ExclamationTriangleIcon2, PhotoIcon as PhotoIcon3 } from "@heroicons/react/24/outline";
+import Link9 from "next/link";
 import { useState as useState12 } from "react";
 var cropBlockSchema = {
   name: "crop",
@@ -1798,7 +1804,7 @@ var cropBlockSchema = {
 
 // components/blocks/quotes.tsx
 import React12 from "react";
-import Link9 from "next/link";
+import Link10 from "next/link";
 import { ArrowTopRightOnSquareIcon as ArrowTopRightOnSquareIcon3 } from "@heroicons/react/20/solid";
 var quotesBlockSchema = {
   name: "quotes",
