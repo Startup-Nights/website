@@ -27,9 +27,6 @@ blocks:
       - title: Allrounder
         department: Operations
         link: 'https://forms.gle/S9hcT6CscPY5jE5XA'
-      - title: PR / Media Relations
-        department: Communication
-        link: 'https://forms.gle/m7zfH7uorNRT5StR8'
       - title: Head of Photo & Video on-site
         department: Marketing
         link: 'https://forms.gle/dvboJDjQy4XocpkV9'
@@ -43,6 +40,9 @@ blocks:
       - title: Social Media Manager
         department: Marketing
         link: 'https://forms.gle/847AQ9M783ofJNax5'
+      - title: Tools & Automation Manager
+        department: Operations
+        link: 'https://forms.gle/9BobSxcN1uGKfMxN8'
     _template: positions
   - subtitle: Benefits
     title: What you can expect.
