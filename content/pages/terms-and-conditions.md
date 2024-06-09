@@ -55,7 +55,8 @@ blocks:
             2.2 In order to access certain services provided by Startup Nights
             (e.g. Workshops during Startup Nights) you may be required to upload
             your CV to the online event platform. By uploading your CV, you
-            agree that Startup Nights may share your CV with its partners.
+            agree that Startup Nights may share your CV with its partners and
+            that these partners may contact you.
       - title: 3. PRICES
         text:
           - >-
