@@ -1,7 +1,7 @@
 ---
 title: Booths
 blocks:
-  - subtitle: Startup World 2023
+  - subtitle: Startup World
     title: Check out the exhibiting startups!
     cta:
       link: '/booth'
@@ -13,7 +13,7 @@ blocks:
       alt: Rollup from the Startup World 2023
     _template: hero
   - subtitle: Exhibiting Startups
-    title: Startups of 2023.
+    title: Startups which exhibited in 2023.
     _template: booth_approved
 ---
 

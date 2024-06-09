@@ -203,19 +203,8 @@ export const Booth = ({ data }) => {
                         </div>
 
                         <p className="mt-6 text-md leading-6 text-gray-300">
-                            We review applications in batches of 30 at the following dates:
+                            We review applications in batches.
                         </p>
-
-                        <div className="mt-4 flex flex-wrap justify-start gap-2">
-                            {badges.map((badge, i) => (
-                                <span
-                                    key={i}
-                                    className="py-2 px-4 bg-sn-black-light rounded-xl"
-                                >
-                                    {badge}
-                                </span>
-                            ))}
-                        </div>
 
                         <p className="mt-6 text-md leading-6 text-gray-300">
                             We'll get in touch with all the startups that have registered by
@@ -1310,17 +1299,6 @@ const Packages = ({ regPackage, setRegPackage }) => {
         </RadioGroup>
     );
 };
-
-const badges = [
-    "30.06.23",
-    "14.07.23",
-    "28.07.23",
-    "04.08.23",
-    "18.08.23",
-    "01.09.23",
-    "15.09.23",
-    "30.09.23",
-];
 
 const companyCategories = [
     {
