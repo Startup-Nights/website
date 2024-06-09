@@ -1,4 +1,4 @@
-import { ExclamationTriangleIcon, InformationCircleIcon, PhotoIcon } from "@heroicons/react/24/outline";
+import { ExclamationTriangleIcon, PhotoIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState } from "react";
 import { Template } from "tinacms";
@@ -10,6 +10,31 @@ enum uploadState {
     Finished,
 }
 
+enum imageType {
+    Logo = 'Logo',
+    Team = 'Team',
+}
+
+class imageDimension {
+    name: string;
+    width: number;
+    height: number;
+}
+
+function getImageDimensions(image: imageType): imageDimension[] {
+    switch (image) {
+        case imageType.Team:
+            return [{ name: 'team_small', width: 500, height: 500 }]
+        case imageType.Logo:
+            return [
+                { name: 'logo_small', width: 600, height: 300 },
+                { name: 'logo_big', width: 1200, height: 600 },
+            ]
+        default:
+            return [{ name: 'unknown_small', width: 600, height: 300 }]
+    }
+}
+
 export const Crop = ({ data }) => {
     const checks = [
         { name: 'is a png file', id: 'png-format', checked: false },
@@ -19,16 +44,17 @@ export const Crop = ({ data }) => {
         { name: 'has a transparent background', id: 'background', checked: false },
     ]
 
+    const [typeOfImage, setTypeOfImage] = useState(imageType.Logo)
     const [checkItems, setCheckItems] = useState(checks)
     const [companyLogoLoading, setCompanyLogoLoading] = useState({
-        downloadUrl: "",
+        downloadUrl: [],
         error: "",
         state: uploadState.None,
     });
 
     const handleUpload = async (event: any) => {
         setCompanyLogoLoading({
-            downloadUrl: "",
+            downloadUrl: [],
             error: "",
             state: uploadState.Uploading,
         });
@@ -37,7 +63,7 @@ export const Crop = ({ data }) => {
         // make sure that the file is not too big
         if (file.size > 10 * 1000000) {
             setCompanyLogoLoading({
-                downloadUrl: "",
+                downloadUrl: [],
                 error:
                     "Logo is too big: " +
                     Math.floor(file.size / 1000000) +
@@ -76,23 +102,36 @@ export const Crop = ({ data }) => {
             body: file,
         });
 
-        const resizeResponse = await fetch("https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/resize", {
-            method: 'post',
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ filename: filename }),
-        })
+        const urls: string[] = []
+        const dimensions = getImageDimensions(typeOfImage)
 
-        data = await resizeResponse.json()
-        if (data.error) {
-            console.log(data.error);
+        for (const dimension of dimensions) {
+            console.log('resizing to: ' + JSON.stringify(dimension))
+
+            const resizeResponse = await fetch("https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-70cb3437-eee1-474d-8ad6-387035b15671/website/resize", {
+                method: 'post',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    filename: filename,
+                    width: dimension.width,
+                    height: dimension.height,
+                }),
+            })
+
+            data = await resizeResponse.json()
+            if (data.error) {
+                console.log(data.error);
+            }
+
+            urls.push(data.download)
         }
 
         setCompanyLogoLoading({
             state: uploadState.Finished,
             error: "",
-            downloadUrl: data.download,
+            downloadUrl: urls,
         });
     };
 
@@ -136,36 +175,45 @@ export const Crop = ({ data }) => {
 
                 {companyLogoLoading.state === uploadState.Finished && (
                     <>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 group">
-                            <div className="">
-                                <p className="text-gray-400 pb-6">Light background</p>
-                                <div className="relative group p-8 bg-white rounded-xl border-2 border-gray-200">
-                                    <div className="p-4 sm:p-8 rounded-xl">
-                                        <img
-                                            src={companyLogoLoading.downloadUrl}
-                                            className=""
-                                        />
+                        <div className="max-w-2xl mx-auto">
+                            {typeOfImage === imageType.Logo && (
+                                <div className="">
+                                    <div className="relative group p-8 bg-white rounded-xl border-2 border-gray-200">
+                                        <div className="bg-gray-100 p-4 sm:p-8 rounded-xl">
+                                            <img
+                                                src={companyLogoLoading.downloadUrl[0]}
+                                                className=""
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            )}
 
-                            <div className="">
-                                <p className="text-gray-400 pb-6">Light background + hover preview</p>
-                                <div className="relative group p-8 bg-white rounded-xl border-2 border-gray-200">
-                                    <div className="bg-gray-100 p-4 sm:p-8 rounded-xl">
-                                        <img
-                                            src={companyLogoLoading.downloadUrl}
-                                            className=""
-                                        />
+                            {typeOfImage === imageType.Team && (
+                                <div className="">
+                                    <div className="relative group p-8 bg-white rounded-xl border-2 border-gray-200">
+                                        <div className="p-4 sm:p-8 rounded-full">
+                                            <img
+                                                src={companyLogoLoading.downloadUrl[0]}
+                                                className="rounded-full"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            )}
+
                         </div>
 
                         <div className="max-w-2xl mx-auto">
                             <p className="mt-12 block text-base font-medium leading-6 text-gray-400">
                                 Before using this link, make sure that you are happy with the transparency, the spacing around your logo and in general with the preview. If you are happy, you can use the following link to reference your logo in booth or partner applications. Link to the image:</p>
-                            <p className="mt-4"><code className="bg-sn-black-lightest text-sm px-2 py-1 rounded-md leading-8 text-gray-200">{companyLogoLoading.downloadUrl}</code></p>
+                            {companyLogoLoading.downloadUrl.map((item) => (
+                                <p className="mt-4">
+                                    <code className="bg-sn-black-lightest text-sm px-2 py-1 rounded-md leading-8 text-gray-200">
+                                        {item}
+                                    </code>
+                                </p>
+                            ))}
 
                             <p className="mt-12 block text-base font-medium leading-6 text-gray-400">
                                 If you are not happy and want to adjust the logo, either click the button below or refresh the page.
@@ -177,7 +225,7 @@ export const Crop = ({ data }) => {
                                     setCompanyLogoLoading({
                                         state: uploadState.None,
                                         error: "",
-                                        downloadUrl: "",
+                                        downloadUrl: [],
                                     });
                                 }}
                             >
@@ -234,7 +282,7 @@ export const Crop = ({ data }) => {
                                                             <input
                                                                 id={check.id}
                                                                 name={check.id}
-                                                                type="checkbox"
+                                                                type="radio"
                                                                 className="h-4 w-4 rounded bg-sn-black-lightest border-sn-black-lightest text-sn-yellow-dark focus:ring-sn-yellow-dark"
                                                                 checked={checkItems[i].checked}
                                                                 onChange={() => {
@@ -254,6 +302,30 @@ export const Crop = ({ data }) => {
                                                     </li>
                                                 ))}
                                             </ul>
+                                        </div>
+                                        <div className="mx-auto text-left mt-2 text-gray-400">
+                                            <fieldset className="mt-4">
+                                                <legend className="sr-only">Type of image to upload</legend>
+                                                <div className="relative grid grid-cols-1 space-y-2 sm:flex sm:space-y-0 sm:items-start sm:space-x-8">
+                                                    {[imageType.Logo, imageType.Team].map((image) => (
+                                                        <div key={image} className="flex items-center">
+                                                            <input
+                                                                id={image}
+                                                                type="radio"
+                                                                checked={image === typeOfImage}
+                                                                className="h-4 w-4 bg-sn-black-lightest border-sn-black-lightest text-sn-yellow focus:ring-indigo-600"
+                                                                onChange={() => setTypeOfImage(image)}
+                                                            />
+                                                            <label
+                                                                htmlFor={image}
+                                                                className="ml-3 block text-sm font-medium leading-6"
+                                                            >
+                                                                {image}
+                                                            </label>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </fieldset>
                                         </div>
 
                                         <label
