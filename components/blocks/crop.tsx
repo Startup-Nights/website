@@ -28,7 +28,6 @@ function getImageDimensions(image: imageType): imageDimension[] {
         case imageType.Logo:
             return [
                 { name: 'logo_small', width: 600, height: 300 },
-                { name: 'logo_big', width: 1200, height: 600 },
             ]
         default:
             return [{ name: 'unknown_small', width: 600, height: 300 }]
