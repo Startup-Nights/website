@@ -4,8 +4,8 @@
         "color": "default",
         "nav_ctas": [
             {
-                "href": "hiring",
-                "title": "Volunteer",
+                "href": "booth",
+                "title": "Apply for a Booth",
                 "icon": "heart"
             },
             {
