@@ -316,6 +316,24 @@ fragment PageParts on Page {
           }
           padding
         }
+        imagegrid {
+          __typename
+          subtitle
+          title
+          paragraph
+          id
+          images {
+            __typename
+            name
+            position
+            image {
+              __typename
+              src
+              alt
+            }
+          }
+          background_color
+        }
       }
     }
     ... on PageBlocksBooth_registration {
