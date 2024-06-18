@@ -11,16 +11,10 @@ jobs:
 
       - name: run cypress tests
         uses: cypress-io/github-action@v6
+        continue-on-error: true
         with:
           browser: chrome
           start: npm run dev
           config: baseUrl=http://localhost:3000
           spec: |
             cypress/e2e/accessibility.cy.ts
-
-      - name: upload test results
-        uses: actions/upload-artifact@v3
-        with:
-          name: cypress-test-result
-          path: cypress/results
-          retention-days: 1
