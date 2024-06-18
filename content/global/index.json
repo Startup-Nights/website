@@ -15,7 +15,7 @@
             },
             {
                 "href": "tickets",
-                "title": "Pre-register",
+                "title": "Get your ticket",
                 "icon": "ticket",
                 "primary": true
             }
@@ -108,7 +108,7 @@
         ]
     },
     "footer": {
-        "copyright": "2023 Startup Nights",
+        "copyright": "2024 Startup Nights",
         "navitems": [
             {
                 "title": "Startup Nights",
