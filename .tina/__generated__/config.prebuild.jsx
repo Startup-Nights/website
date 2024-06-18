@@ -1124,9 +1124,6 @@ function cloudinaryLoader({ src, width: width2, quality }) {
 }
 
 // components/blocks/tito.tsx
-import React8, { useEffect as useEffect4, useState as useState7 } from "react";
-import Head from "next/head";
-import { InformationCircleIcon as InformationCircleIcon2 } from "@heroicons/react/24/outline";
 var titoBlockSchema = {
   name: "tito",
   label: "Tito",
@@ -1221,7 +1218,7 @@ var seoBlockSchema = {
 };
 
 // components/blocks/content.tsx
-import React9 from "react";
+import React8 from "react";
 
 // components/items/testimonial.tsx
 import Image8 from "next/image";
@@ -1343,7 +1340,7 @@ var MembersBlockSchema = {
 };
 
 // components/blocks/preregister.tsx
-import { useRef as useRef2, useState as useState8, Fragment as Fragment4 } from "react";
+import { useRef as useRef2, useState as useState7, Fragment as Fragment4 } from "react";
 import { Transition as Transition3 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon2 } from "@heroicons/react/24/outline";
 import { ExclamationCircleIcon as ExclamationCircleIcon2, XMarkIcon as XMarkIcon2 } from "@heroicons/react/20/solid";
@@ -1387,7 +1384,7 @@ var contentBlockSchema = {
 };
 
 // components/blocks/content_wide.tsx
-import React10 from "react";
+import React9 from "react";
 var contentWideBlockSchema = {
   name: "content_wide",
   label: "Content wide",
@@ -1474,7 +1471,7 @@ var contentWideBlockSchema = {
 // components/blocks/pricing.tsx
 import { CheckIcon, XMarkIcon as XMarkIcon3 } from "@heroicons/react/20/solid";
 import Link7 from "next/link";
-import { InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/24/outline";
+import { InformationCircleIcon as InformationCircleIcon2 } from "@heroicons/react/24/outline";
 import { Tooltip } from "@nextui-org/react";
 var pricingBlockSchema = {
   name: "pricing",
@@ -1570,9 +1567,9 @@ var pricingBlockSchema = {
 };
 
 // components/blocks/booth.tsx
-import { Fragment as Fragment5, useEffect as useEffect5, useState as useState9 } from "react";
+import { Fragment as Fragment5, useEffect as useEffect4, useState as useState8 } from "react";
 import Link8 from "next/link";
-import { InformationCircleIcon as InformationCircleIcon4 } from "@heroicons/react/20/solid";
+import { InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/20/solid";
 import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/20/solid";
@@ -1606,7 +1603,7 @@ var boothBlockSchema = {
 
 // components/blocks/imagegrid.tsx
 import Image10 from "next/image";
-import React11 from "react";
+import React10 from "react";
 var imagegridBlockSchema = {
   name: "imagegrid",
   label: "Imagegrid",
@@ -1683,9 +1680,9 @@ var imagegridBlockSchema = {
 };
 
 // components/blocks/pitching.tsx
-import { Fragment as Fragment6, useEffect as useEffect6, useState as useState10 } from "react";
+import { Fragment as Fragment6, useEffect as useEffect5, useState as useState9 } from "react";
 import { Transition as Transition5 } from "@headlessui/react";
-import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon5 } from "@heroicons/react/20/solid";
+import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon4 } from "@heroicons/react/20/solid";
 import {
   ExclamationCircleIcon as ExclamationCircleIcon4,
   PlusIcon as PlusIcon2,
@@ -1753,7 +1750,7 @@ var programBlockSchema = {
 };
 
 // components/blocks/booth_approved.tsx
-import { useEffect as useEffect7, useState as useState11 } from "react";
+import { useEffect as useEffect6, useState as useState10 } from "react";
 
 // components/blocks/boothmodal.tsx
 import { Fragment as Fragment7 } from "react";
@@ -1789,7 +1786,7 @@ var boothApprovedBlockSchema = {
 // components/blocks/crop.tsx
 import { ExclamationTriangleIcon as ExclamationTriangleIcon2, PhotoIcon as PhotoIcon2 } from "@heroicons/react/24/outline";
 import Link9 from "next/link";
-import { useState as useState12 } from "react";
+import { useState as useState11 } from "react";
 var cropBlockSchema = {
   name: "crop",
   label: "crop",
@@ -1803,7 +1800,7 @@ var cropBlockSchema = {
 };
 
 // components/blocks/quotes.tsx
-import React12 from "react";
+import React11 from "react";
 import Link10 from "next/link";
 import { ArrowTopRightOnSquareIcon as ArrowTopRightOnSquareIcon3 } from "@heroicons/react/20/solid";
 var quotesBlockSchema = {
