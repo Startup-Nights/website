@@ -19,7 +19,7 @@ blocks:
     title_line2: ''
     cta:
       link: /tickets
-      text: Pre-register 2024
+      text: Get your ticket
     image:
       src: ''
       alt: ''
@@ -35,14 +35,14 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/fireside.jpg
     _template: hero
   - subtitle: Speaker
-    title: Heavyweights 2024.
+    title: Heavyweights.
     paragraph: >-
       Discover the thought leaders, innovators, and industry pioneers who will
       take the stage at Startup Nights. From tech titans to seasoned investors,
       our speakers ignite inspiration and drive change.
     cta:
       link: /speakers
-      text: Explore speaker 2023
+      text: Explore our speaker
     speakers:
       - name: 'Shannon Jenkins'
         position: 'Public Speaking Coach, Storytelling Strategist & Podcast Host'
@@ -186,7 +186,7 @@ blocks:
     background_color: bg-sn-black-light
     _template: overview
   - subtitle: null
-    title: What last year's speakers said about the event
+    title: What previous speaker said about the event
     videos:
       - video:
           src: >-

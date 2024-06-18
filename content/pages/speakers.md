@@ -1,11 +1,11 @@
 ---
 title: Program
 blocks:
-  - subtitle: Program of Startup Nights 2023
+  - subtitle: Program of Startup Nights 2024
     title: What to expect
     cta:
       link: /tickets
-      text: Pre-register for 2024
+      text: Register
     image:
       src: >-
         https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/pictures/2023-sn-fireside-chat-02.jpg
