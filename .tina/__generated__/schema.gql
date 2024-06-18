@@ -629,11 +629,32 @@ type PageBlocksTabsTabitemsDropdown_items {
   padding: Boolean
 }
 
+type PageBlocksImagegridImagesImage {
+  src: String
+  alt: String
+}
+
+type PageBlocksTabsTabitemsImagegridImages {
+  name: String
+  position: String
+  image: PageBlocksImagegridImagesImage
+}
+
+type PageBlocksTabsTabitemsImagegrid {
+  subtitle: String
+  title: String
+  paragraph: String
+  id: String
+  images: [PageBlocksTabsTabitemsImagegridImages]
+  background_color: String
+}
+
 type PageBlocksTabsTabitems {
   content_block: PageBlocksTabsTabitemsContent_block
   image: PageBlocksTabsTabitemsImage
   infopoints: [PageBlocksTabsTabitemsInfopoints]
   dropdown_items: PageBlocksTabsTabitemsDropdown_items
+  imagegrid: PageBlocksTabsTabitemsImagegrid
 }
 
 type PageBlocksTabs {
@@ -914,11 +935,6 @@ type PageBlocksContent_wide {
   background_color: String
   cta: PageBlocksContent_wideCta
   cta_secondary: PageBlocksContent_wideCta_secondary
-}
-
-type PageBlocksImagegridImagesImage {
-  src: String
-  alt: String
 }
 
 type PageBlocksImagegridImages {
@@ -1241,11 +1257,32 @@ input PageBlocksTabsTabitemsDropdown_itemsFilter {
   padding: BooleanFilter
 }
 
+input PageBlocksImagegridImagesImageFilter {
+  src: ImageFilter
+  alt: StringFilter
+}
+
+input PageBlocksTabsTabitemsImagegridImagesFilter {
+  name: StringFilter
+  position: StringFilter
+  image: PageBlocksImagegridImagesImageFilter
+}
+
+input PageBlocksTabsTabitemsImagegridFilter {
+  subtitle: StringFilter
+  title: StringFilter
+  paragraph: StringFilter
+  id: StringFilter
+  images: PageBlocksTabsTabitemsImagegridImagesFilter
+  background_color: StringFilter
+}
+
 input PageBlocksTabsTabitemsFilter {
   content_block: PageBlocksTabsTabitemsContent_blockFilter
   image: PageBlocksTabsTabitemsImageFilter
   infopoints: PageBlocksTabsTabitemsInfopointsFilter
   dropdown_items: PageBlocksTabsTabitemsDropdown_itemsFilter
+  imagegrid: PageBlocksTabsTabitemsImagegridFilter
 }
 
 input PageBlocksTabsFilter {
@@ -1526,11 +1563,6 @@ input PageBlocksContent_wideFilter {
   background_color: StringFilter
   cta: PageBlocksContent_wideCtaFilter
   cta_secondary: PageBlocksContent_wideCta_secondaryFilter
-}
-
-input PageBlocksImagegridImagesImageFilter {
-  src: ImageFilter
-  alt: StringFilter
 }
 
 input PageBlocksImagegridImagesFilter {
@@ -2001,11 +2033,32 @@ input PageBlocksTabsTabitemsDropdown_itemsMutation {
   padding: Boolean
 }
 
+input PageBlocksImagegridImagesImageMutation {
+  src: String
+  alt: String
+}
+
+input PageBlocksTabsTabitemsImagegridImagesMutation {
+  name: String
+  position: String
+  image: PageBlocksImagegridImagesImageMutation
+}
+
+input PageBlocksTabsTabitemsImagegridMutation {
+  subtitle: String
+  title: String
+  paragraph: String
+  id: String
+  images: [PageBlocksTabsTabitemsImagegridImagesMutation]
+  background_color: String
+}
+
 input PageBlocksTabsTabitemsMutation {
   content_block: PageBlocksTabsTabitemsContent_blockMutation
   image: PageBlocksTabsTabitemsImageMutation
   infopoints: [PageBlocksTabsTabitemsInfopointsMutation]
   dropdown_items: PageBlocksTabsTabitemsDropdown_itemsMutation
+  imagegrid: PageBlocksTabsTabitemsImagegridMutation
 }
 
 input PageBlocksTabsMutation {
@@ -2286,11 +2339,6 @@ input PageBlocksContent_wideMutation {
   background_color: String
   cta: PageBlocksContent_wideCtaMutation
   cta_secondary: PageBlocksContent_wideCta_secondaryMutation
-}
-
-input PageBlocksImagegridImagesImageMutation {
-  src: String
-  alt: String
 }
 
 input PageBlocksImagegridImagesMutation {
