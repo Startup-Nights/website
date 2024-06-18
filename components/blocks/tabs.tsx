@@ -4,6 +4,7 @@ import { Template } from 'tinacms';
 import { Infopoints, InfopointsBlockSchema } from '../items/infopoints';
 import { RoundImage, RoundImageBlockschema } from '../items/image';
 import { MiniDropdown, miniDropdownBlockSchema } from './minidropdown';
+import { Imagegrid, imagegridBlockSchema } from './imagegrid';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -57,6 +58,10 @@ export const Tabs = ({ data }) => {
                                         {item?.dropdown_items && (
                                             <MiniDropdown data={item?.dropdown_items} />
                                         )}
+
+                                        {item?.imagegrid && (
+                                            <Imagegrid data={item?.imagegrid} />
+                                        )}
                                     </Tab.Panel>
                                 ))}
                             </Tab.Panels>
@@ -82,6 +87,7 @@ export const tabsBlockSchema: Template = {
                 RoundImageBlockschema,
                 InfopointsBlockSchema,
                 miniDropdownBlockSchema,
+                imagegridBlockSchema,
             ],
         }
     ],

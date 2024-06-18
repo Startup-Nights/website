@@ -785,6 +785,85 @@ var miniDropdownBlockSchema = {
   ]
 };
 
+// components/blocks/imagegrid.tsx
+import Image6 from "next/image";
+import React5 from "react";
+var imagegridBlockSchema = {
+  type: "object",
+  name: "imagegrid",
+  label: "Imagegrid",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    },
+    {
+      type: "string",
+      label: "Text",
+      name: "paragraph"
+    },
+    {
+      type: "string",
+      label: "ID",
+      name: "id"
+    },
+    {
+      type: "object",
+      label: "Images",
+      name: "images",
+      list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.name };
+        }
+      },
+      fields: [
+        {
+          type: "string",
+          label: "Name",
+          name: "name"
+        },
+        {
+          type: "string",
+          label: "Position",
+          name: "position"
+        },
+        {
+          type: "object",
+          label: "Image",
+          name: "image",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image"
+            },
+            {
+              name: "alt",
+              label: "Alt Text",
+              type: "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
+    }
+  ]
+};
+
 // components/blocks/tabs.tsx
 var tabsBlockSchema = {
   name: "tabs",
@@ -799,7 +878,8 @@ var tabsBlockSchema = {
         ContentBlockSchema,
         RoundImageBlockschema,
         InfopointsBlockSchema,
-        miniDropdownBlockSchema
+        miniDropdownBlockSchema,
+        imagegridBlockSchema
       ]
     }
   ]
@@ -834,7 +914,7 @@ var dropdownBlockSchema = {
 
 // components/blocks/benefits.tsx
 import { Cog6ToothIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon2, CheckBadgeIcon as CheckBadgeIcon2, HeartIcon as HeartIcon2, LightBulbIcon as LightBulbIcon2, UserGroupIcon as UserGroupIcon2 } from "@heroicons/react/24/outline";
-import React5 from "react";
+import React6 from "react";
 var benefitsBlockSchema = {
   name: "benefits",
   label: "Benefits",
@@ -876,8 +956,8 @@ var benefitsBlockSchema = {
 };
 
 // components/blocks/overview.tsx
-import React6 from "react";
-import Image6 from "next/image";
+import React7 from "react";
+import Image7 from "next/image";
 
 // components/util/icons.tsx
 import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, Cog6ToothIcon as Cog6ToothIcon2, FunnelIcon, HeartIcon as HeartIcon3, InformationCircleIcon, LightBulbIcon as LightBulbIcon3, MegaphoneIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon as RocketLaunchIcon2, StarIcon, TicketIcon, TrophyIcon, UserCircleIcon, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
@@ -982,10 +1062,10 @@ var overviewBlockSchema = {
 };
 
 // components/blocks/gallery.tsx
-import React7, { useState as useState6 } from "react";
+import React8, { useState as useState6 } from "react";
 
 // components/items/nextimage.tsx
-import Image7 from "next/image";
+import Image8 from "next/image";
 
 // components/blocks/gallery.tsx
 import { PhotoAlbum } from "react-photo-album";
@@ -1218,10 +1298,10 @@ var seoBlockSchema = {
 };
 
 // components/blocks/content.tsx
-import React8 from "react";
+import React9 from "react";
 
 // components/items/testimonial.tsx
-import Image8 from "next/image";
+import Image9 from "next/image";
 var TestimonialBlockSchema = {
   type: "object",
   label: "Testimonial",
@@ -1299,7 +1379,7 @@ var FactsBlockSchema = {
 };
 
 // components/items/members.tsx
-import Image9 from "next/image";
+import Image10 from "next/image";
 var MembersBlockSchema = {
   type: "object",
   label: "Members",
@@ -1384,7 +1464,7 @@ var contentBlockSchema = {
 };
 
 // components/blocks/content_wide.tsx
-import React9 from "react";
+import React10 from "react";
 var contentWideBlockSchema = {
   name: "content_wide",
   label: "Content wide",
@@ -1597,84 +1677,6 @@ var boothBlockSchema = {
       type: "string",
       label: "Title",
       name: "title"
-    }
-  ]
-};
-
-// components/blocks/imagegrid.tsx
-import Image10 from "next/image";
-import React10 from "react";
-var imagegridBlockSchema = {
-  name: "imagegrid",
-  label: "Imagegrid",
-  fields: [
-    {
-      type: "string",
-      label: "Subtitle",
-      name: "subtitle"
-    },
-    {
-      type: "string",
-      label: "Title",
-      name: "title"
-    },
-    {
-      type: "string",
-      label: "Text",
-      name: "paragraph"
-    },
-    {
-      type: "string",
-      label: "ID",
-      name: "id"
-    },
-    {
-      type: "object",
-      label: "Images",
-      name: "images",
-      list: true,
-      ui: {
-        itemProps: (item) => {
-          return { label: item?.name };
-        }
-      },
-      fields: [
-        {
-          type: "string",
-          label: "Name",
-          name: "name"
-        },
-        {
-          type: "string",
-          label: "Position",
-          name: "position"
-        },
-        {
-          type: "object",
-          label: "Image",
-          name: "image",
-          fields: [
-            {
-              name: "src",
-              label: "Image Source",
-              type: "image"
-            },
-            {
-              name: "alt",
-              label: "Alt Text",
-              type: "string"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      type: "string",
-      name: "background_color",
-      label: "Background color",
-      ui: {
-        component: ColorPickerInput
-      }
     }
   ]
 };
