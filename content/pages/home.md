@@ -311,9 +311,9 @@ blocks:
             alt: UBS
             link: 'https://ubs.com'
           - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
-            alt: IGE
-            link: 'https://ipi.ch'
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/mobiliar.png
+            alt: Mobiliar
+            link: 'https://mobiliar.ch'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kanton-zuerich.png
             alt: Kanton Zürich
