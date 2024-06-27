@@ -1881,6 +1881,7 @@ export type Mutation = {
   updateDocument: DocumentNode;
   deleteDocument: DocumentNode;
   createDocument: DocumentNode;
+  createFolder: DocumentNode;
   updatePost: Post;
   createPost: Post;
   updateGlobal: Global;
@@ -1916,6 +1917,12 @@ export type MutationCreateDocumentArgs = {
   collection?: InputMaybe<Scalars['String']['input']>;
   relativePath: Scalars['String']['input'];
   params: DocumentMutation;
+};
+
+
+export type MutationCreateFolderArgs = {
+  collection?: InputMaybe<Scalars['String']['input']>;
+  relativePath: Scalars['String']['input'];
 };
 
 
