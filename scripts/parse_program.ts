@@ -1,5 +1,5 @@
-const fs = require('fs');
-const pako = require('pako');
+import * as fs from 'fs';
+import * as pako from 'pako';
 
 const decode = (str: string): string => Buffer.from(str, 'base64').toString('binary');
 
