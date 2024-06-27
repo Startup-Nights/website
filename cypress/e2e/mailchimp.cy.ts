@@ -1,3 +1,5 @@
+import { logAccessibilityViolations } from "../support/accessibility"
+
 describe('mailchimp signups', () => {
     const email = 'newsletter_test@startup-nights.ch'
 

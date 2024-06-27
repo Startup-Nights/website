@@ -1,4 +1,5 @@
-const mailchimp = require('@mailchimp/mailchimp_marketing')
+import * as mailchimp from '@mailchimp/mailchimp_marketing'
+
 const list_id = process.env.NEXT_MAILCHIMP_LIST
 const email = 'newsletter_test@startup-nights.ch'
 const subscriber_hash = require('crypto').createHash('md5').update(email).digest('hex')
