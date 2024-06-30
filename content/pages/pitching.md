@@ -17,10 +17,9 @@ blocks:
           The pitch is expected to be delivered in English. We likely will run a
           format of a 5 min Pitch & 10 min Q&A. Details will follow. The jury
           will preview and nominate the startups that will get invited to pitch.
-        - 'Note: registration opens on July 30, 2024.'
       cta:
-        link: ''
-        text: ''
+        link: 'https://d149nhnbj51ybz.cloudfront.net'
+        text: 'Apply now!'
       list:
         title: Prices per category
         list_items:
