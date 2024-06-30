@@ -13,7 +13,7 @@ export const Tito = ({ data }) => {
                     </h1>
                 </div>
 
-                <iframe className="w-full h-[800px] rounded-xl" src="https://portal.startup-nights.ch/components/28350" />
+                <iframe className="w-full h-[800px] rounded-xl" src="https://www.b2match.com/e/startup-nights-2024/sign-up" />
             </div>
         </div>
     );
