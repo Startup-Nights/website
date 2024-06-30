@@ -101,16 +101,10 @@ const toDataSlice = (body: any): string[] => {
 }
 
 const toMailContent = (body: any): string => {
-    return `Hi ${body.contact.firstname} ${body.contact.lastname},
+    return `Hi ${body.contact.firstname} ${body.contact.lastname} / ${body.company.name},
 
-Thank you for registering a booth for ${body.company.name} at the Startup Nights 2024 in Winterthur. We are currently reviewing and confirming nominations in batches, which means you will hear from us within the next few weeks.
-
-We know, it's a long time until November so we have some suggestions for you on how you can pass the time ⏱
-- Talk to other founders / startups and invite people to the event 🚀
-- Buy the tickets for you and your team: https://www.b2match.com/e/startup-nights-2024/sign-up
-- Read the FAQ if you have open questions: https://startup-nights.ch/faq
-
-Talk to you soon 😉
+Thank you for applying.
+We will get in touch with more information as soon as possible.
 
 Best regards,
 the Startup Nights Team`
