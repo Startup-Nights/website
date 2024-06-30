@@ -372,6 +372,22 @@ blocks:
             alt: Genisuisse
             link: 'https://genisuisse.ch'
           - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/288505864-zealy_scaled.png
+            alt: Zealy
+            link: 'https://www.zealy.ch'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/739151807-icecubator_lab_600x300.png
+            alt: 'IceCubator Lab'
+            link: 'https://icecubator-lab.com'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/319717689-healthtechpark_600x300.png
+            alt: healthtechpark
+            link: 'https://healthtechpark.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/623084850-teqable_600x300.png
+            alt: Teqable
+            link: 'https://www.teqable.com/'
+          - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/fasoon.png
             alt: Fasoon
             link: 'https://fasoon.ch'
