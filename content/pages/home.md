@@ -263,6 +263,56 @@ blocks:
             link: 'https://www.onify.ch/'
     _template: partner_list
   - content_block:
+      subtitle: Pitching Competition
+      title: Meet our jury.
+      content:
+        - >-
+          The competition is split into two parts; pre-seed and seed. You can 
+          pre-register now and we'll get back to you once we are ready to accept
+          applications.
+      cta:
+        link: /pitching
+        text: Pre-register
+    members:
+      - name: Andrea Buhofer
+        position: Managing Partner at EquityPitcher Ventures
+        linkedin: 'https://www.linkedin.com/in/andrea-buhofer-721822182/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
+        alt: Andrea Buhofer
+        stage: seed
+      - name: Michael Blank
+        position: Head Investment Team at Verve Ventures
+        linkedin: 'https://www.linkedin.com/in/michael-blank-6a5635182/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/michael_blank.png
+        alt: Michael Blank
+        stage: seed
+      - name: Teddy Amberg
+        position: Founding Partner at Spicehaus Partners AG
+        linkedin: 'https://www.linkedin.com/in/teddyamberg/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/teddy-amberg.jpeg
+        alt: Teddy Amberg
+        stage: seed
+      - name: Daniel Dillinger
+        position: Investment Parter at Redalpine
+        linkedin: 'https://www.linkedin.com/in/daniel-dillinger-213173138/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/daniel-dillenger.jpg
+        alt: Daniel Dillinger
+        stage: seed
+      - name: Andreas Göldi
+        position: Partner at b2venture
+        linkedin: 'https://www.linkedin.com/in/agoeldi/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-goeldi.png
+        alt: Andreas Göldi
+        stage: seed
+    contentblock_left: true
+    background_color: bg-sn-black-light
+    _template: content
+  - content_block:
       subtitle: About us
       title: Who we are.
       content:
