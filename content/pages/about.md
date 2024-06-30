@@ -59,11 +59,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/neumairmicha/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/micha-neumair.jpg
-          - name: Tabita Sager
-            position: Advisor / Allrounder
-            linkedin: 'https://www.linkedin.com/in/tabita-rueegg/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/tabita-sager.jpg
           - name: Laura Merz
             position: Co-Head of Branding & Design
             linkedin: 'https://www.linkedin.com/in/laura-merz-379081147/'
@@ -79,11 +74,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/natalie-rotschi-7405b2151/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/natalie-rotschi.jpg
-          - name: Javier Santillan
-            position: UX & Graphic Design
-            linkedin: 'https://www.linkedin.com/in/javier-santillan-amezcua/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/javier-santillan.jpg
           - name: Nik Harb
             position: Video Creator / Cutter
             linkedin: 'https://www.linkedin.com/in/nik-harb-6bb7311b7/'
@@ -281,6 +271,10 @@ blocks:
             position: 'Sustainability Manager'
             linkedin: 'https://www.linkedin.com/in/philipp-wesselburg-31458018b/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_philipp_wesselburg.png'
+          - name: 'Lucas Fuchs'
+            position: 'Sustainability Manager'
+            linkedin: 'http://www.linkedin.com/in/lucas-fuchs-a9a32887'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/lucas_fuchs.png'
       - subtitle: Partnerships Team
         title: Exchanging value.
         members:
@@ -299,11 +293,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/feris-zebib-248734112/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1702326048_team_feris_zebib.jpg
-          - name: Hao Xu
-            position: Startup & Corporate Matching
-            linkedin: 'https://www.linkedin.com/in/hao-xu-b9b32a189/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/hao-xu.jpg
           - name: 'Robin Muntwyler'
             position: 'Partner Manager'
             linkedin: 'https://www.linkedin.com/in/robin-muntwyler/'
@@ -330,6 +319,10 @@ blocks:
             position: 'Support Bookkeeping'
             linkedin: 'https://www.linkedin.com/in/marc-mueller-mm/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_marc_mueller.jpg'
+          - name: 'Ioannis Georgopoulus'
+            position: 'Support Bookkeeping'
+            linkedin: 'https://www.linkedin.com/in/igeorg/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/ioannis_georgopoulus.png'
       - subtitle: F&B Team
         title: Serving you joy.
         members:
@@ -381,6 +374,10 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/martyna-g%C3%B3rska-1495154a/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_martyna_gorska.jpeg
+          - name: 'Manuel Herrmann'
+            position: 'PR / Media Relations'
+            linkedin: 'https://www.linkedin.com/in/manuel-hendrikus-herrmann-a6976239/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/manuel_herrmann.jpg'
       - subtitle: Volunteer Team
         title: Organizing helping hands.
         members:
