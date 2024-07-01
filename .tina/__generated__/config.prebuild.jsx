@@ -1204,6 +1204,8 @@ function cloudinaryLoader({ src, width: width2, quality }) {
 }
 
 // components/blocks/tito.tsx
+import { useEffect as useEffect4 } from "react";
+import { useRouter } from "next/navigation";
 var titoBlockSchema = {
   name: "tito",
   label: "Tito",
@@ -1647,7 +1649,7 @@ var pricingBlockSchema = {
 };
 
 // components/blocks/booth.tsx
-import { Fragment as Fragment5, useEffect as useEffect4, useState as useState8 } from "react";
+import { Fragment as Fragment5, useEffect as useEffect5, useState as useState8 } from "react";
 import Link8 from "next/link";
 import { InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/20/solid";
 import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
@@ -1682,7 +1684,7 @@ var boothBlockSchema = {
 };
 
 // components/blocks/pitching.tsx
-import { Fragment as Fragment6, useEffect as useEffect5, useState as useState9 } from "react";
+import { Fragment as Fragment6, useEffect as useEffect6, useState as useState9 } from "react";
 import { Transition as Transition5 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon4 } from "@heroicons/react/20/solid";
 import {
@@ -1752,7 +1754,7 @@ var programBlockSchema = {
 };
 
 // components/blocks/booth_approved.tsx
-import { useEffect as useEffect6, useState as useState10 } from "react";
+import { useEffect as useEffect7, useState as useState10 } from "react";
 
 // components/blocks/boothmodal.tsx
 import { Fragment as Fragment7 } from "react";
