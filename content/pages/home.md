@@ -18,7 +18,7 @@ blocks:
     title: The biggest startup event in Switzerland
     title_line2: ''
     cta:
-      link: /tickets
+      link: https://www.b2match.com/e/startup-nights-2024/sign-up
       text: Get your ticket
     image:
       src: ''

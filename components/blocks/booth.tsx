@@ -227,7 +227,7 @@ export const Booth = ({ data }) => {
                                     <p className="mt-2 text-gray-400">
                                         You can get the tickets{" "}
                                         <Link
-                                            href={"/tickets"}
+                                            href={"https://www.b2match.com/e/startup-nights-2024/sign-up"}
                                             className="text-sn-yellow underline hover:text-sn-yellow-dark underline-offset-4"
                                         >
                                             here

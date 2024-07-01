@@ -85,7 +85,7 @@ blocks:
                     visit the Tickets Page to select your ticket type and
                     complete the registration process.
                 cta:
-                  link: /tickets
+                  link: https://www.b2match.com/e/startup-nights-2024/sign-up
                   text: Awesome!
             - content_block:
                 title: 'What types of tickets are available, and what do they include?'
@@ -95,7 +95,7 @@ blocks:
                     needs. Details on what each ticket type includes can be
                     found on our Tickets Page.
                 cta:
-                  link: /tickets
+                  link: https://www.b2match.com/e/startup-nights-2024/sign-up
                   text: Show me
             - content_block:
                 title: Is there a student discount available?
@@ -220,7 +220,7 @@ blocks:
                     discount code yet, please get in touch with our partner
                     team.
                 cta:
-                  link: /tickets
+                  link: https://www.b2match.com/e/startup-nights-2024/sign-up
                   text: Tickets
                 cta_secondary:
                   link: 'mailto:partner@startup-nights.ch'

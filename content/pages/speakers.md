@@ -4,7 +4,7 @@ blocks:
   - subtitle: Program of Startup Nights 2024
     title: What to expect
     cta:
-      link: /tickets
+      link: https://www.b2match.com/e/startup-nights-2024/sign-up
       text: Register
     image:
       src: >-

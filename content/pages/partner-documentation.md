@@ -89,7 +89,7 @@ blocks:
               If you have not selected the ticket module, you do not have any
               free tickets included. You have to buy your tickets separatly.
           cta:
-            link: /tickets
+            link: https://www.b2match.com/e/startup-nights-2024/sign-up
             text: Tickets
       - content_block:
           title: Accommodation
