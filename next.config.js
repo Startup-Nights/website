@@ -44,6 +44,10 @@ module.exports = {
                 source: "/admin",
                 destination: "/admin/index.html",
             },
+            {
+                source: "/tickets",
+                destination: "https://www.b2match.com/e/startup-nights-2024/sign-up",
+            },
         ];
     },
 };
