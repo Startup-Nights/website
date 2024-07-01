@@ -34,33 +34,12 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-schlenker.jpg
         alt: Andreas Schlenker
         stage: seed
-      - name: Arijana Walcott
-        position: Founder Dart Labs
-        linkedin: 'https://www.linkedin.com/in/arijanawalcott/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/arijana_walcott.png
-        alt: Arijana Walcott
-        stage: seed
-      - name: Andrea Buhofer
+      - name: Andrea Silberschmidt-Buhofer
         position: Managing Partner at EquityPitcher Ventures
         linkedin: 'https://www.linkedin.com/in/andrea-buhofer-721822182/'
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
         alt: Andrea Buhofer
-        stage: seed
-      - name: Aron Braun
-        position: Business Angel at BAS and Professor at BHF
-        linkedin: 'https://www.linkedin.com/in/aron-braun/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/aron_braun.jpeg
-        alt: Aron Braun
-        stage: seed
-      - name: Ralph Mogicato
-        position: Business Angel & Vice President at Sictic
-        linkedin: 'https://www.linkedin.com/in/ralphmogicato/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/ralph_mogicato.jpg
-        alt: Ralph Mogicato
         stage: seed
       - name: Guy Giuffredi
         position: Business Angel and Cofounder Aare Ventures
@@ -68,13 +47,6 @@ blocks:
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/guy_giuffredi.png
         alt: Guy Giuffredi
-        stage: seed
-      - name: Michael Blank
-        position: Head Investment Team at Verve Ventures
-        linkedin: 'https://www.linkedin.com/in/michael-blank-6a5635182/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/michael_blank.png
-        alt: Michael Blank
         stage: seed
       - name: Teddy Amberg
         position: Founding Partner at Spicehaus Partners AG
@@ -96,13 +68,6 @@ blocks:
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-goeldi.png
         alt: Andreas Göldi
-        stage: seed
-      - name: Maurin Rüegg
-        position: Investment Manager at Sparrow Ventures
-        linkedin: 'https://www.linkedin.com/in/maurin-r%C3%BCegg-5851a4117/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/maurin_ruegg.jpg
-        alt: Maurin Rüegg
         stage: seed
       - name: Claudius Stammbach
         position: Investment Manager at Sparrow Ventures

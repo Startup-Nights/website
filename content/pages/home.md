@@ -272,7 +272,7 @@ blocks:
           applications.
       cta:
         link: /pitching
-        text: Pre-register
+        text: Register
     members:
       - name: Andrea Buhofer
         position: Managing Partner at EquityPitcher Ventures
@@ -280,13 +280,6 @@ blocks:
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
         alt: Andrea Buhofer
-        stage: seed
-      - name: Michael Blank
-        position: Head Investment Team at Verve Ventures
-        linkedin: 'https://www.linkedin.com/in/michael-blank-6a5635182/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/michael_blank.png
-        alt: Michael Blank
         stage: seed
       - name: Teddy Amberg
         position: Founding Partner at Spicehaus Partners AG
