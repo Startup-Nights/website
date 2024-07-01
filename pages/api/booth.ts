@@ -47,7 +47,7 @@ ${JSON.stringify(req.body)}`,
             body: JSON.stringify({
                 recipient: req.body.contact.email,
                 title: 'Startup Nights 2024 Booth Application',
-                content: toMailContent(req.body),
+                content: email_response,
             }),
         })
 
@@ -100,12 +100,13 @@ const toDataSlice = (body: any): string[] => {
     ]
 }
 
-const toMailContent = (body: any): string => {
-    return `Hi ${body.contact.firstname} ${body.contact.lastname} / ${body.company.name},
+const email_response = `Welcome to one of the most important startup events in Switzerland.
 
-Thank you for applying.
-We will get in touch with more information as soon as possible.
+Thank you for submitting your application for a booth at Startup Nights. We are excited to see projects that excel in creativity and sustainability, and that strive to take their startup to the next level. All applications go through a careful selection process.
 
-Best regards,
-the Startup Nights Team`
-}
+We appreciate your patience while our team reviews your application. We will be in touch with you soon.
+
+Thank you very much, and we wish you success in the selection process.
+
+Sincerely, 
+The Startup Nights Team`
