@@ -83,7 +83,7 @@ blocks:
               In case you selected the ticket module but didn't get a discount
               code yet, please get in touch with our partner team.
           cta:
-            link: /tickets
+            link: https://www.b2match.com/e/startup-nights-2024/sign-up
             text: Tickets
           cta_secondary:
             link: 'mailto:partner@startup-nights.ch'
