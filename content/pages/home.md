@@ -288,12 +288,26 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/teddy-amberg.jpeg
         alt: Teddy Amberg
         stage: seed
+      - name: 'Jacqueline Ruedin Rüsch'
+        position: Venture Capital Investor, Board Member and Public Speaker
+        linkedin: 'https://www.linkedin.com/in/jacquelineruedinr%C3%BCsch/'
+        src: >-
+          https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/72801623-jacqueline_ruedin_ruesch_500x500.png
+        alt: 'Jacqueline Ruedin Rüsch'
+        stage: seed
       - name: Daniel Dillinger
         position: Investment Parter at Redalpine
         linkedin: 'https://www.linkedin.com/in/daniel-dillinger-213173138/'
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/daniel-dillenger.jpg
         alt: Daniel Dillinger
+        stage: seed
+      - name: Arijana Walcott
+        position: Impact Investor, Entrepreneur and Board Member
+        linkedin: 'https://www.linkedin.com/in/arijanawalcott/'
+        src: >-
+          https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/591259665-arijana_walcott_500x500.png
+        alt: Arijana Walcott
         stage: seed
       - name: Andreas Göldi
         position: Partner at b2venture

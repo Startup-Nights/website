@@ -27,13 +27,6 @@ blocks:
           - CHF 3000 for 2nd place
           - CHF 2000 for 3rd place
     members:
-      - name: Andreas Schlenker
-        position: 'Head of M&A, Partnering and Investing at Axpo Group'
-        linkedin: 'https://www.linkedin.com/in/andreasschlenker/'
-        src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-schlenker.jpg
-        alt: Andreas Schlenker
-        stage: seed
       - name: Andrea Silberschmidt-Buhofer
         position: Managing Partner at EquityPitcher Ventures
         linkedin: 'https://www.linkedin.com/in/andrea-buhofer-721822182/'
@@ -41,12 +34,33 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
         alt: Andrea Buhofer
         stage: seed
+      - name: Andreas Schlenker
+        position: 'Head of M&A, Partnering and Investing at Axpo Group'
+        linkedin: 'https://www.linkedin.com/in/andreasschlenker/'
+        src: >-
+          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-schlenker.jpg
+        alt: Andreas Schlenker
+        stage: seed
+      - name: Arijana Walcott
+        position: Impact Investor, Entrepreneur and Board Member
+        linkedin: 'https://www.linkedin.com/in/arijanawalcott/'
+        src: >-
+          https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/591259665-arijana_walcott_500x500.png
+        alt: Arijana Walcott
+        stage: seed
       - name: Guy Giuffredi
         position: Business Angel and Cofounder Aare Ventures
         linkedin: 'https://www.linkedin.com/in/guy-giuffredi-45399751/'
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/guy_giuffredi.png
         alt: Guy Giuffredi
+        stage: seed
+      - name: 'Jacqueline Ruedin Rüsch'
+        position: Venture Capital Investor, Board Member and Public Speaker
+        linkedin: 'https://www.linkedin.com/in/jacquelineruedinr%C3%BCsch/'
+        src: >-
+          https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/72801623-jacqueline_ruedin_ruesch_500x500.png
+        alt: 'Jacqueline Ruedin Rüsch'
         stage: seed
       - name: Teddy Amberg
         position: Founding Partner at Spicehaus Partners AG
@@ -75,6 +89,13 @@ blocks:
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/claudius_stammbach.png
         alt: Claudius Stammbach
+        stage: seed
+      - name: Aron Braun
+        position: Entrepreneur, Business Angel and Lecturer
+        linkedin: 'https://www.linkedin.com/in/aron-braun/'
+        src: >-
+          https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/171844469-aron_braun_500x500.png
+        alt: Aron Braun
         stage: seed
     contentblock_left: true
     background_color: bg-sn-black-light
