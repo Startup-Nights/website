@@ -7560,12 +7560,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tinacms/auth@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "@tinacms/auth@npm:1.0.4"
+"@tinacms/auth@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@tinacms/auth@npm:1.0.5"
   dependencies:
     fetch-ponyfill: "npm:^7.1.0"
-  checksum: 10c0/34694147f3a447fe621021a50a3c33c90f1fca87cab2536e5f375e56754977ba8c6d9386083a136742c420d70c8d3382ef590b6906c857b74abc8a9a0115c710
+  checksum: 10c0/8ea5393f420fba443b56f9b2291b3572efeeb77eec39b144930089b2566f90312786bc41e0e088ec1ad32999da72742caab64b59fa0489fa3f9f533ce2f88588
   languageName: node
   linkType: hard
 
@@ -7872,7 +7872,7 @@ __metadata:
     "@svgr/webpack": "npm:^8.1.0"
     "@tailwindcss/forms": "npm:^0.5.7"
     "@tailwindcss/typography": "npm:^0.5.13"
-    "@tinacms/auth": "npm:^1.0.4"
+    "@tinacms/auth": "npm:^1.0.5"
     "@tinacms/cli": "npm:^1.5.48"
     "@types/mailchimp__mailchimp_marketing": "npm:^3.0.20"
     "@types/mocha": "npm:^10"
