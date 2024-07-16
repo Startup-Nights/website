@@ -5,14 +5,10 @@ blocks:
       subtitle: Apply here
       title: Pitching sessions.
       content:
-        - 'At Startup Nights 2024 there will again be two pitching sessions:'
         - >-
-          Pre-Seed: companies that are working on solving a problem and have not
-          yet reached product-market-fit.
+          At Startup Nights 2024 there will again be two pitching sessions.
         - >-
-          Seed:companies that have first customers, ideally have revenue or
-          other meaningful traction and believe they have reached
-          product-market-fit.
+          This year, the Swiss finals of Startup Wold Cup take place as part of the Startup Nights on 1st November 2024. The finalists will get the chance to pitch at the world finals in 2025 in Silicon Valley. At the world finals the Startups have the chance to win a $ 1 million investment from Pegasus Tech Ventures.
         - >-
           The pitch is expected to be delivered in English. We likely will run a
           format of a 5 min Pitch & 10 min Q&A. Details will follow. The jury
@@ -20,6 +16,9 @@ blocks:
       cta:
         link: 'https://d149nhnbj51ybz.cloudfront.net'
         text: 'Apply now!'
+      cta_secondary:
+        link: 'https://www.startupworldcup.io/'
+        text: 'Check out the Startup World Cup'
       list:
         title: Prices per category
         list_items:
