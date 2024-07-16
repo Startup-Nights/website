@@ -14,7 +14,7 @@
     "devDependencies": {
         "@next/eslint-plugin-next": "^14.2.4",
         "@svgr/webpack": "^8.1.0",
-        "@tinacms/cli": "^1.5.46",
+        "@tinacms/cli": "^1.5.48",
         "@types/mailchimp__mailchimp_marketing": "^3.0.20",
         "@types/mocha": "^10",
         "@types/node": "^20.14.9",
