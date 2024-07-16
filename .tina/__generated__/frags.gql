@@ -165,6 +165,7 @@ fragment PageParts on Page {
       background_color
     }
     ... on PageBlocksPartner_list {
+      id
       subtitle
       title
       paragraph

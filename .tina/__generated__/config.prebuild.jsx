@@ -429,6 +429,11 @@ var partnersBlockSchema = {
   fields: [
     {
       type: "string",
+      label: "ID",
+      name: "id"
+    },
+    {
+      type: "string",
       label: "Subtitle",
       name: "subtitle"
     },

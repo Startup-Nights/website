@@ -475,6 +475,7 @@ type PageBlocksPartner_listPartners {
 }
 
 type PageBlocksPartner_list {
+  id: String
   subtitle: String
   title: String
   paragraph: String
@@ -1103,6 +1104,7 @@ input PageBlocksPartner_listPartnersFilter {
 }
 
 input PageBlocksPartner_listFilter {
+  id: StringFilter
   subtitle: StringFilter
   title: StringFilter
   paragraph: StringFilter
@@ -1879,6 +1881,7 @@ input PageBlocksPartner_listPartnersMutation {
 }
 
 input PageBlocksPartner_listMutation {
+  id: String
   subtitle: String
   title: String
   paragraph: String
