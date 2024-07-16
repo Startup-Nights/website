@@ -8,7 +8,7 @@ import CTA from "./cta";
 // https://dev.to/holdmypotion/react-custom-cursor-no-extra-dependencies-25ki
 export const Partners = ({ data }) => {
     return (
-        <div className="bg-white">
+        <div className="bg-white" id={data?.id ? data.id : 'partner'}>
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">
                 <div className="text-center mb-20">
                     <h2 className="text-base font-medium leading-7 text-sn-black-light uppercase tracking-widest">
@@ -76,6 +76,11 @@ export const partnersBlockSchema: Template = {
     name: "partner_list",
     label: "Partners",
     fields: [
+        {
+            type: "string",
+            label: "ID",
+            name: "id",
+        },
         {
             type: "string",
             label: "Subtitle",
