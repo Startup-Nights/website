@@ -226,11 +226,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/nicolas-fischer-756589197/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/nicolas-fischer.jpg
-          - name: Valérie Grüter
-            position: Startup Onboarding
-            linkedin: 'https://www.linkedin.com/in/val%C3%A9rie-gr%C3%BCter-28564b111/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_valérie_grueter.png
       - subtitle: Operations Team
         title: Keeping our HQ organised.
         members:
