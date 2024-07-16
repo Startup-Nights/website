@@ -1,179 +1,184 @@
 {
-    "header": {
-        "name": "Startup Nights 2023",
-        "color": "default",
-        "nav_ctas": [
-            {
-                "href": "booth",
-                "title": "Apply for a Booth",
-                "icon": "heart"
-            },
-            {
-                "href": "/partner-intro",
-                "title": "Partner Up",
-                "icon": "megaphone"
-            },
-            {
-                "href": "https://www.b2match.com/e/startup-nights-2024/sign-up",
-                "title": "Get your ticket",
-                "icon": "ticket",
-                "primary": true
-            }
+  "header": {
+    "name": "Startup Nights 2023",
+    "nav_ctas": [
+      {
+        "href": "booth",
+        "title": "Apply for a Booth",
+        "icon": "heart"
+      },
+      {
+        "href": "/partner-intro",
+        "title": "Partner Up",
+        "icon": "megaphone"
+      },
+      {
+        "href": "https://www.b2match.com/e/startup-nights-2024/sign-up",
+        "title": "Get your ticket",
+        "icon": "ticket",
+        "primary": true
+      }
+    ],
+    "nav": [
+      {
+        "href": "program",
+        "label": "Program",
+        "subitems": [
+          {
+            "href": "speakers",
+            "label": "Speakers",
+            "description": "Discover the thought leaders, innovators, and industry pioneers",
+            "icon": "chatbubble"
+          },
+          {
+            "href": "startups",
+            "label": "Startup World",
+            "description": "Explore the exhibiting startups",
+            "icon": "booth"
+          },
+          {
+            "href": "pitching",
+            "label": "Pitching Competition",
+            "description": "Apply for a spot and pitch your product",
+            "icon": "trophy"
+          }
         ],
-        "nav": [
-            {
-                "href": "program",
-                "label": "Program",
-                "subitems": [
-                    {
-                        "href": "speakers",
-                        "label": "Speakers",
-                        "description": "Discover the thought leaders, innovators, and industry pioneers",
-                        "icon": "chatbubble"
-                    },
-                    {
-                        "href": "startups",
-                        "label": "Startup World",
-                        "description": "Explore the exhibiting startups",
-                        "icon": "booth"
-                    },
-                    {
-                        "href": "pitching",
-                        "label": "Pitching Competition",
-                        "description": "Apply for a spot and pitch your product",
-                        "icon": "trophy"
-                    }
-                ],
-                "callsToAction": [
-                    {
-                        "href": "https://www.b2match.com/e/startup-nights-2024/sign-up",
-                        "label": "Get your ticket",
-                        "icon": "ticket"
-                    },
-                    {
-                        "href": "faq",
-                        "label": "FAQ",
-                        "icon": "info"
-                    }
-                ]
-            },
-            {
-                "href": "impressions",
-                "label": "Impressions"
-            },
-            {
-                "href": "partner",
-                "label": "Partner"
-            },
-            {
-                "href": "about",
-                "label": "About",
-                "subitems": [
-                    {
-                        "href": "about",
-                        "label": "About us",
-                        "description": "Meet the people behind the scenes",
-                        "icon": "star"
-                    },
-                    {
-                        "href": "startup-city-winterthur",
-                        "label": "Startup City Winterthur",
-                        "description": "Discover the locations and benefits",
-                        "icon": "office"
-                    },
-                    {
-                        "href": "hiring",
-                        "label": "Volunteer",
-                        "description": "Join our cause and mission",
-                        "icon": "heart"
-                    },
-                    {
-                        "href": "contact",
-                        "label": "Contact us",
-                        "description": "Get in touch and drop us an email",
-                        "icon": "phone"
-                    }
-                ]
-            }
-        ],
-        "social": [
-            {
-                "title": "instagram",
-                "link": "https://www.instagram.com/startup_nights/"
-            },
-            {
-                "title": "linkedin",
-                "link": "https://www.linkedin.com/company/startup-nights"
-            }
+        "callsToAction": [
+          {
+            "href": "https://www.b2match.com/e/startup-nights-2024/sign-up",
+            "label": "Get your ticket",
+            "icon": "ticket"
+          },
+          {
+            "href": "faq",
+            "label": "FAQ",
+            "icon": "info"
+          }
         ]
-    },
-    "footer": {
-        "copyright": "2024 Startup Nights",
-        "navitems": [
-            {
-                "title": "Startup Nights",
-                "listitems": [
-                    {
-                        "title": "Contact",
-                        "link": "/contact"
-                    },
-                    {
-                        "title": "Hiring",
-                        "link": "/hiring"
-                    },
-                    {
-                        "title": "Impressions",
-                        "link": "/impressions"
-                    },
-                    {
-                        "title": "Become a partner",
-                        "link": "/partner-info"
-                    },
-                    {
-                        "title": "About",
-                        "link": "/about"
-                    },
-                    {
-                        "title": "Startup City Winterthur",
-                        "link": "/startup-city-winterthur"
-                    }
-                ]
-            },
-            {
-                "title": "",
-                "listitems": [
-                    {
-                        "title": "FAQ",
-                        "link": "/faq"
-                    },
-                    {
-                        "title": "Imprint",
-                        "link": "/imprint"
-                    },
-                    {
-                        "title": "Privacy policy",
-                        "link": "/privacy-policy"
-                    },
-                    {
-                        "title": "Terms & conditions",
-                        "link": "/terms-and-conditions"
-                    }
-                ]
-            }
-        ],
-        "social": [
-            {
-                "title": "instagram",
-                "link": "https://www.instagram.com/startup_nights/"
-            },
-            {
-                "title": "linkedin",
-                "link": "https://www.linkedin.com/company/startup-nights"
-            },
-            {
-                "title": "youtube",
-                "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
-            }
+      },
+      {
+        "href": "impressions",
+        "label": "Impressions"
+      },
+      {
+        "href": "partner",
+        "label": "Partner"
+      },
+      {
+        "href": "about",
+        "label": "About",
+        "subitems": [
+          {
+            "href": "about",
+            "label": "About us",
+            "description": "Meet the people behind the scenes",
+            "icon": "star"
+          },
+          {
+            "href": "startup-city-winterthur",
+            "label": "Startup City Winterthur",
+            "description": "Discover the locations and benefits",
+            "icon": "office"
+          },
+          {
+            "href": "hiring",
+            "label": "Volunteer",
+            "description": "Join our cause and mission",
+            "icon": "heart"
+          },
+          {
+            "href": "contact",
+            "label": "Contact us",
+            "description": "Get in touch and drop us an email",
+            "icon": "phone"
+          },
+          {
+            "href": "/helping-hands",
+            "label": "Helping Hands",
+            "description": "We are looking for you!",
+            "icon": "heart"
+          }
         ]
-    }
+      }
+    ],
+    "social": [
+      {
+        "title": "instagram",
+        "link": "https://www.instagram.com/startup_nights/"
+      },
+      {
+        "title": "linkedin",
+        "link": "https://www.linkedin.com/company/startup-nights"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "2024 Startup Nights",
+    "navitems": [
+      {
+        "title": "Startup Nights",
+        "listitems": [
+          {
+            "title": "Contact",
+            "link": "/contact"
+          },
+          {
+            "title": "Hiring",
+            "link": "/hiring"
+          },
+          {
+            "title": "Impressions",
+            "link": "/impressions"
+          },
+          {
+            "title": "Become a partner",
+            "link": "/partner-info"
+          },
+          {
+            "title": "About",
+            "link": "/about"
+          },
+          {
+            "title": "Startup City Winterthur",
+            "link": "/startup-city-winterthur"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "listitems": [
+          {
+            "title": "FAQ",
+            "link": "/faq"
+          },
+          {
+            "title": "Imprint",
+            "link": "/imprint"
+          },
+          {
+            "title": "Privacy policy",
+            "link": "/privacy-policy"
+          },
+          {
+            "title": "Terms & conditions",
+            "link": "/terms-and-conditions"
+          }
+        ]
+      }
+    ],
+    "social": [
+      {
+        "title": "instagram",
+        "link": "https://www.instagram.com/startup_nights/"
+      },
+      {
+        "title": "linkedin",
+        "link": "https://www.linkedin.com/company/startup-nights"
+      },
+      {
+        "title": "youtube",
+        "link": "https://www.youtube.com/channel/UCDm0mn-85nkkr3_Enhd15JA"
+      }
+    ]
+  }
 }

@@ -2316,6 +2316,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "hiring") {
               return `/hiring`;
             }
+            if (document2._sys.filename === "helping-hands") {
+              return `/helping-hands`;
+            }
             if (document2._sys.filename === "program") {
               return `/program`;
             }
