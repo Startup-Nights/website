@@ -26,19 +26,21 @@ export const Imagegrid = ({ data }) => {
                     </div>
                 )}
 
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-8">
                     {data?.images &&
                         data.images.map((data: any, i: number) => (
-                            <div key={`image-${i}`} className="relative grid content-start mx-12">
-                                <Image
-                                    width={600}
-                                    height={600}
-                                    className="rounded-full"
-                                    alt={data?.image?.alt}
-                                    src={data?.image?.src}
-                                    placeholder="blur"
-                                    blurDataURL={placeholderBox}
-                                />
+                            <div key={`image-${i}`} className="relative grid content-start mx-6 md:mx-12 aspect-square rounded-full">
+                                <div className="relative grid content-center justify-center text-center h-[100px] w-[100px] sm:h-[150px] sm:w-[150px] md:h-[200px] md:w-[200px]">
+                                    <div className="absolute inset-0 w-full h-full">
+                                        <Image
+                                            width={600}
+                                            height={600}
+                                            className="w-full h-full object-cover rounded-full"
+                                            alt={data?.image?.alt}
+                                            src={data?.image?.src}
+                                        />
+                                    </div>
+                                </div>
                                 <div className="relative grid content-center justify-center text-center -mt-2 md:-mt-6">
                                     <span className="bg-sn-yellow -skew-x-6 rounded-sm">
                                         <p className="text-sm md:text-md m-0 px-2 py-1 skew-x-6 md:px-3 md:py-2 text-black">
