@@ -7530,9 +7530,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tinacms/app@npm:1.2.44":
-  version: 1.2.44
-  resolution: "@tinacms/app@npm:1.2.44"
+"@tinacms/app@npm:1.2.45":
+  version: 1.2.45
+  resolution: "@tinacms/app@npm:1.2.45"
   dependencies:
     "@graphiql/toolkit": "npm:0.8.4"
     "@headlessui/react": "npm:1.6.6"
@@ -7546,10 +7546,10 @@ __metadata:
     react: "npm:17.0.2"
     react-dom: "npm:17.0.2"
     react-router-dom: "npm:6.3.0"
-    tinacms: "npm:1.6.6"
+    tinacms: "npm:1.6.7"
     typescript: "npm:^4.6.4"
     zod: "npm:^3.14.3"
-  checksum: 10c0/5224f5c1d73e9bdcd14b9668a23e9f0e84ace5bb2e47e328112239dd8ff64c7a58479fc67c1206336c180fbee64207478d6ef7f2545b92359e0c76d77d3f7a8d
+  checksum: 10c0/4bd1454d21490954665a9224e788b77eaa34d227add5aadb14b8266b52e24cea282c4dc02bc5006fdd7666f3aea70403d83439aa93b21ea975b868164b53453b
   languageName: node
   linkType: hard
 
@@ -7562,9 +7562,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tinacms/cli@npm:^1.5.48":
-  version: 1.5.48
-  resolution: "@tinacms/cli@npm:1.5.48"
+"@tinacms/cli@npm:^1.5.49":
+  version: 1.5.49
+  resolution: "@tinacms/cli@npm:1.5.49"
   dependencies:
     "@graphql-codegen/core": "npm:^2.1.0"
     "@graphql-codegen/plugin-helpers": "npm:latest"
@@ -7578,9 +7578,9 @@ __metadata:
     "@svgr/core": "npm:6.3.1"
     "@tailwindcss/aspect-ratio": "npm:^0.4.2"
     "@tailwindcss/typography": "npm:^0.5.13"
-    "@tinacms/app": "npm:1.2.44"
+    "@tinacms/app": "npm:1.2.45"
     "@tinacms/graphql": "npm:1.4.37"
-    "@tinacms/metrics": "npm:1.0.3"
+    "@tinacms/metrics": "npm:1.0.4"
     "@tinacms/schema-tools": "npm:1.4.18"
     "@tinacms/search": "npm:1.0.22"
     "@vitejs/plugin-react": "npm:3.1.0"
@@ -7610,7 +7610,7 @@ __metadata:
     prompts: "npm:^2.4.1"
     readable-stream: "npm:^4.3.0"
     tailwindcss: "npm:^3.4.4"
-    tinacms: "npm:1.6.6"
+    tinacms: "npm:1.6.7"
     typanion: "npm:3.13.0"
     typescript: "npm:4.6.4"
     vite: "npm:^4.3.9"
@@ -7618,7 +7618,7 @@ __metadata:
     zod: "npm:^3.14.3"
   bin:
     tinacms: bin/tinacms
-  checksum: 10c0/e2a72383018211fd66fb5b56f52b3ee8d588e6a6600837b0770035b3c8c499fb06bdff8e9b41e6ccd1486d573b6fc76bdded43bcd43ed6802be81003c61ad67d
+  checksum: 10c0/9e438ab1a7c0165694b7a73bd831ce64bdc1c2a71fa0d625e067cdd380c3deef811c981b7f3609bc4bcdc90b2131ef923e81783e6d16afbcc6e1cf5b7f8058af
   languageName: node
   linkType: hard
 
@@ -7689,14 +7689,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tinacms/metrics@npm:1.0.3":
-  version: 1.0.3
-  resolution: "@tinacms/metrics@npm:1.0.3"
+"@tinacms/metrics@npm:1.0.4":
+  version: 1.0.4
+  resolution: "@tinacms/metrics@npm:1.0.4"
   dependencies:
     isomorphic-fetch: "npm:^3.0.0"
   peerDependencies:
     fs-extra: ^9.0.1
-  checksum: 10c0/cefd7c16289b42625f14cb9a1a4a8af1bcd66884e56557042272a1048ecf5d28f8695237a394c032d435e2270b86e343c3c0800924509ec5ccf9c2fea8dc4e79
+  checksum: 10c0/de64d44ba39dcb1d7d79ffbd9b80318e7fac5a2101fe0e50fb15d34b6752174f77b9c9cd1df03bc910e6bd8583ae6bdfac099a071aca09c68d1fdd4d6ee76c06
   languageName: node
   linkType: hard
 
@@ -7753,7 +7753,7 @@ __metadata:
     "@tailwindcss/forms": "npm:^0.5.7"
     "@tailwindcss/typography": "npm:^0.5.13"
     "@tinacms/auth": "npm:^1.0.5"
-    "@tinacms/cli": "npm:^1.5.48"
+    "@tinacms/cli": "npm:^1.5.49"
     "@types/mailchimp__mailchimp_marketing": "npm:^3.0.20"
     "@types/mocha": "npm:^10"
     "@types/node": "npm:^20.14.9"
@@ -17701,7 +17701,62 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinacms@npm:1.6.6, tinacms@npm:^1.6.6":
+"tinacms@npm:1.6.7":
+  version: 1.6.7
+  resolution: "tinacms@npm:1.6.7"
+  dependencies:
+    "@floating-ui/dom": "npm:^1.6.6"
+    "@floating-ui/react-dom": "npm:^2.0.1"
+    "@graphql-inspector/core": "npm:^4.0.0"
+    "@headlessui/react": "npm:^1.5.0"
+    "@heroicons/react": "npm:^1.0.4"
+    "@monaco-editor/react": "npm:4.4.5"
+    "@radix-ui/react-popover": "npm:^1.0.6"
+    "@react-hook/window-size": "npm:^3.0.7"
+    "@tinacms/mdx": "npm:1.3.27"
+    "@tinacms/schema-tools": "npm:1.4.18"
+    "@tinacms/search": "npm:1.0.22"
+    "@tinacms/sharedctx": "npm:1.0.3"
+    "@udecode/plate-headless": "npm:^21.4.0"
+    color-string: "npm:^1.5.3"
+    crypto-js: "npm:^4.1.1"
+    date-fns: "npm:2.30.0"
+    fetch-ponyfill: "npm:^7.1.0"
+    final-form: "npm:4.20.10"
+    final-form-arrays: "npm:^3.0.1"
+    final-form-set-field-data: "npm:^1.0.2"
+    graphql: "npm:15.8.0"
+    graphql-tag: "npm:^2.11.0"
+    is-hotkey: "npm:^0.2.0"
+    lodash.get: "npm:^4.4.2"
+    lodash.set: "npm:^4.3.2"
+    moment: "npm:2.29.4"
+    monaco-editor: "npm:0.31.0"
+    prism-react-renderer: "npm:^2.3.1"
+    prop-types: "npm:15.7.2"
+    react-beautiful-dnd: "npm:^13.1.0"
+    react-color: "npm:^2.17.3"
+    react-datetime: "npm:^2.16.3"
+    react-dropzone: "npm:14.2.3"
+    react-final-form: "npm:^6.3.0"
+    react-icons: "npm:^5.2.1"
+    react-onclickoutside: "npm:^6.13.0"
+    react-router-dom: "npm:6.3.0"
+    slate: "npm:^0.94.1"
+    slate-history: "npm:^0.93.0"
+    slate-hyperscript: "npm:^0.77.0"
+    slate-react: "npm:^0.97.1"
+    webfontloader: "npm:1.6.28"
+    yup: "npm:^0.32.0"
+    zod: "npm:^3.14.3"
+  peerDependencies:
+    react: ">=16.14.0"
+    react-dom: ">=16.14.0"
+  checksum: 10c0/e67b8389902be1be3c1b8dc8422780b212bf3d6c18bb66f1866dda09bca2c8ce98f811f67bdb43b359380e5b42797c3c06ab879fd7b647364a196c72e048756e
+  languageName: node
+  linkType: hard
+
+"tinacms@npm:^1.6.6":
   version: 1.6.6
   resolution: "tinacms@npm:1.6.6"
   dependencies:
