@@ -91,12 +91,6 @@
             "label": "Contact us",
             "description": "Get in touch and drop us an email",
             "icon": "phone"
-          },
-          {
-            "href": "/helping-hands",
-            "label": "Helping Hands",
-            "description": "We are looking for you!",
-            "icon": "heart"
           }
         ]
       }
