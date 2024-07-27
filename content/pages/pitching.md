@@ -5,20 +5,24 @@ blocks:
       subtitle: Apply here
       title: Pitching sessions.
       content:
+        - At Startup Nights 2024 there will again be two pitching sessions.
         - >-
-          At Startup Nights 2024 there will again be two pitching sessions.
-        - >-
-          This year, the Swiss finals of Startup Wold Cup take place as part of the Startup Nights on 1st November 2024. The finalists will get the chance to pitch at the world finals in 2025 in Silicon Valley. At the world finals the Startups have the chance to win a $ 1 million investment from Pegasus Tech Ventures.
+          This year, the Swiss finals of Startup Wold Cup take place as part of
+          the Startup Nights on 1st November 2024. The finalists will get the
+          chance to pitch at the world finals in 2025 in Silicon Valley. At the
+          world finals the Startups have the chance to win a $ 1 million
+          investment from Pegasus Tech Ventures.
         - >-
           The pitch is expected to be delivered in English. We likely will run a
           format of a 5 min Pitch & 10 min Q&A. Details will follow. The jury
           will preview and nominate the startups that will get invited to pitch.
+        - The application deadline is October 10th.
       cta:
         link: 'https://d149nhnbj51ybz.cloudfront.net'
-        text: 'Apply now!'
+        text: Apply now!
       cta_secondary:
         link: 'https://www.startupworldcup.io/'
-        text: 'Check out the Startup World Cup'
+        text: Check out the Startup World Cup
       list:
         title: Prices per category
         list_items:
@@ -41,7 +45,7 @@ blocks:
         alt: Andreas Schlenker
         stage: seed
       - name: Arijana Walcott
-        position: Impact Investor, Entrepreneur and Board Member
+        position: 'Impact Investor, Entrepreneur and Board Member'
         linkedin: 'https://www.linkedin.com/in/arijanawalcott/'
         src: >-
           https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/591259665-arijana_walcott_500x500.png
@@ -54,12 +58,12 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/guy_giuffredi.png
         alt: Guy Giuffredi
         stage: seed
-      - name: 'Jacqueline Ruedin Rüsch'
-        position: Venture Capital Investor, Board Member and Public Speaker
+      - name: Jacqueline Ruedin Rüsch
+        position: 'Venture Capital Investor, Board Member and Public Speaker'
         linkedin: 'https://www.linkedin.com/in/jacquelineruedinr%C3%BCsch/'
         src: >-
           https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/72801623-jacqueline_ruedin_ruesch_500x500.png
-        alt: 'Jacqueline Ruedin Rüsch'
+        alt: Jacqueline Ruedin Rüsch
         stage: seed
       - name: Teddy Amberg
         position: Founding Partner at Spicehaus Partners AG
@@ -90,7 +94,7 @@ blocks:
         alt: Claudius Stammbach
         stage: seed
       - name: Aron Braun
-        position: Entrepreneur, Business Angel and Lecturer
+        position: 'Entrepreneur, Business Angel and Lecturer'
         linkedin: 'https://www.linkedin.com/in/aron-braun/'
         src: >-
           https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/171844469-aron_braun_500x500.png
@@ -99,12 +103,27 @@ blocks:
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
+  - content_block:
+      subtitle: Our Partner
+      title: Startup World Cup
+      content:
+        - >-
+          Startup World Cup is a global conference and competition that brings
+          together the top startups, VCs, entrepreneurs and world-class tech
+          CEOs.
+        - >-
+          This year, the finalist of the pitching session at Startup Nights 2024
+          gets a ticket to participate in the Startup World Cup!
+      cta:
+        link: 'https://www.startupworldcup.io/'
+        text: More about the Startup World Cup
+      background_color: bg-sn-black
+    image:
+      src: >-
+        https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/partner/startup-world-cup.png
+      alt: startup world cup logo
+    contentblock_left: true
+    background_color: bg-sn-black-lightest
+    _template: content
 ---
-
-
-
-
-
-
-
 
