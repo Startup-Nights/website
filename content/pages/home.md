@@ -80,7 +80,7 @@ blocks:
           src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philipp_nuessli.png'
           alt: 'Philipp Nüssli'
       - name: 'Taulant Gashnjani'
-        position: ''
+        position: 'Content Creator / Comedian'
         description: >-
           Comedian / Content Creator, reaches monthly several millions of people by creating entertaining videos on social media,
         image:
@@ -122,7 +122,7 @@ blocks:
           src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/anastasia_barner.png'
           alt: 'Anastasia Barner'
       - name: 'Simon Furer'
-        position: ''
+        position: 'VP Finance Voliro AG'
         description: >-
           Simon serves as the VP of Finance at Voliro, bringing extensive experience of running and building finance and operations departments in various startups and scaleups. Simon holds a M.A. in law and economics hence combines a strong legal background with financial acumen. An entrepreneurial spirit at heart, he thrives on collaborating with ambitious individuals and organizations. Simon is dedicated to driving financial excellence and innovation within the Voliro team.
         image:

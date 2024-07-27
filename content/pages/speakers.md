@@ -63,7 +63,7 @@ blocks:
               src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philipp_nuessli.png'
               alt: 'Philipp Nüssli'
           - name: 'Taulant Gashnjani'
-            position: ''
+            position: 'Content Creator / Comedian'
             description: >-
               Comedian / Content Creator, reaches monthly several millions of people by creating entertaining videos on social media,
             image:
@@ -111,8 +111,15 @@ blocks:
             image:
               src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/laura_matter.png'
               alt: 'Laura Matter'
+          - name: 'Philippe Sahli'
+            position: 'Co-Founder & CEO Yokoy'
+            description: >-
+              Philippe Sahli is the Co-Founder and CEO of the Sequoia Capital backed Swiss Scale-up Yokoy. Yokoy automates spend management for mid-size and enterprise customers based on Artificial Intelligence. Philippe studied Finance and Accounting and worked in various Finance functions before starting Yokoy.
+            image:
+              src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philippe_sahli.png'
+              alt: 'Philippe Sahli'
           - name: 'Simon Furer'
-            position: ''
+            position: 'VP Finance Voliro AG'
             description: >-
               Simon serves as the VP of Finance at Voliro, bringing extensive experience of running and building finance and operations departments in various startups and scaleups. Simon holds a M.A. in law and economics hence combines a strong legal background with financial acumen. An entrepreneurial spirit at heart, he thrives on collaborating with ambitious individuals and organizations. Simon is dedicated to driving financial excellence and innovation within the Voliro team.
             image:
