@@ -50,12 +50,14 @@ export const getStaticPaths = async ({ locales }) => {
     const paths = [];
 
     pageConnection.data.pageConnection.edges.map((page: any) => {
-        locales.map((locale: any) => {
-            paths.push({
-                params: { filename: page.node._sys.filename },
-                locale,
+        if (!page.node._sys.filename.includes("[filename]")) {
+            locales.map((locale: any) => {
+                paths.push({
+                    params: { filename: page.node._sys.filename },
+                    locale,
+                });
             });
-        });
+        }
     });
 
     return {
