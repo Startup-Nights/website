@@ -11,35 +11,57 @@ export default function HomePage(
         variables: props.variables,
         data: props.data,
     });
+
     return (
         <Layout data={data.global as any}>
             <div className="pt-12 lg:pt-20"></div>
             <Blocks {...data.page} />
-        </Layout>
+        </Layout >
     );
 }
 
-export const getStaticProps = async ({ params }) => {
-    const tinaProps = await client.queries.contentQuery({
-        relativePath: `${params.filename}.md`,
-    });
-    return {
-        props: {
-            data: tinaProps.data,
-            query: tinaProps.query,
-            variables: tinaProps.variables,
-        },
-    };
+
+export const getStaticProps = async ({ params, locale }) => {
+    try {
+        const tinaProps = await client.queries.contentQuery({
+            relativePath: `${locale}/${params.filename}.md`,
+        });
+        return {
+            props: {
+                ...tinaProps
+            },
+        };
+    } catch {
+        // fallback to the default locale
+        // TODO: get default locale from next.config.js and/or redirect
+        const tinaProps = await client.queries.contentQuery({
+            relativePath: `en/${params.filename}.md`,
+        });
+        return {
+            props: {
+                ...tinaProps
+            },
+        };
+    }
 };
 
-export const getStaticPaths = async () => {
-    const pagesListData = await client.queries.pageConnection();
+export const getStaticPaths = async ({ locales }) => {
+    const pageConnection = await client.queries.pageConnection();
+    const paths = [];
+
+    pageConnection.data.pageConnection.edges.map((page: any) => {
+        locales.map((locale: any) => {
+            paths.push({
+                params: { filename: page.node._sys.filename },
+                locale,
+            });
+        });
+    });
+
     return {
-        paths: pagesListData.data.pageConnection.edges.map((page) => ({
-            params: { filename: page.node._sys.filename },
-        })),
-        fallback: false,
-    };
+        paths,
+        fallback: true,
+    }
 };
 
 export type AsyncReturnType<T extends (...args: any) => Promise<any>> =
