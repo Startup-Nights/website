@@ -443,9 +443,8 @@ blocks:
                     tickets. Please be aware that tickets for the event must be
                     purchased separately.
                   - >-
-                    Make sure to secure tickets for both you and your team.
-                    Don't forget to use the discount code "WORLD20" to get a 20%
-                    discount! Tickets can be purchased here.
+                    In case you applied for a booth, you will get a discount 
+                    code from us. Please contact the point of contact above.
                 cta:
                   link: tickets
                   text: Buy tickets
