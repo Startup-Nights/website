@@ -13,7 +13,7 @@ export default function HomePage(
     });
     return (
         <Layout data={data.global as any}>
-            <div className="pt-12 lg:pt-20"></div>
+            <div className="pt-32 sm:pt-24 lg:pt-20"></div>
             <Blocks {...data.page} />
         </Layout>
     );

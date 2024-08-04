@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { placeholderBox } from "../items/placeholder";
 import { ColorPickerInput } from "../fields/color";
 
 export const Imagegrid = ({ data }) => {
@@ -9,7 +8,7 @@ export const Imagegrid = ({ data }) => {
             className={data.background_color ? data.background_color : "bg-sn-black"}
             id={data.id ? data.id : ''}
         >
-            <div className="max-w-7xl mx-auto py-12 px-8 lg:px-12">
+            <div className="max-w-7xl mx-auto py-4 md:py-12 px-2 sm:px-8 lg:px-12">
                 {data?.subtitle && data?.title && (
                     <div className="text-center mb-20">
                         <h2 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
@@ -26,16 +25,16 @@ export const Imagegrid = ({ data }) => {
                     </div>
                 )}
 
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-8">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-8">
                     {data?.images &&
                         data.images.map((data: any, i: number) => (
                             <div key={`image-${i}`} className="relative grid content-start mx-6 md:mx-12 aspect-square rounded-full">
-                                <div className="relative grid content-center justify-center text-center h-[100px] w-[100px] sm:h-[150px] sm:w-[150px] md:h-[200px] md:w-[200px]">
+                                <div className="relative grid content-center justify-center text-center h-[150px] w-[150px] md:h-[200px] md:w-[200px] mx-auto">
                                     <div className="absolute inset-0 w-full h-full">
                                         <Image
                                             width={600}
                                             height={600}
-                                            className="w-full h-full object-cover rounded-full"
+                                            className="w-full h-full object-cover rounded-full "
                                             alt={data?.image?.alt}
                                             src={data?.image?.src}
                                         />

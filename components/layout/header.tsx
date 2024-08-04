@@ -23,7 +23,7 @@ export const Header = ({ data }) => {
         <div className="bg-sn-black fixed top-0 z-20 w-full backdrop-blur-md bg-sn-black/90 outline-sn-yellow focus:outline-none ">
             <div className="relative">
 
-                <HeaderBanner  />
+                <HeaderBanner />
 
                 <div className='max-w-7xl mx-auto py-6 px-8 lg:px-24'>
                     <nav className="relative flex items-center justify-between" aria-label="Global">
