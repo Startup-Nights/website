@@ -134,11 +134,11 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/diana-kottmann-7138a879'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_diana_kottmann.jpg
-          - name: 'Nneji Roy'
+          - name: 'Roy Nneji'
             position: 'Social Media Manager'
             linkedin: 'https://www.linkedin.com/in/roy-nneji-700585263/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/roy_nneji.png'
-          - name: 'Iten Saskia'
+          - name: 'Saskia Iten'
             position: 'Head of Photo & Video on site'
             linkedin: 'https://www.linkedin.com/in/saskia-iten-583515155/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/saskia_iten.png'
@@ -381,7 +381,7 @@ blocks:
             position: 'PR / Media Relations'
             linkedin: 'https://www.linkedin.com/in/manuel-hendrikus-herrmann-a6976239/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/manuel_herrmann.jpg'
-          - name: 'Sprung Tina'
+          - name: 'Tina Sprung'
             position: 'PR / Media Relation'
             linkedin: 'https://www.linkedin.com/in/tina-sprung/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/tina_sprung.png'
