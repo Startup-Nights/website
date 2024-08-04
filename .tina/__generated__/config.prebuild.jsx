@@ -2373,6 +2373,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "faq") {
               return `/faq`;
             }
+            if (document2._sys.filename === "pioneers-and-pancakes") {
+              return `/pioneers-and-pancakes`;
+            }
             return void 0;
           }
         },

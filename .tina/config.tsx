@@ -532,6 +532,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "faq") {
                             return `/faq`;
                         }
+                        if (document._sys.filename === "pioneers-and-pancakes") {
+                            return `/pioneers-and-pancakes`;
+                        }
                         return undefined;
                     },
                 },
