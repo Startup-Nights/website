@@ -7,7 +7,7 @@ blocks:
       content:
         - At Startup Nights 2024 there will again be two pitching sessions.
         - >-
-          This year, the Swiss finals of Startup Wold Cup take place as part of
+          This year, the Swiss finals of Startup World Cup take place as part of
           the Startup Nights on 1st November 2024. The finalists will get the
           chance to pitch at the world finals in 2025 in Silicon Valley. At the
           world finals the Startups have the chance to win a $ 1 million
