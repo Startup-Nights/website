@@ -361,7 +361,7 @@ blocks:
       link: /partner
       text: All partners
     partners:
-      - grid_cols: 4
+      - grid_cols: 3
         partners:
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ubs.png
@@ -372,13 +372,9 @@ blocks:
             alt: Mobiliar
             link: 'https://mobiliar.ch'
           - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/kanton-zuerich.png
-            alt: Kanton Zürich
-            link: 'https://vd.zh.ch'
-          - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/sparrow-ventures.png
-            alt: Sparrow Ventures
-            link: 'https://sparrow-ventures.com'
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/wenger-vieli.png
+            alt: Wenger Vieli
+            link: 'https://wengervieli.ch'
     _template: partner_list
 ---
 
