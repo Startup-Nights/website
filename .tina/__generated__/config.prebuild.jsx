@@ -1656,13 +1656,15 @@ var pricingBlockSchema = {
 // components/blocks/booth.tsx
 import { Fragment as Fragment5, useEffect as useEffect5, useState as useState8 } from "react";
 import Link8 from "next/link";
-import { InformationCircleIcon as InformationCircleIcon3 } from "@heroicons/react/20/solid";
+import {
+  InformationCircleIcon as InformationCircleIcon3,
+  ExclamationTriangleIcon
+} from "@heroicons/react/20/solid";
 import { Tab as Tab2, Transition as Transition4 } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/20/solid";
 import {
   ExclamationCircleIcon as ExclamationCircleIcon3,
-  ExclamationTriangleIcon,
   PlusIcon,
   XMarkIcon as XMarkIcon4
 } from "@heroicons/react/24/outline";
