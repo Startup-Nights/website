@@ -1,13 +1,15 @@
 import { Fragment, useEffect, useState } from "react";
 import type { Template } from "tinacms";
 import Link from "next/link";
-import { InformationCircleIcon } from "@heroicons/react/20/solid";
+import {
+    InformationCircleIcon,
+    ExclamationTriangleIcon,
+} from "@heroicons/react/20/solid";
 import { Tab, Transition } from "@headlessui/react";
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import {
     ExclamationCircleIcon,
-    ExclamationTriangleIcon,
     PlusIcon,
     XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -195,6 +197,55 @@ export const Booth = ({ data }) => {
                                             href={"/partner#partner_form"}
                                         >
                                             partner application
+                                        </Link>
+                                        .
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 rounded-3xl bg-sn-black-light p-8">
+                            <div className="flex">
+                                <div className="flex-shrink-0">
+                                    <ExclamationTriangleIcon
+                                        className="h-5 w-5 text-sn-yellow"
+                                        aria-hidden="true"
+                                    />
+                                </div>
+                                <div className="ml-3">
+                                    <h3 className="font-medium text-gray-200">
+                                        Criteria for a discounted startup booth
+                                    </h3>
+                                    <p className="mt-2 text-gray-400">
+                                        To benefit from a discounted booth at the Startup Nights, 4m2 for CHF 399 or 9m2 for CHF 599, your startup must fulfil the following criteria:
+                                    </p>
+                                    <ul role="list" className="mt-2 list-disc pl-5">
+                                        <li>
+                                            Year of foundation: The company was founded no more than 5 years ago
+                                        </li>
+                                        <li>
+                                            Number of employees: Less than 15 full-time employees
+                                        </li>
+                                        <li>
+                                            Turnover: Annual turnover of less than CHF 1 million
+                                        </li>
+                                        <li>
+                                            Total funding: Total financing to date is less than CHF 3 million
+                                        </li>
+                                        <li>
+                                            Scalability: The business model must be scalable and show potential for significant growth
+                                        </li>
+                                        <li>
+                                            Degree of innovation: Development of innovative products or services that open up new markets or revolutionize existing markets
+                                        </li>
+                                    </ul>
+                                    <p className="mt-2 italic text-gray-400">
+                                        If your company does not fulfill the criteria, you have the opportunity to position yourself as a partner of the event and thus benefit from various partner opportunities, such as a booth. Click here to go to{" "}
+                                        <Link
+                                            className="text-sn-yellow underline hover:text-sn-yellow-dark underline-offset-4"
+                                            href={"/partner#partner_form"}
+                                        >
+                                            the partner page
                                         </Link>
                                         .
                                     </p>
