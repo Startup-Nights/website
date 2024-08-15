@@ -27,19 +27,10 @@ blocks:
       - title: Allrounder
         department: Operations
         link: 'https://forms.gle/S9hcT6CscPY5jE5XA'
-      - title: Head of Photo & Video on-site
-        department: Marketing
-        link: 'https://forms.gle/dvboJDjQy4XocpkV9'
       - title: Initiative Application - Organizing Committee
         note: New
         department: General
         link: 'https://forms.gle/d76tawoBwpZZWb5X9'
-      - title: (Technical) Website Specialist
-        department: Marketing
-        link: 'https://forms.gle/wpmw8GzKUkRko6LV7'
-      - title: Social Media Manager
-        department: Marketing
-        link: 'https://forms.gle/847AQ9M783ofJNax5'
       - title: Tools & Automation Manager
         department: Operations
         link: 'https://forms.gle/9BobSxcN1uGKfMxN8'
