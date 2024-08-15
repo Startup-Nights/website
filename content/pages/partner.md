@@ -286,8 +286,47 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/wenger-vieli.png
             alt: Wenger Vieli
             link: 'https://wengervieli.ch'
-      - title: Pioneer
+      - title: Visionary
         grid_cols: 3
+        partners:
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/schoch.png
+            alt: Büro Schoch Werkhaus AG
+            link: 'https://www.schoch.swiss/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/cisco.png
+            alt: Cisco
+            link: 'https://cisco.com'
+          - src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/428987760-innosuisse_600x300.png'
+            alt: 'Innosuisse'
+            link: 'https://innosuisse.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
+            alt: IGE
+            link: 'https://ige.ch'
+          - src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/540138670-kanton_zrich_600x300.png'
+            alt: 'Kanton Zürich'
+            link: 'https://zh.ch'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/44809611-stadt_winterthur_scaled.png
+            alt: Stadt Winterthur
+            link: 'https://stadt.winterthur.ch/'
+          - src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/752433688-swisslife_600x300.png'
+            alt: 'Swisslife'
+            link: 'https://swisslife.ch'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/technopark_winterthur.png
+            alt: Technopark Winterthur
+            link: 'https://tpw.ch/en/'
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/846613811-zealydark_600x300.png
+            alt: Zealy
+            link: https://www.zealy.ch
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/2023/partners/zhaw.png
+            alt: ZHAW
+            link: 'https://zhaw.ch'
+      - title: Pioneer
+        grid_cols: 4
         partners:
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/611196457-axpo_scaled.png
@@ -317,8 +356,6 @@ blocks:
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/281842490-NordcloudBlueLogo_Stacked_tagline_600x300.png
             alt: Nordcloud
             link: https://nordcloud.com/
-
-
       - title: Innovator
         grid_cols: 4
         partners:

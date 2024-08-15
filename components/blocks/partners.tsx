@@ -31,6 +31,9 @@ export const Partners = ({ data }) => {
                                 {category.title}
                             </h2>
 
+                            {/* ensures that grid-cols-4 gets compiled */}
+                            <span className="lg:grid-cols-4 hidden"></span>
+
                             <ul className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-${category.grid_cols ? category.grid_cols : 4} sm:gap-4 md:gap-12 py-4 md:py-8`}>
                                 {category.partners && category.partners.map((partner, i: number) => (
                                     <Link key={`partner-${i}`} href={partner?.link ? partner.link : '/'} target={'_blank'} className=''>
