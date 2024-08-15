@@ -63,7 +63,7 @@ blocks:
               src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philipp_nuessli.png'
               alt: 'Philipp Nüssli'
           - name: 'Taulant Gashnjani'
-            position: 'Content Creator / Comedian'
+            position: 'Content Creator / Komiker'
             description: >-
               Comedian / Content Creator, reaches monthly several millions of people by creating entertaining videos on social media,
             image:
@@ -90,6 +90,27 @@ blocks:
             image:
               src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/david_granite.png'
               alt: 'David Granite'
+          - name: 'Ian Epstein'
+            position: 'EVP Global Head of Distribution & Capital Markets @ Republic.'
+            description: >-
+              Ian Epstein is EVP, Capital Markets & Distribution at Republic, and will run the Broker-Dealer and provide capital raising support to all business lines. Prior to Republic, Ian was Global Head of Digital Assets at Makor Group, with over fifteen years of experience as a portfolio manager at Argonaut Capital, Caxton Associates, Commonwealth Opportunity Capital, Autonomy Capital, and Exodus Point Capital. Amongst his achievements, Epstein counts the tenfold growth in AUM and a consistent top decile performance across all hedge fund strategies during his 8-year tenure as a senior portfolio manager at Autonomy Capital (2010 – 2018). His investment experience spans developed and emerging markets across all asset classes including FX, equities, sovereign/quasi-sovereign credit and derivative products. A Summa Cum Laude graduate in Political Economy from the University of California, Berkeley, Epstein spent five years as a private equity analyst in the People's Republic of China prior to starting his career as a successful global macro portfolio manager. He is a founding member of the Milken Institute Young Leaders Circle, a member of the Economics Club of New York and a civilian alumnus of the United States Army War College. Select Media CNBC, Oct. 2022 https://www.cnbc.com/video/2022/10/04/bitcoin-inches-back-above-20000-and-a-deep-dive-into-the-state-of-us-regulation-cnbc-crypto-world.html Real Vision Finance, Aug. 2021 https://www.youtube.com/watch?v=73jItW4RTJw
+            image:
+              src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/ian_epstein.png'
+              alt: 'Ian Epstein'
+          - name: 'Bert Hofmänner'
+            position: 'Founder helfereinsatz.ch / Vicepresident KMU Verband Winterthur und Umgebung'
+            description: >-
+              Bert Hofmänner owns an internet agency in Winterthur and is Vice President of the KMU Verband Winterthur. He is currently expanding into the DACH region with his start-up project Helfereinsatz.ch.
+            image:
+              src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/bert_hofmaenner.png'
+              alt: 'Bert Hofmänner'
+          - name: 'Chris Beyeler'
+            position: 'Co-Founder & President KImpact'
+            description: >-
+              Chris Beyeler, President of KImpact, the association for artificial intelligence. He is an inspirer and networker in the field of artificial intelligence (AI). Known for his in-depth, inspiring, and humorous lectures, trainings, and podcasts, he combines extensive expertise with practical experience as a former CEO of an AI startup and developer. Chris drives the integration of AI into the Swiss economy by highlighting opportunities for increased efficiency and new job fields, while also emphasizing the necessity of responsible handling and education in this area.
+            image:
+              src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/chris_beyeler.png'
+              alt: 'Chris Beyeler'
           - name: 'Jerry Dreifuss'
             position: 'Co-Founder & CEO of Swiss Eyewear Group AG'
             description: >-
@@ -97,6 +118,13 @@ blocks:
             image:
               src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/jerry_dreifuss.png'
               alt: 'Jerry Dreifuss'
+          - name: 'Fabian Huber'
+            position: 'Co-Founder & CEO of UniBev GmbH'
+            description: >-
+              Fabian Huber, Managing Director of UniBev. UniBev is the leading manufacturer of trend beverages and creator products in the DACH region.
+            image:
+              src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/fabian_huber.png'
+              alt: 'Fabian Huber'
           - name: 'Anastasia Barner'
             position: 'Founder, Author, TEDx Speaker'
             description: >-
@@ -132,6 +160,34 @@ blocks:
             image:
               src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/nadine_juergensen.png'
               alt: 'Nadine Jürgensen'
+          - name: 'Joël Capt'
+            position: 'CEO & Founder Peakora'
+            description: >-
+              Former Head of Growth at Beekeeper with VC experience in Silicon Valley, Joël has a diverse background. With Peakora, he and his team developed a comprehensive business growth system, with which they already scaled over 100 companies.
+            image:
+              src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/joël_capt.png'
+              alt: 'Joël Capt'
+          - name: 'Daniel Andres'
+            position: 'Founding Partner Spicehaus Partners AG'
+            description: >-
+              Founding Partner at Spicehaus Partners, a Swiss venture investor focused on promising early-stage B2B software companies. My background blends institutional expertise with entrepreneurial experience.
+            image:
+              src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/daniel_andres.png'
+              alt: 'Daniel Andres'
+          - name: 'Thomas Dübendorfer'
+            position: 'President SICTIC'
+            description: >-
+              Thomas Dübendorfer is President of SICTIC, the leading angel investor club in Switzerland. He was awarded SECA Business Angel of the Year 2024 and published the free Swiss Angel Investor Handbook. He holds a Ph.D. in CS from ETH Zurich and has worked in Silicon Valley and at Google.
+            image:
+              src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/thomas_duebendorfer.png'
+              alt: 'Thomas Dübendorfer'
+          - name: 'Christoph Falk'
+            position: 'Head of Start-up Coaching at Innosuisse'
+            description: >-
+              Christoph heads the Start-up Coaching at Innosuisse. He is the creator and manager of various initiatives and programs to promote science-based start-ups. Philosopher by training with a PhD in the field of causal inference and data analysis.
+            image:
+              src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/christoph_falk.png'
+              alt: 'Christoph Falk'
           background_color: bg-sn-black-light
       - content_block:
           subtitle: Meet our speaker
