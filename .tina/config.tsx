@@ -23,6 +23,7 @@ import { programBlockSchema } from "../components/blocks/program";
 import { boothApprovedBlockSchema } from "../components/blocks/booth_approved";
 import { cropBlockSchema } from "../components/blocks/crop";
 import { quotesBlockSchema } from "../components/blocks/quotes";
+import { tableBlockSchema } from "../components/blocks/table";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -581,6 +582,7 @@ const config = defineStaticConfig({
                             programBlockSchema,
                             cropBlockSchema,
                             boothApprovedBlockSchema,
+                            tableBlockSchema,
                         ],
                     },
                 ],

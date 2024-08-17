@@ -1864,6 +1864,51 @@ var quotesBlockSchema = {
   ]
 };
 
+// components/blocks/table.tsx
+var tableBlockSchema = {
+  name: "table",
+  label: "Table",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    },
+    {
+      name: "list",
+      label: "List items",
+      type: "object",
+      list: true,
+      fields: [
+        {
+          type: "string",
+          label: "Time",
+          name: "title"
+        },
+        {
+          type: "string",
+          label: "Items",
+          name: "list_items",
+          list: true
+        }
+      ]
+    },
+    {
+      type: "string",
+      name: "background_color",
+      label: "Background color",
+      ui: {
+        component: ColorPickerInput
+      }
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -2422,7 +2467,8 @@ var config = defineStaticConfig({
               quotesBlockSchema,
               programBlockSchema,
               cropBlockSchema,
-              boothApprovedBlockSchema
+              boothApprovedBlockSchema,
+              tableBlockSchema
             ]
           }
         ]

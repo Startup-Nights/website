@@ -621,5 +621,15 @@ fragment PageParts on Page {
       title
       background_color
     }
+    ... on PageBlocksTable {
+      subtitle
+      title
+      list {
+        __typename
+        title
+        list_items
+      }
+      background_color
+    }
   }
 }
