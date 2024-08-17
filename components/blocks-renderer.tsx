@@ -24,6 +24,7 @@ import { Program } from "./blocks/program";
 import { BoothApproved } from "./blocks/booth_approved";
 import { Crop } from "./blocks/crop";
 import { Quotes } from "./blocks/quotes";
+import Table from "./blocks/table";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -247,6 +248,17 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     <Quotes data={block} />
                                 </div>
                             )
+                        case "PageBlocksTable":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Table data={block} />
+                                </div>
+                            )
+
+
 
                         default:
                             return null;

@@ -995,7 +995,19 @@ type PageBlocksBooth_approved {
   background_color: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved
+type PageBlocksTableList {
+  title: String
+  list_items: [String]
+}
+
+type PageBlocksTable {
+  subtitle: String
+  title: String
+  list: [PageBlocksTableList]
+  background_color: String
+}
+
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved | PageBlocksTable
 
 type Page implements Node & Document {
   title: String!
@@ -1624,6 +1636,18 @@ input PageBlocksBooth_approvedFilter {
   background_color: StringFilter
 }
 
+input PageBlocksTableListFilter {
+  title: StringFilter
+  list_items: StringFilter
+}
+
+input PageBlocksTableFilter {
+  subtitle: StringFilter
+  title: StringFilter
+  list: PageBlocksTableListFilter
+  background_color: StringFilter
+}
+
 input PageBlocksFilter {
   hero: PageBlocksHeroFilter
   speakers: PageBlocksSpeakersFilter
@@ -1649,6 +1673,7 @@ input PageBlocksFilter {
   program: PageBlocksProgramFilter
   crop: PageBlocksCropFilter
   booth_approved: PageBlocksBooth_approvedFilter
+  table: PageBlocksTableFilter
 }
 
 input PageFilter {
@@ -2401,6 +2426,18 @@ input PageBlocksBooth_approvedMutation {
   background_color: String
 }
 
+input PageBlocksTableListMutation {
+  title: String
+  list_items: [String]
+}
+
+input PageBlocksTableMutation {
+  subtitle: String
+  title: String
+  list: [PageBlocksTableListMutation]
+  background_color: String
+}
+
 input PageBlocksMutation {
   hero: PageBlocksHeroMutation
   speakers: PageBlocksSpeakersMutation
@@ -2426,6 +2463,7 @@ input PageBlocksMutation {
   program: PageBlocksProgramMutation
   crop: PageBlocksCropMutation
   booth_approved: PageBlocksBooth_approvedMutation
+  table: PageBlocksTableMutation
 }
 
 input PageMutation {
