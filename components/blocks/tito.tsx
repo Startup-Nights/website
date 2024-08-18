@@ -1,16 +1,8 @@
 'use client'
 
 import type { Template } from "tinacms";
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 
 export const Tito = ({ data }) => {
-    const { push } = useRouter();
-
-    useEffect(() => {
-        push("https://www.b2match.com/e/startup-nights-2024/sign-up")
-    }, [])
-
     return (
         <div className="bg-sn-black-light">
             <div className="max-w-7xl mx-auto py-12 px-8 lg:p-24">

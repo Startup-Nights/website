@@ -536,6 +536,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "pioneers-and-pancakes") {
                             return `/pioneers-and-pancakes`;
                         }
+                        if (document._sys.filename === "afterparty") {
+                            return `/afterparty`;
+                        }
                         return undefined;
                     },
                 },
