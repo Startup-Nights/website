@@ -24,8 +24,11 @@ blocks:
           experiences, and discover new opportunities to actively support the
           startup ecosystem.
         - >-
-          Presented by UBS & Wenger Vieli In collaboration with SICTIC, SECA &
-          Founderful. Register now and secure your spot at Pioneers & Pancakes.
+          Presented by UBS & Wenger Vieli
+        - >-
+          In collaboration with SICTIC, SECA & Founderful.
+        - >-
+          Register now and secure your spot at Pioneers & Pancakes.
       cta:
         link: >-
           https://b2match.com/e/startup-nights-2024/sign-up?invitation=ZpZfpsFvObcZKHOVZRA-08nLdVU=
