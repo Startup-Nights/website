@@ -31,7 +31,7 @@ blocks:
     infopoints:
       - name: Live Music
         text: >-
-          DJ xyz will be there
+          DJ (to be announced)
       - name: Party Games
         text: >-
           From beer pong to flip cup, we got you!
