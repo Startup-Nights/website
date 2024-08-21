@@ -41,6 +41,12 @@
             "label": "Pitching Competition",
             "description": "Apply for a spot and pitch your product",
             "icon": "trophy"
+          },
+          {
+            "href": "afterparty",
+            "label": "Afterparty",
+            "description": "Let's end the Startup Nighs in stlye!",
+            "icon": "music"
           }
         ],
         "callsToAction": [

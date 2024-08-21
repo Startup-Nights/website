@@ -965,7 +965,7 @@ import React7 from "react";
 import Image7 from "next/image";
 
 // components/util/icons.tsx
-import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, Cog6ToothIcon as Cog6ToothIcon2, FunnelIcon, HeartIcon as HeartIcon3, InformationCircleIcon, LightBulbIcon as LightBulbIcon3, MegaphoneIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon as RocketLaunchIcon2, StarIcon, TicketIcon, TrophyIcon, UserCircleIcon, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
+import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, Cog6ToothIcon as Cog6ToothIcon2, FunnelIcon, HeartIcon as HeartIcon3, InformationCircleIcon, LightBulbIcon as LightBulbIcon3, MegaphoneIcon, MusicalNoteIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon as RocketLaunchIcon2, StarIcon, TicketIcon, TrophyIcon, UserCircleIcon, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
 
 // components/blocks/overview.tsx
 var overviewBlockSchema = {
