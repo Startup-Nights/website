@@ -19,7 +19,7 @@ blocks:
         - >-
           The party will take place at the Caribbean Pearl, a venue directly at Winterthur train station. Spaces are limited, so make sure to secure your ticket for this year's After-Party as soon as possible!
       cta:
-        link: '#tickets'
+        link: '#sn-tito-embedded-widget'
         text: Secure your spot
       list:
         title: Event Details
