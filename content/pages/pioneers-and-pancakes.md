@@ -73,7 +73,7 @@ blocks:
           - >-
             Understanding the Swiss Venture Capital Ecosystem: Facts & figures
             and blind spots by Thomas Heimann from SECA
-          - Venture Capital — the key driver for commercially successful innovation” by Andreas Goeldi
+          - Venture Capital — the key driver for commercially successful innovation by Andreas Goeldi
           - 'Angel Investing for Fun & Profit by Thomas Dübendorfer, SICTIC'
           - >-
             Founder & Investor Panel: “Mutual Success: Exploring
