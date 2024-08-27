@@ -13,9 +13,7 @@ blocks:
       alt: Rollup from the Startup World 2023
     _template: hero
   - subtitle: Exhibiting Startups
-    title: Startups which exhibited in 2023.
+    title: Startups which exhibit in 2024.
     _template: booth_approved
 ---
-
-
 
