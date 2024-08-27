@@ -26,7 +26,7 @@ export const BoothApproved = ({ data }) => {
         const tmp_categories = ['All']
         booths.splice(0, 1)
         booths.forEach((booth: any) => {
-            const status = booth[39]
+            const status = booth[35]
             if (status === "Yes" || status === "Not paid yet") {
                 // check for duplicates
                 booth[8] = encodeURI(booth[8])
@@ -97,8 +97,6 @@ export const BoothApproved = ({ data }) => {
 
                 {!loading && (
                     <>
-                        <BoothModal booth={booth} open={open} setOpen={setOpen} />
-
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8">
                             {booths.filter((booth: Booth) => selectedCategory === 'All' || booth.categories.indexOf(selectedCategory) !== -1).map((booth: Booth, i: number) => (
                                 <div key={i} className="aspect-[3/2] relative bg-gray-50 rounded-xl flex justify-center items-center p-4 sm:p-6 hover:bg-gray-100">
