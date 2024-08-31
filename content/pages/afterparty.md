@@ -31,8 +31,7 @@ blocks:
     infopoints:
       - name: Live Music
         text: >-
-          DJ Patric Pleasure & Gee-K skilfully combine ‘The Best Of Both Worlds’ by merging live music and DJ set as ‘DJandGuitar’ to create a rousing performance.
-This creates the feeling of a live band - simply with a more diverse selection of songs and different music genres from RnB & Soul to Hip Hop to Disco & Funk to Rock, chart hits and pumping NuDisco beats.
+          DJ Patric Pleasure & Gee-K skilfully combine ‘The Best Of Both Worlds’ by merging live music and DJ set as ‘DJandGuitar’ to create a rousing performance. This creates the feeling of a live band - simply with a more diverse selection of songs and different music genres from RnB & Soul to Hip Hop to Disco & Funk to Rock, chart hits and pumping NuDisco beats.
       - name: Party Games
         text: >-
           From beer pong to flip cup, we got you!
