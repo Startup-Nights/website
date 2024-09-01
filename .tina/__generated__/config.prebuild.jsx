@@ -1752,6 +1752,11 @@ var programBlockSchema = {
     },
     {
       type: "string",
+      label: "Program iFrame-URL",
+      name: "iframeUrl"
+    },
+    {
+      type: "string",
       name: "background_color",
       label: "Background color",
       ui: {
