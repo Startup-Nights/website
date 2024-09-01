@@ -982,6 +982,7 @@ type PageBlocksQuotes {
 type PageBlocksProgram {
   subtitle: String
   title: String
+  iframeUrl: String
   background_color: String
 }
 
@@ -1623,6 +1624,7 @@ input PageBlocksQuotesFilter {
 input PageBlocksProgramFilter {
   subtitle: StringFilter
   title: StringFilter
+  iframeUrl: StringFilter
   background_color: StringFilter
 }
 
@@ -2413,6 +2415,7 @@ input PageBlocksQuotesMutation {
 input PageBlocksProgramMutation {
   subtitle: String
   title: String
+  iframeUrl: String
   background_color: String
 }
 
