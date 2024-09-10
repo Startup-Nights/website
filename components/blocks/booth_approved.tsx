@@ -36,7 +36,7 @@ export const BoothApproved = ({ data }) => {
                     booth[1] = 'https://' + booth[1]
                 }
 
-                const boothCategories = (booth[41] ? booth[41] : '').split(/[\n.,]+/).map((category: string) => category.trim())
+                const boothCategories = (booth[6] ? booth[6] : '').split(/[\n.,]+/).map((category: string) => category.trim())
                 boothCategories.forEach((element: string) => {
                     if (element !== '' && tmp_categories.indexOf(element) === -1) {
                         tmp_categories.push(element);
