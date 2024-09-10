@@ -97,6 +97,8 @@ export const BoothApproved = ({ data }) => {
 
                 {!loading && (
                     <>
+                        <BoothModal booth={booth} open={open} setOpen={setOpen} />
+
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8">
                             {booths.filter((booth: Booth) => selectedCategory === 'All' || booth.categories.indexOf(selectedCategory) !== -1).map((booth: Booth, i: number) => (
                                 <div key={i} className="aspect-[3/2] relative bg-gray-50 rounded-xl flex justify-center items-center p-4 sm:p-6 hover:bg-gray-100">
