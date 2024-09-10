@@ -73,10 +73,10 @@ blocks:
     _template: overview
   - id: partner-excerpt
     subtitle: ''
-    title: Some of our partners
+    title: Our main partners
     cta:
       link: '#partner'
-      text: Check all our partner
+      text: Check all our partners
     partners:
       - title: ''
         grid_cols: 3
