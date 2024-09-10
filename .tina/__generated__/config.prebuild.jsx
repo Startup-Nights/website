@@ -1768,6 +1768,13 @@ var programBlockSchema = {
 
 // components/blocks/booth_approved.tsx
 import { useEffect as useEffect7, useState as useState11 } from "react";
+
+// components/blocks/boothmodal.tsx
+import { Fragment as Fragment7 } from "react";
+import { Dialog as Dialog2, Transition as Transition6 } from "@headlessui/react";
+import { XMarkIcon as XMarkIcon6 } from "@heroicons/react/24/outline";
+
+// components/blocks/booth_approved.tsx
 var boothApprovedBlockSchema = {
   name: "booth_approved",
   label: "Booth Approved",
