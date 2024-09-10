@@ -39,6 +39,7 @@
     "dependencies": {
         "@headlessui/react": "^2.1.2",
         "@heroicons/react": "^2.1.5",
+        "@hubspot/api-client": "^11.2.0",
         "@mailchimp/mailchimp_marketing": "^3.0.80",
         "@nextui-org/react": "^2.4.6",
         "@slack/webhook": "^7.0.2",

@@ -3096,6 +3096,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hubspot/api-client@npm:^11.2.0":
+  version: 11.2.0
+  resolution: "@hubspot/api-client@npm:11.2.0"
+  dependencies:
+    "@types/node-fetch": "npm:^2.5.7"
+    bottleneck: "npm:^2.19.5"
+    es6-promise: "npm:^4.2.4"
+    form-data: "npm:^2.5.0"
+    lodash.get: "npm:^4.4.2"
+    lodash.merge: "npm:^4.6.2"
+    node-fetch: "npm:^2.6.0"
+    url-parse: "npm:^1.4.3"
+  checksum: 10c0/5f7953833cfd45572060ca66afb9d220390ed88f6178b734b994cc49ef3869137894708da0b3a8c126576a590899a332647de850422134bc3a4655ae34b13f4c
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.14":
   version: 0.11.14
   resolution: "@humanwhocodes/config-array@npm:0.11.14"
@@ -8124,6 +8140,7 @@ __metadata:
   dependencies:
     "@headlessui/react": "npm:^2.1.2"
     "@heroicons/react": "npm:^2.1.5"
+    "@hubspot/api-client": "npm:^11.2.0"
     "@mailchimp/mailchimp_marketing": "npm:^3.0.80"
     "@next/eslint-plugin-next": "npm:^14.2.5"
     "@nextui-org/react": "npm:^2.4.6"
@@ -8326,6 +8343,16 @@ __metadata:
   version: 0.7.34
   resolution: "@types/ms@npm:0.7.34"
   checksum: 10c0/ac80bd90012116ceb2d188fde62d96830ca847823e8ca71255616bc73991aa7d9f057b8bfab79e8ee44ffefb031ddd1bcce63ea82f9e66f7c31ec02d2d823ccc
+  languageName: node
+  linkType: hard
+
+"@types/node-fetch@npm:^2.5.7":
+  version: 2.6.11
+  resolution: "@types/node-fetch@npm:2.6.11"
+  dependencies:
+    "@types/node": "npm:*"
+    form-data: "npm:^4.0.0"
+  checksum: 10c0/5283d4e0bcc37a5b6d8e629aee880a4ffcfb33e089f4b903b2981b19c623972d1e64af7c3f9540ab990f0f5c89b9b5dda19c5bcb37a8e177079e93683bfd2f49
   languageName: node
   linkType: hard
 
@@ -10060,6 +10087,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bottleneck@npm:^2.19.5":
+  version: 2.19.5
+  resolution: "bottleneck@npm:2.19.5"
+  checksum: 10c0/b0f72e45b2e0f56a21ba720183f16bef8e693452fb0495d997fa354e42904353a94bd8fd429868e6751bc85e54b6755190519eed5a0ae0a94a5185209ae7c6d0
+  languageName: node
+  linkType: hard
+
 "bowser@npm:^2.11.0":
   version: 2.11.0
   resolution: "bowser@npm:2.11.0"
@@ -11596,6 +11630,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"es6-promise@npm:^4.2.4":
+  version: 4.2.8
+  resolution: "es6-promise@npm:4.2.8"
+  checksum: 10c0/2373d9c5e9a93bdd9f9ed32ff5cb6dd3dd785368d1c21e9bbbfd07d16345b3774ae260f2bd24c8f836a6903f432b4151e7816a7fa8891ccb4e1a55a028ec42c3
+  languageName: node
+  linkType: hard
+
 "esbuild@npm:^0.18.10":
   version: 0.18.20
   resolution: "esbuild@npm:0.18.20"
@@ -12286,7 +12327,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"form-data@npm:^2.3.1":
+"form-data@npm:^2.3.1, form-data@npm:^2.5.0":
   version: 2.5.1
   resolution: "form-data@npm:2.5.1"
   dependencies:
@@ -15531,7 +15572,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2, node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.12":
+"node-fetch@npm:2, node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.12":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -18894,7 +18935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"url-parse@npm:^1.5.3":
+"url-parse@npm:^1.4.3, url-parse@npm:^1.5.3":
   version: 1.5.10
   resolution: "url-parse@npm:1.5.10"
   dependencies:
