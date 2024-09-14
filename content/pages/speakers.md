@@ -27,166 +27,216 @@ blocks:
           paragraph: ''
           id: ''
           images:
-            - name: Shannon Jenkins
-              position: 'Public Speaking Coach, Storytelling Strategist & Podcast Host'
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/shannon_jenkins.png
-                alt: Shannon Jenkins
-            - name: Loris Moser
-              position: >-
-                Co-Founder & CEO SunIce Festival, Founder & CEO NextGen
-                Properties GmbH
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/loris_moser.png
-                alt: Loris Moser
-            - name: Jens Heitland
-              position: CEO Succeed / Former Head of Innovation at IKEA Centres
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/jens_heitland.png
-                alt: Jens Heitland
-            - name: Corey Wright
-              position: Director Startup Programs Europe at Start2 Group
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/corey_wright.png
-                alt: Corey Wright
-            - name: Philipp Nüssli
-              position: Co-Founder & Co-CEO Headz Agency AG
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philipp_nuessli.png
-                alt: Philipp Nüssli
-            - name: Taulant Gashnjani
-              position: Content Creator / Komiker
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/taulant_gashnjani.png
-                alt: Taulant Gashnjani
-            - name: Brett Martin
-              position: President Kumospace / General Partner Charge.vc
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/brett_martin.png
-                alt: Brett Martin
-            - name: Damir Bogdan
-              position: CEO QuantumBasel AG
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/damir_bogdan.png
-                alt: Damir Bogdan
-            - name: David Granite
-              position: Moderator
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/david_granite.png
-                alt: David Granite
-            - name: Ian Epstein
-              position: EVP Global Head of Distribution & Capital Markets @ Republic.
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/ian_epstein.png
-                alt: Ian Epstein
-            - name: Bert Hofmänner
-              position: >-
-                Founder helfereinsatz.ch / Vicepresident KMU Verband Winterthur
-                und Umgebung
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/bert_hofmaenner.png
-                alt: Bert Hofmänner
-            - name: Chris Beyeler
-              position: Co-Founder & President KImpact
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/chris_beyeler.png
-                alt: Chris Beyeler
-            - name: Jerry Dreifuss
-              position: Co-Founder & CEO of Swiss Eyewear Group AG
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/jerry_dreifuss.png
-                alt: Jerry Dreifuss
-            - name: Fabian Huber
-              position: Co-Founder & CEO of UniBev GmbH
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/fabian_huber.png
-                alt: Fabian Huber
-            - name: Anastasia Barner
+            - name: 'Anastasia Barner'
               position: 'Founder, Author, TEDx Speaker'
+              description: >-
+                Anastasia Barner, author of "(Ge)Gründet - Start-Up-Szene Uncovered", is one of the youngest female founders in Germany and has been established in the start-up world for 5 years. Anastasia is considered the voice of Gen Z and is a TEDx speaker. She founded "FeMentor", the first reverse mentoring platform in Europe, and was also the international TikTok face of Deutsche Welle. Today, she appears on numerous stages as an expert and presenter and talks about social media, Generation Z and start-ups. She has received several awards for her work. Anastasia started out as a journalist at the age of 14 and found her way back to writing with the book
               image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/anastasia_barner.png
-                alt: Anastasia Barner
-            - name: Laura Matter
-              position: Co-Founder & CEO noii
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/laura_matter.png
-                alt: Laura Matter
-            - name: Philippe Sahli
-              position: Co-Founder & CEO Yokoy
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philippe_sahli.png
-                alt: Philippe Sahli
-            - name: Simon Furer
-              position: VP Finance Voliro AG
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/simon_furer.png
-                alt: Simon Furer
-            - name: Nadine Jürgensen
-              position: Co-Founder & COO elleXX
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/nadine_juergensen.png
-                alt: Nadine Jürgensen
-            - name: Joël Capt
-              position: CEO & Founder Peakora
-              image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/joël_capt.png
-                alt: Joël Capt
-            - name: Andreas Schlenker
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/anastasia_barner.png'
+                alt: 'Anastasia Barner'
+            - name: 'Andreas Schlenker'
               position: 'Head of M&A, Partnering and Investing Axpo Group'
+              description: >-
+                Seasoned professional with more than 20 years of experience in the startup world, ranging from Silicon Valley to VC investments to corporate development activities. Andreas is also the head of Axpo’s M&A team.
               image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/andreas_schlenker.png
-                alt: Andreas Schlenker
-            - name: Daniel Andres
-              position: Founding Partner Spicehaus Partners AG
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/andreas_schlenker.png'
+                alt: 'Andreas Schlenker'
+            - name: 'Bert Hofmänner'
+              position: 'Founder helfereinsatz.ch / Vicepresident KMU Verband Winterthur und Umgebung'
+              description: >-
+                Bert Hofmänner owns an internet agency in Winterthur and is Vice President of the KMU Verband Winterthur. He is currently expanding into the DACH region with his start-up project Helfereinsatz.ch.
               image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/daniel_andres.png
-                alt: Daniel Andres
-            - name: Thomas Dübendorfer
-              position: President SICTIC
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/bert_hofmaenner.png'
+                alt: 'Bert Hofmänner'
+            - name: 'Brett Martin'
+              position: 'President Kumospace / General Partner Charge.vc'
+              description: >-
+                Brett is Co-Founder of Kumospace, the virtual HQ for remote teams, and Charge Ventures, a pre/seed VC based in Brooklyn, NY. He also serves as Adjunct Professor at Columbia Business School, where he teaches data analytics. He loves you.
               image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/thomas_duebendorfer.png
-                alt: Thomas Dübendorfer
-            - name: Christoph Falk
-              position: Head of Start-up Coaching at Innosuisse
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/brett_martin.png'
+                alt: 'Brett Martin'
+            - name: 'Chris Beyeler'
+              position: 'Co-Founder & President KImpact'
+              description: >-
+                Chris Beyeler, President of KImpact, the association for artificial intelligence. He is an inspirer and networker in the field of artificial intelligence (AI). Known for his in-depth, inspiring, and humorous lectures, trainings, and podcasts, he combines extensive expertise with practical experience as a former CEO of an AI startup and developer. Chris drives the integration of AI into the Swiss economy by highlighting opportunities for increased efficiency and new job fields, while also emphasizing the necessity of responsible handling and education in this area.
               image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/christoph_falk.png
-                alt: Christoph Falk
-            - name: Lea von Bidder
-              position: 'Founder & CEO Expeerly, former Aca & Linouï'
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/chris_beyeler.png'
+                alt: 'Chris Beyeler'
+            - name: 'Christoph Falk'
+              position: 'Head of Start-up Coaching at Innosuisse'
+              description: >-
+                Christoph heads the Start-up Coaching at Innosuisse. He is the creator and manager of various initiatives and programs to promote science-based start-ups. Philosopher by training with a PhD in the field of causal inference and data analysis.
               image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/lea_von_bidder.png
-                alt: Lea von Bidder
-            - name: Gian Reto à Porta
-              position: Founder & CEO NORM
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/christoph_falk.png'
+                alt: 'Christoph Falk'
+            - name: 'Corey Wright'
+              position: 'Director Startup Programs Europe at Start2 Group'
+              description: >-
+                Corey Wright, a recognized “startup catalyst”, brings over 12 years of experience in launching, funding, and scaling startups and entrepreneurial ventures. A renowned speaker on fundraising, internationalization, and marketing, he’s also an expert mentor for tech and science startups in their early-stage development. As Director, Startup Programs Europe for Start2 Group, Corey oversees a diverse array of entrepreneurial initiatives across Germany/Europe and ensures the excellence of Start2 Group’s global offerings. These programs support over 300 startups annually, providing him with in-depth insight into emerging technologies and products shaping our future.
               image:
-                src: >-
-                  https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/gian_reto_à_porta.png
-                alt: Gian Reto à Porta
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/corey_wright.png'
+                alt: 'Corey Wright'
+            - name: 'Damir Bogdan'
+              position: 'CEO QuantumBasel AG'
+              description: >-
+                Damir Bogdan is CEO of QuantumBasel, focused on democratizing quantum computing and AI. He leads Actvide AG, consulting on digital transformation for C-Levels. Active in Switzerland and Silicon Valley, he was previously CIO & Head of Operations at Raiffeisen and part of Swisscom's strategy group. He founded a near shore development company and held various IT roles. Damir is a Board Member in Health Care, High-Tech, and Industry sectors, Senior Advisor at IWI University of St. Gallen, and a keynote speaker on quantum computing, AI, and digital transformation. Education includes an Executive MBA, and certificates from LBS, Harvard, MIT, and Singularity University.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/damir_bogdan.png'
+                alt: 'Damir Bogdan'
+            - name: 'Daniel Andres'
+              position: 'Founding Partner Spicehaus Partners AG'
+              description: >-
+                Founding Partner at Spicehaus Partners, a Swiss venture investor focused on promising early-stage B2B software companies. My background blends institutional expertise with entrepreneurial experience.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/daniel_andres.png'
+                alt: 'Daniel Andres'
+            - name: 'David Granite'
+              position: 'Moderator'
+              description: >-
+                David leads of team of highly AI and technology-skilled creatives for the global Dorier Group, a division of the MCI Group. His team forges new paths in experience with organizations such as AI for Good, the United Nations, Real Madrid and countless others by specializing in vectorizing emotions through storytelling and technology. David’s aim is to craft unique moments that effectively convey a client's message, to strike the perfect balance between innovation and tradition. This is done by understanding the target audience, finding the most impactful means to evoke emotions, and amplifying the call-to-action response. With expert technical advice and support in the realm of disruptive technology and digital design methodologies, David leads clients and teams to stay at the forefront of innovation and in the company of trendsetters and industry leaders spanning technology, arts, and entrepreneurship. A highly self-motivated professional with experience in both the public and private sector, David has has extensive experience within the entertainment, management, education, hospitality and real estate fields.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/david_granite.png'
+                alt: 'David Granite'
+            - name: 'Fabian Huber'
+              position: 'Co-Founder & CEO of UniBev GmbH'
+              description: >-
+                Fabian Huber, Managing Director of UniBev. UniBev is the leading manufacturer of trend beverages and creator products in the DACH region.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/fabian_huber.png'
+                alt: 'Fabian Huber'
+            - name: 'Gian Reto à Porta'
+              position: 'Founder & CEO NORM'
+              description: >-
+                Entrepreneur
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/gian_reto_à_porta.png'
+                alt: 'Gian Reto à Porta'
+            - name: 'Ian Epstein'
+              position: 'EVP Global Head of Distribution & Capital Markets @ Republic.'
+              description: >-
+                Ian Epstein is EVP, Capital Markets & Distribution at Republic, and will run the Broker-Dealer and provide capital raising support to all business lines. Prior to Republic, Ian was Global Head of Digital Assets at Makor Group, with over fifteen years of experience as a portfolio manager at Argonaut Capital, Caxton Associates, Commonwealth Opportunity Capital, Autonomy Capital, and Exodus Point Capital. Amongst his achievements, Epstein counts the tenfold growth in AUM and a consistent top decile performance across all hedge fund strategies during his 8-year tenure as a senior portfolio manager at Autonomy Capital (2010 – 2018). His investment experience spans developed and emerging markets across all asset classes including FX, equities, sovereign/quasi-sovereign credit and derivative products. A Summa Cum Laude graduate in Political Economy from the University of California, Berkeley, Epstein spent five years as a private equity analyst in the People's Republic of China prior to starting his career as a successful global macro portfolio manager. He is a founding member of the Milken Institute Young Leaders Circle, a member of the Economics Club of New York and a civilian alumnus of the United States Army War College. Select Media CNBC, Oct. 2022 https://www.cnbc.com/video/2022/10/04/bitcoin-inches-back-above-20000-and-a-deep-dive-into-the-state-of-us-regulation-cnbc-crypto-world.html Real Vision Finance, Aug. 2021 https://www.youtube.com/watch?v=73jItW4RTJw
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/ian_epstein.png'
+                alt: 'Ian Epstein'
+            - name: 'Jens Heitland'
+              position: 'CEO Succeed / Former Head of Innovation at IKEA Centres'
+              description: >-
+                Jens Heitland, former Global Head of Innovation at IKEA and a seasoned innovator, is renowned for driving sustainable growth and innovation. His entrepreneurial ventures focus on human-centric innovation, leadership and personal branding, significantly impacting leadership development across industries. Jens's work in fostering entrepreneurial spirit, combined with his commitment to merging academic insights with practical applications, positions him as a pivotal figure in shaping the future of corporate innovation and leadership.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/jens_heitland.png'
+                alt: 'Jens Heitland'
+            - name: 'Jerry Dreifuss'
+              position: 'Co-Founder & CEO of Swiss Eyewear Group AG'
+              description: >-
+                Jerry Dreifuss is one of the founders of the Swiss Eyewear Group (International) AG; a global Eyewear company- active in over 90 markets- with a focus on Private Label and Branded Eyewear production and its retail distribution. As its CEO and member of the Board, he is responsible for the entire operational business of this fast-growing company and its more than 70 employees from 10 different countries. Prior to founding Swiss Eyewear Group in 2013, Jerry was Global Vice President of Marketing at Polaroid Eyewear, where he was also responsible for the Polaroid Eyewear business in Asia and South America. Before joining the eyewear industry, Jerry held various sales and marketing positions at Masterfoods and L'Oréal in Zurich, Prague and Paris. Jerry studied in St.Gallen, Geneva and London and holds a Masters in Business Administration from the University of St. Gallen (HSG). He is also on the board of trustees of selbsthilfecenter.ch, a non-profit organization that supports self-help groups as well on the advisory board of several consulting companies. He is also active in the NGO onedollarglasses.ch and a member of the SEF.ALUMNI, MarketingNatives and the HSG Alumni Networks. He recently founded a second company, that puts a disruptive approach in the Digital- and Tele-Shopping universe.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/jerry_dreifuss.png'
+                alt: 'Jerry Dreifuss'
+            - name: 'Joël Capt'
+              position: 'CEO & Founder Peakora'
+              description: >-
+                Former Head of Growth at Beekeeper with VC experience in Silicon Valley, Joël has a diverse background. With Peakora, he and his team developed a comprehensive business growth system, with which they already scaled over 100 companies.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/joël_capt.png'
+                alt: 'Joël Capt'
+            - name: 'Laura Matter'
+              position: 'Co-Founder & CEO noii'
+              description: >-
+                Laura Matter co-founded the dating startup noii in 2022. Since then they are changing dating into a more authentic and real place. The startup raised 1.5 mio. chf and is expanding over Switzerland. Laura is 24 years old, lives in Winterthur.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/laura_matter.png'
+                alt: 'Laura Matter'
+            - name: 'Lea von Bidder'
+              position: 'Founder & CEO Expeerly, former Ava & Linouï'
+              description: >-
+                Founder of expeerly, former founder Ava and L'inouï
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/lea_von_bidder.png'
+                alt: 'Lea von Bidder'
+            - name: 'Loris Moser'
+              position: 'Co-Founder & CEO SunIce Festival, Founder & CEO NextGen Properties GmbH'
+              description: >-
+                Loris Moser, co-founder and CEO of Switzerland's fastest-growing music festival, SunIce - also known as the "Coachella of the Alps" - curates electrifying festival experiences in St. Moritz and Ascona. With a passion for unforgettable moments, SunIce brings people together to dance, rave, and celebrate life. With the launch of SunIce Festival Ascona 2024, his team is currently establishing the second festival location within just three years.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/loris_moser.png'
+                alt: 'Loris Moser'
+            - name: 'Nadine Jürgensen'
+              position: 'Co-Founder & COO elleXX'
+              description: >-
+                Nadine Jürgensen has started ellexx – a finance plattform for women – with her Co-Founders in fall 2021. In 2023 the team successfully completed their crowdinvesting and launched the ellexx App in 2024.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/nadine_juergensen.png'
+                alt: 'Nadine Jürgensen'
+            - name: 'Patrick Griss'
+              position: 'CEO Zühlke Ventures'
+              description: >-
+                Patrick Griss has been at the forefront of DeepTech innovation for 25 years – as investor, in corporate roles, as founder, board member, engineer, or advisor to Leadership teams. He is an engineer by training and contributed to more than 40 journeys from invention to industrialisation, to commercial launch, to scale-up, or failure.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/patrick_griss.png'
+                alt: 'Patrick Griss'
+            - name: 'Philipp Nüssli'
+              position: 'Co-Founder & Co-CEO Headz Agency AG'
+              description: >-
+                31 Jähriger Vater, Gründer und Social Media Enthusiast aus Winterthur.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philipp_nuessli.png'
+                alt: 'Philipp Nüssli'
+            - name: 'Philippe Sahli'
+              position: 'Co-Founder & CEO Yokoy'
+              description: >-
+                Philippe Sahli is the Co-Founder and CEO of the Sequoia Capital backed Swiss Scale-up Yokoy. Yokoy automates spend management for mid-size and enterprise customers based on Artificial Intelligence. Philippe studied Finance and Accounting and worked in various Finance functions before starting Yokoy.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philippe_sahli.png'
+                alt: 'Philippe Sahli'
+            - name: 'Shannon Jenkins'
+              position: 'Public Speaking Coach, Storytelling Strategist & Podcast Host'
+              description: >-
+                If you want to inspire, persuade and sell you need STORY. You also need to know how to tell it well. I teach you how to create an authentic brand story and uplevel your speaking skills for greater impact.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/shannon_jenkins.png'
+                alt: 'Shannon Jenkins'
+            - name: 'Simon Furer'
+              position: 'VP Finance Voliro AG'
+              description: >-
+                Simon serves as the VP of Finance at Voliro, bringing extensive experience of running and building finance and operations departments in various startups and scaleups. Simon holds a M.A. in law and economics hence combines a strong legal background with financial acumen. An entrepreneurial spirit at heart, he thrives on collaborating with ambitious individuals and organizations. Simon is dedicated to driving financial excellence and innovation within the Voliro team.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/simon_furer.png'
+                alt: 'Simon Furer'
+            - name: 'Taulant Gashnjani'
+              position: 'Content Creator / Komiker'
+              description: >-
+                Comedian / Content Creator, reaches monthly several millions of people by creating entertaining videos on social media,
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/taulant_gashnjani.png'
+                alt: 'Taulant Gashnjani'
+            - name: 'Thierry Kneissler'
+              position: 'Co-Founder Twint & Ex-CEO, Verwaltungsrat und Investor'
+              description: >-
+                Thierry Kneissler ist heute hauptsächlich als Verwaltungsrat bei Startups und KMU engagiert. Zudem ist er Strategieberater, Startup-Coach und Co-Dozent des Lehrgangs «Strategy Champion». Als Mitgründer und CEO von TWINT war er 2014-2018 massgeblich am Aufbau der Schweizer Mobile-Payment Lösung beteiligt. Davor war er 10 Jahre (2004-2014) bei PostFinance AG tätig Strategieverantwortlicher, 2008-2014 als Mitglied der Geschäftsleitung. Er ist von Haus aus Ökonom (Universität Bern) und verfügt über einen Executive MBA der Universität St. Gallen.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/thierry_kneissler.png'
+                alt: 'Thierry Kneissler'
+            - name: 'Thomas Dübendorfer'
+              position: 'President SICTIC'
+              description: >-
+                Thomas Dübendorfer is President of SICTIC, the leading angel investor club in Switzerland. He was awarded SECA Business Angel of the Year 2024 and published the free Swiss Angel Investor Handbook. He holds a Ph.D. in CS from ETH Zurich and has worked in Silicon Valley and at Google.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/thomas_duebendorfer.png'
+                alt: 'Thomas Dübendorfer'
+            - name: 'Matthias Bryner'
+              position: 'Founder & CEO of findependent'
+              description: >-
+                I'm Matthias, founder and CEO of the Swiss ETF investment app findependent. We help more than 15'000 users to make more out of their savings and have raised CHF 5 million in a crowdinvesting in 2024.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/matthias_bryner.png'
+                alt: 'Matthias Bryner'
+            - name: 'Philip Schläfli'
+              position: 'Gründer Kommunikationshelden GmbH'
+              description: >-
+                Communicationstrainer and Speaker with humor
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philip_schlaefli.png'
+                alt: 'Philip Schläfli'
           background_color: bg-sn-black-light
       - content_block:
           subtitle: Meet our speaker
