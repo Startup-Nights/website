@@ -6,7 +6,7 @@ export default function HeaderBanner() {
 
     useEffect(() => {
         const id = setTimeout(() => {
-            setTimeLeft(calculateTime('2024-10-30'))
+            setTimeLeft(calculateTime('2024-10-31 14:00:00'))
         }, 1000)
         return () => clearTimeout(id)
     })
@@ -26,11 +26,13 @@ export default function HeaderBanner() {
 }
 
 function calculateTime(date: string): string {
-    const difference = +new Date(date) - +new Date()
+    const diffTime = Math.abs(+new Date(date) - +new Date());
+    const difference = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
     let timeLeft = ''
 
     if (difference > 0) {
-        timeLeft = '' + Math.floor(difference / (1000 * 60 * 60 * 24))
+        timeLeft = '' + difference
     } else {
         timeLeft = 'today'
     }
