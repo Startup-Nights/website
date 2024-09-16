@@ -18,7 +18,7 @@ blocks:
           will preview and nominate the startups that will get invited to pitch.
         - The application deadline is October 10th.
       cta:
-        link: 'https://d149nhnbj51ybz.cloudfront.net'
+        link: 'https://d3ftxu49ktxrt6.cloudfront.net/'
         text: Apply now!
       cta_secondary:
         link: 'https://www.startupworldcup.io/'
