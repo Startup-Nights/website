@@ -1,4 +1,4 @@
-import Hubspot from '@hubspot/api-client'
+import * as Hubspot from '@hubspot/api-client'
 
 export default async (req: any, res: any) => {
     const hubspotClient = new Hubspot.Client({ accessToken: process.env.HUBSPOT_APP_TOKEN })
