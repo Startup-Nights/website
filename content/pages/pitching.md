@@ -100,6 +100,24 @@ blocks:
           https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/171844469-aron_braun_500x500.png
         alt: Aron Braun
         stage: seed
+      - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/412598289-jan_lederhausen_500x500.png
+        name: 'Jan Lederhausen'
+        position: 'Startup Mentor & Workshop Leader'
+        linkedin: 'https://www.linkedin.com/in/jan-lederhausen/'
+        alt: 'Jan Lederhausen'
+        stage: 'pre-seed'
+      - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/974311328-craig_cooper_500x500.png
+        name: 'Craig Cooper'
+        position: 'Partner @ Serpentine Ventures'
+        linkedin: 'https://linkedin.com/in/craigrcooper'
+        alt: 'Craig Cooper'
+        stage: 'pre-seed'
+      - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/244509073-pascal_stuerchler_500x500.png
+        name: 'Pascal Stürchler'
+        position: 'Startup founder & investor, mentor'
+        linkedin: 'https://www.linkedin.com/in/pascalstuerchler/'
+        alt: 'Pascal Stürchler'
+        stage: 'pre-seed'
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
