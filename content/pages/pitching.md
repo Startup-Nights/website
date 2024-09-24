@@ -45,21 +45,21 @@ blocks:
         alt: Andreas Schlenker
         stage: seed
       - name: Arijana Walcott
-        position: 'Impact Investor, Entrepreneur and Board Member'
+        position: 'Managing Partner, DART Ventures'
         linkedin: 'https://www.linkedin.com/in/arijanawalcott/'
         src: >-
           https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/591259665-arijana_walcott_500x500.png
         alt: Arijana Walcott
         stage: seed
       - name: Guy Giuffredi
-        position: Business Angel and Cofounder Aare Ventures
+        position: General Partner at koyo
         linkedin: 'https://www.linkedin.com/in/guy-giuffredi-45399751/'
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/guy_giuffredi.png
         alt: Guy Giuffredi
         stage: seed
       - name: Jacqueline Ruedin Rüsch
-        position: 'Venture Capital Investor, Board Member and Public Speaker'
+        position: Founding General Partner at Privilège Ventures
         linkedin: 'https://www.linkedin.com/in/jacquelineruedinr%C3%BCsch/'
         src: >-
           https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/72801623-jacqueline_ruedin_ruesch_500x500.png
@@ -87,37 +87,40 @@ blocks:
         alt: Andreas Göldi
         stage: seed
       - name: Claudius Stammbach
-        position: Investment Manager at Sparrow Ventures
+        position: Project Lead at Migros M&A
         linkedin: 'https://www.linkedin.com/in/claudiusstammbach/'
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2023/jury/claudius_stammbach.png
         alt: Claudius Stammbach
         stage: seed
       - name: Aron Braun
-        position: 'Entrepreneur, Business Angel and Lecturer'
+        position: Business Angel at BAS and Professor at BHF
         linkedin: 'https://www.linkedin.com/in/aron-braun/'
         src: >-
           https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/171844469-aron_braun_500x500.png
         alt: Aron Braun
         stage: seed
-      - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/412598289-jan_lederhausen_500x500.png
-        name: 'Jan Lederhausen'
-        position: 'Startup Mentor & Workshop Leader'
+      - name: Jan Lederhausen
+        position: Transaction Manager – UBS Growth Advisory
         linkedin: 'https://www.linkedin.com/in/jan-lederhausen/'
-        alt: 'Jan Lederhausen'
-        stage: 'pre-seed'
-      - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/974311328-craig_cooper_500x500.png
-        name: 'Craig Cooper'
-        position: 'Partner @ Serpentine Ventures'
+        src: >-
+          https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/412598289-jan_lederhausen_500x500.png
+        alt: Jan Lederhausen
+        stage: pre-seed
+      - name: Craig Cooper
+        position: 'Partner, Serpentine Ventures'
         linkedin: 'https://linkedin.com/in/craigrcooper'
-        alt: 'Craig Cooper'
-        stage: 'pre-seed'
-      - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/244509073-pascal_stuerchler_500x500.png
-        name: 'Pascal Stürchler'
-        position: 'Startup founder & investor, mentor'
+        src: >-
+          https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/974311328-craig_cooper_500x500.png
+        alt: Craig Cooper
+        stage: pre-seed
+      - name: Pascal Stürchler
+        position: Co-Founder & CEO Bloomhaus Ventures AG
         linkedin: 'https://www.linkedin.com/in/pascalstuerchler/'
-        alt: 'Pascal Stürchler'
-        stage: 'pre-seed'
+        src: >-
+          https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/244509073-pascal_stuerchler_500x500.png
+        alt: Pascal Stürchler
+        stage: pre-seed
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
