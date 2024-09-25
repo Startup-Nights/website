@@ -246,21 +246,21 @@ blocks:
     partners:
       - partners:
           - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/711765031-Kopie+von+OoomniumLogo_Wide_Color.png
-            alt: oomnium
-            link: 'https://oomnium.com/en'
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/673761495-friendlylogo_600x300.png
+            alt: friendly
+            link: 'https://friendly.ch'
           - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/740971315-Type%253DCombined+Mark%252C+Color%253DPrimary_scaled.png
-            alt: graphe health
-            link: 'https://grapehealth.ch/'
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/553474455-logo_600x300.png
+            alt: chainstaff
+            link: 'https://www.chainstaff.info/'
           - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/632614960-steasy_black_registered_CMYK.png
-            alt: steasy
-            link: 'https://steasy.ch/'
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/836833444-mslogopetrol_600x300.png
+            alt: mindswitch
+            link: 'https://mindswitch.ch'
           - src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/startups/769135031-onify_Logo_Black_RGB.svg
-            alt: onify
-            link: 'https://www.onify.ch/'
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/166577777-tethys_logo_black_safezone_600x300.png
+            alt: thethys
+            link: 'https://www.tethys-robotics.ch/'
     _template: partner_list
   - content_block:
       subtitle: Pitching Competition
