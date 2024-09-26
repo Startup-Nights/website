@@ -102,7 +102,7 @@ blocks:
               description: >-
                 Dr. Yasemin Tahris is the co-founder and co-CEO of FLOWIT AG. FLOWIT is an AI and psychology-based coach for employee development and retention in the field of frontline people.In addition to her work at FLOWIT AG, Yasemin Tahris has experience in strategic leadership of medium-sized companies and has worked as a lecturer in occupational and organizational psychology at universities.
               image:
-                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/dr._yasemin_tahris'
+                src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/921622262-Dr_Yasemin_Tahris_500x500.png'
                 alt: 'Dr. Yasemin Tahris'
             - name: 'Fabian Huber'
               position: 'Co-Founder & CEO of UniBev GmbH'
@@ -207,7 +207,7 @@ blocks:
               description: >-
                 Roi Tavor is the Managing Director of the region Switzerland and Austria at Google Cloud as of June 2022. Roi joined Google Cloud in Zurich as Head of Financial Services in November of 2021; in this role Roi led the sales activities for financial services companies and engages with numerous global banks and insurance companies based in Switzerland to strategically drive cloud adoption, support the industry’s digital transformation and enhance customer satisfaction. Roi has more than 15 years of financial services experience as an entrepreneur and as a senior executive at Google and Swiss Bank Julius Baer.
               image:
-                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/roi_y._tavor'
+                src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/804572805-Roi_Y_Tavor_500x500.png'
                 alt: 'Roi Y. Tavor'
             - name: 'Shannon Jenkins'
               position: 'Public Speaking Coach, Storytelling Strategist & Podcast Host'
