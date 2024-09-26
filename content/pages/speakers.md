@@ -102,7 +102,7 @@ blocks:
               description: >-
                 Dr. Yasemin Tahris is the co-founder and co-CEO of FLOWIT AG. FLOWIT is an AI and psychology-based coach for employee development and retention in the field of frontline people.In addition to her work at FLOWIT AG, Yasemin Tahris has experience in strategic leadership of medium-sized companies and has worked as a lecturer in occupational and organizational psychology at universities.
               image:
-                src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/921622262-Dr_Yasemin_Tahris_500x500.png'
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/dr_yasemin_tahris.png'
                 alt: 'Dr. Yasemin Tahris'
             - name: 'Fabian Huber'
               position: 'Co-Founder & CEO of UniBev GmbH'
@@ -132,6 +132,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/jens_heitland.png'
                 alt: 'Jens Heitland'
+            - name: 'Jeremias Wehrli'
+              position: 'Co-Founder & CEO of Cyltronic AG'
+              description: >-
+                Jeremias realized that the air cylinders widely used in industry today are extremely energy-intensive and inefficient. That is why he and his team developed the Cyltronic electric cylinder, which saves 92% energy.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/jeremias_wehrli.png'
+                alt: 'Jeremias Wehrli'
             - name: 'Jerry Dreifuss'
               position: 'Co-Founder & CEO of Swiss Eyewear Group AG'
               description: >-
@@ -167,6 +174,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/loris_moser.png'
                 alt: 'Loris Moser'
+            - name: 'Matthias Bryner'
+              position: 'Founder & CEO of findependent'
+              description: >-
+                I'm Matthias, founder and CEO of the Swiss ETF investment app findependent. We help more than 15'000 users to make more out of their savings and have raised CHF 5 million in a crowdinvesting in 2024.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/matthias_bryner.png'
+                alt: 'Matthias Bryner'
             - name: 'Nadine Jürgensen'
               position: 'Co-Founder & COO elleXX'
               description: >-
@@ -188,6 +202,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/peter_muehle.png'
                 alt: 'Peter Mühle'
+            - name: 'Philip Schläfli'
+              position: 'Gründer Kommunikationshelden GmbH'
+              description: >-
+                Communicationstrainer and Speaker with humor
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philip_schlaefli.png'
+                alt: 'Philip Schläfli'
             - name: 'Philipp Nüssli'
               position: 'Co-Founder & Co-CEO Headz Agency AG'
               description: >-
@@ -207,7 +228,7 @@ blocks:
               description: >-
                 Roi Tavor is the Managing Director of the region Switzerland and Austria at Google Cloud as of June 2022. Roi joined Google Cloud in Zurich as Head of Financial Services in November of 2021; in this role Roi led the sales activities for financial services companies and engages with numerous global banks and insurance companies based in Switzerland to strategically drive cloud adoption, support the industry’s digital transformation and enhance customer satisfaction. Roi has more than 15 years of financial services experience as an entrepreneur and as a senior executive at Google and Swiss Bank Julius Baer.
               image:
-                src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/804572805-Roi_Y_Tavor_500x500.png'
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/roi_y_tavor.png'
                 alt: 'Roi Y. Tavor'
             - name: 'Shannon Jenkins'
               position: 'Public Speaking Coach, Storytelling Strategist & Podcast Host'
@@ -244,20 +265,20 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/thomas_duebendorfer.png'
                 alt: 'Thomas Dübendorfer'
-            - name: 'Matthias Bryner'
-              position: 'Founder & CEO of findependent'
+            - name: 'Tobias Reichmuth'
+              position: 'Founding Partner Maximon AG'
               description: >-
-                I'm Matthias, founder and CEO of the Swiss ETF investment app findependent. We help more than 15'000 users to make more out of their savings and have raised CHF 5 million in a crowdinvesting in 2024.
+                Swiss serial entrepreneur Tobias Reichmuth, recognized for his successful investments in over 20 startups, is reshaping global perspectives on aging. By challenging existing beliefs, he envisions a promising new era of longevity, where age holds minimal significance. Through his co-founded longevity accelerator Maximon, he showcases a dedication to advancing research and inspiring investors to seize the vast market opportunities valued trillions of dollars.
               image:
-                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/matthias_bryner.png'
-                alt: 'Matthias Bryner'
-            - name: 'Philip Schläfli'
-              position: 'Gründer Kommunikationshelden GmbH'
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/tobias_reichmuth.png'
+                alt: 'Tobias Reichmuth'
+            - name: 'Peter Kuhn'
+              position: 'Legal Partner at MME'
               description: >-
-                Communicationstrainer and Speaker with humor
+                Peter advises companies in all areas of commercial and corporate law and start-ups and founders on the financing and implementation of their business ideas.
               image:
-                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philip_schlaefli.png'
-                alt: 'Philip Schläfli'
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/peter_kuhn.png'
+                alt: 'Peter Kuhn'
           background_color: bg-sn-black-light
       - content_block:
           subtitle: Meet our speaker
