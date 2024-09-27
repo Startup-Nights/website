@@ -76,13 +76,13 @@ blocks:
             - content_block:
                 title: Opening Hours and Venue
                 content:
-                  - 'Date: 2 & 3 November 2023'
+                  - 'Date: 31 October & 1 November 2024'
                   - >-
                     Location: Eulachhallen Winterthur, Wartstrasse 73, 8400
                     Winterthur, Switzerland
                   - >-
-                    Opening Hours For Visitors: 2 November 2023, from 1pm to
-                    10.30pm and 3 November 2023, from 1pm to 12am
+                    Opening Hours For Visitors: 31 October 2024, from 1pm to
+                    10.30pm and 1 November 2024, from 1pm to 12am
                 cta:
                   link: 'https://goo.gl/maps/uvv6Pfok8nBfaHMo9'
                   text: Google Maps
@@ -98,7 +98,7 @@ blocks:
                     visit the Tickets Page to select your ticket type and
                     complete the registration process.
                 cta:
-                  link: https://www.b2match.com/e/startup-nights-2024/sign-up
+                  link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
                   text: Awesome!
             - content_block:
                 title: 'What types of tickets are available, and what do they include?'
@@ -108,7 +108,7 @@ blocks:
                     needs. Details on what each ticket type includes can be
                     found on our Tickets Page.
                 cta:
-                  link: https://www.b2match.com/e/startup-nights-2024/sign-up
+                  link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
                   text: Show me
             - content_block:
                 title: Is there a student discount available?
@@ -138,43 +138,50 @@ blocks:
                 title: Can I transfer or refund my ticket if I can't attend?
                 content:
                   - >-
-                    Unfortunately, tickets are non-transferable and
-                    non-refundable. However, if you are unable to attend, you
-                    may contact us to gifting your ticket to someone else.
+                    If you purchased the wrong ticket, your ticket can be
+                    refunded up to 14 days before the event. Please note that no
+                    refund is possible if the ticket is not returned within this
+                    time limit.  If you don’t attend the event (no-show), the
+                    ticket will not be refundable. Please also see our Terms &
+                    Conditions.
+                cta:
+                  link: /terms-and-conditions
+                  text: Terms and Conditions
             - content_block:
                 title: Can I bring my own food and drinks?
                 content:
                   - >-
-                    Outside food and drinks are generally not permitted. Food
-                    and beverages will be available for free at the event.
+                    There will be enough food and beverages available at the
+                    event for free.
             - content_block:
                 title: Will there be a coat check or bag storage available?
                 content:
                   - >-
-                    Yes, a coat check and bag storage area will be available
-                    on-site for your convenience.
+                    A coat check and bag storage area will be available on-site
+                    for your convenience. Startup Nights assume no liability for
+                    your personal belongings.
             - content_block:
-                title: How can I become a sponsor or exhibitor at the event?
+                title: How can I become a partner or exhibitor at the event?
                 content:
                   - >-
-                    If you're interested in sponsoring or exhibiting at Startup
-                    Nights, please visit our Partner Page for more information
-                    and contact details.
+                    If you are interested in partnering up or exhibiting at
+                    Startup Nights, please visit our Partner Page for more
+                    information and contact details.
                 cta:
-                  link: /partner-intro
+                  link: /partner
                   text: Check out your options
             - content_block:
                 title: WLAN
                 content:
-                  - 'WLAN name: StartupNights'
-                  - 'Password: StartupNights2023'
+                  - 'Name: StartupNights'
+                  - 'Password: StartupNights'
       - content_block:
           subtitle: Partner FAQ
           title: Partner Information
           content:
             - >-
               We are thrilled to have you as a partner for the Startup Nights
-              2023,  and we want to ensure that you have all the essential
+              2024, and we want to ensure that you have all the essential
               information  you need to prepare yourself for the event.
             - >-
               Below, you will find a comprehensive guide with all the important 
@@ -188,18 +195,17 @@ blocks:
             - content_block:
                 title: Event details
                 content:
-                  - 'Date: 2 & 3 November 2023'
+                  - 'Date: 31 October -  1 November 2024'
                   - >-
                     Location: Eulachhallen Winterthur, Wartstrasse 73, 8400
                     Winterthur, Switzerland
                   - 'Event Organizer: Entrepreneur Club Winterthur'
                   - >-
-                    Opening Hours For Visitors: 2 November 2023, from 1pm to
-                    10.30pm and 3 November 2023, from 1pm to 12am
+                    Opening Hours For Visitors: 31 October 2024, from 1pm to
+                    10.30pm and 1 November 2024, from 1pm to 12am.
                   - >-
-                    Opening Hours For Partner & Exhibitors: 2 November 2023,
-                    from 9am to 11pm and 3 November 2023, from 11am to 12am, 4
-                    November 2023, from 9am to 12pm
+                    Opening Hours For Partner & Exhibitors: 31 October 2024,
+                    from 9am to 11pm, 1 November 2024, from 11am to 12am
               image:
                 src: >-
                   https://startupnights.fra1.digitaloceanspaces.com/2023/pictures/eulachhallen.jpg
@@ -210,8 +216,10 @@ blocks:
                   - 'Nearby airport: Zurich (ZRH)'
                   - 'Nearby train station: Winterthur, walk 10-15 minutes'
                   - >-
-                    Parking: [Specify parking areas for partners and any
-                    conditions/restrictions]
+                    Parking: The number of parking spaces in front of the
+                    Eulachhallen is very limited. Exhibitors with a booth are
+                    each provided with one parking space. Cost: CHF 10 for two
+                    days of parking
                 cta:
                   link: 'https://goo.gl/maps/uvv6Pfok8nBfaHMo9'
                   text: Google Maps
@@ -233,7 +241,7 @@ blocks:
                     discount code yet, please get in touch with our partner
                     team.
                 cta:
-                  link: https://www.b2match.com/e/startup-nights-2024/sign-up
+                  link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
                   text: Tickets
                 cta_secondary:
                   link: 'mailto:partner@startup-nights.ch'
@@ -279,10 +287,10 @@ blocks:
             - content_block:
                 title: 'Booth set-up, dismantling & material (un)loading'
                 content:
-                  - 'Set-up Times: 2 November 2023, 7 am - 12 pm'
+                  - 'Set-up Times: 31 October 2024, 8am - 12pm'
                   - >-
-                    Dismantling Times: 3 November 2023, 11pm - 12am and 4
-                    November 2023 7 am - 10 pm
+                    Dismantling Times: 1 November 2024, 11pm - 1am  and 2
+                    November 2024, 7am - 10am
                   - >-
                     Material (Un)Loading: The parking lot can be used for
                     unloading. On the side of the hall will be a large gate into
@@ -326,7 +334,7 @@ blocks:
                   - 'Equipment: either a beamer or a screen will be available'
                 cta:
                   link: 'mailto:workshop@startup-nights.ch'
-                  text: Questions to your workshop
+                  text: questions regarding your workshop
             - content_block:
                 title: Keynote Speeches
                 content:
@@ -348,8 +356,7 @@ blocks:
                   link: 'mailto:redaktion@founded.ch'
                   text: Send us the files
                 cta_secondary:
-                  link: >-
-                    https://drive.google.com/drive/folders/1ADa6y1fSwDj1GOopZWttHz-PRJXSuDMu
+                  link: 'https://founded.ch/partner/'
                   text: Check out the details
             - content_block:
                 title: Promotion
@@ -407,7 +414,7 @@ blocks:
           content:
             - >-
               We are thrilled to have you as a partner for the Startup Nights
-              2023,  and we want to ensure that you have all the essential
+              2024,  and we want to ensure that you have all the essential
               information  you need to prepare yourself for the event.
             - >-
               Below, you will find a comprehensive guide with all the important 
@@ -417,8 +424,8 @@ blocks:
             text: Michel Luescher - michel@hotelgyms.com
             link: 'mailto:michel@hotelgyms.com'
           - name: Point of Contact - Onboarding
-            text: Adrian Tureatca - tureatca.adrian@gmail.com
-            link: 'mailto:tureatca.adrian@gmail.com'
+            text: Adrian Tureatca - world@startup-nights.ch
+            link: 'mailto:world@startup-nights.ch'
         dropdown_items:
           items:
             - content_block:
@@ -429,7 +436,7 @@ blocks:
                     “Entrepreneur Club Winterthur” (ECW).
                 list:
                   list_items:
-                    - 'When: 2 & 3 November 2023'
+                    - 'When: 31 October - 1 November 2024'
                     - >-
                       Where: Eulachhalle Winterthur, Wartstrasse 73, 8400
                       Winterthur, Switzerland
@@ -437,12 +444,11 @@ blocks:
                 title: Opening Hours
                 content:
                   - >-
-                    For Visitors: 2 November 2023, from 1pm to 10.30pm and 3
-                    November 2023, from 1pm to 12am
+                    For Visitors: 31 October 2024, from 1pm to 10.30pm and 1
+                    November 2024, from 1pm to 12am
                   - >-
-                    For Exhibitors: 2 November 2023, from 9am to 11pm and 3
-                    November 2023, from 11am to 12am, 4 November 2023, from 9am
-                    to 10am
+                    For Exhibitors: 31 October 2024, from 9am to 11pm and 1
+                    November 2024, from 11am to 12am
                 list:
                   title: Getting to the venue & parking
                   list_items:
@@ -554,18 +560,19 @@ blocks:
                     with it.
               infopoints:
                 - name: Set-up Times
-                  text: '2 November 2023, 07 am - 12 pm'
+                  text: '31 October 2024, 8am - 12pm'
                 - name: Dismantling Times
                   text: >-
-                    3 November 2023, 11pm - 12am and 4 November 2023, 07 am - 10
-                    am
+                    1 November 2024, 11pm - 1am and 2 November 2024, 7am - 10pm
             - content_block:
                 title: Internet Connection
                 content:
                   - >-
                     At the event, Wi-Fi will be provided. While ensuring a
                     stable internet connection is our priority, we strongly
-                    recommend preparing an okline version as a precaution.
+                    recommend preparing an online version as a precaution.
+                  - 'Name: StartupNights'
+                  - 'Password: StartupNights'
             - content_block:
                 title: Catering
                 content:
@@ -585,7 +592,8 @@ blocks:
                   - >-
                     As a startup with a booth, you're eligible for one (1) car
                     parking ticket. You can purchase this 2-day parking ticket
-                    for CHF 10.
+                    for CHF 10. Please be aware of the limited number of parking
+                    spaces.
             - content_block:
                 title: Accommodation
                 content:
