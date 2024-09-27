@@ -1,6 +1,16 @@
 ---
 title: Pitching Competition
 blocks:
+  - title: Pitching Sessions
+    description: At Startup Nights 2024 there will again be two pitching sessions.
+    openGraph:
+      url: 'https://www.startup-nights.ch/pitching'
+      site_name: Pitching Sessions
+      images:
+        - url: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2023/pictures/2023-afterparty.png
+          alt: Startup Night Stage
+    _template: seo
   - content_block:
       subtitle: Apply here
       title: Pitching sessions.
