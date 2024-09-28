@@ -494,7 +494,7 @@ blocks:
                   text: Live DAB
                 cta_secondary:
                   link: >-
-                    https://company-239260.frontify.com/d/6Us5PJua15yW/guidelines?#/for-partners/social-media-postings-1
+                    https://company-239260.frontify.com/d/6Us5PJua15yW/guidelines#/for-startups/social-media-postings/promote-your-booth
                   text: Marketing Material
               infopoints:
                 - name: Marketing Material
