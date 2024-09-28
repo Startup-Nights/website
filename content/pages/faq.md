@@ -492,6 +492,10 @@ blocks:
                 cta:
                   link: 'https://livedab.com/campaign/tT7CpES'
                   text: Live DAB
+                cta_secondary:
+                  link: >-
+                    https://company-239260.frontify.com/d/6Us5PJua15yW/guidelines?#/for-partners/social-media-postings-1
+                  text: Marketing Material
               infopoints:
                 - name: Marketing Material
                   text: >-
