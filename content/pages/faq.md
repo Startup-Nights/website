@@ -562,15 +562,14 @@ blocks:
                 - name: Set-up Times
                   text: '31 October 2024, 8am - 12pm'
                 - name: Dismantling Times
-                  text: >-
-                    1 November 2024, 11pm - 1am and 2 November 2024, 7am - 10pm
+                  text: '1 November 2024, 11pm - 1am and 2 November 2024, 7am - 10pm'
             - content_block:
                 title: Internet Connection
                 content:
                   - >-
                     At the event, Wi-Fi will be provided. While ensuring a
                     stable internet connection is our priority, we strongly
-                    recommend preparing an online version as a precaution.
+                    recommend preparing an offline version as a precaution.
                   - 'Name: StartupNights'
                   - 'Password: StartupNights'
             - content_block:
