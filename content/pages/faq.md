@@ -497,7 +497,7 @@ blocks:
                     posts, as well as an Instagram Story and content for a
                     newsletter to share with your subscribers.
                   link: >-
-                    https://company-239260.frontify.com/d/6Us5PJua15yW/guidelines#/promotional/logo
+                    https://company-239260.frontify.com/d/6Us5PJua15yW/guidelines?#/for-partners/social-media-postings-1
             - content_block:
                 title: Booth design and placement
                 content:
