@@ -499,12 +499,11 @@ blocks:
               infopoints:
                 - name: Marketing Material
                   text: >-
-                    Head over to "Startup communication" where you will ﬁnd
-                    visuals and text for LinkedIn, Facebook, and Instagram
-                    posts, as well as an Instagram Story and content for a
-                    newsletter to share with your subscribers.
+                    Here you will ﬁnd visuals and text for LinkedIn, Facebook,
+                    and Instagram posts, as well as an Instagram Story and
+                    content for a newsletter to share with your subscribers.
                   link: >-
-                    https://company-239260.frontify.com/d/6Us5PJua15yW/guidelines?#/for-partners/social-media-postings-1
+                    https://company-239260.frontify.com/d/6Us5PJua15yW/guidelines#/for-startups/social-media-postings/promote-your-booth
             - content_block:
                 title: Booth design and placement
                 content:
