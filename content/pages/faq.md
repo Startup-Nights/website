@@ -489,6 +489,9 @@ blocks:
                     with your community. If you have any questions or need
                     assistance with customization, please reach out to us at
                     hello@startup-nights.ch.
+                cta:
+                  link: 'https://livedab.com/campaign/tT7CpES'
+                  text: Live DAB
               infopoints:
                 - name: Marketing Material
                   text: >-
