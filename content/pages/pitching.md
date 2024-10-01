@@ -50,12 +50,12 @@ blocks:
           https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/andrea-buhofer.jpeg
         alt: Andrea Buhofer
         stage: seed
-      - name: Andreas Schlenker
-        position: 'Head of M&A, Partnering and Investing at Axpo Group'
+      - name: Georg Schumacher
+        position: Senior Manager Partnering & Investing Axpo Services
         linkedin: 'https://www.linkedin.com/in/andreasschlenker/'
         src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/jury/andreas-schlenker.jpg
-        alt: Andreas Schlenker
+          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/georg-schumacher.jpg
+        alt: Georg Schumacher
         stage: seed
       - name: Arijana Walcott
         position: 'Managing Partner, DART Ventures'
