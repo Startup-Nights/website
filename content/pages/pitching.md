@@ -54,7 +54,8 @@ blocks:
         position: Senior Manager Partnering & Investing Axpo Services
         linkedin: 'https://www.linkedin.com/in/andreasschlenker/'
         src: >-
-          https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/georg-schumacher.jpg
+          https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/Georg
+          Schumacher.jpg
         alt: Georg Schumacher
         stage: seed
       - name: Arijana Walcott
