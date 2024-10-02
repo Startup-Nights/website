@@ -36,12 +36,9 @@ blocks:
           capitalists. Connect with leading investors, exchange valuable
           experiences, and discover new opportunities to actively support the
           startup ecosystem.
-        - >-
-          Presented by UBS & Wenger Vieli
-        - >-
-          In collaboration with SICTIC, SECA & Founderful.
-        - >-
-          Register now and secure your spot at Pioneers & Pancakes.
+        - Presented by UBS & Wenger Vieli
+        - 'In collaboration with SICTIC, SECA & Founderful.'
+        - Register now and secure your spot at Pioneers & Pancakes.
       cta:
         link: >-
           https://b2match.com/e/startup-nights-2024/sign-up?invitation=ZpZfpsFvObcZKHOVZRA-08nLdVU=
@@ -86,12 +83,16 @@ blocks:
           - >-
             Understanding the Swiss Venture Capital Ecosystem: Facts & figures
             and blind spots by Thomas Heimann from SECA
-          - Venture Capital — the key driver for commercially successful innovation by Andreas Goeldi
+          - >-
+            Venture Capital — the key driver for commercially successful
+            innovation by Andreas Goeldi
           - 'Angel Investing for Fun & Profit by Thomas Dübendorfer, SICTIC'
           - >-
             Founder & Investor Panel: “Mutual Success: Exploring
-            Investor-Founder Relations” with successful Founders & Investors,
-            among other with Lukas Weder, Founderful
+            Investor-Founder Relations” with Lukas Weder (Founderful) on the
+            Investor side, and Paulina Grnova (CEO and Co-Founder of DeepJudge),
+            Roger Dudler (CEO and Founder of Frontify), David Haber (CEO and
+            founder of Lakera) on the Founder side.
       - title: '12:30 - 1:30 pm'
         list_items:
           - Brunch & Networking
