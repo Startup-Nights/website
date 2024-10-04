@@ -50,21 +50,19 @@ blocks:
           - 'Door opening: 9:45 pm'
           - 'Tickets: limited to 400'
           - 'Location: Caribbean Pearl Zürcher Strasse 3 8400 Winterthur'
+    image:
+      src: 'https://startupnights.fra1.digitaloceanspaces.com/michael_larche.jpg'
+      alt: Michael Larche
     infopoints:
-      - name: Live Music
+      - name: Workshop Speaker Michael Larche
         text: >-
-          DJ Patric Pleasure & Gee-K skilfully combine ‘The Best Of Both Worlds’
-          by merging live music and DJ set as ‘DJandGuitar’ to create a rousing
-          performance. This creates the feeling of a live band - simply with a
-          more diverse selection of songs and different music genres from RnB &
-          Soul to Hip Hop to Disco & Funk to Rock, chart hits and pumping
-          NuDisco beats.
-      - name: Party Games
-        text: 'From beer pong to flip cup, we got you!'
-      - name: Networking Areas
-        text: >-
-          Exchange ideas with other founders, investors, and partners in a
-          relaxed atmosphere
+          Michael ist ein erfahrener Sales-Leader aus Süddeutschland, der die
+          verschiedenen Growth-Stages eines SaaS-Startups durchlebt hat. In den
+          letzten 10 Jahren hat er den deutschsprachigen Vertrieb von Echobot
+          aufgebaut. Nach dem Merger mit Leadfeeder und einem signifikanten
+          Investment eines US Private Equity Investors im Jahr 2022,
+          verantwortet er mit seinem über 30-köpfigen internationalen Sales Team
+          die weltweite Expansion von Dealfront.
     contentblock_left: true
     background_color: bg-sn-black
     _template: content
