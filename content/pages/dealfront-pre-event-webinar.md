@@ -46,10 +46,9 @@ blocks:
       list:
         title: Event Details
         list_items:
-          - 'Date: 1. November 2024'
-          - 'Door opening: 9:45 pm'
-          - 'Tickets: limited to 400'
-          - 'Location: Caribbean Pearl Zürcher Strasse 3 8400 Winterthur'
+          - 'Datum: 24. Oktober 2024'
+          - 'Zeit: 12:00 Uhr - 12:45 Uhr'
+          - 'Ort: Online (Link folgt mit Anmeldung)'
     image:
       src: 'https://startupnights.fra1.digitaloceanspaces.com/michael_larche.jpg'
       alt: Michael Larche
@@ -70,5 +69,4 @@ blocks:
     title: Get your ticket
     _template: tito
 ---
-
 
