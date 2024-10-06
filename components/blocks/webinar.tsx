@@ -1,11 +1,14 @@
 import { useState } from "react";
 import type { Template } from "tinacms";
+import Notification from "../items/notification";
 
 function classNames(...classes: any) {
     return classes.filter(Boolean).join(' ')
 }
 
 export const Webinar = ({ data }) => {
+    const [showSuccess, setShowSuccess] = useState(false)
+    const [showError, setShowError] = useState(false)
     const [loading, setLoading] = useState(false)
 
     const handleSubmit = async (e: any) => {
@@ -35,13 +38,30 @@ export const Webinar = ({ data }) => {
         setLoading(false)
         const { error } = await response.json()
         if (error) {
-            alert(error)
+            setShowError(true)
+        } else {
+            setShowSuccess(true)
         }
+
+        setTimeout(() => {
+            setShowError(false)
+            setShowSuccess(false)
+        }, 5000)
     }
 
     return (
         <div className="bg-sn-black" id={data?.id ? data.id : 'webinar'}>
             <div className="max-w-5xl mx-auto py-12 px-8 lg:p-24">
+                <Notification
+                    showSuccess={showSuccess}
+                    setShowSuccess={setShowSuccess}
+                    successTitle={'Success! We got your registration.'}
+                    successMessage={'Thanks for registering. See you at the Startup Nights!'}
+                    showError={showError}
+                    setShowError={setShowError}
+                    errorTitle={'Shoot! Something went wrong.'}
+                    errorMessage={'Please try again or reach out to us.'}
+                />
 
                 <div className="max-w-md py-8">
                     <h3 className="text-base font-medium leading-7 text-sn-yellow uppercase tracking-widest">
