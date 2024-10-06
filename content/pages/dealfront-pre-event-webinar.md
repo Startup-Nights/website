@@ -41,7 +41,7 @@ blocks:
           Machine Learning und IP-Tracking, hilft, DSGVO-konform Leads zu
           identifizieren – auch ohne ausgefülltes Lead-Formular.
       cta:
-        link: '#sn-tito-embedded-widget'
+        link: '#webinar'
         text: Secure your spot
       list:
         title: Event Details
