@@ -1008,7 +1008,14 @@ type PageBlocksTable {
   background_color: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved | PageBlocksTable
+type PageBlocksWebinar {
+  id: String
+  subtitle: String
+  title: String
+  paragraph: String
+}
+
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved | PageBlocksTable | PageBlocksWebinar
 
 type Page implements Node & Document {
   title: String!
@@ -1650,6 +1657,13 @@ input PageBlocksTableFilter {
   background_color: StringFilter
 }
 
+input PageBlocksWebinarFilter {
+  id: StringFilter
+  subtitle: StringFilter
+  title: StringFilter
+  paragraph: StringFilter
+}
+
 input PageBlocksFilter {
   hero: PageBlocksHeroFilter
   speakers: PageBlocksSpeakersFilter
@@ -1676,6 +1690,7 @@ input PageBlocksFilter {
   crop: PageBlocksCropFilter
   booth_approved: PageBlocksBooth_approvedFilter
   table: PageBlocksTableFilter
+  webinar: PageBlocksWebinarFilter
 }
 
 input PageFilter {
@@ -2441,6 +2456,13 @@ input PageBlocksTableMutation {
   background_color: String
 }
 
+input PageBlocksWebinarMutation {
+  id: String
+  subtitle: String
+  title: String
+  paragraph: String
+}
+
 input PageBlocksMutation {
   hero: PageBlocksHeroMutation
   speakers: PageBlocksSpeakersMutation
@@ -2467,6 +2489,7 @@ input PageBlocksMutation {
   crop: PageBlocksCropMutation
   booth_approved: PageBlocksBooth_approvedMutation
   table: PageBlocksTableMutation
+  webinar: PageBlocksWebinarMutation
 }
 
 input PageMutation {
