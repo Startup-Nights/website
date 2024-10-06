@@ -51,7 +51,7 @@ blocks:
         alt: Andrea Buhofer
         stage: seed
       - name: Georg Schumacher
-        position: Senior Manager Partnering & Investing Axpo Services
+        position: Principal Partnering & Investing
         linkedin: 'https://www.linkedin.com/in/andreasschlenker/'
         src: >-
           https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/Georg
