@@ -556,6 +556,11 @@ type PageBlocksTabsTabitemsImage {
   alt: String
 }
 
+type PageBlocksTabsTabitemsInfopointsImage {
+  src: String
+  alt: String
+}
+
 type PageBlocksTabsTabitemsInfopointsNewsletter_cta {
   agree_button: String
   modal_title: String
@@ -566,6 +571,7 @@ type PageBlocksTabsTabitemsInfopoints {
   name: String
   text: String
   link: String
+  image: PageBlocksTabsTabitemsInfopointsImage
   newsletter_cta: PageBlocksTabsTabitemsInfopointsNewsletter_cta
 }
 
@@ -599,6 +605,11 @@ type PageBlocksTabsTabitemsDropdown_itemsItemsImage {
   alt: String
 }
 
+type PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsImage {
+  src: String
+  alt: String
+}
+
 type PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_cta {
   agree_button: String
   modal_title: String
@@ -609,6 +620,7 @@ type PageBlocksTabsTabitemsDropdown_itemsItemsInfopoints {
   name: String
   text: String
   link: String
+  image: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsImage
   newsletter_cta: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_cta
 }
 
@@ -697,6 +709,11 @@ type PageBlocksDropdownItemsImage {
   alt: String
 }
 
+type PageBlocksDropdownItemsInfopointsImage {
+  src: String
+  alt: String
+}
+
 type PageBlocksDropdownItemsInfopointsNewsletter_cta {
   agree_button: String
   modal_title: String
@@ -707,6 +724,7 @@ type PageBlocksDropdownItemsInfopoints {
   name: String
   text: String
   link: String
+  image: PageBlocksDropdownItemsInfopointsImage
   newsletter_cta: PageBlocksDropdownItemsInfopointsNewsletter_cta
 }
 
@@ -852,6 +870,11 @@ type PageBlocksContentImage {
   alt: String
 }
 
+type PageBlocksContentInfopointsImage {
+  src: String
+  alt: String
+}
+
 type PageBlocksContentInfopointsNewsletter_cta {
   agree_button: String
   modal_title: String
@@ -862,6 +885,7 @@ type PageBlocksContentInfopoints {
   name: String
   text: String
   link: String
+  image: PageBlocksContentInfopointsImage
   newsletter_cta: PageBlocksContentInfopointsNewsletter_cta
 }
 
@@ -1205,6 +1229,11 @@ input PageBlocksTabsTabitemsImageFilter {
   alt: StringFilter
 }
 
+input PageBlocksTabsTabitemsInfopointsImageFilter {
+  src: ImageFilter
+  alt: StringFilter
+}
+
 input PageBlocksTabsTabitemsInfopointsNewsletter_ctaFilter {
   agree_button: StringFilter
   modal_title: StringFilter
@@ -1215,6 +1244,7 @@ input PageBlocksTabsTabitemsInfopointsFilter {
   name: StringFilter
   text: StringFilter
   link: StringFilter
+  image: PageBlocksTabsTabitemsInfopointsImageFilter
   newsletter_cta: PageBlocksTabsTabitemsInfopointsNewsletter_ctaFilter
 }
 
@@ -1248,6 +1278,11 @@ input PageBlocksTabsTabitemsDropdown_itemsItemsImageFilter {
   alt: StringFilter
 }
 
+input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsImageFilter {
+  src: ImageFilter
+  alt: StringFilter
+}
+
 input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_ctaFilter {
   agree_button: StringFilter
   modal_title: StringFilter
@@ -1258,6 +1293,7 @@ input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsFilter {
   name: StringFilter
   text: StringFilter
   link: StringFilter
+  image: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsImageFilter
   newsletter_cta: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_ctaFilter
 }
 
@@ -1346,6 +1382,11 @@ input PageBlocksDropdownItemsImageFilter {
   alt: StringFilter
 }
 
+input PageBlocksDropdownItemsInfopointsImageFilter {
+  src: ImageFilter
+  alt: StringFilter
+}
+
 input PageBlocksDropdownItemsInfopointsNewsletter_ctaFilter {
   agree_button: StringFilter
   modal_title: StringFilter
@@ -1356,6 +1397,7 @@ input PageBlocksDropdownItemsInfopointsFilter {
   name: StringFilter
   text: StringFilter
   link: StringFilter
+  image: PageBlocksDropdownItemsInfopointsImageFilter
   newsletter_cta: PageBlocksDropdownItemsInfopointsNewsletter_ctaFilter
 }
 
@@ -1501,6 +1543,11 @@ input PageBlocksContentImageFilter {
   alt: StringFilter
 }
 
+input PageBlocksContentInfopointsImageFilter {
+  src: ImageFilter
+  alt: StringFilter
+}
+
 input PageBlocksContentInfopointsNewsletter_ctaFilter {
   agree_button: StringFilter
   modal_title: StringFilter
@@ -1511,6 +1558,7 @@ input PageBlocksContentInfopointsFilter {
   name: StringFilter
   text: StringFilter
   link: StringFilter
+  image: PageBlocksContentInfopointsImageFilter
   newsletter_cta: PageBlocksContentInfopointsNewsletter_ctaFilter
 }
 
@@ -2004,6 +2052,11 @@ input PageBlocksTabsTabitemsImageMutation {
   alt: String
 }
 
+input PageBlocksTabsTabitemsInfopointsImageMutation {
+  src: String
+  alt: String
+}
+
 input PageBlocksTabsTabitemsInfopointsNewsletter_ctaMutation {
   agree_button: String
   modal_title: String
@@ -2014,6 +2067,7 @@ input PageBlocksTabsTabitemsInfopointsMutation {
   name: String
   text: String
   link: String
+  image: PageBlocksTabsTabitemsInfopointsImageMutation
   newsletter_cta: PageBlocksTabsTabitemsInfopointsNewsletter_ctaMutation
 }
 
@@ -2047,6 +2101,11 @@ input PageBlocksTabsTabitemsDropdown_itemsItemsImageMutation {
   alt: String
 }
 
+input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsImageMutation {
+  src: String
+  alt: String
+}
+
 input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_ctaMutation {
   agree_button: String
   modal_title: String
@@ -2057,6 +2116,7 @@ input PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsMutation {
   name: String
   text: String
   link: String
+  image: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsImageMutation
   newsletter_cta: PageBlocksTabsTabitemsDropdown_itemsItemsInfopointsNewsletter_ctaMutation
 }
 
@@ -2145,6 +2205,11 @@ input PageBlocksDropdownItemsImageMutation {
   alt: String
 }
 
+input PageBlocksDropdownItemsInfopointsImageMutation {
+  src: String
+  alt: String
+}
+
 input PageBlocksDropdownItemsInfopointsNewsletter_ctaMutation {
   agree_button: String
   modal_title: String
@@ -2155,6 +2220,7 @@ input PageBlocksDropdownItemsInfopointsMutation {
   name: String
   text: String
   link: String
+  image: PageBlocksDropdownItemsInfopointsImageMutation
   newsletter_cta: PageBlocksDropdownItemsInfopointsNewsletter_ctaMutation
 }
 
@@ -2300,6 +2366,11 @@ input PageBlocksContentImageMutation {
   alt: String
 }
 
+input PageBlocksContentInfopointsImageMutation {
+  src: String
+  alt: String
+}
+
 input PageBlocksContentInfopointsNewsletter_ctaMutation {
   agree_button: String
   modal_title: String
@@ -2310,6 +2381,7 @@ input PageBlocksContentInfopointsMutation {
   name: String
   text: String
   link: String
+  image: PageBlocksContentInfopointsImageMutation
   newsletter_cta: PageBlocksContentInfopointsNewsletter_ctaMutation
 }
 

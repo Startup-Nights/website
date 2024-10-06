@@ -258,6 +258,11 @@ fragment PageParts on Page {
           name
           text
           link
+          image {
+            __typename
+            src
+            alt
+          }
           newsletter_cta {
             __typename
             agree_button
@@ -301,6 +306,11 @@ fragment PageParts on Page {
               name
               text
               link
+              image {
+                __typename
+                src
+                alt
+              }
               newsletter_cta {
                 __typename
                 agree_button
@@ -376,6 +386,11 @@ fragment PageParts on Page {
           name
           text
           link
+          image {
+            __typename
+            src
+            alt
+          }
           newsletter_cta {
             __typename
             agree_button
@@ -504,6 +519,11 @@ fragment PageParts on Page {
         name
         text
         link
+        image {
+          __typename
+          src
+          alt
+        }
         newsletter_cta {
           __typename
           agree_button

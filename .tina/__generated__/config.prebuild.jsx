@@ -668,6 +668,7 @@ import { ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
 
 // components/items/infopoints.tsx
 import { useState as useState5 } from "react";
+import Image5 from "next/image";
 var InfopointsBlockSchema = {
   type: "object",
   label: "Infopoints",
@@ -688,6 +689,23 @@ var InfopointsBlockSchema = {
       type: "string",
       label: "Link",
       name: "link"
+    },
+    {
+      type: "object",
+      label: "Image",
+      name: "image",
+      fields: [
+        {
+          name: "src",
+          label: "Image Source",
+          type: "image"
+        },
+        {
+          name: "alt",
+          label: "Alt Text",
+          type: "string"
+        }
+      ]
     },
     {
       type: "object",
@@ -715,7 +733,7 @@ var InfopointsBlockSchema = {
 };
 
 // components/items/image.tsx
-import Image5 from "next/image";
+import Image6 from "next/image";
 var RoundImageBlockschema = {
   type: "object",
   label: "Image",
@@ -791,7 +809,7 @@ var miniDropdownBlockSchema = {
 };
 
 // components/blocks/imagegrid.tsx
-import Image6 from "next/image";
+import Image7 from "next/image";
 import React5 from "react";
 var imagegridBlockSchema = {
   type: "object",
@@ -962,7 +980,7 @@ var benefitsBlockSchema = {
 
 // components/blocks/overview.tsx
 import React7 from "react";
-import Image7 from "next/image";
+import Image8 from "next/image";
 
 // components/util/icons.tsx
 import { BuildingOffice2Icon, BuildingStorefrontIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIcon3, CheckBadgeIcon as CheckBadgeIcon3, Cog6ToothIcon as Cog6ToothIcon2, FunnelIcon, HeartIcon as HeartIcon3, InformationCircleIcon, LightBulbIcon as LightBulbIcon3, MegaphoneIcon, MusicalNoteIcon, PhoneIcon, PresentationChartLineIcon, RocketLaunchIcon as RocketLaunchIcon2, StarIcon, TicketIcon, TrophyIcon, UserCircleIcon, UserGroupIcon as UserGroupIcon3 } from "@heroicons/react/24/outline";
@@ -1070,7 +1088,7 @@ var overviewBlockSchema = {
 import React8, { useState as useState6 } from "react";
 
 // components/items/nextimage.tsx
-import Image8 from "next/image";
+import Image9 from "next/image";
 
 // components/blocks/gallery.tsx
 import { PhotoAlbum } from "react-photo-album";
@@ -1309,7 +1327,7 @@ var seoBlockSchema = {
 import React10 from "react";
 
 // components/items/testimonial.tsx
-import Image9 from "next/image";
+import Image10 from "next/image";
 var TestimonialBlockSchema = {
   type: "object",
   label: "Testimonial",
@@ -1387,7 +1405,7 @@ var FactsBlockSchema = {
 };
 
 // components/items/members.tsx
-import Image10 from "next/image";
+import Image11 from "next/image";
 var MembersBlockSchema = {
   type: "object",
   label: "Members",
