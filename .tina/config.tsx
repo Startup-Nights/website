@@ -24,6 +24,7 @@ import { boothApprovedBlockSchema } from "../components/blocks/booth_approved";
 import { cropBlockSchema } from "../components/blocks/crop";
 import { quotesBlockSchema } from "../components/blocks/quotes";
 import { tableBlockSchema } from "../components/blocks/table";
+import { webinarBlockSchema } from "../components/blocks/webinar";
 
 const config = defineStaticConfig({
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -539,6 +540,9 @@ const config = defineStaticConfig({
                         if (document._sys.filename === "afterparty") {
                             return `/afterparty`;
                         }
+                        if (document._sys.filename === "dealfront-pre-event-webinar") {
+                            return `/dealfront-pre-event-webinar`;
+                        }
                         return undefined;
                     },
                 },
@@ -586,6 +590,7 @@ const config = defineStaticConfig({
                             cropBlockSchema,
                             boothApprovedBlockSchema,
                             tableBlockSchema,
+                            webinarBlockSchema,
                         ],
                     },
                 ],

@@ -65,8 +65,8 @@ blocks:
     contentblock_left: true
     background_color: bg-sn-black
     _template: content
-  - subtitle: Afterparty
-    title: Get your ticket
-    _template: tito
+  - subtitle: Webinar
+    title: Secure your spot
+    _template: webinar
 ---
 
