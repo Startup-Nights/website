@@ -49,9 +49,6 @@ blocks:
           - 'Datum: 24. Oktober 2024'
           - 'Zeit: 12:00 Uhr - 12:45 Uhr'
           - 'Ort: Online (Link folgt mit Anmeldung)'
-    image:
-      src: 'https://startupnights.fra1.digitaloceanspaces.com/michael_larche.jpg'
-      alt: Michael Larche
     infopoints:
       - name: Workshop Speaker Michael Larche
         text: >-
@@ -62,6 +59,10 @@ blocks:
           Investment eines US Private Equity Investors im Jahr 2022,
           verantwortet er mit seinem über 30-köpfigen internationalen Sales Team
           die weltweite Expansion von Dealfront.
+        image:
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2024/varia/michael_larche.jpg
+          alt: Michael Larche
     contentblock_left: true
     background_color: bg-sn-black
     _template: content
