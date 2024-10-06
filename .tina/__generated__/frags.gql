@@ -632,5 +632,11 @@ fragment PageParts on Page {
       }
       background_color
     }
+    ... on PageBlocksWebinar {
+      id
+      subtitle
+      title
+      paragraph
+    }
   }
 }

@@ -1915,6 +1915,42 @@ var tableBlockSchema = {
   ]
 };
 
+// components/blocks/webinar.tsx
+import { useState as useState13 } from "react";
+
+// components/items/notification.tsx
+import { Transition as Transition7 } from "@headlessui/react";
+import { CheckCircleIcon as CheckCircleIcon5, ExclamationTriangleIcon as ExclamationTriangleIcon3 } from "@heroicons/react/24/outline";
+import { XMarkIcon as XMarkIcon7 } from "@heroicons/react/20/solid";
+
+// components/blocks/webinar.tsx
+var webinarBlockSchema = {
+  name: "webinar",
+  label: "Webinar Signup",
+  fields: [
+    {
+      type: "string",
+      label: "ID",
+      name: "id"
+    },
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title"
+    },
+    {
+      type: "string",
+      label: "Text",
+      name: "paragraph"
+    }
+  ]
+};
+
 // .tina/config.tsx
 var config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
@@ -2432,6 +2468,9 @@ var config = defineStaticConfig({
             if (document2._sys.filename === "afterparty") {
               return `/afterparty`;
             }
+            if (document2._sys.filename === "dealfront-pre-event-webinar") {
+              return `/dealfront-pre-event-webinar`;
+            }
             return void 0;
           }
         },
@@ -2477,7 +2516,8 @@ var config = defineStaticConfig({
               programBlockSchema,
               cropBlockSchema,
               boothApprovedBlockSchema,
-              tableBlockSchema
+              tableBlockSchema,
+              webinarBlockSchema
             ]
           }
         ]
