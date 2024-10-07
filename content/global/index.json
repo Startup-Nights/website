@@ -53,6 +53,12 @@
             "label": "Afterparty",
             "description": "Let's end the Startup Nighs in stlye!",
             "icon": "music"
+          },
+          {
+            "href": "dealfront-pre-event-webinar",
+            "label": "Dealfront Webinar",
+            "description": "Learn more about Sales for Startups",
+            "icon": "megaphone"
           }
         ],
         "callsToAction": [
