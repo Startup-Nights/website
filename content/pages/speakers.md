@@ -75,6 +75,20 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/chris_beyeler.png'
                 alt: 'Chris Beyeler'
+            - name: 'Christian Gerber'
+              position: 'Head of Innovation ZFV-Unternehmungen'
+              description: >-
+                I am passionate about innovation and strategy, I thrive in agile project management and Design Thinking. With over 10 years of leadership experience, I focus on driving growth through Lean Startup and innovation management.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/christian_gerber.png'
+                alt: 'Christian Gerber'
+            - name: 'Christian Wenger'
+              position: 'Lawyer & Entrepreneur'
+              description: >-
+                We live in a dynamic era driven by digitalization in particular the exponentiality of Moore's law. My passion lies with ambitious and passionate entrepreneurs driving innovative technology companies changing the world.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/christian_wenger.png'
+                alt: 'Christian Wenger'
             - name: 'Christoph Falk'
               position: 'Head of Start-up Coaching at Innosuisse'
               description: >-
@@ -124,6 +138,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/fabian_huber.png'
                 alt: 'Fabian Huber'
+            - name: 'Franziska Iselin'
+              position: 'CRO at bexio AG'
+              description: >-
+                Leader in sales and customer operations with over 10 years of expertise. Successfully expanded bexio's customer base from 5,000 to 80,000 clients.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/franziska_iselin.png'
+                alt: 'Franziska Iselin'
             - name: 'Gian Reto à Porta'
               position: 'Founder & CEO NORM'
               description: >-
@@ -218,7 +239,7 @@ blocks:
             - name: 'Philip Schläfli'
               position: 'Gründer Kommunikationshelden GmbH'
               description: >-
-                Communicationstrainer and Speaker with humor
+                Communication trainer and Speaker with humor
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philip_schlaefli.png'
                 alt: 'Philip Schläfli'
@@ -243,6 +264,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/roi_y_tavor.png'
                 alt: 'Roi Y. Tavor'
+            - name: 'Sandra Kobel'
+              position: 'Co-Founder & CEO zealy'
+              description: >-
+                Sandra Kobel is a serial startup founder passionate about digital transformation, scaling service businesses globally. She grew her venture from a one-woman show to an international company in just 4 years.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/sandra_kobel.png'
+                alt: 'Sandra Kobel'
             - name: 'Shannon Jenkins'
               position: 'Public Speaking Coach, Storytelling Strategist & Podcast Host'
               description: >-
@@ -292,6 +320,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/peter_kuhn.png'
                 alt: 'Peter Kuhn'
+            - name: 'Piet Heusser'
+              position: 'Project Leader & Moderator Headz Agency AG'
+              description: >-
+                Piet Heusser ist 29 Jahre alt und ein echter Winterthurer. Als Newssprecher für die CH-Media Radios lernte er seriös zu sein und die richtigen Fragen zu stellen. Als Project Leader bei der Headz Agency kann er nun seine humorvolle Seite ausleben und ist unter anderem in die Mitentwicklung von Comedy-Eigenformaten involviert.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/piet_heusser.png'
+                alt: 'Piet Heusser'
           background_color: bg-sn-black-light
       - content_block:
           subtitle: Meet our speaker
