@@ -173,7 +173,7 @@ function Modal({ open, setOpen, selectedSpeaker }) {
                 <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
                     <DialogPanel
                         transition
-                        className="relative transform overflow-hidden rounded-lg bg-sn-black px-4 pb-4 pt-5 text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-xl sm:p-12 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+                        className="relative transform overflow-hidden rounded-2xl bg-sn-black px-8 pb-4 pt-5 text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-4 sm:w-full sm:max-w-xl sm:p-12 sm:py-8 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
                     >
                         <div>
                             <div className="text-center sm:mt-5 space-y-8">
@@ -182,7 +182,7 @@ function Modal({ open, setOpen, selectedSpeaker }) {
                                         <Image
                                             width={600}
                                             height={600}
-                                            className="w-full h-full object-cover rounded-full "
+                                            className="w-full h-full object-cover rounded-full border-2 border-sn-yellow"
                                             alt={selectedSpeaker?.image?.alt}
                                             src={selectedSpeaker?.image?.src}
                                         />
@@ -193,11 +193,13 @@ function Modal({ open, setOpen, selectedSpeaker }) {
                                     {selectedSpeaker.name}
                                 </DialogTitle>
 
-                                <div className="mt-2 text-left">
-                                    <p className="text-sm text-gray-400">
-                                        {selectedSpeaker.description}
-                                    </p>
-                                </div>
+                                <p className="text-sm text-gray-400 italic">
+                                    {selectedSpeaker.position}
+                                </p>
+
+                                <p className="mt-2 text-left text-sm text-gray-400 leading-6">
+                                    {selectedSpeaker.description}
+                                </p>
                             </div>
                         </div>
                         <div className="mt-8 sm:mt-6">
