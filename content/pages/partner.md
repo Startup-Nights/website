@@ -328,6 +328,18 @@ blocks:
       - title: Pioneer
         grid_cols: 4
         partners:
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/540479820-embark_law_600x300.png
+            alt: embark law
+            link: https://embark.law
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/380830196-gebert_ruef_stiftung_600x300.png
+            alt: gerbert ruef stiftung
+            link: https://www.grstiftung.ch/de.html
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/88192997-microsoft_for_startups_600x300.png
+            alt: microsoft for startups
+            link: https://news.microsoft.com/de-ch/startups/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/549642180-td_synnex_600x300.png
+            alt: td synnex
+            link: https://ch.tdsynnex.com/
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/611196457-axpo_scaled.png
             alt: Axpo
@@ -336,10 +348,6 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/haw.jpeg
             alt: Handelskammer Winterthur
             link: 'https://www.haw.ch/de/'
-          - src: >-
-              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/370075960-home-of-innovation_scaled.png
-            alt: Home of Innovation
-            link: 'https://homeofinnovation.ch/'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/739151807-icecubator_lab_600x300.png
             alt: IceCubator Lab
@@ -359,6 +367,48 @@ blocks:
       - title: Innovator
         grid_cols: 4
         partners:
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/969529461-beriflapp_600x300.png
+            alt: beriflapp
+            link: https://beriflapp.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/252375520-founders_600x300.png
+            alt: founders2
+            link: https://founders2.com/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/144557047-genisuisse_600x300.png
+            alt: genisuisse
+            link: https://genisuisse.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/156643551-generali_600x300.png
+            alt: generali
+            link: https://www.generali.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/903200762-house_of_insurtech_600x300.png
+            alt: house of insurtech
+            link: https://www.houseofinsurtech.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/518328549-hwz_600x300.png
+            alt: hwz
+            link: https://fh-hwz.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/453290701-pragerdreifuss_600x300.png
+            alt: prager dreifuss
+            link: https://www.prager-dreifuss.com/de/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/328062845-rowing_600x300.png
+            alt: rowing8
+            link: https://www.rowing8.com/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/260619582-sictic_600x300.png
+            alt: sictic
+            link: https://www.sictic.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/840861961-swiss_vencture_club_600x300.png
+            alt: swiss venture club
+            link: https://svc.swiss/de
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/605427969-tenity_600x300.png
+            alt: tenity
+            link: https://www.tenity.com/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/737908851-deloitte_600x300.png
+            alt: deloitte private
+            link: https://www2.deloitte.com/ch/en/pages/private-market/solutions/emerging-growth.html?icid=nav2_emerging-growth
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/969529461-beriflapp_600x300.png
+            alt: beriflapp
+            link: https://beriflapp.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/728268909-flux_600x300.png
+            alt: flux
+            link: https://fluxmobility.ch
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/514872505-bmatch_600x300.png
             alt: b2match
@@ -430,6 +480,14 @@ blocks:
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/4019791-danko-catering_scaled.png
             alt: Danko Catering
             link: 'https://www.danko-catering.ch/'
+      - title: Media
+        grid_cols: 4
+        partners:
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/68923781-startupticker_600x300.png
+            alt: startupticker
+            link: https://startupticker.ch
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/664456398-founded_600x300.png
+            alt: founded
+            link: https://founded.ch/
     _template: partner_list
 ---
-
