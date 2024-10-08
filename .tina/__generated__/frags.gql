@@ -337,6 +337,7 @@ fragment PageParts on Page {
             __typename
             name
             position
+            description
             image {
               __typename
               src
@@ -599,6 +600,7 @@ fragment PageParts on Page {
         __typename
         name
         position
+        description
         image {
           __typename
           src

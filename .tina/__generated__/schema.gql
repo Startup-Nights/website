@@ -650,6 +650,7 @@ type PageBlocksImagegridImagesImage {
 type PageBlocksTabsTabitemsImagegridImages {
   name: String
   position: String
+  description: String
   image: PageBlocksImagegridImagesImage
 }
 
@@ -965,6 +966,7 @@ type PageBlocksContent_wide {
 type PageBlocksImagegridImages {
   name: String
   position: String
+  description: String
   image: PageBlocksImagegridImagesImage
 }
 
@@ -1323,6 +1325,7 @@ input PageBlocksImagegridImagesImageFilter {
 input PageBlocksTabsTabitemsImagegridImagesFilter {
   name: StringFilter
   position: StringFilter
+  description: StringFilter
   image: PageBlocksImagegridImagesImageFilter
 }
 
@@ -1638,6 +1641,7 @@ input PageBlocksContent_wideFilter {
 input PageBlocksImagegridImagesFilter {
   name: StringFilter
   position: StringFilter
+  description: StringFilter
   image: PageBlocksImagegridImagesImageFilter
 }
 
@@ -2146,6 +2150,7 @@ input PageBlocksImagegridImagesImageMutation {
 input PageBlocksTabsTabitemsImagegridImagesMutation {
   name: String
   position: String
+  description: String
   image: PageBlocksImagegridImagesImageMutation
 }
 
@@ -2461,6 +2466,7 @@ input PageBlocksContent_wideMutation {
 input PageBlocksImagegridImagesMutation {
   name: String
   position: String
+  description: String
   image: PageBlocksImagegridImagesImageMutation
 }
 
