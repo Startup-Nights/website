@@ -24,7 +24,7 @@ export const Tabs = ({ data }) => {
                                         className={({ selected }) =>
                                             classNames(
                                                 'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-gray-300',
-                                                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                                                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400',
                                                 selected
                                                     ? 'bg-sn-black-lightest text-sn-yellow shadow'
                                                     : ''
@@ -41,7 +41,7 @@ export const Tabs = ({ data }) => {
                                         key={idx}
                                         className={classNames(
                                             'rounded-xl bg-sn-black-light py-4 px-12',
-                                            'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
+                                            'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400'
                                         )}
                                     >
                                         <div className="grid md:grid-cols-2 gap-24 items-center">
