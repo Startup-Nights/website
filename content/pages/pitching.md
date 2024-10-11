@@ -1,7 +1,7 @@
 ---
 title: Pitching Competition
 blocks:
-  - title: About - Startup Nights
+  - title: Pitching Sessions - Startup Nights
     description: >-
       The Startup Nights is the biggest event in Switzerland that brings the
       whole startup ecosystem to one table. With this event we want to create
