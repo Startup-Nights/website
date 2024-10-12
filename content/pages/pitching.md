@@ -7,7 +7,7 @@ blocks:
       whole startup ecosystem to one table. With this event we want to create
       awareness for startups and their innovations.
     openGraph:
-      url: 'https://www.startup-nights.ch/about'
+      url: 'https://www.startup-nights.ch/pitching'
       site_name: Startup Nights
       images:
         - url: >-
