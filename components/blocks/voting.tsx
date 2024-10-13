@@ -13,7 +13,7 @@ export const Voting = ({ data }) => {
                 },
                 body: JSON.stringify({
                     id: '1F4r2nCsQUIE38qOJaBzuyqHOtgVc3KshhucyOQI6zBU',
-                    range: 'A:I',
+                    range: 'A:M',
                 }),
             }).then(e => e.json())
             setVotes(raw.data)
