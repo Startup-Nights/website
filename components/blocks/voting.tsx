@@ -23,12 +23,15 @@ export const Voting = ({ data }) => {
 
     return (
         <div className="bg-sn-black rounded-3xl p-4 text-center space-y-8">
-            <h2 className="mt-2 text-xl font-bold tracking-tight text-gray-200 sm:text-3xl">
-                Public Voting Ranking
-            </h2>
+            <div>
+                <h2 className="mt-2 text-xl font-bold tracking-tight text-gray-200 sm:text-3xl">
+                    Public Voting Ranking
+                </h2>
+                <p className="mt-2 text-sm italic">The voting is open until <span className="font-bold">20.10. 8pm</span></p>
+            </div>
             <div className="flex justify-center text-left">
                 {!votes && (
-                    <p>Calculating the scores...</p>
+                    <p>Fetching the latest votes...</p>
                 )}
                 {votes && (
                     <Votes votes={votes} />

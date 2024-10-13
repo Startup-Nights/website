@@ -58,7 +58,7 @@ function Table({ startups, title }: any) {
                                         <thead>
                                             <tr>
                                                 <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-200 sm:pl-0">
-                                                    Votes
+                                                    Place
                                                 </th>
                                                 <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-200">
                                                     Startup
@@ -66,10 +66,10 @@ function Table({ startups, title }: any) {
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-sn-black-lightest">
-                                            {startups.map((startup) => (
+                                            {startups.map((startup, idx) => (
                                                 <tr key={startup.name}>
                                                     <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0">
-                                                        {startup.points}
+                                                        {idx + 1}
                                                     </td>
                                                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{startup.name}</td>
                                                 </tr>
