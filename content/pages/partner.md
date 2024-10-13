@@ -473,6 +473,13 @@ blocks:
           - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/957207996-dealfront_600x300.png
             alt: 'Dealfront'
             link: 'https://www.dealfront.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/370075960-home-of-innovation_scaled.png
+            alt: Home of Innovation
+            link: 'https://homeofinnovation.ch/'
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/11300824-fokusclip_600x300.png
+            alt: fokusclip
+            link: https://www.fokusclip.ch/
       - title: Food and Beverage Partner
         grid_cols: 4
         partners:
@@ -480,6 +487,30 @@ blocks:
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/4019791-danko-catering_scaled.png
             alt: Danko Catering
             link: 'https://www.danko-catering.ch/'
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/448149808-cocacola_600x300.png
+            alt: coca-cola
+            link: https://www.coca-cola.com/ch/de
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/927763103-focuswater_600x300.png
+            alt: focuswater
+            link: https://focuswater.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/598632984-jaybees_600x300.png
+            alt: jaybees foodtruck
+            link: https://www.jaybees.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/76792630-mad_600x300.png
+            alt: mad - make a difference
+            link: https://www.mad-drinks.com/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/439191-planted_600x300.png
+            alt: planted
+            link: https://ch.eatplanted.com/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/876820216-rebels_600x300.png
+            alt: rebels - freeing the spirit of drinks
+            link: https://rebels00.com/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/458714116-tenz_600x300.png
+            alt: tenz
+            link: https://www.tenz.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/674888509-valser_600x300.png
+            alt: valser wasser
+            link: https://www.coca-cola.com/ch/de/brands/valser#maincontent
       - title: Media
         grid_cols: 4
         partners:
