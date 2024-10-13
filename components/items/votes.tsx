@@ -61,7 +61,7 @@ function Table({ startups, title }: any) {
                                                     Votes
                                                 </th>
                                                 <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-200">
-                                                    Name
+                                                    Startup
                                                 </th>
                                             </tr>
                                         </thead>
