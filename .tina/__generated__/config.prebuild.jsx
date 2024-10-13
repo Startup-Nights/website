@@ -1458,6 +1458,21 @@ import { Transition as Transition3 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon2 } from "@heroicons/react/24/outline";
 import { ExclamationCircleIcon as ExclamationCircleIcon2, XMarkIcon as XMarkIcon2 } from "@heroicons/react/20/solid";
 
+// components/blocks/voting.tsx
+import { useEffect as useEffect5, useState as useState10 } from "react";
+var votingBlockSchema = {
+  type: "object",
+  name: "voting",
+  label: "Voting",
+  fields: [
+    {
+      type: "string",
+      label: "Subtitle",
+      name: "subtitle"
+    }
+  ]
+};
+
 // components/blocks/content.tsx
 var contentBlockSchema = {
   name: "content",
@@ -1470,6 +1485,7 @@ var contentBlockSchema = {
     FactsBlockSchema,
     MembersBlockSchema,
     FeaturesBlockSchema,
+    votingBlockSchema,
     {
       type: "boolean",
       name: "contentblock_left",
@@ -1680,7 +1696,7 @@ var pricingBlockSchema = {
 };
 
 // components/blocks/booth.tsx
-import { Fragment as Fragment5, useEffect as useEffect5, useState as useState10 } from "react";
+import { Fragment as Fragment5, useEffect as useEffect6, useState as useState11 } from "react";
 import Link8 from "next/link";
 import {
   InformationCircleIcon as InformationCircleIcon4,
@@ -1717,7 +1733,7 @@ var boothBlockSchema = {
 };
 
 // components/blocks/pitching.tsx
-import { Fragment as Fragment6, useEffect as useEffect6, useState as useState11 } from "react";
+import { Fragment as Fragment6, useEffect as useEffect7, useState as useState12 } from "react";
 import { Transition as Transition5 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon4, InformationCircleIcon as InformationCircleIcon5 } from "@heroicons/react/20/solid";
 import {
@@ -1792,7 +1808,7 @@ var programBlockSchema = {
 };
 
 // components/blocks/booth_approved.tsx
-import { useEffect as useEffect7, useState as useState12 } from "react";
+import { useEffect as useEffect8, useState as useState13 } from "react";
 
 // components/blocks/boothmodal.tsx
 import { Fragment as Fragment7 } from "react";
@@ -1828,7 +1844,7 @@ var boothApprovedBlockSchema = {
 // components/blocks/crop.tsx
 import { ExclamationTriangleIcon as ExclamationTriangleIcon2, PhotoIcon as PhotoIcon2 } from "@heroicons/react/24/outline";
 import Link9 from "next/link";
-import { useState as useState13 } from "react";
+import { useState as useState14 } from "react";
 var cropBlockSchema = {
   name: "crop",
   label: "crop",
@@ -1941,7 +1957,7 @@ var tableBlockSchema = {
 };
 
 // components/blocks/webinar.tsx
-import { useState as useState14 } from "react";
+import { useState as useState15 } from "react";
 
 // components/items/notification.tsx
 import { Transition as Transition7 } from "@headlessui/react";
@@ -2542,7 +2558,8 @@ var config = defineStaticConfig({
               cropBlockSchema,
               boothApprovedBlockSchema,
               tableBlockSchema,
-              webinarBlockSchema
+              webinarBlockSchema,
+              votingBlockSchema
             ]
           }
         ]

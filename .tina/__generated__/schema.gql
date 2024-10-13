@@ -925,6 +925,10 @@ type PageBlocksContentFeatures {
   icon: String
 }
 
+type PageBlocksContentVoting {
+  subtitle: String
+}
+
 type PageBlocksContent {
   content_block: PageBlocksContentContent_block
   image: PageBlocksContentImage
@@ -933,6 +937,7 @@ type PageBlocksContent {
   figures: [PageBlocksContentFigures]
   members: [PageBlocksContentMembers]
   features: [PageBlocksContentFeatures]
+  voting: PageBlocksContentVoting
   contentblock_left: Boolean
   preregister: Boolean
   id: String
@@ -1041,7 +1046,11 @@ type PageBlocksWebinar {
   paragraph: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved | PageBlocksTable | PageBlocksWebinar
+type PageBlocksVoting {
+  subtitle: String
+}
+
+union PageBlocks = PageBlocksHero | PageBlocksSpeakers | PageBlocksPartner_list | PageBlocksCountdown | PageBlocksPositions | PageBlocksTeam | PageBlocksTabs | PageBlocksBooth_registration | PageBlocksDropdown | PageBlocksBenefits | PageBlocksOverview | PageBlocksGallery | PageBlocksTito | PageBlocksSeo | PageBlocksPricing | PageBlocksContent | PageBlocksContent_wide | PageBlocksImagegrid | PageBlocksPitching_registration | PageBlocksCookieTable | PageBlocksQuotes | PageBlocksProgram | PageBlocksCrop | PageBlocksBooth_approved | PageBlocksTable | PageBlocksWebinar | PageBlocksVoting
 
 type Page implements Node & Document {
   title: String!
@@ -1600,6 +1609,10 @@ input PageBlocksContentFeaturesFilter {
   icon: StringFilter
 }
 
+input PageBlocksContentVotingFilter {
+  subtitle: StringFilter
+}
+
 input PageBlocksContentFilter {
   content_block: PageBlocksContentContent_blockFilter
   image: PageBlocksContentImageFilter
@@ -1608,6 +1621,7 @@ input PageBlocksContentFilter {
   figures: PageBlocksContentFiguresFilter
   members: PageBlocksContentMembersFilter
   features: PageBlocksContentFeaturesFilter
+  voting: PageBlocksContentVotingFilter
   contentblock_left: BooleanFilter
   preregister: BooleanFilter
   id: StringFilter
@@ -1716,6 +1730,10 @@ input PageBlocksWebinarFilter {
   paragraph: StringFilter
 }
 
+input PageBlocksVotingFilter {
+  subtitle: StringFilter
+}
+
 input PageBlocksFilter {
   hero: PageBlocksHeroFilter
   speakers: PageBlocksSpeakersFilter
@@ -1743,6 +1761,7 @@ input PageBlocksFilter {
   booth_approved: PageBlocksBooth_approvedFilter
   table: PageBlocksTableFilter
   webinar: PageBlocksWebinarFilter
+  voting: PageBlocksVotingFilter
 }
 
 input PageFilter {
@@ -2425,6 +2444,10 @@ input PageBlocksContentFeaturesMutation {
   icon: String
 }
 
+input PageBlocksContentVotingMutation {
+  subtitle: String
+}
+
 input PageBlocksContentMutation {
   content_block: PageBlocksContentContent_blockMutation
   image: PageBlocksContentImageMutation
@@ -2433,6 +2456,7 @@ input PageBlocksContentMutation {
   figures: [PageBlocksContentFiguresMutation]
   members: [PageBlocksContentMembersMutation]
   features: [PageBlocksContentFeaturesMutation]
+  voting: PageBlocksContentVotingMutation
   contentblock_left: Boolean
   preregister: Boolean
   id: String
@@ -2541,6 +2565,10 @@ input PageBlocksWebinarMutation {
   paragraph: String
 }
 
+input PageBlocksVotingMutation {
+  subtitle: String
+}
+
 input PageBlocksMutation {
   hero: PageBlocksHeroMutation
   speakers: PageBlocksSpeakersMutation
@@ -2568,6 +2596,7 @@ input PageBlocksMutation {
   booth_approved: PageBlocksBooth_approvedMutation
   table: PageBlocksTableMutation
   webinar: PageBlocksWebinarMutation
+  voting: PageBlocksVotingMutation
 }
 
 input PageMutation {

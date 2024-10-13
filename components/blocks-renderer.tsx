@@ -26,6 +26,7 @@ import { Crop } from "./blocks/crop";
 import { Quotes } from "./blocks/quotes";
 import Table from "./blocks/table";
 import { Webinar } from "./blocks/webinar";
+import { Voting } from "./blocks/voting";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
     return (
@@ -265,6 +266,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                                     key={i + block.__typename}
                                 >
                                     <Webinar data={block} />
+                                </div>
+                            )
+                        case "PageBlocksVoting":
+                            return (
+                                <div
+                                    data-tinafield={`blocks.${i}`}
+                                    key={i + block.__typename}
+                                >
+                                    <Voting data={block} />
                                 </div>
                             )
 

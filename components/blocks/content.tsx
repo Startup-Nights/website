@@ -9,6 +9,7 @@ import { Facts, FactsBlockSchema } from "../items/facts";
 import { Features, FeaturesBlockSchema } from "../items/features";
 import { Members, MembersBlockSchema } from "../items/members";
 import Preregister from "./preregister";
+import { Voting, votingBlockSchema } from "./voting";
 
 export const Content = ({ data }) => {
     return (
@@ -47,6 +48,10 @@ export const Content = ({ data }) => {
                         <Members data={data.members} />
                     )}
 
+                    {data?.voting && (
+                        <Voting data={data.voting} />
+                    )}
+
                     {data?.preregister && (
                         <Preregister data={data.preregister} />
                     )}
@@ -71,6 +76,7 @@ export const contentBlockSchema: Template = {
         FactsBlockSchema,
         MembersBlockSchema,
         FeaturesBlockSchema,
+        votingBlockSchema,
         {
             type: "boolean",
             name: "contentblock_left",

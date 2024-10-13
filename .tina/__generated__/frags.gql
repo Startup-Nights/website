@@ -566,6 +566,10 @@ fragment PageParts on Page {
         text
         icon
       }
+      voting {
+        __typename
+        subtitle
+      }
       contentblock_left
       preregister
       id
@@ -659,6 +663,9 @@ fragment PageParts on Page {
       subtitle
       title
       paragraph
+    }
+    ... on PageBlocksVoting {
+      subtitle
     }
   }
 }
