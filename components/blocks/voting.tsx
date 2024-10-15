@@ -27,7 +27,8 @@ export const Voting = ({ data }) => {
                 <h2 className="mt-2 text-xl font-bold tracking-tight text-gray-200 sm:text-3xl">
                     Public Voting Ranking
                 </h2>
-                <p className="mt-2 text-sm italic">The voting is open until <span className="font-bold">20.10. 8pm</span></p>
+                <p className="mt-2 text-sm italic max-w-sm mx-auto">The voting is open until <span className="font-bold">20.10. 8pm</span>.</p>
+                <p className="mt-1 text-sm italic max-w-sm mx-auto">The winners will be announced on 22nd of October.</p>
             </div>
             <div className="flex justify-center text-left">
                 {!votes && (
