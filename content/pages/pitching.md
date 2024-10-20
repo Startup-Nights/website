@@ -27,20 +27,13 @@ blocks:
           This year, there is also a public voting. In each round, the public
           can nominate one startup that will have a chance on stage next to the
           jury-selected startups.
-      cta:
-        link: 'https://d2dds1r8pi7cp5.cloudfront.net/vote/public/pre-seed'
-        text: Pre-Seed Voting
-      cta_secondary:
-        link: 'https://d2dds1r8pi7cp5.cloudfront.net/vote/public/seed'
-        text: Seed Voting
+        - The voting is now closed - the winners will be announced shortly.
       list:
         title: Prices per category
         list_items:
           - CHF 5000 for 1st place
           - CHF 3000 for 2nd place
           - CHF 2000 for 3rd place
-    voting:
-      subtitle: test
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
