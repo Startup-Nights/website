@@ -51,7 +51,7 @@ blocks:
         list_items:
           - 'Date: Do, 31.10.2024 09:45 until 13:30'
           - 'Location: Caribbean Pearl Zürcher Strasse 3 8400 Winterthur'
-          - 'Contact: Garbiel Riedo, gabriel.riedo@beunity.io'
+          - 'Contact: Gabriel Riedo, gabriel.riedo@beunity.io'
     image:
       src: >-
         https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/pictures/SN2023_1181_LEADERSBRUNCH_20231103_10-39_StefanBaumgartner.jpg
@@ -78,7 +78,7 @@ blocks:
       - title: '11:15 am - 12:30 pm'
         list_items:
           - >-
-            Welcome and Insights from Main Sponsors (Wenger Vieli & UBS): The
+            Welcome and Insights from Main Sponsors WENGER VIELI & UBS by Christian Wenger (W&V) & Lukas Reinhardt (UBS): The
             Vital Role of Startups and Investors in the Evolving Ecosystem
           - >-
             Understanding the Swiss Venture Capital Ecosystem: Facts & figures
@@ -90,7 +90,7 @@ blocks:
           - >-
             Founder & Investor Panel: “Mutual Success: Exploring
             Investor-Founder Relations” with Lukas Weder (Founderful) on the
-            Investor side, and Paulina Grnova (CEO and Co-Founder of DeepJudge),
+            Investor side, and Paulina Grnarova (CEO and Co-Founder of DeepJudge),
             Roger Dudler (CEO and Founder of Frontify), David Haber (CEO and
             founder of Lakera) on the Founder side.
       - title: '12:30 - 1:30 pm'
