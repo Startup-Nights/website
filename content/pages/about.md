@@ -69,11 +69,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/leo-h-6b8127199/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/leo-hess.jpg
-          - name: Natalie Rotschi
-            position: Allrounder
-            linkedin: 'https://www.linkedin.com/in/natalie-rotschi-7405b2151/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/natalie-rotschi.jpg
           - name: Nik Harb
             position: Video Creator / Cutter
             linkedin: 'https://www.linkedin.com/in/nik-harb-6bb7311b7/'
@@ -142,6 +137,14 @@ blocks:
             position: 'Head of Photo & Video on site'
             linkedin: 'https://www.linkedin.com/in/saskia-iten-583515155/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/saskia_iten.png'
+          - name: 'Willeit Kevin'
+            position: 'Social Media Manager'
+            linkedin: 'https://www.linkedin.com/in/kevin-willeit-79a189237/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/kevin_willeit.png'
+          - name: 'Bachmann Laurence'
+            position: 'Social Media Manager'
+            linkedin: 'https://www.linkedin.com/in/laurence-r-bachmann/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/laurence_bachmann.png'
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
@@ -234,6 +237,10 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/nicolas-fischer-756589197/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/nicolas-fischer.jpg
+          - name: 'Nyarko Noela'
+            position: 'Co-Head of Speaker'
+            linkedin: 'https://www.linkedin.com/in/noela-yasemin-nyarko-351481253/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/noela_nyarko.jpeg'
       - subtitle: Operations Team
         title: Keeping our HQ organised.
         members:
@@ -270,10 +277,6 @@ blocks:
             position: 'Sustainability Manager'
             linkedin: 'https://www.linkedin.com/in/emine-d-866868107/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_emine_dudus.jpeg'
-          - name: 'Philipp Wesselburg'
-            position: 'Sustainability Manager'
-            linkedin: 'https://www.linkedin.com/in/philipp-wesselburg-31458018b/'
-            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_philipp_wesselburg.png'
           - name: 'Lucas Fuchs'
             position: 'Sustainability Manager'
             linkedin: 'http://www.linkedin.com/in/lucas-fuchs-a9a32887'
@@ -300,6 +303,10 @@ blocks:
             position: 'Partner Manager'
             linkedin: 'https://www.linkedin.com/in/robin-muntwyler/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/1714584267_team_muntwyler_robin.jpg'
+          - name: 'Turdo Fabrizio'
+            position: 'Director of Partner Management'
+            linkedin: 'https://www.linkedin.com/in/fabrizio-turdo-9a0b6b4/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/team/fabrizio_turdo.jpg'
       - subtitle: Finance Team
         title: Paying for your food.
         members:
