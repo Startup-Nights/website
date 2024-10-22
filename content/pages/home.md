@@ -41,6 +41,7 @@ blocks:
       text: Get your ticket now
     categories:
       - price: 199
+        link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
         name: Corporate
         benefits:
           - Ticket for both days
@@ -52,6 +53,7 @@ blocks:
         not_included:
           - Booth
       - price: 169
+        link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
         name: Ecosystem
         benefits:
           - Ticket for both days
@@ -60,6 +62,7 @@ blocks:
         not_included:
           - Booth
       - price: 169
+        link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
         name: Investor
         benefits:
           - Ticket for both days
@@ -69,6 +72,7 @@ blocks:
         not_included:
           - Booth
       - price: 59
+        link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
         name: Founder
         benefits:
           - Ticket for both days
