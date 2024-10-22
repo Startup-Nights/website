@@ -205,7 +205,8 @@ blocks:
                     10.30pm and 1 November 2024, from 1pm to 12am.
                   - >-
                     Opening Hours For Partner & Exhibitors: 31 October 2024,
-                    from 9am to 11pm, 1 November 2024, from 11am to 12am
+                    from 9am to 11pm, 1 November 2024, from 11am to 10am (hall 
+                    2) and to 11am (hall1)
               image:
                 src: >-
                   https://startupnights.fra1.digitaloceanspaces.com/2023/pictures/eulachhallen.jpg
@@ -278,7 +279,7 @@ blocks:
                   text: >-
                     Note that the plan is provisional and will be updated from
                     time to time.
-                  link: /plan_eulachhalle_v16.pdf
+                  link: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/Eulachhalle_Layout_V14.pdf
                 - name: Questions
                   text: >-
                     In case you are not happy with the placement of your booth,
@@ -290,7 +291,8 @@ blocks:
                   - 'Set-up Times: 31 October 2024, 8am - 12pm'
                   - >-
                     Dismantling Times: 1 November 2024, 11pm - 1am  and 2
-                    November 2024, 7am - 10am
+                    November 2024, 7am - 9.30am. Afterwards, everthing still inside will be
+                    moved to the outside and will be your liability going forward
                   - >-
                     Material (Un)Loading: The parking lot can be used for
                     unloading. On the side of the hall will be a large gate into
@@ -305,7 +307,7 @@ blocks:
                   text: >-
                     Note that the plan is provisional and will be updated from
                     time to time.
-                  link: /plan_eulachhalle_v16.pdf
+                  link: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/Eulachhalle_Layout_V14.pdf
                 - name: Questions
                   text: >-
                     In case you are not able to set-up or dismantle your booth
@@ -324,7 +326,7 @@ blocks:
                     The plan already linked below is not final and most likely
                     will change before the event.
                 cta:
-                  link: /plan_eulachhalle_v16.pdf
+                  link: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/Eulachhalle_Layout_V14.pdf
                   text: Current plan
             - content_block:
                 title: Workshops
@@ -445,7 +447,7 @@ blocks:
                 content:
                   - >-
                     For Visitors: 31 October 2024, from 1pm to 10.30pm and 1
-                    November 2024, from 1pm to 12am
+                    November 2024, from 1pm to 10pm (hall 2) and to 11pm (hall 1)
                   - >-
                     For Exhibitors: 31 October 2024, from 9am to 11pm and 1
                     November 2024, from 11am to 12am
@@ -543,7 +545,7 @@ blocks:
                     the whole booth much more interesting. Note that the plan is
                     provisional and will be updated from time to time.
                 cta:
-                  link: /plan_eulachhalle_v16.pdf
+                  link: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/Eulachhalle_Layout_V14.pdf
                   text: Hall plan
             - content_block:
                 title: 'Booth set-up, dismantling & material (un)loading'
@@ -568,7 +570,7 @@ blocks:
                 - name: Set-up Times
                   text: '31 October 2024, 8am - 12pm'
                 - name: Dismantling Times
-                  text: '1 November 2024, 11pm - 1am and 2 November 2024, 7am - 10pm'
+                  text: '1 November 2024, 11pm - 1am and 2 November 2024, 7am - 9.30pm'
             - content_block:
                 title: Internet Connection
                 content:
