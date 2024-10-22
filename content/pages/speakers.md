@@ -54,6 +54,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/andreas_schlenker.png'
                 alt: 'Andreas Schlenker'
+            - name: 'Arshya Shahheydari'
+              position: 'Co-Founder @ Togeco'
+              description: >-
+                Arshya Shahheydari is a young entrepreneur striving to transform the business ecosystem by building businesses that are eco-friendly and fair, ensuring profitability while protecting the planet and improving people's lives.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/arshya_shahheydari.png'
+                alt: 'Arshya Shahheydari'
             - name: 'Bert Hofmänner'
               position: 'Founder helfereinsatz.ch / Vicepresident KMU Verband Winterthur und Umgebung'
               description: >-
@@ -118,19 +125,12 @@ blocks:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/daniel_andres.png'
                 alt: 'Daniel Andres'
             - name: 'David Granite'
-              position: 'Moderator'
+              position: 'Creative Technologist at Dorier Group & Moderator'
               description: >-
                 David leads of team of highly AI and technology-skilled creatives for the global Dorier Group, a division of the MCI Group. His team forges new paths in experience with organizations such as AI for Good, the United Nations, Real Madrid and countless others by specializing in vectorizing emotions through storytelling and technology. David’s aim is to craft unique moments that effectively convey a client's message, to strike the perfect balance between innovation and tradition. This is done by understanding the target audience, finding the most impactful means to evoke emotions, and amplifying the call-to-action response. With expert technical advice and support in the realm of disruptive technology and digital design methodologies, David leads clients and teams to stay at the forefront of innovation and in the company of trendsetters and industry leaders spanning technology, arts, and entrepreneurship. A highly self-motivated professional with experience in both the public and private sector, David has has extensive experience within the entertainment, management, education, hospitality and real estate fields.
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/david_granite.png'
                 alt: 'David Granite'
-            - name: 'Dr. Yasemin Tahris'
-              position: 'Co-Founder & CXO FLOWIT AG'
-              description: >-
-                Dr. Yasemin Tahris is the co-founder and co-CEO of FLOWIT AG. FLOWIT is an AI and psychology-based coach for employee development and retention in the field of frontline people.In addition to her work at FLOWIT AG, Yasemin Tahris has experience in strategic leadership of medium-sized companies and has worked as a lecturer in occupational and organizational psychology at universities.
-              image:
-                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/dr_yasemin_tahris.png'
-                alt: 'Dr. Yasemin Tahris'
             - name: 'Fabian Huber'
               position: 'Co-Founder & CEO of UniBev GmbH'
               description: >-
@@ -152,6 +152,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/gian_reto_à_porta.png'
                 alt: 'Gian Reto à Porta'
+            - name: 'Giuliana Breu'
+              position: 'Moderatorin'
+              description: >-
+                I am a marketing and communications expert and have already gained experience in a wide range of industries. Since this year, I have also been coaching and supporting start-ups in this area. I have also been working as a moderator for business events for several years. I'm delighted to be taking part in Startup Nights for the third time. See you in Friday:)
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/giuliana_breu.png'
+                alt: 'Giuliana Breu'
             - name: 'Ian Epstein'
               position: 'EVP Global Head of Distribution & Capital Markets @ Republic.'
               description: >-
@@ -257,6 +264,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philippe_sahli.png'
                 alt: 'Philippe Sahli'
+            - name: 'Raphael Tobler'
+              position: 'CEO eduwo & President Swiss Startup Association'
+              description: >-
+                Founder Startup Nights, Founder eduwo, Founder Home of Innovation
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/raphael_tobler.png'
+                alt: 'Raphael Tobler'
             - name: 'Roi Y. Tavor'
               position: 'Managing Director Google Cloud Switzerland & Austria'
               description: >-
@@ -320,6 +334,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/peter_kuhn.png'
                 alt: 'Peter Kuhn'
+            - name: 'Silvan Krähenbühl'
+              position: 'Host of the Swisspreneur Podcast'
+              description: >-
+                Software entrepreneur with 2 exits (Gymhopper & Rentouch), leading Swisspreneur, the #1 platform where ambitious Swiss founders learn, meet and invest.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/silvan_kraehenbuehl.png'
+                alt: 'Silvan Krähenbühl'
             - name: 'Piet Heusser'
               position: 'Project Leader & Moderator Headz Agency AG'
               description: >-
@@ -327,6 +348,20 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/piet_heusser.png'
                 alt: 'Piet Heusser'
+            - name: 'Nils Walt'
+              position: 'Head Wolfsberg Dialogue Program'
+              description: >-
+                The UBS Innovation Forum, which takes place twice a year and gives Swiss startups a platform, is one of the flagship events of the Wolfsberg Dialogue Program, which I lead. I started my career in Commodity Trading and worked several years in Executive Search, before I found my passion and calling as Program Director. I am curious, always looking for new ideas and I love to connect people.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/nils_walt.png'
+                alt: 'Nils Walt'
+            - name: 'Adam Reichmann'
+              position: 'Head of Comercial at Generali Switzerland'
+              description: >-
+                Head of Commercial at Generali Switzerland. With more than 15 years of experience in the commercial segments in big financial coorparates. Passionate about fin- and insurtech startups. Holds a Master in Insurance Managment.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/adam_reichmann.png'
+                alt: 'Adam Reichmann'
           background_color: bg-sn-black-light
       - content_block:
           subtitle: Meet our speaker
