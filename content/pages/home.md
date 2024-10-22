@@ -85,6 +85,7 @@ blocks:
         not_included:
           - No access to our matchmaking platform
           - Booth
+    background_color: bg-sn-black
     _template: pricing
   - subtitle: Speaker
     title: Heavyweights.
@@ -285,7 +286,7 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/simon_furer.png
           alt: Simon Furer
-    background_color: bg-sn-black
+    background_color: bg-sn-black-light
     _template: speakers
   - subtitle: Be part of the Startup Nights
     title: Why attend?
@@ -340,7 +341,7 @@ blocks:
             Whether you're looking for investment opportunities, job prospects,
             or avenues for collaboration, this is your chance to engage with
             them.
-    background_color: bg-sn-black-light
+    background_color: bg-sn-black
     _template: overview
   - subtitle: null
     title: What previous speaker said about the event
@@ -375,7 +376,7 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/videos/three_words.mp4
           fallback: >-
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/ambient.jpg
-    background_color: bg-sn-black-light
+    background_color: bg-sn-black
     _template: quotes
   - content_block:
       subtitle: Impressions
@@ -393,7 +394,7 @@ blocks:
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/impressions/031122_StartupNights_Tag1_-207.jpg
       alt: People at a panel discussion
     contentblock_left: false
-    background_color: bg-sn-black
+    background_color: bg-sn-black-light
     _template: content
   - subtitle: Startup World
     title: Discover the next unicorn.
