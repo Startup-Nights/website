@@ -3,9 +3,9 @@
     "name": "Startup Nights 2024",
     "nav_ctas": [
       {
-        "href": "booth",
-        "title": "Apply for a Booth",
-        "icon": "heart"
+        "href": "/helping-hands",
+        "title": "Volunteer",
+        "icon": "megaphone"
       },
       {
         "href": "https://www.b2match.com/e/startup-nights-2024",
