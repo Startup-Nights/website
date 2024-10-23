@@ -40,21 +40,18 @@ blocks:
       link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
       text: Get your ticket now
     categories:
-      - price: 199
+      - price: 49
         link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
-        name: Corporate
+        name: Visitor
         benefits:
           - Ticket for both days
           - Free drinks and food
-          - Access to our matchmaking platform
-          - >-
-            Invitation for our leaders bruchn on Friday morning (limited
-            availability)
         not_included:
+          - No access to our matchmaking platform
           - Booth
-      - price: 169
+      - price: 59
         link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
-        name: Ecosystem
+        name: Founder
         benefits:
           - Ticket for both days
           - Free drinks and food
@@ -71,23 +68,26 @@ blocks:
           - Access to the investor lounge
         not_included:
           - Booth
-      - price: 59
+      - price: 169
         link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
-        name: Founder
+        name: Ecosystem
         benefits:
           - Ticket for both days
           - Free drinks and food
           - Access to our matchmaking platform
         not_included:
           - Booth
-      - price: 49
+      - price: 199
         link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
-        name: Visitor
+        name: Corporate
         benefits:
           - Ticket for both days
           - Free drinks and food
+          - Access to our matchmaking platform
+          - >-
+            Invitation for our leaders bruchn on Friday morning (limited
+            availability)
         not_included:
-          - No access to our matchmaking platform
           - Booth
     background_color: bg-sn-black
     _template: pricing
@@ -101,48 +101,78 @@ blocks:
       link: /speakers
       text: Explore our speaker
     speakers:
-      - name: 'Tobias Reichmuth'
-        position: 'Founding Partner Maximon AG'
-        description: >-
-          Swiss serial entrepreneur Tobias Reichmuth, recognized for his successful investments in over 20 startups, is reshaping global perspectives on aging. By challenging existing beliefs, he envisions a promising new era of longevity, where age holds minimal significance. Through his co-founded longevity accelerator Maximon, he showcases a dedication to advancing research and inspiring investors to seize the vast market opportunities valued trillions of dollars.
+      - name: Tobias Reichmuth
+        position: Founding Partner Maximon AG
+        description: >
+          Swiss serial entrepreneur Tobias Reichmuth, recognized for his
+          successful investments in over 20 startups, is reshaping global
+          perspectives on aging. By challenging existing beliefs, he envisions a
+          promising new era of longevity, where age holds minimal significance.
+          Through his co-founded longevity accelerator Maximon, he showcases a
+          dedication to advancing research and inspiring investors to seize the
+          vast market opportunities valued trillions of dollars.
         image:
-          src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/tobias_reichmuth.png'
-          alt: 'Tobias Reichmuth'
-      - name: 'Philippe Sahli'
-        position: 'Co-Founder & CEO Yokoy'
-        description: >-
-          Philippe Sahli is the Co-Founder and CEO of the Sequoia Capital backed Swiss Scale-up Yokoy. Yokoy automates spend management for mid-size and enterprise customers based on Artificial Intelligence. Philippe studied Finance and Accounting and worked in various Finance functions before starting Yokoy.
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/tobias_reichmuth.png
+          alt: Tobias Reichmuth
+      - name: Philippe Sahli
+        position: Co-Founder & CEO Yokoy
+        description: >
+          Philippe Sahli is the Co-Founder and CEO of the Sequoia Capital backed
+          Swiss Scale-up Yokoy. Yokoy automates spend management for mid-size
+          and enterprise customers based on Artificial Intelligence. Philippe
+          studied Finance and Accounting and worked in various Finance functions
+          before starting Yokoy.
         image:
-          src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philippe_sahli.png'
-          alt: 'Philippe Sahli'
-      - name: 'Lea von Bidder'
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/philippe_sahli.png
+          alt: Philippe Sahli
+      - name: Lea von Bidder
         position: 'Founder & CEO Expeerly, former Ava & Linouï'
-        description: >-
+        description: |
           Founder of expeerly, former founder Ava and L'inouï
         image:
-          src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/lea_von_bidder.png'
-          alt: 'Lea von Bidder'
-      - name: 'Patrick Griss'
-        position: 'CEO Zühlke Ventures'
-        description: >-
-          Patrick Griss has been at the forefront of DeepTech innovation for 25 years – as investor, in corporate roles, as founder, board member, engineer, or advisor to Leadership teams. He is an engineer by training and contributed to more than 40 journeys from invention to industrialisation, to commercial launch, to scale-up, or failure.
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/lea_von_bidder.png
+          alt: Lea von Bidder
+      - name: Patrick Griss
+        position: CEO Zühlke Ventures
+        description: >
+          Patrick Griss has been at the forefront of DeepTech innovation for 25
+          years – as investor, in corporate roles, as founder, board member,
+          engineer, or advisor to Leadership teams. He is an engineer by
+          training and contributed to more than 40 journeys from invention to
+          industrialisation, to commercial launch, to scale-up, or failure.
         image:
-          src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/patrick_griss.png'
-          alt: 'Patrick Griss'
-      - name: 'Nadine Jürgensen'
-        position: 'Co-Founder & COO elleXX'
-        description: >-
-          Nadine Jürgensen has started ellexx – a finance plattform for women – with her Co-Founders in fall 2021. In 2023 the team successfully completed their crowdinvesting and launched the ellexx App in 2024.
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/patrick_griss.png
+          alt: Patrick Griss
+      - name: Nadine Jürgensen
+        position: Co-Founder & COO elleXX
+        description: >
+          Nadine Jürgensen has started ellexx – a finance plattform for women –
+          with her Co-Founders in fall 2021. In 2023 the team successfully
+          completed their crowdinvesting and launched the ellexx App in 2024.
         image:
-          src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/nadine_juergensen.png'
-          alt: 'Nadine Jürgensen'
-      - name: 'Thierry Kneissler'
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/nadine_juergensen.png
+          alt: Nadine Jürgensen
+      - name: Thierry Kneissler
         position: 'Co-Founder Twint & Ex-CEO, Verwaltungsrat und Investor'
-        description: >-
-          Thierry Kneissler ist heute hauptsächlich als Verwaltungsrat bei Startups und KMU engagiert. Zudem ist er Strategieberater, Startup-Coach und Co-Dozent des Lehrgangs «Strategy Champion». Als Mitgründer und CEO von TWINT war er 2014-2018 massgeblich am Aufbau der Schweizer Mobile-Payment Lösung beteiligt. Davor war er 10 Jahre (2004-2014) bei PostFinance AG tätig Strategieverantwortlicher, 2008-2014 als Mitglied der Geschäftsleitung. Er ist von Haus aus Ökonom (Universität Bern) und verfügt über einen Executive MBA der Universität St. Gallen.
+        description: >
+          Thierry Kneissler ist heute hauptsächlich als Verwaltungsrat bei
+          Startups und KMU engagiert. Zudem ist er Strategieberater,
+          Startup-Coach und Co-Dozent des Lehrgangs «Strategy Champion». Als
+          Mitgründer und CEO von TWINT war er 2014-2018 massgeblich am Aufbau
+          der Schweizer Mobile-Payment Lösung beteiligt. Davor war er 10 Jahre
+          (2004-2014) bei PostFinance AG tätig Strategieverantwortlicher,
+          2008-2014 als Mitglied der Geschäftsleitung. Er ist von Haus aus
+          Ökonom (Universität Bern) und verfügt über einen Executive MBA der
+          Universität St. Gallen.
         image:
-          src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/thierry_kneissler.png'
-          alt: 'Thierry Kneissler'
+          src: >-
+            https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/thierry_kneissler.png
+          alt: Thierry Kneissler
     background_color: bg-sn-black-light
     _template: speakers
   - subtitle: Be part of the Startup Nights
