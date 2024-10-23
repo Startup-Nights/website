@@ -31,7 +31,7 @@ blocks:
           startup, navigate to the workshop room or meet up with another
           visitor.
       cta:
-        link: /2023_floorplan_visitor.pdf
+        link: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/Eulachhalle_Layout_V14.pdf
         text: Download the PDF
     image:
       src: >-
