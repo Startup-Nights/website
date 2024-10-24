@@ -132,6 +132,20 @@ blocks:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/244509073-pascal_stuerchler_500x500.png
           alt: Pascal Stürchler
+      - name: Alex Lubnevskiy
+        position: Founder, Author, TEDx Speaker
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/474325617-alex_lubnevskiy_500x500.png
+          alt: Alex Lubnevskiy
+      - name: Luca Del Medico
+        position: 'VC @ Redalpine'
+        description: ''
+        image:
+          src: >-
+            https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/426230035-luca_del_medico_500x500.png
+          alt: Luca Del Medico
     background_color: bg-sn-black
     _template: speakers
   - content_block:
