@@ -6,7 +6,7 @@ export default function HeaderBanner() {
 
     useEffect(() => {
         const id = setTimeout(() => {
-            setTimeLeft(calculateTime('2024-10-31 14:00:00'))
+            setTimeLeft(calculateTime('2024-10-31 00:00:00'))
         }, 1000)
         return () => clearTimeout(id)
     })
