@@ -74,7 +74,7 @@ blocks:
         text:
           - >-
             3.1 The prices for tickets and booths on the Startup Nights websites
-            are inclusive of value-added tax (where applicable). Startup Nights
+            are exclusive of value-added tax (where applicable). Startup Nights
             may change prices at any time. All prices are understood to be in
             CHF.
           - >-
