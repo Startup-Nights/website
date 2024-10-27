@@ -286,6 +286,8 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/wenger-vieli.png
             alt: Wenger Vieli
             link: 'https://wengervieli.ch'
+            quote: >-
+              We believe that startups have the potential to become the leading companies of the future, making a significant impact on society, the economy, and the environment. This is why we are the main legal and tax partner of the Entrepreneur Club Winterthur and the Startup Nights. Supporting and fostering game-changing entrepreneurs and innovation is a centralfocus for us and we are dedicated to offering legal and tax support for wherever possible – shaping the future together.
       - title: Visionary
         grid_cols: 3
         partners:
