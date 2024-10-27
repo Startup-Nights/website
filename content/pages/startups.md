@@ -16,9 +16,6 @@ blocks:
     _template: seo
   - subtitle: Startup World
     title: Check out the exhibiting startups!
-    cta:
-      link: '/booth'
-      text: 'Apply now'
     image:
       src: >-
         https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/day-2-jessica-baumgartner-noemi-aeschimann/17_Impressionen_Startup_World_Diverses/041122_StartupNights_Tag2_
