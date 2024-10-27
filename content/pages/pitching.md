@@ -83,13 +83,6 @@ blocks:
           src: >-
             https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/teddy-amberg.jpeg
           alt: Teddy Amberg
-      - name: Daniel Dillinger
-        position: Investment Parter at Redalpine
-        description: ''
-        image:
-          src: >-
-            https://startupnights.fra1.digitaloceanspaces.com/2023/speakers/daniel-dillenger.jpg
-          alt: Daniel Dillinger
       - name: Andreas Göldi
         position: Partner at b2venture
         description: ''
