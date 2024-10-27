@@ -1,13 +1,13 @@
 ---
 title: Terms and conditions
 blocks:
-  - title: About - Startup Nights
+  - title: Startup Nights
     description: >-
       The Startup Nights is the biggest event in Switzerland that brings the
       whole startup ecosystem to one table. With this event we want to create
       awareness for startups and their innovations.
     openGraph:
-      url: 'https://www.startup-nights.ch/about'
+      url: 'https://www.startup-nights.ch/terms-and-conditions'
       site_name: Startup Nights
       images:
         - url: >-
