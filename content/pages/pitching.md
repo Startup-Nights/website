@@ -20,9 +20,13 @@ blocks:
       content:
         - At Startup Nights 2024 there will again be two pitching sessions.
         - >-
-          This year, the Swiss finals of Startup World Cup take place as part of the Startup Nights on 1st November 2024.
+          This year, the Swiss finals of Startup World Cup take place as part of
+          the Startup Nights on 1st November 2024.
         - >-
-          The winner of the seed pitching competition will get the chance to pitch at the world finals in 2025 in Silicon Valley. At the world finals the Startups have the chance to win a $ 1 million investment from Pegasus Tech Ventures.
+          The winner of the seed pitching competition will get the chance to
+          pitch at the world finals in 2025 in Silicon Valley. At the world
+          finals the Startups have the chance to win a $ 1 million investment
+          from Pegasus Tech Ventures.
         - >-
           This year, there is also a public voting. In each round, the public
           can nominate one startup that will have a chance on stage next to the
@@ -34,6 +38,15 @@ blocks:
           - CHF 5000 for 1st place
           - CHF 3000 for 2nd place
           - CHF 2000 for 3rd place
+    infopoints:
+      - name: Selected Startups for Pre-Seed
+        text: >-
+          Equiverse, Nextgas, DigeHealth, Manukai AG, Ionic Wind Technologies
+          Solabs Nanotechnology
+      - name: Selected Startups for Seed
+        text: >-
+          Crowdtransfer, hooq, Rimon Technologies, Tethys Robotics, VYZN AG,
+          Citus
     contentblock_left: true
     background_color: bg-sn-black-light
     _template: content
@@ -126,14 +139,14 @@ blocks:
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/244509073-pascal_stuerchler_500x500.png
           alt: Pascal Stürchler
       - name: Alex Lubnevskiy
-        position: Founder, Author, TEDx Speaker
+        position: 'Founder, Author, TEDx Speaker'
         description: ''
         image:
           src: >-
             https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/474325617-alex_lubnevskiy_500x500.png
           alt: Alex Lubnevskiy
       - name: Luca Del Medico
-        position: 'VC @ Redalpine'
+        position: VC @ Redalpine
         description: ''
         image:
           src: >-
