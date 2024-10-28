@@ -355,6 +355,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/nils_walt.png'
                 alt: 'Nils Walt'
+            - name: 'Maximilian Groth'
+              position: 'CEO & Co-Founder Decentriq'
+              description: >-
+                Max is the Co-Founder and CEO of Decentriq. Decentriq, the “Switzerland of data”, is a data collaboration platform. By enforcing compliance and control with advanced privacy technologies, it helps enterprises scale data collaborations across organizational boundaries and unlock value from data that would otherwise be too sensitive to use.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/maximilian_groth.png'
+                alt: 'Maximilian Groth'
             - name: 'Adam Reichmann'
               position: 'Head of Comercial at Generali Switzerland'
               description: >-
@@ -362,6 +369,13 @@ blocks:
               image:
                 src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/adam_reichmann.png'
                 alt: 'Adam Reichmann'
+            - name: 'Christian Kramer'
+              position: 'Co-Founder & CEO FOOD2050'
+              description: >-
+                Christian is an entrepreneur and sustainability advocate with a background in hospitality ventures, passionate about leveraging technology for impactful change in the food system.
+              image:
+                src: 'https://startupnights.fra1.digitaloceanspaces.com/2024/speaker/christian_kramer.png'
+                alt: 'Christian Kramer'
           background_color: bg-sn-black-light
       - content_block:
           subtitle: Meet our speaker
