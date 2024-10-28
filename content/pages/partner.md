@@ -369,6 +369,18 @@ blocks:
       - title: Innovator
         grid_cols: 4
         partners:
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/819467699-spro_600x300.png
+            alt: s-pro
+            link: https://s-pro.io/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/655896828-toggenburger_600x300.png
+            alt: toggenburger
+            link: https://toggenburger.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/478742658-swica_600x300.png
+            alt: swica
+            link: https://www.swica.ch/en/companies
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/422393158-gsponer_600x300.png
+            alt: gsponer
+            link: https://gsponer.com/
           - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/969529461-beriflapp_600x300.png
             alt: beriflapp
             link: https://beriflapp.ch/
@@ -513,6 +525,21 @@ blocks:
           - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/674888509-valser_600x300.png
             alt: valser wasser
             link: https://www.coca-cola.com/ch/de/brands/valser#maincontent
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/463246839-mono_600x300.png
+            alt: mono
+            link: https://www.mono.delivery/das-ist-mono
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/816466871-snacky_600x300.png
+            alt: snacky
+            link: https://www.snacky.ch/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/363227205-appenzeller_bier_600x300.png
+            alt: appenzieller bier
+            link: https://appenzellerbier.ch/de/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/669808561-brewbee_600x300.png
+            alt: brewbee
+            link: https://brewbee.ch/en/
+          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/185986979-redbull_organics_600x300.png
+            alt: redbull organics
+            link: https://www.redbull.com/ch-de/theorganics/
       - title: Media
         grid_cols: 4
         partners:
@@ -524,3 +551,4 @@ blocks:
             link: https://founded.ch/
     _template: partner_list
 ---
+
