@@ -1,13 +1,13 @@
 ---
 title: FAQ
 blocks:
-  - title: About - Startup Nights
+  - title: FAQ - Startup Nights
     description: >-
       The Startup Nights is the biggest event in Switzerland that brings the
       whole startup ecosystem to one table. With this event we want to create
       awareness for startups and their innovations.
     openGraph:
-      url: 'https://www.startup-nights.ch/about'
+      url: 'https://www.startup-nights.ch/faq'
       site_name: Startup Nights
       images:
         - url: >-
@@ -31,12 +31,12 @@ blocks:
           startup, navigate to the workshop room or meet up with another
           visitor.
       cta:
-        link: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/Eulachhalle_Layout_V14.pdf
+        link: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/lageplan.pdf
         text: Download the PDF
     image:
       src: >-
-        https://startupnights.fra1.digitaloceanspaces.com/2023/location/floorplan_visitors.png
-      alt: Map of the Startup Nights 2023 at Eulachhallen Winterthur
+        https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/lageplan.png
+      alt: Map of the Startup Nights 2024 at Eulachhallen Winterthur
     contentblock_left: true
     id: location
     background_color: bg-sn-black-light
