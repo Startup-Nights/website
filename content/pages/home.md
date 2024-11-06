@@ -14,7 +14,7 @@ blocks:
             https://startupnights.fra1.digitaloceanspaces.com/2022/pictures/stage.jpg
           alt: Startup Nights Stage
     _template: seo
-  - subtitle: '31. Oct & 1. Nov 2024, Eulachhallen Winterthur'
+  - subtitle: '6. & 7. Nov 2025, Eulachhallen Winterthur'
     title: The biggest startup event in Switzerland
     title_line2: ''
     cta:
