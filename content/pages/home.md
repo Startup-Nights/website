@@ -18,8 +18,9 @@ blocks:
     title: The biggest startup event in Switzerland
     title_line2: ''
     cta:
-      link: 'https://www.b2match.com/e/startup-nights-2024/sign-up'
-      text: Get your ticket
+      link: 'https://share-eu1.hsforms.com/19RZ9dIwbSuKSZkK8-XsFoQ2dk1uq'
+      text: Pre-Register
+      new_tab: true
     image:
       src: ''
       alt: ''
