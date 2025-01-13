@@ -17,7 +17,7 @@ blocks:
   - subtitle: Better together
     title: Partner up!
     cta:
-      link: https://share-eu1.hsforms.com/1sKkrx-ffRuOn0QpVzMV2IQ2dk1uq
+      link: 'https://share-eu1.hsforms.com/1sKkrx-ffRuOn0QpVzMV2IQ2dk1uq'
       text: Become a partner
     image:
       src: >-
@@ -34,7 +34,7 @@ blocks:
       just contributing to the startup ecosystem; you're also positioning your
       brand at the forefront of innovation and  community support.
     cta:
-      link: https://share-eu1.hsforms.com/1sKkrx-ffRuOn0QpVzMV2IQ2dk1uq
+      link: 'https://share-eu1.hsforms.com/1sKkrx-ffRuOn0QpVzMV2IQ2dk1uq'
       text: Contact partner team
     benefit_items:
       - icon: megaphone
@@ -285,9 +285,16 @@ blocks:
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/wenger-vieli.png
             alt: Wenger Vieli
-            link: 'https://wengervieli.ch'
             quote: >-
-              We believe that startups have the potential to become the leading companies of the future, making a significant impact on society, the economy, and the environment. This is why we are the main legal and tax partner of the Entrepreneur Club Winterthur and the Startup Nights. Supporting and fostering game-changing entrepreneurs and innovation is a centralfocus for us and we are dedicated to offering legal and tax support for wherever possible – shaping the future together.
+              We believe that startups have the potential to become the leading
+              companies of the future, making a significant impact on society,
+              the economy, and the environment. This is why we are the main
+              legal and tax partner of the Entrepreneur Club Winterthur and the
+              Startup Nights. Supporting and fostering game-changing
+              entrepreneurs and innovation is a centralfocus for us and we are
+              dedicated to offering legal and tax support for wherever possible
+              – shaping the future together.
+            link: 'https://wengervieli.ch'
       - title: Visionary
         grid_cols: 3
         partners:
@@ -299,30 +306,34 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/cisco.png
             alt: Cisco
             link: 'https://cisco.com'
-          - src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/428987760-innosuisse_600x300.png'
-            alt: 'Innosuisse'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/428987760-innosuisse_600x300.png
+            alt: Innosuisse
             link: 'https://innosuisse.ch'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/ige.png
             alt: IGE
             link: 'https://ige.ch'
-          - src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/540138670-kanton_zrich_600x300.png'
-            alt: 'Kanton Zürich'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/540138670-kanton_zrich_600x300.png
+            alt: Kanton Zürich
             link: 'https://zh.ch'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/44809611-stadt_winterthur_scaled.png
             alt: Stadt Winterthur
             link: 'https://stadt.winterthur.ch/'
-          - src: 'https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/752433688-swisslife_600x300.png'
-            alt: 'Swisslife'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/752433688-swisslife_600x300.png
+            alt: Swisslife
             link: 'https://swisslife.ch'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/technopark_winterthur.png
             alt: Technopark Winterthur
             link: 'https://tpw.ch/en/'
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/846613811-zealydark_600x300.png
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/846613811-zealydark_600x300.png
             alt: Zealy
-            link: https://www.zealy.ch
+            link: 'https://www.zealy.ch'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/zhaw.png
             alt: ZHAW
@@ -330,18 +341,22 @@ blocks:
       - title: Pioneer
         grid_cols: 4
         partners:
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/540479820-embark_law_600x300.png
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/540479820-embark_law_600x300.png
             alt: embark law
-            link: https://embark.law
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/380830196-gebert_ruef_stiftung_600x300.png
+            link: 'https://embark.law'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/380830196-gebert_ruef_stiftung_600x300.png
             alt: gerbert ruef stiftung
-            link: https://www.grstiftung.ch/de.html
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/88192997-microsoft_for_startups_600x300.png
+            link: 'https://www.grstiftung.ch/de.html'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/88192997-microsoft_for_startups_600x300.png
             alt: microsoft for startups
-            link: https://news.microsoft.com/de-ch/startups/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/549642180-td_synnex_600x300.png
+            link: 'https://news.microsoft.com/de-ch/startups/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/549642180-td_synnex_600x300.png
             alt: td synnex
-            link: https://ch.tdsynnex.com/
+            link: 'https://ch.tdsynnex.com/'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/611196457-axpo_scaled.png
             alt: Axpo
@@ -365,68 +380,87 @@ blocks:
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/281842490-NordcloudBlueLogo_Stacked_tagline_600x300.png
             alt: Nordcloud
-            link: https://nordcloud.com/
+            link: 'https://nordcloud.com/'
       - title: Innovator
         grid_cols: 4
         partners:
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/819467699-spro_600x300.png
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/819467699-spro_600x300.png
             alt: s-pro
-            link: https://s-pro.io/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/655896828-toggenburger_600x300.png
+            link: 'https://s-pro.io/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/655896828-toggenburger_600x300.png
             alt: toggenburger
-            link: https://toggenburger.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/478742658-swica_600x300.png
+            link: 'https://toggenburger.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/478742658-swica_600x300.png
             alt: swica
-            link: https://www.swica.ch/en/companies
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/422393158-gsponer_600x300.png
+            link: 'https://www.swica.ch/en/companies'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/422393158-gsponer_600x300.png
             alt: gsponer
-            link: https://gsponer.com/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/969529461-beriflapp_600x300.png
+            link: 'https://gsponer.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/969529461-beriflapp_600x300.png
             alt: beriflapp
-            link: https://beriflapp.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/252375520-founders_600x300.png
+            link: 'https://beriflapp.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/252375520-founders_600x300.png
             alt: founders2
-            link: https://founders2.com/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/144557047-genisuisse_600x300.png
+            link: 'https://founders2.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/144557047-genisuisse_600x300.png
             alt: genisuisse
-            link: https://genisuisse.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/156643551-generali_600x300.png
+            link: 'https://genisuisse.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/156643551-generali_600x300.png
             alt: generali
-            link: https://www.generali.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/903200762-house_of_insurtech_600x300.png
+            link: 'https://www.generali.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/903200762-house_of_insurtech_600x300.png
             alt: house of insurtech
-            link: https://www.houseofinsurtech.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/518328549-hwz_600x300.png
+            link: 'https://www.houseofinsurtech.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/518328549-hwz_600x300.png
             alt: hwz
-            link: https://fh-hwz.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/453290701-pragerdreifuss_600x300.png
+            link: 'https://fh-hwz.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/453290701-pragerdreifuss_600x300.png
             alt: prager dreifuss
-            link: https://www.prager-dreifuss.com/de/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/328062845-rowing_600x300.png
+            link: 'https://www.prager-dreifuss.com/de/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/328062845-rowing_600x300.png
             alt: rowing8
-            link: https://www.rowing8.com/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/260619582-sictic_600x300.png
+            link: 'https://www.rowing8.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/260619582-sictic_600x300.png
             alt: sictic
-            link: https://www.sictic.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/840861961-swiss_vencture_club_600x300.png
+            link: 'https://www.sictic.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/840861961-swiss_vencture_club_600x300.png
             alt: swiss venture club
-            link: https://svc.swiss/de
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/605427969-tenity_600x300.png
+            link: 'https://svc.swiss/de'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/605427969-tenity_600x300.png
             alt: tenity
-            link: https://www.tenity.com/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/737908851-deloitte_600x300.png
+            link: 'https://www.tenity.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/737908851-deloitte_600x300.png
             alt: deloitte private
-            link: https://www2.deloitte.com/ch/en/pages/private-market/solutions/emerging-growth.html?icid=nav2_emerging-growth
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/969529461-beriflapp_600x300.png
+            link: >-
+              https://www2.deloitte.com/ch/en/pages/private-market/solutions/emerging-growth.html?icid=nav2_emerging-growth
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/969529461-beriflapp_600x300.png
             alt: beriflapp
-            link: https://beriflapp.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/728268909-flux_600x300.png
+            link: 'https://beriflapp.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/728268909-flux_600x300.png
             alt: flux
-            link: https://fluxmobility.ch
+            link: 'https://fluxmobility.ch'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/514872505-bmatch_600x300.png
             alt: b2match
-            link: https://b2match.com
+            link: 'https://b2match.com'
           - src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/consultive.png
             alt: Consultive
@@ -475,25 +509,33 @@ blocks:
               https://startupnights.fra1.digitaloceanspaces.com/2023/partners/obrist-helps.png
             alt: Obrist Helps
             link: 'https://www.obrist-helps.ch/startups'
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/179419619-kgv_600x300.png
-            alt: 'KMU- und Gewerbeverband Kanton Zürich'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/179419619-kgv_600x300.png
+            alt: KMU- und Gewerbeverband Kanton Zürich
             link: 'https://www.kgv.ch/'
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/316549409-Markenregistrierung_600x300.png
-            alt: 'Markenregistrierung'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/316549409-Markenregistrierung_600x300.png
+            alt: Markenregistrierung
             link: 'https://www.markenregistrierung.ch/'
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/886616158-kmuverband_600x300.png
-            alt: 'KMU Verband Winterthur und Umgebung'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/886616158-kmuverband_600x300.png
+            alt: KMU Verband Winterthur und Umgebung
             link: 'http://www.kmu-win.ch/'
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/957207996-dealfront_600x300.png
-            alt: 'Dealfront'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/957207996-dealfront_600x300.png
+            alt: Dealfront
             link: 'https://www.dealfront.com/'
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/370075960-home-of-innovation_scaled.png
             alt: Home of Innovation
             link: 'https://homeofinnovation.ch/'
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/11300824-fokusclip_600x300.png
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/11300824-fokusclip_600x300.png
             alt: fokusclip
-            link: https://www.fokusclip.ch/
+            link: 'https://www.fokusclip.ch/'
+          - src: 'https://startupnights.fra1.digitaloceanspaces.com/logo-deko.ch.png'
+            alt: deko.ch
+            link: 'https://dekorationsvermietung.ch/'
       - title: Food and Beverage Partner
         grid_cols: 4
         partners:
@@ -501,54 +543,69 @@ blocks:
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2023/startups/4019791-danko-catering_scaled.png
             alt: Danko Catering
             link: 'https://www.danko-catering.ch/'
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/448149808-cocacola_600x300.png
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/448149808-cocacola_600x300.png
             alt: coca-cola
-            link: https://www.coca-cola.com/ch/de
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/927763103-focuswater_600x300.png
+            link: 'https://www.coca-cola.com/ch/de'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/927763103-focuswater_600x300.png
             alt: focuswater
-            link: https://focuswater.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/598632984-jaybees_600x300.png
+            link: 'https://focuswater.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/598632984-jaybees_600x300.png
             alt: jaybees foodtruck
-            link: https://www.jaybees.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/76792630-mad_600x300.png
+            link: 'https://www.jaybees.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/76792630-mad_600x300.png
             alt: mad - make a difference
-            link: https://www.mad-drinks.com/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/439191-planted_600x300.png
+            link: 'https://www.mad-drinks.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/439191-planted_600x300.png
             alt: planted
-            link: https://ch.eatplanted.com/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/876820216-rebels_600x300.png
+            link: 'https://ch.eatplanted.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/876820216-rebels_600x300.png
             alt: rebels - freeing the spirit of drinks
-            link: https://rebels00.com/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/458714116-tenz_600x300.png
+            link: 'https://rebels00.com/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/458714116-tenz_600x300.png
             alt: tenz
-            link: https://www.tenz.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/674888509-valser_600x300.png
+            link: 'https://www.tenz.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/674888509-valser_600x300.png
             alt: valser wasser
-            link: https://www.coca-cola.com/ch/de/brands/valser#maincontent
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/463246839-mono_600x300.png
+            link: 'https://www.coca-cola.com/ch/de/brands/valser#maincontent'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/463246839-mono_600x300.png
             alt: mono
-            link: https://www.mono.delivery/das-ist-mono
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/816466871-snacky_600x300.png
+            link: 'https://www.mono.delivery/das-ist-mono'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/816466871-snacky_600x300.png
             alt: snacky
-            link: https://www.snacky.ch/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/363227205-appenzeller_bier_600x300.png
+            link: 'https://www.snacky.ch/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/363227205-appenzeller_bier_600x300.png
             alt: appenzieller bier
-            link: https://appenzellerbier.ch/de/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/669808561-brewbee_600x300.png
+            link: 'https://appenzellerbier.ch/de/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/669808561-brewbee_600x300.png
             alt: brewbee
-            link: https://brewbee.ch/en/
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/185986979-redbull_organics_600x300.png
+            link: 'https://brewbee.ch/en/'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/185986979-redbull_organics_600x300.png
             alt: redbull organics
-            link: https://www.redbull.com/ch-de/theorganics/
+            link: 'https://www.redbull.com/ch-de/theorganics/'
       - title: Media
         grid_cols: 4
         partners:
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/68923781-startupticker_600x300.png
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/68923781-startupticker_600x300.png
             alt: startupticker
-            link: https://startupticker.ch
-          - src: https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/664456398-founded_600x300.png
+            link: 'https://startupticker.ch'
+          - src: >-
+              https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/664456398-founded_600x300.png
             alt: founded
-            link: https://founded.ch/
+            link: 'https://founded.ch/'
     _template: partner_list
 ---
 
