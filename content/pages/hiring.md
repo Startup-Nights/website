@@ -24,6 +24,14 @@ blocks:
   - subtitle: Open positions
     title: Shape the future with us.
     open_positions:
+      - title: Volunteer Coordinator
+        department: Volunteers
+        link: >-
+          https://docs.google.com/forms/d/e/1FAIpQLSclZM9ExSdBkXzaECkLAIqYSrxcxmR3yiaHmo8Oj4Ibt-38Dw/viewform
+      - title: Head of Volunteers
+        department: Volunteers
+        link: >-
+          https://docs.google.com/forms/d/e/1FAIpQLSdQyhSa6mHYydnjCEUxTTjgaPQVElIAppuKP7YL78lazeLXbQ/viewform
       - title: Allrounder
         department: Operations
         link: 'https://forms.gle/S9hcT6CscPY5jE5XA'
