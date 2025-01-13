@@ -20,7 +20,7 @@ blocks:
       den Startup Nights!
     cta:
       link: >-
-        https://portal.helfereinsatz.ch/entrepreneur-club-winterthur-ab-2024/de/browse
+        https://docs.google.com/forms/d/e/1FAIpQLScgdsPTeHERQMYTpZzZ821ogaTbplODAoomlfXOuuanUT0L_A/viewform
       text: Jetzt anmelden
       new_tab: true
     image:
