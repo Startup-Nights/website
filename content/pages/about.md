@@ -79,11 +79,6 @@ blocks:
             linkedin: ''
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_julian_schoeb_.jpg
-          - name: Mischa Jörg
-            position: Website
-            linkedin: 'https://www.linkedin.com/in/mischa-jörg-87933b157/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/mischa-joerg.jpeg
           - name: Nadine Ungricht
             position: CRM & Newsletter
             linkedin: 'https://www.linkedin.com/in/nadine-ungricht-bb68b1121/'
