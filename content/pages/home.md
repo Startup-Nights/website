@@ -39,8 +39,8 @@ blocks:
       subtitle: Impression
       title: This was Startup Nights 2024
       content:
-        - "With\_8’500 visitors,\_150 exhibiting startups, and\_100 speakers & workshops,\_Startup Nights 2024\_was the ultimate gathering for entrepreneurs, investors, and innovators."
-        - "Startups showcased their ideas, connected with potential investors, and gained valuable insights through\_keynotes, workshops, and pitching competitions. Aspiring founders found inspiration, while industry leaders exchanged knowledge and expanded their networks – all in a welcoming and dynamic atmosphere with\_free food & drinks."
+        - "With\_8’500 visitors,\_150 exhibiting startups, and\_100 speakers,\_Startup Nights 2024\_was the ultimate gathering for entrepreneurs, investors, and innovators."
+        - "Startups showcased their ideas, connected with potential investors, and gained valuable insights through\_keynotes, workshops, and pitching competitions. Aspiring founders and industry leaders exchanged knowledge and expanded their networks – all in a welcoming and dynamic atmosphere with\_free food & drinks."
         - "As\_Switzerland’s leading startup event,\_Startup Nights is the place to grow, connect, and innovate.\_Want to be part of it in 2025?\_Pre-register now\_to stay updated on ticket sales and secure your spot!"
       cta:
         link: 'https://share-eu1.hsforms.com/19RZ9dIwbSuKSZkK8-XsFoQ2dk1uq'
