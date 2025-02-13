@@ -39,12 +39,16 @@ blocks:
       subtitle: Impression
       title: This was Startup Nights 2024
       content:
-        - "This was Startup Nights 2024 – and you don’t want to miss 2025! With\_8’500 visitors,\_150 exhibiting startups, and\_100 speakers & workshops,\_Startup Nights 2024\_was the ultimate gathering for entrepreneurs, investors, and innovators."
+        - "With\_8’500 visitors,\_150 exhibiting startups, and\_100 speakers & workshops,\_Startup Nights 2024\_was the ultimate gathering for entrepreneurs, investors, and innovators."
         - "Startups showcased their ideas, connected with potential investors, and gained valuable insights through\_keynotes, workshops, and pitching competitions. Aspiring founders found inspiration, while industry leaders exchanged knowledge and expanded their networks – all in a welcoming and dynamic atmosphere with\_free food & drinks."
         - "As\_Switzerland’s leading startup event,\_Startup Nights is the place to grow, connect, and innovate.\_Want to be part of it in 2025?\_Pre-register now\_to stay updated on ticket sales and secure your spot!"
       cta:
         link: 'https://share-eu1.hsforms.com/19RZ9dIwbSuKSZkK8-XsFoQ2dk1uq'
         text: Pre-Register for Startup Nights 2025
+    image:
+      src: >-
+        https://startupnights.fra1.digitaloceanspaces.com/2024/team/SN2024_0041_CREW_20241031_1233_StefanBaumgartner.jpg
+    contentblock_left: true
     _template: content
   - subtitle: Speaker
     title: Heavyweights.
