@@ -606,6 +606,10 @@ blocks:
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/664456398-founded_600x300.png
             alt: founded
             link: 'https://founded.ch/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/moneycab-logo-vector.png
+            alt: moneycab
+            link: 'https://www.moneycab.com'
     _template: partner_list
 ---
 
