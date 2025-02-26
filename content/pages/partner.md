@@ -596,7 +596,7 @@ blocks:
             alt: redbull organics
             link: 'https://www.redbull.com/ch-de/theorganics/'
       - title: Media
-        grid_cols: 4
+        grid_cols: 3
         partners:
           - src: >-
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/68923781-startupticker_600x300.png
