@@ -24,6 +24,22 @@ blocks:
   - subtitle: Open positions
     title: Shape the future with us.
     open_positions:
+      - title: Content Creator
+        department: Marketing
+        link: 'https://forms.gle/5eAM2oByktyoHxZ36'
+      - title: Coordination Construction & Dismantling
+        department: Infrastructure
+        link: 'https://forms.gle/gMcm1RuzhD5K8zUNA'
+      - title: Head of Snacks
+        department: F&B
+        link: 'https://forms.gle/WJEEVh8R17kZii8b6'
+      - title: F&B Operations Manager (Beverages)
+        department: F&B
+        link: 'https://forms.gle/JxMNwCjTeH93Kqjr8'
+      - title: Head of Mainstage
+        note: ''
+        department: Program
+        link: 'https://forms.gle/j65NPHaTn6if8GTZ7'
       - title: Volunteer Coordinator
         department: Volunteers
         link: >-
