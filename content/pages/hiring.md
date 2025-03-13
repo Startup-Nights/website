@@ -36,10 +36,6 @@ blocks:
       - title: F&B Operations Manager (Beverages)
         department: F&B
         link: 'https://forms.gle/JxMNwCjTeH93Kqjr8'
-      - title: Head of Mainstage
-        note: ''
-        department: Program
-        link: 'https://forms.gle/j65NPHaTn6if8GTZ7'
       - title: Volunteer Coordinator
         department: Volunteers
         link: >-
@@ -55,9 +51,6 @@ blocks:
         note: New
         department: General
         link: 'https://forms.gle/d76tawoBwpZZWb5X9'
-      - title: Tools & Automation Manager
-        department: Operations
-        link: 'https://forms.gle/9BobSxcN1uGKfMxN8'
     _template: positions
   - subtitle: Benefits
     title: What you can expect.
