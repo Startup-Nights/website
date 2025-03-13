@@ -105,6 +105,10 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/kevin-willeit-79a189237/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/kevin_willeit.png
+          - name: Alessia Gresia
+            position: Social Media Manager
+            linkedin: 'https://www.linkedin.com/in/alessia-gresia-5a3a59324/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/IMG_9521.JPG'
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
