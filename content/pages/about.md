@@ -199,11 +199,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/joel-sidler-a55b57235/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_joel_sidler.jpg
-          - name: Fabienne Schuler
-            position: Goodie Bag Coordinator
-            linkedin: 'https://www.linkedin.com/in/fabienne-schuler/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392026_team_fabienne_schuler.png
           - name: Lucas Fuchs
             position: Sustainability Manager
             linkedin: 'http://www.linkedin.com/in/lucas-fuchs-a9a32887'
