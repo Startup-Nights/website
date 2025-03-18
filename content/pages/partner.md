@@ -297,6 +297,9 @@ blocks:
               https://startupnights.fra1.cdn.digitaloceanspaces.com/2024/startups/428987760-innosuisse_600x300.png
             alt: Innosuisse
             link: 'https://innosuisse.ch'
+          - src: 'https://startupnights.fra1.digitaloceanspaces.com/AXA_Logo.svg.png'
+            alt: AXA
+            link: 'https://www.axa.ch/'
       - title: Pioneer
         grid_cols: 4
         partners:
