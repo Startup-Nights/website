@@ -312,6 +312,9 @@ blocks:
           - src: 'https://startupnights.fra1.digitaloceanspaces.com/ige.png'
             alt: IGE
             link: 'https://ige.ch'
+          - src: 'https://startupnights.fra1.digitaloceanspaces.com/images.png'
+            alt: Kanton Zürich
+            link: 'https://www.zh.ch/'
       - title: Innovator
         grid_cols: 4
         partners:
