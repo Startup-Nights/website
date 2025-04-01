@@ -90,11 +90,6 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/janickrolli/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1708892397_team_janick_rolli.png
-          - name: Dario Müller
-            position: Head of Social Media
-            linkedin: 'https://www.linkedin.com/in/dariom%C3%BCller/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2024/team/1712392537_team_dario_mueller.jpeg
           - name: Saskia Iten
             position: Head of Photo & Video on site
             linkedin: 'https://www.linkedin.com/in/saskia-iten-583515155/'
@@ -175,11 +170,14 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2023/team/adrian-tureatca
               .jpeg
-          - name: Nicolas Fischer
-            position: Startup & Corporate Matching
-            linkedin: 'https://www.linkedin.com/in/nicolas-fischer-756589197/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2023/team/nicolas-fischer.jpg
+          - name: Philipp Brügger
+            position: Co-Head of Mainstage
+            linkedin: 'https://www.linkedin.com/in/pbuw/'
+            src: "https://startupnights.fra1.digitaloceanspaces.com/Philipp BruÃ\x8CÂ\x88gger.png"
+          - name: Manuel Lusti
+            position: Co-Head of Mainstage
+            linkedin: 'https://www.linkedin.com/in/manuellusti/'
+            src: 'https://startupnights.fra1.digitaloceanspaces.com/Manuel Lusti.png'
       - subtitle: Operations Team
         title: Keeping our HQ organised.
         members:
@@ -199,7 +197,7 @@ blocks:
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_nelson_zuercher.jpg
           - name: Joel Sidler
-            position: Head of Accomodations
+            position: Head of Accommodation / Sustainability Manager
             linkedin: 'https://www.linkedin.com/in/joel-sidler-a55b57235/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/1706036888_team_joel_sidler.jpg
@@ -294,6 +292,12 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/tina-sprung/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/tina_sprung.png
+          - name: Laura Gialluca
+            position: PR / Media Relations
+            linkedin: 'https://www.linkedin.com/in/laura-gialluca/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/Laura
+              Gialluca.png
     _template: team
 ---
 
