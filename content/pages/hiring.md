@@ -28,9 +28,6 @@ blocks:
         department: Marketing
         link: >-
           https://docs.google.com/forms/d/e/1FAIpQLSc02VWJJS7RXyDtxjX8qT5Y9eYtkoPJeZ9BMQek65KAtsqfEg/viewform
-      - title: Content Creator
-        department: Marketing
-        link: 'https://forms.gle/5eAM2oByktyoHxZ36'
       - title: Coordination Construction & Dismantling
         department: Infrastructure
         link: 'https://forms.gle/gMcm1RuzhD5K8zUNA'
