@@ -315,6 +315,10 @@ blocks:
           - src: 'https://startupnights.fra1.digitaloceanspaces.com/images.png'
             alt: Kanton Zürich
             link: 'https://www.zh.ch/'
+          - src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/haw-logo.png.webp
+            alt: Handelskammer Winterthur
+            link: 'https://www.haw.ch/'
       - title: Innovator
         grid_cols: 4
         partners:
