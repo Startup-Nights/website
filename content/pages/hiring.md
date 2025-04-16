@@ -28,9 +28,6 @@ blocks:
         department: Marketing
         link: >-
           https://docs.google.com/forms/d/e/1FAIpQLSc02VWJJS7RXyDtxjX8qT5Y9eYtkoPJeZ9BMQek65KAtsqfEg/viewform
-      - title: Coordination Construction & Dismantling
-        department: Infrastructure
-        link: 'https://forms.gle/gMcm1RuzhD5K8zUNA'
       - title: Head of Snacks
         department: F&B
         link: 'https://forms.gle/eEgce96wSA1fUNY49'
@@ -45,9 +42,6 @@ blocks:
         department: Volunteers
         link: >-
           https://docs.google.com/forms/d/e/1FAIpQLSdQyhSa6mHYydnjCEUxTTjgaPQVElIAppuKP7YL78lazeLXbQ/viewform
-      - title: Allrounder
-        department: Operations
-        link: 'https://forms.gle/S9hcT6CscPY5jE5XA'
       - title: Initiative Application - Organizing Committee
         note: New
         department: General
