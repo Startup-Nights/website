@@ -95,13 +95,8 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/saskia-iten-583515155/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/2024/team/saskia_iten.png
-          - name: Kevin Willeit
-            position: Social Media Manager
-            linkedin: 'https://www.linkedin.com/in/kevin-willeit-79a189237/'
-            src: >-
-              https://startupnights.fra1.digitaloceanspaces.com/2024/team/kevin_willeit.png
           - name: Alessia Gresia
-            position: Social Media Manager
+            position: Content Creator
             linkedin: 'https://www.linkedin.com/in/alessia-gresia-5a3a59324/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/IMG_9521.JPG'
           - name: Michael Wagner
@@ -109,6 +104,24 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/michael-wagner-27208345/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/1708293552_team_wagner_michael.jpg
+          - name: Carlos Logiurato
+            position: Content Creator
+            linkedin: 'https://www.linkedin.com/in/carlos-logiurato-mendoza-56854a209/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/Bildschirmfoto
+              2025-04-16 um 15.33.17.png
+          - name: Afeez Abimbola Olagunju
+            position: Content Creator
+            linkedin: 'https://www.linkedin.com/in/afeez-abimbola-olagunju-219078b6/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/Afeez Abimbola
+              Olagunju Badero.jpeg
+          - name: Emilia Lun
+            position: Content Creator
+            linkedin: 'https://www.linkedin.com/in/emilia-lun-42942134b/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/Bildschirmfoto
+              2025-04-16 um 15.36.50.png
       - subtitle: Infrastructure Team
         title: They build stuff. Like "Bob de Boumaa".
         members:
@@ -146,6 +159,18 @@ blocks:
             linkedin: 'https://www.linkedin.com/in/rannowholger/'
             src: >-
               https://startupnights.fra1.digitaloceanspaces.com/holger-rannow.png
+          - name: Dario Müller
+            position: Coordinator Construction & Dismantling
+            linkedin: 'https://www.linkedin.com/in/dariom%C3%BCller/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/Bildschirmfoto
+              2025-04-16 um 15.27.41.png
+          - name: Nina Utzinger
+            position: Deputy of Visual & Signage
+            linkedin: 'https://www.linkedin.com/in/nina-utzinger-ba9427259/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/Bildschirmfoto
+              2025-04-16 um 15.39.38.png
       - subtitle: Program Team
         title: Entertainers at heart.
         members:
@@ -215,6 +240,12 @@ blocks:
             position: Automation Manager
             linkedin: 'https://www.linkedin.com/in/roy-nneji-700585263/'
             src: 'https://startupnights.fra1.digitaloceanspaces.com/roy_nneji.png'
+          - name: Zsolt Jakab
+            position: Allrounder
+            linkedin: 'https://www.linkedin.com/in/jakab-zsolt/'
+            src: >-
+              https://startupnights.fra1.digitaloceanspaces.com/Bildschirmfoto
+              2025-04-16 um 15.41.50.png
       - subtitle: Partnerships Team
         title: Exchanging value.
         members:
