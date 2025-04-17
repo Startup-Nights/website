@@ -38,14 +38,13 @@ blocks:
         department: Volunteers
         link: >-
           https://docs.google.com/forms/d/e/1FAIpQLSclZM9ExSdBkXzaECkLAIqYSrxcxmR3yiaHmo8Oj4Ibt-38Dw/viewform
-      - title: Head of Volunteers
-        department: Volunteers
-        link: >-
-          https://docs.google.com/forms/d/e/1FAIpQLSdQyhSa6mHYydnjCEUxTTjgaPQVElIAppuKP7YL78lazeLXbQ/viewform
       - title: Initiative Application - Organizing Committee
         note: New
         department: General
         link: 'https://forms.gle/d76tawoBwpZZWb5X9'
+      - title: Sustainability Manager
+        department: F&B
+        link: 'https://forms.gle/EwaH7GDTkh9rw9oY7'
     _template: positions
   - subtitle: Benefits
     title: What you can expect.
