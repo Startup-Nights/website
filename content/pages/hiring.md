@@ -24,10 +24,6 @@ blocks:
   - subtitle: Open positions
     title: Shape the future with us.
     open_positions:
-      - title: Tracking & Analytics Specialist
-        department: Marketing
-        link: >-
-          https://docs.google.com/forms/d/e/1FAIpQLSc02VWJJS7RXyDtxjX8qT5Y9eYtkoPJeZ9BMQek65KAtsqfEg/viewform
       - title: Head of Snacks
         department: F&B
         link: 'https://forms.gle/eEgce96wSA1fUNY49'
