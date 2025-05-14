@@ -30,10 +30,6 @@ blocks:
       - title: F&B Operations Manager (Beverages)
         department: F&B
         link: 'https://forms.gle/JxMNwCjTeH93Kqjr8'
-      - title: Volunteer Coordinator
-        department: Volunteers
-        link: >-
-          https://docs.google.com/forms/d/e/1FAIpQLSclZM9ExSdBkXzaECkLAIqYSrxcxmR3yiaHmo8Oj4Ibt-38Dw/viewform
       - title: Initiative Application - Organizing Committee
         note: New
         department: General
